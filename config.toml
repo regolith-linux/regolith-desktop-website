@@ -40,27 +40,27 @@ enableGitInfo = true
 # [[menu.before]]
 [[menu.after]]
   name = "Github"
-  url = "https://github.com/alex-shpak/hugo-book"
+  url = "https://github.com/regolith-linux"
   weight = 10
 
 [[menu.after]]
-  name = "Hugo Themes"
-  url = "https://themes.gohugo.io/hugo-book/"
+  name = "Slack"
+  url = "https://regolith-linux.herokuapp.com/"
   weight = 20
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  BookTheme = 'dark'
+  BookTheme = 'auto'
 
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
-  BookToC = true
+  BookToC = false
 
   # (Optional, default none) Set the path to a logo for the book. If the logo is
   # /static/logo.png then the path would be logo.png
-  # BookLogo = 'logo.png'
+  BookLogo = 'regolith-logo.png'
 
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
