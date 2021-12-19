@@ -1,4 +1,4 @@
-name: Publish
+name: Publish Site
 on:
   push:
     branches:
@@ -8,7 +8,6 @@ on:
     - 'CONTRIBUTING.md'
     - 'LICENSE'
     - 'package*.json'
-
 
 jobs:
   publish:
@@ -31,4 +30,4 @@ jobs:
         with:
           build_dir: public
           branch: gh-pages
-          cname: regolith-desktop.org
+          cname: regolith-desktop.com
