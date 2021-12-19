@@ -1,4 +1,4 @@
-baseURL = 'https://regolith-desktop.org/'
+baseURL = 'https://regolith-desktop.com/'
 title = 'Regolith Desktop'
 theme = 'hugo-book'
 
