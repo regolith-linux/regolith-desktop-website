@@ -8,17 +8,17 @@ img {
     border-radius: 3px;
 }
 
-.logo {
+.book-brand {
+  margin-top: 0;
+  margin-bottom: $padding-16;
+
+  img {
     box-shadow: unset;
     border-radius: unset;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    height: 5em;
+    width: 5em;
+    margin-inline-end: $padding-8;
+  }
 }
 
 .badge {
