@@ -1,0 +1,34 @@
+name: Publish
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+    - 'README.md'
+    - 'CONTRIBUTING.md'
+    - 'LICENSE'
+    - 'package*.json'
+
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Build website
+        env:
+          NODE_PATH: /usr/lib/node_modules
+          HUGO_ENV: production
+        uses: jakejarvis/hugo-build-action@v0.79.1
+        with:
+          args: --minify
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          build_dir: public
+          branch: gh-pages
+          cname: regolith-desktop.org
