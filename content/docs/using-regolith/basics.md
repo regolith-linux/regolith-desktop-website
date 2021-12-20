@@ -5,10 +5,6 @@ description: >
   Learn the most important parts of Regolith first.
 ---
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
-
 While we'll cover everything in greater detail in other areas of the documentation, this page covers the very basics.
 
 ## The Super Key
@@ -23,13 +19,13 @@ Regolith provides several launchers as the primary way of interacting with your 
 
 After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right. To launch an application, press {{< keys "super,space" >}} and a menu will be presented with all of the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only matching names. You can also scroll through the list with the arrow keys.
 
-{{< img "images/screenshot-launcher.png" "Launch an application" >}}
+![](/regolith-ilia-apps.png)
 
 ### Navigate to a Window
 
 To focus on a running application, the {{< keys "super,ctrl,space" >}} keybinding can be used to show a dialog of all running windows. Simply select the desired window and the system will move to the window's containing workspace and set its focus.
 
-{{< img "images/regolith-screenshot-window-nav2.png" "Dialog for moving to another open window" >}}
+![](/regolith-ilia-windows.png)
 
 ### Create a new Workspace
 
@@ -39,7 +35,7 @@ Workspaces (also known as virtual desktops in some desktop environments) are the
 
 Searching your local computer for a specific file can be achieved in a variety of ways. Regolith provides a file search dialog via {{< keys "super,alt,space" >}} to quickly seek and optionally load a file with its default application. If the file path exceeds the width of the dialog, {{< keys "alt,." >}} will toggle text justification. Pressing enter on a selection will cause the file to be invoked with the `xdg-open` command.
 
-{{< img "images/regolith-file-search.png" "Open file dialog">}}
+![](/regolith-ilia-files.png)
 
 ### Terminal
 
@@ -63,8 +59,10 @@ Workspaces can also be paged forward and backward via {{< keys "super,tab" >}} a
 
 The Settings app (also known as `gnome-control-center`) is the primary interface for common configuration tasks, such as changing the desktop wallpaper, configuring WiFi and Bluetooth, configuring app associations and setting up users. The app can be launched via the {{< keys "super,c" >}} keybinding or from the launcher via the Settings app.
 
-{{< img "images/regolith-control-panel.png" "The GNOME settings app">}}
+![](/regolith-gnome-settings.png)
 
-## Further Reading
+## View Keybindings
 
-More keybindings are listed in [Remontoire](https://github.com/regolith-linux/remontoire), the shortcut application. This app is loaded automatically on the first session, but not on successive logins. The window can be toggled at any time by clicking the circled {{< keys "i" >}} icon in the bar, or pressing {{< keys "super,shift,?" >}}.
+All keybindings used by the Regolith desktop can be viewed, sorted, and executed by `ilia`.  This dialog is launched with {{< keys "super,shift,?" >}}.
+
+![](/regolith-ilia-keybindings.png)
