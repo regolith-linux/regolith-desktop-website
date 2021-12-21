@@ -9,7 +9,7 @@ description: >
 
 ---
 
-While we'll cover everything in greater detail in other areas of the documentation, this page covers the very basics.
+While we'll cover everything in greater detail in other areas of the documentation, this page covers basic usage of Regolith.
 
 ## The Super Key
 
@@ -23,6 +23,8 @@ Regolith provides several launchers as the primary way of interacting with your 
 
 After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right. To launch an application, press {{< keys "super,space" >}} and a menu will be presented with all of the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only matching names. You can also scroll through the list with the arrow keys.
 
+Users that prefer to have an item on the bar to open the app launcher dialog may install the `i3xrocks-app-launcher` package and refresh the regolith session.
+
 ![](/regolith-ilia-apps.png)
 
 ### Navigate to a Window
@@ -33,7 +35,9 @@ To focus on a running application, the {{< keys "super,ctrl,space" >}} keybindin
 
 ### Create a new Workspace
 
-Workspaces (also known as virtual desktops in some desktop environments) are the primary way by which windows can be managed. Each workspace provides a screen for an independent set of windows. To create a workspace, {{< keys "super,`" >}} will create and move to a new workspace. {{< keys "super,0-9" >}} allows for navigation to specific workspaces.
+Workspaces (also known as virtual desktops in some desktop environments) are the primary way by which windows can be managed. Each workspace provides a screen for an independent set of windows. To create a workspace, {{< keys "super,`" >}} will create and move to a new workspace. {{< keys "super,0-9" >}} allows for navigation to specific workspaces.  
+
+Users that prefer to have an item on the bar that creates and moves to a new workspace can install the `i3xrocks-next-workspace` package and refresh the Regolith session.
 
 ### Find and Launch a File
 

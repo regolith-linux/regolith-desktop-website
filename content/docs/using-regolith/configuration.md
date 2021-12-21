@@ -10,17 +10,13 @@ description: >
 
 --- 
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
-
 ## Wallpaper
 
-The wallpaper can be changed via Settings, or {{< keys "super,c" >}}, by going to the Background tab and selecting the preferred image or color.
+The wallpaper can be changed via the Settings app, or {{< keys "super,c" >}}, by going to the Background tab and selecting the preferred image.
 
 {{< img "images/regolith-screenshot-settings-wallpaper.png" "The background selection in the Settings app">}}
 
-Wallpaper can also be set via [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) for those that prefer file-based configuration management over GSettings.
+Wallpaper can also be set via [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) for those that prefer file-based configuration management.  This can be done by specifying the path to the wallpaper image via the Xresources key `gnome.wallpaper`.
 
 Regardless of which style you prefer, you can refer to the [more extensive documentation]({{< ref "/docs/howtos/configure-wallpaper.md" >}}) for additional details.
 
@@ -32,7 +28,7 @@ Status indicators such as CPU load, date and time, notifications, weather, and o
 
 ## Looks
 
-Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop with a few commands. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. The tool `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `cahuella` look that shipped by default in Regolith 1.3:
+Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. The terminal command `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `cahuella` look that shipped by default in Regolith 1.3:
 
 ```console
 $ apt search ^regolith-look-
@@ -63,7 +59,7 @@ To change other, more advanced keybindings, creating a user copy of the i3 confi
 
 ## Window Behavior
 
-Regolith uses an i3 window manager variant called [`i3-gaps`](https://github.com/Airblader/i3). It controls how windows are drawn, how keybindings are configured, some start-up applications and other details. By default, the Regolith configuration file for i3 is located at `/etc/regolith/i3/config`.
+Regolith uses the i3 window manager or a variant called [`i3-gaps`](https://github.com/Airblader/i3) depending on what packages are installed. The window manager controls how windows are drawn, how keybindings are configured, some start-up applications, and other details. By default, the Regolith configuration file for i3 is located at `/etc/regolith/i3/config`.  Additionally, Regolith uses a relatively new feature of i3 known as config partials. These config snippets are stored in `/etc/regolith/i3/config.d`.
 
 ## Almost Everything Else
 
