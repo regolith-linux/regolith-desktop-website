@@ -5,6 +5,10 @@ description: >
   Learn the most important parts of Regolith first.
 ---
 
+## Basic Usage 
+
+---
+
 While we'll cover everything in greater detail in other areas of the documentation, this page covers the very basics.
 
 ## The Super Key

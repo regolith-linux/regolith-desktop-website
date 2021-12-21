@@ -6,6 +6,10 @@ description: >
   Make changes to the way Regolith looks and behaves.
 ---
 
+## Configuration
+
+--- 
+
 {{< hint danger >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /hint >}}
