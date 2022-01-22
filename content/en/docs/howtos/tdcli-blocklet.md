@@ -4,9 +4,9 @@ description: >
   Create and manage a to-do list from status bar
 ---
 
-{{< hint danger >}}
+{{< alert icon="👉" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< /alert >}}
 
 [`td-cli`](https://github.com/darrikonn/td-cli) is a command line todo manager written in Python3 for organizing todo lists across multiple projects.
 

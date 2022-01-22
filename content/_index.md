@@ -31,9 +31,9 @@ simple and consistent system management capabilities via `gnome-settings`.
 
 # Get Regolith 2.0
 
-{{< hint danger >}}
+{{< alert icon="👉" >}}
 Currently the Regolith 2.0 release is [in active development](https://github.com/orgs/regolith-linux/projects/16). For production use, [Regolith 1.6](https://regolith-linux.org) is recommended.
-{{< /hint >}}
+{{< /alert >}}
 
 {{< tabs "uniqueid" >}}
 {{< tab "Ubuntu 20.04" >}}
@@ -59,9 +59,9 @@ sudo apt install regolith-desktop
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
-{{< hint warning >}}
+{{< alert icon="👉" >}}
 The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
-{{< /hint >}}
+{{< /alert >}}
 
 {{< /tab >}}
 {{< tab "Ubuntu 21.10" >}}
@@ -87,9 +87,9 @@ sudo apt install regolith-desktop
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
-{{< hint warning >}}
+{{< alert icon="👉" >}}
 The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
-{{< /hint >}}
+{{< /alert >}}
 
 {{< /tab >}}
 
@@ -116,9 +116,9 @@ sudo apt install regolith-desktop
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
-{{< hint warning >}}
+{{< alert icon="👉" >}}
 The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
-{{< /hint >}}
+{{< /alert >}}
 
 {{< /tab >}}
 {{< tab "Ubuntu-based ISO" >}}

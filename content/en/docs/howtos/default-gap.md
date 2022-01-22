@@ -4,9 +4,9 @@ description: >
   Change the pixels between windows.
 ---
 
-{{< hint danger >}}
+{{< alert icon="👉" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< /alert >}}
 
 Like most configuration in Regolith, the i3-gaps gap size can be tuned via `Xresources` ([See here]({{< ref "/docs/Reference/xresources.md" >}}) for all Xresource definitions).
 

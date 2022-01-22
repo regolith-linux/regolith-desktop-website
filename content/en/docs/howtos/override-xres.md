@@ -4,15 +4,15 @@ description: >
   Learn how to stage user copies of Regolith configuration files
 ---
 
-{{< hint danger >}}
+{{< alert icon="👉" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< /alert >}}
 
 Regolith relies on the [Xresources system](https://en.wikipedia.org/wiki/X_resources) to provide a consolidated interface configuration. By changing `Xresources` values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for some of the blocklets on the bar.
 
-{{< hint info >}}
+{{< alert icon="👉" >}}
 In Regolith, `Xresources` values can be changed via two methods: supplying your own `Xresources` files, and overriding the existing `Xresources` values. The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break your customizations. If you copy the `Xresources` tree completely you'll need to integrate any breaking changes in future versions manually.
-{{< /hint >}}
+{{< /alert >}}
 
 ## Initialization
 

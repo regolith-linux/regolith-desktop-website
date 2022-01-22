@@ -4,9 +4,9 @@ description: >
   Hide i3-bar by default
 ---
 
-{{< hint danger >}}
+{{< alert icon="👉" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< /alert >}}
 
 Add the line
 ```

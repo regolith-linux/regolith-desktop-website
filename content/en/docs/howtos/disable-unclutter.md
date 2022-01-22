@@ -4,9 +4,9 @@ description: >
   Disable unclutter-xfixes
 ---
 
-{{< hint danger >}}
+{{< alert icon="👉" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< /alert >}}
 
 By default the mouse cursor disappears if unused for a few seconds. If you prefer that the mouse cursor always remains visible on the screen, follow these steps:
 
