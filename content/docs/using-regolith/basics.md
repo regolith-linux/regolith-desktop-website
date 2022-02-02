@@ -10,15 +10,6 @@ description: >
 ---
 
 While we'll cover everything in greater detail in other areas of the documentation, this page covers basic usage of Regolith.
-
-## The Super Key
-
-Most keybindings you'll be using with Regolith start with the {{< keys "super" >}} key. This key typically says "WIN" or has a MS Windows logo on it. On a Mac it is the Command {{< keys "⌘" >}} key. Going forward, this key will simply be referred to as {{< keys "super" >}} but keep in mind that you can change which physical button {{< keys "super" >}} maps to in your configuration if you choose to.
-
-## Launchers
-
-Regolith provides several launchers as the primary way of interacting with your system. Each of these launchers has a consistent look and feel but provides access to a specific entity. Default launchers are provided for applications {{< keys "super,space" >}}, commands {{< keys "super,shift,space" >}}, notifications {{< keys "super,n" >}}, windows {{< keys "super,ctrl,space" >}}, and files {{< keys "super,alt,space" >}}.
-
 ### Launch an Application
 
 After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right. To launch an application, press {{< keys "super,space" >}} and a menu will be presented with all of the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only matching names. You can also scroll through the list with the arrow keys.

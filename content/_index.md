@@ -47,7 +47,7 @@ wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt
 ```
 2. Add the repository URL to your local `apt`:
 ```bash
-echo deb "[arch=amd64] https://regolith-linux.github.io/package-repo/release/ubuntu/focal/amd64 focal main" | \
+echo deb "[arch=amd64] https://regolith-release-ubuntu-focal-amd64.s3.amazonaws.com focal main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
@@ -75,7 +75,7 @@ wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt
 ```
 2. Add the repository URL to your local `apt`:
 ```bash
-echo deb "[arch=amd64] https://regolith-linux.github.io/package-repo/release/ubuntu/impish/amd64 impish main" | \
+echo deb "[arch=amd64] https://regolith-release-ubuntu-impish-amd64.s3.amazonaws.com impish main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
@@ -104,7 +104,7 @@ wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt
 ```
 2. Add the repository URL to your local `apt`:
 ```bash
-echo deb "[arch=amd64] https://regolith-linux.github.io/package-repo/release/debian/bullseye/amd64 bullseye main" | \
+echo deb "[arch=amd64] https://regolith-release-debian-bullseye-amd64.s3.amazonaws.com bullseye main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
@@ -117,21 +117,13 @@ sudo apt install regolith-desktop
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint warning >}}
-The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
+The Regolith Desktop is very different from common desktop environments. By default it does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
 {{< /hint >}}
-
-{{< /tab >}}
-{{< tab "Ubuntu-based ISO" >}}
-
-1. Download an ISO image of [Regolith R1.6 on Ubuntu 21.04 (Hirsute)](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-hirsute-hirsute_standard-1.6.0/Regolith_1.6.0_hirsute.iso) <i class="fas fa-cloud-download-alt"></i> or [Regolith R1.6 on Ubuntu 20.04 (Focal)](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-focal-focal_standard-1.6.0/Regolith_1.6.0_focal.iso) <i class="fas fa-cloud-download-alt"></i> (A [separate ISO is provided for Focal on systems using BIOS boot](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-focal-focal_legacy_boot-1.6.0/Regolith_1.6.0_focal.iso)) and then use an OS installation tool such as USB Creator to write the downloaded file onto a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
-2. Reboot the computer and select the USB flash drive to boot from.
-3. Install or run the live environment by providing information when prompted during the setup process. See [this tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop) to learn more about the installation process.
-4. When prompted, reboot the computer and login to your new Regolith environment!
 
 {{< /tab >}}
 {{< tab "Other..." >}} 
 
-Other options are available and documented in the [package repository for Regolith](https://github.com/regolith-linux/package-repo), including support for `arm64` based systems.
+Other options are available and documented in the [package repository for Regolith](https://github.com/regolith-linux/voulage), including support for `arm64` based systems.
 
 {{< /tab >}}
 {{< /tabs >}}

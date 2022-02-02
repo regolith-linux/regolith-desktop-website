@@ -12,11 +12,10 @@ description: >
 
 Regolith's default interface lacks any visual hint as to how to launch applications or perform other common tasks. This can make the first time experience a bit confusing. However using the Regolith interface is relatively simple by only committing the following two keybindings to memory:
 
-| Action | Keybinding |
-|--------|------------|
-|Keybinding Viewer | {{< keys "super,shift,?" >}} |
-|App Launcher | {{< keys "super,space" >}} |
-
+| Action | Keybinding | Purpose |
+|--------|------------|---------|
+|Keybinding Viewer | {{< keys "super,shift,?" >}} | View and execute available keybindings |
+|App Launcher | {{< keys "super,space" >}} | Launch a desktop application |
 ### The Super Key
 
 Most keybindings you'll be using with Regolith start with the {{< keys "super" >}} key. This key typically says "WIN" or has a MS Windows logo on it. On a Mac it is the Command {{< keys "⌘" >}} key. Going forward, this key will simply be referred to as {{< keys "super" >}} but keep in mind that you can change which physical button {{< keys "super" >}} maps to in your configuration if you choose to.

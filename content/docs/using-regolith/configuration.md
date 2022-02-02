@@ -33,10 +33,10 @@ Colors, wallpaper, window and bar layouts and other visual factors are bundled t
 ```console
 $ apt search ^regolith-look-
 [...]
-regolith-look-cahuella/bionic,now 2.4.9 amd64
+regolith-look-nord/focal,now 0.3.5-1 amd64
 [...]
-$ sudo apt install regolith-look-cahuella
-$ regolith-look set cahuella
+$ sudo apt install regolith-look-nord
+$ regolith-look set nord
 $ regolith-look refresh
 ```
 
@@ -61,7 +61,7 @@ To change other, more advanced keybindings, creating a user copy of the i3 confi
 
 Regolith uses the i3 window manager or a variant called [`i3-gaps`](https://github.com/Airblader/i3) depending on what packages are installed. The window manager controls how windows are drawn, how keybindings are configured, some start-up applications, and other details. By default, the Regolith configuration file for i3 is located at `/etc/regolith/i3/config`.  Additionally, Regolith uses a relatively new feature of i3 known as config partials. These config snippets are stored in `/etc/regolith/i3/config.d`.
 
-## Almost Everything Else
+## System Mangement
 
 The Settings app, or `gnome-control-center` as it's also known, is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.
 
