@@ -4,7 +4,7 @@ type: docs
 bookToc: false
 ---
 
-# The Regolith Desktop Environment
+# The Regolith Desktop Environment 2.0
 
 ![](/regolith-empty.png)
 
