@@ -46,6 +46,9 @@ We're currently in pre-alpha phase of the development process. The environment i
 
 Due to the volunteer nature of the Regolith project, it's simply not possible to a promise ship date.  However, we would like to have something usable by the time of the next LTS version of Ubuntu is released, in April 2022.
 
+## Expected Upgrade Experience
+
+The Regolith 2 desktop environment will require the removal of the existing Regolith 1.x PPA and the addition of a new Debian repository.  `regolith-desktop` will continue to be the top-level package that provides the complete desktop environment.  As before, i3 config files can be entirely controlled by users by staging a copy in their XDG user configuration directory, however with `i3` `4.20+`, a new option of simply providing any additional configuration via config partials is also supported.
 ## Learn More
 
 [See here for details](http://regolith-desktop.com/#get-regolith-20) on how to install the current pre-release version of Regolith 2, and [here for information on how you can provide feedback or contribute](http://regolith-desktop.com/#get-regolith-20).
