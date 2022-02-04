@@ -1,4 +1,4 @@
-# This is the https://regolith-desktop.org website
+# This is the https://regolith-desktop.com website
 
 This site uses the [Hugo static site generator](https://gohugo.io/) and the [Book theme](https://themes.gohugo.io/themes/hugo-book/).
 
