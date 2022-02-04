@@ -8,17 +8,16 @@ weight: 1
 
 ## Introduction
 
-Regolith 1.6 is the end of the line for the existing Regolith desktop. The new major version 2 provides for a simplification of Regolith as a whole, with some new features as well.  This upgrade will not be backwards compatible with any custom configuration files in the 1.x series.  A number of changes made this major version bump a requirement, such as:
+Regolith 2 is the next major release of the Regolith Desktop environment. Here is a summary of the big changes in the release:
 
-* Enable the ability to use `i3` or `i3-gaps` interchangeably
-* Simplify the loading of Xresources, discovery and management of looks
+* Use `i3` or `i3-gaps` interchangeably
+* Simplify the loading of Xresources, discovery, and management of looks
 * Support for i3 config partials, allowing for safer and richer extension capabilities
 * Provide a package topography necessary for future changes including alternative sessions and backends
-* Debian support
-* New desktop executor: Ilia
+* Debian Bullseye support, along with Ubuntu Focal and Impish
+* Move to new custom desktop executor `ilia` from `rofi` for app and command launching, notifications, and more
 
-However it should be noted that Regolith 2 is not radically different than the previous major version. This major version
-bump is to allow for users to upgrade on their own schedules.  As such, the 1.x package repository (PPA) will not be used for Regolith 2 packages.
+Regolith 1.6 is the end of the line for the existing Regolith desktop. The new major version 2 provides for a simplification of Regolith as a whole, with some new features as well.  This upgrade will not be backwards compatible with 1.x series (but as always, users may choose to specify their own i3 config). However Regolith 2 is not radically different than the previous version. This major version bump is to allow for users to upgrade on their own schedules.  As such, the 1.x package repository (PPA) will not be used for Regolith 2 packages.
 
 ## Release Status
 
