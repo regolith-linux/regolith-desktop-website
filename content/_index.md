@@ -100,7 +100,7 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Register the Regolith public key to your local `apt`:
 ```bash
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt-key add -
+wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
 ```
 2. Add the repository URL to your local `apt`:
 ```bash
