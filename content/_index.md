@@ -64,7 +64,7 @@ The Regolith Desktop is very different from common desktop environments. By defa
 {{< /hint >}}
 
 {{< /tab >}}
-{{< tab "Ubuntu 21.10" >}}
+{{< tab "Ubuntu 22.04" >}}
 
 Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
@@ -75,7 +75,7 @@ wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee
 ```
 2. Add the repository URL to your local `apt`:
 ```bash
-echo deb "[arch=amd64] https://regolith-release-ubuntu-impish-amd64.s3.amazonaws.com impish main" | \
+echo deb "[arch=amd64] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
