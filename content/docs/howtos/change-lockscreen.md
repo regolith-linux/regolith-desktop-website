@@ -18,7 +18,7 @@ $ gsettings set org.gnome.gnome-flashback screensaver false
 
 ### 2. Cause Your Lock screen program to Run from i3 Keybinding
 
-Specify the following override line in your `~/.config/regolith/Xresources` file (substituting `your-script.sh` with the command you wish to use for the locking your screen):
+Specify the following override line in your `~/.config/regolith2/Xresources` file (substituting `your-script.sh` with the command you wish to use for the locking your screen):
 
 ```toml
 i3-wm.program.lock: your-script.sh
@@ -27,5 +27,5 @@ i3-wm.program.lock: your-script.sh
 For example, assuming you have `i3lock` installed:
 
 ```console
-$ echo "i3-wm.program.lock: /usr/bin/i3lock" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.program.lock: /usr/bin/i3lock" >> ~/.config/regolith2/Xresources
 ```

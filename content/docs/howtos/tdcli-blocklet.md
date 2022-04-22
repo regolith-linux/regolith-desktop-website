@@ -31,7 +31,7 @@ Now, if you click on the `td-cli` blocklet (on the left of the time blocklet in 
 
 {{< img "images/tdcli_window.png" "The td-cli pop-out window">}}
 
-You can set this blocklet to only show number of uncompleted tasks in the bar by setting the following key in your `Xresource` file, for example, `~/.config/regolith/Xresources`:
+You can set this blocklet to only show number of uncompleted tasks in the bar by setting the following key in your `Xresource` file, for example, `~/.config/regolith2/Xresources`:
 
 ```console
 i3xrocks.todo.uncompleted: true

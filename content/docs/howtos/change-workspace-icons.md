@@ -32,7 +32,7 @@ Follow these steps to override the default workspace label with your own:
 2. Add a line to your `Xresources` overrides file with the workspace number and character you wish to use:
 
 ```console
-$ echo "i3-wm.workspace.06.name: 6:" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.workspace.06.name: 6:" >> ~/.config/regolith2/Xresources
 ```
 
 3. Refresh your UI:
@@ -47,7 +47,7 @@ In i3, workspace labels are only updated when a workspace is created. Ensure you
 
 ### Changing Labels
 
-The same approach can be used to specify textual descriptions of your workspaces. For example, adding the following lines to your `~/.config/regolith/Xresources` file will change the first three workspaces:
+The same approach can be used to specify textual descriptions of your workspaces. For example, adding the following lines to your `~/.config/regolith2/Xresources` file will change the first three workspaces:
 
 ```
 i3-wm.workspace.01.name: 1: Terminal

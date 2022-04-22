@@ -12,13 +12,15 @@ description: >
 
 ## Wallpaper
 
-The wallpaper can be changed via the Settings app, or {{< keys "super,c" >}}, by going to the Background tab and selecting the preferred image.
+Wallpaper can be set by specifying the path to the wallpaper image via the Xresources key `gnome.wallpaper`.  
 
-{{< img "images/regolith-screenshot-settings-wallpaper.png" "The background selection in the Settings app">}}
+Example: 
 
-Wallpaper can also be set via [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) for those that prefer file-based configuration management.  This can be done by specifying the path to the wallpaper image via the Xresources key `gnome.wallpaper`.
+```console
+$ echo "gnome.wallpaper: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+$ regolith-look refresh 
+```
 
-Regardless of which style you prefer, you can refer to the [more extensive documentation]({{< ref "/docs/howtos/configure-wallpaper.md" >}}) for additional details.
 
 ## Status Bar Indicators
 
@@ -44,7 +46,7 @@ Installed Looks may also be set via the Look Dialog, activated via {{< keys "sup
 
 ## Keybindings
 
-The most common keybinding change is the {{< keys "super" >}} key. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith/Xresources`:
+The most common keybinding change is the {{< keys "super" >}} key. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith2/Xresources`:
 
 ```toml
 i3-wm.mod: Mod1
@@ -59,11 +61,11 @@ To change other, more advanced keybindings, creating a user copy of the i3 confi
 
 ## Window Behavior
 
-Regolith uses the i3 window manager or a variant called [`i3-gaps`](https://github.com/Airblader/i3) depending on what packages are installed. The window manager controls how windows are drawn, how keybindings are configured, some start-up applications, and other details. By default, the Regolith configuration file for i3 is located at `/etc/regolith/i3/config`.  Additionally, Regolith uses a relatively new feature of i3 known as config partials. These config snippets are stored in `/etc/regolith/i3/config.d`.
+Regolith uses the i3 window manager or a variant called [`i3-gaps`](https://github.com/Airblader/i3) depending on what packages are installed. The window manager controls how windows are drawn, how keybindings are configured, some start-up applications, and other details. By default, the Regolith configuration file for i3 is located at `/etc/regolith/i3/config`.  Additionally, Regolith uses a relatively new feature of i3 known as config partials. These config snippets are stored in `/usr/share/regolith/i3/config.d/`.
 
 ## System Mangement
 
-The Settings app, or `gnome-control-center` as it's also known, is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.
+The `regolith-control-center` app is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.
 
 ## Further Reading
 

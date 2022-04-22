@@ -23,9 +23,9 @@ When a Regolith session is started, Xresources are loaded in the following order
 | `~/.Xresources`                 | Y        | Intended for non-Regolith settings                                                |
 | `~/.Xresources-regolith`        | Y        | A global override to replace all Regolith settings                                |
 | `/etc/regolith/styles/root`     | N        | The default Regolith `Xresources` file if `~/.Xresources-regolith` does not exist |
-| `~/.config/regolith/Xresources` | Y        | Applies specific overrides to `Xresources` defaults                               |
+| `~/.config/regolith2/Xresources` | Y        | Applies specific overrides to `Xresources` defaults                               |
 
-It is recommended to use `~/.config/regolith/Xresources` for customization as it doesn't require the specification of redundant settings and is easier to maintain over time.
+It is recommended to use `~/.config/regolith2/Xresources` for customization as it doesn't require the specification of redundant settings and is easier to maintain over time.
 
 ## Determining which values can be changed
 
@@ -48,9 +48,9 @@ Note that the commands presented below append text to a file, so running the com
 
 ### Example - Update the UI for High DPI Screens
 
-By using the `~/.config/regolith/Xresources` override file, we will only need to specify the values we wish to change. The `xrdb` tool can be used to determine what current values are set to.
+By using the `~/.config/regolith2/Xresources` override file, we will only need to specify the values we wish to change. The `xrdb` tool can be used to determine what current values are set to.
 
-1. Create or add the following value to your `~/.config/regolith/Xresources` file:
+1. Create or add the following value to your `~/.config/regolith2/Xresources` file:
 
 ```console
 Xft.dpi: 192
@@ -71,7 +71,7 @@ $ regolith-look refresh
 ```console
 $ xrdb -query | grep position
 i3-wm.bar.position:	bottom
-$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith2/Xresources
 $ regolith-look refresh
 ```
 
@@ -80,22 +80,22 @@ $ regolith-look refresh
 ```console
 $ xrdb -query | grep gtk
 gnome.gtk.theme:	Ayu-Mirage-Dark
-$ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith/Xresources
+$ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith2/Xresources
 $ regolith-look refresh
 ```
 
 ### Example - Disable the System Tray
 
 ```console
-$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith2/Xresources
 $ regolith-look refresh
 ```
 
 ### Example - Use Alt instead of Win as Super
 
 ```console
-$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith/Xresources
-$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith2/Xresources
+$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith2/Xresources
 ```
 
 Then Reload i3 for the change to take effect (on Regolith 1.5+ there is an active regression here with a [temporary fix in the issue](https://github.com/regolith-linux/regolith-desktop/issues/504))
@@ -105,7 +105,7 @@ Then Reload i3 for the change to take effect (on Regolith 1.5+ there is an activ
 Some users prefer to use the `nm-applet` program to configure and manage their wireless network (from Regolith 1.5 onwards `nm-applet` is run by default in the background). i3 config file can be updated to launch any arbitrary program at start time. But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file. For this to work, also make sure that the system tray is enabled (see above).
 
 ```console
-$ echo "i3-wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith2/Xresources
 ```
 
 This change requires you to log back in before the change takes effect.
