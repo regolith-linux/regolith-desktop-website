@@ -22,7 +22,11 @@ $ sudo apt autoremove
 
 ## Install Regolith 2.0
 
-Now that the 1.x packages have been removed, follow the directions on [regolith-desktop.com](regolith-desktop.com) to add the 2.x package repository and install packages.
+Now that the 1.x packages have been removed, follow the directions on [regolith-desktop.com](regolith-desktop.com) to add the 2.x package repository and install packages.  After installing the desktop ensure that all packages are up-to-date:
+
+```console
+$ sudo apt upgrade
+```
 
 ## Note on Changes in 2.x
 
