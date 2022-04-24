@@ -4,10 +4,6 @@ description: >
   Configure Regolith to use a lock screen other than `gnome-flashback`
 ---
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
-
 ### 1. Configure `gnome-flashback` to Disable Built-in Lockscreen
 
 By default `gnome-flashback` handles the lock screen for Regolith. This can be adjusted by modifying it's configuration via the `gsettings` command line program:

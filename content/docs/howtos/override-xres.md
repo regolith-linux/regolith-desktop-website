@@ -21,8 +21,7 @@ When a Regolith session is started, Xresources are loaded in the following order
 | File                            | Optional | Notes                                                                             |
 | ------------------------------- | -------- | --------------------------------------------------------------------------------- |
 | `~/.Xresources`                 | Y        | Intended for non-Regolith settings                                                |
-| `~/.Xresources-regolith`        | Y        | A global override to replace all Regolith settings                                |
-| `/etc/regolith/styles/root`     | N        | The default Regolith `Xresources` file if `~/.Xresources-regolith` does not exist |
+| `/usr/share/regolith-look/**/`     | N        | The Regolith `Xresources` associated with looks |
 | `~/.config/regolith2/Xresources` | Y        | Applies specific overrides to `Xresources` defaults                               |
 
 It is recommended to use `~/.config/regolith2/Xresources` for customization as it doesn't require the specification of redundant settings and is easier to maintain over time.
