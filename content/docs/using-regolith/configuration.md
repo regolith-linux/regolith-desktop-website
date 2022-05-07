@@ -150,7 +150,7 @@ i3-wm.alt: Mod4
 
 ## System Mangement
 
-The `regolith-control-center` app is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.  The application may also be launched from a terminal with command `regolith-settings`.
+The `regolith-control-center` app is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.  The application may also be launched from a terminal with command `regolith-control-panel`.
 
 ## Further Reading
 
