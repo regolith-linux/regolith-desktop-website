@@ -1,0 +1,300 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Release notes for Regolith 2.0"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="2.0 Release Notes"><meta property="og:description" content="Release notes for Regolith 2.0"><meta property="og:type" content="article"><meta property="og:url" content="https://regolith-desktop.com/docs/reference/Releases/regolith-2.0-release-notes/"><meta property="article:modified_time" content="2022-05-07T13:22:47-07:00"><title>2.0 Release Notes | Regolith Desktop</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.3a67dda0e2e31cdd898218d88ff64b8c1b1fa9ba4c6fa26ab52e0ea5551b14df.css integrity="sha256-OmfdoOLjHN2JghjYj/ZLjBsfqbpMb6JqtS4OpVUbFN8=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/en.search.min.d371797aa0f6c66631933478cf1ae531543abb18e502398d6c139d3421a5c2d6.js integrity="sha256-03F5eqD2xmYxkzR4zxrlMVQ6uxjlAjmNbBOdNCGlwtY=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><img src=/regolith-logo.png alt="Regolith Desktop"></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><span>Using Regolith</span><ul><li><a href=https://regolith-desktop.com/docs/using-regolith/first-launch/>First Launch</a></li><li><a href=https://regolith-desktop.com/docs/using-regolith/basics/>Basic Usage</a></li><li><a href=https://regolith-desktop.com/docs/using-regolith/configuration/>Configuration</a></li></ul></li><li><input type=checkbox id=section-36a2e89f4a5867cd31fc4eacbc82b305 class=toggle>
+<label for=section-36a2e89f4a5867cd31fc4eacbc82b305 class="flex justify-between"><a href=https://regolith-desktop.com/docs/howtos/>How To</a></label><ul><li><a href=https://regolith-desktop.com/docs/howtos/workspace-on-output/>Assign a workspace to a specific Output (Display)</a></li><li><a href=https://regolith-desktop.com/docs/howtos/add-remove-blocklets/>Change Bar Status indicators</a></li><li><a href=https://regolith-desktop.com/docs/howtos/replace-notification-system/>Change Notification Systems</a></li><li><a href=https://regolith-desktop.com/docs/howtos/time-format/>Change the Bar Date and Time Format</a></li><li><a href=https://regolith-desktop.com/docs/howtos/change-terminal/>Change the Default Terminal</a></li><li><a href=https://regolith-desktop.com/docs/howtos/default-gap/>Change the Default Window Gap</a></li><li><a href=https://regolith-desktop.com/docs/howtos/change-lockscreen/>Change the lock screen program</a></li><li><a href=https://regolith-desktop.com/docs/howtos/terminal-font/>Change the Terminal Font Size</a></li><li><a href=https://regolith-desktop.com/docs/howtos/change-workspace-icons/>Change Workspace Icons and Labels</a></li><li><a href=https://regolith-desktop.com/docs/howtos/disable-unclutter/>Disable Mouse Hiding (unclutter)</a></li><li><a href=https://regolith-desktop.com/docs/howtos/find-install-packages/>Find and Install Packages</a></li><li><a href=https://regolith-desktop.com/docs/howtos/hide-i3-bar-by-default/>How to Hide i3-bar by default</a></li><li><a href=https://regolith-desktop.com/docs/howtos/floating-window/>Launch an app in a Floating Window</a></li><li><a href=https://regolith-desktop.com/docs/howtos/vanilla-i3-gaps/>Launch Default i3 Session</a></li><li><a href=https://regolith-desktop.com/docs/howtos/tdcli-blocklet/>Manage a To-Do List</a></li><li><a href=https://regolith-desktop.com/docs/howtos/override-xres/>Override Xresources</a></li><li><a href=https://regolith-desktop.com/docs/howtos/remove-unneeded-deps/>Remove Unneeded Dependencies</a></li><li><a href=https://regolith-desktop.com/docs/howtos/stage-configs/>Stage Config Files</a></li><li><a href=https://regolith-desktop.com/docs/howtos/multiple-batteries/>Support Multiple Batteries</a></li><li><a href=https://regolith-desktop.com/docs/howtos/install-from-unstable/>Update packages selectively</a></li><li><a href=https://regolith-desktop.com/docs/howtos/upgrade-1.6-2.0/>Upgrade Regolith from 1.6 to 2.0</a></li><li><a href=https://regolith-desktop.com/docs/howtos/gnome-flashback-session/>Verify behavior against upstream</a></li><li><a href=https://regolith-desktop.com/docs/howtos/configure-wallpaper/>Wallpaper Configuration</a></li></ul></li><li><input type=checkbox id=section-084ba1dbb512652712ad881ff8045610 class=toggle checked>
+<label for=section-084ba1dbb512652712ad881ff8045610 class="flex justify-between"><a href=https://regolith-desktop.com/docs/reference/>Reference</a></label><ul><li><a href=https://regolith-desktop.com/docs/reference/keybindings/>Keybindings</a></li><li><a href=https://regolith-desktop.com/docs/reference/configurations/>Config Files</a></li><li><a href=https://regolith-desktop.com/docs/reference/packages/>Packages</a></li><li><a href=https://regolith-desktop.com/docs/reference/xresources/>Xresources</a></li><li><input type=checkbox id=section-b2dbd6f0eb55391244ec47ab44f365a6 class=toggle checked>
+<label for=section-b2dbd6f0eb55391244ec47ab44f365a6 class="flex justify-between"><a href=https://regolith-desktop.com/docs/reference/Releases/>Releases</a></label><ul><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-2.0-release-notes/ class=active>2.0 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.6.0-release-notes/>1.6 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.5.3-release-notes/>1.5.3 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.5.2-release-notes/>1.5.2 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.5.1-release-notes/>1.5.1 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.5-release-notes/>1.5 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.4.1-release-notes/>1.4.1 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.4-release-notes/>1.4 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.3.1-release-notes/>1.3.1 Release Notes</a></li><li><a href=https://regolith-desktop.com/docs/reference/Releases/regolith-1.3-release-notes/>1.3 Release Notes</a></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://github.com/regolith-linux target=_blank rel=noopener>Github</a></li><li><a href=https://regolith-linux.herokuapp.com/ target=_blank rel=noopener>Slack</a></li></ul></nav><script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>2.0 Release Notes</strong>
+<label for=toc-control></label></div></header><article class=markdown><p>Regolith 2.0 is a major release with some breaking changes to looks and i3 configuration, and includes several improvements and optimizations.</p><h2 id=features>Features
+<a class=anchor href=#features>#</a></h2><ul><li>The desktop UI component <code>rofi</code> was replaced with desktop executor designed specifically for Regolith: <a href=https://github.com/regolith-linux/ilia><code>ilia</code></a>.</li><li>The desktop UI component <code>gnome-control-center</code> was replaced with a settings app designed specifically for Regolith: <a href=https://github.com/regolith-linux/regolith-control-center><code>regolith-control-center</code></a>.</li><li>The Regolith i3 config file has been destructured into <a href=https://github.com/regolith-linux/regolith-i3-config/tree/master/partials>partials</a> and packaged to provide better configuration management.</li><li>The Regolith <a href=https://github.com/regolith-linux/regolith-look-default/blob/main/usr/share/regolith-look/default/root>Look XResource scheme</a> has been updated to be simpler, more flexible, and consistent.</li><li>The keybindings viewer <code>remontoire</code> was replaced by <code>ilia</code> to provide better support for keyboard-driven workflow and easier searching.</li><li>Regolith supports both <code>i3</code> and <code>i3-gaps</code> based on user preference.</li></ul><h2 id=fixes>Fixes
+<a class=anchor href=#fixes>#</a></h2><ul><li><code>Alt</code> and <code>Super</code> can now be swapped easily with an Xresources override.</li><li>Alternate languages can be selected from in the desktop executor.</li></ul><h2 id=changelog-delta-from-regolith-16-to-regolith-20>Changelog Delta from Regolith 1.6 to Regolith 2.0
+<a class=anchor href=#changelog-delta-from-regolith-16-to-regolith-20>#</a></h2><h3 id=changes-in-regolith-lightdm-config>Changes in <code>regolith-lightdm-config</code>:
+<a class=anchor href=#changes-in-regolith-lightdm-config>#</a></h3><pre><code>8a0d5c7 Switch font from jetbrainsmono to dejavusansmono
+3eac0ff Update dependencies for Regolith 2
+</code></pre><h3 id=changes-in-regolith-session>Changes in <code>regolith-session</code>:
+<a class=anchor href=#changes-in-regolith-session>#</a></h3><pre><code>a939fad UI refresh logic moves to looks
+cd72a50 gnome Xresource moves to looks
+4f67559 Add Xsession file to add user desktop app dir to XDG_DATA_DIR to enable ilia to index desktop files there
+e3c83d5 Remove unimplemented 'stage' command.  Misc cleanup
+79cb6b1 Fix font spec from i3 to gnome
+f776087 Only set gnome theme properties if defined by xres
+870303f Set gnome interface font from look during refresh
+9a9d98f Fix reference to term profile script and add soft dep to address problem in https://github.com/regolith-linux/regolith-look-extra/pull/1.
+0ef3f55 Re-apply root Xresources after regolith Xres to ensure user values are set
+a844012 Create new virtual package 'regolith-look-2' to specify a look. Version bump for cleaner upgrades from 1.x
+d4bec14 Test that wallpaper file exists before setting
+5c78271 Move Xresources.d from /etc to /usr/share/regolith due to apt policy issues with files in /etc.
+2612147 Add breaking package from Regolith 1.6 due to file conflict
+3a6b087 Fix sessoin init issue reported in https://github.com/regolith-linux/voulage/issues/2
+c24ed0d Move to regolith2 config dir
+db8953b Fix session init bug with invalid look path root
+e89a150 Several bug fixes for Regolith 2 Xresource merging/loading
+daf7368 Extract common session logic to lib file.  Fix regolith-look refresh and list
+5f54d14 Add user defined post logoff script
+614f6e3 Import regolith-look script from deprecated package regolith-styles.  Add build automation.
+06f8c79 Fix path to renamed default look
+eb85712 Depend on updated look package, add virtual look package.
+</code></pre><h3 id=changes-in-regolith-i3-config>Changes in <code>regolith-i3-config</code>:
+<a class=anchor href=#changes-in-regolith-i3-config>#</a></h3><pre><code>96c4762 Decompose navigation, workspace config, and base launchers from i3 config file.  Misc fixes
+cf78c9d Add ability to specify custom stylesheet to ilia
+8cad4c9 Remove unneeded dep from i3-gaps to i3-snapshot.  Cleanup
+f8aec01 Remove session, resize, and user programs from hard dependencies in i3 config
+0b7aa04 Extract i3 style config to optional partial
+fa0e452 Allow resize mode keybinding to be overridden to address https://github.com/regolith-linux/regolith-desktop/issues/627
+967fb85 remontoire and ilia keybindings conflict because they both specify help. Set 'conflicts' in debian accodringly.  Addresses https://github.com/regolith-linux/regolith-desktop/issues/628.
+09eb0e2 Add label for gaps
+72af37e Move i3 partials from /etc to /usr
+e58e1d7 Move i3xrocks conf.d from /etc to /usr/share/regolith due to apt policy issues with files in /etc.
+aa1ff5c Migrate from gnome-control-center to regolith-control-center
+2b4e580 Fix ftue dependency
+64fd601 Add breaking package from Regolith 1.6 due to file conflict
+cdbb722 looks will host i3wm xres files, not here
+fd0974e Move to regolith2 config dir
+8e50f48 Add '--no-startup-id' when exec launchers
+72a3636 Conditionally apply i3 xresources, allowing looks to override
+b9072d5 Make rofi and ilia versions of rofication ui mutually exclusive
+bf61321 Add seperate rofications for rofi and ilia front ends
+1c23f65 Update alt variable to always occur on lhs due to i3 variable expansion constraints.  Related to https://github.com/regolith-linux/regolith-i3-gaps-config/pull/39
+486151b Use ilia for look selector
+118f557 use var for alt rather than hardcode. based from https://github.com/regolith-linux/regolith-i3-gaps-config/pull/39.
+5880f98 Remove i3-next-workspace from common config
+641f9d3 Switch to ilia for rofication UI
+09765da Add all next-workspace bindings
+6384067 add configurable workspace movement, from https://github.com/regolith-linux/regolith-i3-gaps-config/pull/37.
+22815c6 Add keybinding viewer (ilia), replacing remontoire
+73fda78 Add ilia i3 config
+ac206fc Consolidate some partials to handle variable access limitations w/ i3 partials
+d17ee44 build automation
+2c5091f Update partials for i3 4.20
+</code></pre><h3 id=changes-in-regolith-look-default>Changes in <code>regolith-look-default</code>:
+<a class=anchor href=#changes-in-regolith-look-default>#</a></h3><pre><code>422a36b Specify custom stylesheet for ilia to fix Debian issue with incorrect font used in keybindings view
+68041dc Wallpaper fixes to default loader.  Misc tweaks and cleanup
+37ce868 Fix missing default_loader.sh in package
+555f857 Fix bug when single background color is specified.
+77d3d40 tweaks to font sizes.  Fix debian control
+b2adcdb Refactor looks to be more consistent, own refresh logic, and better represent gtk theme elements
+ed8cc44 Fix typeface for volume glyph
+f6460f3 Create new virtual package 'regolith-look-2' to specify a look. Version bump for cleaner upgrades from 1.x
+7381999 Alt char for temp
+63f4fd1 Use alternate temp glphy to fix mystery ordering issue
+0ccb167 Add missing icon theme dependency
+5ef662a Move i3wm xres here. Fix non-active workspace color in bar
+6d37a7f Fix glyphs in typeface not specified by font
+1bf39d8 Update default look to use nerdfonts version of jetbrains mono.  update glyphs.
+5b1973b Make looks non-exclusive
+d778c94 Add rofication-ilia
+0cc844b Switch from rofi to ilia
+5cabe6e Fix gnome theme key
+902a01b Add virtual package for a look
+68d072b Change from minimal to default
+</code></pre><h3 id=changes-in-regolith-look-extra>Changes in <code>regolith-look-extra</code>:
+<a class=anchor href=#changes-in-regolith-look-extra>#</a></h3><pre><code>f1e0088 Specify ilia stylesheet in all looks
+efe94ba Fatter borders in gruvbox for upcoming rounded corners
+baaace4 Add hardy wallpaper to gruvbox. Publish gruvbox look
+db7f92e Fix missed mapping from gtk monospace font to bar workspacce font. Reduce blackhole font size.  Assocated with https://github.com/regolith-linux/regolith-look-extra/issues/2
+e572851 Add gruvbox look
+7703e34 Tweaks polish and fixes to looks
+066907f Sort glpyhs
+67de712 Depend on default look for loader script
+0ef9875 Merge branch 'main' of github.com:regolith-linux/regolith-look-extra into main
+791321a Move blackhole to new Xres scheme
+6944d7d Move nord to new Xres scheme
+b8736b0 correct description and dependencies for blackhole
+9da8e9c Package @ploum look blackhole.  Related https://github.com/regolith-linux/regolith-look-extra/pull/1
+fdbbd77 Fix font on wifi and workspace glyph to address https://github.com/regolith-linux/regolith-desktop/issues/631
+4420393 Fix font on volume indicator to address https://github.com/regolith-linux/regolith-desktop/issues/631
+8c7656f Create new virtual package 'regolith-look-2' to specify a look. Version bump for cleaner upgrades from 1.x
+3cddd15 More tweaks to term colors for nord
+1f4bd7f Tweaks to term colors for nord
+094fc90 visual refresh to nord look
+9c956e1 Move nord to use nerdfonts version of sourcecodepro.  Misc fixes for Regolith 2 xres
+965eac1 use original i3-wm Xres def for nord.  Disable gruvbox package.
+4503a80 Fix def names for Regolith 2
+0203187 Make looks non-exclusive
+e2c9a3a Remove redundant look. Add nord adapted from 1.x
+2e15aa8 Add docs, changelog
+acb101f Initial commit. Ported from regolith-look-default
+</code></pre><h3 id=changes-in-regolith-i3xrocks-config>Changes in <code>regolith-i3xrocks-config</code>:
+<a class=anchor href=#changes-in-regolith-i3xrocks-config>#</a></h3><pre><code>7b2e609 Fix typo in media player script
+ad20e67 i3xrocks Xresource moves into looks
+9f73ef5 Specify font for both label and value after transition to nerdfonts
+674e498 Fix celcius degree postfix on temp
+87ab5d2 Migrate configuration from /etc to /usr/share due to problematic apt policy in /etc directories
+885be5f Swap gnome-control-center for regolith-control-center
+e8fd320 Add missing dep on rofication block
+9170923 Fix ilia launch from notification
+1b24e7b Deprecate python rofication status block for shell script. Launch ilia on click by default
+</code></pre><h3 id=changes-in-regolith-desktop>Changes in <code>regolith-desktop</code>:
+<a class=anchor href=#changes-in-regolith-desktop>#</a></h3><pre><code>2bf8c77 Push look dependencies down to regolith-look
+f2f4435 Fix typo in packaging, use proper symver
+e82a954 Revise package architecture.  Remove -small desktop package, go back to single base package.
+12e39b6 Regolith 2 package model
+adf1a53 Sync changelog to distro
+a7c6444 Update versioning
+</code></pre><h3 id=changes-in-regolith-ftue>Changes in <code>regolith-ftue</code>:
+<a class=anchor href=#changes-in-regolith-ftue>#</a></h3><pre><code>6c5e76f Cleanup, better font default
+a7bbfbb Add delay when loading ftue keybindings view in attempt to avoid race w/ i3 config loading
+820a297 Use new conf directory for regolith2
+1b542ed Add missing dependency
+1135876 Switch to ilia over remontoire for keybinding viewer
+0be6a48 Rename term profile script for consistency
+eefcb55 Depend on uuid-runtime to fix debian ftue
+</code></pre><h3 id=changes-in-regolith-compositor-xcompmgr>Changes in <code>regolith-compositor-xcompmgr</code>:
+<a class=anchor href=#changes-in-regolith-compositor-xcompmgr>#</a></h3><pre><code>593c3e0 Move to regolith2 config dir
+</code></pre><h3 id=changes-in-regolith-compositor-compton-glx>Changes in <code>regolith-compositor-compton-glx</code>:
+<a class=anchor href=#changes-in-regolith-compositor-compton-glx>#</a></h3><pre><code>94cf43a Move to regolith2 config dir
+6a234bf Add new name for zoom window, from https://github.com/regolith-linux/regolith-compositor-compton-glx/issues/3
+454c5d6 Do not fade ilia
+</code></pre><h3 id=changes-in-picom>Changes in <code>picom</code>:
+<a class=anchor href=#changes-in-picom>#</a></h3><pre><code>e96a7b2 Package v9.0 release
+</code></pre><h3 id=changes-in-regolith-compositor-picom-glx>Changes in <code>regolith-compositor-picom-glx</code>:
+<a class=anchor href=#changes-in-regolith-compositor-picom-glx>#</a></h3><pre><code>49ddcf9 Move to regolith2 config dir
+2ee5b27 Add new name for zoom window, from https://github.com/regolith-linux/regolith-compositor-compton-glx/issues/3
+d27bbab Do not fade ilia
+9fe5b87 Update to use @Filip-K picom config from https://github.com/regolith-linux/regolith-desktop/issues/578.
+</code></pre><h3 id=changes-in-remontoire>Changes in <code>remontoire</code>:
+<a class=anchor href=#changes-in-remontoire>#</a></h3><pre><code>f72a575 Cleanup source formatting
+96090d5 Add scrollable parent to flowbox to allow vertical scrolling of content when exceeds bounds of flowbox
+dc210de Don't draw scroll hints for horizontal scrolling
+</code></pre><h3 id=changes-in-ilia>Changes in <code>ilia</code>:
+<a class=anchor href=#changes-in-ilia>#</a></h3><pre><code>8443061 Tolerate empty css override. Add class name to keybindings view
+b7ffa94 Numerous tweaks to help facility. Misc cleanup
+6954aa1 Do not hardcode font in stylesheet
+6f19ef1 Cleaner simpler approach to help content
+761c5a8 Customize style via hardcoded CSS. Enable command line options for specifying css file or no styling.  Misc fixes.  Addresses https://github.com/regolith-linux/ilia/issues/12 and https://github.com/regolith-linux/ilia/issues/8
+57b2037 Add ability to specify custom stylesheet
+7ac9bda Add help feature, enabled by default
+f64cc2e Better error message for invalid page
+6967488 Fix array size for pages
+66f6127 Update heuristic to grab resources at start time (experimental)
+6130e48 Use XDG_DATA_DIRS to source desktop files to address https://github.com/regolith-linux/ilia/issues/11
+83081f0 Load config partials for keybindings
+e0a0c46 Update dev branches for automation
+ec11206 Only grab keyboard and mouse
+f5ac6f2 terminal page cleanup
+0612e62 Add feature to resize dialog
+499a084 Fix window launcher to close after action.  Misc cleanup
+c4b0658 Add help flag to print all page types
+9bc1b97 Add sleep after app launch to prevent intermittent failures
+fa5163f Retry to grab inputs if fails
+47dfe97 Use GTK POPUP window to avoid fullscreen window management of i3.  Relates to https://github.com/i3/i3/issues/4749
+c1434d0 Fix textlist return selected value
+cfa437d remove/disable debug output
+a72ffc4 Add tracker dependency
+8c040ca Tracker page functionally complete
+5b8ff8f WIP: tracker partially working.
+35637ec Update build files and add tracker dep
+f67ede6 Window selection causes focus
+00af209 Read windows from i3 and display
+843bef4 Add partial parser for i3 tree struct
+2adf24e Add working textlist page
+97b1234 Fix message truncation bug
+a979865 Do not handle any key events
+4f3d557 Enable delete notification function
+425c1b1 Allow pages to handle key events
+e5af321 Icon and layout for notifications
+f006839 parse i3 config file to extract default values for variables
+ec55468 Keybindings viewable
+961eda0 autovala updates
+611fdb0 Add classes from remontoire to read i3 config
+a76e39a WIP: icon/detail view.  waiting for model changes from rofication before proceeding
+082f659 Can read/display notifications
+1fc0c56 Add ability to specify primary page on command line
+fec9a81 Use hashtable for app launch frequency lookups
+3e93feb Prefer apps that start with query string.  Misc cleanup.
+05c0989 Add UI polish
+6450a6f WIP: terminal page
+f0c2d4a Add spinner UI to clean up app launch lifecycle
+5dc43f0 WIP, bug w/ intermittant launch failure
+4e2db83 Extract desktop app loading into class.  Introduce general interface for pages.
+b51bf40 Add app metadata files. Add build support for gsettings schema.
+6517de8 Improve startup ux. Load apps from user dirs.  Close dialog before launching app.
+35a1d08 Ignore whitespace in filter
+111241d Support pg up/down. Configurable window and icon size.
+8c78649 Add unused cmake files to appease autovala/meson
+bbe2851 Selected apps rise to top of list
+25a447d add gsettings schema
+579c8d6 Can launch apps
+b58252a Initial import from autovala creation
+</code></pre><h3 id=changes-in-lago>Changes in <code>lago</code>:
+<a class=anchor href=#changes-in-lago>#</a></h3><pre><code>960c8a0 Refactor rofication client to be sessionless.
+6313183 More legible output from ls
+31f495e Add empty files to appease autovala generated build files
+b5bda93 Add usage to readme
+1117188 Add readme
+084b41d Add packaging
+57939e8 clean up cli
+43419b5 format source
+03132a4 Add source format config
+f85a450 fix src filename
+bf452d8 Add rm and clear functions
+fd4d765 CP: retrieve something from rofication dameon
+</code></pre><h3 id=changes-in-regolith-rofication>Changes in <code>regolith-rofication</code>:
+<a class=anchor href=#changes-in-regolith-rofication>#</a></h3><pre><code>a75b21a Fix ImportError exception for Python 3.10 or higher (#20)
+7481617 Add command to delete list of notifications by id (#17)
+6d4673b Merge pull request #16 from cfsmp3/master
+cd1ecc8 Fix parsing hints
+dab5dae Change path of queue storage file so it's not directly in the home dir
+fb3d631 Merge pull request #15 from cfsmp3/master: Add timestamps to notifications
+86285dc Undo unneeded changes in daemon
+2be67af Made internal format a Python timestamp, convert to string in the UI
+21b65d5 Fix conflicts
+0ae8cca Read timestamp format from XResources
+faeb17f Feature: store the notification state of 'icon' (#13)
+3f14e05 Fix some typos in README (#14)
+ffdc26e Add daemon
+83f5b74 Make datetime format configurable via arg
+1ed370a Add timestamp to notifications
+e45205f Fix some typos in README (#12)
+02329b5 Package last change
+29ff56c keep ui open if there are still notifications left (#10)
+</code></pre><h3 id=changes-in-regolith-control-center>Changes in <code>regolith-control-center</code>:
+<a class=anchor href=#changes-in-regolith-control-center>#</a></h3><pre><code>6a39ca015 Add debug info for invalid panel id, related to https://github.com/regolith-linux/regolith-control-center/issues/2
+cffbd8e1b Remove dim screen toggle
+db3357d3b Remove background panel.  See https://github.com/regolith-linux/regolith-desktop/issues/630
+87aab1ec1 For better i3 interop, all modal dialogs close if they lose focus, preventing poor UX from hidden window
+a17b0366d Swap ubuntu logo for regolith
+b60229237 Remove unneeded lock panel
+a5e34f04c Remove unneeded notifications panel
+2cfbbb664 Remove unused fractional scaling
+558309824 Remove ubuntu and connectivity panels for debian support
+001a1e711 Remove patch that fails to build on debian
+0f95095a0 Remove gnome-language-selector support, ubuntu specific
+158dcd919 Remove whoopsie support, ubuntu specific
+bff27cc66 Update dbus service name to prevent collisiosn with gnome-control-center
+2660efbf5 Rename desktop entry to avoid collision with gnome-control-center II
+0c21d0d4b Rename desktop entry to avoid collision with gnome-control-center
+be157d991 Remove upstream file
+5d934dc83 Rename cc-remote-login-helper to prevent collision w/ gnome-control-center
+17421fbbd Ignore files not installed in removed packages
+44784f21d Remove unshipped files
+a7a5a9fb7 Fix references to renamed schema
+aa55ad004 Remove -data and -faces packages, use upstream
+185af0ddd Rename gnome-power-manager icons to prevent collision w/ gnome-control-center
+ffc1ed0f7 Update flatpack fields for regolith
+a9859968f Change filenames to avoid collision w/ gnome-control-center
+8bd341a1d Tweak desktop file to differentiate from gnome-control-center
+695219bc7 Change filenames to avoid collision w/ gnome-control-center
+024a179f3 Move gettext files due to collision with gnome-control-center
+4a3db8b67 Add context to readme
+8c1b2c9fd Remove failing dep
+55c3a8d0f Remove failing or redundant patches
+b160acbd3 Remove upstream readme
+9b5bdb062 Regress polkit-gobject-1 dependency to match debian version in meson (experimental)
+20bd1f69e Global rename from gnome-control-center to regolith-control-center
+a86c8ef7a Fix of issue with adjusting output volume
+</code></pre><h3 id=changes-in-regolith-default-settings>Changes in <code>regolith-default-settings</code>:
+<a class=anchor href=#changes-in-regolith-default-settings>#</a></h3><pre><code>5aac9cb Remove texture from default wallpaper
+</code></pre><h3 id=changes-in-nordic>Changes in <code>nordic</code>:
+<a class=anchor href=#changes-in-nordic>#</a></h3><pre><code>3577075 Add built themes from release 2.1.0
+dbd6e31 Remove source files
+6f1aea6 Add debian packaging
+</code></pre><h3 id=changes-in-fonts-source-code-pro-ttf>Changes in <code>fonts-source-code-pro-ttf</code>:
+<a class=anchor href=#changes-in-fonts-source-code-pro-ttf>#</a></h3><pre><code>2fd5dfd Initial import from speedricer, debian cleanup
+</code></pre><h3 id=changes-in-fonts-nerd-fonts>Changes in <code>fonts-nerd-fonts</code>:
+<a class=anchor href=#changes-in-fonts-nerd-fonts>#</a></h3><pre><code>96d4985 Remove noto as assets are too large for github policy
+a511489 add source file
+a63a1f9 remove script from debian branch
+7842791 Commit from automation
+</code></pre></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/regolith-linux/regolith-desktop-website/commit/6a4f98a4978f47fadad6f2867e5225863490f8e0 title="Last modified by Ken Gilmer | May 7, 2022" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>May 7, 2022</span></a></div></div><script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>
