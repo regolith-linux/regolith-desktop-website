@@ -17,6 +17,7 @@ Regolith 2.0 is a major release with some breaking changes to looks and i3 confi
 * The Regolith [Look XResource scheme](https://github.com/regolith-linux/regolith-look-default/blob/main/usr/share/regolith-look/default/root) has been updated to be simpler, more flexible, and consistent. 
 * The keybindings viewer `remontoire` was replaced by `ilia` to provide better support for keyboard-driven workflow and easier searching.
 * Regolith supports both `i3` and `i3-gaps` based on user preference.
+* Fonts from the open source project [Nerd Fonts](https://nerdfonts.com) have been packaged for Regolith, simplifying font management.
 
 ## Fixes
 
