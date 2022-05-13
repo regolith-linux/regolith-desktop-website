@@ -32,38 +32,9 @@ simple and consistent system management capabilities via `gnome-settings`.
 # Get Regolith 2.0
 
 {{< hint danger >}}
-Currently the Regolith 2.0 release is [in active development](https://github.com/orgs/regolith-linux/projects/16). For production use, [Regolith 1.6](https://regolith-linux.org) is recommended.
+Currently the Regolith 2.0 release is [in beta](https://github.com/orgs/regolith-linux/projects/16). For production use, [Regolith 1.6](https://regolith-linux.org) is recommended.
 {{< /hint >}}
-
 {{< tabs "uniqueid" >}}
-{{< tab "Ubuntu 20.04" >}}
-
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
-to configure your system to read packages from the Regolith package repository and install the desktop package.
-
-1. Register the Regolith public key to your local `apt`:
-```bash
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt-key add -
-```
-2. Add the repository URL to your local `apt`:
-```bash
-echo deb "[arch=amd64] https://regolith-release-ubuntu-focal-amd64.s3.amazonaws.com focal main" | \
-sudo tee /etc/apt/sources.list.d/regolith.list
-```
-3. Update `apt` and install Regolith
-```bash
-sudo apt update
-sudo apt install regolith-desktop
-```
-4. System Restart
-
-The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
-
-{{< hint warning >}}
-The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
-{{< /hint >}}
-
-{{< /tab >}}
 {{< tab "Ubuntu 22.04" >}}
 
 Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
@@ -82,6 +53,37 @@ sudo tee /etc/apt/sources.list.d/regolith.list
 ```bash
 sudo apt update
 sudo apt install regolith-desktop
+sudo apt upgrade
+```
+4. System Restart
+
+The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+
+{{< hint warning >}}
+The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
+{{< /hint >}}
+
+{{< /tab >}}
+
+{{< tab "Ubuntu 20.04" >}}
+
+Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
+to configure your system to read packages from the Regolith package repository and install the desktop package.
+
+1. Register the Regolith public key to your local `apt`:
+```bash
+wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt-key add -
+```
+2. Add the repository URL to your local `apt`:
+```bash
+echo deb "[arch=amd64] https://regolith-release-ubuntu-focal-amd64.s3.amazonaws.com focal main" | \
+sudo tee /etc/apt/sources.list.d/regolith.list
+```
+3. Update `apt` and install Regolith
+```bash
+sudo apt update
+sudo apt install regolith-desktop
+sudo apt upgrade
 ```
 4. System Restart
 
@@ -111,6 +113,7 @@ sudo tee /etc/apt/sources.list.d/regolith.list
 ```bash
 sudo apt update
 sudo apt install regolith-desktop
+sudo apt upgrade
 ```
 4. System Restart
 
@@ -119,6 +122,18 @@ The login manager will need to be restarted for the new desktop session to be re
 {{< hint warning >}}
 The Regolith Desktop is very different from common desktop environments. By default it does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
 {{< /hint >}}
+
+{{< /tab >}}
+{{< tab "Upgrade from Regolith 1.6" >}} 
+
+To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04, follow these steps:
+
+1. Upgrade the system to all the latest packages on current release (either Ubuntu 20.04 or 21.10)
+2. Perform the [Ubuntu system upgrade to 22.04](https://www.omgubuntu.co.uk/2022/04/how-to-upgrade-to-ubuntu-22-04-lts), however **DO NOT** reboot as prompted **until the following steps are completed**
+3. After the 22.04 upgrade completes, follow **all** of the Regolith 2 installation instructions as described on this page on tab "Ubuntu 22.04" including upgrading all packages after installing the `regolith-desktop` package.
+4. Now reboot the system and select the regolith session at the login screen
+
+Custom configurations from Regolith 1.6 will need to be manually ported to Regolith 2.  In order to make this upgrade simpler, Regolith 2 uses the user config directory of `~/.config/regolith2`.  It will not read files from the Regolith 1.x user config directory `~/.config/regolith`.  Please refer to [the configuration page](docs/using-regolith/configuration) for more details.
 
 {{< /tab >}}
 {{< tab "Other..." >}} 
