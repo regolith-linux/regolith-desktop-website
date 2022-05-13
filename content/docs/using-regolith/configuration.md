@@ -92,8 +92,11 @@ Default i3 Configuration in Regolith Desktop 2
 | regolith-i3-base-launchers   | Launch terminal and browser | 
 | regolith-i3-default-style    | Window behavior |
 | regolith-i3-navigation       | Navigation keybindings |
+| regolith-i3-networkmanager   | Network and wifi functions |
+| regolith-i3-next-workspace   | Workspace utility |
 | regolith-i3-resize           | Resize keybindings |
 | regolith-i3-session          | Session keybindings |
+| regolith-i3-unclutter        | Hide mouse cursor when unused |
 | regolith-i3-user-programs    | Optionally launch user programs specified in Xresources |
 | regolith-i3-workspace-config | Workspace keybindings |
 
