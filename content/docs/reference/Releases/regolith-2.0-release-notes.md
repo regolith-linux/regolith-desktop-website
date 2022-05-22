@@ -19,13 +19,90 @@ Regolith 2.0 is a major release with some breaking changes to looks and i3 confi
 * Regolith supports both `i3` and `i3-gaps` based on user preference.
 * Fonts from the open source project [Nerd Fonts](https://nerdfonts.com) have been packaged for Regolith, simplifying font management.
 
-## Fixes
+## Usability Fixes
 
 * `Alt` and `Super` can now be swapped easily with an Xresources override.
 * Alternate languages can be selected from in the desktop executor.
+* `regolith-control-center` prevents some pop-ups from being hidden and locking UI
+
+## Changelog Delta from Regolith 2.0 Beta 1 to Beta 2
+
+### Changes in `regolith-session`:
+```
+f57f66b Add script to collect diagnostic info for troubleshooting
+4494e68 Fix broken refresh logic after Xres file change introduced in previous version
+cdaa330 Fix regolith look update logic to write to Regolith-specific Xresource file
+```
+
+### Changes in `regolith-i3-config`:
+```
+406b428 Add docs about config partials
+521016c Add OR dependency on i3-gaps-wm to resolve packaging issue found on Bullseye
+a6b6fea Load all pages in ilia when users load the keybindings dialog
+0f6a018 Add networkmanager, next-workspace, and unclutter as soft dependencies
+7921136 Require i3-gaps version with config partials in regolith 2
+a2390bd Require i3 version with config partials in regolith 2
+2711991 Fix typo of new mapping for Xres mono font to i3 bar font
+1238b4a Fix typo of new mapping for Xres font to i3 font
+```
+
+### Changes in `whitesur-gtk-theme`:
+```
+cc591d7 Initial commit. Built from release 2022-02-21
+```
+
+### Changes in `regolith-look-default`:
+```
+fcb288e Default terminal profile update to true
+c849879 make the check for invalid path to wallpaper more robust
+5c2c402 removed left-over bracket
+ca61239 fixed regression in #2 + fixed other possible bug
+ad6691b Merge pull request #2 from georglauterbach/main
+c9df3c7 updated `default_loader.sh` | style, formatting & refactoring
+```
+
+### Changes in `regolith-look-extra`:
+```
+2e700f0 Use new wallpapers from GMFranceschini in nord and gruvbox looks
+a2ca36b Fix dependency
+5c7f3ed Tweaks and fixes to nevil
+ec1a158 Add nevil look
+429863c Add updated solarized-dark look
+3511556 Give rounded corners to Nord w/ custom picom config.  Misc tweaks
+f1e0088 Specify ilia stylesheet in all looks
+```
+
+### Changes in `regolith-i3xrocks-config`:
+```
+0b12b5a Use /proc/net/route for interface detection (#126)
+```
+
+### Changes in `regolith-ftue`:
+```
+e155b96 Remove unneeded sleep and launch shortcuts in all page mode
+```
+
+### Changes in `ilia`:
+```
+91e74dd Update docs
+ab57873 Add page keybindings in all-page mode
+050eac7 document page interface
+e5e8a5a Add option -a for all page mode to address https://github.com/regolith-linux/ilia/issues/17.  Misc cleanup
+cc80bc3 Fix icon in files page
+a2f29f0 Change label to 'Commands' from 'Terminal'
+3df2ca9 Add ability to launch host app to address https://github.com/regolith-linux/ilia/issues/18. Fix icon loading of notification view.
+d451b54 Minor simplification to command launching
+```
+
+### Changes in `regolith-control-center`:
+```
+1be590f260444f80661db29d2566f072b5b69300 Remove unused power_saver_low_battery option in power panel
+8310cf2bdd8463ce90b0e33f3f0aeffa8f76f3d4 Remove battery percentage toggle
+0caac0d47 Update logo
+```
 
 
-## Changelog Delta from Regolith 1.6 to Regolith 2.0
+## Changelog Delta from Regolith 1.6 to Regolith 2.0 Beta 1
 
 ### Changes in `regolith-lightdm-config`:
 ```
