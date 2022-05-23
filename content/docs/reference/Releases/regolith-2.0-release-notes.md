@@ -27,6 +27,11 @@ Regolith 2.0 is a major release with some breaking changes to looks and i3 confi
 
 ## Changelog Delta from Regolith 2.0 Beta 1 to Beta 2
 
+* New light look: regolith-look-nevil
+* Updated wallpaper for `regolith-look-nord` and `regolith-look-gruvbox` by @GMFranceschini
+* Ilia now has multi-tab mode
+* Ilia launches app from notification
+
 ### Changes in `regolith-session`:
 ```
 f57f66b Add script to collect diagnostic info for troubleshooting
