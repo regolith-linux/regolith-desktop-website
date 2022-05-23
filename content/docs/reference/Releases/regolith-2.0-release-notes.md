@@ -10,7 +10,7 @@ Regolith 2.0 is a major release with some breaking changes to looks and i3 confi
 
 ## Features
 
-* Full suppport for Debian Bullseye.
+* Adding Debian Bullseye to the list of supported OS's including Ubuntu Focal and Jammy.
 * The desktop UI component `rofi` was replaced with desktop executor designed specifically for Regolith: [`ilia`](https://github.com/regolith-linux/ilia).
 * The desktop UI component `gnome-control-center` was replaced with a settings app designed specifically for Regolith: [`regolith-control-center`](https://github.com/regolith-linux/regolith-control-center).
 * The Regolith i3 config file has been destructured into [partials](https://github.com/regolith-linux/regolith-i3-config/tree/master/partials) and packaged to provide better configuration management.
