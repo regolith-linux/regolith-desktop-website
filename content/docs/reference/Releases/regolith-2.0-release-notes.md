@@ -25,6 +25,56 @@ Regolith 2.0 is a major release with some breaking changes to looks and i3 confi
 * Alternate languages can be selected from in the desktop executor.
 * `regolith-control-center` prevents some pop-ups from being hidden and locking UI
 
+## Known Issues
+
+* No localization for `ilia` 
+
+## Changelog Delta from Regolith 2.0 Beta 2 to Beta 3
+
+### Changes in `regolith-session`:
+```
+87919c5 Revert strategy that creates merged Xresource. Simplify by just loading one override or using default look. Looks become top-down definitions of UI, and bottom up extension model deprecated.
+975c542 Cleanup
+```
+
+### Changes in `regolith-i3-config`:
+```
+4d0d5b2 polish look selector ui
+```
+
+### Changes in `regolith-look-default`:
+```
+557d76d Add lockscreen wallpaper functionality
+```
+
+### Changes in `regolith-look-extra`:
+```
+8c211ba Package changes
+b8188d3 Visual tweaks to nevil
+```
+
+### Changes in `regolith-ftue`:
+```
+ce16a93 Use stylesheet for proper font rendering on ftue help
+```
+
+### Changes in `ilia`:
+```
+4512ba1 Add seperator between category and action in keybindings view
+b8373fd Exit if super pressed to prevent blocking i3
+85f7041 Fix warning in socket close
+a870a2b Better icon for window page
+647b1bb Add missing dependency
+e2c19c1 Update textlist to render icons
+fb59b13 Plumb cmdline args to each page via DialogPage. Add title and icon parameters for TextList customization
+b83fbcb Update dialog resize keys to use alt to allow keyboard entry. Specify max bounds of window size when possible.
+```
+
+### Changes in `regolith-control-center`:
+```
+3eb9dea29 Re-add some install files for shortcuts and gschema
+```
+
 ## Changelog Delta from Regolith 2.0 Beta 1 to Beta 2
 
 * New light look: regolith-look-nevil
