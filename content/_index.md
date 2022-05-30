@@ -41,16 +41,16 @@ Regolith can be installed as system packages.  This makes updating and removing 
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
-```bash
+```console
 wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
 ```
 2. Add the repository URL to your local `apt`:
-```bash
+```console
 echo deb "[arch=amd64] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
-```bash
+```console
 sudo apt update
 sudo apt install regolith-desktop
 sudo apt upgrade
@@ -71,16 +71,16 @@ Regolith can be installed as system packages.  This makes updating and removing 
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
-```bash
+```console
 wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt-key add -
 ```
 2. Add the repository URL to your local `apt`:
-```bash
+```console
 echo deb "[arch=amd64] https://regolith-release-ubuntu-focal-amd64.s3.amazonaws.com focal main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
-```bash
+```console
 sudo apt update
 sudo apt install regolith-desktop
 sudo apt upgrade
@@ -101,16 +101,16 @@ Regolith can be installed as system packages.  This makes updating and removing 
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
-```bash
+```console
 wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
 ```
 2. Add the repository URL to your local `apt`:
-```bash
+```console
 echo deb "[arch=amd64] https://regolith-release-debian-bullseye-amd64.s3.amazonaws.com bullseye main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
-```bash
+```console
 sudo apt update
 sudo apt install regolith-desktop
 sudo apt upgrade
@@ -130,9 +130,15 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 
 1. Upgrade the system to all the latest packages on current release (either Ubuntu 20.04 or 21.10)
 2. Perform the [Ubuntu system upgrade to 22.04](https://www.omgubuntu.co.uk/2022/04/how-to-upgrade-to-ubuntu-22-04-lts), however **DO NOT** reboot as prompted **until the following steps are completed**
-3. After the 22.04 upgrade completes, execute the following update commands:
-```bash
+3. After the 22.04 upgrade completes, add the Regolith 2 package repository:
+```console
+wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
+echo deb "[arch=amd64] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
+sudo tee /etc/apt/sources.list.d/regolith.list
 sudo apt update
+```
+4. Next install the Regolith 2 desktop package:
+```console
 sudo apt install regolith-desktop # See configuration page for additional packages 
 sudo apt dist-upgrade
 ```
