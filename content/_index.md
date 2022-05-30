@@ -130,7 +130,12 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 
 1. Upgrade the system to all the latest packages on current release (either Ubuntu 20.04 or 21.10)
 2. Perform the [Ubuntu system upgrade to 22.04](https://www.omgubuntu.co.uk/2022/04/how-to-upgrade-to-ubuntu-22-04-lts), however **DO NOT** reboot as prompted **until the following steps are completed**
-3. After the 22.04 upgrade completes, follow **all** of the Regolith 2 installation instructions as described on this page on tab "Ubuntu 22.04" including upgrading all packages after installing the `regolith-desktop` package.
+3. After the 22.04 upgrade completes, execute the following update commands:
+```bash
+sudo apt update
+sudo apt install regolith-desktop # See configuration page for additional packages 
+sudo apt dist-upgrade
+```
 4. Now reboot the system and select the regolith session at the login screen
 
 Custom configurations from Regolith 1.6 will need to be manually ported to Regolith 2.  In order to make this upgrade simpler, Regolith 2 uses the user config directory of `~/.config/regolith2`.  It will not read files from the Regolith 1.x user config directory `~/.config/regolith`.  Please refer to [the configuration page](docs/using-regolith/configuration) for more details.
