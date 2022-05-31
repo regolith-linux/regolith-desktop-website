@@ -8,7 +8,7 @@ description: >
 
 Regolith 2.0 is a major release with some breaking changes to looks and i3 configuration, and includes several improvements and optimizations.
 
-## Features
+## New Features
 
 * Adding Debian Bullseye to the list of supported OS's including Ubuntu Focal and Jammy.
 * The desktop UI component `rofi` was replaced with desktop executor designed specifically for Regolith: [`ilia`](https://github.com/regolith-linux/ilia).
@@ -18,6 +18,8 @@ Regolith 2.0 is a major release with some breaking changes to looks and i3 confi
 * The keybindings viewer `remontoire` was replaced by `ilia` to provide better support for keyboard-driven workflow and easier searching.
 * Regolith supports both `i3` and `i3-gaps` based on user preference.
 * Fonts from the open source project [Nerd Fonts](https://nerdfonts.com) have been packaged for Regolith, simplifying font management.
+* A command-line utility for managing notifications, `lago` is available.
+* A command-line utility for collecting Regolith diagnostic info, `regolith-diagnostic` is available.
 
 ## Usability Fixes
 
