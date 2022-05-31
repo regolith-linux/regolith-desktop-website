@@ -42,11 +42,11 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Register the Regolith public key to your local `apt`:
 ```console
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
+wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
 ```
 2. Add the repository URL to your local `apt`:
 ```console
-echo deb "[arch=amd64] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
+echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
@@ -102,11 +102,11 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Register the Regolith public key to your local `apt`:
 ```console
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
+wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
 ```
 2. Add the repository URL to your local `apt`:
 ```console
-echo deb "[arch=amd64] https://regolith-release-debian-bullseye-amd64.s3.amazonaws.com bullseye main" | \
+echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-debian-bullseye-amd64.s3.amazonaws.com bullseye main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 3. Update `apt` and install Regolith
@@ -132,8 +132,8 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 2. Perform the [Ubuntu system upgrade to 22.04](https://www.omgubuntu.co.uk/2022/04/how-to-upgrade-to-ubuntu-22-04-lts), however **DO NOT** reboot as prompted **until the following steps are completed**
 3. After the 22.04 upgrade completes, add the Regolith 2 package repository:
 ```console
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
-echo deb "[arch=amd64] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
+wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 sudo apt update
 ```
