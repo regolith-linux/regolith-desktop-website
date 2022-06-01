@@ -41,21 +41,27 @@ Regolith can be installed as system packages.  This makes updating and removing 
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
-```console
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
-```
-2. Add the repository URL to your local `apt`:
-```console
-echo deb "[arch=amd64] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
-sudo tee /etc/apt/sources.list.d/regolith.list
-```
-3. Update `apt` and install Regolith
-```console
-sudo apt update
-sudo apt install regolith-desktop
-sudo apt upgrade
-```
-4. System Restart
+
+   ```console
+   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   ```
+
+1. Add the repository URL to your local `apt`:
+
+   ```console
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   ```
+
+1. Update `apt` and install Regolith
+
+   ```console
+   sudo apt update
+   sudo apt install regolith-desktop
+   sudo apt upgrade
+   ```
+
+1. System Restart
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
@@ -71,21 +77,27 @@ Regolith can be installed as system packages.  This makes updating and removing 
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
-```console
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt-key add -
-```
-2. Add the repository URL to your local `apt`:
-```console
-echo deb "[arch=amd64] https://regolith-release-ubuntu-focal-amd64.s3.amazonaws.com focal main" | \
-sudo tee /etc/apt/sources.list.d/regolith.list
-```
-3. Update `apt` and install Regolith
-```console
-sudo apt update
-sudo apt install regolith-desktop
-sudo apt upgrade
-```
-4. System Restart
+
+   ```console
+   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo apt-key add -
+   ```
+
+1. Add the repository URL to your local `apt`:
+
+   ```console
+   echo deb "[arch=amd64] https://regolith-release-ubuntu-focal-amd64.s3.amazonaws.com focal main" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   ```
+
+1. Update `apt` and install Regolith
+
+   ```console
+   sudo apt update
+   sudo apt install regolith-desktop
+   sudo apt upgrade
+   ```
+
+1. System Restart
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
@@ -101,21 +113,27 @@ Regolith can be installed as system packages.  This makes updating and removing 
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
-```console
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
-```
-2. Add the repository URL to your local `apt`:
-```console
-echo deb "[arch=amd64] https://regolith-release-debian-bullseye-amd64.s3.amazonaws.com bullseye main" | \
-sudo tee /etc/apt/sources.list.d/regolith.list
-```
-3. Update `apt` and install Regolith
-```console
-sudo apt update
-sudo apt install regolith-desktop
-sudo apt upgrade
-```
-4. System Restart
+
+   ```console
+   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   ```
+
+1. Add the repository URL to your local `apt`:
+
+   ```console
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-debian-bullseye-amd64.s3.amazonaws.com bullseye main" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   ```
+
+1. Update `apt` and install Regolith
+
+   ```console
+   sudo apt update
+   sudo apt install regolith-desktop
+   sudo apt upgrade
+   ```
+
+1. System Restart
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
@@ -124,25 +142,29 @@ The Regolith Desktop is very different from common desktop environments. By defa
 {{< /hint >}}
 
 {{< /tab >}}
-{{< tab "Upgrade from Regolith 1.6" >}} 
+{{< tab "Upgrade from Regolith 1.6" >}}
 
 To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04, follow these steps:
 
 1. Upgrade the system to all the latest packages on current release (either Ubuntu 20.04 or 21.10)
-2. Perform the [Ubuntu system upgrade to 22.04](https://www.omgubuntu.co.uk/2022/04/how-to-upgrade-to-ubuntu-22-04-lts), however **DO NOT** reboot as prompted **until the following steps are completed**
-3. After the 22.04 upgrade completes, add the Regolith 2 package repository:
-```console
-wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /etc/apt/trusted.gpg.d/regolith.asc
-echo deb "[arch=amd64] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
-sudo tee /etc/apt/sources.list.d/regolith.list
-sudo apt update
-```
-4. Next install the Regolith 2 desktop package:
-```console
-sudo apt install regolith-desktop # See configuration page for additional packages 
-sudo apt dist-upgrade
-```
-4. Now reboot the system and select the regolith session at the login screen
+1. Perform the [Ubuntu system upgrade to 22.04](https://www.omgubuntu.co.uk/2022/04/how-to-upgrade-to-ubuntu-22-04-lts), however **DO NOT** reboot as prompted **until the following steps are completed**
+1. After the 22.04 upgrade completes, add the Regolith 2 package repository:
+
+   ```console
+   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   sudo apt update
+   ```
+
+1. Next install the Regolith 2 desktop package:
+
+   ```console
+   sudo apt install regolith-desktop # See configuration page for additional packages 
+   sudo apt dist-upgrade
+   ```
+
+1. Now reboot the system and select the regolith session at the login screen
 
 Custom configurations from Regolith 1.6 will need to be manually ported to Regolith 2.  In order to make this upgrade simpler, Regolith 2 uses the user config directory of `~/.config/regolith2`.  It will not read files from the Regolith 1.x user config directory `~/.config/regolith`.  Please refer to [the configuration page](docs/using-regolith/configuration) for more details.
 
@@ -214,8 +236,6 @@ Desktop notifications do not compete for your attention, but rather can be manag
 
 {{< /columns >}}
 
-
-
 # Interaction
 
 {{< columns >}}
@@ -229,11 +249,13 @@ Desktop notifications do not compete for your attention, but rather can be manag
 <--->
 
 ### Discussion and Help
+
 * Join us on [Slack](https://regolith-linux.herokuapp.com/) for help and discussion
 * Search from [existing issues or create a new issue](https://github.com/regolith-linux/regolith-desktop/issues) for bugs and feature requests
 <--->
 
 ### Development
+
 * The [Regolith GitHub org](https://github.com/regolith-linux) is where development happens.
 
 {{< /columns >}}
