@@ -62,7 +62,7 @@ ce16a93 Use stylesheet for proper font rendering on ftue help
 
 ### Changes in `ilia`:
 ```
-4512ba1 Add seperator between category and action in keybindings view
+4512ba1 Add separator between category and action in keybindings view
 b8373fd Exit if super pressed to prevent blocking i3
 85f7041 Fix warning in socket close
 a870a2b Better icon for window page

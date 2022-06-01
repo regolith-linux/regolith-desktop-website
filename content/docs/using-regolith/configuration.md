@@ -72,12 +72,14 @@ $ regolith-look refresh
 Installed Looks may also be set via the Look Dialog, activated via {{< keys "super,alt,l" >}}.
 
 {{< hint danger >}}
-NOTE: Regolith 1.x looks are not compatible with Regolith 2.  As of Regolith 2 Beta 1 release, the following looks are available:
+NOTE: Regolith 1.x looks are not compatible with Regolith 2.  As of Regolith 2 Beta 3 release, the following looks are available:
 
-* blackhole
-* default
-* gruvbox
-* nord
+* blackhole (`regolith-look-blackhole`)
+* default (`regolith-look-default`)
+* gruvbox (`regolith-look-gruvbox`)
+* nevil (`regolith-look-nevil`)
+* nord (`regolith-look-nord`)
+* solarized-dark (`regolith-look-solarized-dark`)
 
 {{< /hint >}}
 
@@ -151,7 +153,7 @@ i3-wm.alt: Mod4
 
 {{< img "images/regolith-screenshot-settings-keybindings.png" "GNOME keybindings in the settings dialog">}}
 
-## System Mangement
+## System Management
 
 The `regolith-control-center` app is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.  The application may also be launched from a terminal with command `regolith-control-panel`.
 
