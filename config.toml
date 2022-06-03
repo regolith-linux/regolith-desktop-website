@@ -1,3 +1,5 @@
+googleAnalytics = "G-H87N5GZVTN"
+
 baseURL = 'https://regolith-desktop.com/'
 title = 'Regolith Desktop'
 theme = 'hugo-book'
