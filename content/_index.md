@@ -43,7 +43,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Register the Regolith public key to your local `apt`:
 
    ```console
-   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
    ```
 
 1. Add the repository URL to your local `apt`:
@@ -115,7 +115,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Register the Regolith public key to your local `apt`:
 
    ```console
-   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
    ```
 
 1. Add the repository URL to your local `apt`:
@@ -151,7 +151,7 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 1. After the 22.04 upgrade completes, add the Regolith 2 package repository:
 
    ```console
-   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    sudo apt update
