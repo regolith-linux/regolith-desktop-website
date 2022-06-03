@@ -214,7 +214,7 @@ Gnome Flashback provides consistent and simple system management. Tweak your UI,
 
 {{< columns >}}
 
-![](/regolith-screenshot-intro.png)
+![](/regolith-screenshot-look-selector.png)
 Easily switch to <a href="https://ethanschoonover.com/solarized">Solarized</a> or other looks with the <code>regolith-look</code> command. Because <b>looks</b> utilize the package manager, you only store theme resources that you're using.
 
 <--->
