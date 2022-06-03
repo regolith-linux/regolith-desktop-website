@@ -49,7 +49,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Add the repository URL to your local `apt`:
 
    ```console
-   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -85,7 +85,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Add the repository URL to your local `apt`:
 
    ```console
-   echo deb "[arch=amd64] https://regolith-release-ubuntu-focal-amd64.s3.amazonaws.com focal main" | \
+   echo deb "[arch=amd64] https://regolith-desktop.io/release-ubuntu-focal-amd64 focal main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -121,7 +121,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Add the repository URL to your local `apt`:
 
    ```console
-   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-debian-bullseye-amd64.s3.amazonaws.com bullseye main" | \
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-debian-bullseye-amd64 bullseye main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -152,7 +152,7 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 
    ```console
    wget -qO - https://regolith-linux.github.io/package-repo/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
-   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-release-ubuntu-jammy-amd64.s3.amazonaws.com jammy main" | \
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    sudo apt update
    ```
