@@ -15,7 +15,7 @@ Regolith is built for those with a working knowledge of using computers. It avoi
 and ceremony that comes along with environments designed for familiarity with legacy interfaces.
 Regolith runs [i3](https://i3wm.org/): a popular, fast, and configurable tiling window manager which
 is great for keyboard-driven interaction.  Regolith integrates i3 with other desktop components such as 
-`i3bar`, `rofication`, and `ilia` to provide a complete desktop interface.
+`i3bar`, `rofication`, and [`ilia`](https://github.com/regolith-linux/ilia#readme) to provide a complete desktop interface.
 
 <--->
 
