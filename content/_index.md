@@ -176,6 +176,8 @@ Other options are available and documented in the [package repository for Regoli
 {{< /tab >}}
 {{< /tabs >}}
 
+***
+
 {{< columns >}}
 
 ![](/regolith-ilia-keybindings.png)

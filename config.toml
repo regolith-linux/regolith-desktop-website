@@ -1,5 +1,3 @@
-googleAnalytics = "G-H87N5GZVTN"
-
 baseURL = 'https://regolith-desktop.com/'
 title = 'Regolith Desktop'
 theme = 'hugo-book'
@@ -47,6 +45,12 @@ enableGitInfo = true
   name = "Slack"
   url = "https://regolith-linux.herokuapp.com/"
   weight = 20
+
+[[menu.after]]
+  post = "<br/><br/><img src='https://badgen.net/opencollective/backers/regolith'/>"
+  name = "Support Regolith"
+  url = "https://opencollective.com/regolith/donate"
+  weight = 30
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
