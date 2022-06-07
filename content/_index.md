@@ -31,9 +31,6 @@ simple and consistent system management capabilities via `gnome-settings`.
 
 # Get Regolith 2.0
 
-{{< hint danger >}}
-Currently the Regolith 2.0 release is [in beta](https://github.com/orgs/regolith-linux/projects/16). For production use, [Regolith 1.6](https://regolith-linux.org) is recommended.
-{{< /hint >}}
 {{< tabs "uniqueid" >}}
 {{< tab "Ubuntu 22.04" >}}
 
