@@ -31,6 +31,55 @@ Regolith 2.0 is a major release with some breaking changes to looks and i3 confi
 
 * No localization for `ilia` 
 
+## Changelog Delta from Regolith 2.0 Beta 3 to General Release
+
+### Changes in `regolith-session`:
+```
+1061f67 Re-apply user Xres after look is applied. Resolves https://github.com/regolith-linux/regolith-desktop/issues/644
+```
+
+### Changes in `regolith-i3-config`:
+```
+e25d88c Add missing newlines at end of config files from @buck10
+da5615f Add conflicts relationship between ilia and rofi i3 config
+244547e Add descriptions for bin packages
+a11ff93 Allow look-selector icon to be overridden. Specify better default icon
+```
+
+### Changes in `regolith-look-default`:
+```
+fa7fb24 Update ilia CSS style
+659d545 Add docs to Xresources
+```
+
+### Changes in `regolith-look-extra`:
+```
+d7b784b Update ilia CSS style
+bc88936 Fix look descriptions
+fd84e99 Fix incorrect path to ilia css
+```
+
+### Changes in `regolith-i3xrocks-config`:
+```
+b35690d fixed xml escaping (#127)
+```
+
+## Changes in `ilia`:
+```
+fa548a8 Remove hard code style. Squelch right-click context menu to avoid hang.
+9ed0020 Extract hard coded style to CSS
+16d088b Add rofi reference
+05dcaee Fix code sections
+018deb4 Updates to readme for release
+```
+
+## Changes in `regolith-control-center`:
+```
+e85c3ced1 Fix crash on power panel (jammy only)
+6a584746b Update regolith logo from final revision
+```
+
+
 ## Changelog Delta from Regolith 2.0 Beta 2 to Beta 3
 
 ### Changes in `regolith-session`:
