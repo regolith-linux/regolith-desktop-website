@@ -17,6 +17,7 @@ Follow online instructions for installing a fresh copy of Ubuntu Server versions
 Once Ubuntu Server has been installed, log into a terminal session.  Use the following URLs to download the installation directions as a text file:
 
 Ubuntu 22.04: https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt
+
 Ubuntu 20.04: https://regolith-desktop.com/install-release-ubuntu-20.04-amd64.txt
 
 Example:
