@@ -1,0 +1,11 @@
+# Register the Regolith public key to your local apt
+wget -qO - https://regolith-desktop.io/regolith.key | sudo apt-key add -
+
+# Add the repository URL to your local apt
+echo deb "[arch=amd64] https://regolith-desktop.io/release-ubuntu-focal-amd64 focal main" | \
+sudo tee /etc/apt/sources.list.d/regolith.list
+
+# Update apt and install Regolith
+sudo apt update
+sudo apt install regolith-desktop
+sudo apt upgrade
