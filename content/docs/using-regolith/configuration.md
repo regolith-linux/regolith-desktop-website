@@ -21,14 +21,7 @@ echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >
 regolith-look refresh 
 ```
 
-To change the image treatment (zoom, scale, etc.) of the wallpaper image, set `regolith.wallpaper.options`.  Options are:
-* “none”
-* “wallpaper”
-* “centered”
-* “scaled”
-* “stretched”
-* “zoom”
-* “spanned”
+To change the image treatment (zoom, scale, etc.) of the wallpaper image, set `regolith.wallpaper.options`.  Options are: `none`, `wallpaper`, `centered`, `scaled`, `stretched`, `zoom`, `spanned`
 
 Example:
 
