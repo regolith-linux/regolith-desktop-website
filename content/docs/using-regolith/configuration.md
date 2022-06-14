@@ -17,36 +17,61 @@ Wallpaper can be set by specifying the path to the wallpaper image via the Xreso
 Example, assuming the file `/usr/share/backgrounds/hardy_wallpaper_uhd.png` is present: 
 
 ```console
-$ echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
-$ regolith-look refresh 
+echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+regolith-look refresh 
 ```
+
+To change the image treatment (zoom, scale, etc.) of the wallpaper image, set `regolith.wallpaper.options`.  Options are:
+* “none”
+* “wallpaper”
+* “centered”
+* “scaled”
+* “stretched”
+* “zoom”
+* “spanned”
+
+Example:
+
+```console
+echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith2/Xresources
+regolith-look refresh 
+```
+
 
 To specify a color rather than an image use the Xresource key `regolith.wallpaper.color.primary`:
 
 ```console
-$ echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-$ echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
-$ regolith-look refresh 
+echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
+regolith-look refresh 
 ```
 
 To specify a secondary color and gradient:
 
 ```console
-$ echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-$ echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
-$ echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith2/Xresources
-$ echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith2/Xresources
-$ regolith-look refresh 
+echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith2/Xresources
+regolith-look refresh 
 ```
 
+### Lockscreen Wallpaper
+
+The lockscreen wallpaper can be managed in the same way as the desktop wallpaper.  The keys are the same as desktop wallpaper, but with `lockscreen` prefixed to `wallpaper`, like so: `regolith.lockscreen.wallpaper...`.  For example, to specify a lockscreen image:
+
+```console
+echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+regolith-look refresh 
+```
 
 ### Disable Wallpaper handling
 
 If you wish to manage wallpaper externally to Regolith, simply specify empty values for wallpaper image and color:
 
 ```console
-$ echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-$ echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith2/Xresources
 ```
 
 ## Status Bar Indicators
@@ -60,28 +85,22 @@ Status indicators such as CPU load, date and time, notifications, weather, and o
 Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. The terminal command `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `gruvbox` look:
 
 ```console
-$ apt search ^regolith-look-
+apt search ^regolith-look-
 [...]
 regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
 [...]
-$ sudo apt install regolith-look-gruvbox
-$ regolith-look set gruvbox
-$ regolith-look refresh
+sudo apt install regolith-look-gruvbox
+regolith-look set gruvbox
+regolith-look refresh
 ```
 
-Installed Looks may also be set via the Look Dialog, activated via {{< keys "super,alt,l" >}}.
+To simply install all available looks:
 
-{{< hint danger >}}
-NOTE: Regolith 1.x looks are not compatible with Regolith 2.  As of Regolith 2 Beta 3 release, the following looks are available:
+```console
+sudo apt install regolith-look-*
+```
 
-* blackhole (`regolith-look-blackhole`)
-* default (`regolith-look-default`)
-* gruvbox (`regolith-look-gruvbox`)
-* nevil (`regolith-look-nevil`)
-* nord (`regolith-look-nord`)
-* solarized-dark (`regolith-look-solarized-dark`)
-
-{{< /hint >}}
+Installed Looks may also be set via the Look Selector dialog, activated via {{< keys "super,alt,l" >}}.
 
 ## i3 Features
 
@@ -105,11 +124,11 @@ Default i3 Configuration in Regolith Desktop 2
 Soft dependencies can be removed without causing packages that depend upon it to be removed. This means that any of the listed packages can be removed.  Users can make tweaks to configuration in a more stable manner by replacing a default configuration partial with their own version.  This can be achieved by copying the partial to be customized into `~/.config/regolith2/i3/config.d/` and removing the original via apt.  For example, to customize Workspace keybindings:
 
 ```console
-$ mkdir -p ~/.config/regolith2/i3/config.d
-$ cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith2/i3/config.d/
-$ vim ~/.config/regolith2/i3/config.d/40_workspace-config # make desired changes
-$ sudo apt remove regolith-i3-workspace-config # removes the default version
-$ # restart i3 or log back in
+mkdir -p ~/.config/regolith2/i3/config.d
+cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith2/i3/config.d/
+vim ~/.config/regolith2/i3/config.d/40_workspace-config # make desired changes
+sudo apt remove regolith-i3-workspace-config # removes the default version
+# restart i3 or log back in
 ```
 
 ### All i3 Configuration Packages
