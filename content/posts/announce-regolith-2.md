@@ -3,7 +3,7 @@ author: "Ken Gilmer"
 date: 2022-2-05
 linktitle: Announcing Regolith 2
 title: Announcing Regolith 2
-weight: 1
+weight: 20
 ---
 
 ## Introduction
