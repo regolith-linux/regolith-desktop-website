@@ -6,33 +6,23 @@ description: >
   All Regolith `Xresources` key definitions
 ---
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
-
 | `Xresources` Key                                   | Description                                                                                                         |
-| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| St.color0 - St.color15                             | Color definitions for terminal                                                                                      |
-| St.font                                            | Font definition for st-term                                                                                         |
-| Xcursor.size                                       | X cursor size                                                                                                       |
-| Xcursor.theme                                      | X cursor theme                                                                                                      |
-| Xft.antialias                                      | X anti-alias flag                                                                                                   |
-| Xft.dpi                                            | X DPI setting                                                                                                       |
-| Xft.hinting                                        | X hinting                                                                                                           |
-| Xft.hintstyle                                      | X hint style                                                                                                        |
-| Xft.rgba                                           | X rgb setting                                                                                                       |
-| gnome.gtk.theme                                    | GTK Theme                                                                                                           |
-| gnome.icon.theme                                   | GTK Icon Theme                                                                                                      |
-| gnome.terminal.audible-bell                        | Enables audible bell in gnome-terminal (`true                                                                       | false`)                                                             |
+| -------------------------------------------------- | ------------------------------------------------------------------- |
+| gtk.theme_name                                    | GTK Theme   |
+| gtk.icon_theme_name  | GTK Icon Theme  |
+| gnome.terminal.audible-bell                        | Enables audible bell in gnome-terminal (`true / false`)                       |
+| gtk.document_font_name | GTK Document Font Name |
+| gtk.font_name | GTK Font Name |
+| gtk.monospace_font_name | GTK Monospace Font Name |
 | gnome.terminal.background-transparency-percent     | Background transparency value for gnome-terminal (`0 - 100`). See also `gnome.terminal.use-transparent-background`. |
 | gnome.terminal.font                                | Font definition for gnome-terminal                                                                                  |
-| gnome.terminal.scrollbar                           | Flag to enable/disable scrollbar (`never                                                                            | always`)                                                            |
-| gnome.terminal.use-transparent-background          | Enables transparent background in gnome-terminal (`true                                                             | false`). See also `gnome.terminal.background-transparency-percent`. |
+| gnome.terminal.scrollbar                           | Flag to enable/disable scrollbar (`never / always`)                                                            |
+| gnome.terminal.use-transparent-background          | Enables transparent background in gnome-terminal (`true / false`). See also `gnome.terminal.background-transparency-percent`. |
 | gnome.wallpaper                                    | GNOME Wallpaper (can be overridden in Settings)                                                                     |
 | gnome.wm.theme                                     | GNOME Window Manager Theme (unused)                                                                                 |
 | i3-wm.alt                                          | Key mapping for Alt key. See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details.       |
 | i3-wm.bar.background.color                         | Bar Background Color                                                                                                |
-| i3-wm.bar.font                                     | Bar Font                                                                                                            | Pango font specification for font(s) rendered on the bar            |
+| i3-wm.bar.font                                     | Bar Font. Pango font specification for font(s) rendered on the bar            |
 | i3-wm.bar.position                                 | Bar Screen Position                                                                                                 |
 | i3-wm.bar.separator.color                          | Color of seperator between blocks                                                                                   |
 | i3-wm.bar.statusline.color                         |                                                                                                                     |
@@ -117,13 +107,6 @@ NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-li
 | i3xrocks.value.color                               | Color of numerical value in bar module                                                                              |
 | i3xrocks.value.font                                | Font for numerical value in bar module                                                                              |
 | i3xrocks.warning                                   | Warning color for bar module                                                                                        |
-| rofi.drun-display-format                           | Fields to render in drun mode in Rofi                                                                               |
-| rofi.icon-theme                                    | Rofi icon theme                                                                                                     |
-| rofi.font                                          | Rofi font                                                                                                           |
-| rofi.modi                                          | Rofi modes                                                                                                          |
-| rofi.show-icons                                    | true if the Rofi dialog should render app icons, false otherwise                                                    |
-| rofi.theme                                         | Path to the Rofi theme file                                                                                         |
-| rofi.window-format                                 |                                                                                                                     |
 
 # Optional `Xresources` keys
 
@@ -131,8 +114,6 @@ The following `Xresources` keys are undefined by default but can be used by user
 
 | `Xresources` Key                  | Description                                                                                                                                                                                         |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| rofi.search.help                  | Show help text on the file search dialog, defaults to `true`                                                                                                                                        |
-| rofi.search.limit                 | Total number of items to return from an `mlocate` search, default: 64                                                                                                                               |
 | i3-wm.gaps.focus_follows_mouse    | The window under the mouse has focus if enabled                                                                                                                                                     |
 | i3-wm.program.launcher.app        | Command i3 executes from the app launcher keybinding                                                                                                                                                |
 | i3-wm.program.launcher.cmd        | Command i3 executes from the command launcher keybinding                                                                                                                                            |
