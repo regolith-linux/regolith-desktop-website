@@ -6,13 +6,41 @@ description: >
   Make changes to the way Regolith looks and behaves.
 ---
 
-## Configuration
+# Recommended Packages for New Users
 
---- 
+## Looks
 
-## Wallpaper
+Install all the official Regolith looks:
 
-Wallpaper can be set by specifying the path to the wallpaper image via the Xresources key `regolith.wallpaper.file`.  
+```console
+sudo apt install regolith-look-*
+```
+
+## Status Indicators
+
+The following snippet installs status indicator packages recommended for new users:
+
+```console
+sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
+```
+
+To remove any of these indicators later, simply uninstall them from your system.  Example:
+
+```console
+sudo apt remove i3xrocks-info
+```
+
+### Laptop Battery Status
+
+View the current battery status on a laptop:
+
+```console
+sudo apt install i3xrocks-battery
+```
+
+# Wallpaper
+
+Most Regolith Looks provide a default desktop color or image.  The wallpaper can be set by specifying the path to the wallpaper image via the Xresources key `regolith.wallpaper.file`.  
 
 Example, assuming the file `/usr/share/backgrounds/hardy_wallpaper_uhd.png` is present: 
 
@@ -29,7 +57,6 @@ Example:
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith2/Xresources
 regolith-look refresh 
 ```
-
 
 To specify a color rather than an image use the Xresource key `regolith.wallpaper.color.primary`:
 
@@ -49,7 +76,7 @@ echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith2/Xr
 regolith-look refresh 
 ```
 
-### Lockscreen Wallpaper
+## Lockscreen Wallpaper
 
 The lockscreen wallpaper can be managed in the same way as the desktop wallpaper.  The keys are the same as desktop wallpaper, but with `lockscreen` prefixed to `wallpaper`, like so: `regolith.lockscreen.wallpaper...`.  For example, to specify a lockscreen image:
 
@@ -58,7 +85,7 @@ echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper
 regolith-look refresh 
 ```
 
-### Disable Wallpaper handling
+## Disable Wallpaper handling
 
 If you wish to manage wallpaper externally to Regolith, simply specify empty values for wallpaper image and color:
 
@@ -67,15 +94,17 @@ echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith2/Xresources
 ```
 
-## Status Bar Indicators
+# Status Bar Indicators
 
 Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages. For example, to show a status indicator for your laptop battery, simply run `sudo apt install i3xrocks-battery` and then refresh the session using `regolith-look refresh`. To find what indicators are available, run `apt search ^i3xrocks-` or search for `i3xrocks-` in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto). There is [more documentation available]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) for configuring status indicators, also called "blocklets".
 
-{{< img "images/regolith-screenshot-synaptic-search.png" "Searching for blocklets in Synaptics" >}}
+# Looks
 
-## Looks
+Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks.  To select an installed look the keybinding {{< keys "super,alt,l" >}} presents a dialog:
 
-Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. The terminal command `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `gruvbox` look:
+![](/regolith-ilia-look-selector.png)
+
+Alternatively, the terminal command `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `gruvbox` look:
 
 ```console
 apt search ^regolith-look-
@@ -93,9 +122,7 @@ To simply install all available looks:
 sudo apt install regolith-look-*
 ```
 
-Installed Looks may also be set via the Look Selector dialog, activated via {{< keys "super,alt,l" >}}.
-
-## i3 Features
+# i3 Features
 
 Starting with Regolith 2.0, many aspects of i3 configuration are managed via the package manager.  i3 `4.20` introduced the ability to specify include files as part of the configuration.  Regolith provides all of it's i3 configuration via these files, also called "config partials".  These packages install thier i3 config partials into `/usr/share/regolith/i3/config.d`.  By installing and removing packages, i3 configuration can be customized for specific preferences while still allowing to track upstream changes for aspects of the configuration that need not vary.  By default, when the `regolith-desktop` package is installed, these configuration elements are also installed as soft dependencies:
 
@@ -124,7 +151,7 @@ sudo apt remove regolith-i3-workspace-config # removes the default version
 
 In this way, the unmodified config partials can continue to get updates and bug fixes without impacting user-specific configuration.
 
-### All i3 Configuration Packages
+## All i3 Configuration Packages
 
 The following contains a list of all i3 configuration packages available in Regolith 2.0:
 
@@ -152,7 +179,7 @@ The following contains a list of all i3 configuration packages available in Rego
 | regolith-i3-user-programs    | Optionally launch user programs specified in Xresources |
 | regolith-i3-workspace-config | Workspace keybindings |
 
-## Keybindings
+# Keybindings
 
 The most common keybinding change is the {{< keys "super" >}} key. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith2/Xresources`:
 
@@ -163,12 +190,14 @@ i3-wm.alt: Mod4
 
 **Note**: GNOME also has it's own set of keybindings. When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings. GNOME keybindings can be managed in the Regolith Settings app.
 
-{{< img "images/regolith-screenshot-settings-keybindings.png" "GNOME keybindings in the settings dialog">}}
+![](/regolith-gnome-keybindings.png)
 
-## System Management
+# System Management
 
 The `regolith-control-center` app is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.  The application may also be launched from a terminal with command `regolith-control-center`.
 
-## Further Reading
+![](/regolith-settings-about.png)
+
+# Further Reading
 
 To dig deeper, find which [Howtos]({{< ref "howtos" >}}) are available, or read the [Xresources reference]({{< ref "docs/Reference/xresources.md" >}}). Become an i3 power user by reading their [user guide](https://i3wm.org/docs/userguide.html).

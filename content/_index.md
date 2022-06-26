@@ -168,7 +168,7 @@ Custom configurations from Regolith 1.6 will need to be manually ported to Regol
 {{< /tab >}}
 {{< tab "Regolith Linux - Beta 1" >}} 
 
-Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu installer image.  It allows one to boot from a USB drive to run Regolith without having to install it.  It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
+Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it.  It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
 
 * Branded boot up screen
 * Branded login screen
@@ -185,7 +185,7 @@ See the [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-releas
 {{< /tab >}}
 {{< tab "Other..." >}} 
 
-Other options are available and documented in the [package repository for Regolith](https://github.com/regolith-linux/voulage), including support for `arm64` based systems.
+Other options are available and documented in the [package repository for Regolith](https://github.com/regolith-linux/voulage), including support for `arm64`-based systems.
 
 {{< /tab >}}
 {{< /tabs >}}
