@@ -9,21 +9,27 @@ bookToc: false
 ![](/regolith-empty.png)
 
 {{< columns >}}
-### For People Comfortable with PCs
 
-Regolith is built for those with a working knowledge of using computers. It avoids the clutter
-and ceremony that comes along with environments designed for familiarity with legacy interfaces.
+### Productivity First
+
 Regolith runs [i3](https://i3wm.org/): a popular, fast, and configurable tiling window manager which
-is great for keyboard-driven interaction.  Regolith integrates i3 with other desktop components such as 
-`i3bar`, `rofication`, and [`ilia`](https://github.com/regolith-linux/ilia#readme) to provide a complete desktop interface.
+is great for fast keyboard-driven worflows.  Regolith integrates i3 with other desktop components such as 
+`i3bar`, `rofication`, `gnome-flashback`, and [`ilia`](https://github.com/regolith-linux/ilia#readme) to provide a complete desktop interface.
 
 <--->
 
-### GNOME based System Management
+### Less is More
+
+By utilizing the underlying capabilities of the OS, Regolith is lightweight. Configuring features typically
+means installing and removing packages.  Regolith avoids reinventing any pre-existing wheels.
+
+<--->
+
+### GNOME System Management
 
 By providing a gnome session with [`gnome-flashback`](https://wiki.gnome.org/Projects/GnomeFlashback), Regolith sidesteps
 much of the complexity of a typical `gnome-shell` based environment while providing
-simple and consistent system management capabilities via `gnome-settings`.
+simple and consistent system management capabilities.
 
 {{< /columns >}}
 
