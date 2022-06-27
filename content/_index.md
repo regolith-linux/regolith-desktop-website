@@ -39,15 +39,21 @@ to configure your system to read packages from the Regolith package repository a
 1. Register the Regolith public key to your local `apt`:
 
    ```console
-   wget -qO - https://regolith-desktop.io/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   wget -qO - https://regolith-desktop.io/regolith.key | \
+   gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
 1. Add the repository URL to your local `apt`:
 
    ```console
-   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-ubuntu-jammy-amd64 jammy main" | \
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+   https://regolith-desktop.io/release-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
+
+{{< hint info >}}
+Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+{{< /hint >}}
 
 1. Update `apt` and install Regolith
 
@@ -85,6 +91,10 @@ to configure your system to read packages from the Regolith package repository a
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
+{{< hint info >}}
+Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+{{< /hint >}}
+
 1. Update `apt` and install Regolith
 
    ```console
@@ -96,10 +106,6 @@ to configure your system to read packages from the Regolith package repository a
 1. System Restart
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
-
-{{< hint warning >}}
-The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
-{{< /hint >}}
 
 {{< /tab >}}
 
@@ -111,15 +117,20 @@ to configure your system to read packages from the Regolith package repository a
 1. Register the Regolith public key to your local `apt`:
 
    ```console
-   wget -qO - https://regolith-desktop.io/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   wget -qO - https://regolith-desktop.io/regolith.key | \
+   gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
 1. Add the repository URL to your local `apt`:
 
    ```console
-   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-debian-bullseye-amd64 bullseye main" | \
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+   https://regolith-desktop.io/release-debian-bullseye-amd64 bullseye main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
+{{< hint info >}}
+Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+{{< /hint >}}
 
 1. Update `apt` and install Regolith
 
@@ -133,10 +144,6 @@ to configure your system to read packages from the Regolith package repository a
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
-{{< hint warning >}}
-The Regolith Desktop is very different from common desktop environments. By default it does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
-{{< /hint >}}
-
 {{< /tab >}}
 {{< tab "Upgrade from Regolith 1.6" >}}
 
@@ -147,7 +154,7 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 1. After the 22.04 upgrade completes, add the Regolith 2 package repository:
 
    ```console
-   wget -qO - https://regolith-desktop.io/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg
+   wget -qO - https://regolith-desktop.io/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    sudo apt update
