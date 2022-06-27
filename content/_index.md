@@ -18,13 +18,6 @@ is great for fast keyboard-driven worflows.  Regolith integrates i3 with other d
 
 <--->
 
-### Less is More
-
-By utilizing the underlying capabilities of the OS, Regolith is lightweight. Configuring features typically
-means installing and removing packages.  Regolith avoids reinventing any pre-existing wheels.
-
-<--->
-
 ### GNOME System Management
 
 By providing a gnome session with [`gnome-flashback`](https://wiki.gnome.org/Projects/GnomeFlashback), Regolith sidesteps
@@ -196,6 +189,8 @@ Other options are available and documented in the [package repository for Regoli
 {{< /tab >}}
 {{< /tabs >}}
 
+
+## Visual Tour
 ***
 
 {{< columns >}}
