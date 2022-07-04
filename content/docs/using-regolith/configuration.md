@@ -124,7 +124,7 @@ sudo apt install regolith-look-*
 
 # i3 Features
 
-Starting with Regolith 2.0, many aspects of i3 configuration are managed via the package manager.  i3 `4.20` introduced the ability to specify include files as part of the configuration.  Regolith provides all of it's i3 configuration via these files, also called "config partials".  These packages install thier i3 config partials into `/usr/share/regolith/i3/config.d`.  By installing and removing packages, i3 configuration can be customized for specific preferences while still allowing to track upstream changes for aspects of the configuration that need not vary.  By default, when the `regolith-desktop` package is installed, these configuration elements are also installed as soft dependencies:
+[Starting with Regolith 2.0]({{< ref "docs/reference/configurations.md" >}}), many aspects of i3 configuration are managed via the package manager. Regolith provides all of it's i3 configuration via "config partials".  These packages install thier i3 config partials into `/usr/share/regolith/i3/config.d`.  By installing and removing packages, i3 configuration can be customized for specific preferences.  By default, when the `regolith-desktop` package is installed, these configuration elements are also installed as soft dependencies:
 
 | Package                      | Function          |
 |------------------------------|-------------------|
@@ -139,17 +139,10 @@ Starting with Regolith 2.0, many aspects of i3 configuration are managed via the
 | regolith-i3-user-programs    | Optionally launch user programs specified in Xresources |
 | regolith-i3-workspace-config | Workspace keybindings |
 
-Soft dependencies can be removed without causing packages that depend upon it to be removed. This means that any of the listed packages can be removed.  Users can make tweaks to configuration in a more stable manner by replacing a default configuration partial with their own version.  This can be achieved by copying the partial to be customized into `~/.config/regolith2/i3/config.d/` and removing the original file in `/usr/share/regolith/i3/config.d` via apt.  For example, to customize Workspace keybindings:
+Soft dependencies can be removed without causing packages that depend upon it to be removed. This means that any of the listed packages can be removed.  Users can make tweaks to configuration in a more stable manner by replacing a default configuration partial with their own version.  This can be achieved by copying the partial to be customized into `~/.config/regolith2/i3/config.d/` and removing the original file in `/usr/share/regolith/i3/config.d` via `apt`.  In this way, the unmodified config partials can continue to get updates and bug fixes without impacting user-specific configuration.
 
-```console
-mkdir -p ~/.config/regolith2/i3/config.d
-cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith2/i3/config.d/
-vim ~/.config/regolith2/i3/config.d/40_workspace-config # make desired changes
-sudo apt remove regolith-i3-workspace-config # removes the default version
-# restart i3 or log back in
-```
+See the [i3 configuration customization how-to]({{< ref "docs/howtos/customize-i3-configuration.md" >}}) for examples.
 
-In this way, the unmodified config partials can continue to get updates and bug fixes without impacting user-specific configuration.
 
 ## All i3 Configuration Packages
 
