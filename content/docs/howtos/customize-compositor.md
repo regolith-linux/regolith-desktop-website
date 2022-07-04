@@ -1,7 +1,6 @@
 ---
-title: "How to Customize Compositor"
+title: "Customize Compositor"
 linkTitle: "How to Customize Compositor"
-weight: 4
 description: >
   How to customize Regolith's compositor
 ---

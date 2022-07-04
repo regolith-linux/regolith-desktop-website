@@ -1,7 +1,7 @@
 ---
-title: "How to Customize i3 Configuration"
+title: "Customize i3 Configuration"
 linkTitle: "How to Customize i3 Configuration"
-weight: 4
+weight: 1
 description: >
   How to make changes to the way i3 looks and behaves.
 ---
@@ -44,6 +44,8 @@ i3-wm.client.focused.color.child_border: #AAD3E9
 i3-wm.workspace.01.name: 1:FOO
 ```
 
+For more, please [read a more in-depth discussion on `Xresources`]({{< ref "docs/howtos/override-xres.md" >}})
+
 ## How to uninstall a default partial
 
 If you want to wholly replace or remove settings provided by a default partial, you can use `apt` to remove the package which provides that partial.
@@ -71,7 +73,6 @@ Remove the partial:
 ```console
 sudo apt remove regolith-i3-workspace-config
 ```
-
 
 ## How to customize a default partial
 
