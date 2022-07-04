@@ -124,7 +124,7 @@ sudo apt install regolith-look-*
 
 # i3 Features
 
-[Starting with Regolith 2.0]({{< ref "docs/reference/configurations.md" >}}), many aspects of i3 configuration are managed via the package manager. Regolith provides all of it's i3 configuration via "config partials".  These packages install thier i3 config partials into `/usr/share/regolith/i3/config.d`.  By installing and removing packages, i3 configuration can be customized for specific preferences.  By default, when the `regolith-desktop` package is installed, these configuration elements are also installed as soft dependencies:
+[Starting with Regolith 2.0]({{< ref "docs/reference/configurations.md#history" >}}), many aspects of i3 configuration are managed via the package manager. Regolith provides all of its i3 configuration via "config partials".  These packages install thier i3 config partials into `/usr/share/regolith/i3/config.d`.  By installing and removing packages, i3 configuration can be customized for specific preferences.  By default, when the `regolith-desktop` package is installed, these configuration elements are also installed as soft dependencies:
 
 | Package                      | Function          |
 |------------------------------|-------------------|
@@ -181,7 +181,7 @@ i3-wm.mod: Mod1
 i3-wm.alt: Mod4
 ```
 
-**Note**: GNOME also has it's own set of keybindings. When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings. GNOME keybindings can be managed in the Regolith Settings app.
+**Note**: GNOME also has its own set of keybindings. When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings. GNOME keybindings can be managed in the Regolith Settings app.
 
 ![](/regolith-gnome-keybindings.png)
 

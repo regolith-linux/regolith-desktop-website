@@ -19,7 +19,6 @@ description: >
 WARNING: Adding an i3 config file in `~/.config/regolith2/i3/config` will essentially override all Regolith configuration including Xresources and looks.
 {{< /hint >}}
 
-
 # History
 
 {{< hint info >}}
@@ -28,7 +27,9 @@ NOTE: Under the Diataxis documentation framework, I think this would be more of 
 
 ## Config partials
 
-Regolith 2.0 adds support for config partials, as this feature only came to `i3` itself recently in [4.20](https://i3wm.org/downloads/RELEASE-NOTES-4.20.txt). This is done by [includes](https://i3wm.org/docs/userguide.html#include). The root Regolith configuration file at `/etc/regolith/i3/config` loads partials like so:
+Regolith 2.0 adds support for config partials, as this feature came to `i3` recently in [4.20](https://i3wm.org/downloads/RELEASE-NOTES-4.20.txt).  This is done by [includes](https://i3wm.org/docs/userguide.html#include).  This support for includes enables Regolith 2.0's use of the package manager to add or remove default configuration partials.  By installing and removing packages, i3 configuration can be customized for specific preferences while still allowing to track upstream changes for aspects of the configuration that need not vary.
+
+The root Regolith configuration file at `/etc/regolith/i3/config` loads partials like so:
 
 ```
 # Include any regolith i3 partials
@@ -37,5 +38,3 @@ include /usr/share/regolith/i3/config.d/*
 # Include any user i3 partials
 include $HOME/.config/regolith2/i3/config.d/*
 ```
-
-This support for partials enables Regolith 2.0's use of the package manager to add or remove default configurations.  By installing and removing packages, i3 configuration can be customized for specific preferences while still allowing to track upstream changes for aspects of the configuration that need not vary.
