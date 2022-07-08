@@ -8,7 +8,7 @@ bookToc: false
 
 ![](/regolith-empty.png)
 
-{{< Spalten >}}
+{{< columns >}}
 
 ### Produktivität steht an erster Stelle
 

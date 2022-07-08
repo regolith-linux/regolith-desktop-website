@@ -2,7 +2,7 @@
 title: "Grundlegende Verwendung"
 weight: 3
 description: >
-Lernen Sie zunächst die wichtigsten Teile von Regolith kennen.
+ Lernen Sie zunächst die wichtigsten Teile von Regolith kennen.
 ---
 
 Während wir in anderen Bereichen der Dokumentation alles detaillierter behandeln werden, deckt diese Seite die grundlegende Verwendung von Regolith ab.
@@ -44,7 +44,7 @@ Der bevorzugte Browser ist ebenfalls eine spezielle Anwendung und kann mit {{< k
 ## Beenden einer Anwendung
 
 Mit {{< keys "super,shift,q" >}} wird die fokussierte Anwendung beendet. Bei fehlerhaften Anwendungen wird {{<
-Tasten "super,alt,q" >}} das Beenden der fokussierten Anwendung erzwingen, aber beachten Sie, dass ungespeicherte Daten
+keys "super,alt,q" >}} das Beenden der fokussierten Anwendung erzwingen, aber beachten Sie, dass ungespeicherte Daten
 verloren gehen können.
 
 ## Arbeitsbereiche wechseln
@@ -56,7 +56,7 @@ Arbeitsbereiche können auch mit {{< keys "super,tab" >}} und {{< keys "super,sh
 
 ## Das System konfigurieren
 
-Die Einstellungs-App (auch bekannt als `regolith-control-center`) ist die primäre Schnittstelle für allgemeine Konfigurationsaufgaben, wie die Konfiguration von WiFi und Bluetooth, die Konfiguration von App-Zuordnungen und die Einrichtung von Benutzern. Die App kann über die {{<Tasten "super,c" >}} Tastenkombination oder vom Launcher aus über die App `Regolith Settings` gestartet werden.
+Die Einstellungs-App (auch bekannt als `regolith-control-center`) ist die primäre Schnittstelle für allgemeine Konfigurationsaufgaben, wie die Konfiguration von WiFi und Bluetooth, die Konfiguration von App-Zuordnungen und die Einrichtung von Benutzern. Die App kann über die {{< keys "super,c" >}} Tastenkombination oder vom Launcher aus über die App `Regolith Settings` gestartet werden.
 
 ![](/regolith-gnome-settings.png)
 

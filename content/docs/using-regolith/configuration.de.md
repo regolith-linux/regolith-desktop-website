@@ -3,7 +3,7 @@ title: "Konfiguration"
 linkTitle: "Konfiguration"
 weight: 4
 description: >
-Nehmen Sie Änderungen am Aussehen und Verhalten von Regolith vor.
+ Nehmen Sie Änderungen am Aussehen und Verhalten von Regolith vor.
 ---
 
 # Empfohlene Pakete für neue Benutzer
@@ -106,8 +106,7 @@ durch die Installation von Paketen hinzugefügt oder entfernt werden. Um zum Bei
 Ihres Laptops anzuzeigen, führen Sie einfach `sudo apt install i3xrocks-battery` aus und aktualisieren Sie dann die
 Sitzung mit `regolith-look refresh`. Um herauszufinden, welche Indikatoren verfügbar sind, führen
 Sie `apt search ^i3xrocks-` aus oder suchen Sie nach `i3xrocks-` in Ihrer bevorzugten Paketmanager-GUI, wie zum
-Beispiel [Synaptic](https://help.ubuntu.com/community/SynapticHowto). Es gibt [weitere Dokumentation]({{< ref "
-/docs/howtos/add-remove-blocklets.md" >}}) für die Konfiguration von Statusanzeigen, auch "blocklets" genannt.
+Beispiel [Synaptic](https://help.ubuntu.com/community/SynapticHowto). Es gibt [weitere Dokumentation]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) für die Konfiguration von Statusanzeigen, auch "blocklets" genannt.
 
 # Looks
 
@@ -231,8 +230,7 @@ GNOME-Tastaturbelegungen können in der Regolith-Einstellungs-App verwaltet werd
 
 Die App `regolith-control-center` ist das Werkzeug zum Konfigurieren von Gebietsschema, Datum, Anzeigen, Netzwerk und
 verschiedenen anderen Einstellungen. Starten Sie sie über den App-Launcher mit {{< keys "super,space" >}}, geben
-Sie `settings` ein und drücken Sie Enter, um die App zu starten. Die direkte Tastaturbelegung ist {{< keys "super,c" >
-}}. Die Anwendung kann auch von einem Terminal mit dem Befehl `regolith-control-center` gestartet werden.
+Sie `settings` ein und drücken Sie Enter, um die App zu starten. Die direkte Tastaturbelegung ist {{< keys "super,c" >}}. Die Anwendung kann auch von einem Terminal mit dem Befehl `regolith-control-center` gestartet werden.
 
 ![](/regolith-settings-about.png)
 
