@@ -1,0 +1,111 @@
+<!doctype html><html lang=de dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Nehmen Sie Änderungen am Aussehen und Verhalten von Regolith vor."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Konfiguration"><meta property="og:description" content="Nehmen Sie Änderungen am Aussehen und Verhalten von Regolith vor."><meta property="og:type" content="article"><meta property="og:url" content="https://regolith-desktop.com/de/docs/using-regolith/configuration/"><meta property="article:modified_time" content="2022-07-07T20:24:45-07:00"><title>Konfiguration | Regolith Desktop</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=alternate hreflang=en href=https://regolith-desktop.com/docs/using-regolith/configuration/ title=Configuration><link rel=stylesheet href=/book.min.3a67dda0e2e31cdd898218d88ff64b8c1b1fa9ba4c6fa26ab52e0ea5551b14df.css integrity="sha256-OmfdoOLjHN2JghjYj/ZLjBsfqbpMb6JqtS4OpVUbFN8=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/de.search.min.b1f4c4746893901c41a4569f499eb691a4354ebb688f15d2fe2453deb5378c7d.js integrity="sha256-sfTEdGiTkBxBpFafSZ62kaQ1TrtojxXS/iRT3rU3jH0=" crossorigin=anonymous></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H87N5GZVTN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-H87N5GZVTN');</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/de/><img src=/regolith-logo.png alt="Regolith Desktop"></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Suche aria-label=Suche maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
+German</a></label><ul><li><a href=https://regolith-desktop.com/docs/using-regolith/configuration/>English</a></li></ul></li></ul><ul><li><a href=https://regolith-desktop.com/de/docs/using-regolith/first-launch/>Erster Start</a></li><li><a href=https://regolith-desktop.com/de/docs/reference/configurations/>Config Files</a></li><li><a href=https://regolith-desktop.com/de/docs/using-regolith/basics/>Grundlegende Verwendung</a></li><li><a href=https://regolith-desktop.com/de/docs/using-regolith/configuration/ class=active>Konfiguration</a></li><li><input type=checkbox id=section-196fe180c057db262c9172740e33fa55 class=toggle>
+<label for=section-196fe180c057db262c9172740e33fa55 class="flex justify-between"><a href=https://regolith-desktop.com/de/docs/howtos/>How To</a></label><ul><li><a href=https://regolith-desktop.com/de/docs/howtos/add-remove-blocklets/>Change Bar Status indicators</a></li></ul></li><li><a href=https://regolith-desktop.com/de/docs/reference/xresources/>Xresources</a></li></ul><ul><li><a href=https://github.com/regolith-linux target=_blank rel=noopener>Github</a></li><li><a href=https://regolith-linux.herokuapp.com/ target=_blank rel=noopener>Slack</a></li><li><a href=https://opencollective.com/regolith/donate target=_blank rel=noopener>Support Regolith<br><br><img src=https://badgen.net/opencollective/backers/regolith></a></li></ul></nav><script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>Konfiguration</strong>
+<label for=toc-control></label></div></header><article class=markdown><h1 id=empfohlene-pakete-für-neue-benutzer>Empfohlene Pakete für neue Benutzer
+<a class=anchor href=#empfohlene-pakete-f%c3%bcr-neue-benutzer>#</a></h1><h2 id=looks>Looks
+<a class=anchor href=#looks>#</a></h2><p>Installieren Sie alle offiziellen Regolith-Looks:</p><pre><code class=language-console data-lang=console>sudo apt install regolith-look-*
+</code></pre><h2 id=status-indikatoren>Status-Indikatoren
+<a class=anchor href=#status-indikatoren>#</a></h2><p>Das folgende Snippet installiert Statusindikatoren-Pakete, die für neue Benutzer empfohlen werden:</p><pre><code class=language-console data-lang=console>sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
+</code></pre><p>Um einen dieser Indikatoren später zu entfernen, deinstallieren Sie ihn einfach von Ihrem System. Beispiel:</p><pre><code class=language-console data-lang=console>sudo apt remove i3xrocks-info
+</code></pre><h3 id=laptop-akkustatus>Laptop-Akkustatus
+<a class=anchor href=#laptop-akkustatus>#</a></h3><p>Zeigt den aktuellen Batteriestatus eines Laptops an:</p><pre><code class=language-console data-lang=console>sudo apt install i3xrocks-battery
+</code></pre><h1 id=hintergrundbild>Hintergrundbild
+<a class=anchor href=#hintergrundbild>#</a></h1><p>Die meisten Regolith Looks bieten eine Standard-Desktop-Farbe oder ein Bild. Das Hintergrundbild kann durch Angabe des
+Pfades zum Hintergrundbild über den Xresources-Parameter <code>regolith.wallpaper.file</code> festgelegt werden.</p><p>Beispiel: Angenommen, die Datei <code>/usr/share/backgrounds/hardy_wallpaper_uhd.png</code> ist vorhanden:</p><pre><code class=language-console data-lang=console>echo &quot;regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png&quot; &gt;&gt; ~/.config/regolith2/Xresources
+regolith-look refresh 
+</code></pre><p>Um die Darstellung (Zoom, Skalierung, etc.) des Hintergrundbildes zu ändern, setzen Sie <code>regolith.wallpaper.options</code>.
+Optionen sind: <code>none</code>, <code>wallpaper</code>, <code>centered</code>, <code>scaled</code>, <code>stretched</code>, <code>zoom</code>, <code>spanned</code></p><p>Beispiel:</p><pre><code class=language-console data-lang=console>echo &quot;regolith.wallpaper.options: zoom&quot; &gt;&gt; ~/.config/regolith2/Xresources
+regolith-look refresh 
+</code></pre><p>Um eine Farbe anstelle eines Bildes anzugeben, verwenden Sie den Xresource-Parameter <code>regolith.wallpaper.color.primary</code>:</p><pre><code class=language-console data-lang=console>echo &quot;regolith.wallpaper.file: &quot; &gt;&gt; ~/.config/regolith2/Xresources
+echo &quot;regolith.wallpaper.color.primary: blue&quot; &gt;&gt; ~/.config/regolith2/Xresources
+regolith-look refresh 
+</code></pre><p>Um eine sekundäre Farbe und einen Farbverlauf zu definieren:</p><pre><code class=language-console data-lang=console>echo &quot;regolith.wallpaper.file: &quot; &gt;&gt; ~/.config/regolith2/Xresources
+echo &quot;regolith.wallpaper.color.primary: blue&quot; &gt;&gt; ~/.config/regolith2/Xresources
+echo &quot;regolith.wallpaper.color.secondary: green&quot; &gt;&gt; ~/.config/regolith2/Xresources
+echo &quot;regolith.wallpaper.color.shading.type: vertical&quot; &gt;&gt; ~/.config/regolith2/Xresources
+regolith-look refresh 
+</code></pre><h2 id=sperrbildschirm-hintergrundbild>Sperrbildschirm-Hintergrundbild
+<a class=anchor href=#sperrbildschirm-hintergrundbild>#</a></h2><p>Das Hintergrundbild des Sperrbildschirms kann auf die gleiche Weise wie das Desktop-Hintergrundbild verwaltet werden.
+Die Parameter sind die gleichen wie beim Desktop-Hintergrundbild, aber mit dem Präfix <code>lockscreen</code> vor <code>wallpaper</code>, etwa
+so: <code>regolith.lockscreen.wallpaper...</code>. Um zum Beispiel ein Bild für den Sperrbildschirm anzugeben:</p><pre><code class=language-console data-lang=console>echo &quot;regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png&quot; &gt;&gt; ~/.config/regolith2/Xresources
+regolith-look refresh 
+</code></pre><h2 id=deaktivieren-der-wallpaper-verwaltung>Deaktivieren der Wallpaper-Verwaltung
+<a class=anchor href=#deaktivieren-der-wallpaper-verwaltung>#</a></h2><p>Wenn Sie das Hintergrundbild außerhalb von Regolith verwalten möchten, geben Sie einfach leere Werte für das
+Hintergrundbild und die Farbe an:</p><pre><code class=language-console data-lang=console>echo &quot;regolith.wallpaper.file: &quot; &gt;&gt; ~/.config/regolith2/Xresources
+echo &quot;regolith.wallpaper.color.primary: &quot; &gt;&gt; ~/.config/regolith2/Xresources
+</code></pre><h1 id=statusleisten-anzeigen>Statusleisten-Anzeigen
+<a class=anchor href=#statusleisten-anzeigen>#</a></h1><p>Statusanzeigen wie CPU-Auslastung, Datum und Uhrzeit, Benachrichtigungen, Wetter und andere Systeminformationen können
+durch die Installation von Paketen hinzugefügt oder entfernt werden. Um zum Beispiel eine Statusanzeige für die Batterie
+Ihres Laptops anzuzeigen, führen Sie einfach <code>sudo apt install i3xrocks-battery</code> aus und aktualisieren Sie dann die
+Sitzung mit <code>regolith-look refresh</code>. Um herauszufinden, welche Indikatoren verfügbar sind, führen
+Sie <code>apt search ^i3xrocks-</code> aus oder suchen Sie nach <code>i3xrocks-</code> in Ihrer bevorzugten Paketmanager-GUI, wie zum
+Beispiel <a href=https://help.ubuntu.com/community/SynapticHowto>Synaptic</a>. Es gibt <a href=https://regolith-desktop.com/de/docs/howtos/add-remove-blocklets/>weitere Dokumentation</a> für die Konfiguration von Statusanzeigen, auch &ldquo;blocklets&rdquo; genannt.</p><h1 id=looks-1>Looks
+<a class=anchor href=#looks-1>#</a></h1><p>Farben, Hintergrundbilder, Fenster- und Leistenlayouts und andere visuelle Faktoren werden in Regolith gebündelt und
+als &ldquo;Looks&rdquo; bezeichnet. Looks bieten eine einfache Möglichkeit, das gesamte Aussehen des Desktops zu ändern. Wie die
+Statusleistenindikatoren werden auch die Looks in Paketen zusammengefasst und wie jedes andere Softwarepaket installiert
+und entfernt. Look-Pakete haben das folgende Namensformat: <code>regolith-look-&lt;name></code>. Um nach verfügbaren Looks zu suchen,
+kann <code>apt</code> oder ein GUI-Paketmanager verwendet werden. Zur Auswahl eines installierten Looks wird mit der
+Tastenkombination
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">alt</span>
+<span class="badge badge-warning">l</span></span>
+ein Dialog angezeigt:</p><p><img src=/regolith-ilia-look-selector.png alt></p><p>Alternativ kann der Terminalbefehl <code>regolith-look</code> verwendet werden, um das Aussehen zu ändern und die aktive Sitzung
+mit dem ausgewählten Aussehen zu aktualisieren. Hier ist ein Beispiel, das zum <code>gruvbox</code>-Look wechselt:</p><pre><code class=language-console data-lang=console>apt search ^regolith-look-
+[...]
+regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
+[...]
+sudo apt install regolith-look-gruvbox
+regolith-look set gruvbox
+regolith-look refresh
+</code></pre><p>Um einfach alle verfügbaren Looks zu installieren:</p><pre><code class=language-console data-lang=console>sudo apt install regolith-look-*
+</code></pre><h1 id=i3-features>i3 Features
+<a class=anchor href=#i3-features>#</a></h1><p>Seit Regolith 2.0 werden viele Aspekte der i3-Konfiguration über den Paketmanager verwaltet. Mit i3 <code>4.20</code> wurde die
+Möglichkeit eingeführt, Include-Dateien als Teil der Konfiguration anzugeben. Regolith stellt seine gesamte
+i3-Konfiguration über diese Dateien bereit, die auch &ldquo;config partials&rdquo; genannt werden. Diese Pakete installieren ihre
+i3-Konfigurationspartials in <code>/usr/share/regolith/i3/config.d</code>. Durch das Installieren und Entfernen von Paketen kann
+die i3-Konfiguration an die eigenen Vorlieben angepasst werden, während gleichzeitig die Upstream-Änderungen für Aspekte
+der Konfiguration, die sich nicht ändern müssen, unverändert bleiben können. Wenn das Paket <code>regolith-desktop</code>
+installiert wird, werden diese Konfigurationselemente standardmäßig auch als Soft-Dependencies installiert:</p><table><thead><tr><th>Paket</th><th>Funktion</th></tr></thead><tbody><tr><td>regolith-i3-base-launchers</td><td>Terminal und Browser starten</td></tr><tr><td>regolith-i3-default-style</td><td>Fensterverhalten</td></tr><tr><td>regolith-i3-navigation</td><td>Navigationstastenbelegung</td></tr><tr><td>regolith-i3-networkmanager</td><td>Netzwerk- und WiFi-Funktionen</td></tr><tr><td>regolith-i3-next-workspace</td><td>Arbeitsbereich-Dienstprogramm</td></tr><tr><td>regolith-i3-resize</td><td>Tastaturbelegung Größenänderung</td></tr><tr><td>regolith-i3-session</td><td>Tastaturbelegung Session</td></tr><tr><td>regolith-i3-unclutter</td><td>Mauszeiger ausblenden, wenn er nicht benutzt wird</td></tr><tr><td>regolith-i3-user-programs</td><td>Optionales Starten von Benutzerprogrammen, die in Xresources angegeben sind</td></tr><tr><td>regolith-i3-workspace-config</td><td>Tastaturbelegung des Arbeitsbereichs</td></tr></tbody></table><p>Soft-Abhängigkeiten können entfernt werden, ohne dass Pakete entfernt werden, die davon abhängen. Dies bedeutet, dass
+jedes der aufgelisteten Pakete entfernt werden kann. Benutzer können Änderungen an der Konfiguration auf solidere Weise
+vornehmen, indem sie einen Teil der Standardkonfiguration durch ihre eigene Version ersetzen. Dies kann erreicht werden,
+indem man den Teil, der angepasst werden soll, nach <code>~/.config/regolith2/i3/config.d/</code> kopiert und die Originaldatei
+in <code>/usr/share/regolith/i3/config.d</code> über apt entfernt. Zum Beispiel, um die Tastaturbelegung des Arbeitsbereichs
+anzupassen:</p><pre><code class=language-console data-lang=console>mkdir -p ~/.config/regolith2/i3/config.d
+cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith2/i3/config.d/
+vim ~/.config/regolith2/i3/config.d/40_workspace-config # gewünschte Änderungen vornehmen
+sudo apt remove regolith-i3-workspace-config # Entfernt die Standardversion
+# Starte i3 neu oder logge dich wieder ein
+</code></pre><p>Auf diese Weise können die unveränderten Teilkonfigurationen weiterhin Updates und Fehlerbehebungen erhalten, ohne die
+benutzerspezifische Konfiguration zu beeinflussen.</p><h2 id=alle-i3-konfigurationspakete>Alle i3-Konfigurationspakete
+<a class=anchor href=#alle-i3-konfigurationspakete>#</a></h2><p>Im Folgenden finden Sie eine Liste aller i3-Konfigurationspakete, die in Regolith 2.0 verfügbar sind:</p><table><thead><tr><th>Paket</th><th>Funktion</th></tr></thead><tbody><tr><td>regolith-i3-base-launchers</td><td>Terminal und Browser starten</td></tr><tr><td>regolith-i3-compositor</td><td>Compositor-Integration (delegiert an <code>regolith-compositor-&lt;variant></code>)</td></tr><tr><td>regolith-i3-default-style</td><td>Fensterverhalten</td></tr><tr><td>regolith-i3-ftue</td><td>Hilfe für neue User</td></tr><tr><td>regolith-i3-gaps-partial</td><td><code>i3-gaps</code> Konfiguration (wenn installiert, ersetzt i3-gaps i3)</td></tr><tr><td>regolith-i3-gnome</td><td>Regolith-Einstellungen</td></tr><tr><td>regolith-i3-i3xrocks</td><td>Konfiguration der i3-Balkenstatusanzeigen</td></tr><tr><td>regolith-i3-ilia</td><td><code>ilia</code> Einbindung</td></tr><tr><td>regolith-i3-navigation</td><td>Tastaturbelegung für die Navigation</td></tr><tr><td>regolith-i3-networkmanager</td><td>&ldquo;netzwerk-manager&rdquo;-Einbindung</td></tr><tr><td>regolith-i3-next-workspace</td><td>Funktion zum automatischen Erstellen des nächsten Arbeitsbereichs</td></tr><tr><td>regolith-i3-remontoire</td><td>Integration der Ansicht &ldquo;Legacy keybindings&rdquo;</td></tr><tr><td>regolith-i3-resize</td><td>Tastaturbelegung für Größenänderung</td></tr><tr><td>regolith-i3-rofi</td><td>Integration des alten Desktop-Startprogramms</td></tr><tr><td>regolith-i3-rofication</td><td>Integration der alten Benachrichtigungsanzeige</td></tr><tr><td>regolith-i3-rofication-ilia</td><td>Integration der Benachrichtigungsanzeige</td></tr><tr><td>regolith-i3-session</td><td>Tastaturbelegung der Session</td></tr><tr><td>regolith-i3-snapshot</td><td>i3-Arbeitsbereichspersistenz</td></tr><tr><td>regolith-i3-unclutter</td><td>Ausblenden der Maus bei Nichtgebrauch</td></tr><tr><td>regolith-i3-user-programs</td><td>Optionaler Start von Benutzerprogrammen, die in Xresources angegeben sind</td></tr><tr><td>regolith-i3-workspace-config</td><td>Arbeitsbereich-Tastaturbelegung</td></tr></tbody></table><h1 id=tastaturbelegungen>Tastaturbelegungen
+<a class=anchor href=#tastaturbelegungen>#</a></h1><p>Die häufigste Änderung der Tastaturbelegung ist die Taste
+<span class=text-nowrap><span class="badge badge-warning">super</span></span>
+. Regolith verwendet <code>Xresources</code> als
+kanonische Quelle für Einstellungen, die von verschiedenen UI-Komponenten gelesen werden. Die Tabelle der <code>Xresources</code>
+-Parameter, für die Benutzerkonfiguration <a href=https://regolith-desktop.com/de/docs/reference/xresources/>ist an anderer Stelle verfügbar</a>. Um die
+Tastaturbelegung
+<span class=text-nowrap><span class="badge badge-warning">super</span></span>
+von der Taste &ldquo;windows&rdquo; auf &ldquo;alt&rdquo; zu ändern, fügen Sie die folgende Zeilen in die
+Datei <code>~/.config/regolith2/Xresources</code> ein:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=color:#a6e22e>i3</span><span style=color:#960050;background-color:#1e0010>-</span><span style=color:#a6e22e>wm</span>.<span style=color:#a6e22e>mod</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>Mod1</span>
+<span style=color:#a6e22e>i3</span><span style=color:#960050;background-color:#1e0010>-</span><span style=color:#a6e22e>wm</span>.<span style=color:#a6e22e>alt</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>Mod4</span>
+</code></pre></div><p><strong>Anmerkung</strong>: GNOME hat auch seinen eigenen Satz von Tastaturbelegungen. Wenn die Regolith-Sitzung zum ersten Mal
+initialisiert wird, werden die kollidierenden GNOME-Tastaturbelegungen aus den Benutzereinstellungen entfernt.
+GNOME-Tastaturbelegungen können in der Regolith-Einstellungs-App verwaltet werden.</p><p><img src=/regolith-gnome-keybindings.png alt></p><h1 id=systemverwaltung>Systemverwaltung
+<a class=anchor href=#systemverwaltung>#</a></h1><p>Die App <code>regolith-control-center</code> ist das Werkzeug zum Konfigurieren von Gebietsschema, Datum, Anzeigen, Netzwerk und
+verschiedenen anderen Einstellungen. Starten Sie sie über den App-Launcher mit
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">space</span></span>
+, geben
+Sie <code>settings</code> ein und drücken Sie Enter, um die App zu starten. Die direkte Tastaturbelegung ist
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">c</span></span>
+. Die Anwendung kann auch von einem Terminal mit dem Befehl <code>regolith-control-center</code> gestartet werden.</p><p><img src=/regolith-settings-about.png alt></p><h1 id=weitere-lektüre>Weitere Lektüre
+<a class=anchor href=#weitere-lekt%c3%bcre>#</a></h1><p>Wenn Sie tiefer einsteigen wollen, finden Sie die verfügbaren <a href=https://regolith-desktop.com/de/docs/howtos/>Howtos</a> oder lesen Sie
+die <a href=https://regolith-desktop.com/de/docs/reference/xresources/>Xresources reference</a>. Werden Sie ein i3-Poweruser, indem Sie
+das <a href=https://i3wm.org/docs/userguide.html>Benutzerhandbuch</a> lesen.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/regolith-linux/regolith-desktop-website/commit/9ed6ec088db246c65ef3c9d81562e5f8e7abfb78 title="Zuletzt geändert von Ken Gilmer | July 8, 2022" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>July 8, 2022</span></a></div></div><script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>
