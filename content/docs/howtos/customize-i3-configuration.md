@@ -107,3 +107,11 @@ sudo apt remove regolith-i3-workspace-config
 ```
 
 Finally, **restart i3 or log out and back in**.
+
+
+## How to replace Regolith's defaults wholesale
+
+If you don't want to keep any of Regolith's defaults (for example, you're an
+experienced `i3` user with a complete personal config you want to use), you can
+either uninstall all of Regolith's config partials, and/or create your own root
+config at `~/.config/regolith2/i3/config`.
