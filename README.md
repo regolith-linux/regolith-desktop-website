@@ -14,27 +14,27 @@ Please ensure you have the following installed:
 
 Clone this repo, and the Book theme as a submodule:
 
-```bash
+```console
 $ git clone --recurse-submodules --depth 1 git@github.com:regolith-linux/regolith-desktop-website.git regolith-desktop-website
 $ cd regolith-desktop-website
 ```
 
 Install dependencies and launch Hugo server:
 
-```bash
+```console
 $ npm install
 $ hugo server
 ```
 
 ...or, with Docker:
 
-```bash
+```console
 docker-compose up
 ```
 
 NOTE: If you encounter an error like `failed to extract shortcode: template for shortcode "columns" not found`, you forgot the submodule for the Book theme.
 
-```bash
+```console
 git submodule update --init --depth=1
 ```
 
