@@ -52,8 +52,9 @@ You should find at least the following:
 ## Installing a compositor
 
 {{< hint info >}}
-Due to the way that the compositor is managed by i3-wm, you must log out and
-back in for compositor changes to take effect. Restarting i3 is not sufficient.
+Due to the way that the compositor is managed by i3-wm, **you must log out and
+back in for compositor changes to take effect**. Restarting i3 is not
+sufficient.
 {{< /hint >}}
 
 Run the following package install command to swap out the compositor. In this
