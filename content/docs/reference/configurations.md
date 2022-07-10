@@ -19,11 +19,8 @@ description: >
 WARNING: Adding an i3 config file in `~/.config/regolith2/i3/config` will essentially override all Regolith configuration including Xresources and looks.
 {{< /hint >}}
 
-# History
 
-{{< hint info >}}
-NOTE: Under the Diataxis documentation framework, I think this would be more of a "discussion". Is this site using Diataxis?
-{{< /hint >}}
+# History
 
 ## Config partials
 
