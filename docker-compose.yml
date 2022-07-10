@@ -16,7 +16,7 @@ services:
     #
     #     [safe]
     #         directory = /home/repon
-    image: "klakegg/hugo:0.101.0-ext"
+    image: "klakegg/hugo:latest-ext"
     command: "server"
     volumes:
       - "./:/src"
