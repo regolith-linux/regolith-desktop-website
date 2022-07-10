@@ -27,7 +27,7 @@ To do this, simply add a line to `~/.config/regolith2/Xresources` like:
 
 ```
 # Use my own home-made compositor
-i3-wm.program.compositor: <my-custom-compositor>
+i3-wm.program.compositor: /usr/local/bin/my-compositor
 ```
 
 Similarly, you can override other i3 options with `Xresources` based on the variable names found in `/usr/share/regolith/i3/config.d` files:
