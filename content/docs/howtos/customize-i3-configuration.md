@@ -76,7 +76,13 @@ sudo apt remove regolith-i3-workspace-config
 
 ## How to customize a default partial
 
-Ensure that a directory exists for user config partials. *NOTE*: It's important that the file `~/.config/regolith2/i3/config` does **not** exist.
+{{< hint warning >}}
+WARNING: To customize only one of Regolith's default partials, you must first
+ensure that the file `~/.config/regolith2/i3/config` does **not** exist. This
+overrides Regolith's defaults entirely, which is incompatible with this how-to.
+{{< /hint >}}
+
+First, ensure that a directory exists for user config partials.
 
 ```console
 mkdir -p ~/.config/regolith2/i3/config.d
