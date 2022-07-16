@@ -37,8 +37,8 @@ apt search regolith-compositor-
 
 You should find at least the following:
 
-- `regolith-compositor-none` **[default]**: No compositor. Best performance, no visual
-  effects.
+- `regolith-compositor-none` **[default]**: No compositor. Best performance, no
+  visual effects.
 - `regolith-compositor-picom-glx`: Uses `picom`. Recommended for most users to
   resolve screen tearing and add visual effects. Modern and well-maintained
   fork of `compton`. Was the default compositor in Regolith 1.6.
