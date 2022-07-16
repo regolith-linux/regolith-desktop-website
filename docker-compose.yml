@@ -1,0 +1,24 @@
+version: "3.4"
+
+services:
+  site:
+    # Recommended docker image by Hugo docs:
+    #    https://gohugo.io/getting-started/installing/#docker
+    #
+    # TODO: Use a minimal image instead. The alpine version
+    # "klakegg/hugo:0.101.0-ext-alpine" complains:
+    #
+    #    fatal: unsafe repository ('/src' is owned by someone else)
+    #
+    # This is because Git 2.35.2 added this check as a security fix. The
+    # non-minimal image has an older version of Git, so it doesn't complain.
+    # Can be fixed with a .gitconfig containing:
+    #
+    #     [safe]
+    #         directory = /home/repon
+    image: "klakegg/hugo:latest-ext"
+    command: "server"
+    volumes:
+      - "./:/src"
+    ports:
+      - "1313:1313"
