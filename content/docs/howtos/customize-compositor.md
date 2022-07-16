@@ -26,7 +26,6 @@ WARNING: In Regolith 2.x, the default compositor is "no compositor". In
 Regolith 1.x, the default was Picom.
 {{< /hint >}}
 
-
 ## Finding available compositors
 
 The following command will list all compositors configured to work with
@@ -38,16 +37,15 @@ apt search regolith-compositor-
 
 You should find at least the following:
 
-* `regolith-compositor-none` **[default]**: No compositor. Best performance, no visual
+- `regolith-compositor-none` **[default]**: No compositor. Best performance, no visual
   effects.
-* `regolith-compositor-picom-glx`: Uses `picom`. Recommended for most users to
+- `regolith-compositor-picom-glx`: Uses `picom`. Recommended for most users to
   resolve screen tearing and add visual effects. Modern and well-maintained
   fork of `compton`. Was the default compositor in Regolith 1.6.
-* `regolith-compositor-compton-glx`: An ancestor of `picom` which is no longer
+- `regolith-compositor-compton-glx`: An ancestor of `picom` which is no longer
   maintained.
-* `regolith-compositor-xcompmgr`: An early compositor that may offer more
+- `regolith-compositor-xcompmgr`: An early compositor that may offer more
   consistent performance if more complex compositors are problematic.
-
 
 ## Installing a compositor
 
@@ -64,13 +62,12 @@ case we’ll install `picom`:
 apt install regolith-compositor-picom
 ```
 
-**Log out and then log back in** and the new compositor should be loaded.  You
+**Log out and then log back in** and the new compositor should be loaded. You
 can verify by checking the process list for `picom`:
 
 ```console
-ps aux | grep picom 
+ps aux | grep picom
 ```
-
 
 ## Overriding Regolith default compositor configuration
 
