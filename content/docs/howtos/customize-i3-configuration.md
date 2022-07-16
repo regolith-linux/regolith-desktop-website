@@ -10,9 +10,10 @@ description: >
 
 The default configurations are stored in `/usr/share/regolith/i3/config.d`. These are loaded alphabetically. Then user configurations in `~/.config/regolith2/config.d` are loaded, also in alphabetical order. Regolith's default configuration is built to be customized by setting `Xresources` variables, adding user configuration, and adding or removing default configurations via `apt`. For this reason, there are several approaches to customization of i3 in Regolith that can be used separately or in combination to achieve your configuration cleanly:
 
-* Use `Xresources` to override variables, e.g. keybindings, strings, program names, colors, etc.
-* Add or remove Regolith default configuration files with `apt`
-* Add your own user configuration files in 
+- Use `Xresources` to override variables, e.g. keybindings, strings, program names, colors, etc.
+- Add or remove Regolith default configuration files with `apt`
+- Add your own user configuration files
+- Replace Regolith's configuration wholesale
 
 ## How to set an `Xresources` variable
 
@@ -107,7 +108,6 @@ sudo apt remove regolith-i3-workspace-config
 ```
 
 Finally, **restart i3 or log out and back in**.
-
 
 ## How to replace Regolith's defaults wholesale
 
