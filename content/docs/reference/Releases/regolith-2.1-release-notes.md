@@ -28,8 +28,9 @@ Regolith 2.1 is a minor release including several improvements, bug fixes, and o
 
 ## Changelog Delta from Regolith Desktop 2.0 to 2.1
 
+See the [GitHub 2.1 release](https://github.com/regolith-linux/voulage/releases/tag/pkgbuild-20220718_013033) for additional details.
 
-## Changes in `regolith-lightdm-config`:
+### Changes in `regolith-lightdm-config`:
 ```
 b8d4503 Add attribution for NASA Juno image
 fdbd150 Switch to Papirus icon theme. Set regolith as default session.
@@ -37,24 +38,24 @@ fdbd150 Switch to Papirus icon theme. Set regolith as default session.
 e95bd47 move from gtk greeter to slick. Update background
 ```
 
-## Changes in `regolith-session`:
+### Changes in `regolith-session`:
 ```
 d1e21b9 Remove old look comment declarations
 d2bee02 Add ability to stage looks in user directory ~/.config/regolith2/looks
 ac6eb70 Check if user's directory does not exist before appending
 ```
 
-## Changes in `i3-wm`:
+### Changes in `i3-wm`:
 ```
 937549f2 Merge tag '4.20.1'
 ```
 
-## Changes in `i3-gaps-wm`:
+### Changes in `i3-gaps-wm`:
 ```
 b451b2a6 Merge tag '4.20.1'
 ```
 
-## Changes in `regolith-i3-config`:
+### Changes in `regolith-i3-config`:
 ```
 3f12389 Package changes
 1e4f88c Switch to super-. for swap-focus based on user feedback
@@ -69,7 +70,7 @@ d7aeb82 Merge pull request #6 from jjsearle/default-border-style-option
 df223f1 allow titlebar to be enabled via Xresources
 ```
 
-## Changes in `regolith-look-default`:
+### Changes in `regolith-look-default`:
 ```
 3fba280 Reduce dependencies in default look, conform to adwaita
 24ffab7 move to hicolor icon theme for default to reduce overhead
@@ -78,7 +79,7 @@ c187a2f Use colors in workspace labels
 589b264 Specify glyph for app laucher. Better glyph for help
 ```
 
-## Changes in `regolith-look-extra`:
+### Changes in `regolith-look-extra`:
 ```
 e0e049a Fix paths to compositor
 a7018ec Decouple picom from looks. relates to https://github.com/regolith-linux/regolith-look-extra/pull/8
@@ -99,14 +100,13 @@ b3e6295 Add dracula look by @jjsearle
 92f844a s/nord/nevil in composer-init
 ```
 
-## Changes in `i3-swap-focus`:
+### Changes in `i3-swap-focus`:
 ```
 c04ad13 Fixes for newer deb build tools
 ccb5ce6 Add debian packaging
 ```
 
-
-## Changes in `regolith-i3xrocks-config`:
+### Changes in `regolith-i3xrocks-config`:
 ```
 11c7516 replace reboot command with saner default (#134)
 086d0a2 Add control entry for i3xrocks-update
@@ -115,20 +115,24 @@ ccb5ce6 Add debian packaging
 38da9e1 Add support to temp script for Tctl (#124)
 0fe5a12 Remove extra space in output (#130)
 e06b955 Add updates block (#131)
+56ed590 move dynamic block window-name to the left-most position due to horizontal variance
+ce6cebd Remove unneeded script for app launch action
+86abc8c Load ilia over remontoire for help action
+d400913 Adding a fix to not show anything on empty workspace (#129)
+25fd18d Add support for bond interface in net-traffic (#128)
 ```
 
-
-## Changes in `regolith-compositor-compton-glx`:
+### Changes in `regolith-compositor-compton-glx`:
 ```
 7980eb1 Allow config to be specified by Xres. Relates to https://github.com/regolith-linux/regolith-look-extra/pull/8
 ```
 
-## Changes in `regolith-compositor-picom-glx`:
+### Changes in `regolith-compositor-picom-glx`:
 ```
 ee673f1 Allow config to be specified by Xres. Relates to https://github.com/regolith-linux/regolith-look-extra/pull/8
 ```
 
-## Changes in `ilia`:
+### Changes in `ilia`:
 ```
 84687f2 Sync project versions
 149d4e6 Filter on both summary and keybinding text in keybinding page to address https://github.com/regolith-linux/ilia/issues/34
@@ -141,19 +145,9 @@ c0e4bd1 Fix double filtering in tracker page. Address https://github.com/regolit
 157df07 Remove default sorting of items from textlist page
 ```
 
-
-## Changes in `regolith-default-settings`:
+### Changes in `regolith-default-settings`:
 ```
 366893e Update default settings to match default look
-```
-
-### Changes in `regolith-i3xrocks-config`:
-```
-56ed590 move dynamic block window-name to the left-most position due to horizontal variance
-ce6cebd Remove unneeded script for app launch action
-86abc8c Load ilia over remontoire for help action
-d400913 Adding a fix to not show anything on empty workspace (#129)
-25fd18d Add support for bond interface in net-traffic (#128)
 ```
 
 ### Changes in `remontoire`:
