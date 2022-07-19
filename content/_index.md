@@ -176,9 +176,8 @@ Custom configurations from Regolith 1.6 will need to be manually ported to Regol
 
 Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
 
-* Branded boot up screen
-* Branded login screen
-* Use `lightdm` over `gdm3`.
+* Regolith-branded boot and login screens
+* Use `lightdm` over `gdm3`
 * The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
 
 The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  Also a "regular" ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with many more status indicators installed by default.

@@ -13,7 +13,7 @@ Regolith 2.1 is a minor release including several improvements, bug fixes, and o
 * Regolith Linux 2.1 ISOs (based from Ubuntu 22.04)
 * Looks `dracula`, `ayu`, `ayu-dark`, `ayu-mirage`, `i3-default`, and `lascaille` added
 * Looks can be loaded from user directories (`~/.config/regolith2/looks`)
-* `i3-swap-focus` is now available. Navigate to last window with keybinding `<super> .`
+* [`i3-swap-focus`](https://github.com/olivierlemoal/i3-swap-focus) is now available. Navigate to last window with keybinding `<super> .`
 
 ## Bug Fixes
 
@@ -24,7 +24,7 @@ Regolith 2.1 is a minor release including several improvements, bug fixes, and o
 ## Known Issues
 
 * No localization for `ilia` 
-* Inconsistent GTK theme in some dialogs in Jammy (`gnome-flashback` fix progress, will be available from Ubuntu repos)
+* Inconsistent GTK theme in some dialogs in Jammy (`gnome-flashback` [fix in progress](https://bugs.launchpad.net/ubuntu/+source/gnome-flashback/+bug/1979120), will be available from Ubuntu repos)
 
 ## Changelog Delta from Regolith Desktop 2.0 to 2.1
 
