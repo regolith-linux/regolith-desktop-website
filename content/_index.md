@@ -4,7 +4,7 @@ type: docs
 bookToc: false
 ---
 
-# The Regolith Desktop Environment 2.0
+# The Regolith Desktop Environment
 
 ![](/regolith-empty.png)
 
@@ -28,7 +28,7 @@ simple and consistent system management capabilities.
 
 ***
 
-# Get Regolith 2.0
+# Get Regolith 2.1
 
 {{< tabs "uniqueid" >}}
 {{< tab "Ubuntu 22.04" >}}
@@ -172,26 +172,21 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 Custom configurations from Regolith 1.6 will need to be manually ported to Regolith 2.  In order to make this upgrade simpler, Regolith 2 uses the user config directory of `~/.config/regolith2`.  It will not read files from the Regolith 1.x user config directory `~/.config/regolith`.  Please refer to [the configuration page](docs/using-regolith/configuration) for more details.
 
 {{< /tab >}}
-{{< tab "Regolith Linux - Beta 1" >}} 
+{{< tab "Regolith Linux 2.1" >}} 
 
-Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it.  It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
+Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
 
 * Branded boot up screen
 * Branded login screen
 * Use `lightdm` over `gdm3`.
 * The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
 
-The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  Also a "regular" ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with many more status icons.
+The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  Also a "regular" ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with many more status indicators installed by default.
 
-* [Regolith Linux 2.1](https://regolith-linux.io/dist/regolith-2.0.0.iso) / [md5sum](https://regolith-linux.io/dist/regolith-2.0.0.md5sum)
-* [Regolith Linux 2.1 Mini](https://regolith-linux.io/dist/regolith-mini-2.0.0.iso) / [md5sum](https://regolith-linux.io/dist/regolith-mini-2.0.0.md5sum)
+* [Regolith Linux 2.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/isobuild-20220719_034310/regolith-ubuntu-jammy-2.1.zip)
+* [Regolith Linux 2.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-isobuild-20220719_034453/regolith-mini-ubuntu-jammy-2.1.zip)
 
 See the [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-release-notes) for more information.
-
-{{< /tab >}}
-{{< tab "Other..." >}} 
-
-Other options are available and documented in the [package repository for Regolith](https://github.com/regolith-linux/voulage), including support for `arm64`-based systems.
 
 {{< /tab >}}
 {{< /tabs >}}

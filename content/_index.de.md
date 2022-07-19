@@ -4,7 +4,7 @@ type: docs
 bookToc: false
 ---
 
-# Die Regolith Desktop Umgebung 2.0
+# Die Regolith Desktop Umgebung
 
 ![](/regolith-empty.png)
 
@@ -25,7 +25,7 @@ einfache und konsistente Systemverwaltungsmöglichkeiten.
 
 ***
 
-# Regolith 2.0 installieren
+# Regolith 2.1 installieren
 
 {{< tabs "uniqueid" >}}
 {{< tab "Ubuntu 22.04" >}}
@@ -170,7 +170,7 @@ Benutzerdefinierte Konfigurationen von Regolith 1.6 müssen manuell auf Regolith
 aus dem Regolith 1.x Benutzer-Konfigurationsverzeichnis `~/.config/regolith` gelesen. Bitte lesen Sie [die Konfigurationsseite](docs/using-regolith/configuration) für weitere Details.
 
 {{< /tab >}}
-{{< tab "Regolith Linux - Beta 1" >}} 
+{{< tab "Regolith Linux 2.1" >}} 
 
 Regolith Linux ist die Regolith-Desktop-Umgebung, die in einem angepassten Ubuntu 22.04-Installationsimage installiert ist. Es ermöglicht das Booten von einem USB-Laufwerk, um Regolith zu starten, ohne es installieren zu müssen. Es ermöglicht auch die Installation des Systems auf dem Laufwerk eines Computers. Regolith Linux bietet neben dem Regolith Desktop folgende Funktionen:
 
@@ -182,18 +182,10 @@ Regolith Linux ist die Regolith-Desktop-Umgebung, die in einem angepassten Ubunt
 
 Die ISO gibt es in zwei Formen, eine "Mini"-ISO, die eine abgespeckte Version ist und nur den Standard-Look enthält. Das "reguläre" ISO ist etwas größer, enthält aber integrierte Unterstützung für alle offiziellen Looks und wird mit vielen weiteren Symbolen installiert.
 
-* [Regolith Linux 2.1](https://regolith-linux.io/dist/regolith-2.0.0.iso)
-  / [md5sum](https://regolith-linux.io/dist/regolith-2.0.0.md5sum)
-* [Regolith Linux 2.1 Mini](https://regolith-linux.io/dist/regolith-mini-2.0.0.iso)
-  / [md5sum](https://regolith-linux.io/dist/regolith-mini-2.0.0.md5sum)
+* [Regolith Linux 2.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/isobuild-20220719_034310/regolith-ubuntu-jammy-2.1.zip)
+* [Regolith Linux 2.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-isobuild-20220719_034453/regolith-mini-ubuntu-jammy-2.1.zip)
 
 Weitere Informationen finden Sie in den [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-release-notes).
-
-{{< /tab >}}
-{{< tab "Other..." >}} 
-
-Andere Optionen sind verfügbar und im [package repository für Regolith](https://github.com/regolith-linux/voulage)
-dokumentiert, einschließlich der Unterstützung für `arm64`-basierte Systeme.
 
 {{< /tab >}}
 {{< /tabs >}}
