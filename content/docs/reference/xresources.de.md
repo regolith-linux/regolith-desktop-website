@@ -8,12 +8,12 @@ description: >
 
 | `Xresources` Key                                   | Description                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------- |
-| gtk.theme_name                                    | GTK Theme   |
-| gtk.icon_theme_name  | GTK Icon Theme  |
+| gtk.theme_name                                     | GTK Theme   |
+| gtk.icon_theme_name                                | GTK Icon Theme  |
 | gnome.terminal.audible-bell                        | Enables audible bell in gnome-terminal (`true / false`)                       |
-| gtk.document_font_name | GTK Document Font Name |
-| gtk.font_name | GTK Font Name |
-| gtk.monospace_font_name | GTK Monospace Font Name |
+| gtk.document_font_name                             | GTK Document Font Name |
+| gtk.font_name                                      | General purpose font for GTK apps and the desktop |
+| gtk.monospace_font_name                            | Font for monospace areas such as i3bar and the terminal 
 | gnome.terminal.background-transparency-percent     | Background transparency value for gnome-terminal (`0 - 100`). See also `gnome.terminal.use-transparent-background`. |
 | gnome.terminal.font                                | Font definition for gnome-terminal                                                                                  |
 | gnome.terminal.scrollbar                           | Flag to enable/disable scrollbar (`never / always`)                                                            |
@@ -22,7 +22,6 @@ description: >
 | gnome.wm.theme                                     | GNOME Window Manager Theme (unused)                                                                                 |
 | i3-wm.alt                                          | Key mapping for Alt key. See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details.       |
 | i3-wm.bar.background.color                         | Bar Background Color                                                                                                |
-| i3-wm.bar.font                                     | Bar Font. Pango font specification for font(s) rendered on the bar            |
 | i3-wm.bar.position                                 | Bar Screen Position                                                                                                 |
 | i3-wm.bar.separator.color                          | Color of seperator between blocks                                                                                   |
 | i3-wm.bar.statusline.color                         |                                                                                                                     |
