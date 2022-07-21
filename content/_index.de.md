@@ -35,7 +35,7 @@ Regolith kann als Systempaket installiert werden. Dies macht das Aktualisieren u
 1. Registrieren Sie den öffentlichen Schlüssel von Regolith in Ihrem lokalen `apt`:
 
    ```console
-   wget -qO - https://regolith-desktop.io/regolith.key | \
+   wget -qO - https://regolith-desktop.org/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
@@ -43,7 +43,7 @@ Regolith kann als Systempaket installiert werden. Dies macht das Aktualisieren u
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.io/release-ubuntu-jammy-amd64 jammy main" | \
+   https://regolith-desktop.org/release-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -77,13 +77,13 @@ liest und das Desktop-Paket installiert.
 1. Registrieren Sie den öffentlichen Schlüssel von Regolith in Ihrem lokalen `apt`:
 
    ```console
-   wget -qO - https://regolith-desktop.io/regolith.key | sudo apt-key add -
+   wget -qO - https://regolith-desktop.org/regolith.key | sudo apt-key add -
    ```
 
 1. Fügen Sie die Repository-URL zu Ihrem lokalen `apt` hinzu:
 
    ```console
-   echo deb "[arch=amd64] https://regolith-desktop.io/release-ubuntu-focal-amd64 focal main" | \
+   echo deb "[arch=amd64] https://regolith-desktop.org/release-ubuntu-focal-amd64 focal main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -114,7 +114,7 @@ liest und das Desktop-Paket installiert.
 1. Registrieren Sie den öffentlichen Schlüssel von Regolith in Ihrem lokalen `apt`:
 
    ```console
-   wget -qO - https://regolith-desktop.io/regolith.key | \
+   wget -qO - https://regolith-desktop.org/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
@@ -122,7 +122,7 @@ liest und das Desktop-Paket installiert.
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.io/release-debian-bullseye-amd64 bullseye main" | \
+   https://regolith-desktop.org/release-debian-bullseye-amd64 bullseye main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 {{< hint info >}}
@@ -151,8 +151,8 @@ Um Regolith 2 in ein bestehendes Ubuntu-System zu installieren, das auf 22.04 ak
 1. Nachdem das 22.04 Upgrade abgeschlossen ist, fügen Sie das Regolith 2 Paket Repository hinzu:
 
    ```console
-   wget -qO - https://regolith-desktop.io/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
-   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-ubuntu-jammy-amd64 jammy main" | \
+   wget -qO - https://regolith-desktop.org/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/release-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    sudo apt update
    ```
