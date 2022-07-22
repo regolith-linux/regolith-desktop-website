@@ -270,7 +270,7 @@ Desktop-Benachrichtigungen kämpfen nicht um Ihre Aufmerksamkeit, sondern könne
 
 ### Hilfe und Austausch
 
-* Besuchen Sie uns auf [Slack](https://regolith-linux.herokuapp.com/) für Hilfe und Gespräche (auf Englisch)
+* Besuchen Sie uns auf [Discussions](https://github.com/orgs/regolith-linux/discussions) für Hilfe und Gespräche (auf Englisch)
 * Suchen Sie in [bestehenden Tickets oder erstellen Sie ein neues Ticket](https://github.com/regolith-linux/regolith-desktop/issues)
   für Bugs und Funktionswünsche (auf Englisch)
 <--->

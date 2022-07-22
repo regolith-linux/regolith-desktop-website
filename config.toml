@@ -41,14 +41,15 @@ enableGitInfo = true
 
 [menu]
 # [[menu.before]]
+
 [[menu.after]]
-  name = "Github"
-  url = "https://github.com/regolith-linux"
+  name = "Help & Discussion"
+  url = "https://github.com/orgs/regolith-linux/discussions"
   weight = 10
 
 [[menu.after]]
-  name = "Slack"
-  url = "https://regolith-linux.herokuapp.com/"
+  name = "Github"
+  url = "https://github.com/regolith-linux"
   weight = 20
 
 [[menu.after]]

@@ -268,7 +268,7 @@ Desktop notifications do not compete for your attention, but rather can be manag
 
 ### Discussion and Help
 
-* Join us on [Slack](https://regolith-linux.herokuapp.com/) for help and discussion
+* Join us on [GitHub Discussions](https://github.com/orgs/regolith-linux/discussions) for help and discussion
 * Search from [existing issues or create a new issue](https://github.com/regolith-linux/regolith-desktop/issues) for bugs and feature requests
 <--->
 

@@ -28,7 +28,7 @@ content/docs/using-regolith/configuration.ja.md
 content/docs/using-regolith/first-launch.ja.md
 ```
 
-There is some additional Hugo configuration before the translation will be available, but we can take care of that.  Feel free to open an issue or reach out on slack with any questions, and thanks in advance!
+There is some additional Hugo configuration before the translation will be available, but we can take care of that.  Feel free to open an issue or reach out on [GitHub Discussions](https://github.com/orgs/regolith-linux/discussions) with any questions, and thanks in advance!
 
 ## Translation Workflow
 
