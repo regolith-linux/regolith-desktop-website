@@ -13,7 +13,7 @@ bookToc: false
 ### Productivity First
 
 Regolith runs [i3](https://i3wm.org/): a popular, fast, and configurable tiling window manager which
-is great for fast keyboard-driven worflows.  Regolith integrates i3 with other desktop components such as 
+is great for fast keyboard-driven workflows.  Regolith integrates i3 with other desktop components such as 
 `i3bar`, `rofication`, `gnome-flashback`, and [`ilia`](https://github.com/regolith-linux/ilia#readme) to provide a complete desktop interface.
 
 <--->
@@ -52,7 +52,7 @@ to configure your system to read packages from the Regolith package repository a
    ```
 
 {{< hint info >}}
-Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 1. Update `apt` and install Regolith
@@ -68,14 +68,14 @@ Substitue `arm64` for `amd64` in the two places in the above line to install on 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint warning >}}
-The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
+The Regolith Desktop is very different from common desktop environments. By default it does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
 {{< /hint >}}
 
 {{< /tab >}}
 
 {{< tab "Ubuntu 20.04" >}}
 
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
+Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
@@ -92,7 +92,7 @@ to configure your system to read packages from the Regolith package repository a
    ```
 
 {{< hint info >}}
-Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 1. Update `apt` and install Regolith
@@ -111,7 +111,7 @@ The login manager will need to be restarted for the new desktop session to be re
 
 {{< tab "Debian Bullseye" >}}
 
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
+Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
@@ -129,7 +129,7 @@ to configure your system to read packages from the Regolith package repository a
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 {{< hint info >}}
-Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 1. Update `apt` and install Regolith
@@ -174,13 +174,13 @@ Custom configurations from Regolith 1.6 will need to be manually ported to Regol
 {{< /tab >}}
 {{< tab "Regolith Linux 2.1" >}} 
 
-Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
+Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows you to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
 
 * Regolith-branded boot and login screens
 * Use `lightdm` over `gdm3`
 * The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
 
-The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  Also a "regular" ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with many more status indicators installed by default.
+The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  Also a "regular" ISO which is somewhat bigger but includes built-in support for all official Looks and comes installed with many more status indicators installed by default.
 
 * [Regolith Linux 2.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/isobuild-20220719_034310/regolith-ubuntu-jammy-2.1.zip)
 * [Regolith Linux 2.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-isobuild-20220719_034453/regolith-mini-ubuntu-jammy-2.1.zip)
@@ -262,7 +262,7 @@ Desktop notifications do not compete for your attention, but rather can be manag
 
 * [Follow us on Twitter to get the latest news](https://twitter.com/RegolithL)
 * [Follow us on Mastodon to get the latest news](https://fosstodon.org/@regolith)
-* [Subscribe to the mailing list for release annoucements](https://www.freelists.org/list/regolith-linux)
+* [Subscribe to the mailing list for release announcements](https://www.freelists.org/list/regolith-linux)
 
 <--->
 
