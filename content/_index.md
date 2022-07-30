@@ -33,7 +33,7 @@ simple and consistent system management capabilities.
 {{< tabs "uniqueid" >}}
 {{< tab "Ubuntu 22.04" >}}
 
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
+Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps (also available as a [downloadable script](/install-release-ubuntu-22.04-amd64.txt)) describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
@@ -75,7 +75,7 @@ The Regolith Desktop is very different from common desktop environments. By defa
 
 {{< tab "Ubuntu 20.04" >}}
 
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
+Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps (also available as a [downloadable script](/install-release-ubuntu-20.04-amd64.txt)) describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
@@ -111,7 +111,7 @@ The login manager will need to be restarted for the new desktop session to be re
 
 {{< tab "Debian Bullseye" >}}
 
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps describe how
+Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps (also available as a [downloadable script](/install-release-debian-11-amd64.txt)) describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
@@ -145,6 +145,22 @@ Substitue `arm64` for `amd64` in the two places in the above line to install on 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< /tab >}}
+{{< tab "Regolith Linux 2.1 ISO" >}} 
+
+Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
+
+* Regolith-branded boot and login screens
+* Uses the `lightdm` display manager over `gdm3` to avoid unneeded dependencies
+* The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
+
+The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  Also a "regular" ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with a few more status indicators installed by default.
+
+* [Regolith Linux 2.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/isobuild-20220719_034310/regolith-ubuntu-jammy-2.1.zip)
+* [Regolith Linux 2.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-isobuild-20220719_034453/regolith-mini-ubuntu-jammy-2.1.zip)
+
+See the [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-release-notes) for more information.
+
+{{< /tab >}}
 {{< tab "Upgrade from Regolith 1.6" >}}
 
 To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04, follow these steps:
@@ -170,22 +186,6 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 1. Now reboot the system and select the regolith session at the login screen
 
 Custom configurations from Regolith 1.6 will need to be manually ported to Regolith 2.  In order to make this upgrade simpler, Regolith 2 uses the user config directory of `~/.config/regolith2`.  It will not read files from the Regolith 1.x user config directory `~/.config/regolith`.  Please refer to [the configuration page](docs/using-regolith/configuration) for more details.
-
-{{< /tab >}}
-{{< tab "Regolith Linux 2.1" >}} 
-
-Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
-
-* Regolith-branded boot and login screens
-* Use `lightdm` over `gdm3`
-* The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
-
-The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  Also a "regular" ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with many more status indicators installed by default.
-
-* [Regolith Linux 2.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/isobuild-20220719_034310/regolith-ubuntu-jammy-2.1.zip)
-* [Regolith Linux 2.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-isobuild-20220719_034453/regolith-mini-ubuntu-jammy-2.1.zip)
-
-See the [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-release-notes) for more information.
 
 {{< /tab >}}
 {{< /tabs >}}
