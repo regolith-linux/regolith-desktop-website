@@ -10,11 +10,13 @@ description: >
 
 ## Looks
 
-Install all the official Regolith looks:
+Install all of the official Regolith looks:
 
 ```console
 sudo apt install regolith-look-*
 ```
+
+NOTE: this pulls in many fonts and some graphics resources so for users looking to minimize disk usage, uninstalling looks that are unused is recommended.
 
 ## Status Indicators
 
@@ -37,6 +39,18 @@ View the current battery status on a laptop:
 ```console
 sudo apt install i3xrocks-battery
 ```
+
+## Compositors
+
+Compositors add visual effects to the windowing environment. By default, Regolith 2.x does not install a specific compositor due to issues with a small subset of graphics hardware/drivers.  Users that prefer more visual effects and have well supported graphics support in Linux may want to install one of the following compositors:
+
+| Package                      | Notes          |
+|------------------------------|-------------------|
+| `regolith-compositor-picom-glx` | Recommended |
+| `regolith-compositor-compton-glx` | An older compositor that may work better on some hardware |
+| `regolith-compositor-xcompmgr` | An older compositor that may work better on some hardware |
+
+See [this How To](/docs/howtos/customize-compositor) for more details.
 
 # Wallpaper
 

@@ -13,7 +13,7 @@ bookToc: false
 ### Productivity First
 
 Regolith runs [i3](https://i3wm.org/): a popular, fast, and configurable tiling window manager which
-is great for fast keyboard-driven worflows.  Regolith integrates i3 with other desktop components such as 
+is great for fast keyboard-driven workflows.  Regolith integrates i3 with other desktop components such as 
 `i3bar`, `rofication`, `gnome-flashback`, and [`ilia`](https://github.com/regolith-linux/ilia#readme) to provide a complete desktop interface.
 
 <--->
@@ -52,7 +52,7 @@ to configure your system to read packages from the Regolith package repository a
    ```
 
 {{< hint info >}}
-Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 1. Update `apt` and install Regolith
@@ -62,6 +62,10 @@ Substitue `arm64` for `amd64` in the two places in the above line to install on 
    sudo apt install regolith-desktop
    sudo apt upgrade
    ```
+
+{{< hint info >}}
+The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
+{{< /hint >}}
 
 1. System Restart
 
@@ -92,7 +96,7 @@ to configure your system to read packages from the Regolith package repository a
    ```
 
 {{< hint info >}}
-Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 1. Update `apt` and install Regolith
@@ -102,6 +106,10 @@ Substitue `arm64` for `amd64` in the two places in the above line to install on 
    sudo apt install regolith-desktop
    sudo apt upgrade
    ```
+
+{{< hint info >}}
+The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
+{{< /hint >}}
 
 1. System Restart
 
@@ -129,7 +137,7 @@ to configure your system to read packages from the Regolith package repository a
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 {{< hint info >}}
-Substitue `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 1. Update `apt` and install Regolith
@@ -139,6 +147,10 @@ Substitue `arm64` for `amd64` in the two places in the above line to install on 
    sudo apt install regolith-desktop
    sudo apt upgrade
    ```
+
+{{< hint info >}}
+The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
+{{< /hint >}}
 
 1. System Restart
 
@@ -179,9 +191,13 @@ To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04,
 1. Next install the Regolith 2 desktop package:
 
    ```console
-   sudo apt install regolith-desktop # See configuration page for additional packages 
+   sudo apt install regolith-desktop
    sudo apt dist-upgrade
    ```
+
+{{< hint info >}}
+The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
+{{< /hint >}}
 
 1. Now reboot the system and select the regolith session at the login screen
 
