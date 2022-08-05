@@ -172,6 +172,8 @@ The ISO comes in two forms, a "mini" ISO which includes a paired down experience
 
 See the [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-release-notes) for more information.
 
+The ISO can be written to a USB drive on Linux using [dd](https://www.man7.org/linux/man-pages/man1/dd.1.html), [GNOME Disk Utility](https://wiki.gnome.org/Apps/Disks), or the [KDE ISO Image Writer](https://community.kde.org/ISOImageWriter). On macOS, use [Etcher](https://www.balena.io/etcher/). On Windows, use [Rufus](https://rufus.ie/) and write in DD mode.
+
 {{< /tab >}}
 {{< tab "Upgrade from Regolith 1.6" >}}
 
