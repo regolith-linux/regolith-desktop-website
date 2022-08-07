@@ -1,7 +1,7 @@
 ---
 title: "2.1 Release Notes"
 linkTitle: "2.1 Release Notes"
-weight: 1
+weight: 5
 description: >
   Release notes for Regolith 2.1
 ---
@@ -25,6 +25,13 @@ Regolith 2.1 is a minor release including several improvements, bug fixes, and o
 
 * No localization for `ilia` 
 * Inconsistent GTK theme in some dialogs in Jammy (`gnome-flashback` [fix in progress](https://bugs.launchpad.net/ubuntu/+source/gnome-flashback/+bug/1979120), will be available from Ubuntu repos)
+
+## Bug Fix Releases
+
+### 2.1.1
+
+The Regolith Linux ISO was rebuilt as 2.1.1 due to a [packaging mistake](https://github.com/regolith-linux/regolith-desktop/issues/692).  The md5sum that may be used to verify the download was incorrect.  The 2.1.1 release fixes this by including the correct md5sum file.  While the 2.2.1 ISO was freshly built, it includes no package changes over 2.1.
+
 
 ## Changelog Delta from Regolith Desktop 2.0 to 2.1
 

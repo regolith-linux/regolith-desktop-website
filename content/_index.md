@@ -165,10 +165,10 @@ Regolith Linux is the Regolith Desktop environment installed into a customized U
 * Uses the `lightdm` display manager over `gdm3` to avoid unneeded dependencies
 * The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
 
-The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  Also a "regular" ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with a few more status indicators installed by default.
+The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  The default ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with a few more status indicators installed by default.
 
-* [Regolith Linux 2.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/isobuild-20220719_034310/regolith-ubuntu-jammy-2.1.zip)
-* [Regolith Linux 2.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-isobuild-20220719_034453/regolith-mini-ubuntu-jammy-2.1.zip)
+* [Regolith Linux 2.1.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-jammy-2.1.1-20220807_181202/regolith-ubuntu-jammy-2.1.1.zip)
+* [Regolith Linux 2.1.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-ubuntu-jammy-2.1.1-20220807_180918/regolith-mini-ubuntu-jammy-2.1.1.zip)
 
 See the [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-release-notes) for more information.
 

@@ -182,8 +182,8 @@ Regolith Linux ist die Regolith-Desktop-Umgebung, die in einem angepassten Ubunt
 
 Die ISO gibt es in zwei Formen, eine "Mini"-ISO, die eine abgespeckte Version ist und nur den Standard-Look enthält. Das "reguläre" ISO ist etwas größer, enthält aber integrierte Unterstützung für alle offiziellen Looks und wird mit vielen weiteren Symbolen installiert.
 
-* [Regolith Linux 2.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/isobuild-20220719_034310/regolith-ubuntu-jammy-2.1.zip)
-* [Regolith Linux 2.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-isobuild-20220719_034453/regolith-mini-ubuntu-jammy-2.1.zip)
+* [Regolith Linux 2.1.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-jammy-2.1.1-20220807_181202/regolith-ubuntu-jammy-2.1.1.zip)
+* [Regolith Linux 2.1.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-ubuntu-jammy-2.1.1-20220807_180918/regolith-mini-ubuntu-jammy-2.1.1.zip)
 
 Weitere Informationen finden Sie in den [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-release-notes).
 
