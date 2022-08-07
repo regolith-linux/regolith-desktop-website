@@ -140,18 +140,18 @@ sudo apt install regolith-look-*
 
 [Starting with Regolith 2.0]({{< ref "docs/reference/configurations.md#history" >}}), many aspects of i3 configuration are managed via the package manager. Regolith provides all of its i3 configuration via "config partials".  These packages install thier i3 config partials into `/usr/share/regolith/i3/config.d`.  By installing and removing packages, i3 configuration can be customized for specific preferences.  By default, when the `regolith-desktop` package is installed, these configuration elements are also installed as soft dependencies:
 
-| Package                      | Function          |
-|------------------------------|-------------------|
-| regolith-i3-base-launchers   | Launch terminal and browser | 
-| regolith-i3-default-style    | Window behavior |
-| regolith-i3-navigation       | Navigation keybindings |
-| regolith-i3-networkmanager   | Network and wifi functions |
-| regolith-i3-next-workspace   | Workspace utility |
-| regolith-i3-resize           | Resize keybindings |
-| regolith-i3-session          | Session keybindings |
-| regolith-i3-unclutter        | Hide mouse cursor when unused |
-| regolith-i3-user-programs    | Optionally launch user programs specified in Xresources |
-| regolith-i3-workspace-config | Workspace keybindings |
+| Package                      | Function          | File |
+|------------------------------|-------------------|----- |
+| regolith-i3-base-launchers   | Launch terminal and browser | `/usr/share/regolith/i3/config.d/15_base_launchers` |
+| regolith-i3-default-style    | Window behavior | `/usr/share/regolith/i3/config.d/40_default-style` |
+| regolith-i3-navigation       | Navigation keybindings | `/usr/share/regolith/i3/config.d/30_navigation` |
+| regolith-i3-networkmanager   | Network and wifi functions | `/usr/share/regolith/i3/config.d/88_network-manager` |
+| regolith-i3-next-workspace   | Workspace utility | `/usr/share/regolith/i3/config.d/40_next-workspace` |
+| regolith-i3-resize           | Resize keybindings | `/usr/share/regolith/i3/config.d/50_resize-mode` |
+| regolith-i3-session          | Session keybindings | `/usr/share/regolith/i3/config.d/55_session_keybindings` |
+| regolith-i3-unclutter        | Hide mouse cursor when unused | `/usr/share/regolith/i3/config.d/86_unclutter` |
+| regolith-i3-user-programs    | Optionally launch user programs specified in Xresources | `/usr/share/regolith/i3/config.d/90_user-programs` |
+| regolith-i3-workspace-config | Workspace keybindings | `/usr/share/regolith/i3/config.d/40_workspace-config` |
 
 Soft dependencies can be removed without causing packages that depend upon it to be removed. This means that any of the listed packages can be removed.  Users can make tweaks to configuration in a more stable manner by replacing a default configuration partial with their own version.  This can be achieved by copying the partial to be customized into `~/.config/regolith2/i3/config.d/` and removing the original file in `/usr/share/regolith/i3/config.d` via `apt`.  In this way, the unmodified config partials can continue to get updates and bug fixes without impacting user-specific configuration.
 
@@ -160,31 +160,32 @@ See the [i3 configuration customization how-to]({{< ref "docs/howtos/customize-i
 
 ## All i3 Configuration Packages
 
-The following contains a list of all i3 configuration packages available in Regolith 2.0:
+The following contains a list of all i3 configuration packages available in Regolith 2.1:
 
-| Package                      | Function          |
-|------------------------------|-------------------|
-| regolith-i3-base-launchers   | Launch terminal and browser | 
-| regolith-i3-compositor       | Compositor integration (delegates to `regolith-compositor-<variant>`) |
-| regolith-i3-default-style    | Window behavior |
-| regolith-i3-ftue             | First time user experience |
-| regolith-i3-gaps-partial     | `i3-gaps` configuration (if installed, i3-gaps will replace i3) |
-| regolith-i3-gnome            | Regolith Settings keybindings |
-| regolith-i3-i3xrocks         | i3 bar status indicators configuration |
-| regolith-i3-ilia             | `ilia` integration |
-| regolith-i3-navigation       | Navigation keybindings |
-| regolith-i3-networkmanager   | `network-manager` integration |
-| regolith-i3-next-workspace   | Auto create next workspace feature |
-| regolith-i3-remontoire       | Legacy keybindings view integration |
-| regolith-i3-resize           | Resize keybindings |
-| regolith-i3-rofi             | Legacy desktop launcher integration |
-| regolith-i3-rofication       | Legacy notification viewer integration |
-| regolith-i3-rofication-ilia  | Notification viewer integration |
-| regolith-i3-session          | Session keybindings |
-| regolith-i3-snapshot         | i3 workspace persistence|
-| regolith-i3-unclutter        | Hides mouse when not in use |
-| regolith-i3-user-programs    | Optionally launch user programs specified in Xresources |
-| regolith-i3-workspace-config | Workspace keybindings |
+| Package                      | Function          | File |
+|------------------------------|-------------------|----- |
+| regolith-i3-base-launchers   | Launch terminal and browser | `/usr/share/regolith/i3/config.d/15_base_launchers` |
+| regolith-i3-compositor       | Compositor integration (delegates to `regolith-compositor-<variant>`) | `/usr/share/regolith/i3/config.d/80_compositor` |
+| regolith-i3-default-style    | Window behavior | `/usr/share/regolith/i3/config.d/40_default-style` |
+| regolith-i3-ftue             | First time user experience | `/usr/share/regolith/i3/config.d/84_ftue` |
+| regolith-i3-gaps-partial     | `i3-gaps` configuration (if installed, i3-gaps will replace i3) | `/usr/share/regolith/i3/config.d/35_i3-gaps` |
+| regolith-i3-gnome            | Regolith Settings keybindings | `/usr/share/regolith/i3/config.d/60_config_keybindings` |
+| regolith-i3-i3xrocks         | i3 bar status indicators configuration | `/usr/share/regolith/i3/config.d/70_bar` |
+| regolith-i3-ilia             | `ilia` integration | `/usr/share/regolith/i3/config.d/20_ilia` |
+| regolith-i3-navigation       | Navigation keybindings | `/usr/share/regolith/i3/config.d/30_navigation` |
+| regolith-i3-networkmanager   | Network and wifi functions | `/usr/share/regolith/i3/config.d/88_network-manager` |
+| regolith-i3-next-workspace   | Workspace utility | `/usr/share/regolith/i3/config.d/40_next-workspace` |
+| regolith-i3-remontoire       | Legacy keybindings view integration | `/usr/share/regolith/i3/config.d/45_remontoire` |
+| regolith-i3-resize           | Resize keybindings | `/usr/share/regolith/i3/config.d/50_resize-mode` |
+| regolith-i3-rofi             | Legacy desktop launcher integration | `/usr/share/regolith/i3/config.d/20_rofi` |
+| regolith-i3-rofication       | Legacy notification viewer integration | `/usr/share/regolith/i3/config.d/82_rofication` |
+| regolith-i3-rofication-ilia  | Notification viewer integration | `/usr/share/regolith/i3/config.d/82_rofication-ilia` |
+| regolith-i3-session          | Session keybindings | `/usr/share/regolith/i3/config.d/55_session_keybindings` |
+| regolith-i3-snapshot         | i3 workspace persistence | `/usr/share/regolith/i3/config.d/75_i3-snapshot` |
+| regolith-i3-swap-focus       | Toggle back to last focused window | `/usr/share/regolith/i3/config.d/40_i3-swap-focus` |
+| regolith-i3-unclutter        | Hides mouse when not in use | `/usr/share/regolith/i3/config.d/86_unclutter` |
+| regolith-i3-user-programs    | Optionally launch user programs specified in Xresources | `/usr/share/regolith/i3/config.d/90_user-programs` |
+| regolith-i3-workspace-config | Workspace keybindings | `/usr/share/regolith/i3/config.d/40_workspace-config` |
 
 # Keybindings
 
