@@ -33,7 +33,7 @@ simple and consistent system management capabilities.
 {{< tabs "uniqueid" >}}
 {{< tab "Ubuntu 22.04" >}}
 
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps (also available as a [downloadable script](/install-release-ubuntu-22.04-amd64.txt)) describe how
+Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps (also available as a [downloadable script](/install-release-ubuntu-22.04-amd64.txt)) describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
@@ -72,14 +72,14 @@ The `regolith-desktop` package installs a reasonable minimal configuration that 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint warning >}}
-The Regolith Desktop is very different from common desktop environments. By default does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
+The Regolith Desktop is very different from common desktop environments. By default it does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
 {{< /hint >}}
 
 {{< /tab >}}
 
 {{< tab "Ubuntu 20.04" >}}
 
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps (also available as a [downloadable script](/install-release-ubuntu-20.04-amd64.txt)) describe how
+Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps (also available as a [downloadable script](/install-release-ubuntu-20.04-amd64.txt)) describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
@@ -119,7 +119,7 @@ The login manager will need to be restarted for the new desktop session to be re
 
 {{< tab "Debian Bullseye" >}}
 
-Regolith can be installed as system packages.  This makes updating and removing easy and consistent.  The following steps (also available as a [downloadable script](/install-release-debian-11-amd64.txt)) describe how
+Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps (also available as a [downloadable script](/install-release-debian-11-amd64.txt)) describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
 1. Register the Regolith public key to your local `apt`:
@@ -165,7 +165,7 @@ Regolith Linux is the Regolith Desktop environment installed into a customized U
 * Uses the `lightdm` display manager over `gdm3` to avoid unneeded dependencies
 * The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
 
-The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  The default ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with a few more status indicators installed by default.
+The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  The default ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with a few more status indicators.
 
 * [Regolith Linux 2.1.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-jammy-2.1.1-20220807_181202/regolith-ubuntu-jammy-2.1.1.zip)
 * [Regolith Linux 2.1.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-ubuntu-jammy-2.1.1-20220807_180918/regolith-mini-ubuntu-jammy-2.1.1.zip)
@@ -280,7 +280,7 @@ Desktop notifications do not compete for your attention, but rather can be manag
 
 * [Follow us on Twitter to get the latest news](https://twitter.com/RegolithL)
 * [Follow us on Mastodon to get the latest news](https://fosstodon.org/@regolith)
-* [Subscribe to the mailing list for release annoucements](https://www.freelists.org/list/regolith-linux)
+* [Subscribe to the mailing list for release announcements](https://www.freelists.org/list/regolith-linux)
 
 <--->
 
