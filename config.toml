@@ -29,6 +29,11 @@ enableGitInfo = true
   contentDir = 'content'
   weight = 2
 
+[languages.fr]
+  languageName = 'French'
+  contentDir = 'content'
+  weight = 3
+
 #[languages.ru]
 #  languageName = 'Russian'
 #  contentDir = 'content.ru'
