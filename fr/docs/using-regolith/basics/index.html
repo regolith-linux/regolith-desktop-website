@@ -1,0 +1,94 @@
+<!doctype html><html lang=fr dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Commencez par apprendre les bases importantes de Regolith"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Les bases"><meta property="og:description" content="Commencez par apprendre les bases importantes de Regolith"><meta property="og:type" content="article"><meta property="og:url" content="https://regolith-desktop.com/fr/docs/using-regolith/basics/"><meta property="article:modified_time" content="2022-08-10T18:59:52-07:00"><title>Les bases | Regolith Desktop</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=alternate hreflang=en href=https://regolith-desktop.com/docs/using-regolith/basics/ title="Basic Usage"><link rel=alternate hreflang=de href=https://regolith-desktop.com/de/docs/using-regolith/basics/ title="Grundlegende Verwendung"><link rel=stylesheet href=/book.min.3a67dda0e2e31cdd898218d88ff64b8c1b1fa9ba4c6fa26ab52e0ea5551b14df.css integrity="sha256-OmfdoOLjHN2JghjYj/ZLjBsfqbpMb6JqtS4OpVUbFN8=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/fr.search.min.02f54c6af8a5e85be9a2efcad0b0d19b6c2f8b403d8ee26d8df875543ae2d1e4.js integrity="sha256-AvVMavil6Fvpou/K0LDRm2wvi0A9juJtjfh1VDri0eQ=" crossorigin=anonymous></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H87N5GZVTN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-H87N5GZVTN');</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/fr/><img src=/regolith-logo.png alt="Regolith Desktop"></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Rechercher aria-label=Rechercher maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
+French</a></label><ul><li><a href=https://regolith-desktop.com/docs/using-regolith/basics/>English</a></li><li><a href=https://regolith-desktop.com/de/docs/using-regolith/basics/>German</a></li></ul></li></ul><ul><li><span>Utilisation</span><ul><li><a href=https://regolith-desktop.com/fr/docs/using-regolith/first-launch/>Premier lancement</a></li><li><a href=https://regolith-desktop.com/fr/docs/using-regolith/basics/ class=active>Les bases</a></li><li><a href=https://regolith-desktop.com/fr/docs/using-regolith/configuration/>Configuration</a></li></ul></li><li><input type=checkbox id=section-229030c09fd1860e91bbacbccd1d05b5 class=toggle>
+<label for=section-229030c09fd1860e91bbacbccd1d05b5 class="flex justify-between"><a href=https://regolith-desktop.com/fr/docs/howtos/>Guides</a></label><ul><li><a href=https://regolith-desktop.com/fr/docs/howtos/customize-i3-configuration/>Personnaliser la config i3</a></li><li><a href=https://regolith-desktop.com/fr/docs/howtos/customize-compositor/>Modifier le Compositor</a></li><li><a href=https://regolith-desktop.com/fr/docs/howtos/add-remove-blocklets/>Modifier les indicateurs dans la barre</a></li><li><a href=https://regolith-desktop.com/fr/docs/howtos/override-xres/>Modifier les Xresources</a></li></ul></li><li><input type=checkbox id=section-b41b5c76c206f493ca7fec2287e5ae6c class=toggle>
+<label for=section-b41b5c76c206f493ca7fec2287e5ae6c class="flex justify-between"><a href=https://regolith-desktop.com/fr/docs/reference/>Références</a></label><ul><li><a href=https://regolith-desktop.com/fr/docs/reference/keybindings/>Raccourcis clavier</a></li><li><a href=https://regolith-desktop.com/fr/docs/reference/configurations/>Configurations</a></li><li><a href=https://regolith-desktop.com/fr/docs/reference/xresources/>Xresources</a></li></ul></li></ul><ul><li><a href=https://github.com/orgs/regolith-linux/discussions target=_blank rel=noopener>Help & Discussion</a></li><li><a href=https://github.com/regolith-linux target=_blank rel=noopener>Github</a></li><li><a href=https://opencollective.com/regolith/donate target=_blank rel=noopener>Support Regolith<br><br><img src=https://badgen.net/opencollective/backers/regolith></a></li></ul></nav><script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>Les bases</strong>
+<label for=toc-control></label></div></header><article class=markdown><p>Bien que nous couvrirons l&rsquo;ensemble du fonctionnement de Regolith dans d&rsquo;autres parties de la documentation, cette page couvre les cas d&rsquo;utilisations basiques.</p><h1 id=utilisation>Utilisation
+<a class=anchor href=#utilisation>#</a></h1><h2 id=lancer-une-application>Lancer une application
+<a class=anchor href=#lancer-une-application>#</a></h2><p>Après la première connexion, l&rsquo;écran contiendra une barre sur le bas et quelques raccourcis clavier dans un dialogue.
+Le but de ce dialogue est d&rsquo;aider l&rsquo;utilisateur à trouver et se souvenir les raccourcis clavier pour diverses actions sur l&rsquo;environnement de bureau.
+Il peut être caché en pressant la touche <code>esc</code> et être ré-affiché avec
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">shift</span>
+<span class="badge badge-warning">?</span></span>
+.
+Pour lancer une application, pressez
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">shift</span>
+<span class="badge badge-warning">?</span></span>
+. et un dialogue similaire affichera les applications installées sur le système.
+Si vous commencez à taper le nom de l&rsquo;application que vous souhaitez lancer, la liste sera filtrée. Vous pouvez aussi scroller dans la liste avec les touches de votre clavier.</p><p><img src=/regolith-ilia-apps.png alt></p><h2 id=naviguer-vers-une-fenêtre>Naviguer vers une fenêtre
+<a class=anchor href=#naviguer-vers-une-fen%c3%aatre>#</a></h2><p>Pour se focaliser sur une application en cours d&rsquo;exécution, le raccourcis
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">ctrl</span>
+<span class="badge badge-warning">space</span></span>
+peut être utilisé pour afficher un dialogue avec toutes les fenêtres ouvertes. Sélectionnez simplement la fenêtre voulue et vous serez déplacés vers l&rsquo;espace de travail contenant cette fenêtre.</p><p><img src=/regolith-ilia-windows.png alt></p><h2 id=créer-un-nouvel-espace-de-travail>Créer un nouvel espace de travail
+<a class=anchor href=#cr%c3%a9er-un-nouvel-espace-de-travail>#</a></h2><p>Les espaces de travail (aussi appelés &ldquo;bureaux virtuels&rdquo; sur certains environnements de bureau) sont la première manière de gérer les fenêtres.
+Chaque espace de travail correspond à un écran avec un ensemble indépendant de fenêtre. Pour créer ou naviguer vers un espace de travail, spécifiez son index avec les touches
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">0-9</span></span>
+.</p><h2 id=trouver-et-lancer-un-fichier>Trouver et lancer un fichier
+<a class=anchor href=#trouver-et-lancer-un-fichier>#</a></h2><p>Rechercher un fichier spécifique sur votre système peut être fait de différentes manières.
+Regolith fourni un dialogue de recherche de fichier avec
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">alt</span>
+<span class="badge badge-warning">space</span></span>
+pour rapidement chercher et éventuellement afficher un fichier avec son application par défaut. Pressez &lsquo;enter&rsquo; sur un élément sélectionné lancera une tentative d&rsquo;ouverte avec la commande <code>xdg-open</code>.</p><p><img src=/regolith-ilia-files.png alt></p><h2 id=terminal>Terminal
+<a class=anchor href=#terminal>#</a></h2><p>Le terminal est une application spéciale qui peut être lancé avec le raccourcis
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">enter</span></span>
+.</p><h2 id=navigateur-web>Navigateur Web
+<a class=anchor href=#navigateur-web>#</a></h2><p>Le navigateur préféré est aussi spécial et peut être lancé avec
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">shift</span>
+<span class="badge badge-warning">enter</span></span>
+.</p><h2 id=quitter-une-application>Quitter une application
+<a class=anchor href=#quitter-une-application>#</a></h2><p><span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">shift</span>
+<span class="badge badge-warning">q</span></span>
+fermera l&rsquo;application focalisée.
+Pour les applications qui ne réagissent plus,
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">alt</span>
+<span class="badge badge-warning">q</span></span>
+les forcera à quitter (kill) mais notez que des données non sauvées peuvent être perdues.</p><h2 id=naviguer-entre-les-espaces-de-travail>Naviguer entre les espaces de travail
+<a class=anchor href=#naviguer-entre-les-espaces-de-travail>#</a></h2><p>Le moyen principal de gérer comment les applications occupent l&rsquo;écran est d&rsquo;utiliser les espaces de travail.
+Un espace de travail est un groupe de 0 ou plus applications qui sont toutes présentes sur le même affichage virtuel.
+Les utilisateurs peuvent naviguer entre les espaces de travail pour gagner plus de place.
+Les fenêtes peuvent être déplacées entre les espaces de travail.
+Les espaces de travail peuvent être attachés à un écran physique ou être déplacés vers un autre écran au besoin.
+Pour naviguer entre les espaces, tenez la touche
+<span class=text-nowrap><span class="badge badge-warning">super</span></span>
+et appuyez sur la touche d&rsquo;un numéro.
+Cela va déplacer la vue vers cet espace de travail. S&rsquo;il y a des fenêtres sur cette espace, elles seront listées dans la barre en bas.
+Ainsi, en regardant la barre du bas, l&rsquo;utilisateur peut savoir quelles sont les fenêtes actives sur l&rsquo;espace de travail focalisé.</p><p>Il est également possible de se déplacer &ldquo;d&rsquo;avant en arrière&rdquo; entre les espaces de travail en utilisant
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">tab</span></span>
+and
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">shift</span>
+<span class="badge badge-warning">tab</span></span>
+.</p><h2 id=configuration-du-système>Configuration du système
+<a class=anchor href=#configuration-du-syst%c3%a8me>#</a></h2><p>L&rsquo;application Paramètres (aussi connu sous le nom <code>regolith-control-center</code>) est l&rsquo;interface principale pour les tâches de configuration courantes comme la configuration du WiFi et du Bluetooth, la configuration des apps associée et la configuration des utilisateurs.
+Cette app peut être lancée avec le raccourcis
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">c</span></span>
+ou depuis le lanceur d&rsquo;applications en utilisant le nom <code>Regolith Settings</code>.</p><p><img src=/regolith-gnome-settings.png alt></p><h2 id=liste-des-raccourcis-clavier>Liste des raccourcis clavier
+<a class=anchor href=#liste-des-raccourcis-clavier>#</a></h2><p>Tous les raccourcis clavier utilisables sur Regolith Desktop peuvent être vus, triés et exécutiées par <code>ilia</code>.
+Ce dialogue est lançable avec
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">shift</span>
+<span class="badge badge-warning">?</span></span>
+.</p><p><img src=/regolith-ilia-keybindings.png alt></p><h2 id=gestion-des-notifications>Gestion des notifications
+<a class=anchor href=#gestion-des-notifications>#</a></h2><p>Le système de notification de Regolith est fait pour prévenir les pop-ups qui peuvent distraire l&rsquo;utilisateur de son travail.
+Les notification peuvent être vues et gérées avec
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">n</span></span>
+.
+Les raccourcis clavier pour supprimer une ou plusieurs notifications sont trouvables dans l&rsquo;ongler <code>aide</code> du dialogue.
+Pour les utilisateurs qui souhaitent plus de visibilité sur les notifications en cours, l&rsquo;indicateur de status <code>i3xrocks-rofication</code> peut être installé via le système de gestion de paquet. Cela affichera le nombre de notifications critiques et non-vues dans la barre.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/regolith-linux/regolith-desktop-website/commit/e3871f2a435472a88d584aba5671268a93254371 title="Dernière modification par Ken Gilmer | August 11, 2022" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>August 11, 2022</span></a></div></div><script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>
