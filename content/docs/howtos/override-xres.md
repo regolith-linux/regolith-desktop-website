@@ -4,10 +4,6 @@ description: >
   Learn how to stage user copies of Regolith configuration files
 ---
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
-
 Regolith relies on the [Xresources system](https://en.wikipedia.org/wiki/X_resources) to provide a consolidated interface configuration. By changing `Xresources` values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for some of the blocklets on the bar.
 
 {{< hint info >}}
@@ -33,11 +29,14 @@ The `xrdb` tool can be used to list the existing `Xresources` values. [There is 
 ```console
 $ xrdb -query
 [...]
-gnome.icon.theme:	Moka
-gnome.terminal.font:	JetBrains Mono 12
 gnome.terminal.scrollbar:	never
-gnome.wallpaper:	/usr/share/backgrounds/ESP_016895_1525_desktop.jpg
-gnome.wm.theme:	Ayu-Mirage-Dark
+gnome.terminal.use-transparent-background:	true
+gtk.document_font_name:	Sans 12
+gtk.font_name:	Bitstream Vera Sans 12
+gtk.icon_theme_name:	Papirus-Dark
+gtk.monospace_font_name:	BitstreamVeraSansMono Nerd Font 13
+gtk.theme_name:	Ayu-Mirage-Dark
+i3-wm.bar.background.color:	#1F2430
 [...]
 ```
 
@@ -78,7 +77,7 @@ $ regolith-look refresh
 
 ```console
 $ xrdb -query | grep gtk
-gnome.gtk.theme:	Ayu-Mirage-Dark
+gtk.theme_name:	Ayu-Mirage-Dark
 $ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith2/Xresources
 $ regolith-look refresh
 ```
@@ -97,17 +96,7 @@ $ echo "i3-wm.mod: Mod1" >> ~/.config/regolith2/Xresources
 $ echo "i3-wm.alt: Mod4" >> ~/.config/regolith2/Xresources
 ```
 
-Then Reload i3 for the change to take effect (on Regolith 1.5+ there is an active regression here with a [temporary fix in the issue](https://github.com/regolith-linux/regolith-desktop/issues/504))
-
-### Example - Launch `nm-applet` when i3 starts
-
-Some users prefer to use the `nm-applet` program to configure and manage their wireless network (from Regolith 1.5 onwards `nm-applet` is run by default in the background). i3 config file can be updated to launch any arbitrary program at start time. But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file. For this to work, also make sure that the system tray is enabled (see above).
-
-```console
-$ echo "i3-wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith2/Xresources
-```
-
-This change requires you to log back in before the change takes effect.
+Then Reload i3 for the change to take effect.  Some settings may require logging back into the session, for example anything that i3 launches as a separate process.
 
 # Further Reading
 
