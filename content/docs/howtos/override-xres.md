@@ -24,7 +24,7 @@ It is recommended to use `~/.config/regolith2/Xresources` for customization as i
 
 ## Determining which values can be changed
 
-The `xrdb` tool can be used to list the existing `Xresources` values. [There is a number of existing overrides]({{< ref "/docs/Reference/xresources.md" >}}) in the R1.4.1 release:
+The `xrdb` tool can be used to list the existing `Xresources` values. [There is a number of existing overrides]({{< ref "/docs/Reference/xresources.md" >}}) in the R2.1 release:
 
 ```console
 $ xrdb -query
