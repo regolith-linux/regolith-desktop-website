@@ -81,7 +81,7 @@ stage/
 
 As mentioned above, the build system generates packages for a given target from it's manifest.  The build system is designed to be agnostic to any particular package format.  As such, package versions are not directly modeled in manifests.  The mechanism that determines if a source change results in a version bump is delegated to package-manager specific extensions.  After a package has been identified to require building, the build system delegates to the package-specific build system to generate the target packages, such as debian source and binary packages.  If the package update builds successfully, another package-manager extension is called to inject the newly built package into the distro-dependant package repository.
 
-# Build System
+# Package Build System
 
 The Regolith build system consists mainly of bash [shell scripts](https://github.com/regolith-linux/voulage/.github/scripts).  These scripts are run from [GitHub workflows](https://github.com/regolith-linux/voulage/.github/workflows) but are designed to be runnable directly from the appropriate local environment to facilitate easy testing and troubleshooting.  The following is a high level summary of what the package builder does once invoked: 
 
@@ -94,6 +94,10 @@ The Regolith build system consists mainly of bash [shell scripts](https://github
 7. Otherwise, package changes have been detected.  Download the entire target repository
 8. For each difference found, delegate to distro-specific build package build and repo publish commands
 9. Publish the updated repository and manifest back to the target repository
+
+# ISO Build System
+
+The ISO builder is based on the open source project [live-custom-ubuntu-from-scratch](https://github.com/mvallim/live-custom-ubuntu-from-scratch/).  The ISO builder uses a set of shell scripts to generate an Ubuntu ISO image for both a live environment and an installer.  Regolith customizes this project in [this repo](https://github.com/regolith-linux/regolith-ubuntu-iso-builder) with some specific packages to [install and remove](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/blob/main/scripts/regolith-2_1-jammy-config.sh).  A github workflow is used to generate the ISOs and upload them to GitHub for hosting.
 
 # Cookbook
 
