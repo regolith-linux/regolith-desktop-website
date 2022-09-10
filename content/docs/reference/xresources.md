@@ -24,6 +24,7 @@ description: >
 | i3-wm.bar.background.color                         | Bar Background Color                                                                                                |
 | i3-wm.bar.position                                 | Bar Screen Position                                                                                                 |
 | i3-wm.bar.separator.color                          | Color of seperator between blocks                                                                                   |
+| i3-wm.bar.separatorchar                            | Character to display between blocks                                                                                 |
 | i3-wm.bar.statusline.color                         |                                                                                                                     |
 | i3-wm.bar.trayoutput                               | Enable or disable the [app tray](https://i3wm.org/docs/userguide.html#_tray_output) in i3bar                        |
 | i3-wm.bar.workspace.active.background.color        |                                                                                                                     |
