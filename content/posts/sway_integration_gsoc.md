@@ -1,9 +1,17 @@
+---
+author: "Soumya Ranjan Patnaik"
+date: 2022-09-25
+linktitle: "Foundations for Regolith on Wayland (GSoC'22)"
+title: "Foundations for Regolith on Wayland (GSoC'22)"
+weight: 1`
+---
 # Introduction
 
 Regolith is a modern desktop environment designed to let you work faster by reducing unnecessary clutter and ceremony. It offers a keyboard based workflow and a tiling window manager that allows efficient management of windows, monitors and workspaces. Built on top of Ubuntu, GNOME Flashback, and i3, Regolith stands on a well-supported and consistent foundation.
 
-In its current implementation, the use i3 window manager binds Regolith to X11. While X11 is fairly mature, it was never built for modern systems and is based on assumptions that are valid only for computers of the ’90s. Some of the issues present in X11 based window managers are low framerates, poor support for HiDPi panels, higher latency, screen tearing etc. Wayland is a display protocol that is written from scratch and aims at simplicity and extensibility Wayland has been in development for quite some time now and its implementations are now stable enough to be considered for daily usage. In fact, many desktop environments like gnome are now providing their wayland implementations as default. Sway window manager was introduced as a drop-in replacement for i3. It is based on wayland and is devoid of most of the issues present in X11 based window managers and compositors.
+In its current implementation, the use i3 window manager binds Regolith to X11. While X11 is fairly mature, it was never built for modern systems and is based on assumptions that are valid only for computers of the ’90s. Some of the issues present in X11 based window managers are low framerates, poor support for HiDPi panels, higher latency, screen tearing etc. Wayland is a display protocol that is written from scratch and aims at simplicity and extensibility Wayland has been in development for quite some time now and its implementations are now stable enough to be considered for daily usage. In fact, many desktop environments like gnome are now providing their wayland implementations as default. Sway window manager was introduced as a drop-in replacement for i3. It is based on wayland and is devoid of most of the issues present in X11 based window managers and compositors. 
 
+>**Note:** The work described in this post was done as part of my [Google Summer of Code (GSoC) 2022](https://summerofcode.withgoogle.com/) project under the organisation [CCExtractor](https://ccextractor.org/).
 # Objective
 
 The project intends to achieve integration of swaywm with the regolith ecosystem. This means, compatibility with GNOME services, integration of a configuration management system, theming using regolith look and support for other extras provided by regolith in a wayland-based environment.
