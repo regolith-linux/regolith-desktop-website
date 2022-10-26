@@ -118,6 +118,6 @@ The ISO builder is based on the open source project [live-custom-ubuntu-from-scr
 
 ## How to extend the build system for a new package format
 
-1. For an example read the [Debian v4 build workflow](https://github.com/regolith-linux/voulage/.github/workflows/build-deb-v4.yml)
-2. Refer to the [Debian extension script](https://github.com/regolith-linux/voulage/.github/scripts/ext-debian.sh) that the workflow uses
+1. For an example read the [Debian v4 build workflow](https://github.com/regolith-linux/voulage/blob/main/.github/workflows/build-deb-v4.yml)
+2. Refer to the [Debian extension script](https://github.com/regolith-linux/voulage/blob/main/.github/scripts/ext-debian.sh) that the workflow uses
 3. Create an extension script that maps from the git source of each package to the target distro's packaging format
