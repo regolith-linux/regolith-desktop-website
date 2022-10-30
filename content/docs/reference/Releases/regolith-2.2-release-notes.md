@@ -12,6 +12,7 @@ description: >
 
 ## New Features
 
+* Ubuntu 22.10 (kinetic) support
 * Wallpaper may be changed in `regolith-control-center` on Ubuntu Kinetic and Debian Bookworm.
 
 ## Bug Fixes
