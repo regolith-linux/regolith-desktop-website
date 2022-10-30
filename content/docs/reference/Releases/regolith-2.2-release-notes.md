@@ -120,5 +120,5 @@ d151347 Include windows in window list containing empty value for 'window_type'.
 ### Changes in `xrescat`:
 
 ```
-bd6a6cb Add virtual package regolith-resource-loader for future wayland support```
+bd6a6cb Add virtual package regolith-resource-loader for future wayland support
 ```
