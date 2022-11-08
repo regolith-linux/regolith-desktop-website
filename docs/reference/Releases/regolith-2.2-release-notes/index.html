@@ -1,4 +1,4 @@
-<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Release notes for Regolith 2.2"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="2.2 Release Notes"><meta property="og:description" content="Release notes for Regolith 2.2"><meta property="og:type" content="article"><meta property="og:url" content="https://regolith-desktop.com/docs/reference/Releases/regolith-2.2-release-notes/"><meta property="article:modified_time" content="2022-10-30T11:31:11-07:00"><title>2.2 Release Notes | Regolith Desktop</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.3a67dda0e2e31cdd898218d88ff64b8c1b1fa9ba4c6fa26ab52e0ea5551b14df.css integrity="sha256-OmfdoOLjHN2JghjYj/ZLjBsfqbpMb6JqtS4OpVUbFN8=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/en.search.min.85d02b621881b776a133327df253d7d385481197d72511edfbd8a142df28427d.js integrity="sha256-hdArYhiBt3ahMzJ98lPX04VIEZfXJRHt+9ihQt8oQn0=" crossorigin=anonymous></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H87N5GZVTN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Release notes for Regolith 2.2"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="2.2 Release Notes"><meta property="og:description" content="Release notes for Regolith 2.2"><meta property="og:type" content="article"><meta property="og:url" content="https://regolith-desktop.com/docs/reference/Releases/regolith-2.2-release-notes/"><meta property="article:modified_time" content="2022-11-08T00:08:07-08:00"><title>2.2 Release Notes | Regolith Desktop</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.3a67dda0e2e31cdd898218d88ff64b8c1b1fa9ba4c6fa26ab52e0ea5551b14df.css integrity="sha256-OmfdoOLjHN2JghjYj/ZLjBsfqbpMb6JqtS4OpVUbFN8=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/en.search.min.83f47b88eefc4bec442c9d490b6f8cb59d7f295a83238820a346dcd32fd791a2.js integrity="sha256-g/R7iO78S+xELJ1JC2+MtZ1/KVqDI4ggo0bc0y/XkaI=" crossorigin=anonymous></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H87N5GZVTN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','G-H87N5GZVTN');</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><img src=/regolith-logo.png alt="Regolith Desktop"></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
 <label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
@@ -13,25 +13,34 @@ English</a></label><ul><li><a href=https://regolith-desktop.com/de/>German</a></
 <a class=anchor href=#bug-fixes>#</a></h2><ul><li><code>i3-swap-focus</code> now available as released in 2.1</li></ul><h2 id=known-issues>Known Issues
 <a class=anchor href=#known-issues>#</a></h2><ul><li>No localization for <code>ilia</code></li></ul><h2 id=changelog-delta-from-regolith-desktop-21-to-22>Changelog Delta from Regolith Desktop 2.1 to 2.2
 <a class=anchor href=#changelog-delta-from-regolith-desktop-21-to-22>#</a></h2><h3 id=changes-in-regolith-session>Changes in <code>regolith-session</code>:
-<a class=anchor href=#changes-in-regolith-session>#</a></h3><pre><code>0047f4d File checks allow symlinks. Address https://github.com/regolith-linux/regolith-desktop/issues/732
+<a class=anchor href=#changes-in-regolith-session>#</a></h3><pre><code>eb699d6 Depend on virtualized config ui package
+c15ced1 Move default ui packages from default look to flashback session since default doesn't need to be installed
+82424f8 Revert changes to Xsession. Due to field variance ilia will manage app path list external to XDG_DATA_DIRS
+7262b91 Consistently specify search path for xres loading
+0047f4d File checks allow symlinks. Address https://github.com/regolith-linux/regolith-desktop/issues/732
 </code></pre><h3 id=changes-in-i3-wm>Changes in <code>i3-wm</code>:
 <a class=anchor href=#changes-in-i3-wm>#</a></h3><pre><code>39afa033 release i3 4.21.1
 </code></pre><h3 id=changes-in-i3-gaps-wm>Changes in <code>i3-gaps-wm</code>:
 <a class=anchor href=#changes-in-i3-gaps-wm>#</a></h3><pre><code>a8546a08 release i3-gaps 4.21
 </code></pre><h3 id=changes-in-regolith-i3-config>Changes in <code>regolith-i3-config</code>:
-<a class=anchor href=#changes-in-regolith-i3-config>#</a></h3><pre><code>9acba1a Add work around for border issue https://github.com/i3/i3/issues/5149
+<a class=anchor href=#changes-in-regolith-i3-config>#</a></h3><pre><code>7c0663c Fix dep decl for retired package
+321220f Virtualize control center bindings to support both upstream and regolith-control-center
+9acba1a Add work around for border issue https://github.com/i3/i3/issues/5149
 72045f8 Add padding to workspace indicator on bar for simple looks
 7865f93 Simplify font spec in i3 workspace label. Allow xres override of bar font to address https://github.com/regolith-linux/regolith-desktop/issues/730
 b1cf838 Allow resize increment to be specified via xres. Address https://github.com/regolith-linux/regolith-i3-config/issues/11
 3deafab Change float modifier due to change in gtk4
 cfe26d7 Fix keybinding comment for swap focus
 </code></pre><h3 id=changes-in-regolith-look-default>Changes in <code>regolith-look-default</code>:
-<a class=anchor href=#changes-in-regolith-look-default>#</a></h3><pre><code>0577cbe Simplify font spec in i3 workspace label. Allow xres override of bar font to address https://github.com/regolith-linux/regolith-desktop/issues/730
+<a class=anchor href=#changes-in-regolith-look-default>#</a></h3><pre><code>2f1ab33 Add border around ilia dialog for better contrast
+c2cb660 Remove recommends from default, moving upstream so avoid issues when users do not opt to install the default look
+0577cbe Simplify font spec in i3 workspace label. Allow xres override of bar font to address https://github.com/regolith-linux/regolith-desktop/issues/730
 deba53b Add conflicts to prevent package install failure
 ff98eb4 Decompose look and loader script for cleaner dependency. Use virtual package for resource loading to generalize between x11 and wayland
 1942cee Added support for wayland
 </code></pre><h3 id=changes-in-regolith-look-extra>Changes in <code>regolith-look-extra</code>:
-<a class=anchor href=#changes-in-regolith-look-extra>#</a></h3><pre><code>fa39ffe More color mapping fixes
+<a class=anchor href=#changes-in-regolith-look-extra>#</a></h3><pre><code>3c35ea5 Add border around ilia dialog for better contrast
+fa39ffe More color mapping fixes
 e5e786b Fix missing color specs
 add5508 Simplify font spec in i3 workspace label. Allow xres override of bar font to address https://github.com/regolith-linux/regolith-desktop/issues/730
 408fa51 Cleanup dependencies to default look
@@ -60,7 +69,12 @@ e7d7c3f volume: extract toggle, volume_up, volume_down functions for easy rebind
 </code></pre><h3 id=changes-in-regolith-compositor-picom-glx>Changes in <code>regolith-compositor-picom-glx</code>:
 <a class=anchor href=#changes-in-regolith-compositor-picom-glx>#</a></h3><pre><code>ee673f1 Allow config to be specified by Xres. Relates to https://github.com/regolith-linux/regolith-look-extra/pull/8
 </code></pre><h3 id=changes-in-ilia>Changes in <code>ilia</code>:
-<a class=anchor href=#changes-in-ilia>#</a></h3><pre><code>d1573ff Update version in build. Do not sort textlist entries. Add flag for no icon in textlist.
+<a class=anchor href=#changes-in-ilia>#</a></h3><pre><code>0ed7873 Add slight border to window in cases where background does not provide contrast
+164b0a6 Experimental change to app dialog to delegate to glib for desktop app source. Better local performance
+3a8ced2 Follow symlinks to desktop apps. Misc cleanup
+881358d Add flatpack dir to scan for desktop apps to address https://github.com/regolith-linux/ilia/issues/49
+675c63d Add snap app dir to default paths to enable firefox to be found on kinetic
+d1573ff Update version in build. Do not sort textlist entries. Add flag for no icon in textlist.
 6e4de4a Update selection logic to address https://github.com/regolith-linux/ilia/issues/44. Misc cleanup
 4683479 Simply use URI to launch selected app from tracker page. Address https://github.com/regolith-linux/regolith-desktop/issues/716
 f9eacc0 Move from XDG_DATA_DIRS to dconf source for desktop app paths
@@ -69,6 +83,6 @@ d151347 Include windows in window list containing empty value for 'window_type'.
 753160d Close dialog on selection for tracker page. exit regardless of error state in desktop app and tracker pages. Address https://github.com/regolith-linux/ilia/issues/39
 </code></pre><h3 id=changes-in-xrescat>Changes in <code>xrescat</code>:
 <a class=anchor href=#changes-in-xrescat>#</a></h3><pre><code>bd6a6cb Add virtual package regolith-resource-loader for future wayland support
-</code></pre></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/regolith-linux/regolith-desktop-website/commit/2de59f507b82951e3a3ef46033fe8a1388665c91 title="Last modified by Regolith Linux | October 30, 2022" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 30, 2022</span></a></div></div><script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+</code></pre></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/regolith-linux/regolith-desktop-website/commit/cd6583edb6b61593acaab876ba82d08046811292 title="Last modified by Regolith Linux | November 8, 2022" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>November 8, 2022</span></a></div></div><script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
 document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>
