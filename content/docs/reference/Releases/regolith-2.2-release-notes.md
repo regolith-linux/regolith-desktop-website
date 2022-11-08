@@ -27,6 +27,10 @@ description: >
 
 ### Changes in `regolith-session`:
 ```
+eb699d6 Depend on virtualized config ui package
+c15ced1 Move default ui packages from default look to flashback session since default doesn't need to be installed
+82424f8 Revert changes to Xsession. Due to field variance ilia will manage app path list external to XDG_DATA_DIRS
+7262b91 Consistently specify search path for xres loading
 0047f4d File checks allow symlinks. Address https://github.com/regolith-linux/regolith-desktop/issues/732
 ```
 
@@ -42,6 +46,8 @@ a8546a08 release i3-gaps 4.21
 
 ### Changes in `regolith-i3-config`:
 ```
+7c0663c Fix dep decl for retired package
+321220f Virtualize control center bindings to support both upstream and regolith-control-center
 9acba1a Add work around for border issue https://github.com/i3/i3/issues/5149
 72045f8 Add padding to workspace indicator on bar for simple looks
 7865f93 Simplify font spec in i3 workspace label. Allow xres override of bar font to address https://github.com/regolith-linux/regolith-desktop/issues/730
@@ -52,6 +58,8 @@ cfe26d7 Fix keybinding comment for swap focus
 
 ### Changes in `regolith-look-default`:
 ```
+2f1ab33 Add border around ilia dialog for better contrast
+c2cb660 Remove recommends from default, moving upstream so avoid issues when users do not opt to install the default look
 0577cbe Simplify font spec in i3 workspace label. Allow xres override of bar font to address https://github.com/regolith-linux/regolith-desktop/issues/730
 deba53b Add conflicts to prevent package install failure
 ff98eb4 Decompose look and loader script for cleaner dependency. Use virtual package for resource loading to generalize between x11 and wayland
@@ -60,6 +68,7 @@ ff98eb4 Decompose look and loader script for cleaner dependency. Use virtual pac
 
 ### Changes in `regolith-look-extra`:
 ```
+3c35ea5 Add border around ilia dialog for better contrast
 fa39ffe More color mapping fixes
 e5e786b Fix missing color specs
 add5508 Simplify font spec in i3 workspace label. Allow xres override of bar font to address https://github.com/regolith-linux/regolith-desktop/issues/730
@@ -109,6 +118,11 @@ ee673f1 Allow config to be specified by Xres. Relates to https://github.com/rego
 
 ### Changes in `ilia`:
 ```
+0ed7873 Add slight border to window in cases where background does not provide contrast
+164b0a6 Experimental change to app dialog to delegate to glib for desktop app source. Better local performance
+3a8ced2 Follow symlinks to desktop apps. Misc cleanup
+881358d Add flatpack dir to scan for desktop apps to address https://github.com/regolith-linux/ilia/issues/49
+675c63d Add snap app dir to default paths to enable firefox to be found on kinetic
 d1573ff Update version in build. Do not sort textlist entries. Add flag for no icon in textlist.
 6e4de4a Update selection logic to address https://github.com/regolith-linux/ilia/issues/44. Misc cleanup
 4683479 Simply use URI to launch selected app from tracker page. Address https://github.com/regolith-linux/regolith-desktop/issues/716
