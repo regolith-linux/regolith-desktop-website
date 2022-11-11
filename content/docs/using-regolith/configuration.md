@@ -16,7 +16,15 @@ Install all of the official Regolith looks:
 sudo apt install regolith-look-*
 ```
 
-NOTE: this pulls in many fonts and some graphics resources so for users looking to minimize disk usage, uninstalling looks that are unused is recommended.
+Alternatively, `apt` will list available looks that may be installed:
+
+```console
+apt list | grep regolith-look-
+```
+
+NOTE: this may pull in fonts, themes, and wallpapers. For users looking to minimize disk usage, uninstalling looks that are unused is recommended.
+
+See below for details on how to select a look.
 
 ## Status Indicators
 
