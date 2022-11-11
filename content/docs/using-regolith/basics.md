@@ -5,13 +5,11 @@ description: >
   Learn the most important parts of Regolith first.
 ---
 
-While we'll cover everything in greater detail in other areas of the documentation, this page covers basic usage of Regolith.
-
 # Usage
 
 ## Launch an Application
 
-After the first login, the screen will contain a bar at the bottom and some keyboard shortcuts in a dialog.  This dialog's purpose is to help the user find and remember keybindings for various actions in the desktop environment.  It may be dismissed with the `esc` key and invoked again with {{< keys "super,shift,?" >}}. To launch an application, press {{< keys "super,space" >}} and a similar dialog will load with the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only those that match. You can also scroll through the list with the arrow keys.
+After the first login, the screen will contain a bar at the bottom and some keyboard shortcuts in a dialog.  This dialog, [`ilia`](https://github.com/regolith-linux/ilia), provides assistance for finding keybindings for various actions in the desktop environment.  It may be dismissed with the `esc` key and invoked again with {{< keys "super,shift,?" >}}. To launch an application, press {{< keys "super,space" >}} and a similar dialog will load with the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only those that match. You can also scroll through the list with the arrow keys.
 
 ![](/regolith-ilia-apps.png)
 
@@ -57,11 +55,11 @@ The Settings app (also known as `regolith-control-center`) is the primary interf
 
 ## View Keybindings
 
-All keybindings used by the Regolith desktop can be viewed, sorted, and executed by `ilia`.  This dialog is launched with {{< keys "super,shift,?" >}}.
+All keybindings used by the Regolith desktop can be viewed, sorted, and executed by [`ilia`](https://github.com/regolith-linux/ilia).  This dialog is launched with {{< keys "super,shift,?" >}}.
 
 ![](/regolith-ilia-keybindings.png)
 
 
 ## Manage Notifications
 
-Regolith's desktop notification system is designed to prevent pop-ups that may distract the user from their work.  Notifications can be viewed and managed via {{< keys "super,n" >}}.  Specific keybindings such as deleting one or groups of notifications may be found on the `help` tab of the dialog.  For users wishing for more visibility of current notifications, the status indicator `i3xrocks-rofication` may be installed via the system package manager. This will show the number of critical and normal unread notifications on the bar. 
+Regolith's desktop notification system is designed to prevent pop-ups that may distract the user from their work.  Notifications can be viewed and managed in [`ilia`](https://github.com/regolith-linux/ilia) via {{< keys "super,n" >}}.  Specific keybindings such as deleting one or groups of notifications may be found on the `help` tab of the dialog.  For users wishing for more visibility of current notifications, the status indicator `i3xrocks-rofication` may be installed via the system package manager. This will show the number of critical and normal unread notifications on the bar. 

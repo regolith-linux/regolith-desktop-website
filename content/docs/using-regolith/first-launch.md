@@ -35,7 +35,7 @@ Entering one of these keybindings will cause a launcher dialog to pop up on the 
 
 {{< /columns >}}
 
-The interface has a text entry widget at the top, followed by a list selection widget.  The general usage pattern for these dialogs is to select an item from the displayed list.  Begin typing to filter the selections, and use the arrow keys to make a selection.  Pressing {{< keys "enter" >}} will cause the selected item to be activated.  For keybindings, this means a keybinding will be manually executed.  For apps, the selected application will be launched.
+The interface, a program called [`ilia`](https://github.com/regolith-linux/ilia), has a text entry widget at the top, followed by a list selection widget.  The general usage pattern for these dialogs is to select an item from the displayed list.  Begin typing to filter the selections, and use the arrow keys to make a selection.  Pressing {{< keys "enter" >}} will cause the selected item to be activated.  For keybindings, this means a keybinding will be manually executed.  For apps, the selected application will be launched.
 
 ## Keybinding Viewer
 
