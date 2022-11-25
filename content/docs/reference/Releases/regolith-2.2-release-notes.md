@@ -6,7 +6,7 @@ description: >
   Release notes for Regolith 2.2
 ---
 
-# NOTE: Regolith 2.2 is in beta testing.  This release announcement is a work in progress.
+# NOTE: Regolith 2.2 is in beta (3) testing.  This release announcement is a work in progress.
 
 [Regolith 2.2](https://github.com/orgs/regolith-linux/projects/25) is a minor release focusing on bug fixes and Ubuntu 22.10 support.
 
@@ -18,6 +18,7 @@ description: >
 ## Bug Fixes
 
 * `i3-swap-focus` now available as released in 2.1
+* Numerous fixes and polish added to `ilia`
 
 ## Known Issues
 
@@ -118,6 +119,11 @@ ee673f1 Allow config to be specified by Xres. Relates to https://github.com/rego
 
 ### Changes in `ilia`:
 ```
+1359f9b Remove async icon loading to fix intermittent missing icons.
+0612d2c Revise app launch logic based on available APIs on focal
+bb5549e Implement emacs and vim key nav.  Misc cleanup
+f9defff Add version param
+27b4682 Refactor app launching to use a context to track launch status.
 0ed7873 Add slight border to window in cases where background does not provide contrast
 164b0a6 Experimental change to app dialog to delegate to glib for desktop app source. Better local performance
 3a8ced2 Follow symlinks to desktop apps. Misc cleanup
