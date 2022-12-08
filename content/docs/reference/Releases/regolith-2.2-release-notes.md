@@ -6,7 +6,7 @@ description: >
   Release notes for Regolith 2.2
 ---
 
-# NOTE: Regolith 2.2 is in beta (3) testing.  This release announcement is a work in progress.
+# NOTE: Regolith 2.2 is in beta (4) testing.  This release announcement is a work in progress.
 
 [Regolith 2.2](https://github.com/orgs/regolith-linux/projects/25) is a minor release focusing on bug fixes and Ubuntu 22.10 support.
 
@@ -28,6 +28,7 @@ description: >
 
 ### Changes in `regolith-session`:
 ```
+0ce56b5 Remove no longer shipped file
 eb699d6 Depend on virtualized config ui package
 c15ced1 Move default ui packages from default look to flashback session since default doesn't need to be installed
 82424f8 Revert changes to Xsession. Due to field variance ilia will manage app path list external to XDG_DATA_DIRS
@@ -119,6 +120,9 @@ ee673f1 Allow config to be specified by Xres. Relates to https://github.com/rego
 
 ### Changes in `ilia`:
 ```
+fe610d8 Fix unicode support in tracker
+936ef27 Fix all page mode cursor navigation
+1634bfc Fix inconsistent widget focus init with new page function
 1359f9b Remove async icon loading to fix intermittent missing icons.
 0612d2c Revise app launch logic based on available APIs on focal
 bb5549e Implement emacs and vim key nav.  Misc cleanup
