@@ -7,4 +7,4 @@ sudo tee /etc/apt/sources.list.d/regolith.list
 
 # Update apt
 sudo apt update
-echo Regolith Desktop can be installed by executing: sudo apt install regolith-desktop
+echo Regolith Desktop can be installed by executing: sudo apt install regolith-desktop regolith-compositor-picom-glx

@@ -28,9 +28,53 @@ simple and consistent system management capabilities.
 
 ***
 
-# Get Regolith 2.1
+# Get Regolith 2.2
 
 {{< tabs "uniqueid" >}}
+{{< tab "Ubuntu 22.10" >}}
+
+Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
+to configure your system to read packages from the Regolith package repository and install the desktop package.
+
+1. Register the Regolith public key to your local `apt`:
+
+   ```console
+   wget -qO - https://regolith-desktop.org/regolith.key | \
+   gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
+   ```
+
+1. Add the repository URL to your local `apt`:
+
+   ```console
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+   https://regolith-desktop.org/release-ubuntu-kinetic-amd64 kinetic main" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   ```
+
+1. Update `apt` and install Regolith
+
+   ```console
+   sudo apt update
+   sudo apt install regolith-desktop regolith-compositor-picom-glx
+   sudo apt upgrade
+   ```
+1. System Restart
+
+The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+
+{{< hint info >}}
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+{{< /hint >}}
+
+{{< hint info >}}
+The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
+{{< /hint >}}
+
+{{< hint info >}}
+The `regolith-compositor-picom-glx` compositor should work on most computers. If you experience driver or visual issues, [try another compositor](docs/howtos/customize-compositor).
+{{< /hint >}}
+
+{{< /tab >}}
 {{< tab "Ubuntu 22.04" >}}
 
 Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps (also available as a [downloadable script](/install-release-ubuntu-22.04-amd64.txt)) describe how
@@ -51,28 +95,27 @@ to configure your system to read packages from the Regolith package repository a
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
-{{< hint info >}}
-Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
-{{< /hint >}}
-
 1. Update `apt` and install Regolith
 
    ```console
    sudo apt update
-   sudo apt install regolith-desktop
+   sudo apt install regolith-desktop regolith-compositor-picom-glx
    sudo apt upgrade
    ```
+1. System Restart
+
+The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+
+{{< hint info >}}
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+{{< /hint >}}
 
 {{< hint info >}}
 The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
 {{< /hint >}}
 
-1. System Restart
-
-The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
-
-{{< hint warning >}}
-The Regolith Desktop is very different from common desktop environments. By default it does not use docks, icon folders, or global drop-down menus.  See the [Getting Started guide]({{< ref "/docs/using-regolith/first-launch" >}}) for important details.
+{{< hint info >}}
+The `regolith-compositor-picom-glx` compositor should work on most computers. If you experience driver or visual issues, [try another compositor](docs/howtos/customize-compositor).
 {{< /hint >}}
 
 {{< /tab >}}
@@ -95,25 +138,29 @@ to configure your system to read packages from the Regolith package repository a
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
-{{< hint info >}}
-Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
-{{< /hint >}}
-
 1. Update `apt` and install Regolith
 
    ```console
    sudo apt update
-   sudo apt install regolith-desktop
+   sudo apt install regolith-desktop regolith-compositor-picom-glx
    sudo apt upgrade
    ```
+
+1. System Restart
+
+The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+
+{{< hint info >}}
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+{{< /hint >}}
 
 {{< hint info >}}
 The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
 {{< /hint >}}
 
-1. System Restart
-
-The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+{{< hint info >}}
+The `regolith-compositor-picom-glx` compositor should work on most computers. If you experience driver or visual issues, [try another compositor](docs/howtos/customize-compositor).
+{{< /hint >}}
 
 {{< /tab >}}
 
@@ -136,28 +183,32 @@ to configure your system to read packages from the Regolith package repository a
    https://regolith-desktop.org/release-debian-bullseye-amd64 bullseye main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
-{{< hint info >}}
-Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
-{{< /hint >}}
 
 1. Update `apt` and install Regolith
 
    ```console
    sudo apt update
-   sudo apt install regolith-desktop
+   sudo apt install regolith-desktop regolith-compositor-picom-glx
    sudo apt upgrade
    ```
+1. System Restart
+
+The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+
+{{< hint info >}}
+Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+{{< /hint >}}
 
 {{< hint info >}}
 The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
 {{< /hint >}}
 
-1. System Restart
-
-The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+{{< hint info >}}
+The `regolith-compositor-picom-glx` compositor should work on most computers. If you experience driver or visual issues, [try another compositor](docs/howtos/customize-compositor).
+{{< /hint >}}
 
 {{< /tab >}}
-{{< tab "Regolith Linux 2.1 ISO" >}} 
+{{< tab "Regolith Linux 2.2 ISO" >}} 
 
 Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
 
@@ -165,45 +216,11 @@ Regolith Linux is the Regolith Desktop environment installed into a customized U
 * Uses the `lightdm` display manager over `gdm3` to avoid unneeded dependencies
 * The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
 
-The ISO comes in two forms, a "mini" ISO which includes a paired down experience and only includes the default look.  The default ISO is somewhat bigger but includes built-in support for all official Looks and comes installed with a few more status indicators.
+{{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221210_192157/regolith-ubuntu-kinetic-2.2.0.zip" >}}Download Regolith Linux 2.2{{< /button >}}
 
-* [Regolith Linux 2.1.1](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-jammy-2.1.1-20220807_181202/regolith-ubuntu-jammy-2.1.1.zip)
-* [Regolith Linux 2.1.1 Mini](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/mini-ubuntu-jammy-2.1.1-20220807_180918/regolith-mini-ubuntu-jammy-2.1.1.zip)
-
-See the [Regolith 2.1 release notes](docs/reference/Releases/regolith-2.1-release-notes) for more information.
+See the [Regolith 2.2 release notes](docs/reference/Releases/regolith-2.2-release-notes) for more information.
 
 The ISO can be written to a USB drive on Linux using [dd](https://www.man7.org/linux/man-pages/man1/dd.1.html), [GNOME Disk Utility](https://wiki.gnome.org/Apps/Disks), or the [KDE ISO Image Writer](https://community.kde.org/ISOImageWriter). On macOS, use [Etcher](https://www.balena.io/etcher/). On Windows, use [Rufus](https://rufus.ie/) and write in DD mode.
-
-{{< /tab >}}
-{{< tab "Upgrade from Regolith 1.6" >}}
-
-To install Regolith 2 into an existing Ubuntu system that is upgrading to 22.04, follow these steps:
-
-1. Upgrade the system to all the latest packages on current release (either Ubuntu 20.04 or 21.10)
-1. Perform the [Ubuntu system upgrade to 22.04](https://www.omgubuntu.co.uk/2022/04/how-to-upgrade-to-ubuntu-22-04-lts), however **DO NOT** reboot as prompted **until the following steps are completed**
-1. After the 22.04 upgrade completes, add the Regolith 2 package repository:
-
-   ```console
-   wget -qO - https://regolith-desktop.org/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
-   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/release-ubuntu-jammy-amd64 jammy main" | \
-   sudo tee /etc/apt/sources.list.d/regolith.list
-   sudo apt update
-   ```
-
-1. Next install the Regolith 2 desktop package:
-
-   ```console
-   sudo apt install regolith-desktop
-   sudo apt dist-upgrade
-   ```
-
-{{< hint info >}}
-The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
-{{< /hint >}}
-
-1. Now reboot the system and select the regolith session at the login screen
-
-Custom configurations from Regolith 1.6 will need to be manually ported to Regolith 2.  In order to make this upgrade simpler, Regolith 2 uses the user config directory of `~/.config/regolith2`.  It will not read files from the Regolith 1.x user config directory `~/.config/regolith`.  Please refer to [the configuration page](docs/using-regolith/configuration) for more details.
 
 {{< /tab >}}
 {{< /tabs >}}
