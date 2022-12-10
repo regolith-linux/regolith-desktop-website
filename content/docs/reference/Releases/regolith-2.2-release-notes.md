@@ -6,8 +6,6 @@ description: >
   Release notes for Regolith 2.2
 ---
 
-# NOTE: Regolith 2.2 is in beta (4) testing.  This release announcement is a work in progress.
-
 [Regolith 2.2](https://github.com/orgs/regolith-linux/projects/25) is a minor release focusing on bug fixes and Ubuntu 22.10 support.
 
 ## New Features
