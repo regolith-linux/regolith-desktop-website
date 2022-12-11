@@ -216,7 +216,7 @@ Regolith Linux is the Regolith Desktop environment installed into a customized U
 * Uses the `lightdm` display manager over `gdm3` to avoid unneeded dependencies
 * The following packages are not installed: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`.  These packages may be installed as needed by the user.
 
-{{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221210_192157/regolith-ubuntu-kinetic-2.2.0.zip" >}}Download Regolith Linux 2.2{{< /button >}}
+{{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221211_050200/regolith-ubuntu-kinetic-2.2.0.zip" >}}Download Regolith Linux 2.2{{< /button >}}
 
 See the [Regolith 2.2 release notes](docs/reference/Releases/regolith-2.2-release-notes) for more information.
 

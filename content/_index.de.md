@@ -193,7 +193,7 @@ Regolith Linux ist die Regolith-Desktop-Umgebung, die in einem angepassten Ubunt
 * Die folgenden Pakete werden nicht installiert: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`
   , `snapd`. Diese Pakete können vom Benutzer nach Bedarf installiert werden.
 
-{{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221210_192157/regolith-ubuntu-kinetic-2.2.0.zip" >}}Download Regolith Linux 2.2{{< /button >}}
+{{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221211_050200/regolith-ubuntu-kinetic-2.2.0.zip" >}}Download Regolith Linux 2.2{{< /button >}}
 
 Weitere Informationen finden Sie in den [Regolith 2.2 release notes](docs/reference/Releases/regolith-2.2-release-notes).
 

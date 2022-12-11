@@ -213,7 +213,7 @@ Cela permet également d'installer sur le disque d'un ordinateur. Regolith Linux
 - Utilise `lightdm` comme gestionnaire d'affichage plutôt que `gdm3` pour éviter les dépendances inutiles
 - Les paquets suivants ne sont pas installés: `gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`. Ils peuvent néanmoins être installés par l'utilisateur.
 
-{{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221210_192157/regolith-ubuntu-kinetic-2.2.0.zip" >}}Download Regolith Linux 2.2{{< /button >}}
+{{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221211_050200/regolith-ubuntu-kinetic-2.2.0.zip" >}}Download Regolith Linux 2.2{{< /button >}}
 
 Rendez-vous sur [Regolith 2.2 release notes](docs/reference/Releases/regolith-2.2-release-notes) pour plus d'informations.
 
