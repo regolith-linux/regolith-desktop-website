@@ -118,7 +118,34 @@ echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith2/Xresources
 
 # Status Bar Indicators
 
-Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages. For example, to show a status indicator for your laptop battery, simply run `sudo apt install i3xrocks-battery` and then refresh the session using `regolith-look refresh`. To find what indicators are available, run `apt search ^i3xrocks-` or search for `i3xrocks-` in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto). There is [more documentation available]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) for configuring status indicators, also called "blocklets".
+Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages. For example, to show a status indicator for your laptop battery, simply run `sudo apt install i3xrocks-battery` and then refresh the session using `regolith-look refresh`. To find what indicators are available, run `apt search ^i3xrocks-` or search for `i3xrocks-` in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto). There is [more documentation available]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) for configuring status indicators, also called "blocklets".  Here is a table of status indicators as of Regolith 2.2:
+
+| Package                      | Status Function | 
+|--------------------------------|-------------------|
+| i3xrocks-app-launcher          | Shortcut to app launch dialog |                               
+| i3xrocks-battery               | Battery status |               
+| i3xrocks-bluetooth             | Bluetooth status |                             
+| i3xrocks-cpu-usage             | CPU utilization |                             
+| i3xrocks-disk-capacity         | Disk utilization |                                 
+| i3xrocks-focused-window-name   | Title of focused window |                                       
+| i3xrocks-info                  | Shortcut to Keybindings viewer |            
+| i3xrocks-key-indicator         | Keyboard toggle status |                                 
+| i3xrocks-keyboard-layout       | Keyboard layout |                                   
+| i3xrocks-media-player          | Media player status |                               
+| i3xrocks-memory                | Memory utilization |              
+| i3xrocks-microphone            | Microphone status |                             
+| i3xrocks-net-traffic           | Network status |                               
+| i3xrocks-next-workspace        | Shortcut to create new workspace |                                 
+| i3xrocks-nm-vpn                | VPN status |                         
+| i3xrocks-openvpn               | OpenVPN status |               
+| i3xrocks-rofication            | Notification status |                             
+| i3xrocks-tailscale             | Tailscale status |                             
+| i3xrocks-temp                  | System temperature |                       
+| i3xrocks-time                  | System time |                       
+| i3xrocks-updates               | System package status |                           
+| i3xrocks-volume                | Audio volume status |                         
+| i3xrocks-weather               | Local weather |                           
+| i3xrocks-wifi                  | Name of connected wifi AP |                       
 
 # Looks
 
