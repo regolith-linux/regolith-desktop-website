@@ -14,7 +14,7 @@ Regolith 3.0 is in pre-release.  This document currently describes `beta 1` and 
 For wayland support, the XResource key names were changed as to not be tied to `i3-wm`.  See the migration guide below for details on how to update customizations.
 {{< /hint >}}
 
-[Regolith 3.0](https://github.com/orgs/regolith-linux/projects/26) is a major release focusing on a new [Wayland](https://github.com/orgs/regolith-linux/projects/8)-based session and Ubuntu 23.04 support.
+[Regolith 3.0](https://github.com/orgs/regolith-linux/projects/26) is a major release focusing on a new [Wayland](https://github.com/orgs/regolith-linux/projects/8)-based session, Debian 12, and Ubuntu 23.04 support.
 
 
 ## New Features
