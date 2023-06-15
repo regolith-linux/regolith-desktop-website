@@ -6,25 +6,72 @@ description: >
   Release notes for Regolith 3.0 (beta 1)
 ---
 
+{{< hint warning >}}
+Regolith 3.0 is in pre-release.  This document currently describes `beta 1` and will be updated up to the final release once available.
+{{< /hint >}}
+
+{{< hint warning >}}
+For wayland support, the XResource key names were changed as to not be tied to `i3-wm`.  See the migration guide below for details on how to update customizations.
+{{< /hint >}}
+
 [Regolith 3.0](https://github.com/orgs/regolith-linux/projects/26) is a major release focusing on a new [Wayland](https://github.com/orgs/regolith-linux/projects/8)-based session and Ubuntu 23.04 support.
+
 
 ## New Features
 
 * Ubuntu 23.04 (lunar) support
-* Wayland session based on the [Sway compositor](https://swaywm.org/) (See [migration guide](https://regolith-desktop.com/docs/howtos/install-sway/))
+* Debian 12 (Bookworm) support
+* Alpha release of Wayland session based on the [Sway compositor](https://swaywm.org/) (See [migration guide](https://regolith-desktop.com/docs/howtos/install-sway/))
 
-## Known Issues
+## Installation
 
-* No localization for `ilia`
+For testing the beta release, you may update the `apt` URL to point to the Regolith `testing` package repository.  For example, this is the release URL for Ubuntu 22.04:
+
+`/etc/apt/sources.list.d/regolith.list`:
+
+```
+[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/release-ubuntu-jammy-amd64 jammy main
+
+```
+
+Updating this to replace `release-` with `testing-` will configure your system to install packages from the `testing` repository:
+
+`/etc/apt/sources.list.d/regolith.list`:
+
+```
+[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/testing-ubuntu-jammy-amd64 jammy main
+```
+
+Follow the same pattern of *only* changing `release-` to `testing-` for any OS Regolith supports.
+
+After that, update and upgrade via `apt`:
+
+```console
+sudo apt update
+sudo apt upgrade # Verify that the packages being installed make sense to you
+```
+
+Now you'll need to log back in to get updated to 3.0.  You can verify by checking the contents of `/etc/regolith/version`.
+
+### Revert Upgrade
+
+To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 1:
+1. Revert the changes to `/etc/apt/sources.list.d/regolith.list`
+2. Uninstall all Regolith packages
+3. Reinstall Regolith using the instructions from the landing page
 
 ## Migration Guide
 
 1. The directory for user-staged configuration files has changed to `~/.config/regolith3`, from `~/.config/regolith2`.
 2. To generalize across X11 and Wayland sessions, Xresource keys have been renamed to remove "i3".  This means that users with Xresource overrides on earlier versions of Regolith will need to update the key names.  Specifically, keys starting with `i3-wm` now start with `wm`.  For example, in Regolith 2.x to change gaps size, `i3-wm.gaps.inner.size` is being renamed to `wm.gaps.inner.size`.
 
+## Report Bugs
+
+Kindly file a [GitHub issue](https://github.com/regolith-linux/regolith-desktop/issues) with any problems you encounter.  Kindly note that you're testing Regolith 3.0 beta 1.
+
 ## Changelog Delta from Regolith Desktop 2.2 to 3.0
 
-## Changes in `regolith-session`:
+### Changes in `regolith-session`:
 ```
 41dbd95 Making regolith-look-default hard dependency
 f17a946 Migrate to wm agnostic packages in x11
@@ -54,19 +101,19 @@ c1bdf0f Remove RfKill from required components
 9c9a33a Added support for unsupported GPU
 ```
 
-## Changes in `i3-wm`:
+### Changes in `i3-wm`:
 ```
 b85da284 release i3 4.22
 ```
 
-## Changes in `regolith-look-default`:
+### Changes in `regolith-look-default`:
 ```
 d1f8351 Update upstream theme package for lunar
 403c89a Remove i3 from wm filename
 57af57f Refactor xres namespace to be x11 agnostic.  i3-wm -> wm
 ```
 
-## Changes in `regolith-look-extra`:
+### Changes in `regolith-look-extra`:
 ```
 e7c9247 Remove i3 from wm filename
 8076d02 Refactor xres namespace to be x11 agnostic.  i3-wm -> wm
@@ -79,33 +126,33 @@ cbfd4e6 Cleanup deprecated picom options
 a6ea33d Misc tweaks to extra looks
 ```
 
-## Changes in `i3-next-workspace`:
+### Changes in `i3-next-workspace`:
 ```
 fc40c1f Relax search on workspace name to work with Regolith 3.0
 ```
 
-## Changes in `regolith-i3xrocks-config`:
+### Changes in `regolith-i3xrocks-config`:
 ```
 e70a24b fix(keyboard-layout): open keyboard menu instead (#145)
 ```
 
-## Changes in `regolith-desktop`:
+### Changes in `regolith-desktop`:
 ```
 e44a757 Update dependencies for support of x11 and wayland (#812)
 291c3be Version bump for next release
 ```
 
-## Changes in `regolith-ftue`:
+### Changes in `regolith-ftue`:
 ```
 017a50b Update sig for build
 ```
 
-## Changes in `regolith-compositor-picom-glx`:
+### Changes in `regolith-compositor-picom-glx`:
 ```
 0d7ad22 Remove deprecated picom options
 ```
 
-## Changes in `ilia`:
+### Changes in `ilia`:
 ```
 86f5694 Bump version to sync w/ jammy branch
 b8ea9d6 add keybings to help
@@ -115,12 +162,12 @@ fe91a57 Fix all page mode curor navigation.
 bd977ec Remove async app loading for https://github.com/regolith-linux/ilia/issues/51
 ```
 
-## Changes in `regolith-rofication`:
+### Changes in `regolith-rofication`:
 ```
 399b528 Remove wm dependencies for wayland support
 ```
 
-## Changes in `regolith-wm-config`:
+### Changes in `regolith-wm-config`:
 ```
 cbe6f87 fix: incorrect arguments to hide_cursor
 7b3149b fix: add missing control entry for regolith-sway-unclutter
