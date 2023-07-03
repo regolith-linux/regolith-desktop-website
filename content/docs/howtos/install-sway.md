@@ -3,11 +3,11 @@ title: "Install the Sway Compositor"
 description: >
   Upgrade to the Wayland-based Regolith session
 ---
-    
+
 
 To install the wayland session, follow these steps:
 
-1. Install the `regolith-session-wayland` package and it's dependencies. 
+1. Install the `regolith-session-sway` package and it's dependencies.
 2. Reboot
 3. Select "Regolith on Wayland" session in the login panel
 
