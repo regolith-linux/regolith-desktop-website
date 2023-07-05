@@ -294,8 +294,6 @@ Les notifications de bureau ne se battent pas pour votre attention mais peuvent 
 
 ### Annonces
 
-- [Suivez-nous sur Twitter pour voir les dernières news](https://twitter.com/RegolithL)
-- [Suivez-nous sur Mastodon pour voir les dernières news](https://fosstodon.org/@regolith)
 - [Souscrivez à notre mailing list pour recevoir les annonces des prochaines versions](https://www.freelists.org/list/regolith-linux)
 
 <--->
