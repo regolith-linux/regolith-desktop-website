@@ -295,8 +295,6 @@ Desktop notifications do not compete for your attention, but rather can be manag
 
 ### Announcements
 
-* [Follow us on Twitter to get the latest news](https://twitter.com/RegolithL)
-* [Follow us on Mastodon to get the latest news](https://fosstodon.org/@regolith)
 * [Subscribe to the mailing list for release announcements](https://www.freelists.org/list/regolith-linux)
 
 <--->

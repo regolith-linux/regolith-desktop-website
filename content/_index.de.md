@@ -272,8 +272,6 @@ Desktop-Benachrichtigungen kämpfen nicht um Ihre Aufmerksamkeit, sondern könne
 
 ### Ankündigungen
 
-* [Folgen Sie uns auf Twitter, um die neuesten Nachrichten zu erhalten](https://twitter.com/RegolithL)
-* [Folgen Sie uns auf Mastodon, um die neuesten Nachrichten zu erhalten](https://fosstodon.org/@regolith)
 * [Abonnieren Sie die Mailing-Liste für Veröffentlichungsankündigungen](https://www.freelists.org/list/regolith-linux)
 
 <--->
