@@ -210,7 +210,7 @@ The `regolith-compositor-picom-glx` compositor should work on most computers. If
 {{< /tab >}}
 {{< tab "Regolith Linux 2.2 ISO" >}} 
 
-Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.04 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
+Regolith Linux is the Regolith Desktop environment installed into a customized Ubuntu 22.10 installer image.  It allows one to boot from a USB drive to run Regolith without having to install it. It also allows to install the system onto a computer's drive.  Regolith Linux has the following features in addition to the Regolith Desktop:
 
 * Regolith-branded boot and login screens
 * Uses the `lightdm` display manager over `gdm3` to avoid unneeded dependencies
