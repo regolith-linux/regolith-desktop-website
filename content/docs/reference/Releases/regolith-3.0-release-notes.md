@@ -3,11 +3,11 @@ title: "3.0 Release Notes"
 linkTitle: "3.0 Release Notes"
 weight: 3
 description: >
-  Release notes for Regolith 3.0 (beta 2)
+  Release notes for Regolith 3.0 (beta 3)
 ---
 
 {{< hint warning >}}
-Regolith 3.0 is in pre-release.  This document currently describes `beta 2` and will be updated up to the final release once available.
+Regolith 3.0 is in pre-release.  This document currently describes `beta 3` and will be updated up to the final release once available.
 {{< /hint >}}
 
 {{< hint warning >}}
@@ -55,7 +55,7 @@ Now you'll need to log back in to get updated to 3.0.  You can verify by checkin
 
 ### Revert Upgrade
 
-To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 2:
+To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 3:
 1. Revert the changes to `/etc/apt/sources.list.d/regolith.list`
 2. Uninstall all Regolith packages
 3. Reinstall Regolith using the instructions from the landing page
@@ -67,7 +67,38 @@ To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 
 
 ## Report Bugs
 
-Kindly file a [GitHub issue](https://github.com/regolith-linux/regolith-desktop/issues) with any problems you encounter.  Kindly note that you're testing Regolith 3.0 beta 2.
+Kindly file a [GitHub issue](https://github.com/regolith-linux/regolith-desktop/issues) with any problems you encounter with a note that you're testing Regolith 3.0 beta 3.
+
+## Changelog Delta from `beta 2` to `beta 3`
+
+### Changes in `regolith-wm-config`:
+```
+d95e330 fix: inconsistent behavious of XF86AudioPlay
+9d98515 fix: add i3 gaps to debian control
+32fd6d4 Remove deprecated dependency i3-gaps
+21da9b6 Fix conflict between deprecated regolith-wm-ilia and wm specific updates
+6e697ad fix: add missing package declaration in control
+05b8e9d fix: use 'bindsym --to-code' on sway for more consistent key mapping behavior with i3
+```
+
+### Changes in `regolith-session`:
+```
+e0012a4 feat: add additional diagnostic infor about the current session
+```
+
+### Changes in `ilia`:
+```
+62aef17 fix(wayland): ilia returns empty keybindings page if a directory included in the configs doesn't exist
+c3a03f8 more window manager agnostic renames
+8cfc7e3 rename I3Client to IPCClient
+c78fa1b rename read_i3_config to read_config
+```
+
+### Changes in `regolith-i3xrocks-config`:
+```
+7f25895 Use a … instead of ... to show more of the artist and title
+2f73725 Use value colors for battery percentage and charge
+```
 
 ## Changelog Delta from `beta 1` to `beta 2`
 
