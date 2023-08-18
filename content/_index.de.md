@@ -27,6 +27,10 @@ einfache und konsistente Systemverwaltungsmöglichkeiten.
 
 # Regolith 2.2 installieren
 
+{{< hint warning >}}
+UPDATE: The Regolith repository key has changed.  Update it by re-running the first step for your distro/version from below.
+{{< /hint >}}
+
 {{< tabs "uniqueid" >}}
 {{< tab "Ubuntu 22.10" >}}
 
