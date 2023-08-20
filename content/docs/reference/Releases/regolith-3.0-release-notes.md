@@ -69,6 +69,49 @@ To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 
 
 Kindly file a [GitHub issue](https://github.com/regolith-linux/regolith-desktop/issues) with any problems you encounter with a note that you're testing Regolith 3.0 beta 3.
 
+## Changelog Delta from `beta 3` to `beta 4`
+
+### Changes in `regolith-displayd`:
+```
+4e2606b feat: add fractional scaling for resolutions greater than 1920 x 1080
+0ea712d chore: linting changes
+```
+
+### Changes in `regolith-i3xrocks-config`:
+```
+3eed9da Package changes
+7f25895 Use a … instead of ... to show more of the artist and title (#143)
+2f73725 Use value colors for battery percentage and charge (#148)
+```
+
+### Changes in `regolith-session`:
+```
+37f0773 fix: add conflicts to avoid collision on ext package
+c0bf9b8 move autostart file to new package
+76d8d1d fix: move idle autostart file to seperate package as soft dep to maintain compat w/ upstream flashback
+c072b4f fix: path to idle monitor daemon incorrect
+e092d1d fix: Ship idle monitor autostart desktop file.  Addresses https://github.com/regolith-linux/regolith-session/pull/15
+7f76fdf fix: install picom compositor by default on x11 session
+59120ee feat: enable loading of last installed theme on first session install in xorg session
+fe33317 fix: changelog version invalid
+b8c6564 fix: on first lanch of sway session, call load_look() function to setup environment
+9c9c42b add error handling in case that Xres/trawl look path is invalid
+f67e8ac feat: if a look is not set in xres/trawl, load the most recently installed look instead of default
+0389967 fix: push regolith-default-settings down to x11 session, possibly unneeded for wayland (experiemental)
+```
+
+### Changes in `regolith-wm-config`:
+```
+f5892dc fix: inconsistent behavious of XF86AudioPlay
+ba26d1f chore: update homepage
+d85be5a fix: add i3 gaps to debian control
+```
+
+### Changes in `regolith-desktop`:
+```
+821c31c fix: push regolith-default-settings down to x11 session, possibly unneeded for wayland (experiemental)
+```
+
 ## Changelog Delta from `beta 2` to `beta 3`
 
 ### Changes in `regolith-wm-config`:
