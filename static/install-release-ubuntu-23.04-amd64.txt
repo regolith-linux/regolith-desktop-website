@@ -1,8 +1,8 @@
 # Register the Regolith public key to your local apt
-wget -qO - https://regolith-desktop.org/regolith.key | sudo apt-key add -
+wget -qO - https://regolith-desktop.org/regolith.key | gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
 
 # Add the repository URL to your local apt
-echo deb "[arch=amd64] https://regolith-desktop.org/release3-ubuntu-focal-amd64 focal main" | \
+echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/release3-ubuntu-lunar-amd64 lunar main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 
 # Update apt
