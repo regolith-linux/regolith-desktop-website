@@ -3,11 +3,11 @@ title: "3.0 Release Notes"
 linkTitle: "3.0 Release Notes"
 weight: 3
 description: >
-  Release notes for Regolith 3.0 (beta 3)
+  Release notes for Regolith 3.0 (beta 4)
 ---
 
 {{< hint warning >}}
-Regolith 3.0 is in pre-release.  This document currently describes `beta 3` and will be updated up to the final release once available.
+Regolith 3.0 is in pre-release.  This document currently describes `beta 4` and will be updated up to the final release once available.
 {{< /hint >}}
 
 {{< hint warning >}}
@@ -55,7 +55,7 @@ Now you'll need to log back in to get updated to 3.0.  You can verify by checkin
 
 ### Revert Upgrade
 
-To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 3:
+To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 4:
 1. Revert the changes to `/etc/apt/sources.list.d/regolith.list`
 2. Uninstall all Regolith packages
 3. Reinstall Regolith using the instructions from the landing page
@@ -67,7 +67,7 @@ To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 
 
 ## Report Bugs
 
-Kindly file a [GitHub issue](https://github.com/regolith-linux/regolith-desktop/issues) with any problems you encounter with a note that you're testing Regolith 3.0 beta 3.
+Kindly file a [GitHub issue](https://github.com/regolith-linux/regolith-desktop/issues) with any problems you encounter with a note that you're testing Regolith 3.0 beta 4.
 
 ## Changelog Delta from `beta 3` to `beta 4`
 
