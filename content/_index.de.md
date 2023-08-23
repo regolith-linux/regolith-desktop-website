@@ -28,7 +28,7 @@ einfache und konsistente Systemverwaltungsmöglichkeiten.
 # Regolith 2.2 installieren
 
 {{< hint warning >}}
-UPDATE: The Regolith repository key has changed.  Update it by re-running the first step for your distro/version from below.
+UPDATE: The Regolith repository key has changed.  Update it by re-running the first step for your distro/version from below. [More Details](https://github.com/orgs/regolith-linux/discussions/888)
 {{< /hint >}}
 
 {{< tabs "uniqueid" >}}
