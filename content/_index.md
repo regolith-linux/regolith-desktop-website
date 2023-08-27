@@ -12,15 +12,14 @@ bookToc: false
 
 ### Productivity First
 
-Regolith runs [i3](https://i3wm.org/): a popular, fast, and configurable tiling window manager which
-is great for fast keyboard-driven workflows.  Regolith integrates i3 with other desktop components such as 
-`i3bar`, `rofication`, `gnome-flashback`, and [`ilia`](https://github.com/regolith-linux/ilia#readme) to provide a complete desktop interface.
+Regolith runs [i3](https://i3wm.org/) and [Sway](https://swaywm.org/): popular, fast, and configurable tiling window managers that are great for productive, keyboard-driven workflows.  Regolith integrates i3 and Sway with other desktop components such as 
+`i3bar`, `rofication`, `i3status-rs`, and [`ilia`](https://github.com/regolith-linux/ilia#readme) to provide a complete desktop experience.
 
 <--->
 
 ### GNOME System Management
 
-By providing a gnome session with [`gnome-flashback`](https://wiki.gnome.org/Projects/GnomeFlashback), Regolith sidesteps
+By integrating light-weight window managers with `gnome-session`, Regolith sidesteps
 much of the complexity of a typical `gnome-shell` based environment while providing
 simple and consistent system management capabilities.
 
