@@ -3,71 +3,28 @@ title: "3.0 Release Notes"
 linkTitle: "3.0 Release Notes"
 weight: 3
 description: >
-  Release notes for Regolith 3.0 (beta 4)
+  Release notes for Regolith 3.0
 ---
 
-{{< hint warning >}}
-Regolith 3.0 is in pre-release.  This document currently describes `beta 4` and will be updated up to the final release once available.
-{{< /hint >}}
-
-{{< hint warning >}}
-For wayland support, the XResource key names were changed as to not be tied to `i3-wm`.  See the migration guide below for details on how to update customizations.
-{{< /hint >}}
+# Regolith 3.0 Release Notes
 
 [Regolith 3.0](https://github.com/orgs/regolith-linux/projects/26) is a major release focusing on a new [Wayland](https://github.com/orgs/regolith-linux/projects/8)-based session, Debian 12, and Ubuntu 23.04 support.
 
 
-## New Features
+## New Major Features
 
 * Ubuntu 23.04 (lunar) support
 * Debian 12 (Bookworm) support
 * Alpha release of Wayland session based on the [Sway compositor](https://swaywm.org/) (See [migration guide](https://regolith-desktop.com/docs/howtos/install-sway/))
 
-## Installation
-
-For testing the beta release, you may update the `apt` URL to point to the Regolith `testing` package repository.  For example, this is the release URL for Ubuntu 22.04:
-
-`/etc/apt/sources.list.d/regolith.list`:
-
-```
-[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/release-ubuntu-jammy-amd64 jammy main
-
-```
-
-Updating this to replace `release-` with `testing-` will configure your system to install packages from the `testing` repository:
-
-`/etc/apt/sources.list.d/regolith.list`:
-
-```
-[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/testing-ubuntu-jammy-amd64 jammy main
-```
-
-Follow the same pattern of *only* changing `release-` to `testing-` for any OS Regolith supports.
-
-After that, update and upgrade via `apt`:
-
-```console
-sudo apt update
-sudo apt upgrade # Verify that the packages being installed make sense to you
-```
-
-Now you'll need to log back in to get updated to 3.0.  You can verify by checking the contents of `/etc/regolith/version`.
-
-### Revert Upgrade
-
-To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 4:
-1. Revert the changes to `/etc/apt/sources.list.d/regolith.list`
-2. Uninstall all Regolith packages
-3. Reinstall Regolith using the instructions from the landing page
-
 ## Migration Guide
 
-1. The directory for user-staged configuration files has changed to `~/.config/regolith3`, from `~/.config/regolith3`.
+{{< hint warning >}}
+Important information for existing Regolith users
+{{< /hint >}}
+
+1. The directory for user-staged configuration files has changed from `~/.config/regolith2` to `~/.config/regolith3`.
 2. To generalize across X11 and Wayland sessions, Xresource keys have been renamed to remove "i3".  This means that users with Xresource overrides on earlier versions of Regolith will need to update the key names.  Specifically, keys starting with `i3-wm` now start with `wm`.  For example, in Regolith 2.x to change gaps size, `i3-wm.gaps.inner.size` is being renamed to `wm.gaps.inner.size`.
-
-## Report Bugs
-
-Kindly file a [GitHub issue](https://github.com/regolith-linux/regolith-desktop/issues) with any problems you encounter with a note that you're testing Regolith 3.0 beta 4.
 
 ## Changelog Delta from `beta 3` to `beta 4`
 

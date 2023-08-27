@@ -8,7 +8,46 @@ description: >
 
 # Get Regolith 3.0
 
-## Ubuntu
+If you're upgrading from an earlier version of Regolith, you may be interested in reading [the release notes](/docs/reference/Releases/regolith-3.0-release-notes) and most specifically, the [migration guide](http://localhost:1313/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide).
+
+## Packages Specified at Install Time
+
+In Regolith 3.0 it is now possible to select from multiple sessions (X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`). Due to this, when installing Regolith 3.0 also specify one or both sessions that you wish to use. Additionally, it's now possible to specify the Regolith Look at install time, which saves a setup of having to configure it later.  Here is the recommended base install for X11 on Debian-based systems:
+
+```console
+sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
+#                ^-- base package ^-- session                ^ -- look 
+```
+
+* For the session, you may chose one or both of: `regolith-session-flashback` (X11), `regolith-session-sway` (Wayland)
+* For the look, you may chose *one* from any available look package:
+```
+regolith-look-ayu-dark
+regolith-look-ayu-mirage
+regolith-look-ayu
+regolith-look-blackhole
+regolith-look-default-loader
+regolith-look-default
+regolith-look-dracula
+regolith-look-gruvbox
+regolith-look-i3-default
+regolith-look-lascaille
+regolith-look-nevil
+regolith-look-nord
+regolith-look-solarized-dark
+```
+
+An an example and alternative to the recommendation above, here is the `apt` line to install the Sway session with the Nord Look:
+
+```console
+sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
+```
+
+## Supported Operating Systems
+
+Below are sections devoted to installing the Regolith Desktop on specific Linux-based operating systems.
+
+### Ubuntu
 
 {{< tabs "ubuntu-tabs" >}}
 {{< tab "Ubuntu 23.04" >}}
@@ -27,7 +66,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release3-ubuntu-lunar-amd64 lunar main" | \
+   https://regolith-desktop.org/release-3_0-ubuntu-lunar-amd64 lunar main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -62,7 +101,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release3-ubuntu-jammy-amd64 jammy main" | \
+   https://regolith-desktop.org/release-3_0-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -96,7 +135,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Add the repository URL to your local `apt`:
 
    ```console
-   echo deb "[arch=amd64] https://regolith-desktop.org/release3-ubuntu-focal-amd64 focal main" | \
+   echo deb "[arch=amd64] https://regolith-desktop.org/release-3_0-ubuntu-focal-amd64 focal main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -104,7 +143,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    sudo apt update
-   sudo apt install regolith-desktop regolith-compositor-picom-glx
+   sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
    ```
 
 1. System Restart
@@ -134,7 +173,7 @@ The ISO can be written to a USB drive on Linux using [dd](https://www.man7.org/l
 {{< /tab >}}
 {{< /tabs >}}
 
-## Debian
+### Debian
 
 {{< tabs "debian-tabs" >}}
 
@@ -154,7 +193,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release3-debian-bookworm-amd64 bookworm main" | \
+   https://regolith-desktop.org/release-3_0-debian-bookworm-amd64 bookworm main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -162,7 +201,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    sudo apt update
-   sudo apt install regolith-desktop regolith-compositor-picom-glx
+   sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
    ```
 1. System Restart
 
@@ -199,7 +238,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release3-debian-bullseye-amd64 bullseye main" | \
+   https://regolith-desktop.org/release-3_0-debian-bullseye-amd64 bullseye main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -228,3 +267,7 @@ The `regolith-compositor-picom-glx` compositor should work on most computers. If
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Release Change Policy
+
+From Regolith 3.0 onward, all releases will use unique names in the package repo URL.  This means that users will be in full control of when they wish to upgrade to a new release.  Users wishing to have their package manager always install the latest version, a special stage called `release-current` is provided.
