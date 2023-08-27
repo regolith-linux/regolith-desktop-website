@@ -2,7 +2,7 @@
 wget -qO - https://regolith-desktop.org/regolith.key | sudo apt-key add -
 
 # Add the repository URL to your local apt
-echo deb "[arch=amd64] https://regolith-desktop.org/release3-ubuntu-focal-amd64 focal main" | \
+echo deb "[arch=amd64] https://regolith-desktop.org/release-3_0-ubuntu-focal-amd64 focal main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 
 # Update apt
