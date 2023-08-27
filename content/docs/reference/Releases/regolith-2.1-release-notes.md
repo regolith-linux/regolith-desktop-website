@@ -12,7 +12,7 @@ Regolith 2.1 is a minor release including several improvements, bug fixes, and o
 
 * Regolith Linux 2.1 ISOs (based from Ubuntu 22.04)
 * Looks `dracula`, `ayu`, `ayu-dark`, `ayu-mirage`, `i3-default`, and `lascaille` added
-* Looks can be loaded from user directories (`~/.config/regolith2/looks`)
+* Looks can be loaded from user directories (`~/.config/regolith3/looks`)
 * [`i3-swap-focus`](https://github.com/olivierlemoal/i3-swap-focus) is now available. Navigate to last window with keybinding `<super> .`
 
 ## Bug Fixes
@@ -48,7 +48,7 @@ e95bd47 move from gtk greeter to slick. Update background
 ### Changes in `regolith-session`:
 ```
 d1e21b9 Remove old look comment declarations
-d2bee02 Add ability to stage looks in user directory ~/.config/regolith2/looks
+d2bee02 Add ability to stage looks in user directory ~/.config/regolith3/looks
 ac6eb70 Check if user's directory does not exist before appending
 ```
 

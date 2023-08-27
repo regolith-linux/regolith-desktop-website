@@ -62,7 +62,7 @@ To return to the production version of Regolith 2.2 after upgrading to 3.0 beta 
 
 ## Migration Guide
 
-1. The directory for user-staged configuration files has changed to `~/.config/regolith3`, from `~/.config/regolith2`.
+1. The directory for user-staged configuration files has changed to `~/.config/regolith3`, from `~/.config/regolith3`.
 2. To generalize across X11 and Wayland sessions, Xresource keys have been renamed to remove "i3".  This means that users with Xresource overrides on earlier versions of Regolith will need to update the key names.  Specifically, keys starting with `i3-wm` now start with `wm`.  For example, in Regolith 2.x to change gaps size, `i3-wm.gaps.inner.size` is being renamed to `wm.gaps.inner.size`.
 
 ## Report Bugs

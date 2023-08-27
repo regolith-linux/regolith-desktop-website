@@ -1,3 +1,11 @@
+---
+title: "Install"
+linkTitle: "Install"
+weight: 1
+description: >
+  Install Regolith
+---
+
 # Get Regolith 3.0
 
 ## Ubuntu

@@ -6,7 +6,7 @@ description: >
 
 Like most configuration in Regolith, the i3-gaps gap size can be tuned via `Xresources` ([See here]({{< ref "/docs/Reference/xresources.md" >}}) for all Xresource definitions).
 
-1. Create or add the following value to your `~/.config/regolith2/Xresources` file:
+1. Create or add the following value to your `~/.config/regolith3/Xresources` file:
 
 ```console
 i3-wm.gaps.inner.size: 20

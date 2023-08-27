@@ -1,7 +1,7 @@
 ---
 title: "Erster Start"
 linkTitle: "Erster Start"
-weight: 1
+weight: 2
 description: >
   Wichtige Details für den ersten Start von Regolith
 ---

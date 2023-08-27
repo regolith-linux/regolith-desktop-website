@@ -46,7 +46,7 @@ Pfades zum Hintergrundbild über den Xresources-Parameter `regolith.wallpaper.fi
 Beispiel: Angenommen, die Datei `/usr/share/backgrounds/hardy_wallpaper_uhd.png` ist vorhanden:
 
 ```console
-echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
@@ -56,25 +56,25 @@ Optionen sind: `none`, `wallpaper`, `centered`, `scaled`, `stretched`, `zoom`, `
 Beispiel:
 
 ```console
-echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
 Um eine Farbe anstelle eines Bildes anzugeben, verwenden Sie den Xresource-Parameter `regolith.wallpaper.color.primary`:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
 Um eine sekundäre Farbe und einen Farbverlauf zu definieren:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
@@ -85,7 +85,7 @@ Die Parameter sind die gleichen wie beim Desktop-Hintergrundbild, aber mit dem P
 so: `regolith.lockscreen.wallpaper...`. Um zum Beispiel ein Bild für den Sperrbildschirm anzugeben:
 
 ```console
-echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
@@ -95,8 +95,8 @@ Wenn Sie das Hintergrundbild außerhalb von Regolith verwalten möchten, geben S
 Hintergrundbild und die Farbe an:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
 
 # Statusleisten-Anzeigen
@@ -164,14 +164,14 @@ installiert wird, werden diese Konfigurationselemente standardmäßig auch als S
 Soft-Abhängigkeiten können entfernt werden, ohne dass Pakete entfernt werden, die davon abhängen. Dies bedeutet, dass
 jedes der aufgelisteten Pakete entfernt werden kann. Benutzer können Änderungen an der Konfiguration auf solidere Weise
 vornehmen, indem sie einen Teil der Standardkonfiguration durch ihre eigene Version ersetzen. Dies kann erreicht werden,
-indem man den Teil, der angepasst werden soll, nach `~/.config/regolith2/i3/config.d/` kopiert und die Originaldatei
+indem man den Teil, der angepasst werden soll, nach `~/.config/regolith3/i3/config.d/` kopiert und die Originaldatei
 in `/usr/share/regolith/i3/config.d` über apt entfernt. Zum Beispiel, um die Tastaturbelegung des Arbeitsbereichs
 anzupassen:
 
 ```console
-mkdir -p ~/.config/regolith2/i3/config.d
-cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith2/i3/config.d/
-vim ~/.config/regolith2/i3/config.d/40_workspace-config # gewünschte Änderungen vornehmen
+mkdir -p ~/.config/regolith3/i3/config.d
+cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/config.d/
+vim ~/.config/regolith3/i3/config.d/40_workspace-config # gewünschte Änderungen vornehmen
 sudo apt remove regolith-i3-workspace-config # Entfernt die Standardversion
 # Starte i3 neu oder logge dich wieder ein
 ```
@@ -213,7 +213,7 @@ Die häufigste Änderung der Tastaturbelegung ist die Taste {{< keys "super" >}}
 kanonische Quelle für Einstellungen, die von verschiedenen UI-Komponenten gelesen werden. Die Tabelle der `Xresources`
 -Parameter, für die Benutzerkonfiguration [ist an anderer Stelle verfügbar]({{< ref "xresources" >}}). Um die
 Tastaturbelegung {{< keys "super" >}} von der Taste "windows" auf "alt" zu ändern, fügen Sie die folgende Zeilen in die
-Datei `~/.config/regolith2/Xresources` ein:
+Datei `~/.config/regolith3/Xresources` ein:
 
 ```toml
 i3-wm.mod: Mod1

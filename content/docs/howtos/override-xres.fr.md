@@ -24,9 +24,9 @@ Quand une session Regolith démarre, les Xresources sont charger dans l'ordre su
 | -------------------------------- | -------- | ----------------------------------------------- |
 | `~/.Xresources`                  | Y        | Pour les paramètres non- Regolith               |
 | `/usr/share/regolith-look/**/`   | N        | Les `Xresources` de Regolith liées à des thèmes |
-| `~/.config/regolith2/Xresources` | Y        | Ré-écritures de configurations par défaut       |
+| `~/.config/regolith3/Xresources` | Y        | Ré-écritures de configurations par défaut       |
 
-Il est recommandé d'utiliser `~/.config/regolith2/Xresources` pour les modifications car cela évite d'avoir des paramètres redondants et facilite la maintenance dans le temps.
+Il est recommandé d'utiliser `~/.config/regolith3/Xresources` pour les modifications car cela évite d'avoir des paramètres redondants et facilite la maintenance dans le temps.
 
 ## Déterminer quelles valeurs doivent être changées
 
@@ -50,10 +50,10 @@ Notez que les commandes ci-dessous ajoutent du texte à un fichier. Dans lancer 
 
 ### Exemple - Modifier l'UTI pour utiliser High DPI Screens
 
-En utilisant le fichier `~/.config/regolith2/Xresources`, vous aurez uniquement à spécifier les valeurs que vous souhaitez changer.
+En utilisant le fichier `~/.config/regolith3/Xresources`, vous aurez uniquement à spécifier les valeurs que vous souhaitez changer.
 L'outil `xrdb` peut être utilisé pour détemriner les valeurs actuels des variables.
 
-1. Créer ou ajouter la valeur suivante au fichier `~/.config/regolith2/Xresources`:
+1. Créer ou ajouter la valeur suivante au fichier `~/.config/regolith3/Xresources`:
 
 ```console
 Xft.dpi: 192
@@ -74,7 +74,7 @@ $ regolith-look refresh
 ```console
 $ xrdb -query | grep position
 i3-wm.bar.position:	bottom
-$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith2/Xresources
+$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
@@ -83,22 +83,22 @@ $ regolith-look refresh
 ```console
 $ xrdb -query | grep gtk
 gnome.gtk.theme:	Ayu-Mirage-Dark
-$ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith2/Xresources
+$ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
 ### Exemple - Désactiver la barre d'état
 
 ```console
-$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith2/Xresources
+$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
 ### Exemple - Utiliser Alt plutôt que la touche Win comme touche Super
 
 ```console
-$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith2/Xresources
-$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith2/Xresources
+$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith3/Xresources
+$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 ```
 
 Ensuite, recharger i3 pour que le changement prenne effet.
@@ -108,7 +108,7 @@ Ensuite, recharger i3 pour que le changement prenne effet.
 Certains utilisateurs préfèrent utiliser l'application `nm-applet` pour configurer et gérer le réseau sans-fil (depuis Regolith 1.5, `nm-applet` est exécuté par défaut en arrière-plan). Le fichier de configuration i3 peut être modifié pour lancer certains programmes au lancement. Mais, plutôt que de copier tout le fichier, il est possible de fixer jusqu'à trois programmes via Xresources sans avoir à changer le fichier de configuration i3. Pour cela, assurez-vous que la barre d'état système est activé (voir ci-dessus).
 
 ```console
-$ echo "i3-wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith2/Xresources
+$ echo "i3-wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith3/Xresources
 ```
 
 Ce changement nécessite que vous vous déconnectiez puir reconnectiez pour prendre effet.

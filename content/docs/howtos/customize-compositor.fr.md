@@ -69,5 +69,5 @@ ps aux | grep picom
 ### Compton/Picom
 
 Pour fournir votre propre configuration pour Compton/Picom, copiez la config par défaut
-et créez la votre dans `~/.config/regolith2/picom/config`.
+et créez la votre dans `~/.config/regolith3/picom/config`.
 À la prochain session, la nouvelle config sera chargé à la place de celle par défaut (`/etc/regolith/picom/config`).

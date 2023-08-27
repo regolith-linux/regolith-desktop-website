@@ -18,9 +18,9 @@ When a Regolith session is started, Xresources are loaded in the following order
 | ------------------------------- | -------- | --------------------------------------------------------------------------------- |
 | `~/.Xresources`                 | Y        | Intended for non-Regolith settings                                                |
 | `/usr/share/regolith-look/**/`     | N        | The Regolith `Xresources` associated with looks |
-| `~/.config/regolith2/Xresources` | Y        | Applies specific overrides to `Xresources` defaults                               |
+| `~/.config/regolith3/Xresources` | Y        | Applies specific overrides to `Xresources` defaults                               |
 
-It is recommended to use `~/.config/regolith2/Xresources` for customization as it doesn't require the specification of redundant settings and is easier to maintain over time.
+It is recommended to use `~/.config/regolith3/Xresources` for customization as it doesn't require the specification of redundant settings and is easier to maintain over time.
 
 ## Determining which values can be changed
 
@@ -46,9 +46,9 @@ Note that the commands presented below append text to a file, so running the com
 
 ### Example - Update the UI for High DPI Screens
 
-By using the `~/.config/regolith2/Xresources` override file, we will only need to specify the values we wish to change. The `xrdb` tool can be used to determine what current values are set to.
+By using the `~/.config/regolith3/Xresources` override file, we will only need to specify the values we wish to change. The `xrdb` tool can be used to determine what current values are set to.
 
-1. Create or add the following value to your `~/.config/regolith2/Xresources` file:
+1. Create or add the following value to your `~/.config/regolith3/Xresources` file:
 
 ```console
 Xft.dpi: 192
@@ -69,7 +69,7 @@ $ regolith-look refresh
 ```console
 $ xrdb -query | grep position
 i3-wm.bar.position:	bottom
-$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith2/Xresources
+$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
@@ -78,22 +78,22 @@ $ regolith-look refresh
 ```console
 $ xrdb -query | grep gtk
 gtk.theme_name:	Ayu-Mirage-Dark
-$ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith2/Xresources
+$ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
 ### Example - Disable the System Tray
 
 ```console
-$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith2/Xresources
+$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
 ### Example - Use Alt instead of Win as Super
 
 ```console
-$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith2/Xresources
-$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith2/Xresources
+$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith3/Xresources
+$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 ```
 
 Then Reload i3 for the change to take effect.  Some settings may require logging back into the session, for example anything that i3 launches as a separate process.

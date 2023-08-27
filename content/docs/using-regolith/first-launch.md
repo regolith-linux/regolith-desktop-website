@@ -1,7 +1,7 @@
 ---
 title: "First Launch"
 linkTitle: "First Launch"
-weight: 1
+weight: 2
 description: >
   Important details for the first time you start Regolith
 ---
