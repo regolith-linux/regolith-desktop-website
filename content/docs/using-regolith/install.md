@@ -81,7 +81,7 @@ to configure your system to read packages from the Regolith package repository a
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint info >}}
-Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 {{< /tab >}}
@@ -116,7 +116,7 @@ to configure your system to read packages from the Regolith package repository a
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint info >}}
-Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 {{< /tab >}}
@@ -151,7 +151,7 @@ to configure your system to read packages from the Regolith package repository a
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint info >}}
-Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 {{< /tab >}}
@@ -208,7 +208,7 @@ to configure your system to read packages from the Regolith package repository a
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint info >}}
-Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 {{< hint info >}}
@@ -253,7 +253,7 @@ to configure your system to read packages from the Regolith package repository a
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint info >}}
-Substitute `arm64` for `amd64` in the two places in the above line to install on ARM-based systems.
+Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
 {{< /hint >}}
 
 {{< hint info >}}
