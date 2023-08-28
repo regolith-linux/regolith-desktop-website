@@ -10,13 +10,13 @@ description: >
 
 | **Component**              | **Default Config**                                           | **User Config**                       | **Notes**                                                                                                                                                                                             |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| i3 / i3-gaps               | `/etc/regolith/i3/config`, `/usr/share/regolith/i3/config.d` | `~/.config/regolith2/i3`              | _Extend_ Regolith2 config by creating `config.d` and partials in the user config dir, or _globally override_ it by creating `config`. [More]({{< ref "docs/howtos/customize-i3-configuration.md" >}}) |
-| Xresources                 | `/usr/share/regolith-look/default`                           | `~/.config/regolith2/Xresources`      | `~/.Xresources` is also loaded but intended for properties that may also be required in other desktop sessions. [More]({{< ref "docs/howtos/override-xres.md" >}})                                    |
-| Bar status indicators      | `/usr/share/i3xrocks/conf.d/`                                | `~/.config/regolith2/i3xrocks/conf.d` | Each block has it's own file. Configs loaded in filename alphabetical order. [More]({{< ref "docs/howtos/add-remove-blocklets.md" >}})                                                                |
-| Picom (Compton) Compositor | `/etc/regolith/picom/config`                                 | `~/.config/regolith2/picom/config`    | [More]({{< ref "docs/howtos/customize-compositor.md" >}})                                                                                                                                             |
+| i3 / i3-gaps               | `/etc/regolith/i3/config`, `/usr/share/regolith/i3/config.d` | `~/.config/regolith3/i3`              | _Extend_ Regolith2 config by creating `config.d` and partials in the user config dir, or _globally override_ it by creating `config`. [More]({{< ref "docs/howtos/customize-i3-configuration.md" >}}) |
+| Xresources                 | `/usr/share/regolith-look/default`                           | `~/.config/regolith3/Xresources`      | `~/.Xresources` is also loaded but intended for properties that may also be required in other desktop sessions. [More]({{< ref "docs/howtos/override-xres.md" >}})                                    |
+| Bar status indicators      | `/usr/share/i3xrocks/conf.d/`                                | `~/.config/regolith3/i3xrocks/conf.d` | Each block has it's own file. Configs loaded in filename alphabetical order. [More]({{< ref "docs/howtos/add-remove-blocklets.md" >}})                                                                |
+| Picom (Compton) Compositor | `/etc/regolith/picom/config`                                 | `~/.config/regolith3/picom/config`    | [More]({{< ref "docs/howtos/customize-compositor.md" >}})                                                                                                                                             |
 
 {{< hint warning >}}
-WARNING: Adding an i3 config file in `~/.config/regolith2/i3/config` will essentially override all Regolith configuration including Xresources and looks.
+WARNING: Adding an i3 config file in `~/.config/regolith3/i3/config` will essentially override all Regolith configuration including Xresources and looks.
 {{< /hint >}}
 
 # History

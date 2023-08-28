@@ -12,7 +12,7 @@ By default the mouse cursor disappears if unused for a few seconds. If you prefe
 
 1. Specify an empty value for the unclutter launcher program with an Xresources override:
   ```console
-  $ echo "i3-wm.program.unclutter: :" >> ~/.config/regolith2/Xresources
+  $ echo "i3-wm.program.unclutter: :" >> ~/.config/regolith3/Xresources
   ```
 2. Log out and back in for changes to take effect.
 

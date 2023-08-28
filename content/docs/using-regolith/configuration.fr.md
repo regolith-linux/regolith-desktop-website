@@ -62,7 +62,7 @@ Le fond d'écran peut être modifié en spécifiant le chemin vers une image via
 Exemple, en considérant que le fichier `/usr/share/backgrounds/hardy_wallpaper_uhd.png` existe:
 
 ```console
-echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
@@ -72,25 +72,25 @@ Les options sont les suivantes: `none`, `wallpaper`, `centered`, `scaled`, `stre
 Exemple:
 
 ```console
-echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
 Pour spécifier une couleur plutôt qu'une image, utiliser la valeur `regolith.wallpaper.color.primary`:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
 Pour spécifier une seconde couleur et obtenir un dégradé:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
@@ -101,7 +101,7 @@ Les valeurs Xresources sont les mêmes mais avec `lockscreen` plutôt que `wallp
 Par exemple:
 
 ```console
-echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
@@ -110,8 +110,8 @@ regolith-look refresh
 Si vous souhaitez gérer le fond d'écran autrement que par Regolith, fixez simplement des valeurs vides pour l'image et la couleur:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
 
 # Indicateurs de statut dans la barre
@@ -178,7 +178,7 @@ Par défaut, wuant le paquet `regolith-desktop` est installé, ces éléments de
 Les "dépendances douces" peuvent être supprimées sans causer la suppression de paquets qui dépendant d'elles.
 Cela signifie que n'importe quel paquet de la liste peut être supprimé.
 Les utilisateurs peuvent modifier leur configuration de manière plus stable en remplaçant une configuration partielle par leur propre version.
-Cela peut se faire en copiant la configuration à remplacer dans `~/.config/regolith2/i3/config.d/` et en supprimant le fichier original dans `/usr/share/regolith/i3/config.d` via `apt`.
+Cela peut se faire en copiant la configuration à remplacer dans `~/.config/regolith3/i3/config.d/` et en supprimant le fichier original dans `/usr/share/regolith/i3/config.d` via `apt`.
 Ainsi, la configuration non modifiée peut toujours recevoir des mises à jour et des bug fixes sans impacter la configuration propre à l'utilisateur.
 
 Voir [le guide pour la configuration de i3]({{< ref "docs/howtos/customize-i3-configuration.md" >}}) pour des exemples.
@@ -216,7 +216,7 @@ La liste suivante contient tous les paquets de configuration pour i3 disponibles
 La modification la plus courante est la touche {{< keys "super" >}}.
 Regolith utilise `Xresources` comme une source de vérité pour les paramètres, qui sont lu par divers composants de l'UI.
 La table des valeurs `Xresources` accessibles à l'utilisateur est [accessible ailleurs]({{< ref "xresources" >}}).
-Pour changer la touche par défaut {{< keys "super" >}} (touche "Win") pour la touche "Alt", ajoutez la configuration suivante au fichier `~/.config/regolith2/Xresources`:
+Pour changer la touche par défaut {{< keys "super" >}} (touche "Win") pour la touche "Alt", ajoutez la configuration suivante au fichier `~/.config/regolith3/Xresources`:
 
 ```toml
 i3-wm.mod: Mod1

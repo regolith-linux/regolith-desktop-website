@@ -2,9 +2,9 @@
 wget -qO - https://regolith-desktop.org/regolith.key | sudo apt-key add -
 
 # Add the repository URL to your local apt
-echo deb "[arch=amd64] https://regolith-desktop.org/release-ubuntu-focal-amd64 focal main" | \
+echo deb "[arch=amd64] https://regolith-desktop.org/release-3_0-ubuntu-focal-amd64 focal main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 
 # Update apt
 sudo apt update
-echo Regolith Desktop can be installed by executing: sudo apt install regolith-desktop regolith-compositor-picom-glx
+echo Regolith Desktop can be installed by executing: sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille

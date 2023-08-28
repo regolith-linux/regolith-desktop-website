@@ -9,7 +9,7 @@ description: >
 # Comment personnaliser la configuration de i3 avec Regolith
 
 Les configurations par défaut sont stockées dans `/usr/share/regolith/i3/config.d`.
-Ces fichiers sont chargés de selon l'ordre alphabétique. Ensuite, les configurations de l'utilisateur dans `~/.config/regolith2/i3/config.d` sont chargées, également dans l'ordre alphabétique.
+Ces fichiers sont chargés de selon l'ordre alphabétique. Ensuite, les configurations de l'utilisateur dans `~/.config/regolith3/i3/config.d` sont chargées, également dans l'ordre alphabétique.
 La configuration par défaut de Regolith est faite pour être modifiée en utilisant des variables `Xresources`, en ajoutant des configurations utilisateurs ou en ajoutant/supprimant les configurations par défaut avec `apt`.
 Pour cette raison, il y a plusieurs manières de personnaliser i3 dans Regolith. Ces manières peuvent être utilisées conjointement ou séparement pour avoir une configuration propre:
 
@@ -27,7 +27,7 @@ set_from_resource $i3-wm.program.compositor i3-wm.program.compositor /usr/share/
 exec_always --no-startup-id $i3-wm.program.compositor
 ```
 
-Pour faire cela, ajouter simplement une ligne à `~/.config/regolith2/Xresources`:
+Pour faire cela, ajouter simplement une ligne à `~/.config/regolith3/Xresources`:
 
 ```
 # Utiliser mon propre programme compositor
@@ -82,26 +82,26 @@ sudo apt remove regolith-i3-workspace-config
 
 {{< hint warning >}}
 ATTENTION: Pour personnaliser une unique configuration par défaut partielle de Regolith, vous devez d'abord vous assurer
-que le fichier `~/.config/regolith2/i3/config` n'existe pas.
+que le fichier `~/.config/regolith3/i3/config` n'existe pas.
 Cela va ignorer entièrement la configuration par défaut de Regolith, ce qui n'est pas compatible avec ce guide.
 {{< /hint >}}
 
 Premièrement, assurez-vous qu'un dossier existe dans la configuration utilisateur:
 
 ```console
-mkdir -p ~/.config/regolith2/i3/config.d
+mkdir -p ~/.config/regolith3/i3/config.d
 ```
 
 Ensuite, copier la configuration par défaut dans le dossier de configuration de l'utilisateur:
 
 ```console
-cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith2/i3/config.d/
+cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/config.d/
 ```
 
 Faites les changements voulus:
 
 ```console
-vim ~/.config/regolith2/i3/config.d/40_workspace-config
+vim ~/.config/regolith3/i3/config.d/40_workspace-config
 ```
 
 Retirez le paquet contenant la configuration par défaut:
@@ -114,4 +114,4 @@ Finalement, redémarrer i3 ou sortez de la session et re-connectez vous pour app
 
 ## Comment remplacer la configuration par défaut de Regolith globalement
 
-Si vous ne souhaitez par garder la configuration de Regolith par défaut (par exemple, si vous avez des l'expérience avec `i3` avec une configuration à vous que vous souhaitez utiliser), vous pouvez désinstaller toutes les configurations de Regolith, et/ou créer votre propre configuration racine dans `~/.config/regolith2/i3/config`.
+Si vous ne souhaitez par garder la configuration de Regolith par défaut (par exemple, si vous avez des l'expérience avec `i3` avec une configuration à vous que vous souhaitez utiliser), vous pouvez désinstaller toutes les configurations de Regolith, et/ou créer votre propre configuration racine dans `~/.config/regolith3/i3/config`.

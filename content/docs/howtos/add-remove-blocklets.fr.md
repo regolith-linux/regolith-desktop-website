@@ -28,8 +28,8 @@ Dans chaque fichier, on peut trouver des informations utilisées par `i3xrocks` 
 Certains des indicateurs ont des paramètres qui peuvent être ajustés à votre convenance.
 Par exemple, si vous préférez que le statut de la batterie change plus vouent, vous pouvez modifier l'interval de polling.
 
-La première chose à faire pour personnaliser la barre est de recopier les indicateurs que vous souhaitez voir à partir de `/usr/share/i3xrocks/conf.d/` vers `~/.config/regolith2/i3xrocks/conf.d`.
-Chaque fichier dans `~/.config/regolith2/i3xrocks/conf.d`. peut être modifier selon vos besoins.
+La première chose à faire pour personnaliser la barre est de recopier les indicateurs que vous souhaitez voir à partir de `/usr/share/i3xrocks/conf.d/` vers `~/.config/regolith3/i3xrocks/conf.d`.
+Chaque fichier dans `~/.config/regolith3/i3xrocks/conf.d`. peut être modifier selon vos besoins.
 Pour changer l'ordre des indicateurs, changez simplement le nom des fichiers.
 
 Une fois que vous avez fait des changements, il est nécessaire de rafraîchir la session pour que la barre se mette à jour en fonction de la nouvelle configuration.
@@ -42,15 +42,15 @@ $ ls /usr/share/i3xrocks/conf.d/
 80_battery
 80_rofication
 90_time
-$ mkdir -p ~/.config/regolith2/i3xrocks/conf.d
+$ mkdir -p ~/.config/regolith3/i3xrocks/conf.d
 $ cd /usr/share/i3xrocks/conf.d/
-$ cp 01_setup ~/.config/regolith2/i3xrocks/conf.d/01_setup
-$ cp 80_battery ~/.config/regolith2/i3xrocks/conf.d/30_battery
-$ cp 30_net-traffic ~/.config/regolith2/i3xrocks/conf.d/80_net-traffic
+$ cp 01_setup ~/.config/regolith3/i3xrocks/conf.d/01_setup
+$ cp 80_battery ~/.config/regolith3/i3xrocks/conf.d/30_battery
+$ cp 30_net-traffic ~/.config/regolith3/i3xrocks/conf.d/80_net-traffic
 $ regolith-look refresh
 ```
 
-**Note**: Si un bloc existe dans le dossier utilisateur `~/.config/regolith2/i3xrocks/conf.d`, la configuration par défaut dans `/usr/share/i3xrocks/conf.d/` sera ignorée.
+**Note**: Si un bloc existe dans le dossier utilisateur `~/.config/regolith3/i3xrocks/conf.d`, la configuration par défaut dans `/usr/share/i3xrocks/conf.d/` sera ignorée.
 
 # Informations complémentaires
 

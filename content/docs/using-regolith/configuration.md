@@ -50,13 +50,14 @@ sudo apt install i3xrocks-battery
 
 ## Compositors
 
-Compositors add visual effects to the windowing environment. By default, Regolith 2.x does not install a specific compositor due to issues with a small subset of graphics hardware/drivers.  Users that prefer more visual effects and have well supported graphics support in Linux may want to install one of the following compositors:
+Compositors add visual effects to the windowing environment. By default, Regolith 3 installs the `picom` compositor.  Users experiencing graphical issues due to specific hardware or driver limitations may want to install one of the following compositors instead:
 
 | Package                      | Notes          |
 |------------------------------|-------------------|
-| `regolith-compositor-picom-glx` | Recommended |
+| `regolith-compositor-picom-glx` | Default |
 | `regolith-compositor-compton-glx` | An older compositor that may work better on some hardware |
 | `regolith-compositor-xcompmgr` | An older compositor that may work better on some hardware |
+| `regolith-compositor-none` | A pass-through package that does not run a compositor |
 
 See [this How To](/docs/howtos/customize-compositor) for more details.
 
@@ -67,7 +68,7 @@ Most Regolith Looks provide a default desktop color or image.  The wallpaper can
 Example, assuming the file `/usr/share/backgrounds/hardy_wallpaper_uhd.png` is present: 
 
 ```console
-echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
@@ -76,25 +77,25 @@ To change the image treatment (zoom, scale, etc.) of the wallpaper image, set `r
 Example:
 
 ```console
-echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
 To specify a color rather than an image use the Xresource key `regolith.wallpaper.color.primary`:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
 To specify a secondary color and gradient:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
@@ -103,7 +104,7 @@ regolith-look refresh
 The lockscreen wallpaper can be managed in the same way as the desktop wallpaper.  The keys are the same as desktop wallpaper, but with `lockscreen` prefixed to `wallpaper`, like so: `regolith.lockscreen.wallpaper...`.  For example, to specify a lockscreen image:
 
 ```console
-echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith2/Xresources
+echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
@@ -112,8 +113,8 @@ regolith-look refresh
 If you wish to manage wallpaper externally to Regolith, simply specify empty values for wallpaper image and color:
 
 ```console
-echo "regolith.wallpaper.file: " >> ~/.config/regolith2/Xresources
-echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith2/Xresources
+echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
+echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
 
 # Status Bar Indicators
@@ -188,7 +189,7 @@ sudo apt install regolith-look-*
 | regolith-i3-user-programs    | Optionally launch user programs specified in Xresources | `/usr/share/regolith/i3/config.d/90_user-programs` |
 | regolith-i3-workspace-config | Workspace keybindings | `/usr/share/regolith/i3/config.d/40_workspace-config` |
 
-Soft dependencies can be removed without causing packages that depend upon it to be removed. This means that any of the listed packages can be removed.  Users can make tweaks to configuration in a more stable manner by replacing a default configuration partial with their own version.  This can be achieved by copying the partial to be customized into `~/.config/regolith2/i3/config.d/` and removing the original file in `/usr/share/regolith/i3/config.d` via `apt`.  In this way, the unmodified config partials can continue to get updates and bug fixes without impacting user-specific configuration.
+Soft dependencies can be removed without causing packages that depend upon it to be removed. This means that any of the listed packages can be removed.  Users can make tweaks to configuration in a more stable manner by replacing a default configuration partial with their own version.  This can be achieved by copying the partial to be customized into `~/.config/regolith3/i3/config.d/` and removing the original file in `/usr/share/regolith/i3/config.d` via `apt`.  In this way, the unmodified config partials can continue to get updates and bug fixes without impacting user-specific configuration.
 
 See the [i3 configuration customization how-to]({{< ref "docs/howtos/customize-i3-configuration.md" >}}) for examples.
 
@@ -224,7 +225,7 @@ The following contains a list of all i3 configuration packages available in Rego
 
 # Keybindings
 
-The most common keybinding change is the {{< keys "super" >}} key. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith2/Xresources`:
+The most common keybinding change is the {{< keys "super" >}} key. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith3/Xresources`:
 
 ```toml
 i3-wm.mod: Mod1

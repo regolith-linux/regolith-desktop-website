@@ -8,7 +8,7 @@ description: >
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /hint >}}
 
-1. Create or add the following value to your `~/.config/regolith2/Xresources` file:
+1. Create or add the following value to your `~/.config/regolith3/Xresources` file:
 
 ```console
 gnome.terminal.font:	JetBrains Mono 14
