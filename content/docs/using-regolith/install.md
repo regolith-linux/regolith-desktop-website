@@ -8,7 +8,7 @@ description: >
 
 # Get Regolith 3.0
 
-If you're upgrading from an earlier version of Regolith, you may be interested in reading [the release notes](/docs/reference/Releases/regolith-3.0-release-notes) and most specifically, the [migration guide](http://localhost:1313/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide).
+If you're upgrading from an earlier version of Regolith, you may be interested in reading [the release notes](/docs/reference/Releases/regolith-3.0-release-notes) and most specifically, the [migration guide](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide).
 
 ## Packages Specified at Install Time
 

@@ -24,7 +24,7 @@ Important information for existing Regolith users
 {{< /hint >}}
 
 1. The directory for user-staged configuration files has changed from `~/.config/regolith2` to `~/.config/regolith3`.
-2. To generalize across X11 and Wayland sessions, Xresource keys have been renamed to remove "i3".  This means that users with Xresource overrides on earlier versions of Regolith will need to update the key names.  Specifically, keys starting with `i3-wm` now start with `wm`.  For example, in Regolith 2.x to change gaps size, `i3-wm.gaps.inner.size` is being renamed to `wm.gaps.inner.size`.
+2. To generalize across X11 and Wayland sessions, Xresource keys have been renamed to remove "i3-".  This means that users with XResource overrides on earlier versions of Regolith will need to update the key names.  Specifically, keys starting with `i3-wm` now start with `wm`.  For example, in Regolith 2.x to change gaps size, `i3-wm.gaps.inner.size` is being renamed to `wm.gaps.inner.size` in Regolith 3.0.
 
 ## Changelog Delta from `beta 3` to `beta 4`
 
