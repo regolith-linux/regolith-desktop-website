@@ -48,7 +48,7 @@ For those that work in the terminal, pressing <span class="text-nowrap"><span cl
 
 {{< columns >}}
 
-[![](/regolith-ilia-apps.png)]((/regolith-ilia-apps.png))
+[![](/regolith-ilia-apps.png)](/regolith-ilia-apps.png)
 A single global app launcher is instantly available from anywhere to run your programs via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p>
 
 <--->
