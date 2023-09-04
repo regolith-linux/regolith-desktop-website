@@ -31,8 +31,12 @@ Follow these steps to override the default workspace label with your own:
 1. Find the character you want to use and copy to the clipboard. This example will use the Sigma glyph from Material Design Icons font ().
 2. Add a line to your `Xresources` overrides file with the workspace number and character you wish to use:
 
+{{< hint warning >}}
+Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
+{{< /hint >}}
+
 ```console
-$ echo "i3-wm.workspace.06.name: 6:" >> ~/.config/regolith3/Xresources
+$ echo "wm.workspace.06.name: 6:" >> ~/.config/regolith3/Xresources
 ```
 
 3. Refresh your UI:
@@ -50,9 +54,9 @@ In i3, workspace labels are only updated when a workspace is created. Ensure you
 The same approach can be used to specify textual descriptions of your workspaces. For example, adding the following lines to your `~/.config/regolith3/Xresources` file will change the first three workspaces:
 
 ```
-i3-wm.workspace.01.name: 1: Terminal
-i3-wm.workspace.02.name: 2: Web
-i3-wm.workspace.03.name: 3: Chat
+wm.workspace.01.name: 1: Terminal
+wm.workspace.02.name: 2: Web
+wm.workspace.03.name: 3: Chat
 ```
 
 ### Adding support for icon fonts in text editors

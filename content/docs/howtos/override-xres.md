@@ -36,7 +36,7 @@ gtk.font_name:	Bitstream Vera Sans 12
 gtk.icon_theme_name:	Papirus-Dark
 gtk.monospace_font_name:	BitstreamVeraSansMono Nerd Font 13
 gtk.theme_name:	Ayu-Mirage-Dark
-i3-wm.bar.background.color:	#1F2430
+wm.bar.background.color:	#1F2430
 [...]
 ```
 
@@ -68,8 +68,8 @@ $ regolith-look refresh
 
 ```console
 $ xrdb -query | grep position
-i3-wm.bar.position:	bottom
-$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith3/Xresources
+wm.bar.position:	bottom
+$ echo "wm.bar.position:	top" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
@@ -85,15 +85,15 @@ $ regolith-look refresh
 ### Example - Disable the System Tray
 
 ```console
-$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
+$ echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
 ### Example - Use Alt instead of Win as Super
 
 ```console
-$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith3/Xresources
-$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith3/Xresources
+$ echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
+$ echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 ```
 
 Then Reload i3 for the change to take effect.  Some settings may require logging back into the session, for example anything that i3 launches as a separate process.
