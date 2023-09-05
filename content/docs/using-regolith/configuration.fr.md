@@ -213,14 +213,18 @@ La liste suivante contient tous les paquets de configuration pour i3 disponibles
 
 # Raccourcis clavier
 
+{{< hint warning >}}
+Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
+{{< /hint >}}
+
 La modification la plus courante est la touche {{< keys "super" >}}.
 Regolith utilise `Xresources` comme une source de vérité pour les paramètres, qui sont lu par divers composants de l'UI.
 La table des valeurs `Xresources` accessibles à l'utilisateur est [accessible ailleurs]({{< ref "xresources" >}}).
 Pour changer la touche par défaut {{< keys "super" >}} (touche "Win") pour la touche "Alt", ajoutez la configuration suivante au fichier `~/.config/regolith3/Xresources`:
 
 ```toml
-i3-wm.mod: Mod1
-i3-wm.alt: Mod4
+wm.mod: Mod1
+wm.alt: Mod4
 ```
 
 **Note**: GNOME utilise aussi ses propres raccourcis clavier. Quand la session Regolith est initialisée, les conflits de raccourcis avec GNOME sont supprimés

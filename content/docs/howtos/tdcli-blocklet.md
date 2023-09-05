@@ -4,8 +4,8 @@ description: >
   Create and manage a to-do list from status bar
 ---
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
+{{< hint warning >}}
+Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `wm.foo.bar` for Regolith 1.x and 2.x.
 {{< /hint >}}
 
 [`td-cli`](https://github.com/darrikonn/td-cli) is a command line todo manager written in Python3 for organizing todo lists across multiple projects.
@@ -46,14 +46,14 @@ bindsym $mod+Ctrl+d exec --no-startup-id "/usr/bin/gnome-terminal --class=floati
 Alternatively, you add these lines to your `i3` config file, first:
 
 ```console
-set_from_resource $i3-wm.bindsym.1 i3-wm.bindsym.1 :
-set_from_resource $i3-wm.bindsym.program.1 i3-wm.bindsym.program.1 :
-bindsym $mod+$i3-wm.bindsym.1 exec --no-startup-id "$i3-wm.bindsym.program.1"
+set_from_resource $wm.bindsym.1 wm.bindsym.1 :
+set_from_resource $wm.bindsym.program.1 wm.bindsym.program.1 :
+bindsym $mod+$wm.bindsym.1 exec --no-startup-id "$wm.bindsym.program.1"
 ```
 
 Then, add the followings to your `Xresources` file:
 
 ```console
-i3-wm.bindsym.1: Ctrl+d
-i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'
+wm.bindsym.1: Ctrl+d
+wm.bindsym.program.1: /usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'
 ```

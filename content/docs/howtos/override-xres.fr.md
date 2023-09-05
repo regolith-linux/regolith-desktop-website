@@ -4,8 +4,8 @@ description: >
   Apprenez à organiser des copies utilisateur des fichiers de configuration Regolith
 ---
 
-{{< hint danger >}}
-NOTE: Cette page a été copiée depuis le site de [Regolith 1.x](https://regolith-linux.org) et n'a pas été mise à jour pour Regolith 2. Elle peut contenir des informations qui ne sont plus d'actualité.
+{{< hint warning >}}
+Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
 {{< /hint >}}
 
 Regolith repose sur le système [Xresources](https://en.wikipedia.org/wiki/X_resources) pour fournir une interface de configuration solide.
@@ -73,8 +73,8 @@ $ regolith-look refresh
 
 ```console
 $ xrdb -query | grep position
-i3-wm.bar.position:	bottom
-$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith3/Xresources
+wm.bar.position:	bottom
+$ echo "wm.bar.position:	top" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
@@ -90,15 +90,15 @@ $ regolith-look refresh
 ### Exemple - Désactiver la barre d'état
 
 ```console
-$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
+$ echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
 $ regolith-look refresh
 ```
 
 ### Exemple - Utiliser Alt plutôt que la touche Win comme touche Super
 
 ```console
-$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith3/Xresources
-$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith3/Xresources
+$ echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
+$ echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 ```
 
 Ensuite, recharger i3 pour que le changement prenne effet.
@@ -108,7 +108,7 @@ Ensuite, recharger i3 pour que le changement prenne effet.
 Certains utilisateurs préfèrent utiliser l'application `nm-applet` pour configurer et gérer le réseau sans-fil (depuis Regolith 1.5, `nm-applet` est exécuté par défaut en arrière-plan). Le fichier de configuration i3 peut être modifié pour lancer certains programmes au lancement. Mais, plutôt que de copier tout le fichier, il est possible de fixer jusqu'à trois programmes via Xresources sans avoir à changer le fichier de configuration i3. Pour cela, assurez-vous que la barre d'état système est activé (voir ci-dessus).
 
 ```console
-$ echo "i3-wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith3/Xresources
+$ echo "wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith3/Xresources
 ```
 
 Ce changement nécessite que vous vous déconnectiez puir reconnectiez pour prendre effet.
