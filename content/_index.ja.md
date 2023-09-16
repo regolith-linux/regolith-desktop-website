@@ -1,10 +1,10 @@
 ---
-title: Introduction
+title: 概要
 type: docs
 bookToc: false
 ---
 
-# The Regolith Desktop Environment
+# Regolithデスクトップ環境
 
 ![](/regolith-empty.png)
 
@@ -34,7 +34,7 @@ Regolithは、人気があり、高速で、構成しやすく、キーボード
 {{< columns >}}
 
 [![](/regolith-ilia-keybindings.png)](/regolith-ilia-keybindings.png)
-初回ログイン時に、i3-wmで使用する最も重要なキーバインドをオーバーレイで表示します(<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>でいつでも切り替えられます)。
+初回ログイン時に、i3-wmで使用する最も重要なキーバインドをオーバーレイで表示します（<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>でいつでも切り替えられます）。
 
 <--->
 
