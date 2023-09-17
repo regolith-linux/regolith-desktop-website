@@ -70,7 +70,7 @@ Gnome Flashbackは一貫したシンプルなシステム環境を提供しま�
 {{< columns >}}
 
 [![](/regolith-screenshot-look-selector.png)](/regolith-screenshot-look-selector.png)
-<code>regolith-look</code>コマンドで、<a href="https://ethanschoonover.com/solarized">Solarized</a> や他のルックに簡単に切り替えられます。<b>looks</b>ではパッケージマネージャを利用するため、使用するテーマリソースのみを保存します。 
+<code>regolith-look</code>コマンドで、<a href="https://ethanschoonover.com/solarized">Solarized</a> や他の外観に簡単に切り替えられます。<b>looks</b>ではパッケージマネージャを利用するため、使用するテーマリソースのみを保存します。 
 
 <--->
 
