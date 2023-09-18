@@ -34,7 +34,7 @@ apt list | grep regolith-look-
 sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
 ```
 
-これらのインジケーターをあとから削除したいときは、システムからアンインストールするだけです。例：
+これらのインジケーターを後から削除したいときは、システムからアンインストールします。例：
 
 ```console
 sudo apt remove i3xrocks-info
@@ -57,7 +57,7 @@ sudo apt install i3xrocks-battery
 | `regolith-compositor-picom-glx` | 既定 |
 | `regolith-compositor-compton-glx` | 古いコンポジターであり、いくつかのハードウェアでよりよく動作する場合があります |
 | `regolith-compositor-xcompmgr` | 古いコンポジターであり、いくつかのハードウェアでよりよく動作する場合があります |
-| `regolith-compositor-none` | パススルーパッケージであい、コンポジターは実行されません |
+| `regolith-compositor-none` | パススルーパッケージであり、コンポジターは実行されません |
 
 詳細な概要は、[このHow To](/docs/howtos/customize-compositor)を参照してください。
 
@@ -101,7 +101,7 @@ regolith-look refresh
 
 ## ロック画面の壁紙
 
-ロック画面壁紙はデスクトップ壁紙と同じ方法で管理することはできます。キーはデスクトップ壁紙と似たようなものですが、`regolith.lockscreen.wallpaper...`のように、`lockscreen`を`wallpaper`の前にプレフィックスします。例えば、ロック画面の画像を指定する場合：
+ロック画面壁紙はデスクトップ壁紙と同じ方法で管理することができます。キーはデスクトップ壁紙と似たようなものですが、`regolith.lockscreen.wallpaper...`のように、`lockscreen`を`wallpaper`の前に追加します。例えば、ロック画面の画像を指定する場合：
 
 ```console
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
@@ -119,7 +119,7 @@ echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 
 # ステータスバーのインジケーター
 
-CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`で検索するすることができます。"blocklet"と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターの表です：
+CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索するすることができます。"blocklet"と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターの表です：
 
 | Package                      | Status Function | 
 |--------------------------------|-------------------|
@@ -154,7 +154,7 @@ CPUの読み込み、日付、時間、通知、天気や他のシステム情�
 
 ![](/regolith-ilia-look-selector.png)
 
-また、ターミナルのコマンド・`regolith-look`で外観を変更したり、アクティブなセッションを選択した外観で再読み込みすることができます。ここでは例として、`gruvbox`の外観に切り替えます：
+また、ターミナルのコマンド・`regolith-look`で外観を変更したり、選択した外観でアクティブなセッションを再読み込みすることができます。ここでは例として、`gruvbox`の外観に切り替えます：
 
 ```console
 apt search ^regolith-look-
@@ -174,7 +174,7 @@ sudo apt install regolith-look-*
 
 # i3の機能
 
-[Regolith 2.0の開始時から]({{< ref "docs/reference/configurations.md#history" >}})、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて"config partials"によって提供されます。  これらのパッケージはi3設定の一部として、`/usr/share/regolith/i3/config.d`以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 `regolith-desktop`パッケージがインストールされたときに設定要素が依存関係としてインストールされています：
+[Regolith 2.0の開始時から]({{< ref "docs/reference/configurations.md#history" >}})、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて"config partials"として提供されます。これらのパッケージはi3設定の一部として、`/usr/share/regolith/i3/config.d`以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 `regolith-desktop`パッケージがインストールされたときに設定要素が依存関係としてインストールされています：
 
 | Package                      | Function          | File |
 |------------------------------|-------------------|----- |
@@ -203,7 +203,7 @@ sudo apt install regolith-look-*
 | regolith-i3-base-launchers   | ターミナルとブラウザを起動 | `/usr/share/regolith/i3/config.d/15_base_launchers` |
 | regolith-i3-compositor       | コンポジターの統合（`regolith-compositor-<variant>`へ転送） | `/usr/share/regolith/i3/config.d/80_compositor` |
 | regolith-i3-default-style    | ウィンドウの振る舞い | `/usr/share/regolith/i3/config.d/40_default-style` |
-| regolith-i3-ftue             | First time user experience | `/usr/share/regolith/i3/config.d/84_ftue` |
+| regolith-i3-ftue             | 最初のユーザーエクスペリエンス | `/usr/share/regolith/i3/config.d/84_ftue` |
 | regolith-i3-gaps-partial     | `i3-gaps`設定 （インストールした場合i3がi3-gapsに置き換えられます） | `/usr/share/regolith/i3/config.d/35_i3-gaps` |
 | regolith-i3-gnome            | Regolith設定のキーバインド | `/usr/share/regolith/i3/config.d/60_config_keybindings` |
 | regolith-i3-i3xrocks         | i3バーのステータスインジケーターの設定 | `/usr/share/regolith/i3/config.d/70_bar` |
