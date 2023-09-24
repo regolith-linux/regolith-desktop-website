@@ -12,12 +12,12 @@ Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The c
 
 | `Xresources` Key                                   | Description                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------- |
-| gtk.theme_name                                     | GTK Theme   |
+| gtk.theme_name                                     | GTK Theme ("Legacy Applications" in `gnome-tweaks`) |
 | gtk.icon_theme_name                                | GTK Icon Theme  |
 | gnome.terminal.audible-bell                        | Enables audible bell in gnome-terminal (`true / false`)                       |
 | gtk.document_font_name                             | GTK Document Font Name |
 | gtk.font_name                                      | General purpose font for GTK apps and the desktop |
-| gtk.monospace_font_name                            | Font for monospace areas such as i3bar and the terminal 
+| gtk.monospace_font_name                            | Font for monospace areas such as i3bar and the terminal |
 | gnome.terminal.background-transparency-percent     | Background transparency value for gnome-terminal (`0 - 100`). See also `gnome.terminal.use-transparent-background`. |
 | gnome.terminal.font                                | Font definition for gnome-terminal                                                                                  |
 | gnome.terminal.scrollbar                           | Flag to enable/disable scrollbar (`never / always`)                                                            |
