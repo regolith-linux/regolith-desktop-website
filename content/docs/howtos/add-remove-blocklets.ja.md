@@ -1,0 +1,49 @@
+---
+title: "バーステータスインジケーターの変更"
+description: >
+  バーにあるステータスインジケーターを変更する。
+---
+
+# ステータスインジケーターの追加と削除
+
+## ステータスインジケーターの検索
+
+```console
+$ apt search i3xrocks-
+```
+
+## ステータスインジケーターのインストール
+
+```console
+$ sudo apt install i3xrocks-memory
+$ regolith-look refresh
+```
+
+# i3バーのカスタマイズ {#customize-bar}
+
+バーにある各インジケーターはファイルで管理されます。バーのステータスインジケーターの位置に配置されます。例として、ファイル名が`10_`で始まるものは、 `20_`で始まる設定ファイルのインジケーターより前に配置されるように、ファイルの名前はバーのステータスインジケーターの位置の配置します。各ファイルの中には、`i3xrocks`がスクリプトを実行するために使用する情報があり、最終的にバーに表示されるデータを返します。いくつかのステータスインジケーターは設定パラメーターが存在し、ユーザーの好みに合わせることができます。例えば、バッテリーの状態を頻繁に変更するのがよい場合、調べる間隔を更新することができます。バーをカスタマイズするために最初にするべきことは、見てみたいインジケーターを`/usr/share/i3xrocks/conf.d/`から`~/.config/regolith3/i3xrocks/conf.d`にコピーすることです。 `~/.config/regolith3/i3xrocks/conf.d`内の各ファイルは整列されて見えるように修正されます。バーのステータスインジケーターを変更するには、ファイルの名前を変更するだけで好きな場所に並び替えることができます。
+
+変更を加えると、セッションをリフレッシュすることで、新しい設定ファイルに基づいてバーが更新されるはずです。
+
+例えば、バーにおけるバッテリーとトラフィックのブロックの変更と通知を非表示にしたいとき、以下の操作を行います：
+
+```console
+$ ls /usr/share/i3xrocks/conf.d/
+01_setup
+30_net-traffic
+80_battery
+80_rofication
+90_time
+$ mkdir -p ~/.config/regolith3/i3xrocks/conf.d
+$ cd /usr/share/i3xrocks/conf.d/
+$ cp 01_setup ~/.config/regolith3/i3xrocks/conf.d/01_setup
+$ cp 80_battery ~/.config/regolith3/i3xrocks/conf.d/30_battery
+$ cp 30_net-traffic ~/.config/regolith3/i3xrocks/conf.d/80_net-traffic
+$ regolith-look refresh
+```
+
+**注意**：ユーザーディレクトリの`~/.config/regolith3/i3xrocks/conf.d`に複数のブロック設定が存在する場合、既定である`/usr/share/i3xrocks/conf.d/`は無視されます。
+
+# さらに深く読み込む
+
+[設定のリファレンスページ]({{< ref "/docs/Reference/configurations.md" >}})には、Regolith Linuxを使うときの設定ファイルについての詳細な項目があります。
