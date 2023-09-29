@@ -12,12 +12,12 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 
 | `Xresources` Key                                   | Description                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------- |
-| gtk.theme_name                                     | GTKテーマ   |
+| gtk.theme_name                                     | GTKテーマ（"Legacy Applications" in `gnome-tweaks`） |
 | gtk.icon_theme_name                                | GTKアイコンテーマ  |
 | gnome.terminal.audible-bell                        | gnome-terminalのベルを有効にする（`true / false`）                       |
 | gtk.document_font_name                             | GTKドキュメントのフォント名 |
 | gtk.font_name                                      | GTKアプリとデスクトップにおける一般的な用途のフォント |
-| gtk.monospace_font_name                            | i3barやターミナルなどのモノスペースエリアのフォント 
+| gtk.monospace_font_name                            | i3barやターミナルなどのモノスペースエリアのフォント |
 | gnome.terminal.background-transparency-percent     | gnome-terminalの背景の透過度（`0 - 100`）。`gnome.terminal.use-transparent-background`も参照。 |
 | gnome.terminal.font                                | gnome-terminalのフォント定義                                                                                  |
 | gnome.terminal.scrollbar                           | スクロールバーの有効・無効フラグ（`never / always`）                                                            |
