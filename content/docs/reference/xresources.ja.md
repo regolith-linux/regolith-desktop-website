@@ -71,11 +71,11 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 | wm.window.border.size                           | 既定の分割線サイズ（ピクセル）                                                                                       |
 | wm.workspace.01.name .. wm.workspace.19.name | ワークスペースのラベル                                                                                                    |
 | wm.workspace.01.key .. wm.workspace.10.key   | ワークスペースのショートカット                                                                                                 |
-| i3xrocks.action.volume.left                        | Command to execute when volume indicator is left clicked (default: none)                                            |
-| i3xrocks.action.volume.middle                      | Command to execute when volume indicator is middle clicked (default: none)                                          |
-| i3xrocks.action.volume.right                       | Command to execute when volume indicator is right clicked (default: mute through amixer)                            |
-| i3xrocks.action.volume.scrollup                    | Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer)       |
-| i3xrocks.action.volume.scrolldn                    | Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer)     |
+| i3xrocks.action.volume.left                        | インジケーター上で左クリックをしたときのコマンド（既定：なし）                                           |
+| i3xrocks.action.volume.middle                      | インジケーター上で中クリックをしたときのコマンド（既定：なし）                                          |
+| i3xrocks.action.volume.right                       | インジケーター上で右クリックをしたときのコマンド（既定：音量のミュート）                            |
+| i3xrocks.action.volume.scrollup                    | 音量インジケーターで上方向にスクロールしたときのコマンド（既定：音量を上げる）       |
+| i3xrocks.action.volume.scrolldn                    | 音量インジケーターで下方向にスクロールしたときのコマンド（既定：音量を下げる）     |
 | i3xrocks.error.color                               | エラーモードにおけるバーモジュールの色                                                                                  |
 | i3xrocks.label.battery0                            | バーアイコンの絵文字                                                                                                      |
 | i3xrocks.label.battery100                          | バーアイコンの絵文字                                                                                                      |

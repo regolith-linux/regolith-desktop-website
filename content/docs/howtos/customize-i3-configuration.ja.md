@@ -103,7 +103,7 @@ cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/co
 vim ~/.config/regolith3/i3/config.d/40_workspace-config
 ```
 
-既定に含まれているパッケージをクリーンアップするには：
+既定に含まれているパッケージをクリーンアップします：
 
 ```console
 sudo apt remove regolith-i3-workspace-config
@@ -113,4 +113,4 @@ sudo apt remove regolith-i3-workspace-config
 
 ## Regolithの既定を完全に置き換える方法
 
-Regolithの既定を保持したくない場合、（例えば、あなたが完全な個人設定を使いたい経験豊富な`i3`ユーザーであるとき）の場合、すべてのRegolithの部分設定をアンインストールしたり、独自のRoot設定を`~/.config/regolith3/i3/config`に作成することができます。
+Regolithの既定を保持したくない（例えば、あなたが完全な個人設定を使いたい経験豊富な`i3`ユーザーである）場合、すべてのRegolithの部分設定をアンインストールしたり、独自のRoot設定を`~/.config/regolith3/i3/config`に作成することができます。

@@ -1,5 +1,5 @@
 ---
-title: "Override Xresources"
+title: "Xresourcesのオーバーライド"
 description: >
   Regolith設定ファイルのユーザーコピーを載せる方法について学ぶ
 ---
