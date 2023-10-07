@@ -52,7 +52,7 @@ sudo apt install i3xrocks-battery
 
 コンポジターはウィンドウ環境に仮想エフェクトを追加します。既定では、Regolith 3には`picom`コンポジターがインストールされています。特定のハードウェアやドライバの制限によってグラフィックの問題が発生した場合、変わりに次のコンポジターをインストールする必要があります：
 
-| Package                      | Notes          |
+| パッケージ                      | 注意          |
 |------------------------------|-------------------|
 | `regolith-compositor-picom-glx` | 既定 |
 | `regolith-compositor-compton-glx` | 古いコンポジターであり、いくつかのハードウェアでよりよく動作する場合があります |
@@ -119,9 +119,9 @@ echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 
 # ステータスバーのインジケーター
 
-CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索するすることができます。"blocklet"と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターの表です：
+CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索するすることができます。"blocklet"と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです：
 
-| Package                      | Status Function | 
+| パッケージ                      | ステータスの機能 | 
 |--------------------------------|-------------------|
 | i3xrocks-app-launcher          | アプリ起動ダイアログのショートカット |                               
 | i3xrocks-battery               | バッテリーの状態 |               
@@ -176,7 +176,7 @@ sudo apt install regolith-look-*
 
 [Regolith 2.0の開始時から]({{< ref "docs/reference/configurations.md#history" >}})、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて"config partials"として提供されます。これらのパッケージはi3設定の一部として、`/usr/share/regolith/i3/config.d`以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 `regolith-desktop`パッケージがインストールされたときに設定要素が依存関係としてインストールされています。
 
-| Package                      | Function          | File |
+| パッケージ                      | 機能          | ファイル |
 |------------------------------|-------------------|----- |
 | regolith-i3-base-launchers   | ブラウザとターミナルの起動 | `/usr/share/regolith/i3/config.d/15_base_launchers` |
 | regolith-i3-default-style    | ウィンドウの振る舞い | `/usr/share/regolith/i3/config.d/40_default-style` |
@@ -189,7 +189,7 @@ sudo apt install regolith-look-*
 | regolith-i3-user-programs    | オプションでXresourcesで指定されたユーザープログラムの起動 | `/usr/share/regolith/i3/config.d/90_user-programs` |
 | regolith-i3-workspace-config | ワークスペースのキーバインド | `/usr/share/regolith/i3/config.d/40_workspace-config` |
 
-ソフトの依存関係は、それに依存するパッケージを削除することなく削除できます。これは表にあるいくつかのパッケージを削除できることを示しています。ユーザーは、デフォルトの設定部分を独自のバージョンに置き換えることで、より安定した方法で設定を微調整できます。これはカスタマイズしたい部分を`~/.config/regolith3/i3/config.d/`にコピーして、`apt`で`/usr/share/regolith/i3/config.d`のオリジナルのファイルを削除することでできます。この方法により、変更されていない設定部分は、ユーザー固有の設定に影響を与えることなく更新やバグ修正を取得し続けることができます。
+ソフトの依存関係は、それに依存するパッケージを削除することなく削除できます。これはリストにあるいくつかのパッケージを削除できることを示しています。ユーザーは、デフォルトの設定部分を独自のバージョンに置き換えることで、より安定した方法で設定を微調整できます。これはカスタマイズしたい部分を`~/.config/regolith3/i3/config.d/`にコピーして、`apt`で`/usr/share/regolith/i3/config.d`のオリジナルのファイルを削除することでできます。この方法により、変更されていない設定部分は、ユーザー固有の設定に影響を与えることなく更新やバグ修正を取得し続けることができます。
 
 参考例は[i3設定のカスタマイズのハウツー]({{< ref "docs/howtos/customize-i3-configuration.md" >}})を参照してください。
 
@@ -198,7 +198,7 @@ sudo apt install regolith-look-*
 
 ここに記載されているすべてのi3設定パッケージはRegolith 2.1で利用できます：
 
-| Package                      | Function          | File |
+| パッケージ                      | 機能          | ファイル |
 |------------------------------|-------------------|----- |
 | regolith-i3-base-launchers   | ターミナルとブラウザを起動 | `/usr/share/regolith/i3/config.d/15_base_launchers` |
 | regolith-i3-compositor       | コンポジターの統合（`regolith-compositor-<variant>`へ転送） | `/usr/share/regolith/i3/config.d/80_compositor` |
@@ -229,7 +229,7 @@ sudo apt install regolith-look-*
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
 {{< /hint >}}
 
-もっとも重要なキーバインドの変更は{{< keys "super" >}}キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして`Xresources`を利用できます。ユーザー設定に開いている`Xresources`キーの表は、[他の場所で入手できます]({{< ref "xresources" >}})。既定の{{< keys "super" >}}バインドを"windows"キーから"alt"に変更するには`~/.config/regolith3/Xresources`に以下の行を追加します。
+もっとも重要なキーバインドの変更は{{< keys "super" >}}キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして`Xresources`を利用できます。ユーザー設定に開いている`Xresources`キーのリストは、[他の場所で入手できます]({{< ref "xresources" >}})。既定の{{< keys "super" >}}バインドを"windows"キーから"alt"に変更するには`~/.config/regolith3/Xresources`に以下の行を追加します。
 
 ```toml
 wm.mod: Mod1

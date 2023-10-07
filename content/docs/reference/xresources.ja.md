@@ -10,7 +10,7 @@ description: >
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
 {{< /hint >}}
 
-| `Xresources` Key                                   | Description                                                                                                         |
+| `Xresources`キー                                   | 概要                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------- |
 | gtk.theme_name                                     | GTKテーマ（"Legacy Applications" in `gnome-tweaks`） |
 | gtk.icon_theme_name                                | GTKアイコンテーマ  |
@@ -22,8 +22,8 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 | gnome.terminal.font                                | gnome-terminalのフォント定義                                                                                  |
 | gnome.terminal.scrollbar                           | スクロールバーの有効・無効フラグ（`never / always`）                                                            |
 | gnome.terminal.use-transparent-background          | gnome-terminalの背景の透過を有効にする（`true / false`）。`gnome.terminal.background-transparency-percent`も参照。 |
-| gnome.wallpaper                                    | GNOME壁紙 （設定をオーバーライド可能)                                                                     |
-| gnome.wm.theme                                     | GNOMEウィンドウマネージャーのテーマ (unused)                                                                                 |
+| gnome.wallpaper                                    | GNOME壁紙（設定をオーバーライド可能)                                                                     |
+| gnome.wm.theme                                     | GNOMEウィンドウマネージャーのテーマ（使用されていません）                                                                                 |
 | wm.alt                                          | Altキーのキーマップ。[i3ユーザーガイド](https://i3wm.org/docs/userguide.html#_using_i3)の概要も参照。       |
 | wm.bar.background.color                         | バーの背景色                                                                                                |
 | wm.bar.position                                 | バーの表示位置                                                                                                 |
@@ -109,14 +109,14 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 | i3xrocks.label.wired                               | バーアイコンの絵文字                                                                                                      |
 | i3xrocks.nominal                                   | 既定のバーアイコンの色                                                                                              |
 | i3xrocks.value.color                               | バーモジュールにおける数値の色                                                                              |
-| i3xrocks.value.font                                | バーモジュールにおける数値のフォントFont                                                                              |
+| i3xrocks.value.font                                | バーモジュールにおける数値のフォント                                                                              |
 | i3xrocks.warning                                   | バーモジュールの警告色                                                                                        |
 
 # オプションの`Xresources`キー
 
 次の`Xresources`キーは既定では未定義ですが、ユーザーは必要に応じて動作を変更するために使用できます。
 
-| `Xresources` Key                  | Description                                                                                                                                                                                         |
+| `Xresources`キー                  | 概要                                                                                                                                                                                         |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | wm.gaps.focus_follows_mouse    | 有効であればマウスの下のウィンドウをフォーカスする                                                                                                                                                     |
 | wm.program.launcher.app        | アプリランチャーキーバインドを実行するi3コマンド                                                                                                                                                |

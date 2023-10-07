@@ -1,5 +1,5 @@
 ---
-title: Regolithを使う"
+title: "Regolithを使う"
 linkTitle: "Using Regolith"
 weight: 2
 description: >

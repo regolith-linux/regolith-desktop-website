@@ -14,7 +14,7 @@ Regolithでは、`Xresources`の値は、独自の`Xresources`ファイルを用
 
 Regolithセッションが開始されるとき、以下の順番でXresourcesが読み込まれます：
 
-| File                            | Optional | Notes                                                                             |
+| ファイル                            | オプション | 注意                                                                             |
 | ------------------------------- | -------- | --------------------------------------------------------------------------------- |
 | `~/.Xresources`                 | Y        | Regolith以外の設定を対象にしています                                                |
 | `/usr/share/regolith-look/**/`     | N        | Regolithの`Xresources`は外観と関連付けられています |
