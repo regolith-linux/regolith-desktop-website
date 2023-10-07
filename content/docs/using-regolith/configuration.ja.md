@@ -1,6 +1,6 @@
 ---
 title: "設定"
-linkTitle: "設定"
+linkTitle: "Configuration"
 weight: 4
 description: >
   Regolithの外観と動作を変更する。
@@ -150,11 +150,11 @@ CPUの読み込み、日付、時間、通知、天気や他のシステム情�
 
 # 外観
 
-色、壁紙、ウィンドウとバーのレイアウトや他の視覚的要素はRegolithにバンドルされ、"外観"と呼ばれています。外観は、デスクトップの全体の外観を変更する簡単な方法を提供します。ステータスバーのインジケーターのような外観はパッケージ化され、他のソフトウェアのようにインストールしたりアンインストールしたりすることができます。慣習として、外観パッケージは命名フォーマットである`regolith-look-<name>`に習っています。`apt`やGUIパッケージマネージャーは利用可能な外観を検索することができます。{{< keys "super,alt,l" >}}キーバインドで、ダイアログからインストールされた外観を選択します：
+色、壁紙、ウィンドウとバーのレイアウトや他の視覚的要素はRegolithにバンドルされ、"外観(looks)"と呼ばれています。外観は、デスクトップの全体の外観を変更する簡単な方法を提供します。ステータスバーのインジケーターのような外観はパッケージ化され、他のソフトウェアのようにインストールしたりアンインストールしたりすることができます。慣習として、外観パッケージは命名フォーマットである`regolith-look-<name>`となっています。`apt`やGUIパッケージマネージャーから利用可能な外観を検索することができます。{{< keys "super,alt,l" >}}キーバインドで、ダイアログからインストールされた外観を選択します。
 
 ![](/regolith-ilia-look-selector.png)
 
-また、ターミナルのコマンド・`regolith-look`で外観を変更したり、選択した外観でアクティブなセッションを再読み込みすることができます。ここでは例として、`gruvbox`の外観に切り替えます：
+また、ターミナルのコマンド・`regolith-look`で外観を変更したり、選択した外観でアクティブなセッションを再読み込みすることができます。ここでは例として、`gruvbox`の外観に切り替えます。
 
 ```console
 apt search ^regolith-look-
@@ -174,7 +174,7 @@ sudo apt install regolith-look-*
 
 # i3の機能
 
-[Regolith 2.0の開始時から]({{< ref "docs/reference/configurations.md#history" >}})、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて"config partials"として提供されます。これらのパッケージはi3設定の一部として、`/usr/share/regolith/i3/config.d`以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 `regolith-desktop`パッケージがインストールされたときに設定要素が依存関係としてインストールされています：
+[Regolith 2.0の開始時から]({{< ref "docs/reference/configurations.md#history" >}})、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて"config partials"として提供されます。これらのパッケージはi3設定の一部として、`/usr/share/regolith/i3/config.d`以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 `regolith-desktop`パッケージがインストールされたときに設定要素が依存関係としてインストールされています。
 
 | Package                      | Function          | File |
 |------------------------------|-------------------|----- |
@@ -191,7 +191,7 @@ sudo apt install regolith-look-*
 
 ソフトの依存関係は、それに依存するパッケージを削除することなく削除できます。これは表にあるいくつかのパッケージを削除できることを示しています。ユーザーは、デフォルトの設定部分を独自のバージョンに置き換えることで、より安定した方法で設定を微調整できます。これはカスタマイズしたい部分を`~/.config/regolith3/i3/config.d/`にコピーして、`apt`で`/usr/share/regolith/i3/config.d`のオリジナルのファイルを削除することでできます。この方法により、変更されていない設定部分は、ユーザー固有の設定に影響を与えることなく更新やバグ修正を取得し続けることができます。
 
-参考例は[i3設定のカスタマイズのhow-to]({{< ref "docs/howtos/customize-i3-configuration.md" >}})を参照してください。
+参考例は[i3設定のカスタマイズのハウツー]({{< ref "docs/howtos/customize-i3-configuration.md" >}})を参照してください。
 
 
 ## すべてのi3設定パッケージ
@@ -229,7 +229,7 @@ sudo apt install regolith-look-*
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
 {{< /hint >}}
 
-もっとも重要なキーバインドの変更は{{< keys "super" >}}キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして`Xresources`を利用できます。ユーザー設定に開いている`Xresources`キーの表は、[他の場所で入手できます]({{< ref "xresources" >}})。既定の{{< keys "super" >}}バインドを"windows"キーから"alt"に変更するには`~/.config/regolith3/Xresources`に以下の行を追加します：
+もっとも重要なキーバインドの変更は{{< keys "super" >}}キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして`Xresources`を利用できます。ユーザー設定に開いている`Xresources`キーの表は、[他の場所で入手できます]({{< ref "xresources" >}})。既定の{{< keys "super" >}}バインドを"windows"キーから"alt"に変更するには`~/.config/regolith3/Xresources`に以下の行を追加します。
 
 ```toml
 wm.mod: Mod1
@@ -248,4 +248,4 @@ wm.alt: Mod4
 
 # さらに深く読み込む
 
-もっと深く知りたい人は、[Howtos]({{< ref "howtos" >}})を利用したり、[Xresourcesリファレンス]({{< ref "docs/Reference/xresources.md" >}})を読みましょう。 [ユーザーガイド](https://i3wm.org/docs/userguide.html)を読んでi3のパワーユーザーになりましょう。
+もっと深く知りたい人は、[このハウツー]({{< ref "howtos" >}})を利用したり、[Xresourcesリファレンス]({{< ref "docs/Reference/xresources.md" >}})を読みましょう。 [ユーザーガイド](https://i3wm.org/docs/userguide.html)を読んでi3のパワーユーザーになりましょう。

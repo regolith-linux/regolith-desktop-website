@@ -49,7 +49,7 @@ description: >
 
 ## システムを構成する
 
-システムアプリ（`regolith-control-center`として知られています）は、WiFi・Bluetoothの設定、アプリ関連の設定、ユーザーのセットアップといった、一般的な設定タスクの主要なインターフェースです。このアプリは{{< keys "super,c" >}}キーバインドか、ランチャーの`Regolith Settings`アプリから起動できます。
+システムアプリ（`regolith-control-center`として知られています）は、WiFi・Bluetoothの設定、アプリ関連の設定、ユーザーのセットアップといった、共通の設定タスクの主要なインターフェースです。このアプリは{{< keys "super,c" >}}キーバインドか、ランチャーの`Regolith Settings`アプリから起動できます。
 
 ![](/regolith-gnome-settings.png)
 

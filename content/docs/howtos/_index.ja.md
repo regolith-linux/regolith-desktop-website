@@ -1,5 +1,5 @@
 ---
-title: "How To"
+title: "ハウツー"
 linkTitle: "Howtos"
 bookCollapseSection: true
 weight: 5
@@ -21,4 +21,4 @@ description: >
 
 ## i3-wmユーザーガイド
 
-インターフェースを最大限活用するため、共通のコマンドラインの能力を強化するには、[i3ユーザーガイド](https://i3wm.org/docs/userguide.html)で利用可能なオプションについて基本的な理解を持つことをオススメします。
+インターフェースを最大限活用するため、共通のコマンドラインの機能を強化するには、[i3ユーザーガイド](https://i3wm.org/docs/userguide.html)で利用可能なオプションについて基本的な理解を持つことをオススメします。

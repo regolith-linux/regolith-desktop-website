@@ -24,9 +24,9 @@ Regolithは、人気があり、高速で、構成しやすく、キーボード
 
 ***
 
-## Regolithをインストール
+## Regolithのインストール
 
-[Regolith Desktop 3.0のインストール手順](/docs/using-regolith/install)
+[Regolith Desktop 3.0のインストール手順（英語）](/docs/using-regolith/install)
 
 ## ビジュアルツアー
 ***
@@ -58,12 +58,12 @@ Regolithは、人気があり、高速で、構成しやすく、キーボード
 {{< columns >}}
 
 [![](/regolith-floating-windows.png)](/regolith-floating-windows.png)
-<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>でフローティングモードを切り替えることができます。<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span>でウィンドウをリサイズし、<span class="badge badge-warning">super</span>を押しながらマウスで移動させます。
+<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>でフローティングモードに切り替えることができます。<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span>でウィンドウをリサイズし、<span class="badge badge-warning">super</span>を押しながらマウスで移動させます。
 
 <--->
 
 [![](/regolith-gnome-flashback.png)](/regolith-gnome-flashback.png)
-Gnome Flashbackは一貫したシンプルなシステム環境を提供します。 UIの調整、USBドライブを自動マウント、ワイヤレスネットワークへの接続を行います。<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>からコントロールパネルを起動することができます。
+Gnome Flashbackは一貫したシンプルなシステム環境を提供します。 UIの調整、USBドライブの自動マウント、ワイヤレスネットワークへの接続を行います。<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>からコントロールパネルを起動することができます。
 
 {{< /columns >}}
 
@@ -87,11 +87,11 @@ Gnome Flashbackは一貫したシンプルなシステム環境を提供しま�
 <--->
 
 [![](/regolith-ilia-notifications.png)](/regolith-ilia-notifications.png)
-デスクトップ通知は注意を引きつけすぎず、<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>を押して画面上のダイアログで管理することが可能です。
+デスクトップ通知は注意を引こうと競合することなく、<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>を押して画面上のダイアログで管理することが可能です。
 
 {{< /columns >}}
 
-# 問い合わせる
+# お問い合わせ
 
 {{< columns >}}
 
@@ -104,11 +104,11 @@ Gnome Flashbackは一貫したシンプルなシステム環境を提供しま�
 ### 議論やヘルプ
 
 * [GitHub Discussions](https://github.com/orgs/regolith-linux/discussions)に参加してヘルプや議論をする
-* [既に存在するissueや新規issue](https://github.com/regolith-linux/regolith-desktop/issues)でバグの報告や機能リクエストをする
+* [既存のIssueや新規Issue](https://github.com/regolith-linux/regolith-desktop/issues)でバグの報告や機能リクエストをする
 <--->
 
 ### 開発
 
-* [Regolith GitHub org](https://github.com/regolith-linux)が開発が行われている場所です。
+* [Regolith GitHub org](https://github.com/regolith-linux)で開発が行われています。
 
 {{< /columns >}}

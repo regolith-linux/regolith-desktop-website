@@ -1,6 +1,6 @@
 ---
 title: "設定ファイル"
-linkTitle: "設定ファイル"
+linkTitle: "Config Files"
 weight: 2
 description: >
   Regolith使用が使用する設定ファイルについての一般的な情報
