@@ -10,13 +10,13 @@ description: >
 
 ## 外観
 
-Regolith公式の外観をすべてインストール:
+Regolith公式の外観をすべてインストールする:
 
 ```console
 sudo apt install regolith-look-*
 ```
 
-もしくは、`apt`でインストールされて利用可能な外観のリストを表示:
+もしくは、`apt`でインストールされて利用可能な外観のリストを表示する:
 
 ```console
 apt list | grep regolith-look-
@@ -28,7 +28,7 @@ apt list | grep regolith-look-
 
 ## ステータスインジケーター
 
-次のスニペットは、新規ユーザーに推奨されるステータスインジケータパッケージをインストールします：
+次の行では、新規ユーザーに推奨されるステータスインジケータパッケージをインストールします。
 
 ```console
 sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
@@ -50,7 +50,7 @@ sudo apt install i3xrocks-battery
 
 ## コンポジター
 
-コンポジターはウィンドウ環境に仮想エフェクトを追加します。既定では、Regolith 3には`picom`コンポジターがインストールされています。特定のハードウェアやドライバの制限によってグラフィックの問題が発生した場合、変わりに次のコンポジターをインストールする必要があります：
+コンポジターはウィンドウ環境に仮想エフェクトを追加します。既定では、Regolith 3には`picom`コンポジターがインストールされています。特定のハードウェアやドライバの制限によってグラフィックの問題が発生した場合、変わりに次のコンポジターをインストールする必要があります。
 
 | パッケージ                      | 注意          |
 |------------------------------|-------------------|
@@ -59,7 +59,7 @@ sudo apt install i3xrocks-battery
 | `regolith-compositor-xcompmgr` | 古いコンポジターであり、いくつかのハードウェアでよりよく動作する場合があります |
 | `regolith-compositor-none` | パススルーパッケージであり、コンポジターは実行されません |
 
-詳細な概要は、[このHow To](/docs/howtos/customize-compositor)を参照してください。
+詳細な概要は、[このハウツー]({{< ref "docs/howtos/customize-compositor.md" >}})を参照してください。
 
 # 壁紙
 
@@ -110,7 +110,7 @@ regolith-look refresh
 
 ## 壁紙の処理を無効化
 
-Regolithの外部で壁紙を管理したい場合、壁紙画像と色の値を空にするだけです：
+Regolithの外部で壁紙を管理したい場合、壁紙画像と色の値を空にします。
 
 ```console
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
@@ -119,7 +119,7 @@ echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 
 # ステータスバーのインジケーター
 
-CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索するすることができます。"blocklet"と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです：
+CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索するすることができます。"blocklet"と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです。
 
 | パッケージ                      | ステータスの機能 | 
 |--------------------------------|-------------------|
@@ -196,7 +196,7 @@ sudo apt install regolith-look-*
 
 ## すべてのi3設定パッケージ
 
-ここに記載されているすべてのi3設定パッケージはRegolith 2.1で利用できます：
+ここに記載されているすべてのi3設定パッケージはRegolith 2.1で利用できます。
 
 | パッケージ                      | 機能          | ファイル |
 |------------------------------|-------------------|----- |
