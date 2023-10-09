@@ -213,7 +213,7 @@ ARMベースのシステムにインストールするときは、上記の内�
 {{< /hint >}}
 
 {{< hint info >}}
-`regolith-desktop`パッケージは、多くのハードウェアで動作する必要最小限の設定でインストールします。追加で高級なパッケージやもっと便利な環境を追加するには、[新規ユーザーに推奨されるパッケージ]({{< ref "docs/using-regolith/configration.md#recommended-packages-for-new-users" >}})を参照してください。
+`regolith-desktop`パッケージは、多くのハードウェアで動作する必要最小限の設定でインストールします。追加で高級なパッケージやもっと便利な環境を追加するには、[新規ユーザーに推奨されるパッケージ]({{< ref "docs/using-regolith/configuration.md#recommended-packages-for-new-users" >}})を参照してください。
 {{< /hint >}}
 
 {{< hint info >}}
@@ -258,7 +258,7 @@ ARMベースのシステムにインストールするときは、上記の内�
 {{< /hint >}}
 
 {{< hint info >}}
-`regolith-desktop`パッケージは、多くのハードウェアで動作する必要最小限の設定でインストールします。追加で高級なパッケージやもっと便利な環境を追加するには、[新規ユーザーに推奨されるパッケージ]({{< ref "docs/using-regolith/configration.md#recommended-packages-for-new-users" >}})を参照してください。
+`regolith-desktop`パッケージは、多くのハードウェアで動作する必要最小限の設定でインストールします。追加で高級なパッケージやもっと便利な環境を追加するには、[新規ユーザーに推奨されるパッケージ]({{< ref "docs/using-regolith/configuration.md#recommended-packages-for-new-users" >}})を参照してください。
 {{< /hint >}}
 
 {{< hint info >}}
