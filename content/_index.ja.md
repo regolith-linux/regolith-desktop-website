@@ -26,7 +26,7 @@ Regolithは、人気があり、高速で、構成しやすく、キーボード
 
 ## Regolithのインストール
 
-[Regolith Desktop 3.0のインストール手順（英語）](/docs/using-regolith/install)
+[Regolith Desktop 3.0のインストール手順]({{< ref "docs/using-regolith/install.md" >}})
 
 ## ビジュアルツアー
 ***

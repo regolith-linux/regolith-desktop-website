@@ -6,7 +6,7 @@ description: >
   Regolithの外観と動作を変更する。
 ---
 
-# 新規ユーザーに推奨されるパッケージ
+# 新規ユーザーに推奨されるパッケージ {#recommended-packages-for-new-users}
 
 ## 外観
 
@@ -248,4 +248,4 @@ wm.alt: Mod4
 
 # さらに深く読み込む
 
-もっと深く知りたい人は、[このハウツー]({{< ref "howtos" >}})を利用したり、[Xresourcesリファレンス]({{< ref "docs/Reference/xresources.md" >}})を読みましょう。 [ユーザーガイド](https://i3wm.org/docs/userguide.html)を読んでi3のパワーユーザーになりましょう。
+もっと深く知りたい人は、[このハウツー]({{< ref "howtos" >}})を利用したり、[Xresourcesリファレンス]({{< ref "docs/Reference/xresources.md" >}})を読みましょう。 [ユーザーガイド（英語）](https://i3wm.org/docs/userguide.html)を読んでi3のパワーユーザーになりましょう。

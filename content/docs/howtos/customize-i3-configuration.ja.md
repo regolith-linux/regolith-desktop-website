@@ -51,7 +51,7 @@ wm.workspace.01.name: 1:FOO
 
 詳しくは、[`Xresources`に関するより詳細なディスカッション]({{< ref "docs/howtos/override-xres.md" >}})を参照してください。
 
-## 既定の部分をアンインストールする方法
+## 既定の部分設定をアンインストールする方法
 
 提供された既定の部分設定を全体的に置き換えたり削除したい場合、提供された部分を`apt`でパッケージとして削除することができます。
 
@@ -79,7 +79,7 @@ dpkg -L regolith-i3-workspace-config
 sudo apt remove regolith-i3-workspace-config
 ```
 
-## 既定の部分をカスタマイズする方法
+## 既定の部分設定をカスタマイズする方法
 
 {{< hint warning >}}
 警告：Regolithの既定部分のみをカスタマイズする場合、`~/.config/regolith3/i3/config`ファイルが存在**しない**ことを確認してください。これはRegolithの既定をオーバーライドするため、このハウツーの内容と互換性がありません。

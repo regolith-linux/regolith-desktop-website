@@ -17,8 +17,8 @@ description: >
 
 ## ターミナルを使用する
 
-このセクションではRegolithをユーザーの必要なものに合わせて変更する方法の例を提供します。それらのほとんどは、コマンドをターミナルで入力して実行します。ターミナルを使うのが初めての場合や記憶をリフレッシュした場合は、[Ubuntuのガイド](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0)を読むことをオススメします。その他に、[linuxcommand.orgのチュートリアル](http://linuxcommand.org/lc3_learning_the_shell.php)ではさらに進んだ領域へ踏み込みます。
+このセクションではRegolithをユーザーの必要なものに合わせて変更する方法の例を提供します。それらのほとんどは、コマンドをターミナルで入力して実行します。ターミナルを使うのが初めての場合や記憶をリフレッシュした場合は、[Ubuntuのガイド（英語）](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0)を読むことをオススメします。その他に、[linuxcommand.orgのチュートリアル（英語）](http://linuxcommand.org/lc3_learning_the_shell.php)ではさらに進んだ領域へ踏み込みます。
 
 ## i3-wmユーザーガイド
 
-インターフェースを最大限活用するため、共通のコマンドラインの機能を強化するには、[i3ユーザーガイド](https://i3wm.org/docs/userguide.html)で利用可能なオプションについて基本的な理解を持つことをオススメします。
+インターフェースを最大限活用するため、共通のコマンドラインの機能を強化するには、[i3ユーザーガイド（英語）](https://i3wm.org/docs/userguide.html)で利用可能なオプションについて基本的な理解を持つことをオススメします。

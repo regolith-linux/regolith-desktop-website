@@ -16,7 +16,7 @@ Regolith 3.0では、複数のセッション(X11: `regolith-session-flashback`,
 
 ```console
 sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
-#                ^-- ベース       ^-- セッション             ^ -- 外観 
+#                ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ ^-- ｾｯｼｮﾝ                  ^ -- 外観 
 ```
 
 * セッションについて、次の内の一方か両方を選ぶことができます：`regolith-session-flashback` (X11), `regolith-session-sway` (Wayland)
@@ -158,12 +158,11 @@ ARMベースのシステムにインストールするときは、上記の内�
 
 {{< tab "Regolith Linux 2.2 ISO" >}} 
 
-Regolith LinuxはRegolithデスクトップ環境がインストールされた、Ubuntu 22.10のインストールイメージです。USBドライブから起動して、インストールすることなくRegolithを実行することを可能にします。また、コンピューターのドライブにシステムをインストールすることもできます。Regolith Linuxでは、以下の機能がRegolithデスクトップに追加されています。
+Regolith LinuxはRegolithデスクトップ環境がインストールされた、Ubuntu 22.10のインストールイメージです。USBドライブから起動して、インストールすることなくRegolithを実行することを可能にします。また、コンピューターのドライブにシステムをインストールすることもできます。Regolith Linuxでは、以下の特徴がRegolithデスクトップに追加されています。
 
-* Regolith用にブランディングされた起動画面とロック画面
-* 不要な依存関係を避けて`gdm3`の代わりに`lightdm`ディスプレイマネージャーを使用
-* 次のパッケージがインストールされていません：`gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`
-これらのパッケージは、ユーザーが必要であればインストールすることができます。
+* 起動画面とロック画面Regolith用にブランディングされています
+* 不要な依存関係を避けて`gdm3`の代わりに`lightdm`ディスプレイマネージャーを使用しています
+* 次のパッケージがインストールされていません。これらのパッケージは、ユーザーが必要であればインストールすることができます：`gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`
 
 {{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221211_050200/regolith-ubuntu-kinetic-2.2.0.zip" >}}Regolith Linux 2.2をダウンロード{{< /button >}}
 
