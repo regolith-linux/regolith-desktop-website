@@ -14,6 +14,25 @@ description: >
 
 * Ubuntu 23.10 (manic) support
 
+## Installation Instructions
+
+Follow the standard installation instructions, but substitue `testing` instead of `release-3_0`.  For example, this is the `apt` line for Ubuntu Manic:
+
+```
+echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+https://regolith-desktop.org/testing-ubuntu-manic-amd64 manic main" | \
+sudo tee /etc/apt/sources.list.d/regolith.list
+```
+
+After `apt upgrade` is complete, verify that Regolith 3.1 is installed by:
+
+```
+$ cat /etc/regolith/version 
+REGOLITH_VERSION=3.0
+```
+
+A reboot is required for the new version to load.
+
 ## Changelog Delta from Regolith 3.0
 
 
