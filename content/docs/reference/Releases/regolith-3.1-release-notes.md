@@ -6,9 +6,9 @@ description: >
   Release notes for Regolith 3.1
 ---
 
-# Regolith 3.0 Release Notes
+# Regolith 3.1 Release Notes
 
-[Regolith 3.0](https://github.com/orgs/regolith-linux/projects/26) is a minor release focusing on Ubuntu 23.10 support.
+[Regolith 3.1](https://github.com/orgs/regolith-linux/projects/26) is a minor release focusing on Ubuntu 23.10 support.
 
 ## New Major Features
 
@@ -28,12 +28,12 @@ After `apt upgrade` is complete, verify that Regolith 3.1 is installed by:
 
 ```
 $ cat /etc/regolith/version 
-REGOLITH_VERSION=3.0
+REGOLITH_VERSION=3.1
 ```
 
 A reboot is required for the new version to load.
 
-## Changelog Delta from Regolith 3.0
+## Changelog Delta from Regolith 3.1
 
 
 ## Changes in `regolith-session`:
