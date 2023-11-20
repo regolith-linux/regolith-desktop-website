@@ -305,6 +305,7 @@ Les notifications de bureau ne se battent pas pour votre attention mais peuvent 
 ### Discussions et Aide
 
 - Rejoignez-nous sur [GitHub Discussions](https://github.com/orgs/regolith-linux/discussions) pour discuter et obtenir de l'aide
+- Chat with community members on [the Regolith Desktop Matrix space](https://matrix.to/#/#regolith-desktop:matrix.org)
 - Cherchez dans les [issues existantes ou créez-en une nouvelle](<(https://github.com/regolith-linux/regolith-desktop/issues)>) si vous trouvez un bug ou avez une demande de fonctionnalité
   <--->
 

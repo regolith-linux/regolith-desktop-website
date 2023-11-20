@@ -283,6 +283,7 @@ Desktop-Benachrichtigungen kämpfen nicht um Ihre Aufmerksamkeit, sondern könne
 ### Hilfe und Austausch
 
 * Besuchen Sie uns auf [Discussions](https://github.com/orgs/regolith-linux/discussions) für Hilfe und Gespräche (auf Englisch)
+* Chat with community members on [the Regolith Desktop Matrix space](https://matrix.to/#/#regolith-desktop:matrix.org)
 * Suchen Sie in [bestehenden Tickets oder erstellen Sie ein neues Ticket](https://github.com/regolith-linux/regolith-desktop/issues)
   für Bugs und Funktionswünsche (auf Englisch)
 <--->
