@@ -104,6 +104,7 @@ Gnome Flashbackは一貫したシンプルなシステム環境を提供しま�
 ### 議論やヘルプ
 
 * [GitHub Discussions](https://github.com/orgs/regolith-linux/discussions)に参加してヘルプや議論をする
+* Chat with community members on [the Regolith Desktop Matrix space](https://matrix.to/#/#regolith-desktop:matrix.org)
 * [既存のIssueや新規Issue](https://github.com/regolith-linux/regolith-desktop/issues)でバグの報告や機能リクエストをする
 <--->
 

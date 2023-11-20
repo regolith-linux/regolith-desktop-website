@@ -9,3 +9,4 @@ package.json
 
 # Hugo ephemeral files:
 .hugo_build.lock
+.vscode
