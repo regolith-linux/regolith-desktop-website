@@ -12,7 +12,7 @@ description: >
 
 ## Features
 
-* Ubuntu 23.10 (manic) support
+* Ubuntu 23.10 (Mantic) support
 * Debian Testing support for Wayland session
 * `i3-next-workspace` [ported to Sway](https://github.com/regolith-linux/childe)
 * `regolith-control-center` rebased from GNOME 45 (for supported disto releases)
@@ -76,6 +76,19 @@ b36e821 feat: add next-workspace feature to sway session, copied from x11 i3-nex
 a777246 [15_base_launchers] add vm.program.terminal
 9b1706d Move default-style to soft dep for both sessions.  demote 3 more for sway session to soft per PR feedback
 d21c32c fix: remove (redundant) hard dependency from sway session to rofication. Soft dependency comes via regolith-wm-config.
+```
+
+### Changes in `sway-regolith`
+
+```
+75311f9a update patch filename for consistency
+b94bd17b fix: do not ship wallpaper, provided by sway-wallpaper package
+6e56e53f fix: remove git versioning and fix c warning to appease debian builder on mantic
+8dd63940 feat: upgrade packaging to sway v1.8.1
+2a2e3b93 fix: include wl_protos_src in sway_sources
+9160dab1 feat: apply patch for dbus tray menu
+34f5363c Applied patch for regolith compatibility
+227ac44a debian: import packaging from v1.7
 ```
 
 ### Changes in `sway-audio-idle-inhibit`
