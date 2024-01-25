@@ -16,7 +16,6 @@ description: >
 * Debian Testing support for Wayland session
 * `i3-next-workspace` [ported to Sway](https://github.com/regolith-linux/childe)
 * `regolith-control-center` rebased from GNOME 45 (for supported disto releases)
-* `xdg-desk`
 
 ## Installation Instructions
 
