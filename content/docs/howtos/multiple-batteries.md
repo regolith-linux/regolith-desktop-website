@@ -3,7 +3,7 @@ title: "Support Multiple Batteries"
 description: >
   Display status of the batteries per instance
 ---
-
+# i3
 {{< hint danger >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /hint >}}
@@ -45,6 +45,45 @@ instance=BAT0
 interval=30
 instance=BAT1
 ```
+
+## Sway
+
+1. Stage your i3status-rust config file:
+```sh
+cp /etc/regolith/i3status-rust/config.toml ~/.config/regolith3/i3status-rust/config.toml
+```
+
+2. Configure to supply i3status-rust with your config file:
+```sh
+echo "wm.bar.status_config: ~/.config/regolith3/i3status-rust/config.toml" >> ~/.config/regolith3/Xresources
+```
+
+3. List all the battery instances running on your machine by running:
+
+```sh
+ls /sys/class/power_supply/
+
+# AC BAT0 BAT1
+```
+
+4. Update the staged config file to contain blocks for both of the batteries:
+
+```conf
+[[block]]
+block = "battery"
+interval = 10
+[...]
+device = "BAT0"
+
+[[block]]
+block = "battery"
+interval = 10
+[...]
+device = "BAT1"
+
+```
+
+
 
 ## Further Reading
 
