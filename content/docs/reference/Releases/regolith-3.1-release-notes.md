@@ -19,11 +19,11 @@ description: >
 
 ## Installation Instructions
 
-Follow the standard installation instructions, but substitute `testing` instead of `release-3_0`.  For example, this is the `apt` line for Ubuntu Manic:
+Follow the standard installation instructions, but substitute `testing` instead of `release-3_0`.  For example, this is the `apt` line for Ubuntu Mantic:
 
 ```shell
 echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-https://regolith-desktop.org/testing-ubuntu-manic-amd64 manic main" | \
+https://regolith-desktop.org/testing-ubuntu-mantic-amd64 mantic main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
 ```
 
