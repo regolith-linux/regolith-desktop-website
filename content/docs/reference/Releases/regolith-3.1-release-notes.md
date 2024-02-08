@@ -38,6 +38,13 @@ A reboot is required for the new version to load.
 
 ## Changelog Delta from Regolith 3.0
 
+### Changes in `regolith-control-center`
+
+```text
+8545068e7 chore: add Regolith-Wayland in OnlyShowIn
+08a8514db fix: disable whoopsie for debian compat
+```
+
 ### Changes in `regolith-displayd`
 
 ```text
@@ -79,7 +86,7 @@ d21c32c fix: remove (redundant) hard dependency from sway session to rofication.
 
 ### Changes in `sway-regolith`
 
-```
+```text
 75311f9a update patch filename for consistency
 b94bd17b fix: do not ship wallpaper, provided by sway-wallpaper package
 6e56e53f fix: remove git versioning and fix c warning to appease debian builder on mantic
@@ -104,4 +111,7 @@ dfcabfb chore: pin zvariant version to 3.4.1
 
 ### Changes in `xdg-desktop-portal-regolith`
 
+```text
 * Initial implementation, forked from `xdg-desktop-portal-elementary`.
+```
+

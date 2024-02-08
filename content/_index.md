@@ -29,7 +29,7 @@ simple and consistent system management capabilities.
 
 ## Install Regolith
 
-[Regolith Desktop 3.0 Installation instructions](/docs/using-regolith/install)
+[Regolith Desktop 3.1 Installation instructions](/docs/using-regolith/install)
 
 ## Visual Tour
 ***

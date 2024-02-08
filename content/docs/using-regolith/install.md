@@ -6,13 +6,13 @@ description: >
   Install Regolith
 ---
 
-# Get Regolith 3.0
+# Get Regolith 3.1
 
-If you're upgrading from an earlier version of Regolith, you may be interested in reading [the release notes](/docs/reference/Releases/regolith-3.0-release-notes) and most specifically, the [migration guide](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide).
+If you're upgrading from an earlier version of Regolith, you may be interested in reading [the release notes](/docs/reference/Releases/regolith-3.1-release-notes) and if coming from 2.x, the [migration guide](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide).
 
 ## Packages Specified at Install Time
 
-In Regolith 3.0 it is now possible to select from multiple sessions (X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`). Due to this, when installing Regolith 3.0 also specify one or both sessions that you wish to use. Additionally, it's now possible to specify the Regolith Look at install time, which saves a setup of having to configure it later.  Here is the recommended base install for X11 on Debian-based systems:
+Starting with Regolith 3.0 it is now possible to select from multiple sessions (X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`). Due to this, when installing Regolith 3.1 also specify one or both sessions that you wish to use. Additionally, it's now possible to specify the Regolith Look at install time, which saves a setup of having to configure it later.  Here is the recommended base install for X11 on Debian-based systems:
 
 ```console
 sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
@@ -50,7 +50,7 @@ Below are sections devoted to installing the Regolith Desktop on specific Linux-
 ### Ubuntu
 
 {{< tabs "ubuntu-tabs" >}}
-{{< tab "Ubuntu 23.04" >}}
+{{< tab "Ubuntu 23.10" >}}
 
 Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
@@ -66,7 +66,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_0-ubuntu-lunar-amd64 lunar main" | \
+   https://regolith-desktop.org/release-3_1-ubuntu-mantic-amd64 mantic main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -101,7 +101,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_0-ubuntu-jammy-amd64 jammy main" | \
+   https://regolith-desktop.org/release-3_1-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -135,7 +135,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Add the repository URL to your local `apt`:
 
    ```console
-   echo deb "[arch=amd64] https://regolith-desktop.org/release-3_0-ubuntu-focal-amd64 focal main" | \
+   echo deb "[arch=amd64] https://regolith-desktop.org/release-3_1-ubuntu-focal-amd64 focal main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -193,7 +193,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_0-debian-bookworm-amd64 bookworm main" | \
+   https://regolith-desktop.org/release-3_1-debian-bookworm-amd64 bookworm main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -238,7 +238,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_0-debian-bullseye-amd64 bullseye main" | \
+   https://regolith-desktop.org/release-3_1-debian-bullseye-amd64 bullseye main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
