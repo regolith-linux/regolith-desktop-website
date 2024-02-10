@@ -6,9 +6,9 @@ description: >
   Regolithのインストール
 ---
 
-# Regolith 3.0を入手
+# Regolith 3.1を入手
 
-以前のバージョンのRegolithからアップグレードする場合、[リリースノート](/docs/reference/Releases/regolith-3.0-release-notes) 、特に[移行ガイド](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide)に興味があるかもしれません。
+以前のバージョンのRegolithからアップグレードする場合、[リリースノート](/docs/reference/Releases/regolith-3.1-release-notes) 、特に[移行ガイド](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide)に興味があるかもしれません。
 
 ## インストール時に選択するパッケージ
 
@@ -50,7 +50,7 @@ sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
 ### Ubuntu
 
 {{< tabs "ubuntu-tabs" >}}
-{{< tab "Ubuntu 23.04" >}}
+{{< tab "Ubuntu 23.10" >}}
 
 Regolithはシステムパッケージとしてインストールすることができます。これは簡単に更新や削除ができ、一貫することができます。
 下記のステップでは、Regolithのパッケージリポジトリからパッケージを読み込み可能にして、デスクトップパッケージをインストールできるようにシステムを設定する方法について記しています。
@@ -66,7 +66,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_0-ubuntu-lunar-amd64 lunar main" | \
+   https://regolith-desktop.org/release-3_1-ubuntu-mantic-amd64 mantic main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -101,7 +101,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_0-ubuntu-jammy-amd64 jammy main" | \
+   https://regolith-desktop.org/release-3_1-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -135,7 +135,7 @@ Regolithはシステムパッケージとしてインストールすることが
 1. ローカルの`apt`にリポジトリのURLを追加する。
 
    ```console
-   echo deb "[arch=amd64] https://regolith-desktop.org/release-3_0-ubuntu-focal-amd64 focal main" | \
+   echo deb "[arch=amd64] https://regolith-desktop.org/release-3_1-ubuntu-focal-amd64 focal main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -193,7 +193,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_0-debian-bookworm-amd64 bookworm main" | \
+   https://regolith-desktop.org/release-3_1-debian-bookworm-amd64 bookworm main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -238,7 +238,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_0-debian-bullseye-amd64 bullseye main" | \
+   https://regolith-desktop.org/release-3_1-debian-bullseye-amd64 bullseye main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -270,4 +270,4 @@ ARMベースのシステムにインストールするときは、上記の内�
 
 ## リリースの変更ポリシー
 
- Regolith 3.0以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、`release-current` という特別な段階が提供されています。
+ Regolith 3.1以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、`release-current` という特別な段階が提供されています。
