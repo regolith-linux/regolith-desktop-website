@@ -266,7 +266,69 @@ The `regolith-compositor-picom-glx` compositor should work on most computers. If
 
 {{< /tab >}}
 
+{{< tab "Debian Testing" >}}
+
+For Debian users that use the "Testing" release, Regolith can be installed, however there is no "release" version due to the nature of Debian Testing.  In order to install Regolith into a Debian Testing instance, the `apt` line contains `testing` instead of a `release` string.  For example:
+
+   ```console
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+   https://regolith-desktop.org/testing-debian-testing-amd64 testing main" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   ```
+
+Otherwise the installation steps are the same as an official Debian release.  Note that broken dependencies or components will occur from time to time.  If stability is important, consider installing into an officially released version of Debian or Ubuntu.
+
+{{< /tab >}}
+
 {{< /tabs >}}
+
+## Anatomy of the Regolith `apt` URL Path
+
+```console
+https://regolith-desktop.org/testing-debian-testing-amd64
+                             |       |      |       |
+                             |       |      |       * Architecture
+                             |       |      * Distro Version/Codename
+                             |       * Distro Name
+                             * Regolith Stage
+```
+
+### Regolith Stages
+
+|Stage|URL String|Description|
+|---|---|---|
+|Experimental|`experimental`|Stage for testing experiments|
+|Unstable|`unstable`|Stage for early development testing|
+|Testing|`testing`|Stage for late development testing|
+|Release X.Y|`release-X_Y`|Stage for specific official release|
+|Current Release|`release-current` |Stage for latest release (floating from release to release)|
+
+### Distro Names
+
+|Name | Description |
+|---|---|
+|`ubuntu`| The Ubuntu Linux Distribution|
+|`debian`| The Debian Linux Distribution|
+
+### Distro Version/Codename
+
+These labels are determined by their respective upstream communities.  Examples are `mantic`, `bullseye`, `focal`.
+
+### Architecture
+
+|Name | Description |
+|---|---|
+|`amd64`| The 64-bit x86 architecture |
+|`arm64`| The 64-bit Arm architecture |
+
+
+### Examples
+
+|Description | URL |
+|---|---|
+|The 3.1 release of Regolith on Ubuntu Jammy for `amd64`|`https://regolith-desktop.org/release-3_1-ubuntu-jammy-amd64`|
+|The latest release of Regolith on Debian Bookworm for `amd64`|`https://regolith-desktop.org/release-current-debian-bookworm-amd64`|
+|Testing repo for Regolith on Debian Testing for `arm64`|`https://regolith-desktop.org/testing-debian-testing-arm64`|
 
 ## Release Change Policy
 
