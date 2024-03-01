@@ -16,7 +16,7 @@ Regolith 3.0では、複数のセッション(X11: `regolith-session-flashback`,
 
 ```console
 sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
-#                ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ ^-- ｾｯｼｮﾝ                  ^ -- 外観 
+#                ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ   ^-- ｾｯｼｮﾝ                   ^ -- 外観 
 ```
 
 * セッションについて、次の内の一方か両方を選ぶことができます：`regolith-session-flashback` (X11), `regolith-session-sway` (Wayland)
@@ -37,7 +37,7 @@ regolith-look-nord
 regolith-look-solarized-dark
 ```
 
-上記の推奨事項の例と代替案として、ここでは、Swayセッションに外観"Nord"を適用してインストールする`apt`コマンドが存在します。
+上記の推奨事項の例と代替案として、ここでは、Swayセッションに外観"Nord"を適用してインストールする`apt`コマンドを紹介します。
 
 ```console
 sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
@@ -166,7 +166,7 @@ Regolith LinuxはRegolithデスクトップ環境がインストールされた�
 
 {{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221211_050200/regolith-ubuntu-kinetic-2.2.0.zip" >}}Regolith Linux 2.2をダウンロード{{< /button >}}
 
-詳しい情報は[Regolith 2.2のリリースノート](docs/reference/Releases/regolith-2.2-release-notes)を参照してください。
+詳しい情報は[Regolith 2.2のリリースノート](/docs/reference/Releases/regolith-2.2-release-notes)を参照してください。
 
 ISOはLinuxでは[dd](https://www.man7.org/linux/man-pages/man1/dd.1.html)、[ディスク](https://wiki.gnome.org/Apps/Disks)や[KDE ISO Image Writer](https://community.kde.org/ISOImageWriter)などを用いてUSBドライブに書き込むことができます。macOSでは、[Etcher](https://www.balena.io/etcher/)を使用します。Windowsでは[Rufus](https://rufus.ie/)を用いて、DDモードで書き込むことができます。
 

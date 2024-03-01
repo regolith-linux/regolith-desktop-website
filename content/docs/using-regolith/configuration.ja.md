@@ -119,7 +119,7 @@ echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 
 # ステータスバーのインジケーター
 
-CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索するすることができます。"blocklet"と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです。
+CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索して見つけることができます。「ブロックレット(blocklet)」と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです。
 
 | パッケージ                      | ステータスの機能 | 
 |--------------------------------|-------------------|
@@ -150,7 +150,7 @@ CPUの読み込み、日付、時間、通知、天気や他のシステム情�
 
 # 外観
 
-色、壁紙、ウィンドウとバーのレイアウトや他の視覚的要素はRegolithにバンドルされ、"外観(looks)"と呼ばれています。外観は、デスクトップの全体の外観を変更する簡単な方法を提供します。ステータスバーのインジケーターのような外観はパッケージ化され、他のソフトウェアのようにインストールしたりアンインストールしたりすることができます。慣習として、外観パッケージは命名フォーマットである`regolith-look-<name>`となっています。`apt`やGUIパッケージマネージャーから利用可能な外観を検索することができます。{{< keys "super,alt,l" >}}キーバインドで、ダイアログからインストールされた外観を選択します。
+色、壁紙、ウィンドウとバーのレイアウトや他の視覚的要素はRegolithにバンドルされ、"外観(look)"と呼ばれています。外観は、デスクトップの全体の外観を変更する簡単な方法を提供します。ステータスバーのインジケーターのような外観はパッケージ化され、他のソフトウェアのようにインストールしたりアンインストールしたりすることができます。外観パッケージは命名フォーマットに従い`regolith-look-<name>`となっています。`apt`やGUIパッケージマネージャーから利用可能な外観を検索することができます。{{< keys "super,alt,l" >}}キーバインドで、ダイアログからインストールされた外観を選択します。
 
 ![](/regolith-ilia-look-selector.png)
 
@@ -174,7 +174,7 @@ sudo apt install regolith-look-*
 
 # i3の機能
 
-[Regolith 2.0の開始時から]({{< ref "docs/reference/configurations.md#history" >}})、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて"config partials"として提供されます。これらのパッケージはi3設定の一部として、`/usr/share/regolith/i3/config.d`以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 `regolith-desktop`パッケージがインストールされたときに設定要素が依存関係としてインストールされています。
+[Regolith 2.0の開始時から]({{< ref "docs/reference/configurations.md#history" >}})、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて「部分設定(config partial)」として提供されます。これらのパッケージはi3設定の一部として、`/usr/share/regolith/i3/config.d`以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 `regolith-desktop`パッケージがインストールされたときに設定要素が依存関係としてインストールされています。
 
 | パッケージ                      | 機能          | ファイル |
 |------------------------------|-------------------|----- |
@@ -229,7 +229,7 @@ sudo apt install regolith-look-*
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
 {{< /hint >}}
 
-もっとも重要なキーバインドの変更は{{< keys "super" >}}キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして`Xresources`を利用できます。ユーザー設定に開いている`Xresources`キーのリストは、[他の場所で入手できます]({{< ref "xresources" >}})。既定の{{< keys "super" >}}バインドを"windows"キーから"alt"に変更するには`~/.config/regolith3/Xresources`に以下の行を追加します。
+もっとも重要なキーバインドの変更は{{< keys "super" >}}キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして`Xresources`を利用できます。ユーザー設定で利用可能な`Xresources`キーのリストは、[ここから参照することができます]({{< ref "xresources" >}})。既定の{{< keys "super" >}}バインドを"windows"キーから"alt"に変更するには`~/.config/regolith3/Xresources`に以下の行を追加します。
 
 ```toml
 wm.mod: Mod1
@@ -242,7 +242,7 @@ wm.alt: Mod4
 
 # システム管理
 
-`regolith-control-center`アプリは、言語、日付、ディスプレイ、ネットワークや他のさまざまな種類の設定ツールです。 {{< keys "super,space" >}}でアプリランチャーの`settings`タイプから、もしくは起動したいアプリを入力してヒットさせることで起動します。{{< keys "super,c" >}}は直接的なキーバインドです。アプリケーションは`regolith-control-center`とターミナルに入力することでも起動することができます。
+`regolith-control-center`アプリは、言語、日付、ディスプレイ、ネットワークや他のさまざまな種類の設定ツールです。 {{< keys "super,space" >}}でアプリランチャーを開いて`settings`と入力し、起動したいアプリをヒットさせることで起動します。{{< keys "super,c" >}}は直接実行できるキーバインドです。`regolith-control-center`とターミナルに入力することでもアプリケーションを起動することができます。
 
 ![](/regolith-settings-about.png)
 
