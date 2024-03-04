@@ -17,3 +17,6 @@ The date format can be specified by selecting the appropriate region in Settings
 {{< img "images/regolith-screenshot-settings-region.png" "">}}
 
 The date and time formats can also be explicitly set via `Xresources`. To do so, override the `i3xrocks.date.format2` `Xresource` key. The format specification for date is simply the arguments that would be passed to the `date` command on the command line. For example, to print the year in 4 digits, specify `+%Y`.
+
+For example the following line can be added to use the `YYYY-MM-DD hh:mm` format:
+`i3xrocks.date.format2: %Y-%m-%d %H:%M`
