@@ -249,3 +249,5 @@ The `regolith-control-center` app is the tool to configure locale, date, display
 # Further Reading
 
 To dig deeper, find which [Howtos]({{< ref "howtos" >}}) are available, or read the [Xresources reference]({{< ref "docs/Reference/xresources.md" >}}). Become an i3 power user by reading their [user guide](https://i3wm.org/docs/userguide.html).
+
+If you need more advanced configuration than Xresources provides, using i3's configuration find how to here [Staging Config Files]({{< ref "stage-configs" }})
