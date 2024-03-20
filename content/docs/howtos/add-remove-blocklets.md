@@ -1,7 +1,7 @@
 ---
-title: "Change Bar Status indicators"
+title: 'Change Bar Status indicators'
 description: >
-  Make changes to the status indicators in the bar.
+    Make changes to the status indicators in the bar.
 ---
 
 # Adding or Removing status indicators
@@ -35,12 +35,18 @@ $ ls /usr/share/i3xrocks/conf.d/
 80_rofication
 90_time
 $ mkdir -p ~/.config/regolith3/i3xrocks/conf.d
-$ cd /usr/share/i3xrocks/conf.d/
-$ cp 01_setup ~/.config/regolith3/i3xrocks/conf.d/01_setup
-$ cp 80_battery ~/.config/regolith3/i3xrocks/conf.d/30_battery
-$ cp 30_net-traffic ~/.config/regolith3/i3xrocks/conf.d/80_net-traffic
+$ cp /usr/share/i3xrocks/conf.d/01_setup ~/.config/regolith3/i3xrocks/conf.d/01_setup
+$ cp /usr/share/i3xrocks/conf.d/80_battery ~/.config/regolith3/i3xrocks/conf.d/30_battery
+$ cp /usr/share/i3xrocks/conf.d/30_net-traffic ~/.config/regolith3/i3xrocks/conf.d/80_net-traffic
 $ regolith-look refresh
 ```
+
+In the above steps the following actions are performed:
+
+-   The current `i3xrocks` modules are listed that exist in the directory created by regolith
+-   The directory where user configuration lives is created at `~/.config/regolith3/i3xrocks/conf.d`
+-   Three files are copied from the application created directory to the user created directory. This will cause the order to change if the user change the `n_` number like described in the first paragraph of this article
+-   The `regolith-look refresh` command is run to refresh the **Bar Status Indicators**
 
 **Note**: If any block configuration exists in the user directory `~/.config/regolith3/i3xrocks/conf.d`, then the defaults in `/usr/share/i3xrocks/conf.d/` will be ignored.
 
