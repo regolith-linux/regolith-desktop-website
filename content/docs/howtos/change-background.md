@@ -6,7 +6,7 @@ description: >
 
 # Wallpaper
 
-Most Regolith Looks provide a default desktop color or image. The wallpaper can be set by specifying the path to the wallpaper image via the Xresources key `regolith.wallpaper.file`.
+Most Regolith Looks provide a default desktop color or image. The wallpaper can be set by specifying the path to the wallpaper image via the Xresources key `regolith.wallpaper.file` or in the Regolith Control Center which can be opened by running `regolith-control-center` in the terminal.
 
 Example, assuming the file `/usr/share/backgrounds/hardy_wallpaper_uhd.png` is present:
 
