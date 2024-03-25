@@ -113,6 +113,10 @@ sudo apt remove regolith-i3-workspace-config
 
 Finally, **restart i3 or log out and back in**.
 
+## Change Regolith's defaults outside of Xresources options
+
+If you need more configuration than the above article provides please visit [Staging Config Files]({{< ref "stage-configs" }})
+
 ## How to replace Regolith's defaults completely
 
 If you don't want to keep any of Regolith's defaults (for example, you're an
