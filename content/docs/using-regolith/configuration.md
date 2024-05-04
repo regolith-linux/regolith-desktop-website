@@ -201,28 +201,28 @@ The following contains a list of all i3 configuration packages available in Rego
 
 | Package                      | Function                                                              | File                                                     |
 | ---------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------- |
-| regolith-i3-base-launchers   | Launch terminal and browser                                           | `/usr/share/regolith/i3/config.d/15_base_launchers`      |
+| regolith-wm-base-launchers   | Launch terminal and browser                                           | `/usr/share/regolith/i3/config.d/15_base_launchers`      |
 | regolith-i3-compositor       | Compositor integration (delegates to `regolith-compositor-<variant>`) | `/usr/share/regolith/i3/config.d/80_compositor`          |
 | regolith-i3-default-style    | Window behavior                                                       | `/usr/share/regolith/i3/config.d/40_default-style`       |
-| regolith-i3-ftue             | First time user experience                                            | `/usr/share/regolith/i3/config.d/84_ftue`                |
+| regolith-wm-ftue             | First time user experience                                            | `/usr/share/regolith/i3/config.d/84_ftue`                |
 | regolith-i3-gaps-partial     | `i3-gaps` configuration (if installed, i3-gaps will replace i3)       | `/usr/share/regolith/i3/config.d/35_i3-gaps`             |
 | regolith-i3-gnome            | Regolith Settings keybindings                                         | `/usr/share/regolith/i3/config.d/60_config_keybindings`  |
 | regolith-i3-i3xrocks         | i3 bar status indicators configuration                                | `/usr/share/regolith/i3/config.d/70_bar`                 |
 | regolith-i3-ilia             | `ilia` integration                                                    | `/usr/share/regolith/i3/config.d/20_ilia`                |
-| regolith-i3-navigation       | Navigation keybindings                                                | `/usr/share/regolith/i3/config.d/30_navigation`          |
-| regolith-i3-networkmanager   | Network and wifi functions                                            | `/usr/share/regolith/i3/config.d/88_network-manager`     |
+| regolith-wm-navigation       | Navigation keybindings                                                | `/usr/share/regolith/i3/config.d/30_navigation`          |
+| regolith-wm-networkmanager   | Network and wifi functions                                            | `/usr/share/regolith/i3/config.d/88_network-manager`     |
 | regolith-i3-next-workspace   | Workspace utility                                                     | `/usr/share/regolith/i3/config.d/40_next-workspace`      |
 | regolith-i3-remontoire       | Legacy keybindings view integration                                   | `/usr/share/regolith/i3/config.d/45_remontoire`          |
-| regolith-i3-resize           | Resize keybindings                                                    | `/usr/share/regolith/i3/config.d/50_resize-mode`         |
+| regolith-wm-resize           | Resize keybindings                                                    | `/usr/share/regolith/i3/config.d/50_resize-mode`         |
 | regolith-i3-rofi             | Legacy desktop launcher integration                                   | `/usr/share/regolith/i3/config.d/20_rofi`                |
 | regolith-i3-rofication       | Legacy notification viewer integration                                | `/usr/share/regolith/i3/config.d/82_rofication`          |
-| regolith-i3-rofication-ilia  | Notification viewer integration                                       | `/usr/share/regolith/i3/config.d/82_rofication-ilia`     |
+| regolith-wm-rofication-ilia  | Notification viewer integration                                       | `/usr/share/regolith/i3/config.d/82_rofication-ilia`     |
 | regolith-i3-session          | Session keybindings                                                   | `/usr/share/regolith/i3/config.d/55_session_keybindings` |
 | regolith-i3-snapshot         | i3 workspace persistence                                              | `/usr/share/regolith/i3/config.d/75_i3-snapshot`         |
-| regolith-i3-swap-focus       | Toggle back to last focused window                                    | `/usr/share/regolith/i3/config.d/40_i3-swap-focus`       |
+| regolith-wm-swap-focus       | Toggle back to last focused window                                    | `/usr/share/regolith/i3/config.d/40_i3-swap-focus`       |
 | regolith-i3-unclutter        | Hides mouse when not in use                                           | `/usr/share/regolith/i3/config.d/86_unclutter`           |
-| regolith-i3-user-programs    | Optionally launch user programs specified in Xresources               | `/usr/share/regolith/i3/config.d/90_user-programs`       |
-| regolith-i3-workspace-config | Workspace keybindings                                                 | `/usr/share/regolith/i3/config.d/40_workspace-config`    |
+| regolith-wm-user-programs    | Optionally launch user programs specified in Xresources               | `/usr/share/regolith/i3/config.d/90_user-programs`       |
+| regolith-wm-workspace-config | Workspace keybindings                                                 | `/usr/share/regolith/i3/config.d/40_workspace-config`    |
 
 # Keybindings
 
@@ -251,4 +251,4 @@ The `regolith-control-center` app is the tool to configure locale, date, display
 
 To dig deeper, find which [Howtos]({{< ref "howtos" >}}) are available, or read the [Xresources reference]({{< ref "docs/Reference/xresources.md" >}}). Become an i3 power user by reading their [user guide](https://i3wm.org/docs/userguide.html).
 
-If you need more advanced configuration than Xresources provides, using i3's configuration find how to here [Staging Config Files]({{< ref "stage-configs" }})
+If you need more advanced configuration than Xresources provides, using i3's configuration find how to here [Staging Config Files]({{< ref "stage-configs" >}})

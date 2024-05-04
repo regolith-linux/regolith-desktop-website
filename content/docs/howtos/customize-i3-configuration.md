@@ -115,7 +115,7 @@ Finally, **restart i3 or log out and back in**.
 
 ## Change Regolith's defaults outside of Xresources options
 
-If you need more configuration than the above article provides please visit [Staging Config Files]({{< ref "docs/howtos/stage-configs.md" }})
+If you need more configuration than the above article provides please visit [Staging Config Files]({{< ref "stage-configs" >}})
 
 ## How to replace Regolith's defaults completely
 
