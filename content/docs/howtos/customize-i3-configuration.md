@@ -1,26 +1,26 @@
 ---
-title: "Customize i3 Configuration"
-linkTitle: "How to Customize i3 Configuration"
+title: 'Customize i3 Configuration'
+linkTitle: 'How to Customize i3 Configuration'
 weight: 1
 description: >
-  How to make changes to the way i3 looks and behaves.
+    How to make changes to the way i3 looks and behaves.
 ---
 
 # How to work with Regolith's defaults
 
 The default configurations are stored in `/usr/share/regolith/i3/config.d`. These are loaded alphabetically. Then user configurations in `~/.config/regolith3/i3/config.d` are loaded, also in alphabetical order. Regolith's default configuration is built to be customized by setting `Xresources` variables, adding user configuration, and adding or removing default configurations via `apt`. For this reason, there are several approaches to customization of i3 in Regolith that can be used separately or in combination to achieve your configuration cleanly:
 
-- Use `Xresources` to override variables, e.g. keybindings, strings, program names, colors, etc.
-- Add or remove Regolith default configuration files with `apt`
-- Add your own user configuration files
-- Replace Regolith's configuration wholesale
+-   Use `Xresources` to override variables, e.g. keybindings, strings, program names, colors, etc.
+-   Add or remove Regolith default configuration files with `apt`
+-   Add your own user configuration files
+-   Replace Regolith's configuration wholesale
 
 ## How to set an `Xresources` variable
 
 The following configuration example (from `/usr/share/regolith/i3/config.d/80_compositor`) can be customized to load whatever compositor you want, without editing or overriding the existing i3 configuration file, by setting `$wm.program.compositor`.
 
 {{< hint warning >}}
-Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
+Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below. For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
 {{< /hint >}}
 
 ```
