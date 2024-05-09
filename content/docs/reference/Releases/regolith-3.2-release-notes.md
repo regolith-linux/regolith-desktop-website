@@ -15,6 +15,7 @@ Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support and bug fixes.
 * Ubuntu 24.04 (Noble) support
 * `regolith-control-center` rebased from GNOME 46 (for supported disto releases)
 * Sway session promoted from `beta` to `stable` status
+* Overhaul of X11 and Wayland session initialization
 
 ## Installation Instructions
 
