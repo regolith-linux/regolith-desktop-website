@@ -1,14 +1,14 @@
 ---
-title: "3.2 Release Notes"
+title: "3.2 Release Notes (Beta 1)"
 linkTitle: "3.2 Release Notes"
 weight: 1
 description: >
   Release notes for Regolith 3.2
 ---
 
-## Regolith 3.2 Release Notes
+## Regolith 3.2 Beta 1 Release Notes
 
-Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support and bug fixes.
+Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system overhaul, and bug fixes.
 
 ### Features
 
