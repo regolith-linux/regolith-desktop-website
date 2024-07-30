@@ -1,12 +1,12 @@
 ---
-title: "3.2 Release Notes (Beta 2)"
+title: "3.2 Release Notes (Beta 3)"
 linkTitle: "3.2 Release Notes"
 weight: 1
 description: >
   Release notes for Regolith 3.2
 ---
 
-## Regolith 3.2 Beta 2 Release Notes
+## Regolith 3.2 Beta 3 Release Notes
 
 Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system overhaul, and bug fixes.
 
@@ -39,6 +39,90 @@ REGOLITH_VERSION=3.2
 ```
 
 A reboot is required for the new version to load.
+
+### Changes since Regolith 3.2 beta 2
+
+
+#### Changes in `ilia`:
+
+```
+b658923 chore: add layer_shell supported check
+2e5029a fix: Ensure single instance using Gtk.Application
+9c41eaf fix: deb tool config
+353aff8 feat: launch apps and commands using systemd-run
+```
+
+#### Changes in `picom`:
+
+```
+a959acc fix: update patch to enable config file
+5c7f80e fix: update deb branch conf
+9133602 fix: prevent picom autostart for regolith compat
+df06cae fix: add missing dep
+16731b1 fix: update dependencies for v11
+d0ebbe8 chore: copy debian packging from v9 branch, add changelog entry
+```
+
+#### Changes in `regolith-displayd`:
+
+```
+8c70872 chore: start daemon using systemd instead of regolith-displayd-init
+f804063 fix: regolith-displayd first time startup failure via systemd
+d72589e chore: let systemd manage regolith-displayd
+```
+
+#### Changes in `regolith-lightdm-config`:
+
+```
+729dd65 fix: default session. feat: new wallpapper
+```
+
+
+#### Changes in `regolith-look-extra`:
+
+```
+8ea5655 blackhole: Fix wallpaper.color.primary to use defined black
+```
+
+#### Changes in `regolith-powerd`:
+
+```
+11684f8 chore: update Cargo.toml to match debian
+db08cc4 feat: pause all audio players before suspend
+c2bb7c3 chore: increase sleep time to account for loading of background image
+2c1754c fix: also show the correct wallpaper when locking
+b8f57f2 fix: use correct lock screen program when idling
+```
+
+#### Changes in `regolith-sway-touchpad-gestures`:
+
+```
+e84d769 fix: require deprecated package to be removed before replacing
+fcfabb1 chore: extract gesture partial to seperate source package for selective install based on target os due to compat issues on jammy
+```
+
+#### Changes in `regolith-wm-config`:
+
+```
+8511c1c chore: improve error handling
+59cc3ad fix: use gtklock from path
+2842af1 fix: update pkg name for touchpad package. remove bin package decl. add soft dep on grimshot.
+1f45a52 fix(clamshell): directly execute actions
+770bfe7 fix: pull nav binding definition out of partial, into root config, to prevent decl ordering issues
+25ff6f1 feat: add 3 bindings for window and screen grabs with grimshot
+566714c fix: ensure lid action is applied as per current power state
+1ab9c54 fix: ensure lid action is applied as per current power state
+824c5f9 feat(sway): add touchpad gestures support
+b1f83c7 feat: use systemd-run for terminal and browser
+30955c4 feat: customise lid close behaviour based on system state
+3cf993c fix: add essential packages to recommends
+```
+
+#### Changes in `trawl`:
+
+```
+6503886 feat: use absolute versioning for dependencies
+```
 
 ### Changes since Regolith 3.1
 
