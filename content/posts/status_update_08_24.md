@@ -50,4 +50,4 @@ We will not provide an ISO of the 24.04 release.
 
 ## Feedback
 
-I'd love to hear what you think about this status update or the Regolith project in general.
+[Feedback](https://github.com/orgs/regolith-linux/discussions) about this status update or the Regolith project in general is always welcome.
