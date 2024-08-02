@@ -3,7 +3,7 @@ author: "Ken Gilmer"
 date: 2023-11-26
 linktitle: Status Updates Nov 2023
 title: Status Updates Nov 2023
-weight: 1
+weight: 9
 ---
 
 ## Regolith 3.1 & Ubuntu Mantic Support
