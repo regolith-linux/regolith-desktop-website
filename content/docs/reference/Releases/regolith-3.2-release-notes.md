@@ -19,7 +19,11 @@ Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system ov
 
 ### Deprecations
 
-* Deprecating support for Ubuntu Focal and Debian Bullseye
+* Deprecating support for the following OS releases:
+    * Ubuntu 20.04 (Focal)
+    * Debian 12 (Bullseye)
+* Deprecating support for Wayland session on Debian 13 (Bookworm) due to out of date build dependencies
+
 
 ### Installation Instructions
 
