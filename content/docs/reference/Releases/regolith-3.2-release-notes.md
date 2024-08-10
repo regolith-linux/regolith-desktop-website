@@ -1,12 +1,12 @@
 ---
-title: "3.2 Release Notes (Beta 3)"
+title: "3.2 Release Notes (Beta 4)"
 linkTitle: "3.2 Release Notes"
 weight: 1
 description: >
   Release notes for Regolith 3.2
 ---
 
-## Regolith 3.2 Beta 3 Release Notes
+## Regolith 3.2 Beta 4 Release Notes
 
 Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system overhaul, and bug fixes.
 
@@ -43,6 +43,32 @@ REGOLITH_VERSION=3.2
 ```
 
 A reboot is required for the new version to load.
+
+### Changes since Regolith 3.2 beta 3
+
+#### Changes in `regolith-session`
+
+```
+1f59e3e fix: add bookworm to legacy path
+cc0020e fix: invert predicate on matching os release to gnome-session version
+```
+
+#### Changes in `regolith-wm-config`
+
+```
+1bdd1c4 fix: pull window binding definition out of partial, into root config, to prevent decl ordering issues
+c5921b8 fix: specify valid color default. Load best quality image instead of worst.  Only set wallpaper if resolution match found. Cleanup.
+44a562c feat: support overriding more keys via resources
+66d2f1f fix: specify defaults for trawl. exit on error.  fix errors
+29a4c50 fix: import I3SOCK into the systemd environment for sway
+```
+
+#### Changes in `sway-audio-idle-inhibit`
+
+```
+2011f38 Merge branch 'upstream_main' into sync_upstream
+a5b9689 fix: depend on sway instead of libwlroots11
+```
 
 ### Changes since Regolith 3.2 beta 2
 
