@@ -1,12 +1,12 @@
 ---
-title: "3.2 Release Notes (Beta 4)"
+title: "3.2 Release Notes"
 linkTitle: "3.2 Release Notes"
 weight: 1
 description: >
   Release notes for Regolith 3.2
 ---
 
-## Regolith 3.2 Beta 4 Release Notes
+## Regolith 3.2 Release Notes
 
 Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system overhaul, and bug fixes.
 
@@ -22,18 +22,14 @@ Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system ov
 * Deprecating support for the following OS releases:
     * Ubuntu 20.04 (Focal)
     * Debian 11 (Bullseye)
-* Deprecating support for Wayland session on Debian 12 (Bookworm) due to out of date build dependencies
+* Deprecating support for Wayland session on Debian 12 (Bookworm) due to out-of-date build dependencies
 
 
 ### Installation Instructions
 
-Follow the standard installation instructions, but substitute `testing` instead of `release-3_1`.  For example, this is the `apt` line for Ubuntu 24.04 (Noble):
+For those using the `release-3_1` `apt` URL, update it to `release-3_2` and update your packages with `apt update` or similiar.  
 
-```shell
-echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-https://regolith-desktop.org/testing-ubuntu-noble-amd64 noble main" | \
-sudo tee /etc/apt/sources.list.d/regolith.list
-```
+For those using the "rolling" release label `release-current`, no change is necessary to get the update.
 
 After `apt upgrade` is complete, verify that Regolith 3.2 is installed by:
 
@@ -42,26 +38,9 @@ $ cat /etc/regolith/version
 REGOLITH_VERSION=3.2
 ```
 
-A reboot is required for the new version to load.
+Note: A reboot is required for the new version to load.
 
-### Changes since Regolith 3.2 beta 3
-
-#### Changes in `regolith-session`
-
-```
-1f59e3e fix: add bookworm to legacy path
-cc0020e fix: invert predicate on matching os release to gnome-session version
-```
-
-#### Changes in `regolith-wm-config`
-
-```
-1bdd1c4 fix: pull window binding definition out of partial, into root config, to prevent decl ordering issues
-c5921b8 fix: specify valid color default. Load best quality image instead of worst.  Only set wallpaper if resolution match found. Cleanup.
-44a562c feat: support overriding more keys via resources
-66d2f1f fix: specify defaults for trawl. exit on error.  fix errors
-29a4c50 fix: import I3SOCK into the systemd environment for sway
-```
+### Changes since Regolith 3.1
 
 #### Changes in `sway-audio-idle-inhibit`
 
@@ -69,9 +48,6 @@ c5921b8 fix: specify valid color default. Load best quality image instead of wor
 2011f38 Merge branch 'upstream_main' into sync_upstream
 a5b9689 fix: depend on sway instead of libwlroots11
 ```
-
-### Changes since Regolith 3.2 beta 2
-
 
 #### Changes in `ilia`:
 
@@ -134,6 +110,11 @@ fcfabb1 chore: extract gesture partial to seperate source package for selective 
 #### Changes in `regolith-wm-config`:
 
 ```
+1bdd1c4 fix: pull window binding definition out of partial, into root config, to prevent decl ordering issues
+c5921b8 fix: specify valid color default. Load best quality image instead of worst.  Only set wallpaper if resolution match found. Cleanup.
+44a562c feat: support overriding more keys via resources
+66d2f1f fix: specify defaults for trawl. exit on error.  fix errors
+29a4c50 fix: import I3SOCK into the systemd environment for sway
 8511c1c chore: improve error handling
 59cc3ad fix: use gtklock from path
 2842af1 fix: update pkg name for touchpad package. remove bin package decl. add soft dep on grimshot.
@@ -152,14 +133,6 @@ b1f83c7 feat: use systemd-run for terminal and browser
 
 ```
 6503886 feat: use absolute versioning for dependencies
-```
-
-### Changes since Regolith 3.1
-
-#### Changes in `regolith-session`
-
-```git
-c79e188 feat: migrate sessions to systemd
 ```
 
 #### Changes in `regolith-wm-config`
@@ -193,8 +166,6 @@ db13009 fix: disable battery to avoid global error on bar on targets without bat
 08cd870 fix: explicitly assign problematic portal interfaces (that fallback to GNOME) to regolith portal
 ```
 
-### Changes since Regolith 3.2 beta 1
-
 #### Changes in `regolith-displayd`
 
 ```git
@@ -219,6 +190,9 @@ bd474a5 fix: use systemd to synchronize startup for displayd and kanshi (#5)
 #### Changes in `regolith-session`
 
 ```git
+1f59e3e fix: add bookworm to legacy path
+cc0020e fix: invert predicate on matching os release to gnome-session version
+c79e188 feat: migrate sessions to systemd
 2109934 fix: dont start session service starting targets
 ab43221 chore: rename sway bin based on changes in sway-regolith package
 ```
