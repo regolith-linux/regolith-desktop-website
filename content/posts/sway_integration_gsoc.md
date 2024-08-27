@@ -3,7 +3,7 @@ author: "Soumya Ranjan Patnaik"
 date: 2022-09-25
 linktitle: "Foundations for Regolith on Wayland (GSoC'22)"
 title: "Foundations for Regolith on Wayland (GSoC'22)"
-weight: 1`
+weight: 10
 ---
 # Introduction
 
