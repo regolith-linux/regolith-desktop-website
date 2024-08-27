@@ -6,9 +6,9 @@ description: >
   Regolithのインストール
 ---
 
-# Regolith 3.1を入手
+# Regolith 3.2を入手
 
-以前のバージョンのRegolithからアップグレードする場合、[リリースノート](/docs/reference/Releases/regolith-3.1-release-notes) 、特に[移行ガイド](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide)に興味があるかもしれません。
+以前のバージョンのRegolithからアップグレードする場合、[リリースノート](/docs/reference/Releases/regolith-3.2-release-notes) 、特に[移行ガイド](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide)に興味があるかもしれません。
 
 ## インストール時に選択するパッケージ
 
@@ -50,7 +50,7 @@ sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
 ### Ubuntu
 
 {{< tabs "ubuntu-tabs" >}}
-{{< tab "Ubuntu 23.10" >}}
+{{< tab "Ubuntu 24.04" >}}
 
 Regolithはシステムパッケージとしてインストールすることができます。これは簡単に更新や削除ができ、一貫することができます。
 下記のステップでは、Regolithのパッケージリポジトリからパッケージを読み込み可能にして、デスクトップパッケージをインストールできるようにシステムを設定する方法について記しています。
@@ -66,7 +66,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_1-ubuntu-mantic-amd64 mantic main" | \
+   https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -101,7 +101,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_1-ubuntu-jammy-amd64 jammy main" | \
+   https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -135,7 +135,7 @@ Regolithはシステムパッケージとしてインストールすることが
 1. ローカルの`apt`にリポジトリのURLを追加する。
 
    ```console
-   echo deb "[arch=amd64] https://regolith-desktop.org/release-3_1-ubuntu-focal-amd64 focal main" | \
+   echo deb "[arch=amd64] https://regolith-desktop.org/release-3_2-ubuntu-focal-amd64 focal main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -193,7 +193,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_1-debian-bookworm-amd64 bookworm main" | \
+   https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -221,53 +221,8 @@ ARMベースのシステムにインストールするときは、上記の内�
 
 {{< /tab >}}
 
-
-{{< tab "Debian Bullseye" >}}
-
-Regolithはシステムパッケージとしてインストールすることができます。これは簡単に更新や削除ができ、一貫することができます。
-下記のステップでは、Regolithのパッケージリポジトリからパッケージを読み込み可能にして、デスクトップパッケージをインストールできるようにシステムを設定する方法について記しています([こちらでダウンロード可能なスクリプト](/install-release-debian-11-amd64.txt)が利用できます)。
-
-1. ローカルの`apt`にRegolithの公開鍵を登録する。
-
-   ```console
-   wget -qO - https://regolith-desktop.org/regolith.key | \
-   gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
-   ```
-
-1. ローカルの`apt`にリポジトリのURLを追加する。
-
-   ```console
-   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_1-debian-bullseye-amd64 bullseye main" | \
-   sudo tee /etc/apt/sources.list.d/regolith.list
-   ```
-
-1. `apt`を更新してRegolithをインストールする。
-
-   ```console
-   sudo apt update
-   sudo apt install regolith-desktop regolith-compositor-picom-glx
-   ```
-1. システムを再起動する。
-
-ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムを再起動するのはログインマネージャーを再起動するための簡単な方法です。
-
-{{< hint info >}}
-ARMベースのシステムにインストールするときは、上記の内容から2箇所の`amd64`を`arm64`に置き換えてください。
-{{< /hint >}}
-
-{{< hint info >}}
-`regolith-desktop`パッケージは、多くのハードウェアで動作する必要最小限の設定でインストールします。追加で高級なパッケージやもっと便利な環境を追加するには、[新規ユーザーに推奨されるパッケージ]({{< ref "docs/using-regolith/configuration.md#recommended-packages-for-new-users" >}})を参照してください。
-{{< /hint >}}
-
-{{< hint info >}}
-`regolith-compositor-picom-glx`コンポジターは多くのコンピューターで動作します。もしドライバや視覚的な問題に遭遇した場合は、[他のコンポジターをお試しください]({{< ref "docs/howtos/customize-compositor" >}})。
-{{< /hint >}}
-
-{{< /tab >}}
-
 {{< /tabs >}}
 
 ## リリースの変更ポリシー
 
- Regolith 3.1以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、`release-current` という特別な段階が提供されています。
+ Regolith 3.2以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、`release-current` という特別な段階が提供されています。
