@@ -8,7 +8,7 @@ weight: 1
 
 ## Regolith 3.2 
 
-We're currently on beta 4 of Regolith 3.2.  It's been a longer release cycle than hoped, as many users are wanting to run Regolith on the latest Ubuntu LTS: Noble.  In this release, the items that come to mind that required more time than expected were the systemd init refactoring and integration of GNOME 46.  Souyma initiated the effort to clean up and make our init code generally consistent with systemd, cleaning up some rather old ad-hoc shell script init code.  This refactoring covers both Sway and i3 window managers.  I expect this effort to provide a more robust and consistent start up process that in turn will allow users to more easily configure and reason about the execution of their desktop setup.
+We're currently on beta 4 of Regolith 3.2.  It's been a longer release cycle than hoped, as many users are wanting to run Regolith on the latest Ubuntu LTS: Noble.  In this release, the items that come to mind that required more time than expected were the systemd init refactoring and integration of GNOME 46.  Soumya initiated the effort to clean up and make our init code generally consistent with systemd, cleaning up some rather old ad-hoc shell script init code.  This refactoring covers both Sway and i3 window managers.  I expect this effort to provide a more robust and consistent start up process that in turn will allow users to more easily configure and reason about the execution of their desktop setup.
 
 We will require at least one more beta to clean up some issues encountered between X11 and Wayland sessions, as well as take in some great fixes provided by community members.   But, it feels like we are almost there.
 
@@ -26,7 +26,7 @@ We aim to invest all of the financial contributions back into the project such t
 
 ### Debian Project Integration
 
-Soumya has [begun the effort](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1077305) to integrate the Wayland session into the Debian package repository.  Our goal is to integrate the entire wayland session into Debian.  Once there, we plan to then provide a "spin" or "flavor" to downstream Ubuntu.  I hope that this will eventually result in an officially supported flavor that will enable users to install Regolith from an ISO as has been done in past LTS releases.  However due to time constraints, I will not take on providing an ISO for the 24.04 release.
+Soumya has [begun the effort](https://packages.debian.org/sid/trawld) to integrate the Wayland session into the Debian package repository.  Our goal is to integrate the entire wayland session into Debian.  Once there, we plan to then provide a "spin" or "flavor" to downstream Ubuntu.  I hope that this will eventually result in an officially supported flavor that will enable users to install Regolith from an ISO as has been done in past LTS releases.  However due to time constraints, I will not take on providing an ISO for the 24.04 release.
 
 ### Simplified Debian Repositories
 
