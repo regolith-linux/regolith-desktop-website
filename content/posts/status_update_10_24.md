@@ -18,7 +18,7 @@ I submitted a [lightning talk](https://events.canonical.com/event/51/contributio
 
 > i3-like environments (as configured, of course you can do whatever you like) bias towards application usage over discovery.  Concretely, i3 expects a bit more of the user, to know what they want to do.  In return, the system throws less distraction and minutia at the user.  This, at lease in my experience, leads to longer periods of deep concentration on the problem I'm working on. In summary, the user is better able to put their attention where it matters: the application.
 
-Due to the short period of the talk, I didn't have much time to get my point across, but hopefully the information was interesting to some attendees.
+Due to the short period of the talk, I didn't have much time to get my point across, but hopefully the information was interesting to some attendees. I'm grateful for the event organizer's continued support of the Regolith Desktop project.
 
 ## Regolith 3.3
 
