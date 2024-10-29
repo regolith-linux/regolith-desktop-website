@@ -23,6 +23,7 @@ Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system ov
     * Ubuntu 20.04 (Focal)
     * Debian 11 (Bullseye)
 * Deprecating support for Wayland session on Debian 12 (Bookworm) due to out-of-date build dependencies
+* `regolith-control-center` has *not* been ported to GNOME 47 and so users on Ubuntu 24.10 will need to use `gnome-control-center` instead.
 
 
 ### Installation Instructions
