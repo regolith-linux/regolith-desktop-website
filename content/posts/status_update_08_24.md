@@ -3,7 +3,7 @@ author: "Ken Gilmer"
 date: 2024-08-02
 linktitle: Status Updates August 2024
 title: Status Updates August 2024
-weight: 1
+weight: 8
 ---
 
 ## Regolith 3.2 
