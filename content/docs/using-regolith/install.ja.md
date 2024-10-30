@@ -8,40 +8,7 @@ description: >
 
 # Regolith 3.2を入手
 
-以前のバージョンのRegolithからアップグレードする場合、[リリースノート](/docs/reference/Releases/regolith-3.2-release-notes) 、特に[移行ガイド](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide)に興味があるかもしれません。
-
-## インストール時に選択するパッケージ
-
-Regolith 3.0では、複数のセッション(X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`)から選択することができるようになりました。このため、Regolith 3.0をインストールするときは、使用するセッションを一方か両方を指定します。さらに、Regolith 3.0からはインストール時にRegolithの外観を指定できるようになったことで、後で設定する必要があるセットアップが節約されます。DebianベースのシステムのX11で推奨される基本的なインストールは以下の通りです。
-
-```console
-sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
-#                ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ   ^-- ｾｯｼｮﾝ                   ^ -- 外観 
-```
-
-* セッションについて、次の内の一方か両方を選ぶことができます：`regolith-session-flashback` (X11), `regolith-session-sway` (Wayland)
-* 外観について、次の外観パッケージから*1つ*を選ぶことができます。
-```
-regolith-look-ayu-dark
-regolith-look-ayu-mirage
-regolith-look-ayu
-regolith-look-blackhole
-regolith-look-default-loader
-regolith-look-default
-regolith-look-dracula
-regolith-look-gruvbox
-regolith-look-i3-default
-regolith-look-lascaille
-regolith-look-nevil
-regolith-look-nord
-regolith-look-solarized-dark
-```
-
-上記の推奨事項の例と代替案として、ここでは、Swayセッションに外観"Nord"を適用してインストールする`apt`コマンドを紹介します。
-
-```console
-sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
-```
+以前のバージョンのRegolithからアップグレードする場合は[リリースノート](/docs/reference/Releases/regolith-3.2-release-notes) を、特に2.xからの場合は[移行ガイド](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide)を参照してください。
 
 ## サポートするOS
 
@@ -78,7 +45,7 @@ Regolithはシステムパッケージとしてインストールすることが
    ```
 1. システムを再起動する。
 
-ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムを再起動するのはログインマネージャーを再起動するための簡単な方法です。
+ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムの再起動はログインマネージャーを再起動するための簡単な方法です。
 
 {{< hint info >}}
 ARMベースのシステムにインストールするときは、上記の内容から2箇所の`amd64`を`arm64`に置き換えてください。
@@ -113,62 +80,11 @@ Regolithはシステムパッケージとしてインストールすることが
    ```
 1. システムを再起動する。
 
-ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムを再起動するのはログインマネージャーを再起動するための簡単な方法です。
+ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムの再起動はログインマネージャーを再起動するための簡単な方法です。
 
 {{< hint info >}}
 ARMベースのシステムにインストールするときは、上記の内容から2箇所の`amd64`を`arm64`に置き換えてください。
 {{< /hint >}}
-
-{{< /tab >}}
-
-{{< tab "Ubuntu 20.04" >}}
-
-Regolithはシステムパッケージとしてインストールすることができます。これは簡単に更新や削除ができ、一貫することができます。
-下記のステップでは、Regolithのパッケージリポジトリからパッケージを読み込み可能にして、デスクトップパッケージをインストールできるようにシステムを設定する方法について記しています([こちらでダウンロード可能なスクリプト](/install-release-ubuntu-20.04-amd64.txt)が利用できます)。
-
-1. ローカルの`apt`にRegolithの公開鍵を登録する。
-
-   ```console
-   wget -qO - https://regolith-desktop.org/regolith.key | sudo apt-key add -
-   ```
-
-1. ローカルの`apt`にリポジトリのURLを追加する。
-
-   ```console
-   echo deb "[arch=amd64] https://regolith-desktop.org/release-3_2-ubuntu-focal-amd64 focal main" | \
-   sudo tee /etc/apt/sources.list.d/regolith.list
-   ```
-
-1. `apt`を更新してRegolithをインストールする。
-
-   ```console
-   sudo apt update
-   sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
-   ```
-
-1. システムを再起動する。
-
-ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムを再起動するのはログインマネージャーを再起動するための簡単な方法です。
-
-{{< hint info >}}
-ARMベースのシステムにインストールするときは、上記の内容から2箇所の`amd64`を`arm64`に置き換えてください。
-{{< /hint >}}
-
-{{< /tab >}}
-
-{{< tab "Regolith Linux 2.2 ISO" >}} 
-
-Regolith LinuxはRegolithデスクトップ環境がインストールされた、Ubuntu 22.10のインストールイメージです。USBドライブから起動して、インストールすることなくRegolithを実行することを可能にします。また、コンピューターのドライブにシステムをインストールすることもできます。Regolith Linuxでは、以下の特徴がRegolithデスクトップに追加されています。
-
-* 起動画面とロック画面Regolith用にブランディングされています
-* 不要な依存関係を避けて`gdm3`の代わりに`lightdm`ディスプレイマネージャーを使用しています
-* 次のパッケージがインストールされていません。これらのパッケージは、ユーザーが必要であればインストールすることができます：`gdm3`, `gnome-shell`, `ubuntu-session`, `evolution-data-server`, `snapd`
-
-{{< button href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/ubuntu-kinetic-2.2.0-20221211_050200/regolith-ubuntu-kinetic-2.2.0.zip" >}}Regolith Linux 2.2をダウンロード{{< /button >}}
-
-詳しい情報は[Regolith 2.2のリリースノート](/docs/reference/Releases/regolith-2.2-release-notes)を参照してください。
-
-ISOはLinuxでは[dd](https://www.man7.org/linux/man-pages/man1/dd.1.html)、[ディスク](https://wiki.gnome.org/Apps/Disks)や[KDE ISO Image Writer](https://community.kde.org/ISOImageWriter)などを用いてUSBドライブに書き込むことができます。macOSでは、[Etcher](https://www.balena.io/etcher/)を使用します。Windowsでは[Rufus](https://rufus.ie/)を用いて、DDモードで書き込むことができます。
 
 {{< /tab >}}
 {{< /tabs >}}
@@ -176,6 +92,20 @@ ISOはLinuxでは[dd](https://www.man7.org/linux/man-pages/man1/dd.1.html)、[�
 ### Debian
 
 {{< tabs "debian-tabs" >}}
+
+{{< tab "Debian Testing" >}}
+
+"Testing"リリースのDebianユーザーであれば、Regolithをインストールすることができますが、Debian Testingの性質上"release"バージョンは存在しません。Debian TestingインスタンスにRegolithをインストールするには、`apt`コマンドのワンライナーの`release`の代わりに`testing`を含める必要があります。例：
+
+   ```console
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+   https://regolith-desktop.org/testing-debian-testing-amd64 testing main" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   ```
+
+それ以外のインストールの手順はDebian公式リリースと同じです。壊れた依存関係やコンポーネントと時々遭遇することに注意してください。安定性が必要である場合は、DebianやUbuntuの公式リリースにインストールすることを検討してください。
+
+{{< /tab >}}
 
 {{< tab "Debian Bookworm" >}}
 
@@ -205,7 +135,7 @@ Regolithはシステムパッケージとしてインストールすることが
    ```
 1. システムを再起動する。
 
-ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムを再起動するのはログインマネージャーを再起動するための簡単な方法です。
+ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムの再起動はログインマネージャーを再起動するための簡単な方法です。
 
 {{< hint info >}}
 ARMベースのシステムにインストールするときは、上記の内容から2箇所の`amd64`を`arm64`に置き換えてください。
@@ -222,6 +152,87 @@ ARMベースのシステムにインストールするときは、上記の内�
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## インストール時に選択するパッケージ
+
+Regolith 3.0では、複数のセッション(X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`)から選択することができるようになりました。このため、Regolith 3.0をインストールするときは、使用するセッションを一方か両方を指定します。さらに、Regolith 3.0からはインストール時にRegolithの外観を指定できるようになったことで、後で設定する必要があるセットアップが節約されます。DebianベースのシステムのX11で推奨される基本的なインストールは以下の通りです。
+
+```console
+sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
+#                ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ   ^-- ｾｯｼｮﾝ                   ^ -- 外観 
+```
+
+* セッションについて、次の内の一方か両方を選ぶことができます：`regolith-session-flashback` (X11), `regolith-session-sway` (Wayland)
+* 外観について、次の外観パッケージから*1つ*を選ぶことができます。
+```
+regolith-look-ayu-dark
+regolith-look-ayu-mirage
+regolith-look-ayu
+regolith-look-blackhole
+regolith-look-default-loader
+regolith-look-default
+regolith-look-dracula
+regolith-look-gruvbox
+regolith-look-i3-default
+regolith-look-lascaille
+regolith-look-nevil
+regolith-look-nord
+regolith-look-solarized-dark
+```
+
+上記の推奨事項の例と代替案として、ここでは、Swayセッションに外観"Nord"を適用してインストールする`apt`コマンドを紹介します。
+
+```console
+sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
+```
+
+## Regolith `apt` URLパスの構造
+
+```console
+https://regolith-desktop.org/testing-debian-testing-amd64
+                             |       |      |       |
+                             |       |      |       * アーキテクチャ
+                             |       |      * ディストロバージョン/コードネーム
+                             |       * ディストロ名
+                             * Regolithの段階
+```
+
+### Regolithの段階
+
+|段階|URLの文字列|概要|
+|---|---|---|
+|実験的|`experimental`|実験的内容をテストする段階|
+|不安定|`unstable`|開発内容の初期テスト段階|
+|テスト|`testing`|開発内容の後期テスト段階|
+|リリース X.Y|`release-X_Y`|特定の公式リリース段階|
+|現在のリリース|`release-current` |最新のリリース段階（リリース間で変動します）|
+
+### ディストロ名
+
+|名前 | 概要 |
+|---|---|
+|`ubuntu`| Ubuntu Linuxディストリビューション|
+|`debian`| Debian Linuxディストリビューション|
+
+### ディストロバージョン/コードネーム
+
+これらのラベルは各上流コミュニティによって決定されます。例：`noble`, `bookworm`, `focal`
+
+### アーキテクチャ
+
+|名前 | 概要 |
+|---|---|
+|`amd64`| 64-bit x86アーキテクチャ |
+|`arm64`| 64-bit Armアーキテクチャ |
+
+
+### 例
+
+|概要 | URL |
+|---|---|
+|`amd64`のUbuntu 22.04で3.2リリースのRegolithを使用する|`https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64`|
+|`amd64`のDebian 12で最新リリースのRegolithを使用する|`https://regolith-desktop.org/release-current-debian-bookworm-amd64`|
+|`arm64`のDebian TestingでRegolithのテストリポジトリを使用する|`https://regolith-desktop.org/testing-debian-testing-arm64`|
 
 ## リリースの変更ポリシー
 

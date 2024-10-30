@@ -1,19 +1,19 @@
 ---
-title: "i3設定のカスタマイズ"
-linkTitle: "How to Customize i3 Configuration"
+title: 'i3設定のカスタマイズ'
+linkTitle: 'How to Customize i3 Configuration'
 weight: 1
 description: >
-  i3の外観や動作を変更する方法。
+    i3の外観や動作を変更する方法。
 ---
 
 # Regolithの既定の動作
 
 既定の設定は`/usr/share/regolith/i3/config.d`に保存されています。これらはアルファベット順に読み込まれます。次に、`~/.config/regolith3/i3/config.d`のユーザー設定がアルファベット順に読み込みまれます。Regolithの既定の設定は`Xresources`値の設定や、ユーザー設定の追加や、`apt`による既定の設定の追加・削除でカスタマイズできるように構築されています。これにより、Regolithではi3のカスタマイズ方法に、設定をクリーンにするため、個別に、もしくは組み合わせて使用できる複数のアプローチがあります。
 
-- `Xresources`によるキーバインド・文字列・プログラム名・色といった、オーバーライド値の使用
-- `apt`によるRegolithの既定ファイルを追加や削除
-- 独自の設定ファイルの追加
-- Regolithの設定の大規模の置き換え
+-   `Xresources`によるキーバインド・文字列・プログラム名・色といった、オーバーライド値の使用
+-   `apt`によるRegolithの既定ファイルを追加や削除
+-   独自の設定ファイルの追加
+-   Regolithの設定の大規模の置き換え
 
 ## `Xresources`変数を設定する方法
 
@@ -110,6 +110,10 @@ sudo apt remove regolith-i3-workspace-config
 ```
 
 最後に、**i3を再起動するか、ログアウトしてから戻ります**。
+
+## Xresourcesオプションの範囲を超えてRegolithの既定を変更する方法
+
+上記の記事の内容以上の設定が必要な場合は、[設定ファイルのステージング](/docs/howtos/stage-configs)をご覧ください。
 
 ## Regolithの既定を完全に置き換える方法
 
