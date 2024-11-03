@@ -252,4 +252,4 @@ wm.alt: Mod4
 
 もっと深く知りたい人は、[このハウツー]({{< ref "howtos" >}})を利用したり、[Xresourcesリファレンス]({{< ref "docs/Reference/xresources.md" >}})を読みましょう。 [ユーザーガイド（英語）](https://i3wm.org/docs/userguide.html)を読んでi3のパワーユーザーになりましょう。
 
-もしXresourcesが提供する以上の高度な設定が必要な場合は、[設定ファイルのステージング](/docs/howtos/stage-configs)で見つけたi3設定のハウツーを利用してください。
+もしXresourcesが提供する以上の高度な設定が必要な場合は、[設定ファイルのステージング]({{< ref "stage-configs" >}})で見つけたi3設定のハウツーを利用してください。

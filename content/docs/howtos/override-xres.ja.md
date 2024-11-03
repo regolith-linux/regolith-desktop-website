@@ -1,7 +1,7 @@
 ---
 title: "Xresourcesのオーバーライド"
 description: >
-  Regolith設定ファイルのユーザーコピーを載せる方法について学ぶ
+  ユーザーがコピーしたRegolithの設定ファイルをステージする方法について学ぶ
 ---
 
 Regolithは、[Xresourcesシステム](https://en.wikipedia.org/wiki/X_resources)に依存し、統合されたインターフェース設定を提供しています。`Xresources`の値を変更することで、Regolithは、ユーザーインターフェイスの更新、カスタム動作の指定、バーの一部のblockletの特定の形式の定義などの方法でカスタマイズできます。

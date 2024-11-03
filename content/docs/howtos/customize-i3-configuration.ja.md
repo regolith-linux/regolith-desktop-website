@@ -113,7 +113,7 @@ sudo apt remove regolith-i3-workspace-config
 
 ## Xresourcesオプションの範囲を超えてRegolithの既定を変更する方法
 
-上記の記事の内容以上の設定が必要な場合は、[設定ファイルのステージング](/docs/howtos/stage-configs)をご覧ください。
+上記の記事の内容以上の設定が必要な場合は、[設定ファイルのステージング]({{< ref "stage-configs" >}})をご覧ください。
 
 ## Regolithの既定を完全に置き換える方法
 
