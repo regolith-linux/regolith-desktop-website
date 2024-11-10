@@ -12,7 +12,7 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 
 | `Xresources`キー                                   | 概要                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------- |
-| gtk.theme_name                                     | GTKテーマ（"Legacy Applications" in `gnome-tweaks`） |
+| gtk.theme_name                                     | GTKテーマ |
 | gtk.icon_theme_name                                | GTKアイコンテーマ  |
 | gnome.terminal.audible-bell                        | gnome-terminalのベルを有効にする（`true / false`）                       |
 | gtk.document_font_name                             | GTKドキュメントのフォント名 |
@@ -124,7 +124,7 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 | wm.program.launcher.window     | ウィンドウ操作キーバインドを実行するi3コマンド                                                                                                                                            |
 | wm.program.help                | ヘルプキーバインドを実行するコマンド                                                                                                                                                          |
 | wm.program.file_search         | ファイル検索キーバインドを実行するコマンド                                                                                                                                                   |
-| wm.program.refresh_ui          | セッションのリフレッシュキーバインドを実行するコマンド                                                                                                                                               |
+| wm.program.refresh_ui          | セッションの再読み込みキーバインドを実行するコマンド                                                                                                                                               |
 | wm.program.logout              | ログアウトキーバインドを実行するコマンド                                                                                                                                                        |
 | wm.program.reboot              | 再起動キーバインドを実行するコマンド                                                                                                                                                        |
 | wm.program.shutdown            | シャットダウンキーバインドを実行するコマンド                                                                                                                                                      |

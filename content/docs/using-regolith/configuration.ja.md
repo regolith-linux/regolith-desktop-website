@@ -1,9 +1,9 @@
 ---
-title: "設定"
-linkTitle: "Configuration"
+title: '設定'
+linkTitle: 'Configuration'
 weight: 4
 description: >
-  Regolithの外観と動作を変更する。
+    Regolithの外観と動作を変更する。
 ---
 
 # 新規ユーザーに推奨されるパッケージ {#recommended-packages-for-new-users}
@@ -69,8 +69,10 @@ sudo apt install i3xrocks-battery
 
 ```console
 echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
-regolith-look refresh 
+regolith-look refresh
 ```
+
+上記のコマンドでは、前述のプロパティを使用するときに他のパスから`/usr/share/backgrounds/hardy_wallpaper_uhd.png`に変更されます。
 
 壁紙画像の表示形式（拡大、大きさ、など…）を変更するには、`regolith.wallpaper.options`を設定します。オプション：`none`, `wallpaper`, `centered`, `scaled`, `stretched`, `zoom`, `spanned`
 
@@ -78,7 +80,7 @@ regolith-look refresh
 
 ```console
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
-regolith-look refresh 
+regolith-look refresh
 ```
 
 Xresourceキー・`regolith.wallpaper.color.primary`を使用して、画像ではなく色を指定するには：
@@ -86,7 +88,7 @@ Xresourceキー・`regolith.wallpaper.color.primary`を使用して、画像で�
 ```console
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
-regolith-look refresh 
+regolith-look refresh
 ```
 
 2つ目の色とグラデーションを指定するには：
@@ -96,7 +98,7 @@ echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xresources
-regolith-look refresh 
+regolith-look refresh
 ```
 
 ## ロック画面の壁紙
@@ -105,7 +107,7 @@ regolith-look refresh
 
 ```console
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
-regolith-look refresh 
+regolith-look refresh
 ```
 
 ## 壁紙の処理を無効化
@@ -119,7 +121,7 @@ echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 
 # ステータスバーのインジケーター
 
-CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`でリフレッシュするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索して見つけることができます。「ブロックレット(blocklet)」と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです。
+CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`で再読み込みするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索して見つけることができます。「ブロックレット(blocklet)」と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです。
 
 | パッケージ                      | ステータスの機能 | 
 |--------------------------------|-------------------|
@@ -249,3 +251,5 @@ wm.alt: Mod4
 # さらに深く読み込む
 
 もっと深く知りたい人は、[このハウツー]({{< ref "howtos" >}})を利用したり、[Xresourcesリファレンス]({{< ref "docs/Reference/xresources.md" >}})を読みましょう。 [ユーザーガイド（英語）](https://i3wm.org/docs/userguide.html)を読んでi3のパワーユーザーになりましょう。
+
+もしXresourcesが提供する以上の高度な設定が必要な場合は、[設定ファイルのステージング]({{< ref "stage-configs" >}})で見つけたi3設定のハウツーを利用してください。
