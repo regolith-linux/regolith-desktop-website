@@ -8,11 +8,11 @@ description: >
 
 ## Regolith 3.2 Release Notes
 
-Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system overhaul, and bug fixes.
+Regolith 3.2 is a minor release focusing on Ubuntu 24.04 & 24.10 support, init system overhaul, and bug fixes.
 
 ### Features
 
-* Ubuntu 24.04 (Noble) support
+* Ubuntu 24.04 (Noble), Ubuntu 24.10 (Oracular) support
 * `regolith-control-center` rebased from GNOME 46 (for supported releases)
 * Sway session promoted from `beta` to `stable` status
 * Overhaul of X11 and Wayland session initialization
@@ -24,6 +24,10 @@ Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system ov
     * Debian 11 (Bullseye)
 * Deprecating support for Wayland session on Debian 12 (Bookworm) due to out-of-date build dependencies
 * `regolith-control-center` has *not* been ported to GNOME 47 and so users on Ubuntu 24.10 will need to use `gnome-control-center` instead.
+
+### Known Issues
+
+ * `regolith-control-center` is not available in Ubuntu 24.10.
 
 
 ### Installation Instructions

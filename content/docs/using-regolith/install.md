@@ -15,6 +15,41 @@ If you're upgrading from an earlier version of Regolith, you may be interested i
 ### Ubuntu
 
 {{< tabs "ubuntu-tabs" >}}
+{{< tab "Ubuntu 24.10" >}}
+
+Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
+to configure your system to read packages from the Regolith package repository and install the desktop package.
+
+1. Register the Regolith public key to your local `apt`:
+
+   ```console
+   wget -qO - https://regolith-desktop.org/regolith.key | \
+   gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
+   ```
+
+1. Add the repository URL to your local `apt`:
+
+   ```console
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+   https://regolith-desktop.org/release-3_2-ubuntu-oracular-amd64 oracular main" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   ```
+
+1. Update `apt` and install Regolith
+
+   ```console
+   sudo apt update
+   sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
+   ```
+1. System Restart
+
+The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+
+{{< hint info >}}
+Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
+{{< /hint >}}
+
+{{< /tab >}}
 {{< tab "Ubuntu 24.04" >}}
 
 Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
