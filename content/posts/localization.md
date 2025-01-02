@@ -1,6 +1,6 @@
 ---
 author: "Ken Gilmer"
-date: 2022-6-22
+date: 2022-06-22
 linktitle: Looking for Translators
 title: Looking for Translators
 weight: 15

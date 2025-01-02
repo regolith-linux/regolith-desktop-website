@@ -1,6 +1,6 @@
 ---
 author: "Ken Gilmer"
-date: 2022-2-05
+date: 2022-02-05
 linktitle: Announcing Regolith 2
 title: Announcing Regolith 2
 weight: 20
