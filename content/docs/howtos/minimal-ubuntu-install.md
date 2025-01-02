@@ -17,9 +17,15 @@ Follow online instructions for installing a fresh copy of Ubuntu Server versions
 
 Once Ubuntu Server has been installed, log into a terminal session.  Use the following URLs to download the installation directions as a text file:
 
-Ubuntu 22.04: https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt
+Ubuntu 24.04 LTS (Noble): [install-release-ubuntu-24.04-amd64.txt](/install-release-ubuntu-24.04-amd64.txt)  
+Ubuntu 23.10 (Mantic): [install-release-ubuntu-23.10-amd64.txt](/install-release-ubuntu-23.10-amd64.txt)  
+Ubuntu 23.04 (Lunar): [install-release-ubuntu-23.04-amd64.txt](/install-release-ubuntu-23.04-amd64.txt)  
+Ubuntu 22.10 (Kinetic): [install-release-ubuntu-22.10-amd64.txt](/install-release-ubuntu-22.10-amd64.txt)  
+Ubuntu 22.04 LTS (Jammy): [install-release-ubuntu-22.04-amd64.txt](/install-release-ubuntu-22.04-amd64.txt)  
+Ubuntu 20.04 LTS (Focal): [install-release-ubuntu-20.04-amd64.txt](/install-release-ubuntu-20.04-amd64.txt)  
 
-Ubuntu 20.04: https://regolith-desktop.com/install-release-ubuntu-20.04-amd64.txt
+Debian 12 (Bookworm): [install-release-debian-12-amd64.txt](/install-release-debian-12-amd64.txt)  
+Debian 11 (Bullseye): [install-release-debian-11-amd64.txt](/install-release-debian-11-amd64.txt)  
 
 Example:
 
