@@ -1,9 +1,7 @@
-name: Publish Site
+name: Test Site
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
     paths-ignore:
       - 'README.md'
       - 'CONTRIBUTING.md'
@@ -11,7 +9,7 @@ on:
       - 'package*.json'
 
 jobs:
-  publish:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,11 +28,3 @@ jobs:
           NODE_PATH: /usr/lib/node_modules
           HUGO_ENV: production
         run: hugo --minify
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
-          cname: regolith-desktop.com
