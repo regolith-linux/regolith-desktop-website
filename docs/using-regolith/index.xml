@@ -1,7 +1,145 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Using Regolith on Regolith Desktop</title><link>https://regolith-desktop.com/docs/using-regolith/</link><description>Recent content in Using Regolith on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-desktop.com/docs/using-regolith/index.xml" rel="self" type="application/rss+xml"/><item><title>Install</title><link>https://regolith-desktop.com/docs/using-regolith/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/install/</guid><description>Get Regolith 3.2 # If you&amp;rsquo;re upgrading from an earlier version of Regolith, you may be interested in reading the release notes and if coming from 2.x, the migration guide.
-Supported Operating Systems # Ubuntu # Ubuntu 24.04 Regolith can be installed as system packages. This makes updating and removing easier and more consistent. The following steps describe how to configure your system to read packages from the Regolith package repository and install the desktop package.</description></item><item><title>First Launch</title><link>https://regolith-desktop.com/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/first-launch/</guid><description>First Launch # Regolith&amp;rsquo;s default interface lacks any visual hint as to how to launch applications or perform other common tasks. This can make the first time experience a bit confusing. However using the Regolith interface is relatively simple by only committing the following two keybindings to memory:
-Action Keybinding Purpose Keybinding Viewer super shift ? View and execute available keybindings App Launcher super space Launch a desktop application The Super Key # Most keybindings you&amp;rsquo;ll be using with Regolith start with the super key.</description></item><item><title>Basic Usage</title><link>https://regolith-desktop.com/docs/using-regolith/basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/basics/</guid><description>Usage # Launch an Application # After the first login, the screen will contain a bar at the bottom and some keyboard shortcuts in a dialog. This dialog, ilia, provides assistance for finding keybindings for various actions in the desktop environment. It may be dismissed with the esc key and invoked again with super shift ? . To launch an application, press super space and a similar dialog will load with the applications installed on the system.</description></item><item><title>Configuration</title><link>https://regolith-desktop.com/docs/using-regolith/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/configuration/</guid><description>Recommended Packages for New Users # Looks # Install all of the official Regolith looks:
-sudo apt install regolith-look-* Alternatively, apt will list available looks that may be installed:
-apt list | grep regolith-look- NOTE: this may pull in fonts, themes, and wallpapers. For users looking to minimize disk usage, uninstalling looks that are unused is recommended.
-See below for details on how to select a look.
-Status Indicators # The following snippet installs status indicator packages recommended for new users:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Using Regolith on Regolith Desktop</title><link>https://regolith-desktop.com/docs/using-regolith/</link><description>Recent content in Using Regolith on Regolith Desktop</description><generator>Hugo</generator><language>en</language><atom:link href="https://regolith-desktop.com/docs/using-regolith/index.xml" rel="self" type="application/rss+xml"/><item><title>Install</title><link>https://regolith-desktop.com/docs/using-regolith/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/install/</guid><description>&lt;h1 id="get-regolith-32">
+ Get Regolith 3.2
+ &lt;a class="anchor" href="#get-regolith-32">#&lt;/a>
+&lt;/h1>
+&lt;p>If you&amp;rsquo;re upgrading from an earlier version of Regolith, you may be interested in reading &lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.2-release-notes">the release notes&lt;/a> and if coming from 2.x, the &lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide">migration guide&lt;/a>.&lt;/p>
+&lt;h2 id="supported-operating-systems">
+ Supported Operating Systems
+ &lt;a class="anchor" href="#supported-operating-systems">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="ubuntu">
+ Ubuntu
+ &lt;a class="anchor" href="#ubuntu">#&lt;/a>
+&lt;/h3>
+
+
+
+&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" />
+ &lt;label for="tabs-0-0">Ubuntu 24.04&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;p>Regolith can be installed as system packages. This makes updating and removing easier and more consistent. The following steps describe how
+to configure your system to read packages from the Regolith package repository and install the desktop package.&lt;/p></description></item><item><title>First Launch</title><link>https://regolith-desktop.com/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/first-launch/</guid><description>&lt;h1 id="first-launch">
+ First Launch
+ &lt;a class="anchor" href="#first-launch">#&lt;/a>
+&lt;/h1>
+&lt;hr>
+&lt;p>Regolith&amp;rsquo;s default interface lacks any visual hint as to how to launch applications or perform other common tasks. This can make the first time experience a bit confusing. However using the Regolith interface is relatively simple by only committing the following two keybindings to memory:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Action&lt;/th>
+ &lt;th>Keybinding&lt;/th>
+ &lt;th>Purpose&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Keybinding Viewer&lt;/td>
+ &lt;td>
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+ &lt;span class="badge badge-warning">shift&lt;/span>
+ 
+ &lt;span class="badge badge-warning">?&lt;/span>
+ 
+&lt;/span>
+&lt;/td>
+ &lt;td>View and execute available keybindings&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>App Launcher&lt;/td>
+ &lt;td>
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+ &lt;span class="badge badge-warning">space&lt;/span>
+ 
+&lt;/span>
+&lt;/td>
+ &lt;td>Launch a desktop application&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="the-super-key">
+ The Super Key
+ &lt;a class="anchor" href="#the-super-key">#&lt;/a>
+&lt;/h2>
+&lt;p>Most keybindings you&amp;rsquo;ll be using with Regolith start with the 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+&lt;/span>
+ key. This key typically says &amp;ldquo;WIN&amp;rdquo; or has a MS Windows logo on it. On a Mac it is the Command 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">⌘&lt;/span>
+ 
+&lt;/span>
+ key. Going forward, this key will simply be referred to as 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+&lt;/span>
+ but keep in mind that you can change which physical button 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+&lt;/span>
+ maps to in your configuration if you choose to.&lt;/p></description></item><item><title>Basic Usage</title><link>https://regolith-desktop.com/docs/using-regolith/basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/basics/</guid><description>&lt;h1 id="usage">
+ Usage
+ &lt;a class="anchor" href="#usage">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="launch-an-application">
+ Launch an Application
+ &lt;a class="anchor" href="#launch-an-application">#&lt;/a>
+&lt;/h2>
+&lt;p>After the first login, the screen will contain a bar at the bottom and some keyboard shortcuts in a dialog. This dialog, &lt;a href="https://github.com/regolith-linux/ilia">&lt;code>ilia&lt;/code>&lt;/a>, provides assistance for finding keybindings for various actions in the desktop environment. It may be dismissed with the &lt;code>esc&lt;/code> key and invoked again with 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+ &lt;span class="badge badge-warning">shift&lt;/span>
+ 
+ &lt;span class="badge badge-warning">?&lt;/span>
+ 
+&lt;/span>
+. To launch an application, press 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+ &lt;span class="badge badge-warning">space&lt;/span>
+ 
+&lt;/span>
+ and a similar dialog will load with the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only those that match. You can also scroll through the list with the arrow keys.&lt;/p></description></item><item><title>Configuration</title><link>https://regolith-desktop.com/docs/using-regolith/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/configuration/</guid><description>&lt;h1 id="recommended-packages-for-new-users">
+ Recommended Packages for New Users
+ &lt;a class="anchor" href="#recommended-packages-for-new-users">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="looks">
+ Looks
+ &lt;a class="anchor" href="#looks">#&lt;/a>
+&lt;/h2>
+&lt;p>Install all of the official Regolith looks:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>sudo apt install regolith-look-*
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Alternatively, &lt;code>apt&lt;/code> will list available looks that may be installed:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>apt list | grep regolith-look-
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>NOTE: this may pull in fonts, themes, and wallpapers. For users looking to minimize disk usage, uninstalling looks that are unused is recommended.&lt;/p>
+&lt;p>See below for details on how to select a look.&lt;/p>
+&lt;h2 id="status-indicators">
+ Status Indicators
+ &lt;a class="anchor" href="#status-indicators">#&lt;/a>
+&lt;/h2>
+&lt;p>The following snippet installs status indicator packages recommended for new users:&lt;/p></description></item></channel></rss>

@@ -1,3 +1,703 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on Regolith Desktop</title><link>https://regolith-desktop.com/docs/reference/</link><description>Recent content in Reference on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-desktop.com/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Keybindings</title><link>https://regolith-desktop.com/docs/reference/keybindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/keybindings/</guid><description>Action Key Binding Launch - Application ⊞ Win Space Launch - Browser ⊞ Win Shift Enter Launch - Command ⊞ Win Shift Space Launch - File Browser ⊞ Win Shift n Launch - File Search ⊞ Win Alt Space Launch - Notification Viewer ⊞ Win n Launch - Terminal ⊞ Win Enter Launch - This Dialog ⊞ Win Shift ?</description></item><item><title>Config Files</title><link>https://regolith-desktop.com/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/configurations/</guid><description>Config file quick reference # Component Default Config User Config Notes i3 / i3-gaps /etc/regolith/i3/config, /usr/share/regolith/i3/config.d ~/.config/regolith3/i3 Extend Regolith2 config by creating config.d and partials in the user config dir, or globally override it by creating config. More Xresources /usr/share/regolith-look/default ~/.config/regolith3/Xresources ~/.Xresources is also loaded but intended for properties that may also be required in other desktop sessions. More Bar status indicators /usr/share/i3xrocks/conf.</description></item><item><title>i3xrocks</title><link>https://regolith-desktop.com/docs/reference/i3xrocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/i3xrocks/</guid><description>Since i3 is the underlying tiling manager that is used by regolith, the i3blocks package can also be used. However since the choice was made to use Xresources this package has been forked and i3xrocks was born (created by the regolith team).
-i3xrocks is used to customise the navigation bar as seen in the introductory configuration examples. To find a more thorough guide how to do this go to the Change Bar Status indicators</description></item><item><title>Xresources</title><link>https://regolith-desktop.com/docs/reference/xresources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/xresources/</guid><description>Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example wm.foo.bar changes to i3-wm.foo.bar for Regolith 1.x and 2.x. Xresources Key Description gtk.theme_name GTK Theme (&amp;ldquo;Legacy Applications&amp;rdquo; in gnome-tweaks) gtk.</description></item><item><title>Build System</title><link>https://regolith-desktop.com/docs/reference/build-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/build-system/</guid><description>Overview # This page describes how packages are generate from source code, and how those packages combine to actualize the Regolith desktop environment. This document covers Regolith only and does not intend to describe upstream dependencies, general package manager concepts, or other aspects of build systems.
-Terms # Distro - Short for distribution, in the context of this document, may be considered a variation of a Linux-based OS operating system.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on Regolith Desktop</title><link>https://regolith-desktop.com/docs/reference/</link><description>Recent content in Reference on Regolith Desktop</description><generator>Hugo</generator><language>en</language><atom:link href="https://regolith-desktop.com/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Keybindings</title><link>https://regolith-desktop.com/docs/reference/keybindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/keybindings/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Action&lt;/th>
+ &lt;th>Key Binding&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="#LaunchApplication"> Launch - Application &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> Space&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#LaunchBrowser"> Launch - Browser &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Enter&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#LaunchCommand"> Launch - Command &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Space&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#LaunchFileBrowser"> Launch - File Browser &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> n&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#LaunchFileSearch"> Launch - File Search &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> Space&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#LaunchNotificationViewer"> Launch - Notification Viewer &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> n&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#LaunchTerminal"> Launch - Terminal &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> Enter&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#LaunchThisDialog"> Launch - This Dialog &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ?&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyBluetoothSettings"> Modify - Bluetooth Settings &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> b&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyCarryWindowtoWorkspace1-10"> Modify - Carry Window to Workspace 1 - 10&lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> 0..9&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyCarryWindowtoWorkspace11-19"> Modify - Carry Window to Workspace 11 - 19 &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> &lt;code>Ctrl&lt;/code> 1..9&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyContainingWorkspace"> Modify - Containing Workspace &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyDisplaySettings"> Modify - Display Settings &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> d&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyLoadWindowLayout"> Modify - Load Window Layout &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> .&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyMoveWindowtoWorkspace1-10"> Modify - Move Window to Workspace 1 - 10 &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> 0..9&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyMoveWindowtoWorkspace11-19"> Modify - Move Window to Workspace 11 - 19&lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> 1..9&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyMovetoScratchpad"> Modify - Move to Scratchpad &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> m&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyNextWindowOrientation"> Modify - Next Window Orientation &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> Backspace&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifySaveWindowLayout"> Modify - Save Window Layout &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> ,&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifySettings"> Modify - Settings &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> c&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyTile/FloatFocusToggle"> Modify - Tile/Float Focus Toggle &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> t&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyToggleBar"> Modify - Toggle Bar &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> i&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyWifiSettings"> Modify - Wifi Settings &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> w&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyWindowFloatingToggle"> Modify - Window Floating Toggle &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> f&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyWindowFullscreenToggle"> Modify - Window Fullscreen Toggle &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> f&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyWindowLayoutMode"> Modify - Window Layout Mode &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> t&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyWindowPosition"> Modify - Window Position &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> k j h l&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ModifyWindowPosition"> Modify - Window Position &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigateNextWorkspace"> Navigate - Next Workspace &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> Tab&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigateNextWorkspace"> Navigate - Next Workspace &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> →&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigatePreviousWorkspace"> Navigate - Previous Workspace &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> ←&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigatePreviousWorkspace"> Navigate - Previous Workspace &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Tab&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigateRelativeWindow"> Navigate - Relative Window &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> k j h l&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigateRelativeWindow"> Navigate - Relative Window &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> ↑ ↓ ← →&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigateScratchpad"> Navigate - Scratchpad &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> a&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigateWindowbyName"> Navigate - Window by Name &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> Space&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigateWorkspace11-19"> Navigate - Workspace 11 - 19 &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> 1..9&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#NavigateWorkspaces1-10"> Navigate - Workspaces 1-10 &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> 0..9&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#ResizeEnterResizeMode"> Resize - Enter Resize Mode &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> r&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionExitApp"> Session - Exit App &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> q&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionLockScreen"> Session - Lock Screen &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> Escape&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionLogout"> Session - Logout &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> e&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionPowerDown"> Session - Power Down &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> p&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionReboot"> Session - Reboot &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> b&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionRefreshSession"> Session - Refresh Session &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> r&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionReloadi3Config"> Session - Reload i3 Config &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> c&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionRestarti3"> Session - Restart i3 &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> r&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionSleep"> Session - Sleep &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> s&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#SessionTerminateApp"> Session - Terminate App &lt;/a>&lt;/td>
+ &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> q&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Config Files</title><link>https://regolith-desktop.com/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/configurations/</guid><description>&lt;h1 id="config-file-quick-reference">
+ Config file quick reference
+ &lt;a class="anchor" href="#config-file-quick-reference">#&lt;/a>
+&lt;/h1>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;strong>Component&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Default Config&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>User Config&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Notes&lt;/strong>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>i3 / i3-gaps&lt;/td>
+ &lt;td>&lt;code>/etc/regolith/i3/config&lt;/code>, &lt;code>/usr/share/regolith/i3/config.d&lt;/code>&lt;/td>
+ &lt;td>&lt;code>~/.config/regolith3/i3&lt;/code>&lt;/td>
+ &lt;td>&lt;em>Extend&lt;/em> Regolith2 config by creating &lt;code>config.d&lt;/code> and partials in the user config dir, or &lt;em>globally override&lt;/em> it by creating &lt;code>config&lt;/code>. &lt;a href="https://regolith-desktop.com/docs/howtos/customize-i3-configuration/">More&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Xresources&lt;/td>
+ &lt;td>&lt;code>/usr/share/regolith-look/default&lt;/code>&lt;/td>
+ &lt;td>&lt;code>~/.config/regolith3/Xresources&lt;/code>&lt;/td>
+ &lt;td>&lt;code>~/.Xresources&lt;/code> is also loaded but intended for properties that may also be required in other desktop sessions. &lt;a href="https://regolith-desktop.com/docs/howtos/override-xres/">More&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Bar status indicators&lt;/td>
+ &lt;td>&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>&lt;/td>
+ &lt;td>&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>&lt;/td>
+ &lt;td>Each block has it&amp;rsquo;s own file. Configs loaded in filename alphabetical order. &lt;a href="https://regolith-desktop.com/docs/howtos/add-remove-blocklets/">More&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Picom (Compton) Compositor&lt;/td>
+ &lt;td>&lt;code>/etc/regolith/picom/config&lt;/code>&lt;/td>
+ &lt;td>&lt;code>~/.config/regolith3/picom/config&lt;/code>&lt;/td>
+ &lt;td>&lt;a href="https://regolith-desktop.com/docs/howtos/customize-compositor/">More&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;blockquote class="book-hint warning">
+ WARNING: Adding an i3 config file in &lt;code>~/.config/regolith3/i3/config&lt;/code> will essentially override all Regolith configuration including Xresources and looks.
+&lt;/blockquote>
+
+&lt;h1 id="history">
+ History
+ &lt;a class="anchor" href="#history">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="config-partials">
+ Config partials
+ &lt;a class="anchor" href="#config-partials">#&lt;/a>
+&lt;/h2>
+&lt;p>Regolith 2.0 adds support for config partials, as this feature came to &lt;code>i3&lt;/code> recently in &lt;a href="https://i3wm.org/downloads/RELEASE-NOTES-4.20.txt">4.20&lt;/a>. This is done by &lt;a href="https://i3wm.org/docs/userguide.html#include">includes&lt;/a>. This support for includes enables Regolith 2.0&amp;rsquo;s use of the package manager to add or remove default configuration partials. By installing and removing packages, i3 configuration can be customized for specific preferences while still allowing to track upstream changes for aspects of the configuration that need not vary.&lt;/p></description></item><item><title>i3xrocks</title><link>https://regolith-desktop.com/docs/reference/i3xrocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/i3xrocks/</guid><description>&lt;p>Since i3 is the underlying tiling manager that is used by regolith, the &lt;a href="https://github.com/vivien/i3blocks">&lt;code>i3blocks&lt;/code>&lt;/a> package can also be used. However since the choice was made to use &lt;code>Xresources&lt;/code> this package has been forked and &lt;a href="https://github.com/regolith-linux/i3xrocks">&lt;code>i3xrocks&lt;/code>&lt;/a> was born (created by the regolith team).&lt;/p>
+&lt;p>&lt;code>i3xrocks&lt;/code> is used to customise the navigation bar as seen in the introductory configuration examples. To find a more thorough guide how to do this go to the &lt;a href="https://regolith-desktop.com/docs/howtos/add-remove-blocklets/">Change Bar Status indicators&lt;/a>&lt;/p></description></item><item><title>Xresources</title><link>https://regolith-desktop.com/docs/reference/xresources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/xresources/</guid><description>&lt;blockquote class="book-hint warning">
+ Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example &lt;code>wm.foo.bar&lt;/code> changes to &lt;code>i3-wm.foo.bar&lt;/code> for Regolith 1.x and 2.x.
+&lt;/blockquote>
+
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;code>Xresources&lt;/code> Key&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>gtk.theme_name&lt;/td>
+ &lt;td>GTK Theme (&amp;ldquo;Legacy Applications&amp;rdquo; in &lt;code>gnome-tweaks&lt;/code>)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gtk.icon_theme_name&lt;/td>
+ &lt;td>GTK Icon Theme&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gnome.terminal.audible-bell&lt;/td>
+ &lt;td>Enables audible bell in gnome-terminal (&lt;code>true / false&lt;/code>)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gtk.document_font_name&lt;/td>
+ &lt;td>GTK Document Font Name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gtk.font_name&lt;/td>
+ &lt;td>General purpose font for GTK apps and the desktop&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gtk.monospace_font_name&lt;/td>
+ &lt;td>Font for monospace areas such as i3bar and the terminal&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gnome.terminal.background-transparency-percent&lt;/td>
+ &lt;td>Background transparency value for gnome-terminal (&lt;code>0 - 100&lt;/code>). See also &lt;code>gnome.terminal.use-transparent-background&lt;/code>.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gnome.terminal.font&lt;/td>
+ &lt;td>Font definition for gnome-terminal&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gnome.terminal.scrollbar&lt;/td>
+ &lt;td>Flag to enable/disable scrollbar (&lt;code>never / always&lt;/code>)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gnome.terminal.use-transparent-background&lt;/td>
+ &lt;td>Enables transparent background in gnome-terminal (&lt;code>true / false&lt;/code>). See also &lt;code>gnome.terminal.background-transparency-percent&lt;/code>.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gnome.wallpaper&lt;/td>
+ &lt;td>GNOME Wallpaper (can be overridden in Settings)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>gnome.wm.theme&lt;/td>
+ &lt;td>GNOME Window Manager Theme (unused)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.alt&lt;/td>
+ &lt;td>Key mapping for Alt key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide&lt;/a> for details.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.background.color&lt;/td>
+ &lt;td>Bar Background Color&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.position&lt;/td>
+ &lt;td>Bar Screen Position&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.separator.color&lt;/td>
+ &lt;td>Color of seperator between blocks&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.separatorchar&lt;/td>
+ &lt;td>Character to display between blocks&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.statusline.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.trayoutput&lt;/td>
+ &lt;td>Enable or disable the &lt;a href="https://i3wm.org/docs/userguide.html#_tray_output">app tray&lt;/a> in i3bar&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.active.background.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.active.border.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.active.text.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.focused.background.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.focused.border.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.focused.text.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.inactive.background.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.inactive.border.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.inactive.text.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.urgent.background.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.urgent.border.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.bar.workspace.urgent.text.color&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused.color.background&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused.color.border&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused.color.child_border&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused.color.indicator&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused.color.text&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused_inactive.color.background&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused_inactive.color.border&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused_inactive.color.child_border&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused_inactive.color.indicator&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.focused_inactive.color.text&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.unfocused.color.background&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.unfocused.color.border&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.unfocused.color.child_border&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.unfocused.color.indicator&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.unfocused.color.text&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.urgent.color.background&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.urgent.color.border&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.urgent.color.child_border&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.urgent.color.indicator&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.client.urgent.color.text&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.floatingwindow.border.size&lt;/td>
+ &lt;td>Window border size in pixels for floating windows&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.font&lt;/td>
+ &lt;td>Window manager font&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.gaps.inner.size&lt;/td>
+ &lt;td>Default gap size between windows in pixels&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.gaps.outer.size&lt;/td>
+ &lt;td>Default gap size at screen edge in pixels&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.mod&lt;/td>
+ &lt;td>Key mapping for Super key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide&lt;/a> for details.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.window.border.size&lt;/td>
+ &lt;td>Default border size in pixels&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.workspace.01.name .. wm.workspace.19.name&lt;/td>
+ &lt;td>Workspace Labels&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>wm.workspace.01.key .. wm.workspace.10.key&lt;/td>
+ &lt;td>Workspace Shortucts&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.action.volume.left&lt;/td>
+ &lt;td>Command to execute when volume indicator is left clicked (default: none)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.action.volume.middle&lt;/td>
+ &lt;td>Command to execute when volume indicator is middle clicked (default: none)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.action.volume.right&lt;/td>
+ &lt;td>Command to execute when volume indicator is right clicked (default: mute through amixer)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+ &lt;td>Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+ &lt;td>Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.error.color&lt;/td>
+ &lt;td>Color for bar module in error mode&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.battery0&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.battery100&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.battery20&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.battery50&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.battery80&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.batteryac&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.batterycharging&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.batteryunknown&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.capslock&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.color&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.cpu&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.disk&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.dn&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.help&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.mediapaused&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.mediaplaying&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.memory&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.mute&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.notify.error&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.notify.none&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.notify.some&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.numlock&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.off&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.on&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.sound&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.thermometer&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.time&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.up&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.wifi&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.label.wired&lt;/td>
+ &lt;td>Bar icon glyph&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.nominal&lt;/td>
+ &lt;td>Default bar icon color&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.value.color&lt;/td>
+ &lt;td>Color of numerical value in bar module&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.value.font&lt;/td>
+ &lt;td>Font for numerical value in bar module&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>i3xrocks.warning&lt;/td>
+ &lt;td>Warning color for bar module&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h1 id="optional-xresources-keys">
+ Optional &lt;code>Xresources&lt;/code> keys
+ &lt;a class="anchor" href="#optional-xresources-keys">#&lt;/a>
+&lt;/h1>
+&lt;p>The following &lt;code>Xresources&lt;/code> keys are undefined by default but can be used by users to change behavior as desired.&lt;/p></description></item><item><title>Build System</title><link>https://regolith-desktop.com/docs/reference/build-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/build-system/</guid><description>&lt;h1 id="overview">
+ Overview
+ &lt;a class="anchor" href="#overview">#&lt;/a>
+&lt;/h1>
+&lt;p>This page describes how packages are generate from source code, and how those packages combine to actualize the Regolith desktop environment. This document covers Regolith only and does not intend to describe upstream dependencies, general package manager concepts, or other aspects of build systems.&lt;/p>
+&lt;h1 id="terms">
+ Terms
+ &lt;a class="anchor" href="#terms">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>&lt;code>Distro&lt;/code> - Short for distribution, in the context of this document, may be considered a variation of a Linux-based OS operating system. A product, project, and brand.&lt;/li>
+&lt;li>&lt;code>Codename&lt;/code> - A well defined and announced snapshot of a set of packages that are consumed as a whole. May be considered a software release with a specific name such as &lt;code>36&lt;/code> or &lt;code>Jammy&lt;/code>.&lt;/li>
+&lt;li>&lt;code>Architecture&lt;/code> - In the context of this document, denotes a CPU and base system hardware. Regolith currently targets the &lt;code>amd64&lt;/code> and &lt;code>arm64&lt;/code> architectures.&lt;/li>
+&lt;li>&lt;code>Stage&lt;/code> - Represents a snapshot of a set of packages at a modeled level of maturity. In Regolith the following stages from least-stable to most-stable are modeled:
+&lt;ol>
+&lt;li>&lt;code>experimental&lt;/code> - For packages and package changes that may be reverted, removed, or change significantly over time. Serious bugs are common and expected here.&lt;/li>
+&lt;li>&lt;code>unstable&lt;/code> - For packages changes that are planned to reach a release but have yet to undergo much testing. Serious bugs may occur from time to time. Regolith core developers may run their testing and development from this stage but users are discouraged from consuming packages from &lt;code>unstable&lt;/code>.&lt;/li>
+&lt;li>&lt;code>testing&lt;/code> - For packages undergoing testing by Regolith developers and early adopters. Bugs occur but serious bugs should not often pop up in this stage. Regolith users that wish to get access to fixes and new features earlier may consume from this stage with the understanding that bugs are to be expected (, and reporting them is appreciated!)&lt;/li>
+&lt;li>&lt;code>release&lt;/code> - For packages that have been determined to be suitable for general use. While minor bugs may be present in packages at this stage, the bugs present should not interfere with general use of the environments for users on supported distros and releases.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;code>Target&lt;/code> ~ Represents a specific sequence of &lt;code>distro&lt;/code>, &lt;code>codename&lt;/code>, &lt;code>stage&lt;/code>, and &lt;code>architecture&lt;/code> for which a set of packages exist.&lt;/li>
+&lt;li>&lt;code>Manifest&lt;/code> ~ A file that specifies a set of the properties name, origin, and snapshot for a list of packages. A manifest is a file that represents a snapshot of a &lt;code>target&lt;/code> in time.&lt;/li>
+&lt;li>&lt;code>Package Manager&lt;/code> ~ A set of formats and programs that allow for packages to be installed in a distro. The package manager may very by distro.&lt;/li>
+&lt;li>&lt;code>Package Repository&lt;/code> ~ A well defined source of binary packages that may be installed into an OS that supports a given package manager.&lt;/li>
+&lt;/ul>
+&lt;h1 id="source-repositories">
+ Source Repositories
+ &lt;a class="anchor" href="#source-repositories">#&lt;/a>
+&lt;/h1>
+&lt;p>All Regolith packages are generated from git-versioned source repositories. These repositories house the source code for a given component. Mostly, each component is general for any given &lt;code>distro&lt;/code> and &lt;code>codename&lt;/code>. Source repositories are modeled in the Regolith build system via &lt;code>manifest&lt;/code> files.&lt;/p></description></item></channel></rss>

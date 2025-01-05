@@ -1,75 +1,75 @@
-<!doctype html><html lang=ja dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="はじめてRegolithを使うのにもっとも重要なパートを学ぶ。"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="基本的な使い方"><meta property="og:description" content="はじめてRegolithを使うのにもっとも重要なパートを学ぶ。"><meta property="og:type" content="article"><meta property="og:url" content="https://regolith-desktop.com/ja/docs/using-regolith/basics/"><meta property="article:modified_time" content="2024-11-11T05:20:58+09:00"><title>基本的な使い方 | Regolith Desktop</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=alternate hreflang=en href=https://regolith-desktop.com/docs/using-regolith/basics/ title="Basic Usage"><link rel=alternate hreflang=de href=https://regolith-desktop.com/de/docs/using-regolith/basics/ title="Grundlegende Verwendung"><link rel=alternate hreflang=fr href=https://regolith-desktop.com/fr/docs/using-regolith/basics/ title="Les bases"><link rel=stylesheet href=/book.min.61d73a415bb9c8ffe16c88a1ca6c5fd0ce9de44ebea50c24ec8cd964e10bada0.css integrity="sha256-Ydc6QVu5yP/hbIihymxf0M6d5E6+pQwk7IzZZOELraA=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/ja.search.min.5fae28035601ec04778a103660163ff06081bf871ede816845e0fb831cb48baa.js integrity="sha256-X64oA1YB7AR3ihA2YBY/8GCBv4ce3oFoReD7gxy0i6o=" crossorigin=anonymous></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H87N5GZVTN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-H87N5GZVTN');</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/ja/><img src=/regolith-logo.png alt="Regolith Desktop"></a></h2><div class=book-search><input type=text id=book-search-input placeholder=検索 aria-label=検索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<!doctype html><html lang=ja dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="はじめてRegolithを使うのにもっとも重要なパートを学ぶ。
+"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://regolith-desktop.com/ja/docs/using-regolith/basics/"><meta property="og:site_name" content="Regolith Desktop"><meta property="og:title" content="基本的な使い方"><meta property="og:description" content="はじめてRegolithを使うのにもっとも重要なパートを学ぶ。"><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2025-01-04T23:00:07-05:00"><title>基本的な使い方 | Regolith Desktop</title>
+<link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png><link rel=canonical href=https://regolith-desktop.com/ja/docs/using-regolith/basics/><link rel=alternate hreflang=en href=https://regolith-desktop.com/docs/using-regolith/basics/ title="Basic Usage"><link rel=alternate hreflang=de href=https://regolith-desktop.com/de/docs/using-regolith/basics/ title="Grundlegende Verwendung"><link rel=alternate hreflang=fr href=https://regolith-desktop.com/fr/docs/using-regolith/basics/ title="Les bases"><link rel=stylesheet href=/book.min.8eed976e9f494f81a07343fac24f6d5e391a1d3401e3e2d478a351e3edc8ee8b.css integrity="sha256-ju2Xbp9JT4Ggc0P6wk9tXjkaHTQB4+LUeKNR4+3I7os=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/ja.search.min.2c57864ce01545595a11f16e57113fa50ed7701b6f7edbe5ec1efa717576708a.js integrity="sha256-LFeGTOAVRVlaEfFuVxE/pQ7XcBtvftvl7B76cXV2cIo=" crossorigin=anonymous></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-H87N5GZVTN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-H87N5GZVTN")</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/ja/><img src=/regolith-logo.png alt="Regolith Desktop"></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=検索 aria-label=検索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
 <label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
-Japanese</a></label><ul><li><a href=https://regolith-desktop.com/docs/using-regolith/basics/>English</a></li><li><a href=https://regolith-desktop.com/de/docs/using-regolith/basics/>German</a></li><li><a href=https://regolith-desktop.com/fr/docs/using-regolith/basics/>French</a></li></ul></li></ul><ul><li><span>Regolithを使う</span><ul><li><a href=https://regolith-desktop.com/ja/docs/using-regolith/install/>インストール</a></li><li><a href=https://regolith-desktop.com/ja/docs/using-regolith/first-launch/>初回起動</a></li><li><a href=https://regolith-desktop.com/ja/docs/using-regolith/basics/ class=active>基本的な使い方</a></li><li><a href=https://regolith-desktop.com/ja/docs/using-regolith/configuration/>設定</a></li></ul></li><li><input type=checkbox id=section-5088125f1c43d808a7fe1fd82c64ff38 class=toggle>
-<label for=section-5088125f1c43d808a7fe1fd82c64ff38 class="flex justify-between"><a href=https://regolith-desktop.com/ja/docs/howtos/>ハウツー</a></label><ul><li><a href=https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/>i3設定のカスタマイズ</a></li><li><a href=https://regolith-desktop.com/ja/docs/howtos/customize-compositor/>コンポジターのカスタマイズ</a></li><li><a href=https://regolith-desktop.com/ja/docs/howtos/override-xres/>Xresourcesのオーバーライド</a></li><li><a href=https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/>バーステータスインジケーターの変更</a></li><li><a href=https://regolith-desktop.com/ja/docs/howtos/stage-configs/>設定ファイルのステージ</a></li></ul></li><li><input type=checkbox id=section-4119df120d0a20ec9d08e7af135bc031 class=toggle>
-<label for=section-4119df120d0a20ec9d08e7af135bc031 class="flex justify-between"><a href=https://regolith-desktop.com/ja/docs/reference/>リファレンス</a></label><ul><li><a href=https://regolith-desktop.com/ja/docs/reference/configurations/>設定ファイル</a></li><li><a href=https://regolith-desktop.com/ja/docs/reference/xresources/>Xresources</a></li><li><input type=checkbox id=section-a33a18613f897ba907e38c36efc80526 class=toggle>
-<label for=section-a33a18613f897ba907e38c36efc80526 class="flex justify-between"><a href=https://regolith-desktop.com/ja/docs/reference/Releases/>リリース</a></label><ul></ul></li></ul></li></ul><ul><li><a href=https://github.com/orgs/regolith-linux/discussions target=_blank rel=noopener>Help & Discussion</a></li><li><a href=https://github.com/regolith-linux target=_blank rel=noopener>Github</a></li><li><a href=https://opencollective.com/regolith/donate target=_blank rel=noopener>Support Regolith<br><br><img src=https://badgen.net/opencollective/backers/regolith></a></li></ul></nav><script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>基本的な使い方</strong>
-<label for=toc-control></label></div></header><article class=markdown><h1 id=使い方>使い方
+Japanese</a></label><ul><li><a href=https://regolith-desktop.com/docs/using-regolith/basics/>English</a></li><li><a href=https://regolith-desktop.com/de/docs/using-regolith/basics/>German</a></li><li><a href=https://regolith-desktop.com/fr/docs/using-regolith/basics/>French</a></li></ul></li></ul><ul><li><span>Using Regolith</span><ul><li><a href=/ja/docs/using-regolith/install/>Install</a></li><li><a href=/ja/docs/using-regolith/first-launch/>First Launch</a></li><li><a href=/ja/docs/using-regolith/basics/ class=active>基本的な使い方</a></li><li><a href=/ja/docs/using-regolith/configuration/>Configuration</a></li></ul></li><li><input type=checkbox id=section-56ebb49c80bc053d94a8d2663081612e class=toggle>
+<label for=section-56ebb49c80bc053d94a8d2663081612e class="flex justify-between"><a href=/ja/docs/howtos/>Howtos</a></label><ul><li><a href=/ja/docs/howtos/customize-i3-configuration/>How to Customize i3 Configuration</a></li><li><a href=/ja/docs/howtos/customize-compositor/>How to Customize Compositor</a></li><li><a href=/ja/docs/howtos/override-xres/>Xresourcesのオーバーライド</a></li><li><a href=/ja/docs/howtos/add-remove-blocklets/>バーステータスインジケーターの変更</a></li><li><a href=/ja/docs/howtos/stage-configs/>設定ファイルのステージ</a></li></ul></li><li><input type=checkbox id=section-e45b8c9a60df9842dedec42a55316b1d class=toggle>
+<label for=section-e45b8c9a60df9842dedec42a55316b1d class="flex justify-between"><a href=/ja/docs/reference/>Reference</a></label><ul><li><a href=/ja/docs/reference/configurations/>Config Files</a></li><li><a href=/ja/docs/reference/xresources/>Xresources</a></li><li><input type=checkbox id=section-401d3de3d3a3d3257c5cb650cc292f05 class=toggle>
+<label for=section-401d3de3d3a3d3257c5cb650cc292f05 class="flex justify-between"><a href=/ja/docs/reference/Releases/>Releases</a></label><ul></ul></li></ul></li></ul><ul><li><a href=https://github.com/orgs/regolith-linux/discussions target=_blank rel=noopener>Help & Discussion</a></li><li><a href=https://github.com/regolith-linux target=_blank rel=noopener>Github</a></li><li><a href=https://opencollective.com/regolith/donate target=_blank rel=noopener>Support Regolith<br><br><img src=https://badgen.net/opencollective/backers/regolith></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu>
+</label><strong>基本的な使い方</strong>
+<label for=toc-control></label></div></header><article class="markdown book-article"><h1 id=使い方>使い方
 <a class=anchor href=#%e4%bd%bf%e3%81%84%e6%96%b9>#</a></h1><h2 id=アプリケーションを開く>アプリケーションを開く
 <a class=anchor href=#%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%82%92%e9%96%8b%e3%81%8f>#</a></h2><p>初回ログイン後、画面下部にバーが、ダイアログにいくつかのキーボードショートカットが表示されます。この<a href=https://github.com/regolith-linux/ilia><code>ilia</code></a>と呼ばれるダイアログは、このデスクトップ環境におけるさまざまなアクションのキーバインドを見つけるアシスタントを提供します。<code>esc</code>キーで閉じても、
 <span class=text-nowrap><span class="badge badge-warning">super</span>
 <span class="badge badge-warning">shift</span>
-<span class="badge badge-warning">?</span></span>
-で再度表示することができます。アプリケーションを起動するには、
+<span class="badge badge-warning">?</span>
+</span>で再度表示することができます。アプリケーションを起動するには、
 <span class=text-nowrap><span class="badge badge-warning">super</span>
-<span class="badge badge-warning">space</span></span>
-を押すことで、同様のダイアログが、システムにインストールされたアプリケーションとともに読み込まれます。起動したいアプリケーションの名前を入力し始めると、リストが入力したものと一致するものにフィルタリングされます。矢印キーでリストをスクロールすることもできます。</p><p><img src=/regolith-ilia-apps.png alt></p><h2 id=ウィンドウを操作する>ウィンドウを操作する
+<span class="badge badge-warning">space</span>
+</span>を押すことで、同様のダイアログが、システムにインストールされたアプリケーションとともに読み込まれます。起動したいアプリケーションの名前を入力し始めると、リストが入力したものと一致するものにフィルタリングされます。矢印キーでリストをスクロールすることもできます。</p><p><img src=/regolith-ilia-apps.png alt></p><h2 id=ウィンドウを操作する>ウィンドウを操作する
 <a class=anchor href=#%e3%82%a6%e3%82%a3%e3%83%b3%e3%83%89%e3%82%a6%e3%82%92%e6%93%8d%e4%bd%9c%e3%81%99%e3%82%8b>#</a></h2><p>実行中のアプリケーションにフォーカスするには、
 <span class=text-nowrap><span class="badge badge-warning">super</span>
 <span class="badge badge-warning">ctrl</span>
-<span class="badge badge-warning">space</span></span>
-キーバインドですべての実行中のウィンドウのダイアログを表示することができます。利用したいウィンドウを選択することで、簡単にそのウィンドウが含まれるワークスペースに移動してフォーカスを設定されます。</p><p><img src=/regolith-ilia-windows.png alt></p><h2 id=新しいワークスペースを作成する>新しいワークスペースを作成する
+<span class="badge badge-warning">space</span>
+</span>キーバインドですべての実行中のウィンドウのダイアログを表示することができます。利用したいウィンドウを選択することで、簡単にそのウィンドウが含まれるワークスペースに移動してフォーカスを設定されます。</p><p><img src=/regolith-ilia-windows.png alt></p><h2 id=新しいワークスペースを作成する>新しいワークスペースを作成する
 <a class=anchor href=#%e6%96%b0%e3%81%97%e3%81%84%e3%83%af%e3%83%bc%e3%82%af%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e3%82%92%e4%bd%9c%e6%88%90%e3%81%99%e3%82%8b>#</a></h2><p>ワークスペース（いくつかのデスクトップ環境では"仮想デスクトップ"として知られています）ウィンドウを管理するための主要な方法です。各ワークスペースは、独立したウィンドウセットの画面を提供しています。ワークスペースを作成したり操作するには、
 <span class=text-nowrap><span class="badge badge-warning">super</span>
-<span class="badge badge-warning">0-9</span></span>
-でインデックスを指定します。</p><h2 id=ファイルを検索して起動する>ファイルを検索して起動する
+<span class="badge badge-warning">0-9</span>
+</span>でインデックスを指定します。</p><h2 id=ファイルを検索して起動する>ファイルを検索して起動する
 <a class=anchor href=#%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%82%92%e6%a4%9c%e7%b4%a2%e3%81%97%e3%81%a6%e8%b5%b7%e5%8b%95%e3%81%99%e3%82%8b>#</a></h2><p>特定のファイルをローカルのコンピューター上で検索には、さまざまな方法があります。Regolithでは、
 <span class=text-nowrap><span class="badge badge-warning">super</span>
 <span class="badge badge-warning">alt</span>
-<span class="badge badge-warning">space</span></span>
-で、素早く検索して、ファイルを既定のアプリケーションで読み込むファイル検索ダイアログを提供しています。 選択したものをEnterで入力すると、<code>xdg-open</code>コマンドでファイルが呼び出されます。</p><p><img src=/regolith-ilia-files.png alt></p><h2 id=ターミナル>ターミナル
+<span class="badge badge-warning">space</span>
+</span>で、素早く検索して、ファイルを既定のアプリケーションで読み込むファイル検索ダイアログを提供しています。 選択したものをEnterで入力すると、<code>xdg-open</code>コマンドでファイルが呼び出されます。</p><p><img src=/regolith-ilia-files.png alt></p><h2 id=ターミナル>ターミナル
 <a class=anchor href=#%e3%82%bf%e3%83%bc%e3%83%9f%e3%83%8a%e3%83%ab>#</a></h2><p>ターミナルは専用のキーバインド・
 <span class=text-nowrap><span class="badge badge-warning">super</span>
-<span class="badge badge-warning">enter</span></span>
-を持つ特別なアプリケーションです。</p><h2 id=ブラウザ>ブラウザ
+<span class="badge badge-warning">enter</span>
+</span>を持つ特別なアプリケーションです。</p><h2 id=ブラウザ>ブラウザ
 <a class=anchor href=#%e3%83%96%e3%83%a9%e3%82%a6%e3%82%b6>#</a></h2><p>既定のブラウザもまた特別であり、
 <span class=text-nowrap><span class="badge badge-warning">super</span>
 <span class="badge badge-warning">shift</span>
-<span class="badge badge-warning">enter</span></span>
-で起動することができます。</p><h2 id=アプリケーションを閉じる>アプリケーションを閉じる
+<span class="badge badge-warning">enter</span>
+</span>で起動することができます。</p><h2 id=アプリケーションを閉じる>アプリケーションを閉じる
 <a class=anchor href=#%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%82%92%e9%96%89%e3%81%98%e3%82%8b>#</a></h2><p><span class=text-nowrap><span class="badge badge-warning">super</span>
 <span class="badge badge-warning">shift</span>
-<span class="badge badge-warning">q</span></span>
-で、フォーカスしているアプリケーションを閉じます。誤作動しているアプリの場合、
+<span class="badge badge-warning">q</span>
+</span>で、フォーカスしているアプリケーションを閉じます。誤作動しているアプリの場合、
 <span class=text-nowrap><span class="badge badge-warning">super</span>
 <span class="badge badge-warning">alt</span>
-<span class="badge badge-warning">q</span></span>
-でフォーカスしているアプリケーションを強制終了(kill)することができますが、保存していないデータは失われる可能性に注意してください。</p><h2 id=ワークスペースを切り替える>ワークスペースを切り替える
+<span class="badge badge-warning">q</span>
+</span>でフォーカスしているアプリケーションを強制終了(kill)することができますが、保存していないデータは失われる可能性に注意してください。</p><h2 id=ワークスペースを切り替える>ワークスペースを切り替える
 <a class=anchor href=#%e3%83%af%e3%83%bc%e3%82%af%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e3%82%92%e5%88%87%e3%82%8a%e6%9b%bf%e3%81%88%e3%82%8b>#</a></h2><p>アプリケーションが画面をどのように占有するかを管理する主な方法は、ワークスペースを使用することです。ワークスペースは、すべてのウィンドウが同じ仮想ディスプレイ上に存在する、0個以上のアプリケーションのグループです。ユーザーはワークスペースを切り替えて、アプリケーションが占有するための、多くのスペースを確保することができます。ウィンドウはワークスペース間を移動することができます。ワークスペースは、物理的なディスプレイに結びつけることや、必要に応じて他のディスプレイに移動することもできます。ワークスペースを切り替えるには、
-<span class=text-nowrap><span class="badge badge-warning">super</span></span>
-キーを押しながら数字キーを押します。これで指定したワークスペースに移動します。特定のワークスペースにウィンドウが存在する場合は、バーにアクティブであることが表示されます。このバーを参照することで、ユーザーはアクティブなウィンドウがどのワークスペースに存在しているのかを確認することができます。</p><p>ワークスペースは
 <span class=text-nowrap><span class="badge badge-warning">super</span>
-<span class="badge badge-warning">tab</span></span>
-や
+</span>キーを押しながら数字キーを押します。これで指定したワークスペースに移動します。特定のワークスペースにウィンドウが存在する場合は、バーにアクティブであることが表示されます。このバーを参照することで、ユーザーはアクティブなウィンドウがどのワークスペースに存在しているのかを確認することができます。</p><p>ワークスペースは
+<span class=text-nowrap><span class="badge badge-warning">super</span>
+<span class="badge badge-warning">tab</span>
+</span>や
 <span class=text-nowrap><span class="badge badge-warning">super</span>
 <span class="badge badge-warning">shift</span>
-<span class="badge badge-warning">tab</span></span>
-でも、前方や後方のウィンドウを切り替えることができます。</p><h2 id=システムを構成する>システムを構成する
+<span class="badge badge-warning">tab</span>
+</span>でも、前方や後方のウィンドウを切り替えることができます。</p><h2 id=システムを構成する>システムを構成する
 <a class=anchor href=#%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%82%92%e6%a7%8b%e6%88%90%e3%81%99%e3%82%8b>#</a></h2><p>システムアプリ（<code>regolith-control-center</code>として知られています）は、Wi−Fi・Bluetoothの設定、アプリ関連の設定、ユーザーのセットアップといった、共通の設定タスクの主要なインターフェースです。このアプリは
 <span class=text-nowrap><span class="badge badge-warning">super</span>
-<span class="badge badge-warning">c</span></span>
-キーバインドか、ランチャーの<code>Regolith Settings</code>アプリから起動できます。</p><p><img src=/regolith-gnome-settings.png alt></p><h2 id=キーバインドを表示する>キーバインドを表示する
+<span class="badge badge-warning">c</span>
+</span>キーバインドか、ランチャーの<code>Regolith Settings</code>アプリから起動できます。</p><p><img src=/regolith-gnome-settings.png alt></p><h2 id=キーバインドを表示する>キーバインドを表示する
 <a class=anchor href=#%e3%82%ad%e3%83%bc%e3%83%90%e3%82%a4%e3%83%b3%e3%83%89%e3%82%92%e8%a1%a8%e7%a4%ba%e3%81%99%e3%82%8b>#</a></h2><p>Regolithデスクトップで使用されるすべてのキーバインドを<a href=https://github.com/regolith-linux/ilia><code>ilia</code></a>によって表示、ソート、実行することができます。このダイアログは
 <span class=text-nowrap><span class="badge badge-warning">super</span>
 <span class="badge badge-warning">shift</span>
-<span class="badge badge-warning">?</span></span>
-で起動することができます。</p><p><img src=/regolith-ilia-keybindings.png alt></p><h2 id=通知を管理する>通知を管理する
+<span class="badge badge-warning">?</span>
+</span>で起動することができます。</p><p><img src=/regolith-ilia-keybindings.png alt></p><h2 id=通知を管理する>通知を管理する
 <a class=anchor href=#%e9%80%9a%e7%9f%a5%e3%82%92%e7%ae%a1%e7%90%86%e3%81%99%e3%82%8b>#</a></h2><p>Regolithデスクトップ通知システムは、ユーザーの作業を妨げる可能性のあるポップアップを防ぐように設計されています。通知は
 <span class=text-nowrap><span class="badge badge-warning">super</span>
-<span class="badge badge-warning">n</span></span>
-で<a href=https://github.com/regolith-linux/ilia><code>ilia</code></a>から表示・管理することができます。削除や通知のグループ化など、特定のキーバインドについては<code>help</code>タブのダイアログから見つけることができます。ユーザーが現在の通知状態の表示を変更する場合、ステータスインジケーターの<code>i3xrocks-rofication</code>がシステムのパッケージマネージャーによってインストールされることがあります。これにより、重要な通知と通常の通知の未読件数がバーに表示されます。</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/regolith-linux/regolith-desktop-website/commit/e7daf896e83a904b94940763256ba469e22b114f title="最終更新者 NPL | November 10, 2024" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>November 10, 2024</span></a></div></div><script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
-document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>
+<span class="badge badge-warning">n</span>
+</span>で<a href=https://github.com/regolith-linux/ilia><code>ilia</code></a>から表示・管理することができます。削除や通知のグループ化など、特定のキーバインドについては<code>help</code>タブのダイアログから見つけることができます。ユーザーが現在の通知状態の表示を変更する場合、ステータスインジケーターの<code>i3xrocks-rofication</code>がシステムのパッケージマネージャーによってインストールされることがあります。これにより、重要な通知と通常の通知の未読件数がバーに表示されます。</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/regolith-linux/regolith-desktop-website/commit/3d64bf2c69c1bae5332e1a03ca8ffb3c322affe1 title='最終更新者 Khosrow Moossavi | 1月 5, 2025' target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt>
+<span>1月 5, 2025</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>

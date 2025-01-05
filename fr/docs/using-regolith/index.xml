@@ -1,6 +1,136 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Utilisation on Regolith Desktop</title><link>https://regolith-desktop.com/fr/docs/using-regolith/</link><description>Recent content in Utilisation on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-desktop.com/fr/docs/using-regolith/index.xml" rel="self" type="application/rss+xml"/><item><title>Premier lancement</title><link>https://regolith-desktop.com/fr/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/using-regolith/first-launch/</guid><description>Premier lancement # L&amp;rsquo;interface par défaut de Regolith ne contient aucune indication visuelle sur la façon de lancer des applications ou d&amp;rsquo;effectuer d&amp;rsquo;autres tâches courantes. Cela peut rendre la première expérience un peu confuse. Cependant, l&amp;rsquo;utilisation de l&amp;rsquo;interface de Regolith est relativement simple si on se souvient des deux raccourcis clavier suivants:
-Action Raccourci clavier But Liste des raccourcis clavier super shift ?</description></item><item><title>Les bases</title><link>https://regolith-desktop.com/fr/docs/using-regolith/basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/using-regolith/basics/</guid><description>Bien que nous couvrirons l&amp;rsquo;ensemble du fonctionnement de Regolith dans d&amp;rsquo;autres parties de la documentation, cette page couvre les cas d&amp;rsquo;utilisations basiques.
-Utilisation # Lancer une application # Après la première connexion, l&amp;rsquo;écran contiendra une barre sur le bas et quelques raccourcis clavier dans un dialogue. Le but de ce dialogue est d&amp;rsquo;aider l&amp;rsquo;utilisateur à trouver et se souvenir les raccourcis clavier pour diverses actions sur l&amp;rsquo;environnement de bureau.</description></item><item><title>Configuration</title><link>https://regolith-desktop.com/fr/docs/using-regolith/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/using-regolith/configuration/</guid><description>Paquets recommandés pour les nouveaux utilisateurs # Thèmes (looks) # Installer tous les thèmes officiels de Regolith:
-sudo apt install regolith-look-* NOTE: Cela va télécharger plusieurs fonts et images. Si vous souhaitez minimiser l&amp;rsquo;utilisateur de votre disque, vous pouvez désinstaller les thèmes que nous n&amp;rsquo;utilisez pas.
-Indicateurs de statut # La commande suivante installe les indicateurs de statut recommandés pour les nouveaux utilisateurs:
-sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory Pour supprimer certains de ces indicateurs plus tard, désinstallez-les simplement de votre système:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Utilisation on Regolith Desktop</title><link>https://regolith-desktop.com/fr/docs/using-regolith/</link><description>Recent content in Utilisation on Regolith Desktop</description><generator>Hugo</generator><language>fr</language><atom:link href="https://regolith-desktop.com/fr/docs/using-regolith/index.xml" rel="self" type="application/rss+xml"/><item><title>Premier lancement</title><link>https://regolith-desktop.com/fr/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/using-regolith/first-launch/</guid><description>&lt;h1 id="premier-lancement">
+ Premier lancement
+ &lt;a class="anchor" href="#premier-lancement">#&lt;/a>
+&lt;/h1>
+&lt;hr>
+&lt;p>L&amp;rsquo;interface par défaut de Regolith ne contient aucune indication visuelle sur la façon de lancer des applications ou d&amp;rsquo;effectuer d&amp;rsquo;autres tâches courantes.
+Cela peut rendre la première expérience un peu confuse. Cependant, l&amp;rsquo;utilisation de l&amp;rsquo;interface de Regolith est relativement simple si on se souvient des
+deux raccourcis clavier suivants:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Action&lt;/th>
+ &lt;th>Raccourci clavier&lt;/th>
+ &lt;th>But&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Liste des raccourcis clavier&lt;/td>
+ &lt;td>
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+ &lt;span class="badge badge-warning">shift&lt;/span>
+ 
+ &lt;span class="badge badge-warning">?&lt;/span>
+ 
+&lt;/span>
+&lt;/td>
+ &lt;td>Voir et exécuter les raccourcis claviers disponibles&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Lanceur d&amp;rsquo;application&lt;/td>
+ &lt;td>
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+ &lt;span class="badge badge-warning">space&lt;/span>
+ 
+&lt;/span>
+&lt;/td>
+ &lt;td>Lancer une application de bureau&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="la-touche-super">
+ La touche Super
+ &lt;a class="anchor" href="#la-touche-super">#&lt;/a>
+&lt;/h2>
+&lt;p>La plupart des raccourcis clavier que vous utiliserez avec Regolith commencent par la touche 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+&lt;/span>
+.
+Cette touche porte généralement l&amp;rsquo;inscription &amp;ldquo;WIN&amp;rdquo; ou le logo de MS Windows.
+Sur un Mac, c&amp;rsquo;est la touche Command 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">⌘&lt;/span>
+ 
+&lt;/span>
+. Pour la suite, cette touche sera simplement nommée la touche 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+&lt;/span>
+ mais gardez à l&amp;rsquo;esprit que vous pouvez modifier à quelle touche de votre clavier la touche 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+&lt;/span>
+ correspond dans la configuration.&lt;/p></description></item><item><title>Les bases</title><link>https://regolith-desktop.com/fr/docs/using-regolith/basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/using-regolith/basics/</guid><description>&lt;p>Bien que nous couvrirons l&amp;rsquo;ensemble du fonctionnement de Regolith dans d&amp;rsquo;autres parties de la documentation, cette page couvre les cas d&amp;rsquo;utilisations basiques.&lt;/p>
+&lt;h1 id="utilisation">
+ Utilisation
+ &lt;a class="anchor" href="#utilisation">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="lancer-une-application">
+ Lancer une application
+ &lt;a class="anchor" href="#lancer-une-application">#&lt;/a>
+&lt;/h2>
+&lt;p>Après la première connexion, l&amp;rsquo;écran contiendra une barre sur le bas et quelques raccourcis clavier dans un dialogue.
+Le but de ce dialogue est d&amp;rsquo;aider l&amp;rsquo;utilisateur à trouver et se souvenir les raccourcis clavier pour diverses actions sur l&amp;rsquo;environnement de bureau.
+Il peut être caché en pressant la touche &lt;code>esc&lt;/code> et être ré-affiché avec 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+ &lt;span class="badge badge-warning">shift&lt;/span>
+ 
+ &lt;span class="badge badge-warning">?&lt;/span>
+ 
+&lt;/span>
+.
+Pour lancer une application, pressez 
+
+&lt;span class="text-nowrap">
+ 
+ &lt;span class="badge badge-warning">super&lt;/span>
+ 
+ &lt;span class="badge badge-warning">shift&lt;/span>
+ 
+ &lt;span class="badge badge-warning">?&lt;/span>
+ 
+&lt;/span>
+. et un dialogue similaire affichera les applications installées sur le système.
+Si vous commencez à taper le nom de l&amp;rsquo;application que vous souhaitez lancer, la liste sera filtrée. Vous pouvez aussi scroller dans la liste avec les touches de votre clavier.&lt;/p></description></item><item><title>Configuration</title><link>https://regolith-desktop.com/fr/docs/using-regolith/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/using-regolith/configuration/</guid><description>&lt;h1 id="paquets-recommandés-pour-les-nouveaux-utilisateurs">
+ Paquets recommandés pour les nouveaux utilisateurs
+ &lt;a class="anchor" href="#paquets-recommand%c3%a9s-pour-les-nouveaux-utilisateurs">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="thèmes-looks">
+ Thèmes (looks)
+ &lt;a class="anchor" href="#th%c3%a8mes-looks">#&lt;/a>
+&lt;/h2>
+&lt;p>Installer tous les thèmes officiels de Regolith:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>sudo apt install regolith-look-*
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>NOTE: Cela va télécharger plusieurs fonts et images. Si vous souhaitez minimiser l&amp;rsquo;utilisateur de votre disque, vous pouvez désinstaller les thèmes que nous n&amp;rsquo;utilisez pas.&lt;/p>
+&lt;h2 id="indicateurs-de-statut">
+ Indicateurs de statut
+ &lt;a class="anchor" href="#indicateurs-de-statut">#&lt;/a>
+&lt;/h2>
+&lt;p>La commande suivante installe les indicateurs de statut recommandés pour les nouveaux utilisateurs:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Pour supprimer certains de ces indicateurs plus tard, désinstallez-les simplement de votre système:&lt;/p></description></item></channel></rss>

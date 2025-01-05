@@ -1,27 +1,271 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ハウツー on Regolith Desktop</title><link>https://regolith-desktop.com/ja/docs/howtos/</link><description>Recent content in ハウツー on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://regolith-desktop.com/ja/docs/howtos/index.xml" rel="self" type="application/rss+xml"/><item><title>i3設定のカスタマイズ</title><link>https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/</guid><description>Regolithの既定の動作 # 既定の設定は/usr/share/regolith/i3/config.dに保存されています。これらはアルファベット順に読み込まれます。次に、~/.config/regolith3/i3/config.dのユーザー設定がアルファベット順に読み込みまれます。Regolithの既定の設定はXresources値の設定や、ユーザー設定の追加や、aptによる既定の設定の追加・削除でカスタマイズできるように構築されています。これにより、Regolithではi3のカスタマイズ方法に、設定をクリーンにするため、個別に、もしくは組み合わせて使用できる複数のアプローチがあります。
-Xresourcesによるキーバインド・文字列・プログラム名・色といった、オーバーライド値の使用 aptによるRegolithの既定ファイルを追加や削除 独自の設定ファイルの追加 Regolithの設定の大規模の置き換え Xresources変数を設定する方法 # 次の設定例（/usr/share/regolith/i3/config.d/80_compositor）より、$wm.program.compositorを設定することで、既存のi3設定ファイルを編集したりオーバーライドすることなく、使用したいコンポジターを読み込むようにカスタマイズすることができます。
-Regolithバージョン3.0ではXresourceキーが&amp;quot;i3-wm&amp;quot;から&amp;quot;wm&amp;quot;に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を&amp;quot;wm&amp;quot;から&amp;quot;i3-wm&amp;quot;として使用してください。例として、Regolith 1.xと2.xではwm.foo.barはi3-wm.foo.barに変更されます。 set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init exec_always --no-startup-id $wm.program.compositor これを行うには、~/.config/regolith3/Xresourcesに以下の行を追加するだけでできます。
-# 自作のコンポジターを使用する wm.program.compositor: /usr/local/bin/my-compositor 同様に、/usr/share/regolith/i3/config.dのファイルを基にしたXresourcesで他のオプションのオーバーライドをすることもできます。
-## 間隔の設定 wm.gaps.inner.size: 1 ## 分割線の設定 wm.window.border.size: 3 wm.client.focused.color.child_border: #AAD3E9 ## ワークスペースの名前 wm.workspace.01.name: 1:FOO 詳しくは、Xresourcesに関するより詳細なディスカッションを参照してください。
-既定の部分設定をアンインストールする方法 # 提供された既定の部分設定を全体的に置き換えたり削除したい場合、提供された部分をaptでパッケージとして削除することができます。
-削除したい部分設定を提供するパッケージの名前を特定するには次のコマンドを実行します。
-dpkg -S /usr/share/doc/regolith-i3-workspace-config 出力結果にパッケージの名前が含まれている場合：
-regolith-i3-workspace-config: /usr/share/doc/regolith-i3-workspace-config このパッケージで提供されるファイルの完全なリストを確認し、何を削除しようとしているのかわかっている場合：
-dpkg -L regolith-i3-workspace-config 部分設定を削除するには：
-sudo apt remove regolith-i3-workspace-config 既定の部分設定をカスタマイズする方法 # 警告：Regolithの既定部分のみをカスタマイズする場合、~/.config/regolith3/i3/configファイルが存在しないことを確認してください。これはRegolithの既定をオーバーライドするため、このハウツーの内容と互換性がありません。 初めに、ユーザーの部分設定のディレクトリが存在することを確認します。</description></item><item><title>コンポジターのカスタマイズ</title><link>https://regolith-desktop.com/ja/docs/howtos/customize-compositor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/customize-compositor/</guid><description>コンポジターをカスタマイズする方法（仮想エフェクト） # 異常な視覚的不具合やグラフィックパフォーマンスの低下を経験している場合は、 このセクションに特に注意してください。 コンポジターは、ウィンドウをスクリーンに表示するときに仮想エフェクトを適用するUIコンポーネントです。 いくつかのデスクトップ環境ではコンポジターがウィンドウマネージャーに直接統合されており、 仮想エフェクトを切り替えたり無効にすることができます。 Regolithでは、コンポジターはパッケージングシステムで繋ぎ変え可能な“extension point”として定義されます。 これは、コンポジターを含むパッケージをインストールすることでコンポジターを切り替えることができるということを意味します。 基礎となるパッケージングシステムは競合が起きないことを確認し、 コンポジターを含めたすべての依存関係が インストールされていることを確認してください。
-警告：Regolith 2.xでは、既定のコンポジターは&amp;quot;コンポジターなし&amp;quot;です。 Regolith 1.xでは、既定のコンポジターはPicomでした。 利用可能なコンポジターを探す # Regolithで動作するすべてのコンポジター設定は、 以下のコマンドで一覧表示されます：
-apt search regolith-compositor- 以下の項目を見つけることができます：
-regolith-compositor-none [既定]：コンポジターなし。 最高のパフォーマンス、仮想エフェクトなし。 regolith-compositor-picom-glx：picomを使用します。 画面のつなぎ目の解決や仮想エフェクトの追加するとき、多くのユーザーに推奨されます。comptonからフォークされ、モダンで管理されています。 Regolith 1.6の既定のコンポジターでした。 regolith-compositor-compton-glx：既にメンテナンスされていない、 picomの祖先です。 regolith-compositor-xcompmgr：初期のコンポジターで、より複雑なコンポジターに問題がある場合、 より安定したパフォーマンスを提供する可能性があります。 コンポジターのインストール # i3-wmでコンポジターを管理する方法により、コンポジターの変更をエフェクトに適用するため、 ログアウトしてから戻る必要があります。 i3の再起動では代替できません。 次のパッケージインストールコマンドを実行して、コンポジターを交換します。 picomをインストールする場合：
-apt install regolith-compositor-picom 一度ログアウトして戻ってから新しいコンポジターを読み込みます。 プロセスのリストからpicomが動作していることを確認することができます：
-ps aux | grep picom Regolithの既定のコンポジター設定のオーバーライド # Compton/Picom # 独自のCompton/Picomコンポジターの設定を提供するには、 既定値をコピーするか独自に用意し、~/.config/regolith3/picom/configに保存します。 次のセッションでは、既定の設定である/etc/regolith/picom/configの代わりに 読み込まれます。</description></item><item><title>Xresourcesのオーバーライド</title><link>https://regolith-desktop.com/ja/docs/howtos/override-xres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/override-xres/</guid><description>Regolithは、Xresourcesシステムに依存し、統合されたインターフェース設定を提供しています。Xresourcesの値を変更することで、Regolithは、ユーザーインターフェイスの更新、カスタム動作の指定、バーの一部のblockletの特定の形式の定義などの方法でカスタマイズできます。
-Regolithでは、Xresourcesの値は、独自のXresourcesファイルを用意する方法か、既存のXresourcesの値をオーバーライドする方法の2つの方法で変更できます。後者のアプローチは、Regolithが新しいバージョンにアップグレードする際にカスタマイズを妨げる可能性を下げるため、強く推奨されます。Xresourcesツリーを完全にコピーする場合、将来のバージョンで破損した変更を手動で統合する必要があります。 初期化 # Regolithセッションが開始されるとき、以下の順番でXresourcesが読み込まれます：
-ファイル オプション 注意 ~/.Xresources Y Regolith以外の設定を対象にしています /usr/share/regolith-look/**/ N RegolithのXresourcesは外観と関連付けられています ~/.config/regolith3/Xresources Y 特定のオーバーライドをXresourcesの既定に適用します 冗長設定の指定を必要とせず、長期にわたって管理しやすいため、カスタマイズには~/.config/regolith3/Xresourcesを使用することを推奨します。
-変更可能な値の決定 # xrdbツールは既存のXresourcesの値をリスト表示するときに使用することができます。Regolith 2.1リリースには、いくつか既存のオーバーライドが存在します：
-$ xrdb -query [...] gnome.terminal.scrollbar: never gnome.terminal.use-transparent-background: true gtk.document_font_name: Sans 12 gtk.font_name: Bitstream Vera Sans 12 gtk.icon_theme_name: Papirus-Dark gtk.monospace_font_name: BitstreamVeraSansMono Nerd Font 13 gtk.theme_name: Ayu-Mirage-Dark wm.bar.background.color: #1F2430 [...] 参考例 # 以下のコマンドはファイルの最後にテキストを付け加えるため、コマンドを複数回実行すると、重複した入力が発生することに注意してください。</description></item><item><title>バーステータスインジケーターの変更</title><link>https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/</guid><description>ステータスインジケーターの追加と削除 # ステータスインジケーターの検索 # $ apt search i3xrocks- ステータスインジケーターのインストール # $ sudo apt install i3xrocks-memory $ regolith-look refresh i3バーのカスタマイズ # バーにある各インジケーターはファイルで管理されます。バーのステータスインジケーターの位置に対応しています。例として、ファイル名が10_で始まるものは、 20_で始まる設定ファイルのインジケーターより前に配置されることを意味します。各ファイルの中には、i3xrocksがスクリプトを実行するために使用する情報があり、最終的にバーに表示されるデータを返します。いくつかのステータスインジケーターは設定パラメーターが存在し、ユーザーの好みに合わせることができます。例えば、バッテリーの状態を頻繁に変更するのがよい場合、調べる間隔を更新することができます。バーをカスタマイズするために最初にするべきことは、表示したいインジケーターを/usr/share/i3xrocks/conf.d/から~/.config/regolith3/i3xrocks/conf.dにコピーすることです。 ~/.config/regolith3/i3xrocks/conf.d内の各ファイルは好きなように変更できます。バーのステータスインジケーターを変更するには、ファイルの名前を好きな並び順に変更するだけです。
-変更を加えたあとは、セッションを再読み込みすることで、新しい設定ファイルに基づいてバーが更新されるはずです。
-例えば、バーにおけるバッテリーとトラフィックのブロックの変更と通知を非表示にしたいとき、以下の操作を行います。
-$ ls /usr/share/i3xrocks/conf.d/ 01_setup 30_net-traffic 80_battery 80_rofication 90_time $ mkdir -p ~/.config/regolith3/i3xrocks/conf.d $ cp /usr/share/i3xrocks/conf.d/01_setup ~/.config/regolith3/i3xrocks/conf.d/01_setup $ cp /usr/share/i3xrocks/conf.d/80_battery ~/.config/regolith3/i3xrocks/conf.d/30_battery $ cp /usr/share/i3xrocks/conf.d/30_net-traffic ~/.config/regolith3/i3xrocks/conf.d/80_net-traffic $ regolith-look refresh 上記の操作では、以下の操作が実行されます。
-Regolithが作成したディレクトリに存在する現在のi3xrocksモジュールが一覧表示されます ユーザー設定が存在するディレクトリに~/.config/regolith3/i3xrocks/conf.dが作成されます 3つのファイルが、アプリケーションが作成したディレクトリからユーザーが作成したディレクトリにコピーされます。これにより、この記事の冒頭で説明したようにユーザーがn_の番号を変更すると、順番が変更されます。 regolith-look refreshコマンドでバーステータスインジケーターの再読み込みが行われます 注意：ユーザーディレクトリの~/.config/regolith3/i3xrocks/conf.dに複数のブロック設定が存在する場合、既定である/usr/share/i3xrocks/conf.d/は無視されます。
-さらに深く読み込む # 設定のリファレンスページには、Regolith Linuxを使うときの設定ファイルについての詳細な項目があります。</description></item><item><title>設定ファイルのステージ</title><link>https://regolith-desktop.com/ja/docs/howtos/stage-configs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/stage-configs/</guid><description>Xresources値を上書きしたり新しく用意したいのみであれば、設定のステージングは不必要であり推奨されません。Xresources値を上書きするには分割されたページをご覧ください。 Regolithでは様々なコンポーネントの動作や外観を決定するためにいくつもの設定ファイルを使用します。それらのファイルを直接簡単に編集することができると、あらゆるユーザーが機能アップデートを上書きする危険性のある設定を実行するでしょう。Debianのパッケージングシステムはユーザーに対し、アップデートを受けるか現在のファイルを維持するのかを訪ねますが、ユーザーがファイルの部分更新を受ける場合には意図しない影響が存在するかもしれません。Regolithは、ログイン後、ユーザーがステージした設定ファイルを探し出し、それらが存在する場合は 既定のファイルの代わりに読み込みます 。これは、ユーザーがファイルの設定をより詳細に管理できるため、ファイルを直接編集することよりも推奨されます。このページでは、これらのファイルの作成方法について解説します。
-変更したい内容によっては、i3設定ファイルの場合は独自のコピーが必要になる場合があります。Regolithの外観を変更する方法を探している場合、Xresourcesですべて解決できます。キーバインドの更新や追加、コンポーネントの入れ替えなどは、i3設定ファイルをステージする必要があるでしょう。
-i3設定 # 既定のRegolith i3設定ファイルをホームディレクトリにコピーする。 $ mkdir -p ~/.config/regolith3/i3 $ cp /etc/regolith/i3/config ~/.config/regolith3/i3/config ログアウトして戻る。Regolithセッションがユーザーがステージしたファイルを自動で認識して読み込むでしょう。 変更の確認 # i3 --moreversionを実行して確認し、結果として表示された設定ファイルに注視する。作成直後であればコピーすべきです。そうしない場合は、パスが正しいことを確認してください。正確であればRegolithが~/.config/regolith3/i3/configを読み込みます。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ハウツー on Regolith Desktop</title><link>https://regolith-desktop.com/ja/docs/howtos/</link><description>Recent content in ハウツー on Regolith Desktop</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sat, 04 Jan 2025 23:00:07 -0500</lastBuildDate><atom:link href="https://regolith-desktop.com/ja/docs/howtos/index.xml" rel="self" type="application/rss+xml"/><item><title>i3設定のカスタマイズ</title><link>https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/</guid><description>&lt;h1 id="regolithの既定の動作">
+ Regolithの既定の動作
+ &lt;a class="anchor" href="#regolith%e3%81%ae%e6%97%a2%e5%ae%9a%e3%81%ae%e5%8b%95%e4%bd%9c">#&lt;/a>
+&lt;/h1>
+&lt;p>既定の設定は&lt;code>/usr/share/regolith/i3/config.d&lt;/code>に保存されています。これらはアルファベット順に読み込まれます。次に、&lt;code>~/.config/regolith3/i3/config.d&lt;/code>のユーザー設定がアルファベット順に読み込みまれます。Regolithの既定の設定は&lt;code>Xresources&lt;/code>値の設定や、ユーザー設定の追加や、&lt;code>apt&lt;/code>による既定の設定の追加・削除でカスタマイズできるように構築されています。これにより、Regolithではi3のカスタマイズ方法に、設定をクリーンにするため、個別に、もしくは組み合わせて使用できる複数のアプローチがあります。&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Xresources&lt;/code>によるキーバインド・文字列・プログラム名・色といった、オーバーライド値の使用&lt;/li>
+&lt;li>&lt;code>apt&lt;/code>によるRegolithの既定ファイルを追加や削除&lt;/li>
+&lt;li>独自の設定ファイルの追加&lt;/li>
+&lt;li>Regolithの設定の大規模の置き換え&lt;/li>
+&lt;/ul>
+&lt;h2 id="xresources変数を設定する方法">
+ &lt;code>Xresources&lt;/code>変数を設定する方法
+ &lt;a class="anchor" href="#xresources%e5%a4%89%e6%95%b0%e3%82%92%e8%a8%ad%e5%ae%9a%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95">#&lt;/a>
+&lt;/h2>
+&lt;p>次の設定例（&lt;code>/usr/share/regolith/i3/config.d/80_compositor&lt;/code>）より、&lt;code>$wm.program.compositor&lt;/code>を設定することで、既存のi3設定ファイルを編集したりオーバーライドすることなく、使用したいコンポジターを読み込むようにカスタマイズすることができます。&lt;/p>
+&lt;blockquote class="book-hint warning">
+ Regolithバージョン3.0ではXresourceキーが&amp;quot;i3-wm&amp;quot;から&amp;quot;wm&amp;quot;に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を&amp;quot;wm&amp;quot;から&amp;quot;i3-wm&amp;quot;として使用してください。例として、Regolith 1.xと2.xでは&lt;code>wm.foo.bar&lt;/code>は&lt;code>i3-wm.foo.bar&lt;/code>に変更されます。
+&lt;/blockquote>
+
+&lt;pre tabindex="0">&lt;code>set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init
+exec_always --no-startup-id $wm.program.compositor
+&lt;/code>&lt;/pre>&lt;p>これを行うには、&lt;code>~/.config/regolith3/Xresources&lt;/code>に以下の行を追加するだけでできます。&lt;/p>
+&lt;pre tabindex="0">&lt;code># 自作のコンポジターを使用する
+wm.program.compositor: /usr/local/bin/my-compositor
+&lt;/code>&lt;/pre>&lt;p>同様に、&lt;code>/usr/share/regolith/i3/config.d&lt;/code>のファイルを基にした&lt;code>Xresources&lt;/code>で他のオプションのオーバーライドをすることもできます。&lt;/p>
+&lt;pre tabindex="0">&lt;code>## 間隔の設定
+wm.gaps.inner.size: 1
+
+## 分割線の設定
+wm.window.border.size: 3
+wm.client.focused.color.child_border: #AAD3E9
+
+## ワークスペースの名前
+wm.workspace.01.name: 1:FOO
+&lt;/code>&lt;/pre>&lt;p>詳しくは、&lt;a href="https://regolith-desktop.com/ja/docs/howtos/override-xres/">&lt;code>Xresources&lt;/code>に関するより詳細なディスカッション&lt;/a>を参照してください。&lt;/p>
+&lt;h2 id="既定の部分設定をアンインストールする方法">
+ 既定の部分設定をアンインストールする方法
+ &lt;a class="anchor" href="#%e6%97%a2%e5%ae%9a%e3%81%ae%e9%83%a8%e5%88%86%e8%a8%ad%e5%ae%9a%e3%82%92%e3%82%a2%e3%83%b3%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95">#&lt;/a>
+&lt;/h2>
+&lt;p>提供された既定の部分設定を全体的に置き換えたり削除したい場合、提供された部分を&lt;code>apt&lt;/code>でパッケージとして削除することができます。&lt;/p>
+&lt;p>削除したい部分設定を提供するパッケージの名前を特定するには次のコマンドを実行します。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>dpkg -S /usr/share/doc/regolith-i3-workspace-config
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>出力結果にパッケージの名前が含まれている場合：&lt;/p>
+&lt;pre tabindex="0">&lt;code>regolith-i3-workspace-config: /usr/share/doc/regolith-i3-workspace-config
+&lt;/code>&lt;/pre>&lt;p>このパッケージで提供されるファイルの完全なリストを確認し、何を削除しようとしているのかわかっている場合：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>dpkg -L regolith-i3-workspace-config
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>部分設定を削除するには：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>sudo apt remove regolith-i3-workspace-config
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="既定の部分設定をカスタマイズする方法">
+ 既定の部分設定をカスタマイズする方法
+ &lt;a class="anchor" href="#%e6%97%a2%e5%ae%9a%e3%81%ae%e9%83%a8%e5%88%86%e8%a8%ad%e5%ae%9a%e3%82%92%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95">#&lt;/a>
+&lt;/h2>
+&lt;blockquote class="book-hint warning">
+ 警告：Regolithの既定部分のみをカスタマイズする場合、&lt;code>~/.config/regolith3/i3/config&lt;/code>ファイルが存在&lt;strong>しない&lt;/strong>ことを確認してください。これはRegolithの既定をオーバーライドするため、このハウツーの内容と互換性がありません。
+&lt;/blockquote>
+
+&lt;p>初めに、ユーザーの部分設定のディレクトリが存在することを確認します。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>mkdir -p ~/.config/regolith3/i3/config.d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>次に、既定の設定を独自の設定ディレクトリにコピーします。&lt;/p></description></item><item><title>コンポジターのカスタマイズ</title><link>https://regolith-desktop.com/ja/docs/howtos/customize-compositor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/customize-compositor/</guid><description>&lt;h1 id="コンポジターをカスタマイズする方法仮想エフェクト">
+ コンポジターをカスタマイズする方法（仮想エフェクト）
+ &lt;a class="anchor" href="#%e3%82%b3%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%bf%e3%83%bc%e3%82%92%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95%e4%bb%ae%e6%83%b3%e3%82%a8%e3%83%95%e3%82%a7%e3%82%af%e3%83%88">#&lt;/a>
+&lt;/h1>
+&lt;blockquote class="book-hint info">
+ 異常な視覚的不具合やグラフィックパフォーマンスの低下を経験している場合は、
+このセクションに特に注意してください。
+&lt;/blockquote>
+
+&lt;p>コンポジターは、ウィンドウをスクリーンに表示するときに仮想エフェクトを適用するUIコンポーネントです。
+いくつかのデスクトップ環境ではコンポジターがウィンドウマネージャーに直接統合されており、
+仮想エフェクトを切り替えたり無効にすることができます。
+Regolithでは、コンポジターはパッケージングシステムで繋ぎ変え可能な“extension point”として定義されます。
+これは、コンポジターを含むパッケージをインストールすることでコンポジターを切り替えることができるということを意味します。
+基礎となるパッケージングシステムは競合が起きないことを確認し、
+コンポジターを含めたすべての依存関係が
+インストールされていることを確認してください。&lt;/p>
+&lt;blockquote class="book-hint warning">
+ 警告：Regolith 2.xでは、既定のコンポジターは&amp;quot;コンポジターなし&amp;quot;です。
+Regolith 1.xでは、既定のコンポジターはPicomでした。
+&lt;/blockquote>
+
+&lt;h2 id="利用可能なコンポジターを探す">
+ 利用可能なコンポジターを探す
+ &lt;a class="anchor" href="#%e5%88%a9%e7%94%a8%e5%8f%af%e8%83%bd%e3%81%aa%e3%82%b3%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%bf%e3%83%bc%e3%82%92%e6%8e%a2%e3%81%99">#&lt;/a>
+&lt;/h2>
+&lt;p>Regolithで動作するすべてのコンポジター設定は、
+以下のコマンドで一覧表示されます：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>apt search regolith-compositor-
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>以下の項目を見つけることができます：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>regolith-compositor-none&lt;/code> &lt;strong>[既定]&lt;/strong>：コンポジターなし。
+最高のパフォーマンス、仮想エフェクトなし。&lt;/li>
+&lt;li>&lt;code>regolith-compositor-picom-glx&lt;/code>：&lt;code>picom&lt;/code>を使用します。
+画面のつなぎ目の解決や仮想エフェクトの追加するとき、多くのユーザーに推奨されます。&lt;code>compton&lt;/code>からフォークされ、モダンで管理されています。
+Regolith 1.6の既定のコンポジターでした。&lt;/li>
+&lt;li>&lt;code>regolith-compositor-compton-glx&lt;/code>：既にメンテナンスされていない、
+&lt;code>picom&lt;/code>の祖先です。&lt;/li>
+&lt;li>&lt;code>regolith-compositor-xcompmgr&lt;/code>：初期のコンポジターで、より複雑なコンポジターに問題がある場合、
+より安定したパフォーマンスを提供する可能性があります。&lt;/li>
+&lt;/ul>
+&lt;h2 id="コンポジターのインストール">
+ コンポジターのインストール
+ &lt;a class="anchor" href="#%e3%82%b3%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%bf%e3%83%bc%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab">#&lt;/a>
+&lt;/h2>
+&lt;blockquote class="book-hint info">
+ i3-wmでコンポジターを管理する方法により、&lt;strong>コンポジターの変更をエフェクトに適用するため、
+ログアウトしてから戻る必要があります&lt;/strong>。
+i3の再起動では代替できません。
+&lt;/blockquote>
+
+&lt;p>次のパッケージインストールコマンドを実行して、コンポジターを交換します。
+&lt;code>picom&lt;/code>をインストールする場合：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>apt install regolith-compositor-picom
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>一度ログアウトして戻ってから&lt;/strong>新しいコンポジターを読み込みます。
+プロセスのリストから&lt;code>picom&lt;/code>が動作していることを確認することができます：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>ps aux | grep picom
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="regolithの既定のコンポジター設定のオーバーライド">
+ Regolithの既定のコンポジター設定のオーバーライド
+ &lt;a class="anchor" href="#regolith%e3%81%ae%e6%97%a2%e5%ae%9a%e3%81%ae%e3%82%b3%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%bf%e3%83%bc%e8%a8%ad%e5%ae%9a%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%90%e3%83%bc%e3%83%a9%e3%82%a4%e3%83%89">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="comptonpicom">
+ Compton/Picom
+ &lt;a class="anchor" href="#comptonpicom">#&lt;/a>
+&lt;/h3>
+&lt;p>独自のCompton/Picomコンポジターの設定を提供するには、
+既定値をコピーするか独自に用意し、&lt;code>~/.config/regolith3/picom/config&lt;/code>に保存します。
+次のセッションでは、既定の設定である&lt;code>/etc/regolith/picom/config&lt;/code>の代わりに
+読み込まれます。&lt;/p></description></item><item><title>Xresourcesのオーバーライド</title><link>https://regolith-desktop.com/ja/docs/howtos/override-xres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/override-xres/</guid><description>&lt;p>Regolithは、&lt;a href="https://en.wikipedia.org/wiki/X_resources">Xresourcesシステム&lt;/a>に依存し、統合されたインターフェース設定を提供しています。&lt;code>Xresources&lt;/code>の値を変更することで、Regolithは、ユーザーインターフェイスの更新、カスタム動作の指定、バーの一部のblockletの特定の形式の定義などの方法でカスタマイズできます。&lt;/p>
+&lt;blockquote class="book-hint info">
+ Regolithでは、&lt;code>Xresources&lt;/code>の値は、独自の&lt;code>Xresources&lt;/code>ファイルを用意する方法か、既存の&lt;code>Xresources&lt;/code>の値をオーバーライドする方法の2つの方法で変更できます。後者のアプローチは、Regolithが新しいバージョンにアップグレードする際にカスタマイズを妨げる可能性を下げるため、強く推奨されます。&lt;code>Xresources&lt;/code>ツリーを完全にコピーする場合、将来のバージョンで破損した変更を手動で統合する必要があります。
+&lt;/blockquote>
+
+&lt;h2 id="初期化">
+ 初期化
+ &lt;a class="anchor" href="#%e5%88%9d%e6%9c%9f%e5%8c%96">#&lt;/a>
+&lt;/h2>
+&lt;p>Regolithセッションが開始されるとき、以下の順番でXresourcesが読み込まれます：&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>ファイル&lt;/th>
+ &lt;th>オプション&lt;/th>
+ &lt;th>注意&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>~/.Xresources&lt;/code>&lt;/td>
+ &lt;td>Y&lt;/td>
+ &lt;td>Regolith以外の設定を対象にしています&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>/usr/share/regolith-look/**/&lt;/code>&lt;/td>
+ &lt;td>N&lt;/td>
+ &lt;td>Regolithの&lt;code>Xresources&lt;/code>は外観と関連付けられています&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>~/.config/regolith3/Xresources&lt;/code>&lt;/td>
+ &lt;td>Y&lt;/td>
+ &lt;td>特定のオーバーライドを&lt;code>Xresources&lt;/code>の既定に適用します&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>冗長設定の指定を必要とせず、長期にわたって管理しやすいため、カスタマイズには&lt;code>~/.config/regolith3/Xresources&lt;/code>を使用することを推奨します。&lt;/p>
+&lt;h2 id="変更可能な値の決定">
+ 変更可能な値の決定
+ &lt;a class="anchor" href="#%e5%a4%89%e6%9b%b4%e5%8f%af%e8%83%bd%e3%81%aa%e5%80%a4%e3%81%ae%e6%b1%ba%e5%ae%9a">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;code>xrdb&lt;/code>ツールは既存の&lt;code>Xresources&lt;/code>の値をリスト表示するときに使用することができます。Regolith 2.1リリースには、&lt;a href="https://regolith-desktop.com/ja/docs/reference/xresources/">いくつか既存のオーバーライドが存在します&lt;/a>：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>$ xrdb -query
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[...]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gnome.terminal.scrollbar:	never
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gnome.terminal.use-transparent-background:	true
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gtk.document_font_name:	Sans 12
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gtk.font_name:	Bitstream Vera Sans 12
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gtk.icon_theme_name:	Papirus-Dark
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gtk.monospace_font_name:	BitstreamVeraSansMono Nerd Font 13
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gtk.theme_name:	Ayu-Mirage-Dark
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wm.bar.background.color:	#1F2430
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[...]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="参考例">
+ 参考例
+ &lt;a class="anchor" href="#%e5%8f%82%e8%80%83%e4%be%8b">#&lt;/a>
+&lt;/h2>
+&lt;p>以下のコマンドはファイルの最後にテキストを付け加えるため、コマンドを複数回実行すると、重複した入力が発生することに注意してください。&lt;/p>
+&lt;h3 id="例---uiを高dpi画面に更新する">
+ 例 - UIを高DPI画面に更新する
+ &lt;a class="anchor" href="#%e4%be%8b---ui%e3%82%92%e9%ab%98dpi%e7%94%bb%e9%9d%a2%e3%81%ab%e6%9b%b4%e6%96%b0%e3%81%99%e3%82%8b">#&lt;/a>
+&lt;/h3>
+&lt;p>&lt;code>~/.config/regolith3/Xresources&lt;/code>のオーバーライドファイルを使用する場合、変更したい値を指定するだけです。&lt;code>xrdb&lt;/code>ツールを使用して、現在の値を変更することもできます。&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>~/.config/regolith3/Xresources&lt;/code>ファイルに次の値を作成もしくは追加する：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>Xft.dpi: 192
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>&lt;code>Xresources&lt;/code>設定を再読込する:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>$ regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>新規のターミナルを開き、変更が有効になっていることを確認する。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>192&lt;/code>は参考例の値であり、必要に応じて変更してください。&lt;/p></description></item><item><title>バーステータスインジケーターの変更</title><link>https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/</guid><description>&lt;h1 id="ステータスインジケーターの追加と削除">
+ ステータスインジケーターの追加と削除
+ &lt;a class="anchor" href="#%e3%82%b9%e3%83%86%e3%83%bc%e3%82%bf%e3%82%b9%e3%82%a4%e3%83%b3%e3%82%b8%e3%82%b1%e3%83%bc%e3%82%bf%e3%83%bc%e3%81%ae%e8%bf%bd%e5%8a%a0%e3%81%a8%e5%89%8a%e9%99%a4">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="ステータスインジケーターの検索">
+ ステータスインジケーターの検索
+ &lt;a class="anchor" href="#%e3%82%b9%e3%83%86%e3%83%bc%e3%82%bf%e3%82%b9%e3%82%a4%e3%83%b3%e3%82%b8%e3%82%b1%e3%83%bc%e3%82%bf%e3%83%bc%e3%81%ae%e6%a4%9c%e7%b4%a2">#&lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>$ apt search i3xrocks-
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ステータスインジケーターのインストール">
+ ステータスインジケーターのインストール
+ &lt;a class="anchor" href="#%e3%82%b9%e3%83%86%e3%83%bc%e3%82%bf%e3%82%b9%e3%82%a4%e3%83%b3%e3%82%b8%e3%82%b1%e3%83%bc%e3%82%bf%e3%83%bc%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab">#&lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>$ sudo apt install i3xrocks-memory
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="customize-bar">
+ i3バーのカスタマイズ
+ &lt;a class="anchor" href="#customize-bar">#&lt;/a>
+&lt;/h1>
+&lt;p>バーにある各インジケーターはファイルで管理されます。バーのステータスインジケーターの位置に対応しています。例として、ファイル名が&lt;code>10_&lt;/code>で始まるものは、 &lt;code>20_&lt;/code>で始まる設定ファイルのインジケーターより前に配置されることを意味します。各ファイルの中には、&lt;code>i3xrocks&lt;/code>がスクリプトを実行するために使用する情報があり、最終的にバーに表示されるデータを返します。いくつかのステータスインジケーターは設定パラメーターが存在し、ユーザーの好みに合わせることができます。例えば、バッテリーの状態を頻繁に変更するのがよい場合、調べる間隔を更新することができます。バーをカスタマイズするために最初にするべきことは、表示したいインジケーターを&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>から&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>にコピーすることです。 &lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>内の各ファイルは好きなように変更できます。バーのステータスインジケーターを変更するには、ファイルの名前を好きな並び順に変更するだけです。&lt;/p>
+&lt;p>変更を加えたあとは、セッションを再読み込みすることで、新しい設定ファイルに基づいてバーが更新されるはずです。&lt;/p>
+&lt;p>例えば、バーにおけるバッテリーとトラフィックのブロックの変更と通知を非表示にしたいとき、以下の操作を行います。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>$ ls /usr/share/i3xrocks/conf.d/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>01_setup
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>30_net-traffic
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>80_battery
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>80_rofication
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>90_time
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ mkdir -p ~/.config/regolith3/i3xrocks/conf.d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ cp /usr/share/i3xrocks/conf.d/01_setup ~/.config/regolith3/i3xrocks/conf.d/01_setup
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ cp /usr/share/i3xrocks/conf.d/80_battery ~/.config/regolith3/i3xrocks/conf.d/30_battery
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ cp /usr/share/i3xrocks/conf.d/30_net-traffic ~/.config/regolith3/i3xrocks/conf.d/80_net-traffic
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>上記の操作では、以下の操作が実行されます。&lt;/p>
+&lt;ul>
+&lt;li>Regolithが作成したディレクトリに存在する現在の&lt;code>i3xrocks&lt;/code>モジュールが一覧表示されます&lt;/li>
+&lt;li>ユーザー設定が存在するディレクトリに&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>が作成されます&lt;/li>
+&lt;li>3つのファイルが、アプリケーションが作成したディレクトリからユーザーが作成したディレクトリにコピーされます。これにより、この記事の冒頭で説明したようにユーザーが&lt;code>n_&lt;/code>の番号を変更すると、順番が変更されます。&lt;/li>
+&lt;li>&lt;code>regolith-look refresh&lt;/code>コマンドで&lt;strong>バーステータスインジケーター&lt;/strong>の再読み込みが行われます&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>注意&lt;/strong>：ユーザーディレクトリの&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>に複数のブロック設定が存在する場合、既定である&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>は無視されます。&lt;/p>
+&lt;h1 id="さらに深く読み込む">
+ さらに深く読み込む
+ &lt;a class="anchor" href="#%e3%81%95%e3%82%89%e3%81%ab%e6%b7%b1%e3%81%8f%e8%aa%ad%e3%81%bf%e8%be%bc%e3%82%80">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://regolith-desktop.com/ja/docs/reference/configurations/">設定のリファレンスページ&lt;/a>には、Regolith Linuxを使うときの設定ファイルについての詳細な項目があります。&lt;/p></description></item><item><title>設定ファイルのステージ</title><link>https://regolith-desktop.com/ja/docs/howtos/stage-configs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/stage-configs/</guid><description>&lt;blockquote class="book-hint info">
+ &lt;code>Xresources&lt;/code>値を上書きしたり新しく用意したいのみであれば、設定のステージングは不必要であり推奨されません。&lt;code>Xresources&lt;/code>値を上書きするには&lt;a href="https://regolith-desktop.com/ja/docs/howtos/override-xres/">分割されたページ&lt;/a>をご覧ください。
+&lt;/blockquote>
+
+&lt;p>Regolithでは様々なコンポーネントの動作や外観を決定するためにいくつもの設定ファイルを使用します。それらのファイルを直接簡単に編集することができると、あらゆるユーザーが機能アップデートを上書きする危険性のある設定を実行するでしょう。Debianのパッケージングシステムはユーザーに対し、アップデートを受けるか現在のファイルを維持するのかを訪ねますが、ユーザーがファイルの部分更新を受ける場合には意図しない影響が存在するかもしれません。Regolithは、ログイン後、ユーザーがステージした設定ファイルを探し出し、それらが存在する場合は &lt;em>既定のファイルの代わりに読み込みます&lt;/em> 。これは、ユーザーがファイルの設定をより詳細に管理できるため、ファイルを直接編集することよりも推奨されます。このページでは、これらのファイルの作成方法について解説します。&lt;/p>
+&lt;p>変更したい内容によっては、i3設定ファイルの場合は独自のコピーが必要になる場合があります。Regolithの外観を変更する方法を探している場合、&lt;code>Xresources&lt;/code>ですべて解決できます。キーバインドの更新や追加、コンポーネントの入れ替えなどは、i3設定ファイルをステージする必要があるでしょう。&lt;/p>
+&lt;h2 id="i3設定">
+ i3設定
+ &lt;a class="anchor" href="#i3%e8%a8%ad%e5%ae%9a">#&lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>既定のRegolith i3設定ファイルをホームディレクトリにコピーする。&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>$ mkdir -p ~/.config/regolith3/i3
+$ cp /etc/regolith/i3/config ~/.config/regolith3/i3/config
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>ログアウトして戻る。Regolithセッションがユーザーがステージしたファイルを自動で認識して読み込むでしょう。&lt;/li>
+&lt;/ol>
+&lt;h3 id="変更の確認">
+ 変更の確認
+ &lt;a class="anchor" href="#%e5%a4%89%e6%9b%b4%e3%81%ae%e7%a2%ba%e8%aa%8d">#&lt;/a>
+&lt;/h3>
+&lt;ol>
+&lt;li>&lt;code>i3 --moreversion&lt;/code>を実行して確認し、結果として表示された設定ファイルに注視する。作成直後であればコピーすべきです。そうしない場合は、パスが正しいことを確認してください。正確であればRegolithが&lt;code>~/.config/regolith3/i3/config&lt;/code>を読み込みます。&lt;/li>
+&lt;/ol></description></item></channel></rss>
