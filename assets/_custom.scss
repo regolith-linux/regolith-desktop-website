@@ -184,3 +184,6 @@ img {
     box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
   }
   
+.highlight > pre {
+  background: var(--gray-100) !important;
+}
