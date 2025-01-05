@@ -1,5 +1,6 @@
 ---
 title: "Grundlegende Verwendung"
+linkTitle: "Grundlegende Verwendung"
 weight: 3
 description: >
  Lernen Sie zunächst die wichtigsten Teile von Regolith kennen.

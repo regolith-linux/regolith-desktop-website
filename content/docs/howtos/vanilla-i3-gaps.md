@@ -1,5 +1,6 @@
 ---
 title: "Launch Default i3 Session"
+linkTitle: "Launch Default i3 Session"
 description: >
   Install package `i3-gaps-session` to keep using i3 without uninstalling Regolith
 ---

@@ -1,6 +1,6 @@
 ---
 title: "インストール"
-linkTitle: "Install"
+linkTitle: "インストール"
 weight: 1
 description: >
   Regolithのインストール

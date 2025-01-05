@@ -1,5 +1,6 @@
 ---
 title: "Assign a workspace to a specific Output (Display)"
+linkTitle: "Assign a workspace to a specific Output (Display)"
 description: >
   Specify that a given workspace should always be displayed on a specific monitor
 ---

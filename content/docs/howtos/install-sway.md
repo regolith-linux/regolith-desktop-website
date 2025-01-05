@@ -1,5 +1,6 @@
 ---
 title: "Install the Sway Compositor"
+linkTitle: "Install the Sway Compositor"
 description: >
   Upgrade to the Wayland-based Regolith session
 ---

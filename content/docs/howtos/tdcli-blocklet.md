@@ -1,5 +1,6 @@
 ---
 title: "Manage a To-Do List"
+linkTitle: "Manage a To-Do List"
 description: >
   Create and manage a to-do list from status bar
 ---

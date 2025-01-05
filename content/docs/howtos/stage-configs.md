@@ -1,5 +1,6 @@
 ---
 title: "Stage Config Files"
+linkTitle: "Stage Config Files"
 description: >
   Learn how to stage user copies of Regolith configuration files.
 ---

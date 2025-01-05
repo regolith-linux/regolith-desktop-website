@@ -1,5 +1,6 @@
 ---
 title: "How to Hide i3-bar by default"
+linkTitle: "How to Hide i3-bar by default"
 description: >
   Hide i3-bar by default
 ---

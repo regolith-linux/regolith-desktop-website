@@ -1,5 +1,6 @@
 ---
 title: "Disable Mouse Hiding (unclutter)"
+linkTitle: "Disable Mouse Hiding (unclutter)"
 description: >
   Disable unclutter-xfixes
 ---

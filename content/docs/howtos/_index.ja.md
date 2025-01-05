@@ -1,6 +1,6 @@
 ---
 title: "ハウツー"
-linkTitle: "Howtos"
+linkTitle: "ハウツー"
 bookCollapseSection: true
 weight: 5
 date: 2017-01-04

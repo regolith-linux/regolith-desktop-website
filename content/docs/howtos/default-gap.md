@@ -1,5 +1,6 @@
 ---
 title: "Change the Default Window Gap"
+linkTitle: "Change the Default Window Gap"
 description: >
   Change the pixels between windows.
 ---

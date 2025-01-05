@@ -1,6 +1,6 @@
 ---
 title: "Configurations"
-linkTitle: "Config Files"
+linkTitle: "Configurations"
 weight: 2
 description: >
   Information générale concernant les fichiers de configuration utilisés par Regolith

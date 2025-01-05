@@ -1,5 +1,6 @@
 ---
 title: "Modifier les Xresources"
+linkTitle: "Modifier les Xresources"
 description: >
   Apprenez à organiser des copies utilisateur des fichiers de configuration Regolith
 ---

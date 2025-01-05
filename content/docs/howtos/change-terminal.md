@@ -1,5 +1,6 @@
 ---
 title: "Change the Default Terminal"
+linkTitle: "Change the Default Terminal"
 description: >
   Change which terminal Regolith loads by default
 ---

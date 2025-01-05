@@ -1,5 +1,6 @@
 ---
 title: "Launch an app in a Floating Window"
+linkTitle: "Launch an app in a Floating Window"
 description: >
   Most GUI apps can be launched in floating window mode.
 ---

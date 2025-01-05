@@ -1,6 +1,6 @@
 ---
 title: "Premier lancement"
-linkTitle: "First Launch"
+linkTitle: "Premier lancement"
 weight: 2
 description: >
   Informations importantes sur le premier lancement de Regolith

@@ -1,6 +1,6 @@
 ---
 title: "Modifier le Compositor"
-linkTitle: "How to Customize Compositor"
+linkTitle: "Modifier le Compositor"
 description: >
   Comment modifier le compositor utilisé par Regolith
 ---

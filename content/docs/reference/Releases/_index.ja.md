@@ -1,6 +1,6 @@
 ---
 title: "リリース"
-linkTitle: "Releases"
+linkTitle: "リリース"
 bookCollapseSection: true
 weight: 9
 description: >
