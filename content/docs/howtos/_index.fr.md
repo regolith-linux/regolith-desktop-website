@@ -1,6 +1,6 @@
 ---
 title: "Guides"
-linkTitle: "Howtos"
+linkTitle: "Guides"
 bookCollapseSection: true
 weight: 5
 date: 2017-01-04

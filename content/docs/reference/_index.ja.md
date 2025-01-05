@@ -1,6 +1,6 @@
 ---
 title: "リファレンス"
-linkTitle: "Reference"
+linkTitle: "リファレンス"
 bookCollapseSection: true
 weight: 6
 description: >

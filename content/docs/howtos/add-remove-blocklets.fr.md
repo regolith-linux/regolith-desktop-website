@@ -1,5 +1,6 @@
 ---
 title: "Modifier les indicateurs dans la barre"
+linkTitle: "Modifier les indicateurs dans la barre"
 description: >
   Pour faire quelques changements dans les indicateurs de statut dans la barre
 ---

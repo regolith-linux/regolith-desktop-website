@@ -1,6 +1,6 @@
 ---
 title: "Personnaliser la config i3"
-linkTitle: "How to Customize i3 Configuration"
+linkTitle: "Personnaliser la config i3"
 weight: 1
 description: >
   Comment faire des changements sur le look et les comportements de i3

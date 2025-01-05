@@ -1,6 +1,6 @@
 ---
 title: '設定'
-linkTitle: 'Configuration'
+linkTitle: '設定'
 weight: 4
 description: >
     Regolithの外観と動作を変更する。

@@ -1,6 +1,6 @@
 ---
 title: "コンポジターのカスタマイズ"
-linkTitle: "How to Customize Compositor"
+linkTitle: "コンポジターのカスタマイズ"
 description: >
   Regolithのコンポジターをカスタマイズする方法
 ---

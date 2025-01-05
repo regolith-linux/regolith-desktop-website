@@ -1,5 +1,6 @@
 ---
 title: "Basic Usage"
+linkTitle: "Basic Usage"
 weight: 3
 description: >
   Learn the most important parts of Regolith first.

@@ -1,5 +1,6 @@
 ---
 title: "Change Notification Systems"
+linkTitle: "Change Notification Systems"
 description: >
   Disable Rofication and add another notification system
 ---

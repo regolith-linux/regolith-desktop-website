@@ -1,5 +1,6 @@
 ---
 title: "Les bases"
+linkTitle: "Les bases"
 weight: 3
 description: >
   Commencez par apprendre les bases importantes de Regolith

@@ -1,5 +1,6 @@
 ---
 title: "Find and Install Packages"
+linkTitle: "Find and Install Packages"
 description: >
   Search for packages and install them on your system.
 ---

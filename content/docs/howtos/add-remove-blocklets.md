@@ -1,5 +1,6 @@
 ---
 title: 'Change Bar Status indicators'
+linkTitle: 'Change Bar Status indicators'
 description: >
     Make changes to the status indicators in the bar.
 ---

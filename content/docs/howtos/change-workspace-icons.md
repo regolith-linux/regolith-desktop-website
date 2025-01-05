@@ -1,5 +1,6 @@
 ---
 title: "Change Workspace Icons and Labels"
+linkTitle: "Change Workspace Icons and Labels"
 description: >
   Learn how to customize each workspace in the bar
 ---

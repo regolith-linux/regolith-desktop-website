@@ -1,5 +1,6 @@
 ---
 title: "Xresourcesのオーバーライド"
+linkTitle: "Xresourcesのオーバーライド"
 description: >
   ユーザーがコピーしたRegolithの設定ファイルをステージする方法について学ぶ
 ---

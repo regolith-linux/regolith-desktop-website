@@ -1,6 +1,6 @@
 ---
 title: "Références"
-linkTitle: "Reference"
+linkTitle: "Références"
 bookCollapseSection: true
 weight: 6
 description: >

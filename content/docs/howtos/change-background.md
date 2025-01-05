@@ -1,5 +1,6 @@
 ---
 title: 'Change background'
+linkTitle: 'Change background'
 description: >
     Change the background
 ---

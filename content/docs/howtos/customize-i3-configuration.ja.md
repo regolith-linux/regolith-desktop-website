@@ -1,6 +1,6 @@
 ---
 title: 'i3設定のカスタマイズ'
-linkTitle: 'How to Customize i3 Configuration'
+linkTitle: 'i3設定のカスタマイズ'
 weight: 1
 description: >
     i3の外観や動作を変更する方法。

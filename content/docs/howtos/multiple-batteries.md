@@ -1,5 +1,6 @@
 ---
 title: "Support Multiple Batteries"
+linkTitle: "Support Multiple Batteries"
 description: >
   Display status of the batteries per instance
 ---

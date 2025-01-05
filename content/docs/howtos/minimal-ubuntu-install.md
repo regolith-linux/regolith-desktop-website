@@ -1,5 +1,6 @@
 ---
 title: "Minimal Ubuntu Install"
+linkTitle: "Minimal Ubuntu Install"
 description: >
   Install Regolith on Ubuntu Server
 ---

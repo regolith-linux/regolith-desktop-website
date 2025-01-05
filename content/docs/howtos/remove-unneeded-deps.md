@@ -1,5 +1,6 @@
 ---
 title: "Remove Unneeded Dependencies"
+linkTitle: "Remove Unneeded Dependencies"
 description: >
   Remove desktop components unused by Regolith
 ---

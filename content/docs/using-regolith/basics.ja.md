@@ -1,5 +1,6 @@
 ---
 title: "基本的な使い方"
+linkTitle: "基本的な使い方"
 weight: 3
 description: >
   はじめてRegolithを使うのにもっとも重要なパートを学ぶ。

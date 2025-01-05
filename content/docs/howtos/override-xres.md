@@ -1,5 +1,6 @@
 ---
 title: "Override Xresources"
+linkTitle: "Override Xresources"
 description: >
   Learn how to stage user copies of Regolith configuration files
 ---

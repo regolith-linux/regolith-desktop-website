@@ -1,5 +1,6 @@
 ---
 title: "Change the Bar Date and Time Format"
+linkTitle: "Change the Bar Date and Time Format"
 description: >
   Change the date/time format used in the bar
 ---

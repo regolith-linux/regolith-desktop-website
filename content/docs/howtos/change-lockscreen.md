@@ -1,5 +1,6 @@
 ---
 title: "Change the lock screen program"
+linkTitle: "Change the lock screen program"
 description: >
   Configure Regolith to use a lock screen other than `gnome-flashback`
 ---

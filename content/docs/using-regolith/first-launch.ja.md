@@ -1,6 +1,6 @@
 ---
 title: "初回起動"
-linkTitle: "First Launch"
+linkTitle: "初回起動"
 weight: 2
 description: >
   Regolithを初めて使う上で重要な項目

@@ -1,5 +1,6 @@
 ---
 title: "Change the Terminal Font Size"
+linkTitle: "Change the Terminal Font Size"
 description: >
   Change the font used in the terminal
 ---
