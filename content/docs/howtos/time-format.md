@@ -5,10 +5,6 @@ description: >
   Change the date/time format used in the bar
 ---
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
-
 The time format (12 or 24 hour) can be specified in Settings:
 
 {{< img "images/regolith-screenshot-settings-time-format.png" "">}}
