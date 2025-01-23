@@ -1,9 +1,7 @@
 ---
 title: "Guides"
 linkTitle: "Guides"
-bookCollapseSection: true
 weight: 5
-date: 2017-01-04
 description: >
   Quelques exemples de ce que vous pouvez faire avec Regolith Linux
 ---

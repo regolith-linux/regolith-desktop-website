@@ -1,9 +1,7 @@
 ---
 title: "ハウツー"
 linkTitle: "ハウツー"
-bookCollapseSection: true
 weight: 5
-date: 2017-01-04
 description: >
   Regolith Linuxがどのようにカスタマイズできるかのサンプル
 ---

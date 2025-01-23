@@ -1,7 +1,5 @@
 ---
 title: Introduction
-type: docs
-bookToc: false
 ---
 
 # L'environnement Regolith Desktop

@@ -1,7 +1,6 @@
 ---
 title: "Reference"
 linkTitle: "Reference"
-bookCollapseSection: true
 weight: 6
 description: >
   Reference material

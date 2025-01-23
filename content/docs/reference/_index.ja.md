@@ -1,7 +1,6 @@
 ---
 title: "リファレンス"
 linkTitle: "リファレンス"
-bookCollapseSection: true
 weight: 6
 description: >
   参考資料

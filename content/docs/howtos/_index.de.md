@@ -1,9 +1,7 @@
 ---
 title: "How To"
 linkTitle: "How To"
-bookCollapseSection: true
 weight: 5
-date: 2017-01-04
 description: >
   Some examples of how you can customize Regolith Linux
 ---

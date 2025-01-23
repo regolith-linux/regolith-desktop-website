@@ -1,7 +1,6 @@
 ---
 title: "Releases"
 linkTitle: "Releases"
-bookCollapseSection: true
 weight: 9
 description: >
   This section contains documentation relating to specific versions of Regolith

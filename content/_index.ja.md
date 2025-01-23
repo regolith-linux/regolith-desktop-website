@@ -1,7 +1,5 @@
 ---
 title: 概要
-type: docs
-bookToc: false
 ---
 
 # Regolithデスクトップ環境

@@ -1,7 +1,6 @@
 ---
 title: "リリース"
 linkTitle: "リリース"
-bookCollapseSection: true
 weight: 9
 description: >
   このセクションには、Regolithの特定のバージョンに関連するドキュメントが含まれています
