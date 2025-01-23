@@ -2,11 +2,7 @@ version: "3.4"
 
 services:
   site:
-    # Recommended docker image by Hugo docs:
-    #    https://gohugo.io/getting-started/installing/#docker
-    #
-    # TODO: Use a minimal image instead. The alpine version
-    # "klakegg/hugo:0.101.0-ext-alpine" complains:
+    # Possible error:
     #
     #    fatal: unsafe repository ('/src' is owned by someone else)
     #
@@ -16,6 +12,7 @@ services:
     #
     #     [safe]
     #         directory = /home/repon
+
     image: "hugomods/hugo:0.140.0"
     command: "server"
     volumes:
