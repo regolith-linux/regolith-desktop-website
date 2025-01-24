@@ -4,7 +4,7 @@ title: Introduction
 
 # L'environnement Regolith Desktop
 
-![](/regolith-empty.png)
+![](/images/v-tour/regolith-empty.png)
 
 {{< columns >}}
 
@@ -28,24 +28,24 @@ En fournissant une session gnome avec [`gnome-flashback`](https://wiki.gnome.org
 
 {{< columns >}}
 
-![](/regolith-ilia-keybindings.png)
+![](/images/v-tour/regolith-ilia-keybindings.png)
 Lors de la première connexion, un dialogue (activé à n'importe quand avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>) présente les raccourcis clavier les plus important utilisés avec i3-wm.
 
 <--->
 
-![](/regolith-floating-terminal.png)
+![](/images/v-tour/regolith-floating-terminal.png)
 Pour celles et ceux qui travaillent dans le terminal, pressez <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> suffit à vous satisfaire.
 
 {{< /columns >}}
 
 {{< columns >}}
 
-![](/regolith-ilia-apps.png)
+![](/images/v-tour/regolith-ilia-apps.png)
 Un lanceur d'application global est immédiatement accessible depuis partout pour lancer vos programmes avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p>
 
 <--->
 
-![](/regolith-desktop-terminals.png)
+![](/images/v-tour/regolith-desktop-terminals.png)
 Besoin de plus de terminaux ? Créez un agencement à la volée en basculant entre mode horizontal et verical avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> suivi de <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.
 Naviguez vers les fenêtres selon leur position avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>.
 
@@ -53,13 +53,13 @@ Naviguez vers les fenêtres selon leur position avec <span class="text-nowrap"><
 
 {{< columns >}}
 
-![](/regolith-floating-windows.png)
+![](/images/v-tour/regolith-floating-windows.png)
 Activez le mode fenêtre flottante avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>.
 Redimmensionnez les fenêtres avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span> et déplacez-les avec la souris en pressant <span class="badge badge-warning">super</span>.
 
 <--->
 
-![](/regolith-gnome-flashback.png)
+![](/images/v-tour/regolith-gnome-flashback.png)
 Gnome Flashback fourni un système de gestion simple et consistant. Personnalisez votre UI, montez automatiquement vos disques USB, connectez vous à des réseaux sans fils.
 Vous pouvez lancer le panneau de contrôle avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.
 
@@ -67,25 +67,25 @@ Vous pouvez lancer le panneau de contrôle avec <span class="text-nowrap"><span 
 
 {{< columns >}}
 
-![](/regolith-screenshot-look-selector.png)
+![](/images/v-tour/regolith-screenshot-look-selector.png)
 Changer facilement de thème pour <a href="https://ethanschoonover.com/solarized">Solarized</a> ou d'autres thèmes avec la commande <code>regolith-look</code>.
 Comme les **thèmes** utilisent le gestionnaire de paquet, vous stockez seulement les ressources des thèmes que vous utilisez.
 
 <--->
 
-![](/regolith-ilia-windows.png)
+![](/images/v-tour/regolith-ilia-windows.png)
 Trop de choses sur le feu ? Trouvez rapidement la fenêtre que vous cherchez avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> ou naviguer entre les espaces de travail avec <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0 - 19]</span></span>.
 
 {{< /columns >}}
 
 {{< columns >}}
 
-![](/regolith-many-windows.png)
+![](/images/v-tour/regolith-many-windows.png)
 Ne perdez pas de place avec des interfaces frivoles et profitez de chaque pixel sans avoir à faire du micro-management de votre agencement de fenêtres.
 
 <--->
 
-![](/regolith-ilia-notifications.png)
+![](/images/v-tour/regolith-ilia-notifications.png)
 Les notifications de bureau ne se battent pas pour votre attention mais peuvent être gérées depuis un dialogue en pressant <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>.
 
 {{< /columns >}}

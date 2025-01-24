@@ -12,13 +12,13 @@ description: >
 
 After the first login, the screen will contain a bar at the bottom and some keyboard shortcuts in a dialog.  This dialog, [`ilia`](https://github.com/regolith-linux/ilia), provides assistance for finding keybindings for various actions in the desktop environment.  It may be dismissed with the `esc` key and invoked again with {{< keys "super,shift,?" >}}. To launch an application, press {{< keys "super,space" >}} and a similar dialog will load with the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only those that match. You can also scroll through the list with the arrow keys.
 
-![](/regolith-ilia-apps.png)
+![](/images/v-tour/regolith-ilia-apps.png)
 
 ## Navigate to a Window
 
 To focus on a running application, the {{< keys "super,ctrl,space" >}} keybinding can be used to show a dialog of all running windows. Simply select the desired window and the system will move to the window's containing workspace and set its focus.
 
-![](/regolith-ilia-windows.png)
+![](/images/v-tour/regolith-ilia-windows.png)
 
 ## Create a new Workspace
 
@@ -28,7 +28,7 @@ Workspaces (also known as "virtual desktops" in some desktop environments) are a
 
 Searching your local computer for a specific file can be achieved in a variety of ways. Regolith provides a file search dialog via {{< keys "super,alt,space" >}} to quickly seek and optionally load a file with its default application. Pressing enter on a selection will cause the file to be invoked with the `xdg-open` command.
 
-![](/regolith-ilia-files.png)
+![](/images/v-tour/regolith-ilia-files.png)
 
 ## Terminal
 
@@ -52,13 +52,13 @@ Workspaces can also be paged forward and backward via {{< keys "super,tab" >}} a
 
 The Settings app (also known as `regolith-control-center`) is the primary interface for common configuration tasks, such as configuring WiFi and Bluetooth, configuring app associations, and setting up users. The app can be launched via the {{< keys "super,c" >}} keybinding or from the launcher via the `Regolith Settings` app.
 
-![](/regolith-gnome-settings.png)
+![](/images/v-tour/regolith-gnome-settings.png)
 
 ## View Keybindings
 
 All keybindings used by the Regolith desktop can be viewed, sorted, and executed by [`ilia`](https://github.com/regolith-linux/ilia).  This dialog is launched with {{< keys "super,shift,?" >}}.
 
-![](/regolith-ilia-keybindings.png)
+![](/images/v-tour/regolith-ilia-keybindings.png)
 
 
 ## Manage Notifications

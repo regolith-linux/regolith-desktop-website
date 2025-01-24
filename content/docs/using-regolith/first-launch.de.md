@@ -27,11 +27,11 @@ Wenn Sie eine dieser Tastenkombinationen eingeben, wird ein Startdialog auf dem 
 
 {{< columns >}}
 
-![](/regolith-ilia-keybinding-window.png)
+![](/images/v-tour/regolith-ilia-keybinding-window.png)
 
 <--->
 
-![](/regolith-ilia-apps-window.png)
+![](/images/v-tour/regolith-ilia-apps-window.png)
 
 {{< /columns >}}
 

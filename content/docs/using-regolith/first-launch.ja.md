@@ -27,11 +27,11 @@ Regolithにおいて多くのキーバインドで使われるのが{{< keys "su
 
 {{< columns >}}
 
-![](/regolith-ilia-keybinding-window.png)
+![](/images/v-tour/regolith-ilia-keybinding-window.png)
 
 <--->
 
-![](/regolith-ilia-apps-window.png)
+![](/images/v-tour/regolith-ilia-apps-window.png)
 
 {{< /columns >}}
 

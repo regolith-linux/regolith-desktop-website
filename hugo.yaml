@@ -110,11 +110,10 @@ params:
     displayTitle: true
     displayLogo: true
     logo:
-      path: regolith-logo.png
-      # path: images/logo.svg
-      # dark: images/logo-dark.svg
-      # width: 40
-      # height: 20
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      width: 32
+      height: 32
       # link: /
     width: wide
 

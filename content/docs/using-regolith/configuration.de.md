@@ -117,7 +117,7 @@ und entfernt. Look-Pakete haben das folgende Namensformat: `regolith-look-<name>
 kann `apt` oder ein GUI-Paketmanager verwendet werden. Zur Auswahl eines installierten Looks wird mit der
 Tastenkombination {{< keys "super,alt,l" >}} ein Dialog angezeigt:
 
-![](/regolith-ilia-look-selector.png)
+![](/images/v-tour/regolith-ilia-look-selector.png)
 
 Alternativ kann der Terminalbefehl `regolith-look` verwendet werden, um das Aussehen zu ändern und die aktive Sitzung
 mit dem ausgewählten Aussehen zu aktualisieren. Hier ist ein Beispiel, das zum `gruvbox`-Look wechselt:
@@ -228,7 +228,7 @@ wm.alt: Mod4
 initialisiert wird, werden die kollidierenden GNOME-Tastaturbelegungen aus den Benutzereinstellungen entfernt.
 GNOME-Tastaturbelegungen können in der Regolith-Einstellungs-App verwaltet werden.
 
-![](/regolith-gnome-keybindings.png)
+![](/images/v-tour/regolith-gnome-keybindings.png)
 
 # Systemverwaltung
 
@@ -236,7 +236,7 @@ Die App `regolith-control-center` ist das Werkzeug zum Konfigurieren von Gebiets
 verschiedenen anderen Einstellungen. Starten Sie sie über den App-Launcher mit {{< keys "super,space" >}}, geben
 Sie `settings` ein und drücken Sie Enter, um die App zu starten. Die direkte Tastaturbelegung ist {{< keys "super,c" >}}. Die Anwendung kann auch von einem Terminal mit dem Befehl `regolith-control-center` gestartet werden.
 
-![](/regolith-settings-about.png)
+![](/images/v-tour/regolith-settings-about.png)
 
 # Weitere Lektüre
 

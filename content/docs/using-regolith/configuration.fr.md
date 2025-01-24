@@ -133,7 +133,7 @@ Par convention, les paquets de thème utilise le format suivant: `regolith-look-
 `apt` ou un gestionnaire de paquet graphique peut être utilisé pour chercher les thèmes disponibles.
 Pour sélectionner un thème installé, le raccourcis {{< keys "super,alt,l" >}} présente le dialogue suivant:
 
-![](/regolith-ilia-look-selector.png)
+![](/images/v-tour/regolith-ilia-look-selector.png)
 
 Alternativement, la commande de terminal `regolith-look` peut être utilisé pour changer de thème et rafraîchir la session active en sélectionnant un thème.
 Voici un exemple qui sélectionne le thème `gruvbox`.
@@ -230,7 +230,7 @@ wm.alt: Mod4
 **Note**: GNOME utilise aussi ses propres raccourcis clavier. Quand la session Regolith est initialisée, les conflits de raccourcis avec GNOME sont supprimés
 des paramètres de l'utilisateur.
 
-![](/regolith-gnome-keybindings.png)
+![](/images/v-tour/regolith-gnome-keybindings.png)
 
 # Gestion du système
 
@@ -239,7 +239,7 @@ Ouvrz le lanceur d'app avec {{< keys "super,space" >}}, tapez `paramètres` et t
 Vous pouvez aussi utiliser le raccourcis {{< keys "super,c" >}} pour le lancer directement.
 Cette application peut être lancée depuis un terminal avec la commande `regolith-control-center`.
 
-![](/regolith-settings-about.png)
+![](/images/v-tour/regolith-settings-about.png)
 
 # Plus d'infos
 

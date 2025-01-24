@@ -12,7 +12,7 @@ Canonical completed their 20th Ubuntu release with Oracular this month.  A beta 
 
 ## Ubuntu Summit 2024
 
-<img src="/P_20241027_083737.jpg" alt="Near Huis ten Bois at Ubuntu Summit 24" title="Near Huis ten Bois at Ubuntu Summit 24" width="320" style="float: right; margin: 35px;"/>
+<img src="/images/posts/P_20241027_083737.jpg" alt="Near Huis ten Bois at Ubuntu Summit 24" title="Near Huis ten Bois at Ubuntu Summit 24" width="320" style="float: right; margin: 35px;"/>
 
 I submitted a [lightning talk](https://events.canonical.com/event/51/contributions/554/) that was accepted at [Ubuntu Summit 2024](https://events.canonical.com/event/51/) in [The Hague](https://en.wikipedia.org/wiki/The_Hague), Netherlands.  I was able to attend in person and while present at the conference, had a wonderful time touring around a few of the many many parks by bike. The talk itself was intended to be a simple project status update. However during the conference a number of [inspiring](https://events.canonical.com/event/51/contributions/509/) [talks](https://events.canonical.com/event/51/contributions/522/) motivated me to try for more.  In particular, it struck me during a demo of the new Cosmic Desktop, that rarely if ever did I hear anyone discussing *why* i3-like windowing environments are attractive to some users. So, I attempted to briefly explain my take during my brief talk:
 

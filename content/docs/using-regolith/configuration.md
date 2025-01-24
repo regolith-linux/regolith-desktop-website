@@ -154,7 +154,7 @@ Status indicators such as CPU load, date and time, notifications, weather, and o
 
 Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. To select an installed look the keybinding {{< keys "super,alt,l" >}} presents a dialog:
 
-![](/regolith-ilia-look-selector.png)
+![](/images/v-tour/regolith-ilia-look-selector.png)
 
 Alternatively, the terminal command `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `gruvbox` look:
 
@@ -239,13 +239,13 @@ wm.alt: Mod4
 
 **Note**: GNOME also has its own set of keybindings. When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings. GNOME keybindings can be managed in the Regolith Settings app.
 
-![](/regolith-gnome-keybindings.png)
+![](/images/v-tour/regolith-gnome-keybindings.png)
 
 # System Management
 
 The `regolith-control-center` app is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}. The application may also be launched from a terminal with command `regolith-control-center`.
 
-![](/regolith-settings-about.png)
+![](/images/v-tour/regolith-settings-about.png)
 
 # Further Reading
 

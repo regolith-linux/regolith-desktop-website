@@ -27,11 +27,11 @@ Entering one of these keybindings will cause a launcher dialog to pop up on the 
 
 {{< columns >}}
 
-![](/regolith-ilia-keybinding-window.png)
+![](/images/v-tour/regolith-ilia-keybinding-window.png)
 
 <--->
 
-![](/regolith-ilia-apps-window.png)
+![](/images/v-tour/regolith-ilia-apps-window.png)
 
 {{< /columns >}}
 

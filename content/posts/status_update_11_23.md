@@ -16,7 +16,7 @@ Additionally, Ubuntu 24.04 will be an LTS release and the people behind Ubuntu a
 
 Soumya and I had the opportunity to travel to Riga, Latvia earlier this month to attend the [Ubuntu Summit](https://ubuntu.com/blog/ubuntu-summit-2023), graciously hosted by Canonical.  There were a lot of great sessions and it was fantastic to reconnect with some familiar faces and collaborators from the previous year. So many brilliant and friendly people in one place!
 
-![](/P_20231103_185135~2.jpg)
+![](/images/posts/P_20231103_185135~2.jpg)
 
 In particular [PapyElGringo](https://github.com/PapyElGringo) announced a new project [Veshell](https://github.com/free-explorers/veshell) as a successor to the [Material Shell](https://github.com/material-shell/material-shell) project.  I enjoyed learning about the spacial approach to app and workspace management, and look forward to seeing how the new project progresses.
 

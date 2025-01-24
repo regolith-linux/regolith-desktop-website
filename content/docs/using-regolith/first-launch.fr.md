@@ -31,11 +31,11 @@ Utiliser l'un de ces raccourcis clavier va lancer un dialogue sur l'écran focal
 
 {{< columns >}}
 
-![](/regolith-ilia-keybinding-window.png)
+![](/images/v-tour/regolith-ilia-keybinding-window.png)
 
 <--->
 
-![](/regolith-ilia-apps-window.png)
+![](/images/v-tour/regolith-ilia-apps-window.png)
 
 {{< /columns >}}
 

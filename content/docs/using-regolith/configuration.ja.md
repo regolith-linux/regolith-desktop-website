@@ -154,7 +154,7 @@ CPUの読み込み、日付、時間、通知、天気や他のシステム情�
 
 色、壁紙、ウィンドウとバーのレイアウトや他の視覚的要素はRegolithにバンドルされ、"外観(look)"と呼ばれています。外観は、デスクトップの全体の外観を変更する簡単な方法を提供します。ステータスバーのインジケーターのような外観はパッケージ化され、他のソフトウェアのようにインストールしたりアンインストールしたりすることができます。外観パッケージは命名フォーマットに従い`regolith-look-<name>`となっています。`apt`やGUIパッケージマネージャーから利用可能な外観を検索することができます。{{< keys "super,alt,l" >}}キーバインドで、ダイアログからインストールされた外観を選択します。
 
-![](/regolith-ilia-look-selector.png)
+![](/images/v-tour/regolith-ilia-look-selector.png)
 
 また、ターミナルのコマンド・`regolith-look`で外観を変更したり、選択した外観でアクティブなセッションを再読み込みすることができます。ここでは例として、`gruvbox`の外観に切り替えます。
 
@@ -240,13 +240,13 @@ wm.alt: Mod4
 
 **注意**：GNOMEには独自のキーバインドも存在します。Regolithセッションが最初に初期化されると、 競合するGNOMEキーバインドがユーザー設定から削除されます。GNOMEのキーバインドは、Regolithの設定アプリから管理することができます。
 
-![](/regolith-gnome-keybindings.png)
+![](/images/v-tour/regolith-gnome-keybindings.png)
 
 # システム管理
 
 `regolith-control-center`アプリは、言語、日付、ディスプレイ、ネットワークや他のさまざまな種類の設定ツールです。 {{< keys "super,space" >}}でアプリランチャーを開いて`settings`と入力し、起動したいアプリをヒットさせることで起動します。{{< keys "super,c" >}}は直接実行できるキーバインドです。`regolith-control-center`とターミナルに入力することでもアプリケーションを起動することができます。
 
-![](/regolith-settings-about.png)
+![](/images/v-tour/regolith-settings-about.png)
 
 # さらに深く読み込む
 
