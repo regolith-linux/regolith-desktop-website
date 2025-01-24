@@ -5,13 +5,13 @@ weight: 5
 description: >
   Regolith Linuxがどのようにカスタマイズできるかのサンプル
 ---
-{{< hint danger >}}
+{{< callout type="error" >}}
 注意：このページは[Regolith 1.xのWebサイト](https://regolith-linux.org)からコピーされたもので、Regolith 2のものに更新されていません。古い情報が含まれている可能性があります。
-{{< /hint >}}
+{{< /callout >}}
 
-{{< hint info >}}
+{{< callout type="info" >}}
 他の例やチュートリアルは[GitHubのregolith-desktop wiki](https://github.com/search?q=org%3Aregolith-linux&type=Wikis&in:HowTo)から利用することができます。
-{{< /hint >}}
+{{< /callout >}}
 
 ## ターミナルを使用する
 

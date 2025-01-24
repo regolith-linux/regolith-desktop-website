@@ -5,9 +5,9 @@ description: >
   Disable Rofication and add another notification system
 ---
 
-{{< hint danger >}}
+{{< callout type="error" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< /callout >}}
 
 Regolith ships with a notification system called [Rofication](https://github.com/DaveDavenport/Rofication). It is designed to work in the background and not use pop-ups as a way of alerting the user to a new notification. Rather, a small bar item displays the current number of unread notifications and a dialog can activated to interact with the content of the current notifications. This page describes a way to install an alternative notification system which works in a more traditional way.
 

@@ -5,17 +5,17 @@ description: >
   Apprenez à organiser des copies utilisateur des fichiers de configuration Regolith
 ---
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
-{{< /hint >}}
+{{< /callout >}}
 
 Regolith repose sur le système [Xresources](https://en.wikipedia.org/wiki/X_resources) pour fournir une interface de configuration solide.
 Pour change les valeurs `Xresources`, Regolith peut être modifié pour mettre à jour l'interface utilisateur, spécifier des comportements, ou définir des formats spécifiques pour certains blocs de la barre.
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Dans Regolith, les valeurs `Xresources` peuvent être changées avec deux méthodes: en fournissant vos propres fichiers `Xresources` et en ré-écrivant les valeurs `Xresources` existantes. La seconde approche est fortement recommandée car elle permet d'avoir des mises à jour de Regolith moins sensibles aux configurations changeantes.
 Si vous copiez l'arbre `Xresources` entièrement, vous aurez besoin d'intégrer à la main chaque changement de configuration dans les futures versions.
-{{< /hint >}}
+{{< /callout >}}
 
 ## Initialisation
 

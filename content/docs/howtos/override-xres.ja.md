@@ -7,9 +7,9 @@ description: >
 
 Regolithは、[Xresourcesシステム](https://en.wikipedia.org/wiki/X_resources)に依存し、統合されたインターフェース設定を提供しています。`Xresources`の値を変更することで、Regolithは、ユーザーインターフェイスの更新、カスタム動作の指定、バーの一部のblockletの特定の形式の定義などの方法でカスタマイズできます。
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Regolithでは、`Xresources`の値は、独自の`Xresources`ファイルを用意する方法か、既存の`Xresources`の値をオーバーライドする方法の2つの方法で変更できます。後者のアプローチは、Regolithが新しいバージョンにアップグレードする際にカスタマイズを妨げる可能性を下げるため、強く推奨されます。`Xresources`ツリーを完全にコピーする場合、将来のバージョンで破損した変更を手動で統合する必要があります。
-{{< /hint >}}
+{{< /callout >}}
 
 ## 初期化
 

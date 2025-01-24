@@ -15,9 +15,9 @@ description: >
 | バーステータスインジケーター      | `/usr/share/i3xrocks/conf.d/`                                | `~/.config/regolith3/i3xrocks/conf.d` | 各ブロックには独自の設定ファイルがありません。ファイル名のアルファベット順に読み込まれた設定です。[詳細]({{< ref "docs/howtos/add-remove-blocklets.md" >}})                                                                |
 | Picom（Compton）コンポジター | `/etc/regolith/picom/config`                                 | `~/.config/regolith3/picom/config`    | [詳細]({{< ref "docs/howtos/customize-compositor.md" >}})                                                                                                                                             |
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 警告：`~/.config/regolith3/i3/config`にi3の設定ファイルを追加すると、Xresourcesやlookを含むすべてのRegolithの設定がオーバーライドされます。
-{{< /hint >}}
+{{< /callout >}}
 
 # 履歴
 

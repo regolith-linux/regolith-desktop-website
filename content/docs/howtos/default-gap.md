@@ -5,9 +5,9 @@ description: >
   Change the pixels between windows.
 ---
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
-{{< /hint >}}
+{{< /callout >}}
 
 Like most configuration in Regolith, the i3-gaps gap size can be tuned via `Xresources` ([See here]({{< ref "/docs/Reference/xresources.md" >}}) for all Xresource definitions).
 

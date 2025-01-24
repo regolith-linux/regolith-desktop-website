@@ -7,10 +7,10 @@ description: >
 
 # How to customize your compositor (visual effects)
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Pay special attention to this section if you are experiencing odd visual
 glitches or slow graphics performance.
-{{< /hint >}}
+{{< /callout >}}
 
 A compositor is a UI component that applies visual effects to windows before
 they are rendered on-screen. Many desktop environments integrate a compositor
@@ -21,10 +21,10 @@ installing the packages that contain them. The underlying packaging system will
 ensure there are no conflicts and that all the dependencies of a given
 compositor are also installed.
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 WARNING: In Regolith 2.x, the default compositor is "no compositor". In
 Regolith 1.x, the default was Picom.
-{{< /hint >}}
+{{< /callout >}}
 
 ## Finding available compositors
 
@@ -49,11 +49,11 @@ You should find at least the following:
 
 ## Installing a compositor
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Due to the way that the compositor is managed by i3-wm, **you must log out and
 back in for compositor changes to take effect**. Restarting i3 is not
 sufficient.
-{{< /hint >}}
+{{< /callout >}}
 
 Run the following package install command to swap out the compositor. In this
 case we’ll install `picom`:

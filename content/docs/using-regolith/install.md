@@ -45,9 +45,9 @@ to configure your system to read packages from the Regolith package repository a
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
-{{< /hint >}}
+{{< /callout >}}
 
 {{< /tab >}}
 {{< tab "Ubuntu 22.04" >}}
@@ -80,9 +80,9 @@ to configure your system to read packages from the Regolith package repository a
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
-{{< /hint >}}
+{{< /callout >}}
 
 {{< /tab >}}
 {{< /tabs >}}
@@ -135,17 +135,17 @@ to configure your system to read packages from the Regolith package repository a
 
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
-{{< /hint >}}
+{{< /callout >}}
 
-{{< hint info >}}
+{{< callout type="info" >}}
 The `regolith-desktop` package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read [Recommended Packages for New Users](/docs/using-regolith/configuration/#recommended-packages-for-new-users).
-{{< /hint >}}
+{{< /callout >}}
 
-{{< hint info >}}
+{{< callout type="info" >}}
 The `regolith-compositor-picom-glx` compositor should work on most computers. If you experience driver or visual issues, [try another compositor](docs/howtos/customize-compositor).
-{{< /hint >}}
+{{< /callout >}}
 
 {{< /tab >}}
 

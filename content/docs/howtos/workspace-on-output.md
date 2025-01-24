@@ -5,9 +5,9 @@ description: >
   Specify that a given workspace should always be displayed on a specific monitor
 ---
 ## i3
-{{< hint danger >}}
+{{< callout type="error" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< /callout >}}
 
 In order to configure i3 to assign a workspace to a given monitor, first find the device name for the monitor you wish to use with `xrandr`:
 

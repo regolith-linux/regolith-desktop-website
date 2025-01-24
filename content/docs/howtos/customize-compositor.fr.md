@@ -7,10 +7,10 @@ description: >
 
 # Comment modifier votre compositor (effets visuels)
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Portez une attention particulière à cette section si vous rencontrez des problèmes visuels étranges,
 des problèmes ou des performances graphiques lentes.
-{{< /hint >}}
+{{< /callout >}}
 
 Un _compositor_ est un composant d'interface utilisateur qui applique des effets visuels
 aux fenêtres avant qu'elles ne soient affichées sur l'écran.
@@ -21,10 +21,10 @@ Dans Regolith, le compositor est défini comme une extension "pluggable" avec le
 Cela signifie qu'il est possible de changer de compositor en installant un paquet qui en contient un.
 Le système de gestion de paquets s'assure qu'il n'y a pas de conflit et que toutes les dépendances sont satisfaites.
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 ATTENTION: Dans Regolith 2.x, le compositor par défaut est "pas de compositor".
 Dans Regolith 1.x, le compositor par défaut est Picom.
-{{< /hint >}}
+{{< /callout >}}
 
 ## Lister les compositors disponibles
 
@@ -43,12 +43,12 @@ Vous devriez trouver, au minimum:
 
 ## Installer un compositor
 
-{{< hint info >}}
+{{< callout type="info" >}}
 À cause de la manière dont le compositor est géré par i3-wm, vous devez vous déconnectez
 et vous reconnectez pour que la modification de compositor prenne effet.
 Redémarrer i3 n'est pas suffisant.
 sufficient.
-{{< /hint >}}
+{{< /callout >}}
 
 Lancez la commande d'installation suivante pour changer le compositor.
 Cela installera `picom`:

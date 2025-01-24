@@ -13,6 +13,6 @@ description: >
 | Bar status indicators      | `/usr/share/i3xrocks/conf.d/` | `~/.config/regolith3/i3xrocks/conf.d`  | Each block has it's own file. Filename determines ordering.               |
 | Picom (Compton) Compositor | `/etc/regolith/picom/config`                                     | `~/.config/regolith3/picom/config`                                                                                                            |     |
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 NOTE: Adding an i3 config file in `~/.config/regolith3/i3/config` will essentially override all Regolith configuration including Xresources and looks.
-{{< /hint >}}
+{{< /callout >}}

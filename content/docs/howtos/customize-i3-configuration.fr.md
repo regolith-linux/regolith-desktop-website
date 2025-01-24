@@ -20,9 +20,9 @@ Pour cette raison, il y a plusieurs manières de personnaliser i3 dans Regolith.
 
 ## Comment fixer une variable `Xresources`
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
-{{< /hint >}}
+{{< /callout >}}
 
 La configuration dans l'exemple suivant (récupérée de `/usr/share/regolith/i3/config.d/80_compositor`) peut être modifiée pour charger le compositor que l'on veut sans modifier ou ré-écrire la configuration existante de i3 en fixant la variable $wm.program.compositor`.
 
@@ -84,11 +84,11 @@ sudo apt remove regolith-i3-workspace-config
 
 ## Comment personnaliser une configuration
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 ATTENTION: Pour personnaliser une unique configuration par défaut partielle de Regolith, vous devez d'abord vous assurer
 que le fichier `~/.config/regolith3/i3/config` n'existe pas.
 Cela va ignorer entièrement la configuration par défaut de Regolith, ce qui n'est pas compatible avec ce guide.
-{{< /hint >}}
+{{< /callout >}}
 
 Premièrement, assurez-vous qu'un dossier existe dans la configuration utilisateur:
 

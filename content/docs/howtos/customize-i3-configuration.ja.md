@@ -19,9 +19,9 @@ description: >
 
 次の設定例（`/usr/share/regolith/i3/config.d/80_compositor`）より、`$wm.program.compositor`を設定することで、既存のi3設定ファイルを編集したりオーバーライドすることなく、使用したいコンポジターを読み込むようにカスタマイズすることができます。
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
-{{< /hint >}}
+{{< /callout >}}
 
 ```
 set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init
@@ -81,9 +81,9 @@ sudo apt remove regolith-i3-workspace-config
 
 ## 既定の部分設定をカスタマイズする方法
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 警告：Regolithの既定部分のみをカスタマイズする場合、`~/.config/regolith3/i3/config`ファイルが存在**しない**ことを確認してください。これはRegolithの既定をオーバーライドするため、このハウツーの内容と互換性がありません。
-{{< /hint >}}
+{{< /callout >}}
 
 初めに、ユーザーの部分設定のディレクトリが存在することを確認します。
 

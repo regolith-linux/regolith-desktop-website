@@ -8,9 +8,9 @@ description: >
 
 R1.3.1 is a quick followup to R1.3 that adds polish and usability features. Headlining features include a more concise way of overriding Xresource defaults and several enhancements to the Remontoire keybinding viewer.
 
-{{< hint info >}}
+{{< callout type="info" >}}
 If you maintain your own i3 config file, note that the copy shipped in Regolith 1.3.1 has changed in that the comment format has been modified to be readable by Remontoire ([example](https://github.com/regolith-linux/regolith-i3-gaps-config/blob/master/config#L37)). Without updating your copy i3 config comments, you will not see any keybindings.
-{{< /hint >}}
+{{< /callout >}}
 
 ## Features
 

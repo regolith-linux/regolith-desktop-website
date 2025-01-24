@@ -227,9 +227,9 @@ sudo apt install regolith-look-*
 
 # キーバインド
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
-{{< /hint >}}
+{{< /callout >}}
 
 もっとも重要なキーバインドの変更は{{< keys "super" >}}キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして`Xresources`を利用できます。ユーザー設定で利用可能な`Xresources`キーのリストは、[ここから参照することができます]({{< ref "xresources" >}})。既定の{{< keys "super" >}}バインドを"windows"キーから"alt"に変更するには`~/.config/regolith3/Xresources`に以下の行を追加します。
 

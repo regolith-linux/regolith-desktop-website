@@ -5,9 +5,9 @@ description: >
   Install package `i3-gaps-session` to keep using i3 without uninstalling Regolith
 ---
 
-{{< hint danger >}}
+{{< callout type="error" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< /callout >}}
 
 To do so on Ubuntu, run `sudo apt install i3-gaps-session` to add an option on login that starts vanilla i3-gaps without regolith.
 

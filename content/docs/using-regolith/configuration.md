@@ -226,9 +226,9 @@ The following contains a list of all i3 configuration packages available in Rego
 
 # Keybindings
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below. For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
-{{< /hint >}}
+{{< /callout >}}
 
 The most common keybinding change is the {{< keys "super" >}} key. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith3/Xresources`:
 

@@ -8,9 +8,9 @@ description: >
 
 Regolith R1.4 is a major feature release which includes several improvements and optimizations. Regolith is now smaller and more efficient. The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM. This allows for less resource consumption at runtime and dramatically smaller download size[^1]. A new look, `lascaille` and file search dialog round out the major new features. Read below for more details.
 
-{{< hint info >}}
+{{< callout type="info" >}}
 If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources. The intention of this change is to require a full copy of the i3 config file <b>less often</b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.
-{{< /hint >}}
+{{< /callout >}}
 
 For R1.4 in particular @ploum has provided many of the ideas and validation. Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, @farsil, and @MrKovar for their time and attention. Also thanks to all that helped to test and filed issues for bugs and feature requests!
 

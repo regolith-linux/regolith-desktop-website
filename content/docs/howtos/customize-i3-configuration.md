@@ -19,9 +19,9 @@ The default configurations are stored in `/usr/share/regolith/i3/config.d`. Thes
 
 The following configuration example (from `/usr/share/regolith/i3/config.d/80_compositor`) can be customized to load whatever compositor you want, without editing or overriding the existing i3 configuration file, by setting `$wm.program.compositor`.
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below. For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
-{{< /hint >}}
+{{< /callout >}}
 
 ```
 set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init
@@ -81,11 +81,11 @@ sudo apt remove regolith-i3-workspace-config
 
 ## How to customize a default partial
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 WARNING: To customize only one of Regolith's default partials, you must first
 ensure that the file `~/.config/regolith3/i3/config` does **not** exist. This
 overrides Regolith's defaults entirely, which is incompatible with this how-to.
-{{< /hint >}}
+{{< /callout >}}
 
 First, ensure that a directory exists for user config partials.
 
