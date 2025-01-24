@@ -14,9 +14,8 @@ If you're upgrading from an earlier version of Regolith, you may be interested i
 
 ### Ubuntu
 
-{{< tabs "ubuntu-tabs" >}}
+{{< tabs items="Ubuntu 24.04,Ubuntu 22.04" >}}
 {{< tab "Ubuntu 24.04" >}}
-
 Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
@@ -48,10 +47,9 @@ The login manager will need to be restarted for the new desktop session to be re
 {{< callout type="info" >}}
 Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
 {{< /callout >}}
-
 {{< /tab >}}
-{{< tab "Ubuntu 22.04" >}}
 
+{{< tab "Ubuntu 22.04" >}}
 Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps (also available as a [downloadable script](/install-release-ubuntu-22.04-amd64.txt)) describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
@@ -83,16 +81,13 @@ The login manager will need to be restarted for the new desktop session to be re
 {{< callout type="info" >}}
 Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
 {{< /callout >}}
-
 {{< /tab >}}
 {{< /tabs >}}
 
 ### Debian
 
-{{< tabs "debian-tabs" >}}
-
-{{< tab "Debian Testing" >}}
-
+{{< tabs items="Debian Testing,Debian Bookworm" >}}
+{{< tab >}}
 For Debian users that use the "Testing" release, Regolith can be installed, however there is no "release" version due to the nature of Debian Testing.  In order to install Regolith into a Debian Testing instance, the `apt` line contains `testing` instead of a `release` string.  For example:
 
    ```console
@@ -102,11 +97,9 @@ For Debian users that use the "Testing" release, Regolith can be installed, howe
    ```
 
 Otherwise the installation steps are the same as an official Debian release.  Note that broken dependencies or components will occur from time to time.  If stability is important, consider installing into an officially released version of Debian or Ubuntu.
-
 {{< /tab >}}
 
-{{< tab "Debian Bookworm" >}}
-
+{{< tab >}}
 Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps (also available as a [downloadable script](/install-release-debian-12-amd64.txt)) describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
 
@@ -146,9 +139,7 @@ The `regolith-desktop` package installs a reasonable minimal configuration that 
 {{< callout type="info" >}}
 The `regolith-compositor-picom-glx` compositor should work on most computers. If you experience driver or visual issues, [try another compositor](docs/howtos/customize-compositor).
 {{< /callout >}}
-
 {{< /tab >}}
-
 {{< /tabs >}}
 
 ## Packages Specified at Install Time
