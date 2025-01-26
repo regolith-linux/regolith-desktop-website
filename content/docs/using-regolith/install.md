@@ -4,6 +4,7 @@ linkTitle: "Install"
 weight: 1
 description: >
   Install Regolith
+prev: /docs/using-regolith
 ---
 
 # Get Regolith 3.2

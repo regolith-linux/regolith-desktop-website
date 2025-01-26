@@ -4,7 +4,10 @@ linkTitle: "How To"
 weight: 5
 description: >
   Some examples of how you can customize Regolith Linux
+prev: /docs/using-regolith/configuration
+next: /docs/howtos/customize-i3-configuration
 ---
+
 {{< callout type="error" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /callout >}}

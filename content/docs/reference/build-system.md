@@ -1,9 +1,10 @@
 ---
 title: "Build System"
 linkTitle: "Build System"
-weight: 19
+weight: 8
 description: >
   General information regarding how Regolith packages and ISOs are built
+next: /docs/reference/releases
 ---
 
 # Overview 

@@ -4,6 +4,7 @@ linkTitle: "Konfiguration"
 weight: 4
 description: >
  Nehmen Sie Änderungen am Aussehen und Verhalten von Regolith vor.
+next: /docs/howtos
 ---
 
 # Empfohlene Pakete für neue Benutzer

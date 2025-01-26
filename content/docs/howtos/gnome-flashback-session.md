@@ -3,6 +3,7 @@ title: "Verify behavior against upstream"
 linkTitle: "Verify behavior against upstream"
 description: >
   This page describes how to root cause the origin of bugs.
+next: /docs/reference
 ---
 
 {{< callout type="error" >}}

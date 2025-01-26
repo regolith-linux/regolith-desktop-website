@@ -4,6 +4,7 @@ linkTitle: '設定'
 weight: 4
 description: >
     Regolithの外観と動作を変更する。
+next: /docs/howtos
 ---
 
 # 新規ユーザーに推奨されるパッケージ {#recommended-packages-for-new-users}

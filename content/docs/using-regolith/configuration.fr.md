@@ -4,6 +4,7 @@ linkTitle: "Configuration"
 weight: 4
 description: >
   Effectuer des changements dans les thèmes et comportements de Regolith
+next: /docs/howtos
 ---
 
 # Paquets recommandés pour les nouveaux utilisateurs

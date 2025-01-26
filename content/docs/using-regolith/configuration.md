@@ -4,6 +4,7 @@ linkTitle: 'Configuration'
 weight: 4
 description: >
     Make changes to the way Regolith looks and behaves.
+next: /docs/howtos
 ---
 
 # Recommended Packages for New Users

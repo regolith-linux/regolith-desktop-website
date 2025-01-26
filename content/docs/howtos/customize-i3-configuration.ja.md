@@ -4,6 +4,7 @@ linkTitle: 'i3設定のカスタマイズ'
 weight: 1
 description: >
     i3の外観や動作を変更する方法。
+prev: /docs/howtos
 ---
 
 # Regolithの既定の動作

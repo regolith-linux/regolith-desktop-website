@@ -4,6 +4,7 @@ linkTitle: 'How to Customize i3 Configuration'
 weight: 1
 description: >
     How to make changes to the way i3 looks and behaves.
+prev: /docs/howtos
 ---
 
 # How to work with Regolith's defaults

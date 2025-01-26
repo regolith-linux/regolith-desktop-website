@@ -4,6 +4,8 @@ linkTitle: "Guides"
 weight: 5
 description: >
   Quelques exemples de ce que vous pouvez faire avec Regolith Linux
+prev: /docs/using-regolith/configuration
+next: /docs/howtos/customize-i3-configuration
 ---
 
 {{< callout type="error" >}}

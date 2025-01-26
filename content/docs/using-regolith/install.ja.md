@@ -4,6 +4,7 @@ linkTitle: "インストール"
 weight: 1
 description: >
   Regolithのインストール
+prev: /docs/using-regolith
 ---
 
 # Regolith 3.2を入手
