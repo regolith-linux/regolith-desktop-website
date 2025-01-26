@@ -1,3 +1,11 @@
+/** codeblock **/
+.hextra-code-block pre:is(html[class~="dark"] *) {
+  background-color: hsl(223deg 4% calc(35% + calc(calc(100% - 35%) / 50) * 27) / 0.1);
+}
+.hextra-code-block pre {
+  background-color: hsl(223deg 4% calc(calc(35% / 50) * 39) / 0.05);
+}
+
 /* key shortcodes */
 .badge {
   display: inline-block;
