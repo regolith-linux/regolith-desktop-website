@@ -7,3 +7,12 @@ description: >
 prev: /docs/getting-started
 next: /docs/using-regolith/install
 ---
+
+Explore the following sections to learn how to use Regolith:
+
+{{< cards >}}
+  {{< card link="install/" title="Install" >}}
+  {{< card link="first-launch/" title="First Launch" >}}
+  {{< card link="basics/" title="Basic Usage" >}}
+  {{< card link="configuration/" title="Configuration" >}}
+{{< /cards >}}
