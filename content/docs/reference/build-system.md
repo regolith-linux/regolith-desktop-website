@@ -38,7 +38,7 @@ The Regolith build system reads and writes text files known as manifests.  The f
 
 Manifests are simply text files with one package per line, and each element in on a line separated by a space (ASCII 32).
 
-```
+```text
 <PACKAGE NAME> <PACKAGE REPO URL> <PACKAGE REPO BRANCH/TAG> <PACKAGE REPO COMMIT HASH>
 ```
 
@@ -46,7 +46,7 @@ Manifests are simply text files with one package per line, and each element in o
 
 The Regolith build system utilizes sets of JSON files to define what packages are specified for a given `target`.  These JSON files are set in a specific structure to facilitate overriding higher-scoped contexts for lower-scoped contexts.  For example, at the top level is the `release` directory.  It specifies all packages for that release.  Within a `release`, directories for specific `distro`s exist.  Package models in these directories may override or nullify packages specified from it's parent.  In this way, a top-level general package model can be tweaked for a given `stage`/`distro`/`codename`/`architecture`.  To further illustrate this point here is the structure of the `stage` directory in the [`voulage` repo](https://github.com/regolith-linux/voulage) (which is the name of the Regolith 2.x package builder) (NOTE: some files were removed for brevity):
 
-```
+```text
 stage/
 ├── package-model.json                <--- Root package model
 ├── release

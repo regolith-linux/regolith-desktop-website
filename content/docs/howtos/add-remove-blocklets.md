@@ -9,15 +9,15 @@ description: >
 
 ## Finding Status Indicators
 
-```console
-$ apt search i3xrocks-
+```bash
+apt search i3xrocks-
 ```
 
 ## Installing a Status Indicator
 
-```console
-$ sudo apt install i3xrocks-memory
-$ regolith-look refresh
+```bash
+sudo apt install i3xrocks-memory
+regolith-look refresh
 ```
 
 # Customization of the i3 bar {#customize-bar}

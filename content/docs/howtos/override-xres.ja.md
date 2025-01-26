@@ -51,14 +51,14 @@ wm.bar.background.color:	#1F2430
 
 1. `~/.config/regolith3/Xresources`ファイルに次の値を作成もしくは追加する：
 
-```console
+```yaml {filename="~/.config/regolith3/Xresources"}
 Xft.dpi: 192
 ```
 
 2. `Xresources`設定を再読込する:
 
-```console
-$ regolith-look refresh
+```bash
+regolith-look refresh
 ```
 
 3. 新規のターミナルを開き、変更が有効になっていることを確認する。
@@ -85,16 +85,16 @@ $ regolith-look refresh
 
 ### 例 - システムトレイを無効にする
 
-```console
-$ echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
-$ regolith-look refresh
+```bash
+echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
+regolith-look refresh
 ```
 
 ### 例 - AltキーをWinキーの代わりにSuperキーとして使用する
 
-```console
-$ echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
-$ echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
+```bash
+echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
+echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 ```
 
 次に、変更を有効にするため、i3を再読み込みします。i3が別のプロセスとして起動するものなど、一部の設定では、セッションに再ログインする必要があります。

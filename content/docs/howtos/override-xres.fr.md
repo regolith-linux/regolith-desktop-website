@@ -56,14 +56,14 @@ L'outil `xrdb` peut être utilisé pour détemriner les valeurs actuels des vari
 
 1. Créer ou ajouter la valeur suivante au fichier `~/.config/regolith3/Xresources`:
 
-```console
+```yaml {filename="~/.config/regolith3/Xresources"}
 Xft.dpi: 192
 ```
 
 2. Recharger la configuraiton `Xresources`:
 
-```console
-$ regolith-look refresh
+```bash
+regolith-look refresh
 ```
 
 3. Ouvrir un nouveau terminal pour voir les changements
@@ -90,16 +90,16 @@ $ regolith-look refresh
 
 ### Exemple - Désactiver la barre d'état
 
-```console
-$ echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
-$ regolith-look refresh
+```bash
+echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
+regolith-look refresh
 ```
 
 ### Exemple - Utiliser Alt plutôt que la touche Win comme touche Super
 
-```console
-$ echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
-$ echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
+```bash
+echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
+echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 ```
 
 Ensuite, recharger i3 pour que le changement prenne effet.
@@ -108,8 +108,8 @@ Ensuite, recharger i3 pour que le changement prenne effet.
 
 Certains utilisateurs préfèrent utiliser l'application `nm-applet` pour configurer et gérer le réseau sans-fil (depuis Regolith 1.5, `nm-applet` est exécuté par défaut en arrière-plan). Le fichier de configuration i3 peut être modifié pour lancer certains programmes au lancement. Mais, plutôt que de copier tout le fichier, il est possible de fixer jusqu'à trois programmes via Xresources sans avoir à changer le fichier de configuration i3. Pour cela, assurez-vous que la barre d'état système est activé (voir ci-dessus).
 
-```console
-$ echo "wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith3/Xresources
+```bash
+echo "wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith3/Xresources
 ```
 
 Ce changement nécessite que vous vous déconnectiez puir reconnectiez pour prendre effet.

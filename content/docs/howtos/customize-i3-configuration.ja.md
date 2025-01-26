@@ -23,21 +23,21 @@ description: >
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
 {{< /callout >}}
 
-```
+```text {filename="/usr/share/regolith/i3/config.d/80_compositor"}
 set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init
 exec_always --no-startup-id $wm.program.compositor
 ```
 
 これを行うには、`~/.config/regolith3/Xresources`に以下の行を追加するだけでできます。
 
-```
+```yaml {filename="~/.config/regolith3/Xresources"}
 # 自作のコンポジターを使用する
 wm.program.compositor: /usr/local/bin/my-compositor
 ```
 
 同様に、`/usr/share/regolith/i3/config.d`のファイルを基にした`Xresources`で他のオプションのオーバーライドをすることもできます。
 
-```
+```yaml {filename="~/.config/regolith3/Xresources"}
 ## 間隔の設定
 wm.gaps.inner.size: 1
 
@@ -57,25 +57,25 @@ wm.workspace.01.name: 1:FOO
 
 削除したい部分設定を提供するパッケージの名前を特定するには次のコマンドを実行します。
 
-```console
+```bash
 dpkg -S /usr/share/doc/regolith-i3-workspace-config
 ```
 
 出力結果にパッケージの名前が含まれている場合：
 
-```
+```yaml
 regolith-i3-workspace-config: /usr/share/doc/regolith-i3-workspace-config
 ```
 
 このパッケージで提供されるファイルの完全なリストを確認し、何を削除しようとしているのかわかっている場合：
 
-```console
+```bash
 dpkg -L regolith-i3-workspace-config
 ```
 
 部分設定を削除するには：
 
-```console
+```bash
 sudo apt remove regolith-i3-workspace-config
 ```
 
@@ -87,25 +87,25 @@ sudo apt remove regolith-i3-workspace-config
 
 初めに、ユーザーの部分設定のディレクトリが存在することを確認します。
 
-```console
+```bash
 mkdir -p ~/.config/regolith3/i3/config.d
 ```
 
 次に、既定の設定を独自の設定ディレクトリにコピーします。
 
-```console
+```bash
 cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/config.d/
 ```
 
 希望に沿った変更を加えます。
 
-```console
+```bash
 vim ~/.config/regolith3/i3/config.d/40_workspace-config
 ```
 
 既定に含まれているパッケージをクリーンアップします。
 
-```console
+```bash
 sudo apt remove regolith-i3-workspace-config
 ```
 

@@ -12,13 +12,13 @@ description: >
 
 Install all of the official Regolith looks:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
 Alternatively, `apt` will list available looks that may be installed:
 
-```console
+```bash
 apt list | grep regolith-look-
 ```
 
@@ -30,13 +30,13 @@ See below for details on how to select a look.
 
 The following snippet installs status indicator packages recommended for new users:
 
-```console
+```bash
 sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
 ```
 
 To remove any of these indicators later, simply uninstall them from your system. Example:
 
-```console
+```bash
 sudo apt remove i3xrocks-info
 ```
 
@@ -44,7 +44,7 @@ sudo apt remove i3xrocks-info
 
 View the current battery status on a laptop:
 
-```console
+```bash
 sudo apt install i3xrocks-battery
 ```
 
@@ -67,7 +67,7 @@ Most Regolith Looks provide a default desktop color or image. The wallpaper can 
 
 Example, assuming the file `/usr/share/backgrounds/hardy_wallpaper_uhd.png` is present:
 
-```console
+```bash
 echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -78,14 +78,14 @@ To change the image treatment (zoom, scale, etc.) of the wallpaper image, set `r
 
 Example:
 
-```console
+```bash
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
 To specify a color rather than an image use the Xresource key `regolith.wallpaper.color.primary`:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh
@@ -93,7 +93,7 @@ regolith-look refresh
 
 To specify a secondary color and gradient:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
@@ -105,7 +105,7 @@ regolith-look refresh
 
 The lockscreen wallpaper can be managed in the same way as the desktop wallpaper. The keys are the same as desktop wallpaper, but with `lockscreen` prefixed to `wallpaper`, like so: `regolith.lockscreen.wallpaper...`. For example, to specify a lockscreen image:
 
-```console
+```bash
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -114,7 +114,7 @@ regolith-look refresh
 
 If you wish to manage wallpaper externally to Regolith, simply specify empty values for wallpaper image and color:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
@@ -159,18 +159,18 @@ Colors, wallpaper, window and bar layouts and other visual factors are bundled t
 Alternatively, the terminal command `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `gruvbox` look:
 
 ```console
-apt search ^regolith-look-
+$ apt search ^regolith-look-
 [...]
 regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
 [...]
-sudo apt install regolith-look-gruvbox
+$ sudo apt install regolith-look-gruvbox
 regolith-look set gruvbox
 regolith-look refresh
 ```
 
 To simply install all available looks:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
@@ -232,7 +232,7 @@ Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys. The co
 
 The most common keybinding change is the {{< keys "super" >}} key. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith3/Xresources`:
 
-```toml
+```yaml {filename="~/.config/regolith3/Xresources"}
 wm.mod: Mod1
 wm.alt: Mod4
 ```

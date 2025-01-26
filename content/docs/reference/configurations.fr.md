@@ -29,7 +29,7 @@ En installant ou en supprimant des paquers, la configuration de i3 peut être pe
 
 Le fichier de configuration Regolith racine (`/etc/regolith/i3/config`) charge les configurations partielles de la manière suivante:
 
-```
+```text {filename="/etc/regolith/i3/config"}
 # Inclus toutes les configuration de Regolith pour i3
 include /usr/share/regolith/i3/config.d/*
 

@@ -11,14 +11,14 @@ NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-li
 
 1. Create or add the following value to your `~/.config/regolith3/Xresources` file:
 
-```console
+```yaml {filename="~/.config/regolith3/Xresources"}
 gnome.terminal.font:	JetBrains Mono 14
 ```
 
 2. Reload the `Xresources` configuration:
 
-```console
-$ regolith-look refresh
+```bash
+regolith-look refresh
 ```
 
 3. Open a new terminal to see the change take effect.

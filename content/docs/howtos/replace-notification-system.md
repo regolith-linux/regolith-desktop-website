@@ -15,9 +15,9 @@ We will use [dunst](https://dunst-project.org/) as an example but similar steps 
 
 1. Replace `rofication` with `dunst`:
 
-```console
-$ sudo apt install dunst
-$ sudo apt purge regolith-rofication
+```bash
+sudo apt install dunst
+sudo apt purge regolith-rofication
 ```
 
 2. Log out and back in.

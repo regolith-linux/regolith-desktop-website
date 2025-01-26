@@ -14,7 +14,7 @@ Out of the box the primary battery status will be displayed in the i3-bar. For s
 1. [Stage your i3xrocks configuration files]({{< ref "add-remove-blocklets#customize-bar" >}}), then open `~/.config/regolith3/i3xrocks/conf.d/80_battery` in your editor of choice.
 2. Find the line that pertains to the battery blocklet:
 
-```conf
+```toml {filename="~/.config/regolith3/i3xrocks/conf.d/80_battery"}
 # Battery indicator
 #
 # Displays total percentage charge left of specified battery.
@@ -33,7 +33,7 @@ ls /sys/class/power_supply/
 
 4. Update the staged config file to have a new blocklet as such:
 
-```conf
+```toml {filename="~/.config/regolith3/i3xrocks/conf.d/80_battery"}
 ...
 # Battery indicator
 #
@@ -50,18 +50,18 @@ instance=BAT1
 ## Sway
 
 1. Stage your i3status-rust config file:
-```sh
+```bash
 cp /etc/regolith/i3status-rust/config.toml ~/.config/regolith3/i3status-rust/config.toml
 ```
 
 2. Configure to supply i3status-rust with your config file:
-```sh
+```bash
 echo "wm.bar.status_config: ~/.config/regolith3/i3status-rust/config.toml" >> ~/.config/regolith3/Xresources
 ```
 
 3. List all the battery instances running on your machine by running:
 
-```sh
+```bash
 ls /sys/class/power_supply/
 
 # AC BAT0 BAT1
@@ -69,7 +69,7 @@ ls /sys/class/power_supply/
 
 4. Update the staged config file to contain blocks for both of the batteries:
 
-```conf
+```toml {filename="~/.config/regolith3/i3xrocks/conf.d/80_battery"}
 [[block]]
 block = "battery"
 interval = 10

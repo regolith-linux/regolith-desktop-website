@@ -9,15 +9,15 @@ description: >
 
 ## ステータスインジケーターの検索
 
-```console
-$ apt search i3xrocks-
+```bash
+apt search i3xrocks-
 ```
 
 ## ステータスインジケーターのインストール
 
-```console
-$ sudo apt install i3xrocks-memory
-$ regolith-look refresh
+```bash
+sudo apt install i3xrocks-memory
+regolith-look refresh
 ```
 
 # i3バーのカスタマイズ {#customize-bar}

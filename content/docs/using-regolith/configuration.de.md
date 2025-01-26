@@ -12,7 +12,7 @@ description: >
 
 Installieren Sie alle offiziellen Regolith-Looks:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
@@ -20,13 +20,13 @@ sudo apt install regolith-look-*
 
 Das folgende Snippet installiert Statusindikatoren-Pakete, die für neue Benutzer empfohlen werden:
 
-```console
+```bash
 sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
 ```
 
 Um einen dieser Indikatoren später zu entfernen, deinstallieren Sie ihn einfach von Ihrem System. Beispiel:
 
-```console
+```bash
 sudo apt remove i3xrocks-info
 ```
 
@@ -34,7 +34,7 @@ sudo apt remove i3xrocks-info
 
 Zeigt den aktuellen Batteriestatus eines Laptops an:
 
-```console
+```bash
 sudo apt install i3xrocks-battery
 ```
 
@@ -45,7 +45,7 @@ Pfades zum Hintergrundbild über den Xresources-Parameter `regolith.wallpaper.fi
 
 Beispiel: Angenommen, die Datei `/usr/share/backgrounds/hardy_wallpaper_uhd.png` ist vorhanden:
 
-```console
+```bash
 echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
@@ -55,14 +55,14 @@ Optionen sind: `none`, `wallpaper`, `centered`, `scaled`, `stretched`, `zoom`, `
 
 Beispiel:
 
-```console
+```bash
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
 
 Um eine Farbe anstelle eines Bildes anzugeben, verwenden Sie den Xresource-Parameter `regolith.wallpaper.color.primary`:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
@@ -70,7 +70,7 @@ regolith-look refresh
 
 Um eine sekundäre Farbe und einen Farbverlauf zu definieren:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
@@ -84,7 +84,7 @@ Das Hintergrundbild des Sperrbildschirms kann auf die gleiche Weise wie das Desk
 Die Parameter sind die gleichen wie beim Desktop-Hintergrundbild, aber mit dem Präfix `lockscreen` vor `wallpaper`, etwa
 so: `regolith.lockscreen.wallpaper...`. Um zum Beispiel ein Bild für den Sperrbildschirm anzugeben:
 
-```console
+```bash
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh 
 ```
@@ -94,7 +94,7 @@ regolith-look refresh
 Wenn Sie das Hintergrundbild außerhalb von Regolith verwalten möchten, geben Sie einfach leere Werte für das
 Hintergrundbild und die Farbe an:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
@@ -123,18 +123,18 @@ Alternativ kann der Terminalbefehl `regolith-look` verwendet werden, um das Auss
 mit dem ausgewählten Aussehen zu aktualisieren. Hier ist ein Beispiel, das zum `gruvbox`-Look wechselt:
 
 ```console
-apt search ^regolith-look-
+$ apt search ^regolith-look-
 [...]
 regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
 [...]
-sudo apt install regolith-look-gruvbox
+$ sudo apt install regolith-look-gruvbox
 regolith-look set gruvbox
 regolith-look refresh
 ```
 
 Um einfach alle verfügbaren Looks zu installieren:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
@@ -168,7 +168,7 @@ indem man den Teil, der angepasst werden soll, nach `~/.config/regolith3/i3/conf
 in `/usr/share/regolith/i3/config.d` über apt entfernt. Zum Beispiel, um die Tastaturbelegung des Arbeitsbereichs
 anzupassen:
 
-```console
+```bash
 mkdir -p ~/.config/regolith3/i3/config.d
 cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/config.d/
 vim ~/.config/regolith3/i3/config.d/40_workspace-config # gewünschte Änderungen vornehmen
@@ -219,7 +219,7 @@ kanonische Quelle für Einstellungen, die von verschiedenen UI-Komponenten geles
 Tastaturbelegung {{< keys "super" >}} von der Taste "windows" auf "alt" zu ändern, fügen Sie die folgende Zeilen in die
 Datei `~/.config/regolith3/Xresources` ein:
 
-```toml
+```yaml {filename="~/.config/regolith3/Xresources"}
 wm.mod: Mod1
 wm.alt: Mod4
 ```

@@ -13,7 +13,7 @@ Like most configuration in Regolith, the i3-gaps gap size can be tuned via `Xres
 
 1. Create or add the following value to your `~/.config/regolith3/Xresources` file:
 
-```console
+```yaml {filename="~/.config/regolith3/Xresources"}
 wm.gaps.inner.size: 20
 ```
 
@@ -21,8 +21,8 @@ In this example we're setting the default gap to 20 pixels.
 
 2. Reload the `Xresources` configuration:
 
-```console
-$ regolith-look refresh
+```bash
+regolith-look refresh
 ```
 
 ## Further Reading

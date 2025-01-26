@@ -27,7 +27,7 @@ Regolith 2.0 adds support for config partials, as this feature came to `i3` rece
 
 The root Regolith configuration file at `/etc/regolith/i3/config` loads partials like so:
 
-```
+```text {filename="/etc/regolith/i3/config"}
 # Include any regolith i3 partials
 include /usr/share/regolith/i3/config.d/*
 

@@ -19,7 +19,7 @@ Monitors: 1
 
 In this case, the output name is `eDP-1`. Next add a line like this into [a staged copy of your i3 config file]({{< ref "stage-configs">}}):
 
-```
+```text
 workspace "$ws1" output DP1
 ```
 
@@ -37,6 +37,6 @@ Output HDMI-A-2 'ViewSonic Corporation VG2448 V5E192121969'
 
 To assign workspace *$ws1* to the HDMI-A-2 output put the following line into [a staged copy of your sway config file]({{< ref "stage-configs">}}):
 
-```
+```text
 workspace $ws1 output HDMI-A-2
 ```

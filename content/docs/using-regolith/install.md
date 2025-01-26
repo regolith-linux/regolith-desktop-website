@@ -21,14 +21,14 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Register the Regolith public key to your local `apt`:
 
-   ```console
+   ```bash
    wget -qO - https://regolith-desktop.org/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
 1. Add the repository URL to your local `apt`:
 
-   ```console
+   ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
    https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
@@ -36,7 +36,7 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Update `apt` and install Regolith
 
-   ```console
+   ```bash
    sudo apt update
    sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
    ```
@@ -55,14 +55,14 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Register the Regolith public key to your local `apt`:
 
-   ```console
+   ```bash
    wget -qO - https://regolith-desktop.org/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
 1. Add the repository URL to your local `apt`:
 
-   ```console
+   ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
    https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
@@ -70,7 +70,7 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Update `apt` and install Regolith
 
-   ```console
+   ```bash
    sudo apt update
    sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
    ```
@@ -90,7 +90,7 @@ Replace `amd64` with `arm64` in the two places in the above line to install on A
 {{< tab >}}
 For Debian users that use the "Testing" release, Regolith can be installed, however there is no "release" version due to the nature of Debian Testing.  In order to install Regolith into a Debian Testing instance, the `apt` line contains `testing` instead of a `release` string.  For example:
 
-   ```console
+   ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
    https://regolith-desktop.org/testing-debian-testing-amd64 testing main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
@@ -105,14 +105,14 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Register the Regolith public key to your local `apt`:
 
-   ```console
+   ```bash
    wget -qO - https://regolith-desktop.org/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
 1. Add the repository URL to your local `apt`:
 
-   ```console
+   ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
    https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
@@ -120,7 +120,7 @@ to configure your system to read packages from the Regolith package repository a
 
 1. Update `apt` and install Regolith
 
-   ```console
+   ```bash
    sudo apt update
    sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
    ```
@@ -146,14 +146,14 @@ The `regolith-compositor-picom-glx` compositor should work on most computers. If
 
 Starting with Regolith 3.0 it is now possible to select from multiple sessions (X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`). Due to this, when installing Regolith 3.2 also specify one or both sessions that you wish to use. Additionally, it's now possible to specify the Regolith Look at install time, which saves a setup of having to configure it later.  Here is the recommended base install for X11 on Debian-based systems:
 
-```console
+```bash
 sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
 #                ^-- base package ^-- session                ^ -- look 
 ```
 
 * For the session, you may chose one or both of: `regolith-session-flashback` (X11), `regolith-session-sway` (Wayland)
 * For the look, you may chose *one* from any available look package:
-```
+```text
 regolith-look-ayu-dark
 regolith-look-ayu-mirage
 regolith-look-ayu
@@ -171,13 +171,13 @@ regolith-look-solarized-dark
 
 An an example and alternative to the recommendation above, here is the `apt` line to install the Sway session with the Nord Look:
 
-```console
+```bash
 sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
 ```
 
 ## Anatomy of the Regolith `apt` URL Path
 
-```console
+```text
 https://regolith-desktop.org/testing-debian-testing-amd64
                              |       |      |       |
                              |       |      |       * Architecture

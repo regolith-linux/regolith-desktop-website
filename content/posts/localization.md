@@ -10,7 +10,7 @@ With the 2.0 release out the door, we're looking for help to translate the index
 
 For a given language translation the following files must be translated:
 
-```
+```text
 content/_index.md
 content/docs/using-regolith/basics.md
 content/docs/using-regolith/configuration.md
@@ -21,7 +21,7 @@ To provide a translation, simply copy the English file and add the [two-letter l
 
 As an example, if a Japanese translation was provided, the following new files would be added to the PR:
 
-```
+```text
 content/_index.ja.md
 content/docs/using-regolith/basics.ja.md
 content/docs/using-regolith/configuration.ja.md

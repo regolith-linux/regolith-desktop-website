@@ -12,9 +12,7 @@ For the Regolith 2.1 release, the host name of the URL from which `apt` pulls pa
 
 The old `apt` URL:
 
-`/etc/apt/sources.list.d/regolith.list`:
-
-```
+```text {filename="/etc/apt/sources.list.d/regolith.list"}
 deb [arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-ubuntu-jammy-amd64 testing main
                                                                                                      ^
                                                                                                      |
@@ -23,9 +21,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] http
 
 The new `apt` URL:
 
-`/etc/apt/sources.list.d/regolith.list`:
-
-```
+```text {filename="/etc/apt/sources.list.d/regolith.list"}
 deb [arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/release-ubuntu-jammy-amd64 testing main
 ```
 

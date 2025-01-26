@@ -17,9 +17,9 @@ Regolithでは様々なコンポーネントの動作や外観を決定するた
 
 1. 既定のRegolith i3設定ファイルをホームディレクトリにコピーする。
 
-```
-$ mkdir -p ~/.config/regolith3/i3
-$ cp /etc/regolith/i3/config ~/.config/regolith3/i3/config
+```bash
+mkdir -p ~/.config/regolith3/i3
+cp /etc/regolith/i3/config ~/.config/regolith3/i3/config
 ```
 
 2. ログアウトして戻る。Regolithセッションがユーザーがステージしたファイルを自動で認識して読み込むでしょう。

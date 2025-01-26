@@ -11,7 +11,7 @@ Most Regolith Looks provide a default desktop color or image. The wallpaper can 
 
 Example, assuming the file `/usr/share/backgrounds/hardy_wallpaper_uhd.png` is present:
 
-```console
+```bash
 echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -22,14 +22,14 @@ To change the image treatment (zoom, scale, etc.) of the wallpaper image, set `r
 
 Example:
 
-```console
+```bash
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
 To specify a color rather than an image use the Xresource key `regolith.wallpaper.color.primary`:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh
@@ -37,7 +37,7 @@ regolith-look refresh
 
 To specify a secondary color and gradient:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
@@ -49,7 +49,7 @@ regolith-look refresh
 
 The lockscreen wallpaper can be managed in the same way as the desktop wallpaper. The keys are the same as desktop wallpaper, but with `lockscreen` prefixed to `wallpaper`, like so: `regolith.lockscreen.wallpaper...`. For example, to specify a lockscreen image:
 
-```console
+```bash
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -58,7 +58,7 @@ regolith-look refresh
 
 If you wish to manage wallpaper externally to Regolith, simply specify empty values for wallpaper image and color:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```

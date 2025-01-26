@@ -17,14 +17,14 @@ Most X11 applications support a flag `--class` to specify the `class` under whic
 
 Launch the terminal in floating mode:
 
-```console
-$ gnome-terminal --class=floating_window
+```bash
+gnome-terminal --class=floating_window
 ```
 
 ### Firefox
 
 Launch Firefox in floating mode:
 
-```console
-$ firefox --class=floating_window
+```bash
+firefox --class=floating_window
 ```

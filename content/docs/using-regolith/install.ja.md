@@ -23,14 +23,14 @@ Regolithはシステムパッケージとしてインストールすることが
 
 1. ローカルの`apt`にRegolithの公開鍵を登録する。
 
-   ```console
+   ```bash
    wget -qO - https://regolith-desktop.org/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
 1. ローカルの`apt`にリポジトリのURLを追加する。
 
-   ```console
+   ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
    https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
@@ -38,7 +38,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
 1. `apt`を更新してRegolithをインストールする。
 
-   ```console
+   ```bash
    sudo apt update
    sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
    ```
@@ -57,14 +57,14 @@ Regolithはシステムパッケージとしてインストールすることが
 
 1. ローカルの`apt`にRegolithの公開鍵を登録する。
 
-   ```console
+   ```bash
    wget -qO - https://regolith-desktop.org/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
 1. ローカルの`apt`にリポジトリのURLを追加する。
 
-   ```console
+   ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
    https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
@@ -72,7 +72,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
 1. `apt`を更新してRegolithをインストールする。
 
-   ```console
+   ```bash
    sudo apt update
    sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
    ```
@@ -92,7 +92,7 @@ ARMベースのシステムにインストールするときは、上記の内�
 {{< tab >}}
 "Testing"リリースのDebianユーザーであれば、Regolithをインストールすることができますが、Debian Testingの性質上"release"バージョンは存在しません。Debian TestingインスタンスにRegolithをインストールするには、`apt`コマンドのワンライナーの`release`の代わりに`testing`を含める必要があります。例：
 
-   ```console
+   ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
    https://regolith-desktop.org/testing-debian-testing-amd64 testing main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
@@ -107,14 +107,14 @@ Regolithはシステムパッケージとしてインストールすることが
 
 1. ローカルの`apt`にRegolithの公開鍵を登録する。
 
-   ```console
+   ```bash
    wget -qO - https://regolith-desktop.org/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
 1. ローカルの`apt`にリポジトリのURLを追加する。
 
-   ```console
+   ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
    https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
@@ -122,7 +122,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
 1. `apt`を更新してRegolithをインストールする。
 
-   ```console
+   ```bash
    sudo apt update
    sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
    ```
@@ -148,14 +148,14 @@ ARMベースのシステムにインストールするときは、上記の内�
 
 Regolith 3.0では、複数のセッション(X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`)から選択することができるようになりました。このため、Regolith 3.0をインストールするときは、使用するセッションを一方か両方を指定します。さらに、Regolith 3.0からはインストール時にRegolithの外観を指定できるようになったことで、後で設定する必要があるセットアップが節約されます。DebianベースのシステムのX11で推奨される基本的なインストールは以下の通りです。
 
-```console
+```bash
 sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
 #                ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ   ^-- ｾｯｼｮﾝ                   ^ -- 外観 
 ```
 
 * セッションについて、次の内の一方か両方を選ぶことができます：`regolith-session-flashback` (X11), `regolith-session-sway` (Wayland)
 * 外観について、次の外観パッケージから*1つ*を選ぶことができます。
-```
+```text
 regolith-look-ayu-dark
 regolith-look-ayu-mirage
 regolith-look-ayu
@@ -173,13 +173,13 @@ regolith-look-solarized-dark
 
 上記の推奨事項の例と代替案として、ここでは、Swayセッションに外観"Nord"を適用してインストールする`apt`コマンドを紹介します。
 
-```console
+```bash
 sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
 ```
 
 ## Regolith `apt` URLパスの構造
 
-```console
+```text
 https://regolith-desktop.org/testing-debian-testing-amd64
                              |       |      |       |
                              |       |      |       * アーキテクチャ

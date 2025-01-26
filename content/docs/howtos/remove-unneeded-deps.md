@@ -15,8 +15,8 @@ NOTE: Removing packages may cause unexpected behavior or loss of functionality.
 
 The `lightdm` display manager can be installed by with a variety of themes, but we'll install the package `regolith-lightdm-config`:
 
-```console
-$ sudo apt install regolith-lightdm-config
+```bash
+sudo apt install regolith-lightdm-config
 ```
 
 Inspect the output of `apt` to verify you approve of the package changes.  When presented with a menu, choosing between `gdm3` and `lightdm`, select `lightdm`.
@@ -25,16 +25,16 @@ Inspect the output of `apt` to verify you approve of the package changes.  When 
 
 Now that we are using the `lightdm` display manager, we can remove the unneeded packages:
 
-```console
-$ sudo apt remove gdm3 gnome-shell evolution-data-server*
+```bash
+sudo apt remove gdm3 gnome-shell evolution-data-server*
 ```
 
 Inspect the output of `apt` to verify you approve of the package changes.
 
 Now we can remove all of the dependencies of those packages:
 
-```console
-$ sudo apt autoremove
+```bash
+sudo apt autoremove
 ```
 
 # Reboot
@@ -45,7 +45,7 @@ At this point the unneeded dependencies have been removed from the system.  Rebo
 
 If you decide that you'd like to restore the existing setup, run the following and select `gdm3` as the display manager.
 
-```console
-$ sudo apt install gdm3 gnome-shell evolution-data-server ubuntu-session
-$ sudo apt remove regolith-lightdm-session 
+```bash
+sudo apt install gdm3 gnome-shell evolution-data-server ubuntu-session
+sudo apt remove regolith-lightdm-session 
 ```

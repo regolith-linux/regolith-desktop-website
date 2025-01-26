@@ -17,7 +17,7 @@ Most of Regolith's GNOME support comes from the `gnome-flashback` project.  To r
 
 1. Install the `gnome-session-flashback` session:
 
-```console
+```bash
 sudo apt install gnome-session-flashback
 ```
 

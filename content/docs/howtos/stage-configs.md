@@ -17,9 +17,9 @@ Depending on what you wish to change, you may need your own copy if the i3 confi
 
 1. Copy the default Regolith i3 config file into your home directory:
 
-```
-$ mkdir -p ~/.config/regolith3/i3
-$ cp /etc/regolith/i3/config ~/.config/regolith3/i3/config
+```bash
+mkdir -p ~/.config/regolith3/i3
+cp /etc/regolith/i3/config ~/.config/regolith3/i3/config
 ```
 
 2. Log out and back in. The Regolith session will automatically detect and load your user-staged file.

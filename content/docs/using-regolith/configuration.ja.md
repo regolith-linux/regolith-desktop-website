@@ -12,13 +12,13 @@ description: >
 
 Regolith公式の外観をすべてインストールする:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
 もしくは、`apt`でインストールされて利用可能な外観のリストを表示する:
 
-```console
+```bash
 apt list | grep regolith-look-
 ```
 
@@ -30,13 +30,13 @@ apt list | grep regolith-look-
 
 次の行では、新規ユーザーに推奨されるステータスインジケータパッケージをインストールします。
 
-```console
+```bash
 sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
 ```
 
 これらのインジケーターを後から削除したいときは、システムからアンインストールします。例：
 
-```console
+```bash
 sudo apt remove i3xrocks-info
 ```
 
@@ -44,7 +44,7 @@ sudo apt remove i3xrocks-info
 
 ラップトップの現在のバッテリー状態を表示するには：
 
-```console
+```bash
 sudo apt install i3xrocks-battery
 ```
 
@@ -67,7 +67,7 @@ sudo apt install i3xrocks-battery
 
 例として、`/usr/share/backgrounds/hardy_wallpaper_uhd.png`ファイルが存在すると仮定したとき： 
 
-```console
+```bash
 echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -78,14 +78,14 @@ regolith-look refresh
 
 例：
 
-```console
+```bash
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
 Xresourceキー・`regolith.wallpaper.color.primary`を使用して、画像ではなく色を指定するには：
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh
@@ -93,7 +93,7 @@ regolith-look refresh
 
 2つ目の色とグラデーションを指定するには：
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
@@ -105,7 +105,7 @@ regolith-look refresh
 
 ロック画面壁紙はデスクトップ壁紙と同じ方法で管理することができます。キーはデスクトップ壁紙と似たようなものですが、`regolith.lockscreen.wallpaper...`のように、`lockscreen`を`wallpaper`の前に追加します。例えば、ロック画面の画像を指定する場合：
 
-```console
+```bash
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -114,7 +114,7 @@ regolith-look refresh
 
 Regolithの外部で壁紙を管理したい場合、壁紙画像と色の値を空にします。
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
@@ -159,18 +159,18 @@ CPUの読み込み、日付、時間、通知、天気や他のシステム情�
 また、ターミナルのコマンド・`regolith-look`で外観を変更したり、選択した外観でアクティブなセッションを再読み込みすることができます。ここでは例として、`gruvbox`の外観に切り替えます。
 
 ```console
-apt search ^regolith-look-
+$ apt search ^regolith-look-
 [...]
 regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
 [...]
-sudo apt install regolith-look-gruvbox
+$ sudo apt install regolith-look-gruvbox
 regolith-look set gruvbox
 regolith-look refresh
 ```
 
 利用可能な外観をすべてインストールする簡単な方法：
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
@@ -233,7 +233,7 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 
 もっとも重要なキーバインドの変更は{{< keys "super" >}}キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして`Xresources`を利用できます。ユーザー設定で利用可能な`Xresources`キーのリストは、[ここから参照することができます]({{< ref "xresources" >}})。既定の{{< keys "super" >}}バインドを"windows"キーから"alt"に変更するには`~/.config/regolith3/Xresources`に以下の行を追加します。
 
-```toml
+```yaml {filename="~/.config/regolith3/Xresources"}
 wm.mod: Mod1
 wm.alt: Mod4
 ```

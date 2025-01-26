@@ -10,7 +10,7 @@ Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The c
 {{< /callout >}}
 
 Add the line
-```
+```yaml {filename="~/.config/regolith3/Xresources"}
 wm.bar.mode: hide
 ```
 to `$HOME/.config/regolith3/Xresources` file.

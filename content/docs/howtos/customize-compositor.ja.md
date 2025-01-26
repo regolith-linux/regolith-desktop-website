@@ -31,7 +31,7 @@ Regolith 1.xでは、既定のコンポジターはPicomでした。
 Regolithで動作するすべてのコンポジター設定は、
 以下のコマンドで一覧表示されます：
 
-```console
+```bash
 apt search regolith-compositor-
 ```
 
@@ -58,14 +58,14 @@ i3の再起動では代替できません。
 次のパッケージインストールコマンドを実行して、コンポジターを交換します。
 `picom`をインストールする場合：
 
-```console
+```bash
 apt install regolith-compositor-picom
 ```
 
 **一度ログアウトして戻ってから**新しいコンポジターを読み込みます。
 プロセスのリストから`picom`が動作していることを確認することができます：
 
-```console
+```bash
 ps aux | grep picom
 ```
 

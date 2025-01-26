@@ -12,7 +12,7 @@ description: >
 
 Installer tous les thèmes officiels de Regolith:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
@@ -22,13 +22,13 @@ NOTE: Cela va télécharger plusieurs fonts et images. Si vous souhaitez minimis
 
 La commande suivante installe les indicateurs de statut recommandés pour les nouveaux utilisateurs:
 
-```console
+```bash
 sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
 ```
 
 Pour supprimer certains de ces indicateurs plus tard, désinstallez-les simplement de votre système:
 
-```console
+```bash
 sudo apt remove i3xrocks-info
 ```
 
@@ -36,7 +36,7 @@ sudo apt remove i3xrocks-info
 
 Pour voir le statut actuel de la batterie sur votre laptop:
 
-```console
+```bash
 sudo apt install i3xrocks-battery
 ```
 
@@ -61,7 +61,7 @@ Le fond d'écran peut être modifié en spécifiant le chemin vers une image via
 
 Exemple, en considérant que le fichier `/usr/share/backgrounds/hardy_wallpaper_uhd.png` existe:
 
-```console
+```bash
 echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -71,14 +71,14 @@ Les options sont les suivantes: `none`, `wallpaper`, `centered`, `scaled`, `stre
 
 Exemple:
 
-```console
+```bash
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
 Pour spécifier une couleur plutôt qu'une image, utiliser la valeur `regolith.wallpaper.color.primary`:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh
@@ -86,7 +86,7 @@ regolith-look refresh
 
 Pour spécifier une seconde couleur et obtenir un dégradé:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
@@ -100,7 +100,7 @@ Le fond d'écran de verouillage peut être géré de la même manière que le fo
 Les valeurs Xresources sont les mêmes mais avec `lockscreen` plutôt que `wallpaper` comme préfixe (`regolith.lockscreen.wallpaper...`)
 Par exemple:
 
-```console
+```bash
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -109,7 +109,7 @@ regolith-look refresh
 
 Si vous souhaitez gérer le fond d'écran autrement que par Regolith, fixez simplement des valeurs vides pour l'image et la couleur:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
@@ -139,18 +139,18 @@ Alternativement, la commande de terminal `regolith-look` peut être utilisé pou
 Voici un exemple qui sélectionne le thème `gruvbox`.
 
 ```console
-apt search ^regolith-look-
+$ apt search ^regolith-look-
 [...]
 regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
 [...]
-sudo apt install regolith-look-gruvbox
+$ sudo apt install regolith-look-gruvbox
 regolith-look set gruvbox
 regolith-look refresh
 ```
 
 Pour installer l'ensemble des thèmes:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
@@ -222,7 +222,7 @@ Regolith utilise `Xresources` comme une source de vérité pour les paramètres,
 La table des valeurs `Xresources` accessibles à l'utilisateur est [accessible ailleurs]({{< ref "xresources" >}}).
 Pour changer la touche par défaut {{< keys "super" >}} (touche "Win") pour la touche "Alt", ajoutez la configuration suivante au fichier `~/.config/regolith3/Xresources`:
 
-```toml
+```yaml {filename="~/.config/regolith3/Xresources"}
 wm.mod: Mod1
 wm.alt: Mod4
 ```

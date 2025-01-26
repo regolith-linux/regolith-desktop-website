@@ -36,14 +36,14 @@ Follow these steps to override the default workspace label with your own:
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
 {{< /callout >}}
 
-```console
-$ echo "wm.workspace.06.name: 6:" >> ~/.config/regolith3/Xresources
+```bash
+echo "wm.workspace.06.name: 6:" >> ~/.config/regolith3/Xresources
 ```
 
 3. Refresh your UI:
 
-```console
-$ regolith-look refresh
+```bash
+regolith-look refresh
 ```
 
 In i3, workspace labels are only updated when a workspace is created. Ensure you're creating an new workspace 6 if following the example above:
@@ -54,7 +54,7 @@ In i3, workspace labels are only updated when a workspace is created. Ensure you
 
 The same approach can be used to specify textual descriptions of your workspaces. For example, adding the following lines to your `~/.config/regolith3/Xresources` file will change the first three workspaces:
 
-```
+```yaml {filename="~/.config/regolith3/Xresources"}
 wm.workspace.01.name: 1: Terminal
 wm.workspace.02.name: 2: Web
 wm.workspace.03.name: 3: Chat

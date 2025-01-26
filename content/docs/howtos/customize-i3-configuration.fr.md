@@ -26,21 +26,21 @@ Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The c
 
 La configuration dans l'exemple suivant (récupérée de `/usr/share/regolith/i3/config.d/80_compositor`) peut être modifiée pour charger le compositor que l'on veut sans modifier ou ré-écrire la configuration existante de i3 en fixant la variable $wm.program.compositor`.
 
-```
+```text {filenamme="/usr/share/regolith/i3/config.d/80_compositor"}
 set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init
 exec_always --no-startup-id $i3-wm.program.compositor
 ```
 
 Pour faire cela, ajouter simplement une ligne à `~/.config/regolith3/Xresources`:
 
-```
+```yaml {filename="~/.config/regolith3/Xresources"}
 # Utiliser mon propre programme compositor
 wm.program.compositor: /usr/local/bin/my-compositor
 ```
 
 De la même manière, vous pouvez ré-écrire d'autres paramètres i3 avec `Xresources` en utilisant les noms de variables trouvés dans les fichiers du dossier `/usr/share/regolith/i3/config.d`:
 
-```
+```yaml {filename="~/.config/regolith3/Xresources"}
 ## Configurer les espacements
 wm.gaps.inner.size: 1
 
@@ -60,25 +60,25 @@ Si vous souhaitez remplacer entièrement ou supprimer des paramètres fournis pa
 
 Pour identifier le nom du paquet qui donne cette configuration:
 
-```console
+```bash
 dpkg -S /usr/share/doc/regolith-i3-workspace-config
 ```
 
 La sortie contient le nom du paquet:
 
-```
+```yaml
 regolith-i3-workspace-config: /usr/share/doc/regolith-i3-workspace-config
 ```
 
 Pour voir la liste complète des fichiers fournis par ce paquet (et savoir ce que l'on retire):
 
-```console
+```bash
 dpkg -L regolith-i3-workspace-config
 ```
 
 Supprimer la configuration partielle:
 
-```console
+```bash
 sudo apt remove regolith-i3-workspace-config
 ```
 
@@ -92,25 +92,25 @@ Cela va ignorer entièrement la configuration par défaut de Regolith, ce qui n'
 
 Premièrement, assurez-vous qu'un dossier existe dans la configuration utilisateur:
 
-```console
+```bash
 mkdir -p ~/.config/regolith3/i3/config.d
 ```
 
 Ensuite, copier la configuration par défaut dans le dossier de configuration de l'utilisateur:
 
-```console
+```bash
 cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/config.d/
 ```
 
 Faites les changements voulus:
 
-```console
+```bash
 vim ~/.config/regolith3/i3/config.d/40_workspace-config
 ```
 
 Retirez le paquet contenant la configuration par défaut:
 
-```console
+```bash
 sudo apt remove regolith-i3-workspace-config
 ```
 

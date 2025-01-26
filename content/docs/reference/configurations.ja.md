@@ -27,7 +27,7 @@ Regolith 2.0では、`i3`が[4.20](https://i3wm.org/downloads/RELEASE-NOTES-4.20
 
 `/etc/regolith/i3/config`にあるrootのRegolith設定ファイルは、部分設定を次のように読み込みます：
 
-```
+```text {filename="/etc/regolith/i3/config"}
 # Regolithのi3のあらゆる部分設定を読み込む
 include /usr/share/regolith/i3/config.d/*
 

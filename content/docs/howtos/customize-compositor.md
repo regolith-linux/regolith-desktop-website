@@ -31,7 +31,7 @@ Regolith 1.x, the default was Picom.
 The following command will list all compositors configured to work with
 Regolith:
 
-```console
+```bash
 apt search regolith-compositor-
 ```
 
@@ -58,14 +58,14 @@ sufficient.
 Run the following package install command to swap out the compositor. In this
 case we’ll install `picom`:
 
-```console
+```bash
 apt install regolith-compositor-picom
 ```
 
 **Log out and then log back in** and the new compositor should be loaded. You
 can verify by checking the process list for `picom`:
 
-```console
+```bash
 ps aux | grep picom
 ```
 

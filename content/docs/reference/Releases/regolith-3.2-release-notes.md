@@ -34,7 +34,7 @@ For those using the "rolling" release label `release-current`, no change is nece
 
 After `apt upgrade` is complete, verify that Regolith 3.2 is installed by:
 
-```shell
+```console
 $ cat /etc/regolith/version 
 REGOLITH_VERSION=3.2
 ```

@@ -23,7 +23,7 @@ Ubuntu 20.04: https://regolith-desktop.com/install-release-ubuntu-20.04-amd64.tx
 
 Example:
 
-```console
+```bash
 wget https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt
 cat install-release-ubuntu-22.04-amd64.txt
 ```
@@ -34,7 +34,7 @@ Manually execute each step in the text file, or source the file if you're feelin
 
 There is a special package that is used in the ISO that can also be used in a minimal install such as this: `regolith-system-ubuntu`.  This package includes extra branding not used in typical desktop installs which may share multiple desktop environments.  Run the following command to install Regolith Desktop and all of it's dependencies:
 
-```console
+```bash
 sudo apt install regolith-system-ubuntu
 ```
 
