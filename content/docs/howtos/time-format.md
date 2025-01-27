@@ -5,10 +5,6 @@ description: >
   Change the date/time format used in the bar
 ---
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
-
 The time format (12 or 24 hour) can be specified in Settings:
 
 {{< img "images/regolith-screenshot-settings-time-format.png" "">}}
@@ -22,11 +18,14 @@ The date and time formats can also be explicitly set via `Xresources`. To do so,
 For example the following line can be added to use the `YYYY-MM-DD hh:mm` format:
 `i3xrocks.date.format2: %Y-%m-%d %H:%M`
 
-The complete format that is support is as follows:
+The most useful formats that are supported are as follows:
 
 -   `%Y` prints year as `YYYY`
 -   `%y` prints year as `YY`
 -   `%m` prints month as `MM`
--   `%m` prints minute as `mm`
+-   `%d` prints day as `DD`
 -   `%H` prints hours in 24 hour format
 -   `%I` prints hours in 12 hour format
+-   `%M` prints minute as `mm`
+
+For more details and placeholders, please look at `date --help`.
