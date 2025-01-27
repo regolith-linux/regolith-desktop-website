@@ -2505,11 +2505,7 @@ content/docs/using-regolith/first-launch.md
  NOTICE: This page was copied from the &lt;a href="https://regolith-linux.org">Regolith 1.x website&lt;/a> and has not been updated for Regolith 2. It may contain out of date information.
 &lt;/blockquote>
 
-&lt;p>Regolith ships with a notification system called &lt;a href="https://github.com/DaveDavenport/Rofication">Rofication&lt;/a>. It is designed to work in the background and not use pop-ups as a way of alerting the user to a new notification. Rather, a small bar item displays the current number of unread notifications and a dialog can activated to interact with the content of the current notifications. This page describes a way to install an alternative notification system which works in a more traditional way.&lt;/p></description></item><item><title>Change the Bar Date and Time Format</title><link>https://regolith-desktop.com/docs/howtos/time-format/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/howtos/time-format/</guid><description>&lt;blockquote class="book-hint danger">
- NOTICE: This page was copied from the &lt;a href="https://regolith-linux.org">Regolith 1.x website&lt;/a> and has not been updated for Regolith 2. It may contain out of date information.
-&lt;/blockquote>
-
-&lt;p>The time format (12 or 24 hour) can be specified in Settings:&lt;/p>
+&lt;p>Regolith ships with a notification system called &lt;a href="https://github.com/DaveDavenport/Rofication">Rofication&lt;/a>. It is designed to work in the background and not use pop-ups as a way of alerting the user to a new notification. Rather, a small bar item displays the current number of unread notifications and a dialog can activated to interact with the content of the current notifications. This page describes a way to install an alternative notification system which works in a more traditional way.&lt;/p></description></item><item><title>Change the Bar Date and Time Format</title><link>https://regolith-desktop.com/docs/howtos/time-format/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/howtos/time-format/</guid><description>&lt;p>The time format (12 or 24 hour) can be specified in Settings:&lt;/p>
 
 
 &lt;p>The date format can be specified by selecting the appropriate region in Settings. A preview of the date format is provided, and logging back in is required for changes to take effect.&lt;/p>
