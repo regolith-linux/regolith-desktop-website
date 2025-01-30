@@ -2,15 +2,15 @@
 title: "Community"
 ---
 
-## Announcements
+## お知らせ
 
-* Subscribe to the [mailing list] for release announcements
+* [メーリングリストでリリースのお知らせを受け取る](https://www.freelists.org/list/regolith-linux)
 
-## Discussion and Help
+## 議論やヘルプ
 
-* Join us on [GitHub Discussions] for help and discussion
-* Chat with community members on the Regolith Desktop [Matrix space]
-* Search from existing issues or create [a new issue] for bugs and feature requests
+* [GitHub Discussions](https://github.com/orgs/regolith-linux/discussions)に参加してヘルプや議論をする
+* [RegolithデスクトップのMatrixスペース](https://matrix.to/#/#regolith-desktop:matrix.org)でコミュニティメンバーと会話する
+* [既存のIssueや新規Issue](https://github.com/regolith-linux/regolith-desktop/issues)でバグの報告や機能リクエストをする
 
 ## Support Regolith
 
@@ -19,14 +19,8 @@ title: "Community"
 
 * Become a financial [contributor] and help us sustain our community
 
+## 開発
 
-## Development
+* [Regolith GitHub org](https://github.com/regolith-linux)で開発が行われています。
 
-* The [Regolith GitHub org] is where development happens
-
-[mailing list]: https://www.freelists.org/list/regolith-linux
-[GitHub Discussions]: https://github.com/orgs/regolith-linux/discussions
-[Matrix space]: https://matrix.to/#/#regolith-desktop:matrix.org
-[a new issue]: https://github.com/regolith-linux/regolith-desktop/issues
 [contributor]: https://opencollective.com/regolith/contribute
-[Regolith GitHub org]: https://github.com/regolith-linux/

@@ -2,15 +2,15 @@
 title: "Community"
 ---
 
-## Announcements
+## Annonces
 
-* Subscribe to the [mailing list] for release announcements
+* Souscrivez à notre [mailing list] pour recevoir les annonces des prochaines versions
 
-## Discussion and Help
+## Discussions et Aide
 
-* Join us on [GitHub Discussions] for help and discussion
-* Chat with community members on the Regolith Desktop [Matrix space]
-* Search from existing issues or create [a new issue] for bugs and feature requests
+- Rejoignez-nous sur [GitHub Discussions] pour discuter et obtenir de l'aide
+- Chat with community members on the Regolith Desktop [Matrix space]
+- Cherchez dans les issues existantes ou créez-en [une nouvelle] si vous trouvez un bug ou avez une demande de fonctionnalité
 
 ## Support Regolith
 
@@ -19,14 +19,13 @@ title: "Community"
 
 * Become a financial [contributor] and help us sustain our community
 
+## Développement
 
-## Development
-
-* The [Regolith GitHub org] is where development happens
+* [Le dépôt GitHub Regolith] est l'endroit où les choses se passent
 
 [mailing list]: https://www.freelists.org/list/regolith-linux
 [GitHub Discussions]: https://github.com/orgs/regolith-linux/discussions
 [Matrix space]: https://matrix.to/#/#regolith-desktop:matrix.org
-[a new issue]: https://github.com/regolith-linux/regolith-desktop/issues
+[une nouvelle]: https://github.com/regolith-linux/regolith-desktop/issues
 [contributor]: https://opencollective.com/regolith/contribute
-[Regolith GitHub org]: https://github.com/regolith-linux/
+[Le dépôt GitHub Regolith]: https://github.com/regolith-linux/

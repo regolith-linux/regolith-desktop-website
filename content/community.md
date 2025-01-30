@@ -19,7 +19,6 @@ title: "Community"
 
 * Become a financial [contributor] and help us sustain our community
 
-
 ## Development
 
 * The [Regolith GitHub org] is where development happens
