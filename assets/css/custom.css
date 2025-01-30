@@ -111,3 +111,10 @@ a.badge-warning:focus, a.badge-warning.focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 /**************************/
+
+/** zoom images **/
+.medium-zoom-overlay {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 32 39 / var(--tw-bg-opacity)) !important;
+}
+/**************************/
