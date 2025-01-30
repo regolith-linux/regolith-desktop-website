@@ -47,64 +47,57 @@ markup:
 
   # enable hextra syntax highlight
   highlight:
-    noClasses: true
+    noClasses: false
 
 menu:
   main:
-    - identifier: documentation
+    - identifier: menu-docs
       name: Documentation
       pageRef: /docs/
       weight: 1
-    - identifier: blog
+    - identifier: menu-blog
       name: Blog
       pageRef: /posts/
       weight: 2
-    - identifier: about
-      name: About
-      pageRef: /about/
-      weight: 2
-    - identifier: help
+    - identifier: menu-community
+      name: Community
+      pageRef: "/community/"
+      weight: 3
+    - identifier: menu-help
       name: "Help & Discussion"
       url: "https://github.com/orgs/regolith-linux/discussions"
-      weight: 3
-    - name: Search
       weight: 4
+    - identifier: menu-support
+      name: "Support Regolith"
+      weight: 5
+      url: "https://opencollective.com/regolith/donate"
+    - name: Search
+      weight: 6
       params:
         type: search
     - name: GitHub
-      weight: 5
+      weight: 7
       url: "https://github.com/regolith-linux/"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/RegolithL/"
-      params:
-        icon: x-twitter
-    - name: Support Regolith
-      weight: 6
-      url: "https://opencollective.com/regolith/donate"
-      #   post = "<br/><br/><img src='https://badgen.net/opencollective/backers/regolith'/>"
-      # params:
-      #   icon: x-twitter
 
   sidebar:
-    - identifier: more
+    - identifier: menu-more
       name: More
       params:
         type: separator
       weight: 1
-    - identifier: about
-      name: "About"
-      pageRef: "/about"
+    - identifier: menu-help
+      name: "Help & Discussion"
+      url: "https://github.com/orgs/regolith-linux/discussions"
       weight: 2
-    - identifier: hugoDocs
-      name: "Hugo Docs ↗"
-      url: "https://gohugo.io/documentation/"
+    - identifier: menu-support
+      name: "Support Regolith"
       weight: 3
+      url: "https://opencollective.com/regolith/donate"
 
 params:
-  description: Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
+  description: Productivity focused Ubuntu derivative and desktop environment
 
   navbar:
     displayTitle: true
@@ -129,7 +122,7 @@ params:
   footer:
     enable: true
     displayCopyright: true
-    displayPoweredBy: false
+    displayPoweredBy: true
     width: wide
 
   displayUpdatedDate: true
@@ -163,7 +156,7 @@ params:
     copy:
       enable: true
       # hover | always
-      display: always
+      display: hover
 
   comments:
     enable: false
