@@ -8,30 +8,32 @@ description: >
 
 Regolith 1.5.1 is a bug fix release. The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5 release:
 
-#### Release Notes for i3-next-workspace
+## Changlogs
+
+### Release Notes for i3-next-workspace
 
 - Initial copy from regolith-i3xrocks-config.
 
-#### Release Notes for regolith-compositor-picom-glx
+### Release Notes for regolith-compositor-picom-glx
 
 - Add xrender-sync-fence for better support of nvidia systems.
 
-#### Release Notes for regolith-default-settings
+### Release Notes for regolith-default-settings
 
 - Add breaks declaration to deal w/ ISO upgrade issue
 
-#### Release Notes for regolith-desktop
+### Release Notes for regolith-desktop
 
 - ship version file with all desktop variants
 - Update version to 1.5.1
 - Add new recommends for rofication status indicator that has been seperated from regolith-rofication
 - Fix virtual package specification. Use look w/ less dependencies for minimal meta-package.
 
-#### Release Notes for regolith-ftue
+### Release Notes for regolith-ftue
 
 - Add some Xresources options for GNOME Terminal
 
-#### Release Notes for regolith-i3-gaps-config
+### Release Notes for regolith-i3-gaps-config
 
 - Fix build files
 - Fix path to i3-next-workspace
@@ -41,7 +43,7 @@ Regolith 1.5.1 is a bug fix release. The following list contains brief descripti
 - adding a missing logic
 - Fix 'Carry Window to Next Free' binding, remove trailing whitespace. [#31](https://github.com/regolith-linux/regolith-i3-gaps-config/issues/31)
 
-#### Release Notes for regolith-i3xrocks-config
+### Release Notes for regolith-i3xrocks-config
 
 - Add padding for net-traffic, extensive mocked tests [#101](https://github.com/regolith-linux/regolith-i3xrocks-config/issues/101)
 - Migrate rofication status indicator i3xrocks conf file here from regolith-rofication.
@@ -73,16 +75,16 @@ Regolith 1.5.1 is a bug fix release. The following list contains brief descripti
 - Make time interval configurable with `Xresources` [#87](https://github.com/regolith-linux/regolith-i3xrocks-config/issues/87)
 - Restore original behavior of mouse actions on volume [#85](https://github.com/regolith-linux/regolith-i3xrocks-config/issues/85)
 
-#### Release Notes for regolith-rofication
+### Release Notes for regolith-rofication
 
 - Another approach to breaking status indicator from base functionality due to python build script mysteries: move the i3xrocks conf.d file to i3xrocks. Leave python scripts here for the python installer thing.
 - Break status indicator for rofication into separate package: i3xrocks-rofication.
 
-#### Release Notes for regolith-styles
+### Release Notes for regolith-styles
 
 - Check if gnome-terminal is installed before generating profile. Related to [#522](https://github.com/regolith-linux/regolith-desktop/issues/522).
 
-#### Release Notes for regolith-todo
+### Release Notes for regolith-todo
 
 - Add i3xrocks dependency in hopes of sidestepping package file conflicts during upgrades
 - Rewrote syntax of todo script, added tests

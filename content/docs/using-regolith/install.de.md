@@ -7,7 +7,7 @@ description: >
 prev: /docs/using-regolith
 ---
 
-# Get Regolith 3.2
+## Upgrading to 3.x
 
 If you're upgrading from an earlier version of Regolith, you may be interested in reading [the release notes](/docs/reference/Releases/regolith-3.2-release-notes) and if coming from 2.x, the [migration guide](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide).
 

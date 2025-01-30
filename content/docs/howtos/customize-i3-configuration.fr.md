@@ -7,8 +7,6 @@ description: >
 prev: /docs/howtos
 ---
 
-# Comment personnaliser la configuration de i3 avec Regolith
-
 Les configurations par défaut sont stockées dans `/usr/share/regolith/i3/config.d`.
 Ces fichiers sont chargés de selon l'ordre alphabétique. Ensuite, les configurations de l'utilisateur dans `~/.config/regolith3/i3/config.d` sont chargées, également dans l'ordre alphabétique.
 La configuration par défaut de Regolith est faite pour être modifiée en utilisant des variables `Xresources`, en ajoutant des configurations utilisateurs ou en ajoutant/supprimant les configurations par défaut avec `apt`.

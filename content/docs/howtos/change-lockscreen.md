@@ -5,7 +5,7 @@ description: >
   Configure Regolith to use a lock screen other than `gnome-flashback`
 ---
 
-### 1. Configure `gnome-flashback` to Disable Built-in Lockscreen
+## Configure `gnome-flashback` to Disable Built-in Lockscreen
 
 By default `gnome-flashback` handles the lock screen for Regolith. This can be adjusted by modifying it's configuration via the `gsettings` command line program:
 
@@ -13,7 +13,7 @@ By default `gnome-flashback` handles the lock screen for Regolith. This can be a
 gsettings set org.gnome.gnome-flashback screensaver false
 ```
 
-### 2. Cause Your Lock screen program to Run from i3 Keybinding
+## Cause Your Lock screen program to Run from i3 Keybinding
 
 Specify the following override line in your `~/.config/regolith3/Xresources` file (substituting `your-script.sh` with the command you wish to use for the locking your screen):
 

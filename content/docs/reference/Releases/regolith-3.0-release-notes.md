@@ -6,7 +6,7 @@ description: >
   Release notes for Regolith 3.0
 ---
 
-# Regolith 3.0 Release Notes
+## Regolith 3.0 Release Notes
 
 [Regolith 3.0](https://github.com/orgs/regolith-linux/projects/26) is a major release focusing on a new [Wayland](https://github.com/orgs/regolith-linux/projects/8)-based session, Debian 12, and Ubuntu 23.04 support.
 

@@ -99,6 +99,6 @@ echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 
 次に、変更を有効にするため、i3を再読み込みします。i3が別のプロセスとして起動するものなど、一部の設定では、セッションに再ログインする必要があります。
 
-# さらに深く読み込む
+## さらに深く読み込む
 
 Regolithの設定ファイルについて詳細については[設定のリファレンスページ]({{< ref "/docs/Reference/configurations.md" >}})を参照してください。

@@ -99,6 +99,6 @@ echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 
 Then Reload i3 for the change to take effect.  Some settings may require logging back into the session, for example anything that i3 launches as a separate process.
 
-# Further Reading
+## Further Reading
 
 See the [reference page for configurations]({{< ref "/docs/Reference/configurations.md" >}}) for more details about config files in Regolith.

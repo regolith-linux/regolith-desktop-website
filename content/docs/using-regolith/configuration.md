@@ -7,9 +7,9 @@ description: >
 next: /docs/howtos
 ---
 
-# Recommended Packages for New Users
+## Recommended Packages for New Users
 
-## Looks
+### Looks
 
 Install all of the official Regolith looks:
 
@@ -27,7 +27,7 @@ NOTE: this may pull in fonts, themes, and wallpapers. For users looking to minim
 
 See below for details on how to select a look.
 
-## Status Indicators
+### Status Indicators
 
 The following snippet installs status indicator packages recommended for new users:
 
@@ -41,7 +41,7 @@ To remove any of these indicators later, simply uninstall them from your system.
 sudo apt remove i3xrocks-info
 ```
 
-### Laptop Battery Status
+#### Laptop Battery Status
 
 View the current battery status on a laptop:
 
@@ -49,7 +49,7 @@ View the current battery status on a laptop:
 sudo apt install i3xrocks-battery
 ```
 
-## Compositors
+### Compositors
 
 Compositors add visual effects to the windowing environment. By default, Regolith 3 installs the `picom` compositor. Users experiencing graphical issues due to specific hardware or driver limitations may want to install one of the following compositors instead:
 
@@ -62,7 +62,7 @@ Compositors add visual effects to the windowing environment. By default, Regolit
 
 See [this How To](/docs/howtos/customize-compositor) for more details.
 
-# Wallpaper
+## Wallpaper
 
 Most Regolith Looks provide a default desktop color or image. The wallpaper can be set by specifying the path to the wallpaper image via the Xresources key `regolith.wallpaper.file`.
 
@@ -102,7 +102,7 @@ echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xr
 regolith-look refresh
 ```
 
-## Lockscreen Wallpaper
+### Lockscreen Wallpaper
 
 The lockscreen wallpaper can be managed in the same way as the desktop wallpaper. The keys are the same as desktop wallpaper, but with `lockscreen` prefixed to `wallpaper`, like so: `regolith.lockscreen.wallpaper...`. For example, to specify a lockscreen image:
 
@@ -111,7 +111,7 @@ echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper
 regolith-look refresh
 ```
 
-## Disable Wallpaper handling
+### Disable Wallpaper handling
 
 If you wish to manage wallpaper externally to Regolith, simply specify empty values for wallpaper image and color:
 
@@ -120,7 +120,7 @@ echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
 
-# Status Bar Indicators
+## Status Bar Indicators
 
 Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages. For example, to show a status indicator for your laptop battery, simply run `sudo apt install i3xrocks-battery` and then refresh the session using `regolith-look refresh`. To find what indicators are available, run `apt search ^i3xrocks-` or search for `i3xrocks-` in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto). There is [more documentation available]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) for configuring status indicators, also called "blocklets". Here is a table of status indicators as of Regolith 2.2:
 
@@ -151,7 +151,7 @@ Status indicators such as CPU load, date and time, notifications, weather, and o
 | i3xrocks-weather             | Local weather                    |
 | i3xrocks-wifi                | Name of connected wifi AP        |
 
-# Looks
+## Looks
 
 Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. To select an installed look the keybinding {{< keys "super,alt,l" >}} presents a dialog:
 
@@ -175,7 +175,7 @@ To simply install all available looks:
 sudo apt install regolith-look-*
 ```
 
-# i3 Features
+## i3 Features
 
 [Starting with Regolith 2.0]({{< ref "docs/reference/configurations.md#history" >}}), many aspects of i3 configuration are managed via the package manager. Regolith provides all of its i3 configuration via "config partials". These packages install their i3 config partials into `/usr/share/regolith/i3/config.d`. By installing and removing packages, i3 configuration can be customized for specific preferences. By default, when the `regolith-desktop` package is installed, these configuration elements are also installed as soft dependencies:
 
@@ -196,7 +196,7 @@ Soft dependencies can be removed without causing packages that depend upon it to
 
 See the [i3 configuration customization how-to]({{< ref "docs/howtos/customize-i3-configuration.md" >}}) for examples.
 
-## All i3 Configuration Packages
+### All i3 Configuration Packages
 
 The following contains a list of all i3 configuration packages available in Regolith 2.1:
 
@@ -225,7 +225,7 @@ The following contains a list of all i3 configuration packages available in Rego
 | regolith-wm-user-programs    | Optionally launch user programs specified in Xresources               | `/usr/share/regolith/i3/config.d/90_user-programs`       |
 | regolith-wm-workspace-config | Workspace keybindings                                                 | `/usr/share/regolith/i3/config.d/40_workspace-config`    |
 
-# Keybindings
+## Keybindings
 
 {{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below. For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
@@ -242,13 +242,13 @@ wm.alt: Mod4
 
 ![](/images/v-tour/regolith-gnome-keybindings.png)
 
-# System Management
+## System Management
 
 The `regolith-control-center` app is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}. The application may also be launched from a terminal with command `regolith-control-center`.
 
 ![](/images/v-tour/regolith-settings-about.png)
 
-# Further Reading
+## Further Reading
 
 To dig deeper, find which [Howtos]({{< ref "howtos" >}}) are available, or read the [Xresources reference]({{< ref "docs/Reference/xresources.md" >}}). Become an i3 power user by reading their [user guide](https://i3wm.org/docs/userguide.html).
 

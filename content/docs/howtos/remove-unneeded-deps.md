@@ -11,7 +11,7 @@ When Regolith is installed via ISO, only the necessary desktop components or pac
 NOTE: Removing packages may cause unexpected behavior or loss of functionality.
 {{< /callout >}}
 
-# Install LightDM
+## Install LightDM
 
 The `lightdm` display manager can be installed by with a variety of themes, but we'll install the package `regolith-lightdm-config`:
 
@@ -21,7 +21,7 @@ sudo apt install regolith-lightdm-config
 
 Inspect the output of `apt` to verify you approve of the package changes.  When presented with a menu, choosing between `gdm3` and `lightdm`, select `lightdm`.
 
-# Remove Unneeded Packages
+## Remove Unneeded Packages
 
 Now that we are using the `lightdm` display manager, we can remove the unneeded packages:
 
@@ -37,11 +37,11 @@ Now we can remove all of the dependencies of those packages:
 sudo apt autoremove
 ```
 
-# Reboot
+## Reboot
 
 At this point the unneeded dependencies have been removed from the system.  Reboot to complete the procedure.
 
-# Undo
+## Undo
 
 If you decide that you'd like to restore the existing setup, run the following and select `gdm3` as the display manager.
 

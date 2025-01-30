@@ -10,6 +10,8 @@ description: >
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
 {{< /callout >}}
 
+## Main `Xresources` keys
+
 | `Xresources` Key                                   | Description                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------- |
 | gtk.theme_name                                     | GTK Theme ("Legacy Applications" in `gnome-tweaks`) |
@@ -111,7 +113,7 @@ Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The c
 | i3xrocks.value.font                                | Font for numerical value in bar module                                                                              |
 | i3xrocks.warning                                   | Warning color for bar module                                                                                        |
 
-# Optional `Xresources` keys
+## Optional `Xresources` keys
 
 The following `Xresources` keys are undefined by default but can be used by users to change behavior as desired.
 

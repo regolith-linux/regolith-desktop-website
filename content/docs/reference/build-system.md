@@ -7,11 +7,11 @@ description: >
 next: /docs/reference/releases
 ---
 
-# Overview 
+## Overview 
 
 This page describes how packages are generate from source code, and how those packages combine to actualize the Regolith desktop environment.  This document covers Regolith only and does not intend to describe upstream dependencies, general package manager concepts, or other aspects of build systems.
 
-# Terms
+## Terms
 
 * `Distro` - Short for distribution, in the context of this document, may be considered a variation of a Linux-based OS operating system.  A product, project, and brand.
 * `Codename` - A well defined and announced snapshot of a set of packages that are consumed as a whole.  May be considered a software release with a specific name such as `36` or `Jammy`.
@@ -27,15 +27,15 @@ This page describes how packages are generate from source code, and how those pa
 * `Package Repository` ~ A well defined source of binary packages that may be installed into an OS that supports a given package manager.
 
 
-# Source Repositories
+## Source Repositories
 
 All Regolith packages are generated from git-versioned source repositories.  These repositories house the source code for a given component.  Mostly, each component is general for any given `distro` and `codename`.  Source repositories are modeled in the Regolith build system via `manifest` files.  
 
-# Manifests
+## Manifests
 
 The Regolith build system reads and writes text files known as manifests.  The files are initially read as the source of truth for what a given `target` package repository should contain.  If the build system determines if there are updates to the manifest present in the manifest's source repositories, then any updates are built into package updates and published to the target repo along with the updated manifest.  In the case that no updates are found, the build simply completes without any changes.  As such, a given target's manifest can be used to determine what packages, versions, and source branches/tags are present.
 
-## Manifest Schema
+### Manifest Schema
 
 Manifests are simply text files with one package per line, and each element in on a line separated by a space (ASCII 32).
 
@@ -43,7 +43,7 @@ Manifests are simply text files with one package per line, and each element in o
 <PACKAGE NAME> <PACKAGE REPO URL> <PACKAGE REPO BRANCH/TAG> <PACKAGE REPO COMMIT HASH>
 ```
 
-# Package Model
+## Package Model
 
 The Regolith build system utilizes sets of JSON files to define what packages are specified for a given `target`.  These JSON files are set in a specific structure to facilitate overriding higher-scoped contexts for lower-scoped contexts.  For example, at the top level is the `release` directory.  It specifies all packages for that release.  Within a `release`, directories for specific `distro`s exist.  Package models in these directories may override or nullify packages specified from it's parent.  In this way, a top-level general package model can be tweaked for a given `stage`/`distro`/`codename`/`architecture`.  To further illustrate this point here is the structure of the `stage` directory in the [`voulage` repo](https://github.com/regolith-linux/voulage) (which is the name of the Regolith 2.x package builder) (NOTE: some files were removed for brevity):
 
@@ -78,11 +78,11 @@ stage/
 
 ```
 
-# Packages
+## Packages
 
 As mentioned above, the build system generates packages for a given target from it's manifest.  The build system is designed to be agnostic to any particular package format.  As such, package versions are not directly modeled in manifests.  The mechanism that determines if a source change results in a version bump is delegated to package-manager specific extensions.  After a package has been identified to require building, the build system delegates to the package-specific build system to generate the target packages, such as debian source and binary packages.  If the package update builds successfully, another package-manager extension is called to inject the newly built package into the distro-dependant package repository.
 
-# Package Build System
+## Package Build System
 
 The Regolith build system consists mainly of bash [shell scripts](https://github.com/regolith-linux/voulage/.github/scripts).  These scripts are run from [GitHub workflows](https://github.com/regolith-linux/voulage/.github/workflows) but are designed to be runnable directly from the appropriate local environment to facilitate easy testing and troubleshooting.  The following is a high level summary of what the package builder does once invoked: 
 
@@ -96,13 +96,13 @@ The Regolith build system consists mainly of bash [shell scripts](https://github
 8. For each difference found, delegate to distro-specific build package build and repo publish commands
 9. Publish the updated repository and manifest back to the target repository
 
-# ISO Build System
+## ISO Build System
 
 The ISO builder is based on the open source project [live-custom-ubuntu-from-scratch](https://github.com/mvallim/live-custom-ubuntu-from-scratch/).  The ISO builder uses a set of shell scripts to generate an Ubuntu ISO image for both a live environment and an installer.  Regolith customizes this project in [this repo](https://github.com/regolith-linux/regolith-ubuntu-iso-builder) with some specific packages to [install and remove](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/blob/main/scripts/regolith-2_1-jammy-config.sh).  A github workflow is used to generate the ISOs and upload them to GitHub for hosting.
 
-# Cookbook
+## Cookbook
 
-## How to add or update a package to the build system
+### How to add or update a package to the build system
 
 1. Determine which `stage`s, `distro`s, `codename`s, and `architecture`s the change applies to (ex: `unstable-ubuntu-jammy-amd64`)
 2. Edit the package model in the `stage` directory in the [Voulage](https://github.com/regolith-linux/voulage)
@@ -111,13 +111,13 @@ The ISO builder is based on the open source project [live-custom-ubuntu-from-scr
 5. Execute the [build workflow](https://github.com/regolith-linux/voulage/actions)
 6. Once the build completes, check the `releases` in Voulage to verify that the generated packages were produced and published as expected
 
-## How to determine what commit a package is built with in a given target package repo
+### How to determine what commit a package is built with in a given target package repo
 
 1. Download the manifest contained in the target package repository (`https://regolith-desktop.org/<STAGE>-<DISTRO>-<CODENAME>-<ARCH>/manifest.txt`)
 2. Find the line containing the package name
 3. Note the branch and ref in the manifest, this is the repo commit from which the package was built
 
-## How to extend the build system for a new package format
+### How to extend the build system for a new package format
 
 1. For an example read the [Debian v4 build workflow](https://github.com/regolith-linux/voulage/blob/main/.github/workflows/build-deb-v4.yml)
 2. Refer to the [Debian extension script](https://github.com/regolith-linux/voulage/blob/main/.github/scripts/ext-debian.sh) that the workflow uses

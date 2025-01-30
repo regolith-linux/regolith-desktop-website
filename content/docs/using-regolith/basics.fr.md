@@ -8,8 +8,6 @@ description: >
 
 Bien que nous couvrirons l'ensemble du fonctionnement de Regolith dans d'autres parties de la documentation, cette page couvre les cas d'utilisations basiques.
 
-# Utilisation
-
 ## Lancer une application
 
 Après la première connexion, l'écran contiendra une barre sur le bas et quelques raccourcis clavier dans un dialogue.

@@ -8,8 +8,6 @@ description: >
 
 Während wir in anderen Bereichen der Dokumentation alles detaillierter behandeln werden, deckt diese Seite die grundlegende Verwendung von Regolith ab.
 
-## Verwendung
-
 ## Starten einer Anwendung
 
 Nach der ersten Anmeldung enthält der Bildschirm eine Leiste am unteren Rand und einige Tastaturkürzel in einem Dialog. Dieser Dialog soll dem Benutzer helfen, Tastenkombinationen für verschiedene Aktionen in der Desktop-Umgebung zu finden und zu speichern. Er kann mit der Taste `esc` verlassen und mit {{< keys "super,shift,?" >}}. Um eine Anwendung zu

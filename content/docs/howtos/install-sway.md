@@ -5,7 +5,6 @@ description: >
   Upgrade to the Wayland-based Regolith session
 ---
 
-
 To install the wayland session, follow these steps:
 
 1. Install the `regolith-session-sway` package and it's dependencies.

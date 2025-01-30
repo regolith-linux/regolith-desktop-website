@@ -114,6 +114,6 @@ echo "wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith3/Xresources
 
 Ce changement nécessite que vous vous déconnectiez puir reconnectiez pour prendre effet.
 
-# Informations supplémentaires
+## Informations supplémentaires
 
 Voir [la page de référence sur les configurations]({{< ref "/docs/Reference/configurations.md" >}}) pour plus de détails concernant la configuration de Regolith.

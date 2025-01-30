@@ -6,7 +6,7 @@ description: >
   General information about the config files that Regolith uses
 ---
 
-# Config file quick reference
+## Config file quick reference
 
 | **Component**              | **Default Config**                                           | **User Config**                       | **Notes**                                                                                                                                                                                             |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -19,9 +19,9 @@ description: >
 WARNING: Adding an i3 config file in `~/.config/regolith3/i3/config` will essentially override all Regolith configuration including Xresources and looks.
 {{< /callout >}}
 
-# History
+## History
 
-## Config partials
+### Config partials
 
 Regolith 2.0 adds support for config partials, as this feature came to `i3` recently in [4.20](https://i3wm.org/downloads/RELEASE-NOTES-4.20.txt). This is done by [includes](https://i3wm.org/docs/userguide.html#include). This support for includes enables Regolith 2.0's use of the package manager to add or remove default configuration partials. By installing and removing packages, i3 configuration can be customized for specific preferences while still allowing to track upstream changes for aspects of the configuration that need not vary.
 

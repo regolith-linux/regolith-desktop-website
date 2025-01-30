@@ -5,8 +5,6 @@ description: >
   How to customize Regolith's compositor
 ---
 
-# How to customize your compositor (visual effects)
-
 {{< callout type="info" >}}
 Pay special attention to this section if you are experiencing odd visual
 glitches or slow graphics performance.

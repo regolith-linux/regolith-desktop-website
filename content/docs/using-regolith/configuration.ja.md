@@ -7,9 +7,9 @@ description: >
 next: /docs/howtos
 ---
 
-# 新規ユーザーに推奨されるパッケージ {#recommended-packages-for-new-users}
+## 新規ユーザーに推奨されるパッケージ {#recommended-packages-for-new-users}
 
-## 外観
+### 外観
 
 Regolith公式の外観をすべてインストールする:
 
@@ -27,7 +27,7 @@ apt list | grep regolith-look-
 
 外観の選択方法の概要については、以下の項目を参照してください。
 
-## ステータスインジケーター
+### ステータスインジケーター
 
 次の行では、新規ユーザーに推奨されるステータスインジケータパッケージをインストールします。
 
@@ -41,7 +41,7 @@ sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info 
 sudo apt remove i3xrocks-info
 ```
 
-### ラップトップのバッテリー状態
+#### ラップトップのバッテリー状態
 
 ラップトップの現在のバッテリー状態を表示するには：
 
@@ -49,7 +49,7 @@ sudo apt remove i3xrocks-info
 sudo apt install i3xrocks-battery
 ```
 
-## コンポジター
+### コンポジター
 
 コンポジターはウィンドウ環境に仮想エフェクトを追加します。既定では、Regolith 3には`picom`コンポジターがインストールされています。特定のハードウェアやドライバの制限によってグラフィックの問題が発生した場合、変わりに次のコンポジターをインストールする必要があります。
 
@@ -62,7 +62,7 @@ sudo apt install i3xrocks-battery
 
 詳細な概要は、[このハウツー]({{< ref "docs/howtos/customize-compositor.md" >}})を参照してください。
 
-# 壁紙
+## 壁紙
 
 多くのRegolithの外観は、既定のデスクトップカラーと画像を提供します。壁紙はXressourcesキー・`regolith.wallpaper.file`に壁紙画像のパスを指定することで設定することができます。  
 
@@ -102,7 +102,7 @@ echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xr
 regolith-look refresh
 ```
 
-## ロック画面の壁紙
+### ロック画面の壁紙
 
 ロック画面壁紙はデスクトップ壁紙と同じ方法で管理することができます。キーはデスクトップ壁紙と似たようなものですが、`regolith.lockscreen.wallpaper...`のように、`lockscreen`を`wallpaper`の前に追加します。例えば、ロック画面の画像を指定する場合：
 
@@ -111,7 +111,7 @@ echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper
 regolith-look refresh
 ```
 
-## 壁紙の処理を無効化
+### 壁紙の処理を無効化
 
 Regolithの外部で壁紙を管理したい場合、壁紙画像と色の値を空にします。
 
@@ -120,7 +120,7 @@ echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
 
-# ステータスバーのインジケーター
+## ステータスバーのインジケーター
 
 CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、`sudo apt install i3xrocks-battery`を実行して、セッションを`regolith-look refresh`で再読み込みするだけです。利用可能なインジケーターを探すには、`apt search ^i3xrocks-`を実行するか、[Synaptic](https://help.ubuntu.com/community/SynapticHowto)のようなGUIのパッケージマネージャーで`i3xrocks-`と検索して見つけることができます。「ブロックレット(blocklet)」と呼ばれる、ステータスインジケーターを設定するのに[利用可能なドキュメント]({{< ref "/docs/howtos/add-remove-blocklets.md" >}})が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです。
 
@@ -151,7 +151,7 @@ CPUの読み込み、日付、時間、通知、天気や他のシステム情�
 | i3xrocks-weather               | 地域の天気 |                           
 | i3xrocks-wifi                  | 接続中のWiFiアクセスポイント名 |                       
 
-# 外観
+## 外観
 
 色、壁紙、ウィンドウとバーのレイアウトや他の視覚的要素はRegolithにバンドルされ、"外観(look)"と呼ばれています。外観は、デスクトップの全体の外観を変更する簡単な方法を提供します。ステータスバーのインジケーターのような外観はパッケージ化され、他のソフトウェアのようにインストールしたりアンインストールしたりすることができます。外観パッケージは命名フォーマットに従い`regolith-look-<name>`となっています。`apt`やGUIパッケージマネージャーから利用可能な外観を検索することができます。{{< keys "super,alt,l" >}}キーバインドで、ダイアログからインストールされた外観を選択します。
 
@@ -175,7 +175,7 @@ regolith-look refresh
 sudo apt install regolith-look-*
 ```
 
-# i3の機能
+## i3の機能
 
 [Regolith 2.0の開始時から]({{< ref "docs/reference/configurations.md#history" >}})、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて「部分設定(config partial)」として提供されます。これらのパッケージはi3設定の一部として、`/usr/share/regolith/i3/config.d`以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 `regolith-desktop`パッケージがインストールされたときに設定要素が依存関係としてインストールされています。
 
@@ -197,7 +197,7 @@ sudo apt install regolith-look-*
 参考例は[i3設定のカスタマイズのハウツー]({{< ref "docs/howtos/customize-i3-configuration.md" >}})を参照してください。
 
 
-## すべてのi3設定パッケージ
+### すべてのi3設定パッケージ
 
 ここに記載されているすべてのi3設定パッケージはRegolith 2.1で利用できます。
 
@@ -226,7 +226,7 @@ sudo apt install regolith-look-*
 | regolith-i3-user-programs    | オプションでXresourcesで指定されたユーザープログラムの起動 | `/usr/share/regolith/i3/config.d/90_user-programs` |
 | regolith-i3-workspace-config | ワークスペースのキーバインド | `/usr/share/regolith/i3/config.d/40_workspace-config` |
 
-# キーバインド
+## キーバインド
 
 {{< callout type="warning" >}}
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
@@ -243,13 +243,13 @@ wm.alt: Mod4
 
 ![](/images/v-tour/regolith-gnome-keybindings.png)
 
-# システム管理
+## システム管理
 
 `regolith-control-center`アプリは、言語、日付、ディスプレイ、ネットワークや他のさまざまな種類の設定ツールです。 {{< keys "super,space" >}}でアプリランチャーを開いて`settings`と入力し、起動したいアプリをヒットさせることで起動します。{{< keys "super,c" >}}は直接実行できるキーバインドです。`regolith-control-center`とターミナルに入力することでもアプリケーションを起動することができます。
 
 ![](/images/v-tour/regolith-settings-about.png)
 
-# さらに深く読み込む
+## さらに深く読み込む
 
 もっと深く知りたい人は、[このハウツー]({{< ref "howtos" >}})を利用したり、[Xresourcesリファレンス]({{< ref "docs/Reference/xresources.md" >}})を読みましょう。 [ユーザーガイド（英語）](https://i3wm.org/docs/userguide.html)を読んでi3のパワーユーザーになりましょう。
 

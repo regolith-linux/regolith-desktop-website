@@ -7,9 +7,9 @@ description: >
 next: /docs/howtos
 ---
 
-# Empfohlene Pakete für neue Benutzer
+## Empfohlene Pakete für neue Benutzer
 
-## Looks
+### Looks
 
 Installieren Sie alle offiziellen Regolith-Looks:
 
@@ -17,7 +17,7 @@ Installieren Sie alle offiziellen Regolith-Looks:
 sudo apt install regolith-look-*
 ```
 
-## Status-Indikatoren
+### Status-Indikatoren
 
 Das folgende Snippet installiert Statusindikatoren-Pakete, die für neue Benutzer empfohlen werden:
 
@@ -31,7 +31,7 @@ Um einen dieser Indikatoren später zu entfernen, deinstallieren Sie ihn einfach
 sudo apt remove i3xrocks-info
 ```
 
-### Laptop-Akkustatus
+#### Laptop-Akkustatus
 
 Zeigt den aktuellen Batteriestatus eines Laptops an:
 
@@ -39,7 +39,7 @@ Zeigt den aktuellen Batteriestatus eines Laptops an:
 sudo apt install i3xrocks-battery
 ```
 
-# Hintergrundbild
+## Hintergrundbild
 
 Die meisten Regolith Looks bieten eine Standard-Desktop-Farbe oder ein Bild. Das Hintergrundbild kann durch Angabe des
 Pfades zum Hintergrundbild über den Xresources-Parameter `regolith.wallpaper.file` festgelegt werden.
@@ -79,7 +79,7 @@ echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xr
 regolith-look refresh 
 ```
 
-## Sperrbildschirm-Hintergrundbild
+### Sperrbildschirm-Hintergrundbild
 
 Das Hintergrundbild des Sperrbildschirms kann auf die gleiche Weise wie das Desktop-Hintergrundbild verwaltet werden.
 Die Parameter sind die gleichen wie beim Desktop-Hintergrundbild, aber mit dem Präfix `lockscreen` vor `wallpaper`, etwa
@@ -90,7 +90,7 @@ echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper
 regolith-look refresh 
 ```
 
-## Deaktivieren der Wallpaper-Verwaltung
+### Deaktivieren der Wallpaper-Verwaltung
 
 Wenn Sie das Hintergrundbild außerhalb von Regolith verwalten möchten, geben Sie einfach leere Werte für das
 Hintergrundbild und die Farbe an:
@@ -100,7 +100,7 @@ echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
 
-# Statusleisten-Anzeigen
+## Statusleisten-Anzeigen
 
 Statusanzeigen wie CPU-Auslastung, Datum und Uhrzeit, Benachrichtigungen, Wetter und andere Systeminformationen können
 durch die Installation von Paketen hinzugefügt oder entfernt werden. Um zum Beispiel eine Statusanzeige für die Batterie
@@ -109,7 +109,7 @@ Sitzung mit `regolith-look refresh`. Um herauszufinden, welche Indikatoren verf�
 Sie `apt search ^i3xrocks-` aus oder suchen Sie nach `i3xrocks-` in Ihrer bevorzugten Paketmanager-GUI, wie zum
 Beispiel [Synaptic](https://help.ubuntu.com/community/SynapticHowto). Es gibt [weitere Dokumentation]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) für die Konfiguration von Statusanzeigen, auch "blocklets" genannt.
 
-# Looks
+## Looks
 
 Farben, Hintergrundbilder, Fenster- und Leistenlayouts und andere visuelle Faktoren werden in Regolith gebündelt und
 als "Looks" bezeichnet. Looks bieten eine einfache Möglichkeit, das gesamte Aussehen des Desktops zu ändern. Wie die
@@ -139,7 +139,7 @@ Um einfach alle verfügbaren Looks zu installieren:
 sudo apt install regolith-look-*
 ```
 
-# i3 Features
+## i3 Features
 
 Seit Regolith 2.0 werden viele Aspekte der i3-Konfiguration über den Paketmanager verwaltet. Mit i3 `4.20` wurde die
 Möglichkeit eingeführt, Include-Dateien als Teil der Konfiguration anzugeben. Regolith stellt seine gesamte
@@ -180,7 +180,7 @@ sudo apt remove regolith-i3-workspace-config # Entfernt die Standardversion
 Auf diese Weise können die unveränderten Teilkonfigurationen weiterhin Updates und Fehlerbehebungen erhalten, ohne die
 benutzerspezifische Konfiguration zu beeinflussen.
 
-## Alle i3-Konfigurationspakete
+### Alle i3-Konfigurationspakete
 
 Im Folgenden finden Sie eine Liste aller i3-Konfigurationspakete, die in Regolith 2.0 verfügbar sind:
 
@@ -208,7 +208,7 @@ Im Folgenden finden Sie eine Liste aller i3-Konfigurationspakete, die in Regolit
 | regolith-i3-user-programs    | Optionaler Start von Benutzerprogrammen, die in Xresources angegeben sind |
 | regolith-i3-workspace-config | Arbeitsbereich-Tastaturbelegung                                           |
 
-# Tastaturbelegungen
+## Tastaturbelegungen
 
 {{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
@@ -231,7 +231,7 @@ GNOME-Tastaturbelegungen können in der Regolith-Einstellungs-App verwaltet werd
 
 ![](/images/v-tour/regolith-gnome-keybindings.png)
 
-# Systemverwaltung
+## Systemverwaltung
 
 Die App `regolith-control-center` ist das Werkzeug zum Konfigurieren von Gebietsschema, Datum, Anzeigen, Netzwerk und
 verschiedenen anderen Einstellungen. Starten Sie sie über den App-Launcher mit {{< keys "super,space" >}}, geben
@@ -239,7 +239,7 @@ Sie `settings` ein und drücken Sie Enter, um die App zu starten. Die direkte Ta
 
 ![](/images/v-tour/regolith-settings-about.png)
 
-# Weitere Lektüre
+## Weitere Lektüre
 
 Wenn Sie tiefer einsteigen wollen, finden Sie die verfügbaren [Howtos]({{< ref "howtos" >}}) oder lesen Sie
 die [Xresources reference]({{< ref "docs/Reference/xresources.md" >}}). Werden Sie ein i3-Poweruser, indem Sie

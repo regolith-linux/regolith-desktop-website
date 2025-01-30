@@ -11,7 +11,7 @@ NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-li
 
 Adding icons to workspaces can give your desktop a nice and functional look.
 
-### Finding icons
+## Finding icons
 
 Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the `typeface_bar` variable in the `typeface` config file. For example, the look "Cahuella" uses the _Material Design Icons_ font (see file `/etc/regolith/styles/cahuella/typeface`).
 
@@ -25,7 +25,7 @@ You can browse the icon font using the [Gnome Character Map](https://wiki.gnome.
 
 **Tip:** the icons are ordered alphabetically.
 
-### Changing Icons
+## Changing Icons
 
 Follow these steps to override the default workspace label with your own:
 
@@ -50,7 +50,7 @@ In i3, workspace labels are only updated when a workspace is created. Ensure you
 
 {{< img "images/regolith-bar-icon.png" "Icons on the i3 bar" >}}
 
-### Changing Labels
+## Changing Labels
 
 The same approach can be used to specify textual descriptions of your workspaces. For example, adding the following lines to your `~/.config/regolith3/Xresources` file will change the first three workspaces:
 
@@ -60,13 +60,13 @@ wm.workspace.02.name: 2: Web
 wm.workspace.03.name: 3: Chat
 ```
 
-### Adding support for icon fonts in text editors
+## Adding support for icon fonts in text editors
 
-#### Atom
+### Atom
 
 - Append the name of the icon font to `Settings > Editor > Font Familly`.
 - Example: `Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons`
 
-# Further Reading
+## Further Reading
 
 See the [reference page for configurations]({{< ref "/docs/Reference/configurations.md" >}}) for more details about config files in Regolith.

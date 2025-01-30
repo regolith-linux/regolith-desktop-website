@@ -7,7 +7,7 @@ description: >
 prev: /docs/using-regolith
 ---
 
-# Regolith 3.2を入手
+## Upgrading to 3.x
 
 以前のバージョンのRegolithからアップグレードする場合は[リリースノート](/docs/reference/Releases/regolith-3.2-release-notes) を、特に2.xからの場合は[移行ガイド](/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide)を参照してください。
 

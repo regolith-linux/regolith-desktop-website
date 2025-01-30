@@ -6,7 +6,7 @@ description: >
   Information générale concernant les fichiers de configuration utilisés par Regolith
 ---
 
-# Référence des fichiers de configuration
+## Référence des fichiers de configuration
 
 | **Composant**              | **Configuration par défaut**                                 | **Configuration utilisateur**         | **Notes**                                                                                                                                                                                                                         |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -19,9 +19,9 @@ description: >
 ATTENTION: Ajouter une config i3 dans `~/.config/regolith3/i3/config` va écraser toutes les configurations Regolith, y compris pour les Xresources et les thèmes.
 {{< /callout >}}
 
-# Historique
+## Historique
 
-## Configurations partielles
+### Configurations partielles
 
 Regolith 2.0 ajoute la gestion de configurations partielles suite à l'ajout de la fonctionnalité dans i3 récemment ([i3 4.20](https://i3wm.org/downloads/RELEASE-NOTES-4.20.txt)). Cela est réalisé en utilisant les [inclusions](https://i3wm.org/docs/userguide.html#include).
 La gestion des inclusions permet à Regolith 2.0 d'utiliser le gestionnaire de paquet pour ajouter ou supprimer des configurations partielles par défaut.

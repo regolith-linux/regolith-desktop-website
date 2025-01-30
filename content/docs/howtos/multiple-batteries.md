@@ -4,7 +4,8 @@ linkTitle: "Support Multiple Batteries"
 description: >
   Display status of the batteries per instance
 ---
-# i3
+
+## i3
 {{< callout type="error" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /callout >}}
@@ -81,10 +82,7 @@ block = "battery"
 interval = 10
 [...]
 device = "BAT1"
-
 ```
-
-
 
 ## Further Reading
 

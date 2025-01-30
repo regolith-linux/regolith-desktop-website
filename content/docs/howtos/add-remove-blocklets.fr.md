@@ -5,22 +5,22 @@ description: >
   Pour faire quelques changements dans les indicateurs de statut dans la barre
 ---
 
-# Ajouter ou retirer des indicateurs de statut
+## Ajouter ou retirer des indicateurs de statut
 
-## Voir les indicateurs de statut disponibles
+### Voir les indicateurs de statut disponibles
 
 ```bash
 apt search i3xrocks-
 ```
 
-## Installer un nouvel indicateur de statut
+### Installer un nouvel indicateur de statut
 
 ```bash
 sudo apt install i3xrocks-memory
 regolith-look refresh
 ```
 
-# Personnaliser la barre i3 {#customize-bar}
+## Personnaliser la barre i3 {#customize-bar}
 
 Chaque indicateur de statut dans la barre est géré par un fichier.
 Le nom du fichier correspond à la position de l'indicateur dans la barre. Par exemple, un fichier avec le nom commençant par `10_` signifie que l'indicateur de statut correspondant sera placer avant un indicateur qui a un fichier de configuration commençant par `20_`.
@@ -53,6 +53,6 @@ $ regolith-look refresh
 
 **Note**: Si un bloc existe dans le dossier utilisateur `~/.config/regolith3/i3xrocks/conf.d`, la configuration par défaut dans `/usr/share/i3xrocks/conf.d/` sera ignorée.
 
-# Informations complémentaires
+## Informations complémentaires
 
 La [page de référence des configuration]({{< ref "/docs/Reference/configurations.md" >}}) donne plus de détails à propres des fichiers de configuration utilisés par Regolith Linux.

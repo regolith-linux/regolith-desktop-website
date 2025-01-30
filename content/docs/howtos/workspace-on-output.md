@@ -4,6 +4,7 @@ linkTitle: "Assign a workspace to a specific Output (Display)"
 description: >
   Specify that a given workspace should always be displayed on a specific monitor
 ---
+
 ## i3
 {{< callout type="error" >}}
 NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
@@ -24,7 +25,6 @@ workspace "$ws1" output DP1
 ```
 
 Log back in for the changes to take effect.
-
 
 ## Sway
 The concept is the same, but `swaymsg` is used to display the available outputs.

@@ -5,8 +5,6 @@ description: >
   Comment modifier le compositor utilisé par Regolith
 ---
 
-# Comment modifier votre compositor (effets visuels)
-
 {{< callout type="info" >}}
 Portez une attention particulière à cette section si vous rencontrez des problèmes visuels étranges,
 des problèmes ou des performances graphiques lentes.
