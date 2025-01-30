@@ -1,3 +1,12 @@
+/** manually add style to <a> **/
+.regolith-links {
+  --tw-text-opacity: 1;
+  color: hsl(var(--primary-hue) var(--primary-saturation) calc(calc(var(--primary-lightness) / 50) * 45) / var(--tw-text-opacity));
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  text-underline-position: from-font;
+}
+
 /** codeblock **/
 .hextra-code-block pre:is(html[class~="dark"] *) {
   background-color: hsl(223deg 4% calc(35% + calc(calc(100% - 35%) / 50) * 27) / 0.1);
