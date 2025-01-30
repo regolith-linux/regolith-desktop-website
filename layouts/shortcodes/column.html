@@ -1,0 +1,73 @@
+{{- $context := . -}}
+{{- $title := .Get "title" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $image := .Get "image" -}}
+{{- $width := 0 -}}
+{{- $height := 0 -}}
+{{- $imageStyle := .Get "imageStyle" -}}
+{{- $border := .Get "border" -}}
+
+{{/* Image processing options */}}
+{{- $method := .Get "method" | default "Resize" | humanize -}}
+{{- $options := .Get "options" | default "800x webp q80" -}}
+{{- $process := .Get "process" | default (printf "%s %s" $method $options) -}}
+
+{{- if and $image (not (urls.Parse $image).Scheme) -}}
+  {{- with or (.Page.Resources.Get $image) (resources.Get $image) -}}
+    {{/* .Process does not work on svgs */}}
+    {{- if (not (eq .MediaType.SubType "svg")) -}}
+      {{/* Retrieve the $image resource from local or global resources */}}
+      {{- $processed := .Process $process -}}
+      {{- $width = $processed.Width -}}
+      {{- $height = $processed.Height -}}
+      {{- $image = $processed.RelPermalink -}}
+    {{- end -}}
+  {{ else }}
+    {{/* Otherwise, use relative link of the image */}}
+    {{- if hasPrefix $image "/" -}}
+      {{- $image = relURL (strings.TrimPrefix "/" $image) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $borderClass := "" -}}
+{{- if eq $border "true" -}}
+  {{- $borderClass = "hx-rounded-lg hx-border" -}}
+{{- end -}}
+
+<div class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden {{ $borderClass }} hx-border-gray-200X hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200">
+  {{- with $image -}}
+    <img
+      alt="{{ $title }}"
+      class="hextra-card-image"
+      loading="lazy"
+      decoding="async"
+      src="{{ $image | safeURL }}"
+      {{ with $width }}width="{{ . }}"{{ end }}
+      {{ with $height }}height="{{ . }}"{{ end }}
+      {{ with $imageStyle }}style="{{ . | safeCSS }}"{{ end }}
+    />
+  {{- end -}}
+
+  {{- $padding := "hx-p-4" -}}
+  {{- with $subtitle -}}
+    {{- $padding = "hx-pt-4 hx-px-4" -}}
+  {{- end -}}
+
+  {{- with $title -}}
+  <span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 {{ $padding }} hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+    {{- . -}}
+  </span>
+  {{- end -}}
+  {{- with $subtitle -}}
+  <div class="hextra-card-subtitle hx-line-clamp-3 hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">
+    {{- . -}}
+  </div>
+  {{- end -}}
+  {{- with .InnerDeindent -}}
+  <div class="hextra-card-subtitle hx-line-clamp-3 hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">
+    {{- . | markdownify -}}
+  </div>
+  {{- end -}}
+</div>
+{{- /* Strip trailing newline. */ -}}
