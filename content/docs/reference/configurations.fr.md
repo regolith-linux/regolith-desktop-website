@@ -16,7 +16,7 @@ description: >
 | Picom (Compton) Compositor | `/etc/regolith/picom/config`                                 | `~/.config/regolith3/picom/config`    | [Plus d'infos]({{< ref "docs/howtos/customize-compositor.md" >}})                                                                                                                                                                 |
 
 {{< callout type="warning" >}}
-ATTENTION: Ajouter une config i3 dans `~/.config/regolith3/i3/config` va écraser toutes les configurations Regolith, y compris pour les Xresources et les thèmes.
+Ajouter une config i3 dans `~/.config/regolith3/i3/config` va écraser toutes les configurations Regolith, y compris pour les Xresources et les thèmes.
 {{< /callout >}}
 
 ## Historique

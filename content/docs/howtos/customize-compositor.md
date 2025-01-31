@@ -20,7 +20,7 @@ ensure there are no conflicts and that all the dependencies of a given
 compositor are also installed.
 
 {{< callout type="warning" >}}
-WARNING: In Regolith 2.x, the default compositor is "no compositor". In
+In Regolith 2.x, the default compositor is "no compositor". In
 Regolith 1.x, the default was Picom.
 {{< /callout >}}
 

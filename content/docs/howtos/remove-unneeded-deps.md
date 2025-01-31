@@ -8,7 +8,7 @@ description: >
 When Regolith is installed via ISO, only the necessary desktop components or packages are installed by default.  However when installing Regolith into an existing Ubuntu system, some desktop components that Regolith does not require will still be installed on the system.  There is nothing wrong with keeping these additional packages, in fact they are important if you wish to switch back to the default Ubuntu session at some point, however some users prefer to remove them.
 
 {{< callout type="error" >}}
-NOTE: Removing packages may cause unexpected behavior or loss of functionality.
+Removing packages may cause unexpected behavior or loss of functionality.
 {{< /callout >}}
 
 ## Install LightDM

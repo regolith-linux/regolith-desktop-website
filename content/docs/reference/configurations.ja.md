@@ -16,7 +16,7 @@ description: >
 | Picom（Compton）コンポジター | `/etc/regolith/picom/config`                                 | `~/.config/regolith3/picom/config`    | [詳細]({{< ref "docs/howtos/customize-compositor.md" >}})                                                                                                                                             |
 
 {{< callout type="warning" >}}
-警告：`~/.config/regolith3/i3/config`にi3の設定ファイルを追加すると、Xresourcesやlookを含むすべてのRegolithの設定がオーバーライドされます。
+`~/.config/regolith3/i3/config`にi3の設定ファイルを追加すると、Xresourcesやlookを含むすべてのRegolithの設定がオーバーライドされます。
 {{< /callout >}}
 
 ## 履歴

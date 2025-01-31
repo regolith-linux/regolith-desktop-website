@@ -7,7 +7,7 @@ next: /docs/reference
 ---
 
 {{< callout type="error" >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
+This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /callout >}}
 
 Regolith is composed of several existing open-source projects plus some additional custom packages.  Sometimes when a bug is found in Regolith, actually it's a bug in an upstream project.  Determining the source of bugs is a first step in getting them fixed.

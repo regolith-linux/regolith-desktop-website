@@ -14,5 +14,5 @@ description: >
 | Picom (Compton) Compositor | `/etc/regolith/picom/config`                                     | `~/.config/regolith3/picom/config`                                                                                                            |     |
 
 {{< callout type="warning" >}}
-NOTE: Adding an i3 config file in `~/.config/regolith3/i3/config` will essentially override all Regolith configuration including Xresources and looks.
+Adding an i3 config file in `~/.config/regolith3/i3/config` will essentially override all Regolith configuration including Xresources and looks.
 {{< /callout >}}

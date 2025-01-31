@@ -81,7 +81,7 @@ sudo apt remove regolith-i3-workspace-config
 ## 既定の部分設定をカスタマイズする方法
 
 {{< callout type="warning" >}}
-警告：Regolithの既定部分のみをカスタマイズする場合、`~/.config/regolith3/i3/config`ファイルが存在**しない**ことを確認してください。これはRegolithの既定をオーバーライドするため、このハウツーの内容と互換性がありません。
+Regolithの既定部分のみをカスタマイズする場合、`~/.config/regolith3/i3/config`ファイルが存在**しない**ことを確認してください。これはRegolithの既定をオーバーライドするため、このハウツーの内容と互換性がありません。
 {{< /callout >}}
 
 初めに、ユーザーの部分設定のディレクトリが存在することを確認します。

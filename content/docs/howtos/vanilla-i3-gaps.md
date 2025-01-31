@@ -6,7 +6,7 @@ description: >
 ---
 
 {{< callout type="error" >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
+This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /callout >}}
 
 To do so on Ubuntu, run `sudo apt install i3-gaps-session` to add an option on login that starts vanilla i3-gaps without regolith.

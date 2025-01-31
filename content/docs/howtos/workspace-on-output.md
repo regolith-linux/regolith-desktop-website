@@ -6,8 +6,9 @@ description: >
 ---
 
 ## i3
+
 {{< callout type="error" >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
+This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /callout >}}
 
 In order to configure i3 to assign a workspace to a given monitor, first find the device name for the monitor you wish to use with `xrandr`:
@@ -27,6 +28,7 @@ workspace "$ws1" output DP1
 Log back in for the changes to take effect.
 
 ## Sway
+
 The concept is the same, but `swaymsg` is used to display the available outputs.
 
 ```console

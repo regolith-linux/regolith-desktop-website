@@ -9,7 +9,7 @@ next: /docs/howtos/customize-i3-configuration
 ---
 
 {{< callout type="error" >}}
-注意：このページは[Regolith 1.xのWebサイト](https://regolith-linux.org)からコピーされたもので、Regolith 2のものに更新されていません。古い情報が含まれている可能性があります。
+このページは[Regolith 1.xのWebサイト](https://regolith-linux.org)からコピーされたもので、Regolith 2のものに更新されていません。古い情報が含まれている可能性があります。
 {{< /callout >}}
 
 {{< callout type="info" >}}

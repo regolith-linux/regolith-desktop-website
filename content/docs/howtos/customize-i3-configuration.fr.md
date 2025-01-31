@@ -84,7 +84,7 @@ sudo apt remove regolith-i3-workspace-config
 ## Comment personnaliser une configuration
 
 {{< callout type="warning" >}}
-ATTENTION: Pour personnaliser une unique configuration par défaut partielle de Regolith, vous devez d'abord vous assurer
+Pour personnaliser une unique configuration par défaut partielle de Regolith, vous devez d'abord vous assurer
 que le fichier `~/.config/regolith3/i3/config` n'existe pas.
 Cela va ignorer entièrement la configuration par défaut de Regolith, ce qui n'est pas compatible avec ce guide.
 {{< /callout >}}

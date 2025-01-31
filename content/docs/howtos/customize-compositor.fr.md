@@ -20,7 +20,7 @@ Cela signifie qu'il est possible de changer de compositor en installant un paque
 Le système de gestion de paquets s'assure qu'il n'y a pas de conflit et que toutes les dépendances sont satisfaites.
 
 {{< callout type="warning" >}}
-ATTENTION: Dans Regolith 2.x, le compositor par défaut est "pas de compositor".
+Dans Regolith 2.x, le compositor par défaut est "pas de compositor".
 Dans Regolith 1.x, le compositor par défaut est Picom.
 {{< /callout >}}
 

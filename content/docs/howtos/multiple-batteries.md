@@ -7,7 +7,7 @@ description: >
 
 ## i3
 {{< callout type="error" >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
+This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
 {{< /callout >}}
 
 Out of the box the primary battery status will be displayed in the i3-bar. For some laptops that have multiple batteries, e.g. ThinkPads, you want to have both batteries displayed:
