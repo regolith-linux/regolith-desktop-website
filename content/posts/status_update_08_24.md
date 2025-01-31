@@ -1,9 +1,11 @@
 ---
-author: "Ken Gilmer"
+authors:
+  - name: Ken Gilmer
+    link: https://github.com/kgilmer
+    image: https://avatars.githubusercontent.com/u/49683
 date: 2024-08-02
 linktitle: Status Updates August 2024
 title: Status Updates August 2024
-weight: 8
 ---
 
 ## Regolith 3.2 

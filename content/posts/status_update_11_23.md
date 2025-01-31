@@ -1,9 +1,11 @@
 ---
-author: "Ken Gilmer"
+authors:
+  - name: Ken Gilmer
+    link: https://github.com/kgilmer
+    image: https://avatars.githubusercontent.com/u/49683
 date: 2023-11-26
 linktitle: Status Updates Nov 2023
 title: Status Updates Nov 2023
-weight: 9
 ---
 
 ## Regolith 3.1 & Ubuntu Mantic Support
