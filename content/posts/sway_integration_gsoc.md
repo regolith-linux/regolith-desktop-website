@@ -3,8 +3,8 @@ author: "Soumya Ranjan Patnaik"
 date: 2022-09-25
 linktitle: "Foundations for Regolith on Wayland (GSoC'22)"
 title: "Foundations for Regolith on Wayland (GSoC'22)"
-weight: 10
 ---
+
 # Introduction
 
 Regolith is a modern desktop environment designed to let you work faster by reducing unnecessary clutter and ceremony. It offers a keyboard based workflow and a tiling window manager that allows efficient management of windows, monitors and workspaces. Built on top of Ubuntu, GNOME Flashback, and i3, Regolith stands on a well-supported and consistent foundation.

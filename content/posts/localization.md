@@ -3,7 +3,6 @@ author: "Ken Gilmer"
 date: 2022-06-22
 linktitle: Looking for Translators
 title: Looking for Translators
-weight: 15
 ---
 
 With the 2.0 release out the door, we're looking for help to translate the index page and the "using regolith" section into languages other than English. In the past we've used a translation system, but it turned out to be too complex for many people to understand. For the [Regolith 2.0 site](https://github.com/regolith-linux/regolith-desktop-website) we'll rely on [Hugo's multilingual support](https://gohugo.io/content-management/multilingual/).

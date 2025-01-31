@@ -3,7 +3,6 @@ author: "Ken Gilmer"
 date: 2021-12-18
 linktitle: Thanks to
 title: Thanks to
-weight: 21
 ---
 
 The Regolith Desktop exists as an integration of many open source projects and a little bit of glue code and some unique desktop components. The Regolith project is built upon many projects.  

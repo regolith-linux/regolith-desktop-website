@@ -5,6 +5,8 @@ description: >
   Install Regolith on Ubuntu Server
 ---
 
+# Minimal Ubuntu Install
+
 This page describes how to install the Regolith Desktop into Ubuntu Server.  This approach produces a minimal setup as many of the standard GNOME desktop packages present in a desktop install will be avoided.
 
 # Steps
@@ -17,9 +19,13 @@ Follow online instructions for installing a fresh copy of Ubuntu Server versions
 
 Once Ubuntu Server has been installed, log into a terminal session.  Use the following URLs to download the installation directions as a text file:
 
-Ubuntu 22.04: https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt
+Ubuntu 24.10: https://regolith-desktop.com/install-release-ubuntu-24.10-amd64.txt  
+Ubuntu 24.04: https://regolith-desktop.com/install-release-ubuntu-24.04-amd64.txt  
+Ubuntu 22.04: https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt  
+Ubuntu 20.04: https://regolith-desktop.com/install-release-ubuntu-20.04-amd64.txt  
 
-Ubuntu 20.04: https://regolith-desktop.com/install-release-ubuntu-20.04-amd64.txt
+Debian 12: https://regolith-desktop.com/install-release-debian-12-amd64.txt  
+Debian 11: https://regolith-desktop.com/install-release-debian-11-amd64.txt  
 
 Example:
 

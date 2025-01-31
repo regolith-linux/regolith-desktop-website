@@ -20,6 +20,12 @@ This page describes how packages are generate from source code, and how those pa
   2. `unstable` - For packages changes that are planned to reach a release but have yet to undergo much testing.  Serious bugs may occur from time to time.  Regolith core developers may run their testing and development from this stage but users are discouraged from consuming packages from `unstable`.
   3. `testing` - For packages undergoing testing by Regolith developers and early adopters.  Bugs occur but serious bugs should not often pop up in this stage.  Regolith users that wish to get access to fixes and new features earlier may consume from this stage with the understanding that bugs are to be expected (, and reporting them is appreciated!)
   4. `release` - For packages that have been determined to be suitable for general use.  While minor bugs may be present in packages at this stage, the bugs present should not interfere with general use of the environments for users on supported distros and releases.
+* `Suite`  - Represents the published packages repository. It has a one-to-one corresponding relationship to `Stage`. In other words `Stage` has the point of view of software development and `Suite` has the point of view of published archive repositories.
+  1. `experimental` suite - corresponds to `experimental` stage
+  2. `unstable` suite - corresponds to `unstable` stage
+  3. `testing` suite - corresponds to `testing` stage
+  4. `stable` suite - corresponds to `release-X_Y` and `release-current` stages
+* `Component`  - Each published repository is divided into several components. They correspond to Regolith released versions. In Regolith these are `main` and correposnding versions (for example `v3.2`, `v3.1`, etc)
 * `Target` ~ Represents a specific sequence of `distro`, `codename`, `stage`, and `architecture` for which a set of packages exist.
 * `Manifest` ~ A file that specifies a set of the properties name, origin, and snapshot for a list of packages.  A manifest is a file that represents a snapshot of a `target` in time.
 * `Package Manager` ~ A set of formats and programs that allow for packages to be installed in a distro.  The package manager may very by distro.
@@ -112,7 +118,7 @@ The ISO builder is based on the open source project [live-custom-ubuntu-from-scr
 
 ## How to determine what commit a package is built with in a given target package repo
 
-1. Download the manifest contained in the target package repository (`https://regolith-desktop.org/<STAGE>-<DISTRO>-<CODENAME>-<ARCH>/manifest.txt`)
+1. Download the manifest contained in the target package repository (`https://archive.regolith-desktop.com/manifests/<DISTRO>/<CODENAME>/<SUITE>-<COMPONENT>/<ARCH>/manifest.txt`)
 2. Find the line containing the package name
 3. Note the branch and ref in the manifest, this is the repo commit from which the package was built
 

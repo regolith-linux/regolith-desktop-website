@@ -3,7 +3,6 @@ author: "Ken Gilmer"
 date: 2024-10-29
 linktitle: Status Updates October 2024
 title: Status Updates October 2024
-weight: 7
 ---
 
 ## Ubuntu 24.10 (Oracular Oriole) Support

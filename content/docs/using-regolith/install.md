@@ -15,7 +15,7 @@ If you're upgrading from an earlier version of Regolith, you may be interested i
 ### Ubuntu
 
 {{< tabs "ubuntu-tabs" >}}
-{{< tab "Ubuntu 24.04" >}}
+{{< tab "Ubuntu 24.10" >}}
 
 Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
 to configure your system to read packages from the Regolith package repository and install the desktop package.
@@ -23,7 +23,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Register the Regolith public key to your local `apt`:
 
    ```console
-   wget -qO - https://regolith-desktop.org/regolith.key | \
+   wget -qO - https://archive.regolith-desktop.com/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
@@ -31,7 +31,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main" | \
+   https://archive.regolith-desktop.com/ubuntu/unstable oracular main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -46,7 +46,42 @@ to configure your system to read packages from the Regolith package repository a
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint info >}}
-Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
+Replace `amd64` with `arm64` above in the apt config line to install on ARM-based systems.
+{{< /hint >}}
+
+{{< /tab >}}
+{{< tab "Ubuntu 24.04" >}}
+
+Regolith can be installed as system packages.  This makes updating and removing easier and more consistent.  The following steps describe how
+to configure your system to read packages from the Regolith package repository and install the desktop package.
+
+1. Register the Regolith public key to your local `apt`:
+
+   ```console
+   wget -qO - https://archive.regolith-desktop.com/regolith.key | \
+   gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
+   ```
+
+1. Add the repository URL to your local `apt`:
+
+   ```console
+   echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+   https://archive.regolith-desktop.com/ubuntu/stable noble v3.2" | \
+   sudo tee /etc/apt/sources.list.d/regolith.list
+   ```
+
+1. Update `apt` and install Regolith
+
+   ```console
+   sudo apt update
+   sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
+   ```
+1. System Restart
+
+The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
+
+{{< hint info >}}
+Replace `amd64` with `arm64` above in the apt config line to install on ARM-based systems.
 {{< /hint >}}
 
 {{< /tab >}}
@@ -58,7 +93,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Register the Regolith public key to your local `apt`:
 
    ```console
-   wget -qO - https://regolith-desktop.org/regolith.key | \
+   wget -qO - https://archive.regolith-desktop.com/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
@@ -66,7 +101,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main" | \
+   https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -81,7 +116,7 @@ to configure your system to read packages from the Regolith package repository a
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint info >}}
-Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
+Replace `amd64` with `arm64` above in the apt config line to install on ARM-based systems.
 {{< /hint >}}
 
 {{< /tab >}}
@@ -97,7 +132,7 @@ For Debian users that use the "Testing" release, Regolith can be installed, howe
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/testing-debian-testing-amd64 testing main" | \
+   https://archive.regolith-desktop.com/debian/testing testing main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -113,7 +148,7 @@ to configure your system to read packages from the Regolith package repository a
 1. Register the Regolith public key to your local `apt`:
 
    ```console
-   wget -qO - https://regolith-desktop.org/regolith.key | \
+   wget -qO - https://archive.regolith-desktop.com/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
@@ -121,7 +156,7 @@ to configure your system to read packages from the Regolith package repository a
 
    ```console
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main" | \
+   https://archive.regolith-desktop.com/debian/stable bookworm v3.2" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -136,7 +171,7 @@ to configure your system to read packages from the Regolith package repository a
 The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.
 
 {{< hint info >}}
-Replace `amd64` with `arm64` in the two places in the above line to install on ARM-based systems.
+Replace `amd64` with `arm64` above in the apt config line to install on ARM-based systems.
 {{< /hint >}}
 
 {{< hint info >}}
@@ -184,54 +219,58 @@ An an example and alternative to the recommendation above, here is the `apt` lin
 sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
 ```
 
-## Anatomy of the Regolith `apt` URL Path
+## Anatomy of the Regolith `apt` Config Line
 
 ```console
-https://regolith-desktop.org/testing-debian-testing-amd64
-                             |       |      |       |
-                             |       |      |       * Architecture
-                             |       |      * Distro Version/Codename
-                             |       * Distro Name
-                             * Regolith Stage
+deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/unstable noble main
+          |                                           |      |        |     |
+          |                                           |      |        |     * Repo Component
+          |                                           |      |        * Distro Version/Codename
+          |                                           |      * Repo Suite
+          |                                           * Distro Name
+          * Architecture
 ```
 
-### Regolith Stages
+### Architecture
 
-|Stage|URL String|Description|
-|---|---|---|
-|Experimental|`experimental`|Stage for testing experiments|
-|Unstable|`unstable`|Stage for early development testing|
-|Testing|`testing`|Stage for late development testing|
-|Release X.Y|`release-X_Y`|Stage for specific official release|
-|Current Release|`release-current` |Stage for latest release (floating from release to release)|
+| Name | Description |
+|------|-------------|
+| `amd64` | The 64-bit x86 architecture |
+| `arm64` | The 64-bit Arm architecture |
 
 ### Distro Names
 
-|Name | Description |
-|---|---|
-|`ubuntu`| The Ubuntu Linux Distribution|
-|`debian`| The Debian Linux Distribution|
+| Name | Description |
+|------|-------------|
+| `ubuntu` | The Ubuntu Linux Distribution |
+| `debian` | The Debian Linux Distribution |
+
+### Repo Suites and Components
+
+| Regolith Stage | Repo Suite | Repo Component | Description |
+|----------------|------------|-----------|-------------|
+| Experimental | `experimental` | `main` | Stage for testing experiments |
+| Unstable | `unstable` | `main` | Stage for early development testing |
+| Testing | `testing` | `main` | Stage for late development testing |
+| Release X.Y | `stable` | `vX.Y` | Stage for specific official release |
+| Current Release | `stable` | `main` | Stage for latest release (floating from release to release) |
 
 ### Distro Version/Codename
 
 These labels are determined by their respective upstream communities.  Examples are `noble`, `bookworm`, `focal`.
 
-### Architecture
-
-|Name | Description |
-|---|---|
-|`amd64`| The 64-bit x86 architecture |
-|`arm64`| The 64-bit Arm architecture |
-
-
 ### Examples
 
-|Description | URL |
-|---|---|
-|The 3.2 release of Regolith on Ubuntu Jammy for `amd64`|`https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64`|
-|The latest release of Regolith on Debian Bookworm for `amd64`|`https://regolith-desktop.org/release-current-debian-bookworm-amd64`|
-|Testing repo for Regolith on Debian Testing for `arm64`|`https://regolith-desktop.org/testing-debian-testing-arm64`|
+| Description | APT Line |
+|-------------|----------|
+| The 3.2 release of Regolith on Ubuntu Jammy for `amd64` | `deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2` |
+| The latest release of Regolith on Debian Bookworm for `amd64` | `deb [arch=amd64] https://archive.regolith-desktop.com/debian/stable bookworm main` |
+| Testing repo for Regolith on Debian Testing for `arm64` | `deb [arch=arm64] https://archive.regolith-desktop.com/debian/testing testing main` |
 
 ## Release Change Policy
 
-From Regolith 3.0 onward, all releases will use unique names in the package repo URL.  This means that users will be in full control of when they wish to upgrade to a new release.  Users wishing to have their package manager always install the latest version, a special stage called `release-current` is provided.
+From Regolith 3.0 to 3.2 (inclusive), all releases will use unique names in the package repo URL.  This means that users will be in full control of when they wish to upgrade to a new release.  Users wishing to have their package manager always install the latest version, a special stage called `release-current` is provided.
+
+From Regolith 3.3 onward, all releases will be published in the common archive repository separated by a high level distro (e.g. `debian`, `ubuntu`) folder and corresponding codename subfolders. The structure is split furthermore into different suites and components. As such, users wishing to have their package manager always install the latest version, they should use `main` component of `stable` suite. Otherwise a fixed version component (for example `v3.3`, `v3.2`, etc) can be used alongside `stable` component.
+
+Note that `experimental`, `unstable`, and `testing` suites only have `main` component.

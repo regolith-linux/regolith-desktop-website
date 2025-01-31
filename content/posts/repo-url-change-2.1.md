@@ -3,7 +3,6 @@ author: "Ken Gilmer"
 date: 2022-08-04
 linktitle: Package URL change for 2.1
 title: Package URL change for 2.1
-weight: 8
 ---
 
 # Summary
