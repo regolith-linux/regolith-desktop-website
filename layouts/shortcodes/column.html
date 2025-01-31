@@ -30,15 +30,17 @@
 {{- end -}}
 
 {{- $borderClass := "" -}}
+{{- $imageBorderClass := "hx-rounded-t" -}}
 {{- if eq $border "true" -}}
   {{- $borderClass = "hx-p-4 hx-rounded-lg hx-border hx-border-gray-200 hover:hx-border-gray-300 dark:hx-border-neutral-800 dark:hover:hx-border-neutral-700" -}}
+  {{- $imageBorderClass = "hx-rounded-t" -}}
 {{- end -}}
 
 <div class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden {{ $borderClass }} hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200">
   {{- with $image -}}
     <img
       alt="{{ $title }}"
-      class="hextra-card-image"
+      class="hextra-card-image hx-mb-4 {{ $imageBorderClass }}"
       loading="lazy"
       decoding="async"
       src="{{ $image | safeURL }}"
@@ -49,14 +51,14 @@
   {{- end -}}
 
   {{- with $title -}}
-    <span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-pb-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
+    <span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-mb-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
       {{- . -}}
     </span>
   {{- end -}}
 
   {{- $padding := "hx-py-4" -}}
   {{- with .InnerDeindent -}}
-    <div class="hextra-card-subtitle hx-pt-4 hx-py-4 hx-text-gray-500 dark:hx-text-gray-400">
+    <div class="hextra-card-subtitle hx-text-gray-500 dark:hx-text-gray-400">
       {{- . | markdownify -}}
     </div>
   {{- end -}}
