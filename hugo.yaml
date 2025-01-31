@@ -117,7 +117,7 @@ params:
   theme:
     # light | dark | system
     default: dark
-    displayToggle: false
+    displayToggle: true
 
   footer:
     enable: true
