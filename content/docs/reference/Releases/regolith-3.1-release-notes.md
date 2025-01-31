@@ -1,12 +1,12 @@
 ---
 title: "3.1 Release Notes"
 linkTitle: "3.1 Release Notes"
-weight: 2
+weight: 86
 description: >
   Release notes for Regolith 3.1
 ---
 
-# Regolith 3.1 Release Notes
+## Regolith 3.1 Release Notes
 
 [Regolith 3.1](https://github.com/orgs/regolith-linux/projects/26) is a minor release focusing on Ubuntu 23.10 support and bug fixes.
 
@@ -22,7 +22,7 @@ description: >
 
 Follow the standard installation instructions, but substitute `testing` instead of `release-3_0`.  For example, this is the `apt` line for Ubuntu Mantic:
 
-```shell
+```bash
 echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
 https://regolith-desktop.org/testing-ubuntu-mantic-amd64 mantic main" | \
 sudo tee /etc/apt/sources.list.d/regolith.list
@@ -30,7 +30,7 @@ sudo tee /etc/apt/sources.list.d/regolith.list
 
 After `apt upgrade` is complete, verify that Regolith 3.1 is installed by:
 
-```shell
+```console
 $ cat /etc/regolith/version 
 REGOLITH_VERSION=3.1
 ```

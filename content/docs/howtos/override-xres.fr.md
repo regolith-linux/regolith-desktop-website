@@ -5,17 +5,17 @@ description: >
   Apprenez à organiser des copies utilisateur des fichiers de configuration Regolith
 ---
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
-{{< /hint >}}
+{{< /callout >}}
 
 Regolith repose sur le système [Xresources](https://en.wikipedia.org/wiki/X_resources) pour fournir une interface de configuration solide.
 Pour change les valeurs `Xresources`, Regolith peut être modifié pour mettre à jour l'interface utilisateur, spécifier des comportements, ou définir des formats spécifiques pour certains blocs de la barre.
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Dans Regolith, les valeurs `Xresources` peuvent être changées avec deux méthodes: en fournissant vos propres fichiers `Xresources` et en ré-écrivant les valeurs `Xresources` existantes. La seconde approche est fortement recommandée car elle permet d'avoir des mises à jour de Regolith moins sensibles aux configurations changeantes.
 Si vous copiez l'arbre `Xresources` entièrement, vous aurez besoin d'intégrer à la main chaque changement de configuration dans les futures versions.
-{{< /hint >}}
+{{< /callout >}}
 
 ## Initialisation
 
@@ -56,14 +56,14 @@ L'outil `xrdb` peut être utilisé pour détemriner les valeurs actuels des vari
 
 1. Créer ou ajouter la valeur suivante au fichier `~/.config/regolith3/Xresources`:
 
-```console
+```yaml {filename="~/.config/regolith3/Xresources"}
 Xft.dpi: 192
 ```
 
 2. Recharger la configuraiton `Xresources`:
 
-```console
-$ regolith-look refresh
+```bash
+regolith-look refresh
 ```
 
 3. Ouvrir un nouveau terminal pour voir les changements
@@ -90,16 +90,16 @@ $ regolith-look refresh
 
 ### Exemple - Désactiver la barre d'état
 
-```console
-$ echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
-$ regolith-look refresh
+```bash
+echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
+regolith-look refresh
 ```
 
 ### Exemple - Utiliser Alt plutôt que la touche Win comme touche Super
 
-```console
-$ echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
-$ echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
+```bash
+echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
+echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 ```
 
 Ensuite, recharger i3 pour que le changement prenne effet.
@@ -108,12 +108,12 @@ Ensuite, recharger i3 pour que le changement prenne effet.
 
 Certains utilisateurs préfèrent utiliser l'application `nm-applet` pour configurer et gérer le réseau sans-fil (depuis Regolith 1.5, `nm-applet` est exécuté par défaut en arrière-plan). Le fichier de configuration i3 peut être modifié pour lancer certains programmes au lancement. Mais, plutôt que de copier tout le fichier, il est possible de fixer jusqu'à trois programmes via Xresources sans avoir à changer le fichier de configuration i3. Pour cela, assurez-vous que la barre d'état système est activé (voir ci-dessus).
 
-```console
-$ echo "wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith3/Xresources
+```bash
+echo "wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith3/Xresources
 ```
 
 Ce changement nécessite que vous vous déconnectiez puir reconnectiez pour prendre effet.
 
-# Informations supplémentaires
+## Informations supplémentaires
 
 Voir [la page de référence sur les configurations]({{< ref "/docs/Reference/configurations.md" >}}) pour plus de détails concernant la configuration de Regolith.

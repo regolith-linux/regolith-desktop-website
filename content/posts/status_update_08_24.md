@@ -1,9 +1,11 @@
 ---
-author: "Ken Gilmer"
+authors:
+  - name: Ken Gilmer
+    link: https://github.com/kgilmer
+    image: https://avatars.githubusercontent.com/u/49683
 date: 2024-08-02
 linktitle: Status Updates August 2024
 title: Status Updates August 2024
-weight: 8
 ---
 
 ## Regolith 3.2 
@@ -14,7 +16,7 @@ We will require at least one more beta to clean up some issues encountered betwe
 
 ## DebConf 24 
 
-<img src="/PXL_20240729_102150414.jpg" alt="Soumya and Ken at DebConf 24" title="Soumya and Ken at DebConf 24" width="320" style="float: right; margin: 35px;"/>
+<img src="/images/posts/PXL_20240729_102150414.jpg" alt="Soumya and Ken at DebConf 24" title="Soumya and Ken at DebConf 24" width="320" style="float: right; margin: 35px;"/>
 
 Due to the generous support of our financial contributors, Soumya and I were able to meet up at [DebConf 24](https://debconf24.debconf.org/) this year in Busan, Korea.  This is our second in-person conference meet up; last year Canonical graciously sponsored both of us to attend the Ubuntu Summit in Riga, Latvia.  That event was incredibly productive and so we were both keen on further opportunities to collaborate in person and with the larger Debian world.
 

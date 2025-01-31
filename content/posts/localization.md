@@ -1,16 +1,18 @@
 ---
-author: "Ken Gilmer"
+authors:
+  - name: Ken Gilmer
+    link: https://github.com/kgilmer
+    image: https://avatars.githubusercontent.com/u/49683
 date: 2022-06-22
 linktitle: Looking for Translators
 title: Looking for Translators
-weight: 15
 ---
 
 With the 2.0 release out the door, we're looking for help to translate the index page and the "using regolith" section into languages other than English. In the past we've used a translation system, but it turned out to be too complex for many people to understand. For the [Regolith 2.0 site](https://github.com/regolith-linux/regolith-desktop-website) we'll rely on [Hugo's multilingual support](https://gohugo.io/content-management/multilingual/).
 
 For a given language translation the following files must be translated:
 
-```
+```text
 content/_index.md
 content/docs/using-regolith/basics.md
 content/docs/using-regolith/configuration.md
@@ -21,7 +23,7 @@ To provide a translation, simply copy the English file and add the [two-letter l
 
 As an example, if a Japanese translation was provided, the following new files would be added to the PR:
 
-```
+```text
 content/_index.ja.md
 content/docs/using-regolith/basics.ja.md
 content/docs/using-regolith/configuration.ja.md

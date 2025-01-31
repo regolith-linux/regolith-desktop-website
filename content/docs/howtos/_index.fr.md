@@ -1,20 +1,20 @@
 ---
 title: "Guides"
 linkTitle: "Guides"
-bookCollapseSection: true
 weight: 5
-date: 2017-01-04
 description: >
   Quelques exemples de ce que vous pouvez faire avec Regolith Linux
+prev: /docs/using-regolith/configuration
+next: /docs/howtos/workspace-on-output
 ---
 
-{{< hint danger >}}
-NOTE: Cette page a été copiée depuis le site de [Regolith 1.x](https://regolith-linux.org) et n'a pas été mise à jour pour Regolith 2. Elle peut contenir des informations qui ne sont plus d'actualité.
-{{< /hint >}}
+{{< callout type="error" >}}
+Cette page a été copiée depuis le site de [Regolith 1.x](https://regolith-linux.org) et n'a pas été mise à jour pour Regolith 2. Elle peut contenir des informations qui ne sont plus d'actualité.
+{{< /callout >}}
 
-{{< hint info >}}
+{{< callout type="info" >}}
 D'autres exemples et des tutos sont disponibles sur le [wiki GitHub de regolith-desktop](https://github.com/search?q=org%3Aregolith-linux&type=Wikis&in:HowTo).
-{{< /hint >}}
+{{< /callout >}}
 
 ## Utiliser le terminal
 

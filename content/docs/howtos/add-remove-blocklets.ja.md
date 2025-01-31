@@ -5,22 +5,22 @@ description: >
   バーにあるステータスインジケーターを変更する。
 ---
 
-# ステータスインジケーターの追加と削除
+## ステータスインジケーターの追加と削除
 
-## ステータスインジケーターの検索
+### ステータスインジケーターの検索
 
-```console
-$ apt search i3xrocks-
+```bash
+apt search i3xrocks-
 ```
 
-## ステータスインジケーターのインストール
+### ステータスインジケーターのインストール
 
-```console
-$ sudo apt install i3xrocks-memory
-$ regolith-look refresh
+```bash
+sudo apt install i3xrocks-memory
+regolith-look refresh
 ```
 
-# i3バーのカスタマイズ {#customize-bar}
+## i3バーのカスタマイズ {#customize-bar}
 
 バーにある各インジケーターはファイルで管理されます。バーのステータスインジケーターの位置に対応しています。例として、ファイル名が`10_`で始まるものは、 `20_`で始まる設定ファイルのインジケーターより前に配置されることを意味します。各ファイルの中には、`i3xrocks`がスクリプトを実行するために使用する情報があり、最終的にバーに表示されるデータを返します。いくつかのステータスインジケーターは設定パラメーターが存在し、ユーザーの好みに合わせることができます。例えば、バッテリーの状態を頻繁に変更するのがよい場合、調べる間隔を更新することができます。バーをカスタマイズするために最初にするべきことは、表示したいインジケーターを`/usr/share/i3xrocks/conf.d/`から`~/.config/regolith3/i3xrocks/conf.d`にコピーすることです。 `~/.config/regolith3/i3xrocks/conf.d`内の各ファイルは好きなように変更できます。バーのステータスインジケーターを変更するには、ファイルの名前を好きな並び順に変更するだけです。
 
@@ -51,6 +51,6 @@ $ regolith-look refresh
 
 **注意**：ユーザーディレクトリの`~/.config/regolith3/i3xrocks/conf.d`に複数のブロック設定が存在する場合、既定である`/usr/share/i3xrocks/conf.d/`は無視されます。
 
-# さらに深く読み込む
+## さらに深く読み込む
 
 [設定のリファレンスページ]({{< ref "/docs/Reference/configurations.md" >}})には、Regolith Linuxを使うときの設定ファイルについての詳細な項目があります。

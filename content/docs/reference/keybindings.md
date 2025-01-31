@@ -4,6 +4,7 @@ linkTitle: "Keybindings"
 weight: 1
 description: >
   All default key mappings provided in Regolith
+prev: /docs/reference
 ---
 
 | Action                                                                             | Key Binding                    |

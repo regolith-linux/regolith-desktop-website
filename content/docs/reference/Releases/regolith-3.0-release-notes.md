@@ -1,12 +1,12 @@
 ---
 title: "3.0 Release Notes"
 linkTitle: "3.0 Release Notes"
-weight: 3
+weight: 87
 description: >
   Release notes for Regolith 3.0
 ---
 
-# Regolith 3.0 Release Notes
+## Regolith 3.0 Release Notes
 
 [Regolith 3.0](https://github.com/orgs/regolith-linux/projects/26) is a major release focusing on a new [Wayland](https://github.com/orgs/regolith-linux/projects/8)-based session, Debian 12, and Ubuntu 23.04 support.
 
@@ -18,9 +18,9 @@ description: >
 
 ## Migration Guide
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Important information for existing Regolith users
-{{< /hint >}}
+{{< /callout >}}
 
 1. The directory for user-staged configuration files has changed from `~/.config/regolith2` to `~/.config/regolith3`.
 2. To generalize across X11 and Wayland sessions, Xresource keys have been renamed to remove "i3-".  This means that users with XResource overrides on earlier versions of Regolith will need to update the key names.  Specifically, keys starting with `i3-wm` now start with `wm`.  For example, in Regolith 2.x to change gaps size, `i3-wm.gaps.inner.size` is being renamed to `wm.gaps.inner.size` in Regolith 3.0.

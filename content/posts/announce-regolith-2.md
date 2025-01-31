@@ -1,9 +1,11 @@
 ---
-author: "Ken Gilmer"
+authors:
+  - name: Ken Gilmer
+    link: https://github.com/kgilmer
+    image: https://avatars.githubusercontent.com/u/49683
 date: 2022-02-05
 linktitle: Announcing Regolith 2
 title: Announcing Regolith 2
-weight: 20
 ---
 
 ## Introduction
@@ -33,6 +35,7 @@ We're currently in pre-alpha phase of the development process. The environment i
 * Port of looks `lascaille` and `nord` from the 1.x looks
 
 ## Changes in Development
+
 * New website (this one!)
 * [Polish](https://github.com/regolith-linux/ilia/issues) for `ilia`
 * Bugs in wallpaper handling (gnome/dotfiles)
@@ -48,6 +51,7 @@ Due to the volunteer nature of the Regolith project, it's simply not possible to
 ## Expected Upgrade Experience
 
 The Regolith 2 desktop environment will require the removal of the existing Regolith 1.x PPA and the addition of a new Debian repository.  `regolith-desktop` will continue to be the top-level package that provides the complete desktop environment.  As before, i3 config files can be entirely controlled by users by staging a copy in their XDG user configuration directory, however with `i3` `4.20+`, a new option of simply providing any additional configuration via config partials is also supported.
+
 ## Learn More
 
 [See here for details](http://regolith-desktop.com/#get-regolith-20) on how to install the current pre-release version of Regolith 2, and [here for information on how you can provide feedback or contribute](http://regolith-desktop.com/#get-regolith-20).

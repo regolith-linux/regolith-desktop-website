@@ -4,6 +4,7 @@ linkTitle: "Raccourcis clavier"
 weight: 1
 description: >
   Tous les raccourcis clavier fournis par Regolith par défaut
+prev: /docs/reference
 ---
 
 | Action                                                                                                                          | Key Binding                    |

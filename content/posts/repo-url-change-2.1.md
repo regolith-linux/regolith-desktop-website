@@ -1,20 +1,20 @@
 ---
-author: "Ken Gilmer"
+authors:
+  - name: Ken Gilmer
+    link: https://github.com/kgilmer
+    image: https://avatars.githubusercontent.com/u/49683
 date: 2022-08-04
 linktitle: Package URL change for 2.1
 title: Package URL change for 2.1
-weight: 8
 ---
 
-# Summary
+## Summary
 
 For the Regolith 2.1 release, the host name of the URL from which `apt` pulls packages has changed.  The new hostname is `regolith-desktop.org`.  In order to update to Regolith 2.1 and get fixes and upgrades going forward kindly update your apt configuration.
 
 The old `apt` URL:
 
-`/etc/apt/sources.list.d/regolith.list`:
-
-```
+```text {filename="/etc/apt/sources.list.d/regolith.list"}
 deb [arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.io/release-ubuntu-jammy-amd64 testing main
                                                                                                      ^
                                                                                                      |
@@ -23,9 +23,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] http
 
 The new `apt` URL:
 
-`/etc/apt/sources.list.d/regolith.list`:
-
-```
+```text {filename="/etc/apt/sources.list.d/regolith.list"}
 deb [arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] https://regolith-desktop.org/release-ubuntu-jammy-amd64 testing main
 ```
 

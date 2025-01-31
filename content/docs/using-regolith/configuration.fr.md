@@ -4,43 +4,44 @@ linkTitle: "Configuration"
 weight: 4
 description: >
   Effectuer des changements dans les thèmes et comportements de Regolith
+next: /docs/howtos
 ---
 
-# Paquets recommandés pour les nouveaux utilisateurs
+## Paquets recommandés pour les nouveaux utilisateurs
 
-## Thèmes (looks)
+### Thèmes (looks)
 
 Installer tous les thèmes officiels de Regolith:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
 NOTE: Cela va télécharger plusieurs fonts et images. Si vous souhaitez minimiser l'utilisateur de votre disque, vous pouvez désinstaller les thèmes que nous n'utilisez pas.
 
-## Indicateurs de statut
+### Indicateurs de statut
 
 La commande suivante installe les indicateurs de statut recommandés pour les nouveaux utilisateurs:
 
-```console
+```bash
 sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory
 ```
 
 Pour supprimer certains de ces indicateurs plus tard, désinstallez-les simplement de votre système:
 
-```console
+```bash
 sudo apt remove i3xrocks-info
 ```
 
-### Statut des batteries pour les laptops
+#### Statut des batteries pour les laptops
 
 Pour voir le statut actuel de la batterie sur votre laptop:
 
-```console
+```bash
 sudo apt install i3xrocks-battery
 ```
 
-## Compositors
+### Compositors
 
 Les compositors gèrent les effets visuels de vos fenêtres.
 Par défaut, Regolith 2.x n'installe pas de compositor spécifique pour limiter les problèmes avec des composants graphiques (pilotes et/ou matériel).
@@ -54,14 +55,14 @@ Les utilisateurs qui souhaitent plus d'effets visuels et qui ont le matériel gr
 
 Voir [ce guide](/docs/howtos/customize-compositor) pour plus de détails.
 
-# Fond d'écran
+## Fond d'écran
 
 La plupart des thèmes Regolith fournisse une image et une couleur par défaut pour le bureau.
 Le fond d'écran peut être modifié en spécifiant le chemin vers une image via une valeur Xresources: `regolith.wallpaper.file`
 
 Exemple, en considérant que le fichier `/usr/share/backgrounds/hardy_wallpaper_uhd.png` existe:
 
-```console
+```bash
 echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -71,14 +72,14 @@ Les options sont les suivantes: `none`, `wallpaper`, `centered`, `scaled`, `stre
 
 Exemple:
 
-```console
+```bash
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
 Pour spécifier une couleur plutôt qu'une image, utiliser la valeur `regolith.wallpaper.color.primary`:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh
@@ -86,7 +87,7 @@ regolith-look refresh
 
 Pour spécifier une seconde couleur et obtenir un dégradé:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
@@ -94,27 +95,27 @@ echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xr
 regolith-look refresh
 ```
 
-## Fond d'écran de verouillage
+### Fond d'écran de verouillage
 
 Le fond d'écran de verouillage peut être géré de la même manière que le fond d'écran du bureau.
 Les valeurs Xresources sont les mêmes mais avec `lockscreen` plutôt que `wallpaper` comme préfixe (`regolith.lockscreen.wallpaper...`)
 Par exemple:
 
-```console
+```bash
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
-## Désactiver la gestion du fond d'écran
+### Désactiver la gestion du fond d'écran
 
 Si vous souhaitez gérer le fond d'écran autrement que par Regolith, fixez simplement des valeurs vides pour l'image et la couleur:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```
 
-# Indicateurs de statut dans la barre
+## Indicateurs de statut dans la barre
 
 Les indicateurs de statut comme la charge CPU, la date et l'heure, les notifications, la météo et d'autres informations système peuvent être ajoutés ou retirés en installant des paquets.
 Par exemple, pour montrer l'indicateur de statut de la batterie de votre laptop, exécutez simplement `sudo apt install i3xrocks-battery` et rafraîchir la session avec
@@ -124,7 +125,7 @@ Pour voir les indicateurs disponibles, lancez `apt search ^i3xrocks-` ou cherche
 
 Vous pouvez trouver [une documentation pour configurer]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) ces indicateurs de statut, aussi appelés "blocklets".
 
-# Thèmes
+## Thèmes
 
 Les couleurs, fond d'écran, fenêtre, barre et autres effets visuels sont regroupés dans Regolith dans des thèmes ou "looks".
 Les thèmes sont une manière simple de changer entièrement l'apparence du bureau.
@@ -133,28 +134,28 @@ Par convention, les paquets de thème utilise le format suivant: `regolith-look-
 `apt` ou un gestionnaire de paquet graphique peut être utilisé pour chercher les thèmes disponibles.
 Pour sélectionner un thème installé, le raccourcis {{< keys "super,alt,l" >}} présente le dialogue suivant:
 
-![](/regolith-ilia-look-selector.png)
+![](/images/v-tour/regolith-ilia-look-selector.png)
 
 Alternativement, la commande de terminal `regolith-look` peut être utilisé pour changer de thème et rafraîchir la session active en sélectionnant un thème.
 Voici un exemple qui sélectionne le thème `gruvbox`.
 
 ```console
-apt search ^regolith-look-
+$ apt search ^regolith-look-
 [...]
 regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
 [...]
-sudo apt install regolith-look-gruvbox
+$ sudo apt install regolith-look-gruvbox
 regolith-look set gruvbox
 regolith-look refresh
 ```
 
 Pour installer l'ensemble des thèmes:
 
-```console
+```bash
 sudo apt install regolith-look-*
 ```
 
-# Fonctionnalités i3
+## Fonctionnalités i3
 
 [Depuis Regolith 2.0]({{< ref "docs/reference/configurations.md#history" >}}), une grande partie de la configuration de i3 est gérable via le gestionnaire de paquet.
 Regolith fourni toutes ses configurations i3 via des "configs partielles".
@@ -183,7 +184,7 @@ Ainsi, la configuration non modifiée peut toujours recevoir des mises à jour e
 
 Voir [le guide pour la configuration de i3]({{< ref "docs/howtos/customize-i3-configuration.md" >}}) pour des exemples.
 
-## Tous les paquets de configuration i3
+### Tous les paquets de configuration i3
 
 La liste suivante contient tous les paquets de configuration pour i3 disponibles dans Regolith 2.0:
 
@@ -211,18 +212,18 @@ La liste suivante contient tous les paquets de configuration pour i3 disponibles
 | regolith-i3-user-programs    | Lancer éventuellemetn des programmes spécifiés dans Xresources         |
 | regolith-i3-workspace-config | Raccourcis clavier pour les espaces de travail                         |
 
-# Raccourcis clavier
+## Raccourcis clavier
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
-{{< /hint >}}
+{{< /callout >}}
 
 La modification la plus courante est la touche {{< keys "super" >}}.
 Regolith utilise `Xresources` comme une source de vérité pour les paramètres, qui sont lu par divers composants de l'UI.
 La table des valeurs `Xresources` accessibles à l'utilisateur est [accessible ailleurs]({{< ref "xresources" >}}).
 Pour changer la touche par défaut {{< keys "super" >}} (touche "Win") pour la touche "Alt", ajoutez la configuration suivante au fichier `~/.config/regolith3/Xresources`:
 
-```toml
+```yaml {filename="~/.config/regolith3/Xresources"}
 wm.mod: Mod1
 wm.alt: Mod4
 ```
@@ -230,18 +231,18 @@ wm.alt: Mod4
 **Note**: GNOME utilise aussi ses propres raccourcis clavier. Quand la session Regolith est initialisée, les conflits de raccourcis avec GNOME sont supprimés
 des paramètres de l'utilisateur.
 
-![](/regolith-gnome-keybindings.png)
+![](/images/v-tour/regolith-gnome-keybindings.png)
 
-# Gestion du système
+## Gestion du système
 
 L'app `regolith-control-center` est un outil pour configurer les langues, la date, les affichages, le réseau et d'autres paramètres.
 Ouvrz le lanceur d'app avec {{< keys "super,space" >}}, tapez `paramètres` et tapez "Enter" pour lancer l'app.
 Vous pouvez aussi utiliser le raccourcis {{< keys "super,c" >}} pour le lancer directement.
 Cette application peut être lancée depuis un terminal avec la commande `regolith-control-center`.
 
-![](/regolith-settings-about.png)
+![](/images/v-tour/regolith-settings-about.png)
 
-# Plus d'infos
+## Plus d'infos
 
 Pour aller plus loin, des [guides sont disponibles]({{< ref "howtos" >}}).
 Vous pouvez également lire [la référence sur Xresources]({{< ref "docs/Reference/xresources.md" >}}).

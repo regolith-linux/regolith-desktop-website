@@ -8,8 +8,6 @@ description: >
 
 Bien que nous couvrirons l'ensemble du fonctionnement de Regolith dans d'autres parties de la documentation, cette page couvre les cas d'utilisations basiques.
 
-# Utilisation
-
 ## Lancer une application
 
 Après la première connexion, l'écran contiendra une barre sur le bas et quelques raccourcis clavier dans un dialogue.
@@ -18,13 +16,13 @@ Il peut être caché en pressant la touche `esc` et être ré-affiché avec {{< 
 Pour lancer une application, pressez {{< keys "super,shift,?" >}}. et un dialogue similaire affichera les applications installées sur le système.
 Si vous commencez à taper le nom de l'application que vous souhaitez lancer, la liste sera filtrée. Vous pouvez aussi scroller dans la liste avec les touches de votre clavier.
 
-![](/regolith-ilia-apps.png)
+![](/images/v-tour/regolith-ilia-apps.png)
 
 ## Naviguer vers une fenêtre
 
 Pour se focaliser sur une application en cours d'exécution, le raccourcis {{< keys "super,ctrl,space" >}} peut être utilisé pour afficher un dialogue avec toutes les fenêtres ouvertes. Sélectionnez simplement la fenêtre voulue et vous serez déplacés vers l'espace de travail contenant cette fenêtre.
 
-![](/regolith-ilia-windows.png)
+![](/images/v-tour/regolith-ilia-windows.png)
 
 ## Créer un nouvel espace de travail
 
@@ -36,7 +34,7 @@ Chaque espace de travail correspond à un écran avec un ensemble indépendant d
 Rechercher un fichier spécifique sur votre système peut être fait de différentes manières.
 Regolith fourni un dialogue de recherche de fichier avec {{< keys "super,alt,space" >}} pour rapidement chercher et éventuellement afficher un fichier avec son application par défaut. Pressez 'enter' sur un élément sélectionné lancera une tentative d'ouverte avec la commande `xdg-open`.
 
-![](/regolith-ilia-files.png)
+![](/images/v-tour/regolith-ilia-files.png)
 
 ## Terminal
 
@@ -69,14 +67,14 @@ Il est également possible de se déplacer "d'avant en arrière" entre les espac
 L'application Paramètres (aussi connu sous le nom `regolith-control-center`) est l'interface principale pour les tâches de configuration courantes comme la configuration du WiFi et du Bluetooth, la configuration des apps associée et la configuration des utilisateurs.
 Cette app peut être lancée avec le raccourcis {{< keys "super,c" >}} ou depuis le lanceur d'applications en utilisant le nom `Regolith Settings`.
 
-![](/regolith-gnome-settings.png)
+![](/images/v-tour/regolith-gnome-settings.png)
 
 ## Liste des raccourcis clavier
 
 Tous les raccourcis clavier utilisables sur Regolith Desktop peuvent être vus, triés et exécutiées par `ilia`.
 Ce dialogue est lançable avec {{< keys "super,shift,?" >}}.
 
-![](/regolith-ilia-keybindings.png)
+![](/images/v-tour/regolith-ilia-keybindings.png)
 
 ## Gestion des notifications
 
