@@ -62,6 +62,9 @@ body:is(html[class~="dark"] *) {
   text-decoration-thickness: from-font;
   text-underline-position: from-font;
 }
+.regolith-links:hover {
+  text-decoration-line: none;
+}
 /**************************/
 
 /** codeblock **/
