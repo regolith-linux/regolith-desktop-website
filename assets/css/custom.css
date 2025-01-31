@@ -4,6 +4,19 @@
   --primary-saturation: 70%;
   --primary-lightness: 60%;
   --primary-background-color: 39 42 49;
+  /****************/
+  
+  /** Option #1: Slightly lighter than OS traybar blue color **/
+  /* --primary-background-color: 37 43 57; */
+  /****************/
+
+  /** Option #2: Original background color **/
+  /* --primary-background-color: 52 58 64; */
+  /****************/
+  
+  /** Option #3: Actual OS background color **/
+  /* --primary-background-color: 31 36 48; */
+  /****************/
 }
 .steps h3:is(html[class~="dark"] *):before {
   --tw-border-opacity: 1;
