@@ -1,10 +1,8 @@
 ---
 title: "Personnaliser la config i3"
 linkTitle: "Personnaliser la config i3"
-weight: 1
 description: >
   Comment faire des changements sur le look et les comportements de i3
-prev: /docs/howtos
 ---
 
 Les configurations par défaut sont stockées dans `/usr/share/regolith/i3/config.d`.

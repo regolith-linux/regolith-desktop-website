@@ -1,8 +1,10 @@
 ---
 title: "Assign a workspace to a specific Output (Display)"
 linkTitle: "Assign a workspace to a specific Output (Display)"
+weight: 1
 description: >
   Specify that a given workspace should always be displayed on a specific monitor
+prev: /docs/howtos
 ---
 
 ## i3

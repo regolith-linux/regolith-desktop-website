@@ -1,10 +1,8 @@
 ---
 title: 'i3設定のカスタマイズ'
 linkTitle: 'i3設定のカスタマイズ'
-weight: 1
 description: >
     i3の外観や動作を変更する方法。
-prev: /docs/howtos
 ---
 
 既定の設定は`/usr/share/regolith/i3/config.d`に保存されています。これらはアルファベット順に読み込まれます。次に、`~/.config/regolith3/i3/config.d`のユーザー設定がアルファベット順に読み込みまれます。Regolithの既定の設定は`Xresources`値の設定や、ユーザー設定の追加や、`apt`による既定の設定の追加・削除でカスタマイズできるように構築されています。これにより、Regolithではi3のカスタマイズ方法に、設定をクリーンにするため、個別に、もしくは組み合わせて使用できる複数のアプローチがあります。
