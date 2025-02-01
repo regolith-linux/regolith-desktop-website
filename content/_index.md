@@ -8,9 +8,9 @@ layout: "hextra-home"
   imageTitle="Regolith Desktop Environment"
   imageWidth="853"
 >}}
-{{< hextra/hero-badge link="https://github.com/regolith-linux/" >}}
+{{< hextra/hero-badge link="/docs/reference/releases/regolith-3.2-release-notes" >}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span>Free, open source</span>
+  <span>Latest version: v3.2</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
@@ -20,13 +20,13 @@ layout: "hextra-home"
 {{< /hextra/hero-headline >}}
 </div>
 
-<div class="hx-mt-6 hx-mb-6"">
+<div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-subtitle >}}
   Productivity focused Ubuntu derivative and desktop environment
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx-mt-6 hx-mb-6"">
+<div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-button text="Get Started" link="docs/" >}}
 {{< hextra/hero-badge style="padding: 13px 12px !important; font-size: .875rem !important;" link="https://opencollective.com/regolith/donate" >}}
   <span>Support Regolith <img class="not-prose" style="display: inline; height: 22px;" src='https://badgen.net/opencollective/backers/regolith'/></span>
