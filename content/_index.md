@@ -28,6 +28,10 @@ layout: "hextra-home"
 
 <div class="hx-mt-6 hx-mb-6"">
 {{< hextra/hero-button text="Get Started" link="docs/" >}}
+{{< hextra/hero-badge style="padding: 13px 12px !important; font-size: .875rem !important;" link="https://opencollective.com/regolith/donate" >}}
+  <span>Support Regolith <img class="not-prose" style="display: inline; height: 22px;" src='https://badgen.net/opencollective/backers/regolith'/></span>
+  {{< icon name="arrow-circle-right" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
 </div>
 {{< /hextra/hero-container >}}
 
