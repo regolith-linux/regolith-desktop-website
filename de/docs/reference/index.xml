@@ -1,0 +1,672 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Reference</title><link>https://regolith-desktop.com/de/docs/reference/</link><description>Recent content in Reference on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>de</language><atom:link href="https://regolith-desktop.com/de/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Config Files</title><link>https://regolith-desktop.com/de/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/de/docs/reference/configurations/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Component&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Default Config&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>User Config&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Notes&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>i3 / i3-gaps&lt;/td>
+&lt;td>&lt;code>/etc/regolith/i3/config&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/i3/config&lt;/code> (global override)&lt;/td>
+&lt;td>i3 config partials live in &lt;code>/usr/share/regolith/i3/config.d&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xresources&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith-look/default&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/Xresources&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.Xresources&lt;/code> is also loaded but intended for properties that may also be required in other desktop sessions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bar status indicators&lt;/td>
+&lt;td>&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>&lt;/td>
+&lt;td>Each block has it&amp;rsquo;s own file. Filename determines ordering.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Picom (Compton) Compositor&lt;/td>
+&lt;td>&lt;code>/etc/regolith/picom/config&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/picom/config&lt;/code>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Adding an i3 config file in &lt;code>~/.config/regolith3/i3/config&lt;/code> will essentially override all Regolith configuration including Xresources and looks.&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Xresources</title><link>https://regolith-desktop.com/de/docs/reference/xresources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/de/docs/reference/xresources/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example &lt;code>wm.foo.bar&lt;/code> changes to &lt;code>i3-wm.foo.bar&lt;/code> for Regolith 1.x and 2.x.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>Main &lt;code>Xresources&lt;/code> keys&lt;span class="hx-absolute -hx-mt-20" id="main-xresources-keys">&lt;/span>
+&lt;a href="#main-xresources-keys" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>Xresources&lt;/code> Key&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>gtk.theme_name&lt;/td>
+&lt;td>GTK Theme (&amp;ldquo;Legacy Applications&amp;rdquo; in &lt;code>gnome-tweaks&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.icon_theme_name&lt;/td>
+&lt;td>GTK Icon Theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.audible-bell&lt;/td>
+&lt;td>Enables audible bell in gnome-terminal (&lt;code>true / false&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.document_font_name&lt;/td>
+&lt;td>GTK Document Font Name&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.font_name&lt;/td>
+&lt;td>General purpose font for GTK apps and the desktop&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.monospace_font_name&lt;/td>
+&lt;td>Font for monospace areas such as i3bar and the terminal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.background-transparency-percent&lt;/td>
+&lt;td>Background transparency value for gnome-terminal (&lt;code>0 - 100&lt;/code>). See also &lt;code>gnome.terminal.use-transparent-background&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.font&lt;/td>
+&lt;td>Font definition for gnome-terminal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.scrollbar&lt;/td>
+&lt;td>Flag to enable/disable scrollbar (&lt;code>never / always&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.use-transparent-background&lt;/td>
+&lt;td>Enables transparent background in gnome-terminal (&lt;code>true / false&lt;/code>). See also &lt;code>gnome.terminal.background-transparency-percent&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wallpaper&lt;/td>
+&lt;td>GNOME Wallpaper (can be overridden in Settings)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wm.theme&lt;/td>
+&lt;td>GNOME Window Manager Theme (unused)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.alt&lt;/td>
+&lt;td>Key mapping for Alt key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3" target="_blank" rel="noopener">i3 User Guide&lt;/a> for details.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.background.color&lt;/td>
+&lt;td>Bar Background Color&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.position&lt;/td>
+&lt;td>Bar Screen Position&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.separator.color&lt;/td>
+&lt;td>Color of seperator between blocks&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.statusline.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.trayoutput&lt;/td>
+&lt;td>Enable or disable the &lt;a href="https://i3wm.org/docs/userguide.html#_tray_output" target="_blank" rel="noopener">app tray&lt;/a> in i3bar&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.floatingwindow.border.size&lt;/td>
+&lt;td>Window border size in pixels for floating windows&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.font&lt;/td>
+&lt;td>Window manager font&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.gaps.inner.size&lt;/td>
+&lt;td>Default gap size between windows in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.gaps.outer.size&lt;/td>
+&lt;td>Default gap size at screen edge in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.mod&lt;/td>
+&lt;td>Key mapping for Super key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3" target="_blank" rel="noopener">i3 User Guide&lt;/a> for details.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.window.border.size&lt;/td>
+&lt;td>Default border size in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.workspace.01.name .. wm.workspace.19.name&lt;/td>
+&lt;td>Workspace Labels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.workspace.01.key .. wm.workspace.10.key&lt;/td>
+&lt;td>Workspace Shortucts&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>Command to execute when volume indicator is left clicked (default: none)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>Command to execute when volume indicator is middle clicked (default: none)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>Command to execute when volume indicator is right clicked (default: mute through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.error.color&lt;/td>
+&lt;td>Color for bar module in error mode&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery0&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery100&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery20&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery50&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery80&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryac&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batterycharging&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryunknown&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.capslock&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.color&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.cpu&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.disk&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.dn&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.help&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediapaused&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediaplaying&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.memory&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mute&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.error&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.none&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.some&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.numlock&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.off&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.on&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.sound&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.thermometer&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.time&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.up&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wifi&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wired&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.nominal&lt;/td>
+&lt;td>Default bar icon color&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.color&lt;/td>
+&lt;td>Color of numerical value in bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.font&lt;/td>
+&lt;td>Font for numerical value in bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.warning&lt;/td>
+&lt;td>Warning color for bar module&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>Optional &lt;code>Xresources&lt;/code> keys&lt;span class="hx-absolute -hx-mt-20" id="optional-xresources-keys">&lt;/span>
+&lt;a href="#optional-xresources-keys" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The following &lt;code>Xresources&lt;/code> keys are undefined by default but can be used by users to change behavior as desired.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>Xresources&lt;/code> Key&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>wm.gaps.focus_follows_mouse&lt;/td>
+&lt;td>The window under the mouse has focus if enabled&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.app&lt;/td>
+&lt;td>Command i3 executes from the app launcher keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.cmd&lt;/td>
+&lt;td>Command i3 executes from the command launcher keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.window&lt;/td>
+&lt;td>Command i3 executes for the window navigation keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.help&lt;/td>
+&lt;td>Command to launch from the help keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.file_search&lt;/td>
+&lt;td>Command to launch from the file search keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.refresh_ui&lt;/td>
+&lt;td>Command to launch from the session refresh keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.logout&lt;/td>
+&lt;td>Command to launch from the logout keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.reboot&lt;/td>
+&lt;td>Command to launch from the reboot keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.shutdown&lt;/td>
+&lt;td>Command to launch from the shutdown keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.lock&lt;/td>
+&lt;td>Command to launch from the lock screen keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.sleep&lt;/td>
+&lt;td>Command to launch from the sleep keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.settings&lt;/td>
+&lt;td>Command to launch from the Control Panel keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.display&lt;/td>
+&lt;td>Command to launch from the Display Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.wifi&lt;/td>
+&lt;td>Command to launch from the Wifi Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.bluetooth&lt;/td>
+&lt;td>Command to launch from the Bluetooth Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.files&lt;/td>
+&lt;td>Command to launch from the file browser keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.notification_ui&lt;/td>
+&lt;td>Command to launch from the notification UI keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.1&amp;hellip;wm.program.3&lt;/td>
+&lt;td>Optional programs to start with i3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.media-player.player-args&lt;/td>
+&lt;td>Optional arguments used by the &lt;code>media-player&lt;/code> i3xrocks block. These arguments are fed straight into &lt;code>playerctl&lt;/code>, eg. setting this value to &lt;code>-p spotify&lt;/code> only makes the bar display/control spotify.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.left&lt;/td>
+&lt;td>Optional command to run on left button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.right&lt;/td>
+&lt;td>Override command to run on right button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrollup&lt;/td>
+&lt;td>Override command to run on scroll up of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrolldn&lt;/td>
+&lt;td>Override command to run on scroll down of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>Optional command to run on left button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>Override command to run on right button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>Override command to run on scroll up of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>Override command to run on scroll down of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.disk-capacity&lt;/td>
+&lt;td>Override command to run on disk capacity status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.cpu-usage&lt;/td>
+&lt;td>Override command to run on cpu usage status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.memory&lt;/td>
+&lt;td>Override command to run on memory status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.wifi&lt;/td>
+&lt;td>Override command to run on wifi status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.weather&lt;/td>
+&lt;td>Override command to run on weather status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.left&lt;/td>
+&lt;td>Optional command to run on left button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.right&lt;/td>
+&lt;td>Override command to run on right button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.time&lt;/td>
+&lt;td>Override command to run on date time status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.battery&lt;/td>
+&lt;td>Override command to run on battery status indicator.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Releases</title><link>https://regolith-desktop.com/de/docs/reference/releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/de/docs/reference/releases/</guid><description>
+&lt;p>Release notes and other version-specific content can be found here.&lt;/p>
+&lt;div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-3.2-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">3.2 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-3.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">3.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-3.0-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">3.0 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-2.2-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">2.2 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-2.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">2.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-2.0-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">2.0 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.6-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.6 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.5.3-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.5.3 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.5.2-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.5.2 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.5.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.5.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.5-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.5 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.4.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.4.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.4-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.4 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.3.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.3.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.3-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.3 Release Notes&lt;/span>&lt;/a>
+&lt;/div></description></item></channel></rss>

@@ -1,685 +1,863 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on Regolith Desktop</title><link>https://regolith-desktop.com/docs/reference/</link><description>Recent content in Reference on Regolith Desktop</description><generator>Hugo</generator><language>en</language><atom:link href="https://regolith-desktop.com/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Keybindings</title><link>https://regolith-desktop.com/docs/reference/keybindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/keybindings/</guid><description>&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Action&lt;/th>
- &lt;th>Key Binding&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>&lt;a href="#LaunchApplication"> Launch - Application &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> Space&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#LaunchBrowser"> Launch - Browser &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Enter&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#LaunchCommand"> Launch - Command &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Space&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#LaunchFileBrowser"> Launch - File Browser &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> n&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#LaunchFileSearch"> Launch - File Search &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> Space&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#LaunchNotificationViewer"> Launch - Notification Viewer &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> n&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#LaunchTerminal"> Launch - Terminal &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> Enter&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#LaunchThisDialog"> Launch - This Dialog &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ?&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyBluetoothSettings"> Modify - Bluetooth Settings &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> b&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyCarryWindowtoWorkspace1-10"> Modify - Carry Window to Workspace 1 - 10&lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> 0..9&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyCarryWindowtoWorkspace11-19"> Modify - Carry Window to Workspace 11 - 19 &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> &lt;code>Ctrl&lt;/code> 1..9&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyContainingWorkspace"> Modify - Containing Workspace &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyDisplaySettings"> Modify - Display Settings &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> d&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyLoadWindowLayout"> Modify - Load Window Layout &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> .&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyMoveWindowtoWorkspace1-10"> Modify - Move Window to Workspace 1 - 10 &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> 0..9&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyMoveWindowtoWorkspace11-19"> Modify - Move Window to Workspace 11 - 19&lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> 1..9&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyMovetoScratchpad"> Modify - Move to Scratchpad &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> m&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyNextWindowOrientation"> Modify - Next Window Orientation &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> Backspace&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifySaveWindowLayout"> Modify - Save Window Layout &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> ,&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifySettings"> Modify - Settings &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> c&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyTile/FloatFocusToggle"> Modify - Tile/Float Focus Toggle &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> t&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyToggleBar"> Modify - Toggle Bar &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> i&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyWifiSettings"> Modify - Wifi Settings &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> w&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyWindowFloatingToggle"> Modify - Window Floating Toggle &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> f&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyWindowFullscreenToggle"> Modify - Window Fullscreen Toggle &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> f&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyWindowLayoutMode"> Modify - Window Layout Mode &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> t&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyWindowPosition"> Modify - Window Position &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> k j h l&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ModifyWindowPosition"> Modify - Window Position &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigateNextWorkspace"> Navigate - Next Workspace &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> Tab&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigateNextWorkspace"> Navigate - Next Workspace &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> →&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigatePreviousWorkspace"> Navigate - Previous Workspace &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> ←&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigatePreviousWorkspace"> Navigate - Previous Workspace &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Tab&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigateRelativeWindow"> Navigate - Relative Window &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> k j h l&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigateRelativeWindow"> Navigate - Relative Window &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> ↑ ↓ ← →&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigateScratchpad"> Navigate - Scratchpad &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> a&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigateWindowbyName"> Navigate - Window by Name &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> Space&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigateWorkspace11-19"> Navigate - Workspace 11 - 19 &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> 1..9&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#NavigateWorkspaces1-10"> Navigate - Workspaces 1-10 &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> 0..9&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#ResizeEnterResizeMode"> Resize - Enter Resize Mode &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> r&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionExitApp"> Session - Exit App &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> q&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionLockScreen"> Session - Lock Screen &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> Escape&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionLogout"> Session - Logout &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> e&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionPowerDown"> Session - Power Down &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> p&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionReboot"> Session - Reboot &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> b&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionRefreshSession"> Session - Refresh Session &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> r&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionReloadi3Config"> Session - Reload i3 Config &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> c&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionRestarti3"> Session - Restart i3 &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> r&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionSleep"> Session - Sleep &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> s&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="#SessionTerminateApp"> Session - Terminate App &lt;/a>&lt;/td>
- &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> q&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table></description></item><item><title>Config Files</title><link>https://regolith-desktop.com/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/configurations/</guid><description>&lt;h1 id="config-file-quick-reference">
- Config file quick reference
- &lt;a class="anchor" href="#config-file-quick-reference">#&lt;/a>
-&lt;/h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Reference</title><link>https://regolith-desktop.com/docs/reference/</link><description>Recent content in Reference on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://regolith-desktop.com/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Keybindings</title><link>https://regolith-desktop.com/docs/reference/keybindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/keybindings/</guid><description>
 &lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>&lt;strong>Component&lt;/strong>&lt;/th>
- &lt;th>&lt;strong>Default Config&lt;/strong>&lt;/th>
- &lt;th>&lt;strong>User Config&lt;/strong>&lt;/th>
- &lt;th>&lt;strong>Notes&lt;/strong>&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>i3 / i3-gaps&lt;/td>
- &lt;td>&lt;code>/etc/regolith/i3/config&lt;/code>, &lt;code>/usr/share/regolith/i3/config.d&lt;/code>&lt;/td>
- &lt;td>&lt;code>~/.config/regolith3/i3&lt;/code>&lt;/td>
- &lt;td>&lt;em>Extend&lt;/em> Regolith2 config by creating &lt;code>config.d&lt;/code> and partials in the user config dir, or &lt;em>globally override&lt;/em> it by creating &lt;code>config&lt;/code>. &lt;a href="https://regolith-desktop.com/docs/howtos/customize-i3-configuration/">More&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Xresources&lt;/td>
- &lt;td>&lt;code>/usr/share/regolith-look/default&lt;/code>&lt;/td>
- &lt;td>&lt;code>~/.config/regolith3/Xresources&lt;/code>&lt;/td>
- &lt;td>&lt;code>~/.Xresources&lt;/code> is also loaded but intended for properties that may also be required in other desktop sessions. &lt;a href="https://regolith-desktop.com/docs/howtos/override-xres/">More&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Bar status indicators&lt;/td>
- &lt;td>&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>&lt;/td>
- &lt;td>&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>&lt;/td>
- &lt;td>Each block has it&amp;rsquo;s own file. Configs loaded in filename alphabetical order. &lt;a href="https://regolith-desktop.com/docs/howtos/add-remove-blocklets/">More&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Picom (Compton) Compositor&lt;/td>
- &lt;td>&lt;code>/etc/regolith/picom/config&lt;/code>&lt;/td>
- &lt;td>&lt;code>~/.config/regolith3/picom/config&lt;/code>&lt;/td>
- &lt;td>&lt;a href="https://regolith-desktop.com/docs/howtos/customize-compositor/">More&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;/tbody>
+&lt;thead>
+&lt;tr>
+&lt;th>Action&lt;/th>
+&lt;th>Key Binding&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchApplication" > Launch - Application &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Space&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchBrowser" > Launch - Browser &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Enter&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchCommand" > Launch - Command &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Space&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchFileBrowser" > Launch - File Browser &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> n&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchFileSearch" > Launch - File Search &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> Space&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchNotificationViewer" > Launch - Notification Viewer &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> n&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchTerminal" > Launch - Terminal &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Enter&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchThisDialog" > Launch - This Dialog &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ?&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyBluetoothSettings" > Modify - Bluetooth Settings &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> b&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyCarryWindowtoWorkspace1-10" > Modify - Carry Window to Workspace 1 - 10&lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyCarryWindowtoWorkspace11-19" > Modify - Carry Window to Workspace 11 - 19 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> &lt;code>Ctrl&lt;/code> 1..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyContainingWorkspace" > Modify - Containing Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyDisplaySettings" > Modify - Display Settings &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> d&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyLoadWindowLayout" > Modify - Load Window Layout &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> .&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyMoveWindowtoWorkspace1-10" > Modify - Move Window to Workspace 1 - 10 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyMoveWindowtoWorkspace11-19" > Modify - Move Window to Workspace 11 - 19&lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> 1..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyMovetoScratchpad" > Modify - Move to Scratchpad &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> m&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyNextWindowOrientation" > Modify - Next Window Orientation &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Backspace&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifySaveWindowLayout" > Modify - Save Window Layout &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> ,&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifySettings" > Modify - Settings &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> c&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyTile/FloatFocusToggle" > Modify - Tile/Float Focus Toggle &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> t&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyToggleBar" > Modify - Toggle Bar &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> i&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWifiSettings" > Modify - Wifi Settings &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> w&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowFloatingToggle" > Modify - Window Floating Toggle &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> f&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowFullscreenToggle" > Modify - Window Fullscreen Toggle &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> f&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowLayoutMode" > Modify - Window Layout Mode &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> t&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowPosition" > Modify - Window Position &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> k j h l&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowPosition" > Modify - Window Position &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateNextWorkspace" > Navigate - Next Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Tab&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateNextWorkspace" > Navigate - Next Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigatePreviousWorkspace" > Navigate - Previous Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> ←&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigatePreviousWorkspace" > Navigate - Previous Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Tab&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateRelativeWindow" > Navigate - Relative Window &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> k j h l&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateRelativeWindow" > Navigate - Relative Window &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateScratchpad" > Navigate - Scratchpad &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> a&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateWindowbyName" > Navigate - Window by Name &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> Space&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateWorkspace11-19" > Navigate - Workspace 11 - 19 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> 1..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateWorkspaces1-10" > Navigate - Workspaces 1-10 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ResizeEnterResizeMode" > Resize - Enter Resize Mode &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionExitApp" > Session - Exit App &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> q&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionLockScreen" > Session - Lock Screen &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Escape&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionLogout" > Session - Logout &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> e&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionPowerDown" > Session - Power Down &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> p&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionReboot" > Session - Reboot &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> b&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionRefreshSession" > Session - Refresh Session &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionReloadi3Config" > Session - Reload i3 Config &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> c&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionRestarti3" > Session - Restart i3 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionSleep" > Session - Sleep &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> s&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionTerminateApp" > Session - Terminate App &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> q&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Config Files</title><link>https://regolith-desktop.com/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/configurations/</guid><description>
+&lt;h2>Config file quick reference&lt;span class="hx-absolute -hx-mt-20" id="config-file-quick-reference">&lt;/span>
+&lt;a href="#config-file-quick-reference" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Component&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Default Config&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>User Config&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Notes&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>i3 / i3-gaps&lt;/td>
+&lt;td>&lt;code>/etc/regolith/i3/config&lt;/code>, &lt;code>/usr/share/regolith/i3/config.d&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/i3&lt;/code>&lt;/td>
+&lt;td>&lt;em>Extend&lt;/em> Regolith2 config by creating &lt;code>config.d&lt;/code> and partials in the user config dir, or &lt;em>globally override&lt;/em> it by creating &lt;code>config&lt;/code>. &lt;a href="https://regolith-desktop.com/docs/howtos/customize-i3-configuration/" >More&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xresources&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith-look/default&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/Xresources&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.Xresources&lt;/code> is also loaded but intended for properties that may also be required in other desktop sessions. &lt;a href="https://regolith-desktop.com/docs/howtos/override-xres/" >More&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bar status indicators&lt;/td>
+&lt;td>&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>&lt;/td>
+&lt;td>Each block has it&amp;rsquo;s own file. Configs loaded in filename alphabetical order. &lt;a href="https://regolith-desktop.com/docs/howtos/add-remove-blocklets/" >More&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Picom (Compton) Compositor&lt;/td>
+&lt;td>&lt;code>/etc/regolith/picom/config&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/picom/config&lt;/code>&lt;/td>
+&lt;td>&lt;a href="https://regolith-desktop.com/docs/howtos/customize-compositor/" >More&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
 &lt;/table>
-&lt;blockquote class="book-hint warning">
- WARNING: Adding an i3 config file in &lt;code>~/.config/regolith3/i3/config&lt;/code> will essentially override all Regolith configuration including Xresources and looks.
-&lt;/blockquote>
-
-&lt;h1 id="history">
- History
- &lt;a class="anchor" href="#history">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="config-partials">
- Config partials
- &lt;a class="anchor" href="#config-partials">#&lt;/a>
-&lt;/h2>
-&lt;p>Regolith 2.0 adds support for config partials, as this feature came to &lt;code>i3&lt;/code> recently in &lt;a href="https://i3wm.org/downloads/RELEASE-NOTES-4.20.txt">4.20&lt;/a>. This is done by &lt;a href="https://i3wm.org/docs/userguide.html#include">includes&lt;/a>. This support for includes enables Regolith 2.0&amp;rsquo;s use of the package manager to add or remove default configuration partials. By installing and removing packages, i3 configuration can be customized for specific preferences while still allowing to track upstream changes for aspects of the configuration that need not vary.&lt;/p></description></item><item><title>i3xrocks</title><link>https://regolith-desktop.com/docs/reference/i3xrocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/i3xrocks/</guid><description>&lt;p>Since i3 is the underlying tiling manager that is used by regolith, the &lt;a href="https://github.com/vivien/i3blocks">&lt;code>i3blocks&lt;/code>&lt;/a> package can also be used. However since the choice was made to use &lt;code>Xresources&lt;/code> this package has been forked and &lt;a href="https://github.com/regolith-linux/i3xrocks">&lt;code>i3xrocks&lt;/code>&lt;/a> was born (created by the regolith team).&lt;/p>
-&lt;p>&lt;code>i3xrocks&lt;/code> is used to customise the navigation bar as seen in the introductory configuration examples. To find a more thorough guide how to do this go to the &lt;a href="https://regolith-desktop.com/docs/howtos/add-remove-blocklets/">Change Bar Status indicators&lt;/a>&lt;/p></description></item><item><title>Xresources</title><link>https://regolith-desktop.com/docs/reference/xresources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/xresources/</guid><description>&lt;blockquote class="book-hint warning">
- Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example &lt;code>wm.foo.bar&lt;/code> changes to &lt;code>i3-wm.foo.bar&lt;/code> for Regolith 1.x and 2.x.
-&lt;/blockquote>
-
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Adding an i3 config file in &lt;code>~/.config/regolith3/i3/config&lt;/code> will essentially override all Regolith configuration including Xresources and looks.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>History&lt;span class="hx-absolute -hx-mt-20" id="history">&lt;/span>
+&lt;a href="#history" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Config partials&lt;span class="hx-absolute -hx-mt-20" id="config-partials">&lt;/span>
+&lt;a href="#config-partials" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Regolith 2.0 adds support for config partials, as this feature came to &lt;code>i3&lt;/code> recently in &lt;a href="https://i3wm.org/downloads/RELEASE-NOTES-4.20.txt" target="_blank" rel="noopener">4.20&lt;/a>. This is done by &lt;a href="https://i3wm.org/docs/userguide.html#include" target="_blank" rel="noopener">includes&lt;/a>. This support for includes enables Regolith 2.0&amp;rsquo;s use of the package manager to add or remove default configuration partials. By installing and removing packages, i3 configuration can be customized for specific preferences while still allowing to track upstream changes for aspects of the configuration that need not vary.&lt;/p>
+&lt;p>The root Regolith configuration file at &lt;code>/etc/regolith/i3/config&lt;/code> loads partials like so:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">/etc/regolith/i3/config&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl"># Include any regolith i3 partials
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">include /usr/share/regolith/i3/config.d/*
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># Include any user i3 partials
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">include $HOME/.config/regolith2/i3/config.d/*&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div></description></item><item><title>i3xrocks</title><link>https://regolith-desktop.com/docs/reference/i3xrocks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/i3xrocks/</guid><description>
+&lt;p>Since i3 is the underlying tiling manager that is used by regolith, the &lt;a href="https://github.com/vivien/i3blocks" target="_blank" rel="noopener">&lt;code>i3blocks&lt;/code>&lt;/a> package can also be used. However since the choice was made to use &lt;code>Xresources&lt;/code> this package has been forked and &lt;a href="https://github.com/regolith-linux/i3xrocks" target="_blank" rel="noopener">&lt;code>i3xrocks&lt;/code>&lt;/a> was born (created by the regolith team).&lt;/p>
+&lt;p>&lt;code>i3xrocks&lt;/code> is used to customise the navigation bar as seen in the introductory configuration examples. To find a more thorough guide how to do this go to the &lt;a href="https://regolith-desktop.com/docs/howtos/add-remove-blocklets/" >Change Bar Status indicators&lt;/a>&lt;/p></description></item><item><title>Xresources</title><link>https://regolith-desktop.com/docs/reference/xresources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/xresources/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example &lt;code>wm.foo.bar&lt;/code> changes to &lt;code>i3-wm.foo.bar&lt;/code> for Regolith 1.x and 2.x.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>Main &lt;code>Xresources&lt;/code> keys&lt;span class="hx-absolute -hx-mt-20" id="main-xresources-keys">&lt;/span>
+&lt;a href="#main-xresources-keys" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>Xresources&lt;/code> Key&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>gtk.theme_name&lt;/td>
+&lt;td>GTK Theme (&amp;ldquo;Legacy Applications&amp;rdquo; in &lt;code>gnome-tweaks&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.icon_theme_name&lt;/td>
+&lt;td>GTK Icon Theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.audible-bell&lt;/td>
+&lt;td>Enables audible bell in gnome-terminal (&lt;code>true / false&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.document_font_name&lt;/td>
+&lt;td>GTK Document Font Name&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.font_name&lt;/td>
+&lt;td>General purpose font for GTK apps and the desktop&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.monospace_font_name&lt;/td>
+&lt;td>Font for monospace areas such as i3bar and the terminal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.background-transparency-percent&lt;/td>
+&lt;td>Background transparency value for gnome-terminal (&lt;code>0 - 100&lt;/code>). See also &lt;code>gnome.terminal.use-transparent-background&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.font&lt;/td>
+&lt;td>Font definition for gnome-terminal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.scrollbar&lt;/td>
+&lt;td>Flag to enable/disable scrollbar (&lt;code>never / always&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.use-transparent-background&lt;/td>
+&lt;td>Enables transparent background in gnome-terminal (&lt;code>true / false&lt;/code>). See also &lt;code>gnome.terminal.background-transparency-percent&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wallpaper&lt;/td>
+&lt;td>GNOME Wallpaper (can be overridden in Settings)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wm.theme&lt;/td>
+&lt;td>GNOME Window Manager Theme (unused)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.alt&lt;/td>
+&lt;td>Key mapping for Alt key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3" target="_blank" rel="noopener">i3 User Guide&lt;/a> for details.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.background.color&lt;/td>
+&lt;td>Bar Background Color&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.position&lt;/td>
+&lt;td>Bar Screen Position&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.separator.color&lt;/td>
+&lt;td>Color of seperator between blocks&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.separatorchar&lt;/td>
+&lt;td>Character to display between blocks&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.statusline.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.trayoutput&lt;/td>
+&lt;td>Enable or disable the &lt;a href="https://i3wm.org/docs/userguide.html#_tray_output" target="_blank" rel="noopener">app tray&lt;/a> in i3bar&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.floatingwindow.border.size&lt;/td>
+&lt;td>Window border size in pixels for floating windows&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.font&lt;/td>
+&lt;td>Window manager font&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.gaps.inner.size&lt;/td>
+&lt;td>Default gap size between windows in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.gaps.outer.size&lt;/td>
+&lt;td>Default gap size at screen edge in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.mod&lt;/td>
+&lt;td>Key mapping for Super key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3" target="_blank" rel="noopener">i3 User Guide&lt;/a> for details.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.window.border.size&lt;/td>
+&lt;td>Default border size in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.workspace.01.name .. wm.workspace.19.name&lt;/td>
+&lt;td>Workspace Labels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.workspace.01.key .. wm.workspace.10.key&lt;/td>
+&lt;td>Workspace Shortucts&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>Command to execute when volume indicator is left clicked (default: none)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>Command to execute when volume indicator is middle clicked (default: none)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>Command to execute when volume indicator is right clicked (default: mute through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.error.color&lt;/td>
+&lt;td>Color for bar module in error mode&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery0&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery100&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery20&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery50&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery80&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryac&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batterycharging&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryunknown&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.capslock&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.color&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.cpu&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.disk&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.dn&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.help&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediapaused&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediaplaying&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.memory&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mute&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.error&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.none&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.some&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.numlock&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.off&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.on&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.sound&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.thermometer&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.time&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.up&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wifi&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wired&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.nominal&lt;/td>
+&lt;td>Default bar icon color&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.color&lt;/td>
+&lt;td>Color of numerical value in bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.font&lt;/td>
+&lt;td>Font for numerical value in bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.warning&lt;/td>
+&lt;td>Warning color for bar module&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>Optional &lt;code>Xresources&lt;/code> keys&lt;span class="hx-absolute -hx-mt-20" id="optional-xresources-keys">&lt;/span>
+&lt;a href="#optional-xresources-keys" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The following &lt;code>Xresources&lt;/code> keys are undefined by default but can be used by users to change behavior as desired.&lt;/p>
 &lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>&lt;code>Xresources&lt;/code> Key&lt;/th>
- &lt;th>Description&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>gtk.theme_name&lt;/td>
- &lt;td>GTK Theme (&amp;ldquo;Legacy Applications&amp;rdquo; in &lt;code>gnome-tweaks&lt;/code>)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gtk.icon_theme_name&lt;/td>
- &lt;td>GTK Icon Theme&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gnome.terminal.audible-bell&lt;/td>
- &lt;td>Enables audible bell in gnome-terminal (&lt;code>true / false&lt;/code>)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gtk.document_font_name&lt;/td>
- &lt;td>GTK Document Font Name&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gtk.font_name&lt;/td>
- &lt;td>General purpose font for GTK apps and the desktop&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gtk.monospace_font_name&lt;/td>
- &lt;td>Font for monospace areas such as i3bar and the terminal&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gnome.terminal.background-transparency-percent&lt;/td>
- &lt;td>Background transparency value for gnome-terminal (&lt;code>0 - 100&lt;/code>). See also &lt;code>gnome.terminal.use-transparent-background&lt;/code>.&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gnome.terminal.font&lt;/td>
- &lt;td>Font definition for gnome-terminal&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gnome.terminal.scrollbar&lt;/td>
- &lt;td>Flag to enable/disable scrollbar (&lt;code>never / always&lt;/code>)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gnome.terminal.use-transparent-background&lt;/td>
- &lt;td>Enables transparent background in gnome-terminal (&lt;code>true / false&lt;/code>). See also &lt;code>gnome.terminal.background-transparency-percent&lt;/code>.&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gnome.wallpaper&lt;/td>
- &lt;td>GNOME Wallpaper (can be overridden in Settings)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>gnome.wm.theme&lt;/td>
- &lt;td>GNOME Window Manager Theme (unused)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.alt&lt;/td>
- &lt;td>Key mapping for Alt key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide&lt;/a> for details.&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.background.color&lt;/td>
- &lt;td>Bar Background Color&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.position&lt;/td>
- &lt;td>Bar Screen Position&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.separator.color&lt;/td>
- &lt;td>Color of seperator between blocks&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.separatorchar&lt;/td>
- &lt;td>Character to display between blocks&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.statusline.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.trayoutput&lt;/td>
- &lt;td>Enable or disable the &lt;a href="https://i3wm.org/docs/userguide.html#_tray_output">app tray&lt;/a> in i3bar&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.active.background.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.active.border.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.active.text.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.focused.background.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.focused.border.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.focused.text.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.inactive.background.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.inactive.border.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.inactive.text.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.urgent.background.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.urgent.border.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.bar.workspace.urgent.text.color&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused.color.background&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused.color.border&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused.color.child_border&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused.color.indicator&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused.color.text&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused_inactive.color.background&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused_inactive.color.border&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused_inactive.color.child_border&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused_inactive.color.indicator&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.focused_inactive.color.text&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.unfocused.color.background&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.unfocused.color.border&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.unfocused.color.child_border&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.unfocused.color.indicator&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.unfocused.color.text&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.urgent.color.background&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.urgent.color.border&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.urgent.color.child_border&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.urgent.color.indicator&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.client.urgent.color.text&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.floatingwindow.border.size&lt;/td>
- &lt;td>Window border size in pixels for floating windows&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.font&lt;/td>
- &lt;td>Window manager font&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.gaps.inner.size&lt;/td>
- &lt;td>Default gap size between windows in pixels&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.gaps.outer.size&lt;/td>
- &lt;td>Default gap size at screen edge in pixels&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.mod&lt;/td>
- &lt;td>Key mapping for Super key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide&lt;/a> for details.&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.window.border.size&lt;/td>
- &lt;td>Default border size in pixels&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.workspace.01.name .. wm.workspace.19.name&lt;/td>
- &lt;td>Workspace Labels&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>wm.workspace.01.key .. wm.workspace.10.key&lt;/td>
- &lt;td>Workspace Shortucts&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.action.volume.left&lt;/td>
- &lt;td>Command to execute when volume indicator is left clicked (default: none)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.action.volume.middle&lt;/td>
- &lt;td>Command to execute when volume indicator is middle clicked (default: none)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.action.volume.right&lt;/td>
- &lt;td>Command to execute when volume indicator is right clicked (default: mute through amixer)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.action.volume.scrollup&lt;/td>
- &lt;td>Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
- &lt;td>Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.error.color&lt;/td>
- &lt;td>Color for bar module in error mode&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.battery0&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.battery100&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.battery20&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.battery50&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.battery80&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.batteryac&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.batterycharging&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.batteryunknown&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.capslock&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.color&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.cpu&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.disk&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.dn&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.help&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.mediapaused&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.mediaplaying&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.memory&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.mute&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.notify.error&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.notify.none&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.notify.some&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.numlock&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.off&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.on&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.sound&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.thermometer&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.time&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.up&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.wifi&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.label.wired&lt;/td>
- &lt;td>Bar icon glyph&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.nominal&lt;/td>
- &lt;td>Default bar icon color&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.value.color&lt;/td>
- &lt;td>Color of numerical value in bar module&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.value.font&lt;/td>
- &lt;td>Font for numerical value in bar module&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>i3xrocks.warning&lt;/td>
- &lt;td>Warning color for bar module&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h1 id="optional-xresources-keys">
- Optional &lt;code>Xresources&lt;/code> keys
- &lt;a class="anchor" href="#optional-xresources-keys">#&lt;/a>
-&lt;/h1>
-&lt;p>The following &lt;code>Xresources&lt;/code> keys are undefined by default but can be used by users to change behavior as desired.&lt;/p></description></item><item><title>Build System</title><link>https://regolith-desktop.com/docs/reference/build-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/build-system/</guid><description>&lt;h1 id="overview">
- Overview
- &lt;a class="anchor" href="#overview">#&lt;/a>
-&lt;/h1>
-&lt;p>This page describes how packages are generate from source code, and how those packages combine to actualize the Regolith desktop environment. This document covers Regolith only and does not intend to describe upstream dependencies, general package manager concepts, or other aspects of build systems.&lt;/p>
-&lt;h1 id="terms">
- Terms
- &lt;a class="anchor" href="#terms">#&lt;/a>
-&lt;/h1>
-&lt;ul>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>Xresources&lt;/code> Key&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>wm.gaps.focus_follows_mouse&lt;/td>
+&lt;td>The window under the mouse has focus if enabled&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.app&lt;/td>
+&lt;td>Command i3 executes from the app launcher keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.cmd&lt;/td>
+&lt;td>Command i3 executes from the command launcher keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.window&lt;/td>
+&lt;td>Command i3 executes for the window navigation keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.help&lt;/td>
+&lt;td>Command to launch from the help keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.file_search&lt;/td>
+&lt;td>Command to launch from the file search keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.refresh_ui&lt;/td>
+&lt;td>Command to launch from the session refresh keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.logout&lt;/td>
+&lt;td>Command to launch from the logout keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.reboot&lt;/td>
+&lt;td>Command to launch from the reboot keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.shutdown&lt;/td>
+&lt;td>Command to launch from the shutdown keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.lock&lt;/td>
+&lt;td>Command to launch from the lock screen keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.sleep&lt;/td>
+&lt;td>Command to launch from the sleep keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.settings&lt;/td>
+&lt;td>Command to launch from the Control Panel keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.display&lt;/td>
+&lt;td>Command to launch from the Display Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.wifi&lt;/td>
+&lt;td>Command to launch from the Wifi Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.bluetooth&lt;/td>
+&lt;td>Command to launch from the Bluetooth Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.files&lt;/td>
+&lt;td>Command to launch from the file browser keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.notification_ui&lt;/td>
+&lt;td>Command to launch from the notification UI keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.1&amp;hellip;wm.program.3&lt;/td>
+&lt;td>Optional programs to start with i3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.media-player.player-args&lt;/td>
+&lt;td>Optional arguments used by the &lt;code>media-player&lt;/code> i3xrocks block. These arguments are fed straight into &lt;code>playerctl&lt;/code>, eg. setting this value to &lt;code>-p spotify&lt;/code> only makes the bar display/control spotify.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.left&lt;/td>
+&lt;td>Optional command to run on left button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.right&lt;/td>
+&lt;td>Override command to run on right button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrollup&lt;/td>
+&lt;td>Override command to run on scroll up of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrolldn&lt;/td>
+&lt;td>Override command to run on scroll down of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>Optional command to run on left button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>Override command to run on right button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>Override command to run on scroll up of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>Override command to run on scroll down of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.disk-capacity&lt;/td>
+&lt;td>Override command to run on disk capacity status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.cpu-usage&lt;/td>
+&lt;td>Override command to run on cpu usage status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.memory&lt;/td>
+&lt;td>Override command to run on memory status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.wifi&lt;/td>
+&lt;td>Override command to run on wifi status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.weather&lt;/td>
+&lt;td>Override command to run on weather status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.left&lt;/td>
+&lt;td>Optional command to run on left button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.right&lt;/td>
+&lt;td>Override command to run on right button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.time&lt;/td>
+&lt;td>Override command to run on date time status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.battery&lt;/td>
+&lt;td>Override command to run on battery status indicator.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Build System</title><link>https://regolith-desktop.com/docs/reference/build-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/build-system/</guid><description>
+&lt;h2>Overview&lt;span class="hx-absolute -hx-mt-20" id="overview">&lt;/span>
+&lt;a href="#overview" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>This page describes how packages are generate from source code, and how those packages combine to actualize the Regolith desktop environment. This document covers Regolith only and does not intend to describe upstream dependencies, general package manager concepts, or other aspects of build systems.&lt;/p>
+&lt;h2>Terms&lt;span class="hx-absolute -hx-mt-20" id="terms">&lt;/span>
+&lt;a href="#terms" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>&lt;code>Distro&lt;/code> - Short for distribution, in the context of this document, may be considered a variation of a Linux-based OS operating system. A product, project, and brand.&lt;/li>
 &lt;li>&lt;code>Codename&lt;/code> - A well defined and announced snapshot of a set of packages that are consumed as a whole. May be considered a software release with a specific name such as &lt;code>36&lt;/code> or &lt;code>Jammy&lt;/code>.&lt;/li>
 &lt;li>&lt;code>Architecture&lt;/code> - In the context of this document, denotes a CPU and base system hardware. Regolith currently targets the &lt;code>amd64&lt;/code> and &lt;code>arm64&lt;/code> architectures.&lt;/li>
@@ -696,8 +874,146 @@
 &lt;li>&lt;code>Package Manager&lt;/code> ~ A set of formats and programs that allow for packages to be installed in a distro. The package manager may very by distro.&lt;/li>
 &lt;li>&lt;code>Package Repository&lt;/code> ~ A well defined source of binary packages that may be installed into an OS that supports a given package manager.&lt;/li>
 &lt;/ul>
-&lt;h1 id="source-repositories">
- Source Repositories
- &lt;a class="anchor" href="#source-repositories">#&lt;/a>
-&lt;/h1>
-&lt;p>All Regolith packages are generated from git-versioned source repositories. These repositories house the source code for a given component. Mostly, each component is general for any given &lt;code>distro&lt;/code> and &lt;code>codename&lt;/code>. Source repositories are modeled in the Regolith build system via &lt;code>manifest&lt;/code> files.&lt;/p></description></item></channel></rss>
+&lt;h2>Source Repositories&lt;span class="hx-absolute -hx-mt-20" id="source-repositories">&lt;/span>
+&lt;a href="#source-repositories" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>All Regolith packages are generated from git-versioned source repositories. These repositories house the source code for a given component. Mostly, each component is general for any given &lt;code>distro&lt;/code> and &lt;code>codename&lt;/code>. Source repositories are modeled in the Regolith build system via &lt;code>manifest&lt;/code> files.&lt;/p>
+&lt;h2>Manifests&lt;span class="hx-absolute -hx-mt-20" id="manifests">&lt;/span>
+&lt;a href="#manifests" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The Regolith build system reads and writes text files known as manifests. The files are initially read as the source of truth for what a given &lt;code>target&lt;/code> package repository should contain. If the build system determines if there are updates to the manifest present in the manifest&amp;rsquo;s source repositories, then any updates are built into package updates and published to the target repo along with the updated manifest. In the case that no updates are found, the build simply completes without any changes. As such, a given target&amp;rsquo;s manifest can be used to determine what packages, versions, and source branches/tags are present.&lt;/p>
+&lt;h3>Manifest Schema&lt;span class="hx-absolute -hx-mt-20" id="manifest-schema">&lt;/span>
+&lt;a href="#manifest-schema" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Manifests are simply text files with one package per line, and each element in on a line separated by a space (ASCII 32).&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">&amp;lt;PACKAGE NAME&amp;gt; &amp;lt;PACKAGE REPO URL&amp;gt; &amp;lt;PACKAGE REPO BRANCH/TAG&amp;gt; &amp;lt;PACKAGE REPO COMMIT HASH&amp;gt;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Package Model&lt;span class="hx-absolute -hx-mt-20" id="package-model">&lt;/span>
+&lt;a href="#package-model" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The Regolith build system utilizes sets of JSON files to define what packages are specified for a given &lt;code>target&lt;/code>. These JSON files are set in a specific structure to facilitate overriding higher-scoped contexts for lower-scoped contexts. For example, at the top level is the &lt;code>release&lt;/code> directory. It specifies all packages for that release. Within a &lt;code>release&lt;/code>, directories for specific &lt;code>distro&lt;/code>s exist. Package models in these directories may override or nullify packages specified from it&amp;rsquo;s parent. In this way, a top-level general package model can be tweaked for a given &lt;code>stage&lt;/code>/&lt;code>distro&lt;/code>/&lt;code>codename&lt;/code>/&lt;code>architecture&lt;/code>. To further illustrate this point here is the structure of the &lt;code>stage&lt;/code> directory in the &lt;a href="https://github.com/regolith-linux/voulage" target="_blank" rel="noopener">&lt;code>voulage&lt;/code> repo&lt;/a> (which is the name of the Regolith 2.x package builder) (NOTE: some files were removed for brevity):&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">stage/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── package-model.json &amp;lt;--- Root package model
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── release
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   ├── debian
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   │   └── bullseye
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   │   └── package-model.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   ├── package-model.json &amp;lt;--- Package model for the release stage
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── ubuntu
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── jammy
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── package-model.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── testing
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   ├── debian
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   │   └── package-model.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   ├── package-model.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── ubuntu
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── jammy
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── package-model.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── unstable
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── debian
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │   ├── bullseye
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │   │   └── package-model.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │   └── testing
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │   └── package-model.json &amp;lt;--- Customizations for Debian Testing in unstable stage
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── package-model.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── ubuntu
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── jammy
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── package-model.json&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Packages&lt;span class="hx-absolute -hx-mt-20" id="packages">&lt;/span>
+&lt;a href="#packages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>As mentioned above, the build system generates packages for a given target from it&amp;rsquo;s manifest. The build system is designed to be agnostic to any particular package format. As such, package versions are not directly modeled in manifests. The mechanism that determines if a source change results in a version bump is delegated to package-manager specific extensions. After a package has been identified to require building, the build system delegates to the package-specific build system to generate the target packages, such as debian source and binary packages. If the package update builds successfully, another package-manager extension is called to inject the newly built package into the distro-dependant package repository.&lt;/p>
+&lt;h2>Package Build System&lt;span class="hx-absolute -hx-mt-20" id="package-build-system">&lt;/span>
+&lt;a href="#package-build-system" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The Regolith build system consists mainly of bash &lt;a href="https://github.com/regolith-linux/voulage/.github/scripts" target="_blank" rel="noopener">shell scripts&lt;/a>. These scripts are run from &lt;a href="https://github.com/regolith-linux/voulage/.github/workflows" target="_blank" rel="noopener">GitHub workflows&lt;/a> but are designed to be runnable directly from the appropriate local environment to facilitate easy testing and troubleshooting. The following is a high level summary of what the package builder does once invoked:&lt;/p>
+&lt;ol>
+&lt;li>Set up source state such as the target string, which is generated from &lt;code>&amp;lt;stage&amp;gt;-&amp;lt;distro&amp;gt;-&amp;lt;codename&amp;gt;-&amp;lt;architecture&amp;gt;&lt;/code>&lt;/li>
+&lt;li>Download the current manifest from the target repository&lt;/li>
+&lt;li>Generate the merged package model starting from the root and working into each segment in the &lt;code>target&lt;/code> string&lt;/li>
+&lt;li>With the merged model, iterate over each package, generating a manifest entry by resolving the commit hash from the specified ref&lt;/li>
+&lt;li>After all manifest entries are generated, compare the generated manifest with the earlier downloaded copy&lt;/li>
+&lt;li>If no changes found, exit because no packages have changes on the specified refs&lt;/li>
+&lt;li>Otherwise, package changes have been detected. Download the entire target repository&lt;/li>
+&lt;li>For each difference found, delegate to distro-specific build package build and repo publish commands&lt;/li>
+&lt;li>Publish the updated repository and manifest back to the target repository&lt;/li>
+&lt;/ol>
+&lt;h2>ISO Build System&lt;span class="hx-absolute -hx-mt-20" id="iso-build-system">&lt;/span>
+&lt;a href="#iso-build-system" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The ISO builder is based on the open source project &lt;a href="https://github.com/mvallim/live-custom-ubuntu-from-scratch/" target="_blank" rel="noopener">live-custom-ubuntu-from-scratch&lt;/a>. The ISO builder uses a set of shell scripts to generate an Ubuntu ISO image for both a live environment and an installer. Regolith customizes this project in &lt;a href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder" target="_blank" rel="noopener">this repo&lt;/a> with some specific packages to &lt;a href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/blob/main/scripts/regolith-2_1-jammy-config.sh" target="_blank" rel="noopener">install and remove&lt;/a>. A github workflow is used to generate the ISOs and upload them to GitHub for hosting.&lt;/p>
+&lt;h2>Cookbook&lt;span class="hx-absolute -hx-mt-20" id="cookbook">&lt;/span>
+&lt;a href="#cookbook" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>How to add or update a package to the build system&lt;span class="hx-absolute -hx-mt-20" id="how-to-add-or-update-a-package-to-the-build-system">&lt;/span>
+&lt;a href="#how-to-add-or-update-a-package-to-the-build-system" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>Determine which &lt;code>stage&lt;/code>s, &lt;code>distro&lt;/code>s, &lt;code>codename&lt;/code>s, and &lt;code>architecture&lt;/code>s the change applies to (ex: &lt;code>unstable-ubuntu-jammy-amd64&lt;/code>)&lt;/li>
+&lt;li>Edit the package model in the &lt;code>stage&lt;/code> directory in the &lt;a href="https://github.com/regolith-linux/voulage" target="_blank" rel="noopener">Voulage&lt;/a>&lt;/li>
+&lt;li>Add or edit the package stanza JSON for that package (&lt;a href="https://github.com/regolith-linux/voulage/commit/cd4a3ebed9c501610810e7d4c79c4811c992c426" target="_blank" rel="noopener">example&lt;/a>)&lt;/li>
+&lt;li>Commit the change&lt;/li>
+&lt;li>Execute the &lt;a href="https://github.com/regolith-linux/voulage/actions" target="_blank" rel="noopener">build workflow&lt;/a>&lt;/li>
+&lt;li>Once the build completes, check the &lt;code>releases&lt;/code> in Voulage to verify that the generated packages were produced and published as expected&lt;/li>
+&lt;/ol>
+&lt;h3>How to determine what commit a package is built with in a given target package repo&lt;span class="hx-absolute -hx-mt-20" id="how-to-determine-what-commit-a-package-is-built-with-in-a-given-target-package-repo">&lt;/span>
+&lt;a href="#how-to-determine-what-commit-a-package-is-built-with-in-a-given-target-package-repo" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>Download the manifest contained in the target package repository (&lt;code>https://regolith-desktop.org/&amp;lt;STAGE&amp;gt;-&amp;lt;DISTRO&amp;gt;-&amp;lt;CODENAME&amp;gt;-&amp;lt;ARCH&amp;gt;/manifest.txt&lt;/code>)&lt;/li>
+&lt;li>Find the line containing the package name&lt;/li>
+&lt;li>Note the branch and ref in the manifest, this is the repo commit from which the package was built&lt;/li>
+&lt;/ol>
+&lt;h3>How to extend the build system for a new package format&lt;span class="hx-absolute -hx-mt-20" id="how-to-extend-the-build-system-for-a-new-package-format">&lt;/span>
+&lt;a href="#how-to-extend-the-build-system-for-a-new-package-format" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>For an example read the &lt;a href="https://github.com/regolith-linux/voulage/blob/main/.github/workflows/build-deb-v4.yml" target="_blank" rel="noopener">Debian v4 build workflow&lt;/a>&lt;/li>
+&lt;li>Refer to the &lt;a href="https://github.com/regolith-linux/voulage/blob/main/.github/scripts/ext-debian.sh" target="_blank" rel="noopener">Debian extension script&lt;/a> that the workflow uses&lt;/li>
+&lt;li>Create an extension script that maps from the git source of each package to the target distro&amp;rsquo;s packaging format&lt;/li>
+&lt;/ol></description></item><item><title>Releases</title><link>https://regolith-desktop.com/docs/reference/releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/releases/</guid><description>
+&lt;p>Release notes and other version-specific content can be found here.&lt;/p>
+&lt;div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-3.2-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">3.2 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-3.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">3.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-3.0-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">3.0 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-2.2-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">2.2 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-2.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">2.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-2.0-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">2.0 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.6-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.6 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.5.3-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.5.3 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.5.2-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.5.2 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.5.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.5.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.5-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.5 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.4.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.4.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.4-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.4 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.3.1-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.3.1 Release Notes&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="regolith-1.3-release-notes/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">1.3 Release Notes&lt;/span>&lt;/a>
+&lt;/div></description></item></channel></rss>

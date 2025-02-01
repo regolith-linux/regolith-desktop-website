@@ -1,45 +1,498 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guides on Regolith Desktop</title><link>https://regolith-desktop.com/fr/docs/howtos/</link><description>Recent content in Guides on Regolith Desktop</description><generator>Hugo</generator><language>fr</language><lastBuildDate>Thu, 30 Jan 2025 15:40:13 -0500</lastBuildDate><atom:link href="https://regolith-desktop.com/fr/docs/howtos/index.xml" rel="self" type="application/rss+xml"/><item><title>Personnaliser la config i3</title><link>https://regolith-desktop.com/fr/docs/howtos/customize-i3-configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/howtos/customize-i3-configuration/</guid><description>&lt;h1 id="comment-personnaliser-la-configuration-de-i3-avec-regolith">
- Comment personnaliser la configuration de i3 avec Regolith
- &lt;a class="anchor" href="#comment-personnaliser-la-configuration-de-i3-avec-regolith">#&lt;/a>
-&lt;/h1>
-&lt;p>Les configurations par défaut sont stockées dans &lt;code>/usr/share/regolith/i3/config.d&lt;/code>.
-Ces fichiers sont chargés de selon l&amp;rsquo;ordre alphabétique. Ensuite, les configurations de l&amp;rsquo;utilisateur dans &lt;code>~/.config/regolith3/i3/config.d&lt;/code> sont chargées, également dans l&amp;rsquo;ordre alphabétique.
-La configuration par défaut de Regolith est faite pour être modifiée en utilisant des variables &lt;code>Xresources&lt;/code>, en ajoutant des configurations utilisateurs ou en ajoutant/supprimant les configurations par défaut avec &lt;code>apt&lt;/code>.
-Pour cette raison, il y a plusieurs manières de personnaliser i3 dans Regolith. Ces manières peuvent être utilisées conjointement ou séparement pour avoir une configuration propre:&lt;/p></description></item><item><title>Modifier le Compositor</title><link>https://regolith-desktop.com/fr/docs/howtos/customize-compositor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/howtos/customize-compositor/</guid><description>&lt;h1 id="comment-modifier-votre-compositor-effets-visuels">
- Comment modifier votre compositor (effets visuels)
- &lt;a class="anchor" href="#comment-modifier-votre-compositor-effets-visuels">#&lt;/a>
-&lt;/h1>
-&lt;blockquote class="book-hint info">
- Portez une attention particulière à cette section si vous rencontrez des problèmes visuels étranges,
-des problèmes ou des performances graphiques lentes.
-&lt;/blockquote>
-
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Guides</title><link>https://regolith-desktop.com/fr/docs/howtos/</link><description>Recent content in Guides on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>fr</language><atom:link href="https://regolith-desktop.com/fr/docs/howtos/index.xml" rel="self" type="application/rss+xml"/><item><title>Modifier le Compositor</title><link>https://regolith-desktop.com/fr/docs/howtos/customize-compositor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/howtos/customize-compositor/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Portez une attention particulière à cette section si vous rencontrez des problèmes visuels étranges,
+des problèmes ou des performances graphiques lentes.&lt;/div>
+&lt;/div>
+&lt;/div>
 &lt;p>Un &lt;em>compositor&lt;/em> est un composant d&amp;rsquo;interface utilisateur qui applique des effets visuels
 aux fenêtres avant qu&amp;rsquo;elles ne soient affichées sur l&amp;rsquo;écran.
 Beaucoup d&amp;rsquo;environnements de bureau intègrent un compositor directement dans leur gestionnaire de fenêtre,
-rendant cela difficile à désactiver ou à modifier.&lt;/p></description></item><item><title>Modifier les indicateurs dans la barre</title><link>https://regolith-desktop.com/fr/docs/howtos/add-remove-blocklets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/howtos/add-remove-blocklets/</guid><description>&lt;h1 id="ajouter-ou-retirer-des-indicateurs-de-statut">
- Ajouter ou retirer des indicateurs de statut
- &lt;a class="anchor" href="#ajouter-ou-retirer-des-indicateurs-de-statut">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="voir-les-indicateurs-de-statut-disponibles">
- Voir les indicateurs de statut disponibles
- &lt;a class="anchor" href="#voir-les-indicateurs-de-statut-disponibles">#&lt;/a>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>$ apt search i3xrocks-
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="installer-un-nouvel-indicateur-de-statut">
- Installer un nouvel indicateur de statut
- &lt;a class="anchor" href="#installer-un-nouvel-indicateur-de-statut">#&lt;/a>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>$ sudo apt install i3xrocks-memory
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ regolith-look refresh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="customize-bar">
- Personnaliser la barre i3
- &lt;a class="anchor" href="#customize-bar">#&lt;/a>
-&lt;/h1>
-&lt;p>Chaque indicateur de statut dans la barre est géré par un fichier.
-Le nom du fichier correspond à la position de l&amp;rsquo;indicateur dans la barre. Par exemple, un fichier avec le nom commençant par &lt;code>10_&lt;/code> signifie que l&amp;rsquo;indicateur de statut correspondant sera placer avant un indicateur qui a un fichier de configuration commençant par &lt;code>20_&lt;/code>.&lt;/p></description></item><item><title>Modifier les Xresources</title><link>https://regolith-desktop.com/fr/docs/howtos/override-xres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/howtos/override-xres/</guid><description>&lt;blockquote class="book-hint warning">
- Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example &lt;code>wm.foo.bar&lt;/code> changes to &lt;code>i3-wm.foo.bar&lt;/code> for Regolith 1.x and 2.x.
-&lt;/blockquote>
-
-&lt;p>Regolith repose sur le système &lt;a href="https://en.wikipedia.org/wiki/X_resources">Xresources&lt;/a> pour fournir une interface de configuration solide.
-Pour change les valeurs &lt;code>Xresources&lt;/code>, Regolith peut être modifié pour mettre à jour l&amp;rsquo;interface utilisateur, spécifier des comportements, ou définir des formats spécifiques pour certains blocs de la barre.&lt;/p></description></item></channel></rss>
+rendant cela difficile à désactiver ou à modifier.&lt;/p>
+&lt;p>Dans Regolith, le compositor est défini comme une extension &amp;ldquo;pluggable&amp;rdquo; avec le système de paquets.
+Cela signifie qu&amp;rsquo;il est possible de changer de compositor en installant un paquet qui en contient un.
+Le système de gestion de paquets s&amp;rsquo;assure qu&amp;rsquo;il n&amp;rsquo;y a pas de conflit et que toutes les dépendances sont satisfaites.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Dans Regolith 2.x, le compositor par défaut est &amp;ldquo;pas de compositor&amp;rdquo;.
+Dans Regolith 1.x, le compositor par défaut est Picom.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>Lister les compositors disponibles&lt;span class="hx-absolute -hx-mt-20" id="lister-les-compositors-disponibles">&lt;/span>
+&lt;a href="#lister-les-compositors-disponibles" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>La commande suivante liste tous les compositors configurés qui fonctionnent avec Regolith:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt search regolith-compositor-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Vous devriez trouver, au minimum:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>regolith-compositor-none&lt;/code> &lt;strong>[par défaut]&lt;/strong>: Aucun compositor. Les meilleures performances, pas d&amp;rsquo;effet visuel.&lt;/li>
+&lt;li>&lt;code>regolith-compositor-picom-glx&lt;/code>: Utilise &lt;code>picom&lt;/code>. Recommandé pour la plupart des utilisateurs pour résoudre les problèmes de &amp;ldquo;déchirure&amp;rdquo; d&amp;rsquo;écran et ajouter des effets visuels. Moderne et bien maintenu, fork de &lt;code>compton&lt;/code>. Il était le compositor par défaut dans Regolith 1.6.&lt;/li>
+&lt;li>&lt;code>regolith-compositor-compton-glx&lt;/code>: Un ancêtre de &lt;code>picom&lt;/code> qui n&amp;rsquo;est plus maintenu aujourd&amp;rsquo;hui.&lt;/li>
+&lt;li>&lt;code>regolith-compositor-xcompmgr&lt;/code>: Un compositor récent qui peut offrir des performances meilleures si les compositors complexes posent soucis.&lt;/li>
+&lt;/ul>
+&lt;h2>Installer un compositor&lt;span class="hx-absolute -hx-mt-20" id="installer-un-compositor">&lt;/span>
+&lt;a href="#installer-un-compositor" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">À cause de la manière dont le compositor est géré par i3-wm, vous devez vous déconnectez
+et vous reconnectez pour que la modification de compositor prenne effet.
+Redémarrer i3 n&amp;rsquo;est pas suffisant.
+sufficient.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Lancez la commande d&amp;rsquo;installation suivante pour changer le compositor.
+Cela installera &lt;code>picom&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt install regolith-compositor-picom&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>Déconnectez puis reconnectez vous&lt;/strong> et le nouveau compositor devrait être chargé.
+Vous pouvez vérifier cela dans la liste des processus en cherchant &lt;code>picon&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ps aux &lt;span class="p">|&lt;/span> grep picom&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Modifier la configuration par défaut de Regolith&lt;span class="hx-absolute -hx-mt-20" id="modifier-la-configuration-par-défaut-de-regolith">&lt;/span>
+&lt;a href="#modifier-la-configuration-par-d%c3%a9faut-de-regolith" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Compton/Picom&lt;span class="hx-absolute -hx-mt-20" id="comptonpicom">&lt;/span>
+&lt;a href="#comptonpicom" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Pour fournir votre propre configuration pour Compton/Picom, copiez la config par défaut
+et créez la votre dans &lt;code>~/.config/regolith3/picom/config&lt;/code>.
+À la prochain session, la nouvelle config sera chargé à la place de celle par défaut (&lt;code>/etc/regolith/picom/config&lt;/code>).&lt;/p></description></item><item><title>Modifier les indicateurs dans la barre</title><link>https://regolith-desktop.com/fr/docs/howtos/add-remove-blocklets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/howtos/add-remove-blocklets/</guid><description>
+&lt;h2>Ajouter ou retirer des indicateurs de statut&lt;span class="hx-absolute -hx-mt-20" id="ajouter-ou-retirer-des-indicateurs-de-statut">&lt;/span>
+&lt;a href="#ajouter-ou-retirer-des-indicateurs-de-statut" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Voir les indicateurs de statut disponibles&lt;span class="hx-absolute -hx-mt-20" id="voir-les-indicateurs-de-statut-disponibles">&lt;/span>
+&lt;a href="#voir-les-indicateurs-de-statut-disponibles" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt search i3xrocks-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Installer un nouvel indicateur de statut&lt;span class="hx-absolute -hx-mt-20" id="installer-un-nouvel-indicateur-de-statut">&lt;/span>
+&lt;a href="#installer-un-nouvel-indicateur-de-statut" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install i3xrocks-memory
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Personnaliser la barre i3&lt;span class="hx-absolute -hx-mt-20" id="customize-bar">&lt;/span>
+&lt;a href="#customize-bar" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Chaque indicateur de statut dans la barre est géré par un fichier.
+Le nom du fichier correspond à la position de l&amp;rsquo;indicateur dans la barre. Par exemple, un fichier avec le nom commençant par &lt;code>10_&lt;/code> signifie que l&amp;rsquo;indicateur de statut correspondant sera placer avant un indicateur qui a un fichier de configuration commençant par &lt;code>20_&lt;/code>.&lt;/p>
+&lt;p>Dans chaque fichier, on peut trouver des informations utilisées par &lt;code>i3xrocks&lt;/code> pour executer un script et récupérer les données qui sont affichées dans la barre.
+Certains des indicateurs ont des paramètres qui peuvent être ajustés à votre convenance.
+Par exemple, si vous préférez que le statut de la batterie change plus vouent, vous pouvez modifier l&amp;rsquo;interval de polling.&lt;/p>
+&lt;p>La première chose à faire pour personnaliser la barre est de recopier les indicateurs que vous souhaitez voir à partir de &lt;code>/usr/share/i3xrocks/conf.d/&lt;/code> vers &lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>.
+Chaque fichier dans &lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>. peut être modifier selon vos besoins.
+Pour changer l&amp;rsquo;ordre des indicateurs, changez simplement le nom des fichiers.&lt;/p>
+&lt;p>Une fois que vous avez fait des changements, il est nécessaire de rafraîchir la session pour que la barre se mette à jour en fonction de la nouvelle configuration.
+Par exemple, pour changer l&amp;rsquo;ordre des blocs de la batterie et du trafic réseau et cacher les notifications, suivez ces étapes:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> ls /usr/share/i3xrocks/conf.d/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">01_setup
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">30_net-traffic
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">80_battery
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">80_rofication
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">90_time
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">&lt;/span>&lt;span class="gp">$&lt;/span> mkdir -p ~/.config/regolith3/i3xrocks/conf.d
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> &lt;span class="nb">cd&lt;/span> /usr/share/i3xrocks/conf.d/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> cp 01_setup ~/.config/regolith3/i3xrocks/conf.d/01_setup
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> cp 80_battery ~/.config/regolith3/i3xrocks/conf.d/30_battery
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> cp 30_net-traffic ~/.config/regolith3/i3xrocks/conf.d/80_net-traffic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>Note&lt;/strong>: Si un bloc existe dans le dossier utilisateur &lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>, la configuration par défaut dans &lt;code>/usr/share/i3xrocks/conf.d/&lt;/code> sera ignorée.&lt;/p>
+&lt;h2>Informations complémentaires&lt;span class="hx-absolute -hx-mt-20" id="informations-complémentaires">&lt;/span>
+&lt;a href="#informations-compl%c3%a9mentaires" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>La &lt;a href="https://regolith-desktop.com/fr/docs/reference/configurations/" >page de référence des configuration&lt;/a> donne plus de détails à propres des fichiers de configuration utilisés par Regolith Linux.&lt;/p></description></item><item><title>Modifier les Xresources</title><link>https://regolith-desktop.com/fr/docs/howtos/override-xres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/howtos/override-xres/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example &lt;code>wm.foo.bar&lt;/code> changes to &lt;code>i3-wm.foo.bar&lt;/code> for Regolith 1.x and 2.x.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Regolith repose sur le système &lt;a href="https://en.wikipedia.org/wiki/X_resources" target="_blank" rel="noopener">Xresources&lt;/a> pour fournir une interface de configuration solide.
+Pour change les valeurs &lt;code>Xresources&lt;/code>, Regolith peut être modifié pour mettre à jour l&amp;rsquo;interface utilisateur, spécifier des comportements, ou définir des formats spécifiques pour certains blocs de la barre.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Dans Regolith, les valeurs &lt;code>Xresources&lt;/code> peuvent être changées avec deux méthodes: en fournissant vos propres fichiers &lt;code>Xresources&lt;/code> et en ré-écrivant les valeurs &lt;code>Xresources&lt;/code> existantes. La seconde approche est fortement recommandée car elle permet d&amp;rsquo;avoir des mises à jour de Regolith moins sensibles aux configurations changeantes.
+Si vous copiez l&amp;rsquo;arbre &lt;code>Xresources&lt;/code> entièrement, vous aurez besoin d&amp;rsquo;intégrer à la main chaque changement de configuration dans les futures versions.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>Initialisation&lt;span class="hx-absolute -hx-mt-20" id="initialisation">&lt;/span>
+&lt;a href="#initialisation" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Quand une session Regolith démarre, les Xresources sont charger dans l&amp;rsquo;ordre suivant:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Fichier&lt;/th>
+&lt;th>Optionel&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>~/.Xresources&lt;/code>&lt;/td>
+&lt;td>Y&lt;/td>
+&lt;td>Pour les paramètres non- Regolith&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>/usr/share/regolith-look/**/&lt;/code>&lt;/td>
+&lt;td>N&lt;/td>
+&lt;td>Les &lt;code>Xresources&lt;/code> de Regolith liées à des thèmes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>~/.config/regolith3/Xresources&lt;/code>&lt;/td>
+&lt;td>Y&lt;/td>
+&lt;td>Ré-écritures de configurations par défaut&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Il est recommandé d&amp;rsquo;utiliser &lt;code>~/.config/regolith3/Xresources&lt;/code> pour les modifications car cela évite d&amp;rsquo;avoir des paramètres redondants et facilite la maintenance dans le temps.&lt;/p>
+&lt;h2>Déterminer quelles valeurs doivent être changées&lt;span class="hx-absolute -hx-mt-20" id="déterminer-quelles-valeurs-doivent-être-changées">&lt;/span>
+&lt;a href="#d%c3%a9terminer-quelles-valeurs-doivent-%c3%aatre-chang%c3%a9es" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>L&amp;rsquo;outil &lt;code>xrdb&lt;/code> peut être utilisé pour lister les valeurs &lt;code>Xresouces&lt;/code>.
+Il y a &lt;a href="https://regolith-desktop.com/fr/docs/reference/xresources/" >un certain nombre de valeurs existantes&lt;/a> dans la version R1.4.1:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> xrdb -query
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">[...]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gnome.icon.theme: Moka
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gnome.terminal.font: JetBrains Mono 12
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gnome.terminal.scrollbar: never
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gnome.wallpaper: /usr/share/backgrounds/ESP_016895_1525_desktop.jpg
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gnome.wm.theme: Ayu-Mirage-Dark
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">[...]
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Exemples&lt;span class="hx-absolute -hx-mt-20" id="exemples">&lt;/span>
+&lt;a href="#exemples" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Notez que les commandes ci-dessous ajoutent du texte à un fichier. Dans lancer la commande plusieurs fois va générer des lignes dupliquées.&lt;/p>
+&lt;h3>Exemple - Modifier l&amp;rsquo;UTI pour utiliser High DPI Screens&lt;span class="hx-absolute -hx-mt-20" id="exemple---modifier-luti-pour-utiliser-high-dpi-screens">&lt;/span>
+&lt;a href="#exemple---modifier-luti-pour-utiliser-high-dpi-screens" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>En utilisant le fichier &lt;code>~/.config/regolith3/Xresources&lt;/code>, vous aurez uniquement à spécifier les valeurs que vous souhaitez changer.
+L&amp;rsquo;outil &lt;code>xrdb&lt;/code> peut être utilisé pour détemriner les valeurs actuels des variables.&lt;/p>
+&lt;ol>
+&lt;li>Créer ou ajouter la valeur suivante au fichier &lt;code>~/.config/regolith3/Xresources&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">~/.config/regolith3/Xresources&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">Xft.dpi&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">192&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;ol start="2">
+&lt;li>Recharger la configuraiton &lt;code>Xresources&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;ol start="3">
+&lt;li>Ouvrir un nouveau terminal pour voir les changements&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>192&lt;/code> est juste un exemple que vous pouvez adapter à vos besoins.&lt;/p>
+&lt;h3>Exemple - Changer la position de la barre i3&lt;span class="hx-absolute -hx-mt-20" id="exemple---changer-la-position-de-la-barre-i3">&lt;/span>
+&lt;a href="#exemple---changer-la-position-de-la-barre-i3" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> xrdb -query &lt;span class="p">|&lt;/span> grep position
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">wm.bar.position: bottom
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">&lt;/span>&lt;span class="gp">$&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.bar.position: top&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Exemple - Changer le thème GTK&lt;span class="hx-absolute -hx-mt-20" id="exemple---changer-le-thème-gtk">&lt;/span>
+&lt;a href="#exemple---changer-le-th%c3%a8me-gtk" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> xrdb -query &lt;span class="p">|&lt;/span> grep gtk
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gnome.gtk.theme: Ayu-Mirage-Dark
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">&lt;/span>&lt;span class="gp">$&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;gnome.gtk.theme: Adwaita&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Exemple - Désactiver la barre d&amp;rsquo;état&lt;span class="hx-absolute -hx-mt-20" id="exemple---désactiver-la-barre-détat">&lt;/span>
+&lt;a href="#exemple---d%c3%a9sactiver-la-barre-d%c3%a9tat" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.bar.trayoutput: none&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Exemple - Utiliser Alt plutôt que la touche Win comme touche Super&lt;span class="hx-absolute -hx-mt-20" id="exemple---utiliser-alt-plutôt-que-la-touche-win-comme-touche-super">&lt;/span>
+&lt;a href="#exemple---utiliser-alt-plut%c3%b4t-que-la-touche-win-comme-touche-super" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.mod: Mod1&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.alt: Mod4&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Ensuite, recharger i3 pour que le changement prenne effet.&lt;/p>
+&lt;h3>Exemple - Lancer &lt;code>nm-applet&lt;/code> quand i3 démarre&lt;span class="hx-absolute -hx-mt-20" id="exemple---lancer-nm-applet-quand-i3-démarre">&lt;/span>
+&lt;a href="#exemple---lancer-nm-applet-quand-i3-d%c3%a9marre" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Certains utilisateurs préfèrent utiliser l&amp;rsquo;application &lt;code>nm-applet&lt;/code> pour configurer et gérer le réseau sans-fil (depuis Regolith 1.5, &lt;code>nm-applet&lt;/code> est exécuté par défaut en arrière-plan). Le fichier de configuration i3 peut être modifié pour lancer certains programmes au lancement. Mais, plutôt que de copier tout le fichier, il est possible de fixer jusqu&amp;rsquo;à trois programmes via Xresources sans avoir à changer le fichier de configuration i3. Pour cela, assurez-vous que la barre d&amp;rsquo;état système est activé (voir ci-dessus).&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.program.1: /usr/bin/nm-applet&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Ce changement nécessite que vous vous déconnectiez puir reconnectiez pour prendre effet.&lt;/p>
+&lt;h2>Informations supplémentaires&lt;span class="hx-absolute -hx-mt-20" id="informations-supplémentaires">&lt;/span>
+&lt;a href="#informations-suppl%c3%a9mentaires" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Voir &lt;a href="https://regolith-desktop.com/fr/docs/reference/configurations/" >la page de référence sur les configurations&lt;/a> pour plus de détails concernant la configuration de Regolith.&lt;/p></description></item><item><title>Personnaliser la config i3</title><link>https://regolith-desktop.com/fr/docs/howtos/customize-i3-configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/fr/docs/howtos/customize-i3-configuration/</guid><description>
+&lt;p>Les configurations par défaut sont stockées dans &lt;code>/usr/share/regolith/i3/config.d&lt;/code>.
+Ces fichiers sont chargés de selon l&amp;rsquo;ordre alphabétique. Ensuite, les configurations de l&amp;rsquo;utilisateur dans &lt;code>~/.config/regolith3/i3/config.d&lt;/code> sont chargées, également dans l&amp;rsquo;ordre alphabétique.
+La configuration par défaut de Regolith est faite pour être modifiée en utilisant des variables &lt;code>Xresources&lt;/code>, en ajoutant des configurations utilisateurs ou en ajoutant/supprimant les configurations par défaut avec &lt;code>apt&lt;/code>.
+Pour cette raison, il y a plusieurs manières de personnaliser i3 dans Regolith. Ces manières peuvent être utilisées conjointement ou séparement pour avoir une configuration propre:&lt;/p>
+&lt;ul>
+&lt;li>Utiliser &lt;code>Xresources&lt;/code> pour ré-écrire les variables. Par exemple les raccourcis clavier, les labels, le nom des programmes, les couleurs,&amp;hellip;&lt;/li>
+&lt;li>Ajouter ou supprimer à la configuration par défaut de Regolith en utilisant &lt;code>apt&lt;/code>&lt;/li>
+&lt;li>Ajouter vos propres configurations utilisateur&lt;/li>
+&lt;li>Remplacer la configuration Regolith de manière globale&lt;/li>
+&lt;/ul>
+&lt;h2>Comment fixer une variable &lt;code>Xresources&lt;/code>&lt;span class="hx-absolute -hx-mt-20" id="comment-fixer-une-variable-xresources">&lt;/span>
+&lt;a href="#comment-fixer-une-variable-xresources" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example &lt;code>wm.foo.bar&lt;/code> changes to &lt;code>i3-wm.foo.bar&lt;/code> for Regolith 1.x and 2.x.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>La configuration dans l&amp;rsquo;exemple suivant (récupérée de &lt;code>/usr/share/regolith/i3/config.d/80_compositor&lt;/code>) peut être modifiée pour charger le compositor que l&amp;rsquo;on veut sans modifier ou ré-écrire la configuration existante de i3 en fixant la variable $wm.program.compositor`.&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">exec_always --no-startup-id $i3-wm.program.compositor&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Pour faire cela, ajouter simplement une ligne à &lt;code>~/.config/regolith3/Xresources&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">~/.config/regolith3/Xresources&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># Utiliser mon propre programme compositor&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.program.compositor&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/usr/local/bin/my-compositor&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>De la même manière, vous pouvez ré-écrire d&amp;rsquo;autres paramètres i3 avec &lt;code>Xresources&lt;/code> en utilisant les noms de variables trouvés dans les fichiers du dossier &lt;code>/usr/share/regolith/i3/config.d&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">~/.config/regolith3/Xresources&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="c">## Configurer les espacements&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.gaps.inner.size&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c">## Configurer les bordures&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.window.border.size&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">3&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.client.focused.color.child_border&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#AAD3E9&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c">## Configurer les noms des espaces de travail&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.workspace.01.name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="l">FOO&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Pour plus de détails, merci de lire &lt;a href="https://regolith-desktop.com/fr/docs/howtos/override-xres/" >la documentation concernant &lt;code>Xresources&lt;/code>&lt;/a>.&lt;/p>
+&lt;h2>Comment désinstaller une configuration partielle par défaut&lt;span class="hx-absolute -hx-mt-20" id="comment-désinstaller-une-configuration-partielle-par-défaut">&lt;/span>
+&lt;a href="#comment-d%c3%a9sinstaller-une-configuration-partielle-par-d%c3%a9faut" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Si vous souhaitez remplacer entièrement ou supprimer des paramètres fournis par une configuration spécifique, vous pouvez utiliser &lt;code>apt&lt;/code> pour supprimer le paquet qui fourni cette configuration.&lt;/p>
+&lt;p>Pour identifier le nom du paquet qui donne cette configuration:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">dpkg -S /usr/share/doc/regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>La sortie contient le nom du paquet:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">regolith-i3-workspace-config&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/usr/share/doc/regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Pour voir la liste complète des fichiers fournis par ce paquet (et savoir ce que l&amp;rsquo;on retire):&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">dpkg -L regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Supprimer la configuration partielle:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt remove regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Comment personnaliser une configuration&lt;span class="hx-absolute -hx-mt-20" id="comment-personnaliser-une-configuration">&lt;/span>
+&lt;a href="#comment-personnaliser-une-configuration" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Pour personnaliser une unique configuration par défaut partielle de Regolith, vous devez d&amp;rsquo;abord vous assurer
+que le fichier &lt;code>~/.config/regolith3/i3/config&lt;/code> n&amp;rsquo;existe pas.
+Cela va ignorer entièrement la configuration par défaut de Regolith, ce qui n&amp;rsquo;est pas compatible avec ce guide.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Premièrement, assurez-vous qu&amp;rsquo;un dossier existe dans la configuration utilisateur:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir -p ~/.config/regolith3/i3/config.d&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Ensuite, copier la configuration par défaut dans le dossier de configuration de l&amp;rsquo;utilisateur:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/config.d/&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Faites les changements voulus:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vim ~/.config/regolith3/i3/config.d/40_workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Retirez le paquet contenant la configuration par défaut:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt remove regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Finalement, redémarrer i3 ou sortez de la session et re-connectez vous pour appliquer les changements.&lt;/p>
+&lt;h2>Comment remplacer la configuration par défaut de Regolith globalement&lt;span class="hx-absolute -hx-mt-20" id="comment-remplacer-la-configuration-par-défaut-de-regolith-globalement">&lt;/span>
+&lt;a href="#comment-remplacer-la-configuration-par-d%c3%a9faut-de-regolith-globalement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Si vous ne souhaitez par garder la configuration de Regolith par défaut (par exemple, si vous avez des l&amp;rsquo;expérience avec &lt;code>i3&lt;/code> avec une configuration à vous que vous souhaitez utiliser), vous pouvez désinstaller toutes les configurations de Regolith, et/ou créer votre propre configuration racine dans &lt;code>~/.config/regolith3/i3/config&lt;/code>.&lt;/p></description></item></channel></rss>

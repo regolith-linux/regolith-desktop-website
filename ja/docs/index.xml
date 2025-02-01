@@ -1,1 +1,2257 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Regolith Desktop</title><link>https://regolith-desktop.com/ja/docs/</link><description>Recent content in Docs on Regolith Desktop</description><generator>Hugo</generator><language>ja</language><lastBuildDate/><atom:link href="https://regolith-desktop.com/ja/docs/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Regolith Desktop Documentation</title><link>https://regolith-desktop.com/ja/docs/</link><description>Recent content in Regolith Desktop Documentation on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>ja</language><atom:link href="https://regolith-desktop.com/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started</title><link>https://regolith-desktop.com/ja/docs/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/getting-started/</guid><description>
+&lt;p>Explore the following sections to learn more about Regolith:&lt;/p>
+&lt;div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://regolith-desktop.com/docs/using-regolith/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">Using Regolith&lt;/span>&lt;div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">Content about how to use the Regolith Desktop&lt;/div>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://regolith-desktop.com/docs/howtos/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">How To&lt;/span>&lt;div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">Some examples of how you can customize Regolith Linux&lt;/div>&lt;/a>
+&lt;a
+class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://regolith-desktop.com/docs/reference/"
+>&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">Reference&lt;/span>&lt;div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">Reference material&lt;/div>&lt;/a>
+&lt;/div></description></item><item><title>インストール</title><link>https://regolith-desktop.com/ja/docs/using-regolith/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/using-regolith/install/</guid><description>
+&lt;h2>Upgrading to 3.x&lt;span class="hx-absolute -hx-mt-20" id="upgrading-to-3x">&lt;/span>
+&lt;a href="#upgrading-to-3x" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>以前のバージョンのRegolithからアップグレードする場合は&lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.2-release-notes" >リリースノート&lt;/a> を、特に2.xからの場合は&lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide" >移行ガイド&lt;/a>を参照してください。&lt;/p>
+&lt;h2>サポートするOS&lt;span class="hx-absolute -hx-mt-20" id="サポートするos">&lt;/span>
+&lt;a href="#%e3%82%b5%e3%83%9d%e3%83%bc%e3%83%88%e3%81%99%e3%82%8bos" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>以下は、Regolithデスクトップのインストールを取り扱っている特定のLinuxベースのOSごとに分割されています。&lt;/p>
+&lt;h3>Ubuntu&lt;span class="hx-absolute -hx-mt-20" id="ubuntu">&lt;/span>
+&lt;a href="#ubuntu" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-scrollbar hx-overflow-x-auto hx-overflow-y-hidden hx-overscroll-x-contain">
+&lt;div class="hx-mt-4 hx-flex hx-w-max hx-min-w-full hx-border-b hx-border-gray-200 hx-pb-px dark:hx-border-neutral-800">&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 data-[state=selected]:dark:hx-border-primary-500 data-[state=selected]:dark:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-0" aria-selected="true" tabindex="0" data-state="selected">Ubuntu 24.04&lt;/button>&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 data-[state=selected]:dark:hx-border-primary-500 data-[state=selected]:dark:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-1">Ubuntu 22.04&lt;/button>&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-0"
+role="tabpanel" tabindex="0" data-state="selected" >&lt;p>Regolithはシステムパッケージとしてインストールすることができます。これは簡単に更新や削除ができ、一貫することができます。
+下記のステップでは、Regolithのパッケージリポジトリからパッケージを読み込み可能にして、デスクトップパッケージをインストールできるようにシステムを設定する方法について記しています。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>ローカルの&lt;code>apt&lt;/code>にRegolithの公開鍵を登録する。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>ローカルの&lt;code>apt&lt;/code>にリポジトリのURLを追加する。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>apt&lt;/code>を更新してRegolithをインストールする。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>システムを再起動する。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムの再起動はログインマネージャーを再起動するための簡単な方法です。&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">ARMベースのシステムにインストールするときは、上記の内容から2箇所の&lt;code>amd64&lt;/code>を&lt;code>arm64&lt;/code>に置き換えてください。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-1"
+role="tabpanel">&lt;p>Regolithはシステムパッケージとしてインストールすることができます。これは簡単に更新や削除ができ、一貫することができます。
+下記のステップでは、Regolithのパッケージリポジトリからパッケージを読み込み可能にして、デスクトップパッケージをインストールできるようにシステムを設定する方法について記しています(&lt;a href="https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt" >こちらでダウンロード可能なスクリプト&lt;/a>が利用できます)。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>ローカルの&lt;code>apt&lt;/code>にRegolithの公開鍵を登録する。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>ローカルの&lt;code>apt&lt;/code>にリポジトリのURLを追加する。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>apt&lt;/code>を更新してRegolithをインストールする。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>システムを再起動する。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムの再起動はログインマネージャーを再起動するための簡単な方法です。&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">ARMベースのシステムにインストールするときは、上記の内容から2箇所の&lt;code>amd64&lt;/code>を&lt;code>arm64&lt;/code>に置き換えてください。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3>Debian&lt;span class="hx-absolute -hx-mt-20" id="debian">&lt;/span>
+&lt;a href="#debian" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-scrollbar hx-overflow-x-auto hx-overflow-y-hidden hx-overscroll-x-contain">
+&lt;div class="hx-mt-4 hx-flex hx-w-max hx-min-w-full hx-border-b hx-border-gray-200 hx-pb-px dark:hx-border-neutral-800">&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 data-[state=selected]:dark:hx-border-primary-500 data-[state=selected]:dark:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-0" aria-selected="true" tabindex="0" data-state="selected">Debian Testing&lt;/button>&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 data-[state=selected]:dark:hx-border-primary-500 data-[state=selected]:dark:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-1">Debian Bookworm&lt;/button>&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-0"
+role="tabpanel" tabindex="0" data-state="selected" >&lt;p>&amp;ldquo;Testing&amp;quot;リリースのDebianユーザーであれば、Regolithをインストールすることができますが、Debian Testingの性質上&amp;quot;release&amp;quot;バージョンは存在しません。Debian TestingインスタンスにRegolithをインストールするには、&lt;code>apt&lt;/code>コマンドのワンライナーの&lt;code>release&lt;/code>の代わりに&lt;code>testing&lt;/code>を含める必要があります。例：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/testing-debian-testing-amd64 testing main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>それ以外のインストールの手順はDebian公式リリースと同じです。壊れた依存関係やコンポーネントと時々遭遇することに注意してください。安定性が必要である場合は、DebianやUbuntuの公式リリースにインストールすることを検討してください。&lt;/p>
+&lt;/div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-1"
+role="tabpanel">&lt;p>Regolithはシステムパッケージとしてインストールすることができます。これは簡単に更新や削除ができ、一貫することができます。
+下記のステップでは、Regolithのパッケージリポジトリからパッケージを読み込み可能にして、デスクトップパッケージをインストールできるようにシステムを設定する方法について記しています(&lt;a href="https://regolith-desktop.com/install-release-debian-12-amd64.txt" >こちらでダウンロード可能なスクリプト&lt;/a>が利用できます)。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>ローカルの&lt;code>apt&lt;/code>にRegolithの公開鍵を登録する。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>ローカルの&lt;code>apt&lt;/code>にリポジトリのURLを追加する。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>apt&lt;/code>を更新してRegolithをインストールする。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>システムを再起動する。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>ログインマネージャーは新しいデスクトップセッションを識別するため、再起動が必要になります。システムの再起動はログインマネージャーを再起動するための簡単な方法です。&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">ARMベースのシステムにインストールするときは、上記の内容から2箇所の&lt;code>amd64&lt;/code>を&lt;code>arm64&lt;/code>に置き換えてください。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;code>regolith-desktop&lt;/code>パッケージは、多くのハードウェアで動作する必要最小限の設定でインストールします。追加で高級なパッケージやもっと便利な環境を追加するには、&lt;a href="https://regolith-desktop.com/ja/docs/using-regolith/configuration/#recommended-packages-for-new-users" target="_blank" rel="noopener">新規ユーザーに推奨されるパッケージ&lt;/a>を参照してください。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;code>regolith-compositor-picom-glx&lt;/code>コンポジターは多くのコンピューターで動作します。もしドライバや視覚的な問題に遭遇した場合は、&lt;a href="https://regolith-desktop.com/ja/docs/howtos/customize-compositor/" target="_blank" rel="noopener">他のコンポジターをお試しください&lt;/a>。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>インストール時に選択するパッケージ&lt;span class="hx-absolute -hx-mt-20" id="インストール時に選択するパッケージ">&lt;/span>
+&lt;a href="#%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e6%99%82%e3%81%ab%e9%81%b8%e6%8a%9e%e3%81%99%e3%82%8b%e3%83%91%e3%83%83%e3%82%b1%e3%83%bc%e3%82%b8" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolith 3.0では、複数のセッション(X11: &lt;code>regolith-session-flashback&lt;/code>, Wayland: &lt;code>regolith-session-sway&lt;/code>)から選択することができるようになりました。このため、Regolith 3.0をインストールするときは、使用するセッションを一方か両方を指定します。さらに、Regolith 3.0からはインストール時にRegolithの外観を指定できるようになったことで、後で設定する必要があるセットアップが節約されます。DebianベースのシステムのX11で推奨される基本的なインストールは以下の通りです。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ ^-- ｾｯｼｮﾝ ^ -- 外観 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>セッションについて、次の内の一方か両方を選ぶことができます：&lt;code>regolith-session-flashback&lt;/code> (X11), &lt;code>regolith-session-sway&lt;/code> (Wayland)&lt;/li>
+&lt;li>外観について、次の外観パッケージから&lt;em>1つ&lt;/em>を選ぶことができます。&lt;/li>
+&lt;/ul>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">regolith-look-ayu-dark
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-ayu-mirage
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-ayu
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-blackhole
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-default-loader
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-default
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-dracula
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-gruvbox
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-i3-default
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-lascaille
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-nevil
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-nord
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-solarized-dark&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>上記の推奨事項の例と代替案として、ここでは、Swayセッションに外観&amp;quot;Nord&amp;quot;を適用してインストールする&lt;code>apt&lt;/code>コマンドを紹介します。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-sway regolith-look-nord&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Regolith &lt;code>apt&lt;/code> URLパスの構造&lt;span class="hx-absolute -hx-mt-20" id="regolith-apt-urlパスの構造">&lt;/span>
+&lt;a href="#regolith-apt-url%e3%83%91%e3%82%b9%e3%81%ae%e6%a7%8b%e9%80%a0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">https://regolith-desktop.org/testing-debian-testing-amd64
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | * アーキテクチャ
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | * ディストロバージョン/コードネーム
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | * ディストロ名
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * Regolithの段階&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Regolithの段階&lt;span class="hx-absolute -hx-mt-20" id="regolithの段階">&lt;/span>
+&lt;a href="#regolith%e3%81%ae%e6%ae%b5%e9%9a%8e" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>段階&lt;/th>
+&lt;th>URLの文字列&lt;/th>
+&lt;th>概要&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>実験的&lt;/td>
+&lt;td>&lt;code>experimental&lt;/code>&lt;/td>
+&lt;td>実験的内容をテストする段階&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>不安定&lt;/td>
+&lt;td>&lt;code>unstable&lt;/code>&lt;/td>
+&lt;td>開発内容の初期テスト段階&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>テスト&lt;/td>
+&lt;td>&lt;code>testing&lt;/code>&lt;/td>
+&lt;td>開発内容の後期テスト段階&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>リリース X.Y&lt;/td>
+&lt;td>&lt;code>release-X_Y&lt;/code>&lt;/td>
+&lt;td>特定の公式リリース段階&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>現在のリリース&lt;/td>
+&lt;td>&lt;code>release-current&lt;/code>&lt;/td>
+&lt;td>最新のリリース段階（リリース間で変動します）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>ディストロ名&lt;span class="hx-absolute -hx-mt-20" id="ディストロ名">&lt;/span>
+&lt;a href="#%e3%83%87%e3%82%a3%e3%82%b9%e3%83%88%e3%83%ad%e5%90%8d" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>名前&lt;/th>
+&lt;th>概要&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>ubuntu&lt;/code>&lt;/td>
+&lt;td>Ubuntu Linuxディストリビューション&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>debian&lt;/code>&lt;/td>
+&lt;td>Debian Linuxディストリビューション&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>ディストロバージョン/コードネーム&lt;span class="hx-absolute -hx-mt-20" id="ディストロバージョンコードネーム">&lt;/span>
+&lt;a href="#%e3%83%87%e3%82%a3%e3%82%b9%e3%83%88%e3%83%ad%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b3%e3%82%b3%e3%83%bc%e3%83%89%e3%83%8d%e3%83%bc%e3%83%a0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>これらのラベルは各上流コミュニティによって決定されます。例：&lt;code>noble&lt;/code>, &lt;code>bookworm&lt;/code>, &lt;code>focal&lt;/code>&lt;/p>
+&lt;h3>アーキテクチャ&lt;span class="hx-absolute -hx-mt-20" id="アーキテクチャ">&lt;/span>
+&lt;a href="#%e3%82%a2%e3%83%bc%e3%82%ad%e3%83%86%e3%82%af%e3%83%81%e3%83%a3" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>名前&lt;/th>
+&lt;th>概要&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>amd64&lt;/code>&lt;/td>
+&lt;td>64-bit x86アーキテクチャ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>arm64&lt;/code>&lt;/td>
+&lt;td>64-bit Armアーキテクチャ&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>例&lt;span class="hx-absolute -hx-mt-20" id="例">&lt;/span>
+&lt;a href="#%e4%be%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>概要&lt;/th>
+&lt;th>URL&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>amd64&lt;/code>のUbuntu 22.04で3.2リリースのRegolithを使用する&lt;/td>
+&lt;td>&lt;code>https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>amd64&lt;/code>のDebian 12で最新リリースのRegolithを使用する&lt;/td>
+&lt;td>&lt;code>https://regolith-desktop.org/release-current-debian-bookworm-amd64&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>arm64&lt;/code>のDebian TestingでRegolithのテストリポジトリを使用する&lt;/td>
+&lt;td>&lt;code>https://regolith-desktop.org/testing-debian-testing-arm64&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>リリースの変更ポリシー&lt;span class="hx-absolute -hx-mt-20" id="リリースの変更ポリシー">&lt;/span>
+&lt;a href="#%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e3%81%ae%e5%a4%89%e6%9b%b4%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolith 3.2以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、&lt;code>release-current&lt;/code> という特別な段階が提供されています。&lt;/p></description></item><item><title>初回起動</title><link>https://regolith-desktop.com/ja/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/using-regolith/first-launch/</guid><description>
+&lt;p>Regolithの既定のインターフェースは、アプリケーションの起動方法やその他の一般的なタスクの実行方法に関する視覚的なヒントがありません。これは、初めて使う人にとって少し混乱するかもしれません。しかし、Regolithのインターフェースを使っていくときは、次の2つのキーバインドを記憶しておけば、比較的簡単に利用できるようになります。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>アクション&lt;/th>
+&lt;th>キーバインド&lt;/th>
+&lt;th>動き&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>キーバインドビューワー&lt;/td>
+&lt;td>&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">?&lt;/span>&lt;/span>&lt;/td>
+&lt;td>利用可能なキーバインドの表示・実行&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>アプリランチャー&lt;/td>
+&lt;td>&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span>&lt;/td>
+&lt;td>デスクトップアプリケーションの起動&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>上記のキーバインドのどちらかを入力すると、フォーカスされたモニターにランチャーダイアログがポップアップで表示されます。ダイアログはどちらも共通のインターフェースを持っています。&lt;/p>
+&lt;p>&lt;a href="https://github.com/regolith-linux/ilia" target="_blank" rel="noopener">&lt;code>ilia&lt;/code>&lt;/a>と呼ばれるプログラムによるインターフェースの上部にはテキストを入力するウィジェット、下部にリスト選択のウィジェットがあります。これらのダイアログに共通する使用パターンは、表示されたリストからアイテムを選択することです。テキストを入力して選択項目をフィルタリングし、矢印キーを使用して選択します。&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">enter&lt;/span>&lt;/span>を押すと、選択されたアイテムが実行されます。キーバインドの場合、選択したキーバインドが手動で実行されることになります。アプリの場合、選択されたアプリケーションが起動します。&lt;/p>
+&lt;h2>Superキー&lt;span class="hx-absolute -hx-mt-20" id="superキー">&lt;/span>
+&lt;a href="#super%e3%82%ad%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolithにおいて多くのキーバインドで使われるのが&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span>キーです。このキーは&amp;quot;WIN&amp;quot;と書かれていたりMS Windowsのロゴが書かれていることがあります。MacではCommand &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">⌘&lt;/span>&lt;/span>キーを示します。今後このキーは&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span>と呼ばれますが、あなたの必要に応じて物理ボタンの&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span>マップ変更できることに注意してください。&lt;/p>
+&lt;h2>キーバインドビューワー&lt;span class="hx-absolute -hx-mt-20" id="キーバインドビューワー">&lt;/span>
+&lt;a href="#%e3%82%ad%e3%83%bc%e3%83%90%e3%82%a4%e3%83%b3%e3%83%89%e3%83%93%e3%83%a5%e3%83%bc%e3%83%af%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-keybinding-window.png" alt="" loading="lazy" />&lt;/p>
+&lt;p>キーバインドビューワーの目的は、Regolithのキーバインドを素早く、簡単に見つけて学ぶことです。キーバインドのリファレンスはこのサイト上でも利用可能ですが、ビューワーのほうが素早くダイアログを表示してアクションを検索して探し出すことができます。見つけたら、キーボードを使用するか、ダイアログでアイテムを選択して、キーバインドを実行することができます。&lt;/p>
+&lt;h2>アプリケーションランチャー&lt;span class="hx-absolute -hx-mt-20" id="アプリケーションランチャー">&lt;/span>
+&lt;a href="#%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%a9%e3%83%b3%e3%83%81%e3%83%a3%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-apps-window.png" alt="" loading="lazy" />&lt;/p>
+&lt;p>デスクトップ環境の基本的なタスクは、ユーザーがアプリケーションを起動できるようにすることです。Regolithでは、アプリランチャーによっておこなわれます。キーバインドと同様、ダイアログは初めに、利用可能なデスクトップアプリケーションをすべて表示します。テキストを入力して選択項目をフィルタリングし、矢印キーを使用して特定のアイテムを選択します。&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">enter&lt;/span>&lt;/span>を押すことで選択されたアプリケーションが起動します。&lt;/p>
+&lt;h2>次のステップ&lt;span class="hx-absolute -hx-mt-20" id="次のステップ">&lt;/span>
+&lt;a href="#%e6%ac%a1%e3%81%ae%e3%82%b9%e3%83%86%e3%83%83%e3%83%97" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;a href="../basics" >基本的な使い方&lt;/a>のページでは、Regolithのインターフェースについて詳しく知ることができます。&lt;/p></description></item><item><title>設定ファイル</title><link>https://regolith-desktop.com/ja/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/reference/configurations/</guid><description>
+&lt;h2>設定ファイルのクイックリファレンス&lt;span class="hx-absolute -hx-mt-20" id="設定ファイルのクイックリファレンス">&lt;/span>
+&lt;a href="#%e8%a8%ad%e5%ae%9a%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%ae%e3%82%af%e3%82%a4%e3%83%83%e3%82%af%e3%83%aa%e3%83%95%e3%82%a1%e3%83%ac%e3%83%b3%e3%82%b9" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>コンポーネント&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>既定の設定&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>ユーザー設定&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>注意&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>i3 / i3-gaps&lt;/td>
+&lt;td>&lt;code>/etc/regolith/i3/config&lt;/code>, &lt;code>/usr/share/regolith/i3/config.d&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/i3&lt;/code>&lt;/td>
+&lt;td>ユーザー設定ディレクトリで&lt;code>config.d&lt;/code>部分設定を作成してRegolith2の設定を &lt;em>拡張&lt;/em> するか、&lt;code>config&lt;/code>を作成して &lt;em>全体にオーバーライド&lt;/em> します。&lt;a href="https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/" >詳細&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xresources&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith-look/default&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/Xresources&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.Xresources&lt;/code>も読み込まれますが、他のデスクトップセッションでも必要になる可能性のあるプロパティを対象にしています。&lt;a href="https://regolith-desktop.com/ja/docs/howtos/override-xres/" >詳細&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>バーステータスインジケーター&lt;/td>
+&lt;td>&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>&lt;/td>
+&lt;td>各ブロックには独自の設定ファイルがありません。ファイル名のアルファベット順に読み込まれた設定です。&lt;a href="https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/" >詳細&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Picom（Compton）コンポジター&lt;/td>
+&lt;td>&lt;code>/etc/regolith/picom/config&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith3/picom/config&lt;/code>&lt;/td>
+&lt;td>&lt;a href="https://regolith-desktop.com/ja/docs/howtos/customize-compositor/" >詳細&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;code>~/.config/regolith3/i3/config&lt;/code>にi3の設定ファイルを追加すると、Xresourcesやlookを含むすべてのRegolithの設定がオーバーライドされます。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>履歴&lt;span class="hx-absolute -hx-mt-20" id="履歴">&lt;/span>
+&lt;a href="#%e5%b1%a5%e6%ad%b4" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>部分設定&lt;span class="hx-absolute -hx-mt-20" id="部分設定">&lt;/span>
+&lt;a href="#%e9%83%a8%e5%88%86%e8%a8%ad%e5%ae%9a" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Regolith 2.0では、&lt;code>i3&lt;/code>が&lt;a href="https://i3wm.org/downloads/RELEASE-NOTES-4.20.txt" target="_blank" rel="noopener">4.20&lt;/a>になったことで部分設定のサポートが追加されます。これは&lt;a href="https://i3wm.org/docs/userguide.html#include" target="_blank" rel="noopener">includes&lt;/a>によって行われます。このincludesのサポートにより、Regolith 2.0がパッケージマネージャーを使用して、既定の部分設定を追加もしくは削除することができます。パッケージのインストールや削除により、 i3設定を特定の設定にカスタマイズしながら、設定を変更する必要のない部分については、上流の変更を追跡できます。&lt;/p>
+&lt;p>&lt;code>/etc/regolith/i3/config&lt;/code>にあるrootのRegolith設定ファイルは、部分設定を次のように読み込みます：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">/etc/regolith/i3/config&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl"># Regolithのi3のあらゆる部分設定を読み込む
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">include /usr/share/regolith/i3/config.d/*
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># ユーザーのi3の部分設定を読み込む
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">include $HOME/.config/regolith2/i3/config.d/*&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div></description></item><item><title>基本的な使い方</title><link>https://regolith-desktop.com/ja/docs/using-regolith/basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/using-regolith/basics/</guid><description>
+&lt;h2>アプリケーションを開く&lt;span class="hx-absolute -hx-mt-20" id="アプリケーションを開く">&lt;/span>
+&lt;a href="#%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%82%92%e9%96%8b%e3%81%8f" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>初回ログイン後、画面下部にバーが、ダイアログにいくつかのキーボードショートカットが表示されます。この&lt;a href="https://github.com/regolith-linux/ilia" target="_blank" rel="noopener">&lt;code>ilia&lt;/code>&lt;/a>と呼ばれるダイアログは、このデスクトップ環境におけるさまざまなアクションのキーバインドを見つけるアシスタントを提供します。&lt;code>esc&lt;/code>キーで閉じても、&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">?&lt;/span>&lt;/span>で再度表示することができます。アプリケーションを起動するには、&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span>を押すことで、同様のダイアログが、システムにインストールされたアプリケーションとともに読み込まれます。起動したいアプリケーションの名前を入力し始めると、リストが入力したものと一致するものにフィルタリングされます。矢印キーでリストをスクロールすることもできます。&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-apps.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>ウィンドウを操作する&lt;span class="hx-absolute -hx-mt-20" id="ウィンドウを操作する">&lt;/span>
+&lt;a href="#%e3%82%a6%e3%82%a3%e3%83%b3%e3%83%89%e3%82%a6%e3%82%92%e6%93%8d%e4%bd%9c%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>実行中のアプリケーションにフォーカスするには、&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">ctrl&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span>キーバインドですべての実行中のウィンドウのダイアログを表示することができます。利用したいウィンドウを選択することで、簡単にそのウィンドウが含まれるワークスペースに移動してフォーカスを設定されます。&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-windows.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>新しいワークスペースを作成する&lt;span class="hx-absolute -hx-mt-20" id="新しいワークスペースを作成する">&lt;/span>
+&lt;a href="#%e6%96%b0%e3%81%97%e3%81%84%e3%83%af%e3%83%bc%e3%82%af%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e3%82%92%e4%bd%9c%e6%88%90%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>ワークスペース（いくつかのデスクトップ環境では&amp;quot;仮想デスクトップ&amp;quot;として知られています）ウィンドウを管理するための主要な方法です。各ワークスペースは、独立したウィンドウセットの画面を提供しています。ワークスペースを作成したり操作するには、&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">0-9&lt;/span>&lt;/span>でインデックスを指定します。&lt;/p>
+&lt;h2>ファイルを検索して起動する&lt;span class="hx-absolute -hx-mt-20" id="ファイルを検索して起動する">&lt;/span>
+&lt;a href="#%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%82%92%e6%a4%9c%e7%b4%a2%e3%81%97%e3%81%a6%e8%b5%b7%e5%8b%95%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>特定のファイルをローカルのコンピューター上で検索には、さまざまな方法があります。Regolithでは、&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span>で、素早く検索して、ファイルを既定のアプリケーションで読み込むファイル検索ダイアログを提供しています。 選択したものをEnterで入力すると、&lt;code>xdg-open&lt;/code>コマンドでファイルが呼び出されます。&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-files.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>ターミナル&lt;span class="hx-absolute -hx-mt-20" id="ターミナル">&lt;/span>
+&lt;a href="#%e3%82%bf%e3%83%bc%e3%83%9f%e3%83%8a%e3%83%ab" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>ターミナルは専用のキーバインド・&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">enter&lt;/span>&lt;/span>を持つ特別なアプリケーションです。&lt;/p>
+&lt;h2>ブラウザ&lt;span class="hx-absolute -hx-mt-20" id="ブラウザ">&lt;/span>
+&lt;a href="#%e3%83%96%e3%83%a9%e3%82%a6%e3%82%b6" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>既定のブラウザもまた特別であり、&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">enter&lt;/span>&lt;/span>で起動することができます。&lt;/p>
+&lt;h2>アプリケーションを閉じる&lt;span class="hx-absolute -hx-mt-20" id="アプリケーションを閉じる">&lt;/span>
+&lt;a href="#%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%82%92%e9%96%89%e3%81%98%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">q&lt;/span>&lt;/span>で、フォーカスしているアプリケーションを閉じます。誤作動しているアプリの場合、&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">q&lt;/span>&lt;/span>でフォーカスしているアプリケーションを強制終了(kill)することができますが、保存していないデータは失われる可能性に注意してください。&lt;/p>
+&lt;h2>ワークスペースを切り替える&lt;span class="hx-absolute -hx-mt-20" id="ワークスペースを切り替える">&lt;/span>
+&lt;a href="#%e3%83%af%e3%83%bc%e3%82%af%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e3%82%92%e5%88%87%e3%82%8a%e6%9b%bf%e3%81%88%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>アプリケーションが画面をどのように占有するかを管理する主な方法は、ワークスペースを使用することです。ワークスペースは、すべてのウィンドウが同じ仮想ディスプレイ上に存在する、0個以上のアプリケーションのグループです。ユーザーはワークスペースを切り替えて、アプリケーションが占有するための、多くのスペースを確保することができます。ウィンドウはワークスペース間を移動することができます。ワークスペースは、物理的なディスプレイに結びつけることや、必要に応じて他のディスプレイに移動することもできます。ワークスペースを切り替えるには、&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span>キーを押しながら数字キーを押します。これで指定したワークスペースに移動します。特定のワークスペースにウィンドウが存在する場合は、バーにアクティブであることが表示されます。このバーを参照することで、ユーザーはアクティブなウィンドウがどのワークスペースに存在しているのかを確認することができます。&lt;/p>
+&lt;p>ワークスペースは&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">tab&lt;/span>&lt;/span>や&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">tab&lt;/span>&lt;/span>でも、前方や後方のウィンドウを切り替えることができます。&lt;/p>
+&lt;h2>システムを構成する&lt;span class="hx-absolute -hx-mt-20" id="システムを構成する">&lt;/span>
+&lt;a href="#%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%82%92%e6%a7%8b%e6%88%90%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>システムアプリ（&lt;code>regolith-control-center&lt;/code>として知られています）は、Wi−Fi・Bluetoothの設定、アプリ関連の設定、ユーザーのセットアップといった、共通の設定タスクの主要なインターフェースです。このアプリは&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">c&lt;/span>&lt;/span>キーバインドか、ランチャーの&lt;code>Regolith Settings&lt;/code>アプリから起動できます。&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-gnome-settings.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>キーバインドを表示する&lt;span class="hx-absolute -hx-mt-20" id="キーバインドを表示する">&lt;/span>
+&lt;a href="#%e3%82%ad%e3%83%bc%e3%83%90%e3%82%a4%e3%83%b3%e3%83%89%e3%82%92%e8%a1%a8%e7%a4%ba%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolithデスクトップで使用されるすべてのキーバインドを&lt;a href="https://github.com/regolith-linux/ilia" target="_blank" rel="noopener">&lt;code>ilia&lt;/code>&lt;/a>によって表示、ソート、実行することができます。このダイアログは&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">?&lt;/span>&lt;/span>で起動することができます。&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-keybindings.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>通知を管理する&lt;span class="hx-absolute -hx-mt-20" id="通知を管理する">&lt;/span>
+&lt;a href="#%e9%80%9a%e7%9f%a5%e3%82%92%e7%ae%a1%e7%90%86%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolithデスクトップ通知システムは、ユーザーの作業を妨げる可能性のあるポップアップを防ぐように設計されています。通知は&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">n&lt;/span>&lt;/span>で&lt;a href="https://github.com/regolith-linux/ilia" target="_blank" rel="noopener">&lt;code>ilia&lt;/code>&lt;/a>から表示・管理することができます。削除や通知のグループ化など、特定のキーバインドについては&lt;code>help&lt;/code>タブのダイアログから見つけることができます。ユーザーが現在の通知状態の表示を変更する場合、ステータスインジケーターの&lt;code>i3xrocks-rofication&lt;/code>がシステムのパッケージマネージャーによってインストールされることがあります。これにより、重要な通知と通常の通知の未読件数がバーに表示されます。&lt;/p></description></item><item><title>設定</title><link>https://regolith-desktop.com/ja/docs/using-regolith/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/using-regolith/configuration/</guid><description>
+&lt;h2>新規ユーザーに推奨されるパッケージ&lt;span class="hx-absolute -hx-mt-20" id="recommended-packages-for-new-users">&lt;/span>
+&lt;a href="#recommended-packages-for-new-users" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>外観&lt;span class="hx-absolute -hx-mt-20" id="外観">&lt;/span>
+&lt;a href="#%e5%a4%96%e8%a6%b3" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Regolith公式の外観をすべてインストールする:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install regolith-look-*&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>もしくは、&lt;code>apt&lt;/code>でインストールされて利用可能な外観のリストを表示する:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt list &lt;span class="p">|&lt;/span> grep regolith-look-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>注意：これはフォントやテーマ、壁紙も含みます。ディスクの使用率の最小化を望むユーザーは、使用していない外観をアンインストールすることを推奨します。&lt;/p>
+&lt;p>外観の選択方法の概要については、以下の項目を参照してください。&lt;/p>
+&lt;h3>ステータスインジケーター&lt;span class="hx-absolute -hx-mt-20" id="ステータスインジケーター">&lt;/span>
+&lt;a href="#%e3%82%b9%e3%83%86%e3%83%bc%e3%82%bf%e3%82%b9%e3%82%a4%e3%83%b3%e3%82%b8%e3%82%b1%e3%83%bc%e3%82%bf%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>次の行では、新規ユーザーに推奨されるステータスインジケータパッケージをインストールします。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>これらのインジケーターを後から削除したいときは、システムからアンインストールします。例：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt remove i3xrocks-info&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h4>ラップトップのバッテリー状態&lt;span class="hx-absolute -hx-mt-20" id="ラップトップのバッテリー状態">&lt;/span>
+&lt;a href="#%e3%83%a9%e3%83%83%e3%83%97%e3%83%88%e3%83%83%e3%83%97%e3%81%ae%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e7%8a%b6%e6%85%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>ラップトップの現在のバッテリー状態を表示するには：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install i3xrocks-battery&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>コンポジター&lt;span class="hx-absolute -hx-mt-20" id="コンポジター">&lt;/span>
+&lt;a href="#%e3%82%b3%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%bf%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>コンポジターはウィンドウ環境に仮想エフェクトを追加します。既定では、Regolith 3には&lt;code>picom&lt;/code>コンポジターがインストールされています。特定のハードウェアやドライバの制限によってグラフィックの問題が発生した場合、変わりに次のコンポジターをインストールする必要があります。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>パッケージ&lt;/th>
+&lt;th>注意&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>regolith-compositor-picom-glx&lt;/code>&lt;/td>
+&lt;td>既定&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>regolith-compositor-compton-glx&lt;/code>&lt;/td>
+&lt;td>古いコンポジターであり、いくつかのハードウェアでよりよく動作する場合があります&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>regolith-compositor-xcompmgr&lt;/code>&lt;/td>
+&lt;td>古いコンポジターであり、いくつかのハードウェアでよりよく動作する場合があります&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>regolith-compositor-none&lt;/code>&lt;/td>
+&lt;td>パススルーパッケージであり、コンポジターは実行されません&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>詳細な概要は、&lt;a href="https://regolith-desktop.com/ja/docs/howtos/customize-compositor/" >このハウツー&lt;/a>を参照してください。&lt;/p>
+&lt;h2>壁紙&lt;span class="hx-absolute -hx-mt-20" id="壁紙">&lt;/span>
+&lt;a href="#%e5%a3%81%e7%b4%99" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>多くのRegolithの外観は、既定のデスクトップカラーと画像を提供します。壁紙はXressourcesキー・&lt;code>regolith.wallpaper.file&lt;/code>に壁紙画像のパスを指定することで設定することができます。&lt;/p>
+&lt;p>例として、&lt;code>/usr/share/backgrounds/hardy_wallpaper_uhd.png&lt;/code>ファイルが存在すると仮定したとき：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>上記のコマンドでは、前述のプロパティを使用するときに他のパスから&lt;code>/usr/share/backgrounds/hardy_wallpaper_uhd.png&lt;/code>に変更されます。&lt;/p>
+&lt;p>壁紙画像の表示形式（拡大、大きさ、など…）を変更するには、&lt;code>regolith.wallpaper.options&lt;/code>を設定します。オプション：&lt;code>none&lt;/code>, &lt;code>wallpaper&lt;/code>, &lt;code>centered&lt;/code>, &lt;code>scaled&lt;/code>, &lt;code>stretched&lt;/code>, &lt;code>zoom&lt;/code>, &lt;code>spanned&lt;/code>&lt;/p>
+&lt;p>例：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.options: zoom&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Xresourceキー・&lt;code>regolith.wallpaper.color.primary&lt;/code>を使用して、画像ではなく色を指定するには：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.file: &amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.primary: blue&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>2つ目の色とグラデーションを指定するには：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.file: &amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.primary: blue&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.secondary: green&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.shading.type: vertical&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>ロック画面の壁紙&lt;span class="hx-absolute -hx-mt-20" id="ロック画面の壁紙">&lt;/span>
+&lt;a href="#%e3%83%ad%e3%83%83%e3%82%af%e7%94%bb%e9%9d%a2%e3%81%ae%e5%a3%81%e7%b4%99" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>ロック画面壁紙はデスクトップ壁紙と同じ方法で管理することができます。キーはデスクトップ壁紙と似たようなものですが、&lt;code>regolith.lockscreen.wallpaper...&lt;/code>のように、&lt;code>lockscreen&lt;/code>を&lt;code>wallpaper&lt;/code>の前に追加します。例えば、ロック画面の画像を指定する場合：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>壁紙の処理を無効化&lt;span class="hx-absolute -hx-mt-20" id="壁紙の処理を無効化">&lt;/span>
+&lt;a href="#%e5%a3%81%e7%b4%99%e3%81%ae%e5%87%a6%e7%90%86%e3%82%92%e7%84%a1%e5%8a%b9%e5%8c%96" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Regolithの外部で壁紙を管理したい場合、壁紙画像と色の値を空にします。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.file: &amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.primary: &amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>ステータスバーのインジケーター&lt;span class="hx-absolute -hx-mt-20" id="ステータスバーのインジケーター">&lt;/span>
+&lt;a href="#%e3%82%b9%e3%83%86%e3%83%bc%e3%82%bf%e3%82%b9%e3%83%90%e3%83%bc%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b8%e3%82%b1%e3%83%bc%e3%82%bf%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>CPUの読み込み、日付、時間、通知、天気や他のシステム情報などのステータスインジケーターは、パッケージのインストールで追加や削除をすることが可能です。例えば、ラップトップバッテリーのステータスインジケーターを表示するには、&lt;code>sudo apt install i3xrocks-battery&lt;/code>を実行して、セッションを&lt;code>regolith-look refresh&lt;/code>で再読み込みするだけです。利用可能なインジケーターを探すには、&lt;code>apt search ^i3xrocks-&lt;/code>を実行するか、&lt;a href="https://help.ubuntu.com/community/SynapticHowto" target="_blank" rel="noopener">Synaptic&lt;/a>のようなGUIのパッケージマネージャーで&lt;code>i3xrocks-&lt;/code>と検索して見つけることができます。「ブロックレット(blocklet)」と呼ばれる、ステータスインジケーターを設定するのに&lt;a href="https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/" >利用可能なドキュメント&lt;/a>が存在します。以下は、Regolith 2.2時点でのステータスインジケーターのリストです。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>パッケージ&lt;/th>
+&lt;th>ステータスの機能&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>i3xrocks-app-launcher&lt;/td>
+&lt;td>アプリ起動ダイアログのショートカット&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-battery&lt;/td>
+&lt;td>バッテリーの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-bluetooth&lt;/td>
+&lt;td>Bluetoothの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-cpu-usage&lt;/td>
+&lt;td>CPU使用率&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-disk-capacity&lt;/td>
+&lt;td>ディスク使用率&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-focused-window-name&lt;/td>
+&lt;td>フォーカスされたウィンドウのタイトル&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-info&lt;/td>
+&lt;td>キーバインドビューワーのショートカット&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-key-indicator&lt;/td>
+&lt;td>キーボード切り替えの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-keyboard-layout&lt;/td>
+&lt;td>キーボードレイアウト&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-media-player&lt;/td>
+&lt;td>メディアプレーヤーの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-memory&lt;/td>
+&lt;td>メモリ使用率&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-microphone&lt;/td>
+&lt;td>マイクの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-net-traffic&lt;/td>
+&lt;td>ネットワークの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-next-workspace&lt;/td>
+&lt;td>新規ワークスペース作成のショートカット&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-nm-vpn&lt;/td>
+&lt;td>VPNの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-openvpn&lt;/td>
+&lt;td>OpenVPNの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-rofication&lt;/td>
+&lt;td>通知の状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-tailscale&lt;/td>
+&lt;td>Tailscale status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-temp&lt;/td>
+&lt;td>システムの温度&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-time&lt;/td>
+&lt;td>システム時間&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-updates&lt;/td>
+&lt;td>システムパッケージの状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-volume&lt;/td>
+&lt;td>音量の状態&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-weather&lt;/td>
+&lt;td>地域の天気&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-wifi&lt;/td>
+&lt;td>接続中のWiFiアクセスポイント名&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>外観&lt;span class="hx-absolute -hx-mt-20" id="外観-1">&lt;/span>
+&lt;a href="#%e5%a4%96%e8%a6%b3-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>色、壁紙、ウィンドウとバーのレイアウトや他の視覚的要素はRegolithにバンドルされ、&amp;ldquo;外観(look)&amp;ldquo;と呼ばれています。外観は、デスクトップの全体の外観を変更する簡単な方法を提供します。ステータスバーのインジケーターのような外観はパッケージ化され、他のソフトウェアのようにインストールしたりアンインストールしたりすることができます。外観パッケージは命名フォーマットに従い&lt;code>regolith-look-&amp;lt;name&amp;gt;&lt;/code>となっています。&lt;code>apt&lt;/code>やGUIパッケージマネージャーから利用可能な外観を検索することができます。&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">l&lt;/span>&lt;/span>キーバインドで、ダイアログからインストールされた外観を選択します。&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-look-selector.png" alt="" loading="lazy" />&lt;/p>
+&lt;p>また、ターミナルのコマンド・&lt;code>regolith-look&lt;/code>で外観を変更したり、選択した外観でアクティブなセッションを再読み込みすることができます。ここでは例として、&lt;code>gruvbox&lt;/code>の外観に切り替えます。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> apt search ^regolith-look-
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">[...]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">[...]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">&lt;/span>&lt;span class="gp">$&lt;/span> sudo apt install regolith-look-gruvbox
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">regolith-look set gruvbox
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">regolith-look refresh
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>利用可能な外観をすべてインストールする簡単な方法：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install regolith-look-*&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>i3の機能&lt;span class="hx-absolute -hx-mt-20" id="i3の機能">&lt;/span>
+&lt;a href="#i3%e3%81%ae%e6%a9%9f%e8%83%bd" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;a href="https://regolith-desktop.com/ja/docs/reference/configurations/#history" >Regolith 2.0の開始時から&lt;/a>、いくつかのi3の外観設定はパッケージマネージャーによって管理されています。Regolithでは、i3の設定がすべて「部分設定(config partial)」として提供されます。これらのパッケージはi3設定の一部として、&lt;code>/usr/share/regolith/i3/config.d&lt;/code>以下にインストールされます。パッケージのインストールと削除をすることで、i3設定を特定の設定に合わせてカスタマイズすることができます。既定では、 &lt;code>regolith-desktop&lt;/code>パッケージがインストールされたときに設定要素が依存関係としてインストールされています。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>パッケージ&lt;/th>
+&lt;th>機能&lt;/th>
+&lt;th>ファイル&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>regolith-i3-base-launchers&lt;/td>
+&lt;td>ブラウザとターミナルの起動&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/15_base_launchers&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-default-style&lt;/td>
+&lt;td>ウィンドウの振る舞い&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_default-style&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-navigation&lt;/td>
+&lt;td>操作のキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/30_navigation&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-networkmanager&lt;/td>
+&lt;td>ネットワークとWiFiの機能&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/88_network-manager&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-next-workspace&lt;/td>
+&lt;td>ワークスペースのユーティリティー&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_next-workspace&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-resize&lt;/td>
+&lt;td>リサイズのキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/50_resize-mode&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-session&lt;/td>
+&lt;td>セッションのキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/55_session_keybindings&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-unclutter&lt;/td>
+&lt;td>マウスカーソルを使用していないときに非表示化&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/86_unclutter&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-user-programs&lt;/td>
+&lt;td>オプションでXresourcesで指定されたユーザープログラムの起動&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/90_user-programs&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-workspace-config&lt;/td>
+&lt;td>ワークスペースのキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_workspace-config&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>ソフトの依存関係は、それに依存するパッケージを削除することなく削除できます。これはリストにあるいくつかのパッケージを削除できることを示しています。ユーザーは、デフォルトの設定部分を独自のバージョンに置き換えることで、より安定した方法で設定を微調整できます。これはカスタマイズしたい部分を&lt;code>~/.config/regolith3/i3/config.d/&lt;/code>にコピーして、&lt;code>apt&lt;/code>で&lt;code>/usr/share/regolith/i3/config.d&lt;/code>のオリジナルのファイルを削除することでできます。この方法により、変更されていない設定部分は、ユーザー固有の設定に影響を与えることなく更新やバグ修正を取得し続けることができます。&lt;/p>
+&lt;p>参考例は&lt;a href="https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/" >i3設定のカスタマイズのハウツー&lt;/a>を参照してください。&lt;/p>
+&lt;h3>すべてのi3設定パッケージ&lt;span class="hx-absolute -hx-mt-20" id="すべてのi3設定パッケージ">&lt;/span>
+&lt;a href="#%e3%81%99%e3%81%b9%e3%81%a6%e3%81%aei3%e8%a8%ad%e5%ae%9a%e3%83%91%e3%83%83%e3%82%b1%e3%83%bc%e3%82%b8" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>ここに記載されているすべてのi3設定パッケージはRegolith 2.1で利用できます。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>パッケージ&lt;/th>
+&lt;th>機能&lt;/th>
+&lt;th>ファイル&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>regolith-i3-base-launchers&lt;/td>
+&lt;td>ターミナルとブラウザを起動&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/15_base_launchers&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-compositor&lt;/td>
+&lt;td>コンポジターの統合（&lt;code>regolith-compositor-&amp;lt;variant&amp;gt;&lt;/code>へ転送）&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/80_compositor&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-default-style&lt;/td>
+&lt;td>ウィンドウの振る舞い&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_default-style&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-ftue&lt;/td>
+&lt;td>最初のユーザーエクスペリエンス&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/84_ftue&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-gaps-partial&lt;/td>
+&lt;td>&lt;code>i3-gaps&lt;/code>設定 （インストールした場合i3がi3-gapsに置き換えられます）&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/35_i3-gaps&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-gnome&lt;/td>
+&lt;td>Regolith設定のキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/60_config_keybindings&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-i3xrocks&lt;/td>
+&lt;td>i3バーのステータスインジケーターの設定&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/70_bar&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-ilia&lt;/td>
+&lt;td>&lt;code>ilia&lt;/code>の統合&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/20_ilia&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-navigation&lt;/td>
+&lt;td>操作のキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/30_navigation&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-networkmanager&lt;/td>
+&lt;td>ネットワークとWiFiの機能&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/88_network-manager&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-next-workspace&lt;/td>
+&lt;td>ワークスペースのユーティリティー&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_next-workspace&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-remontoire&lt;/td>
+&lt;td>古いキーバインドビューとの統合&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/45_remontoire&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-resize&lt;/td>
+&lt;td>リサイズのキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/50_resize-mode&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-rofi&lt;/td>
+&lt;td>古いデスクトップランチャーとの統合&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/20_rofi&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-rofication&lt;/td>
+&lt;td>古い通知ビューワーとの統合&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/82_rofication&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-rofication-ilia&lt;/td>
+&lt;td>通知ビューワーとの統合&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/82_rofication-ilia&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-session&lt;/td>
+&lt;td>セッションのキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/55_session_keybindings&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-snapshot&lt;/td>
+&lt;td>i3ワークスペースの固定&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/75_i3-snapshot&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-swap-focus&lt;/td>
+&lt;td>最後にフォーカスしたウィンドウへの切り替え&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_i3-swap-focus&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-unclutter&lt;/td>
+&lt;td>マウスを使用していないときに非表示化&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/86_unclutter&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-user-programs&lt;/td>
+&lt;td>オプションでXresourcesで指定されたユーザープログラムの起動&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/90_user-programs&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-workspace-config&lt;/td>
+&lt;td>ワークスペースのキーバインド&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_workspace-config&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>キーバインド&lt;span class="hx-absolute -hx-mt-20" id="キーバインド">&lt;/span>
+&lt;a href="#%e3%82%ad%e3%83%bc%e3%83%90%e3%82%a4%e3%83%b3%e3%83%89" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolithバージョン3.0ではXresourceキーが&amp;quot;i3-wm&amp;quot;から&amp;quot;wm&amp;quot;に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を&amp;quot;wm&amp;quot;から&amp;quot;i3-wm&amp;quot;として使用してください。例として、Regolith 1.xと2.xでは&lt;code>wm.foo.bar&lt;/code>は&lt;code>i3-wm.foo.bar&lt;/code>に変更されます。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>もっとも重要なキーバインドの変更は&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span>キーです。Regolithは、さまざまなUIコンポーネントで読み取られる設定の真の正規ソースとして&lt;code>Xresources&lt;/code>を利用できます。ユーザー設定で利用可能な&lt;code>Xresources&lt;/code>キーのリストは、&lt;a href="https://regolith-desktop.com/ja/docs/reference/xresources/" >ここから参照することができます&lt;/a>。既定の&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span>バインドを&amp;quot;windows&amp;quot;キーから&amp;quot;alt&amp;quot;に変更するには&lt;code>~/.config/regolith3/Xresources&lt;/code>に以下の行を追加します。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">~/.config/regolith3/Xresources&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">wm.mod&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Mod1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Mod4&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>注意&lt;/strong>：GNOMEには独自のキーバインドも存在します。Regolithセッションが最初に初期化されると、 競合するGNOMEキーバインドがユーザー設定から削除されます。GNOMEのキーバインドは、Regolithの設定アプリから管理することができます。&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-gnome-keybindings.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>システム管理&lt;span class="hx-absolute -hx-mt-20" id="システム管理">&lt;/span>
+&lt;a href="#%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e7%ae%a1%e7%90%86" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;code>regolith-control-center&lt;/code>アプリは、言語、日付、ディスプレイ、ネットワークや他のさまざまな種類の設定ツールです。 &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span>でアプリランチャーを開いて&lt;code>settings&lt;/code>と入力し、起動したいアプリをヒットさせることで起動します。&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">c&lt;/span>&lt;/span>は直接実行できるキーバインドです。&lt;code>regolith-control-center&lt;/code>とターミナルに入力することでもアプリケーションを起動することができます。&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-settings-about.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>さらに深く読み込む&lt;span class="hx-absolute -hx-mt-20" id="さらに深く読み込む">&lt;/span>
+&lt;a href="#%e3%81%95%e3%82%89%e3%81%ab%e6%b7%b1%e3%81%8f%e8%aa%ad%e3%81%bf%e8%be%bc%e3%82%80" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>もっと深く知りたい人は、&lt;a href="https://regolith-desktop.com/ja/docs/howtos/" >このハウツー&lt;/a>を利用したり、&lt;a href="https://regolith-desktop.com/ja/docs/reference/xresources/" >Xresourcesリファレンス&lt;/a>を読みましょう。 &lt;a href="https://i3wm.org/docs/userguide.html" target="_blank" rel="noopener">ユーザーガイド（英語）&lt;/a>を読んでi3のパワーユーザーになりましょう。&lt;/p>
+&lt;p>もしXresourcesが提供する以上の高度な設定が必要な場合は、&lt;a href="https://regolith-desktop.com/ja/docs/howtos/stage-configs/" >設定ファイルのステージング&lt;/a>で見つけたi3設定のハウツーを利用してください。&lt;/p></description></item><item><title>Xresources</title><link>https://regolith-desktop.com/ja/docs/reference/xresources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/reference/xresources/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolithバージョン3.0ではXresourceキーが&amp;quot;i3-wm&amp;quot;から&amp;quot;wm&amp;quot;に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を&amp;quot;wm&amp;quot;から&amp;quot;i3-wm&amp;quot;として使用してください。例として、Regolith 1.xと2.xでは&lt;code>wm.foo.bar&lt;/code>は&lt;code>i3-wm.foo.bar&lt;/code>に変更されます。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>Main &lt;code>Xresources&lt;/code> keys&lt;span class="hx-absolute -hx-mt-20" id="main-xresources-keys">&lt;/span>
+&lt;a href="#main-xresources-keys" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>Xresources&lt;/code>キー&lt;/th>
+&lt;th>概要&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>gtk.theme_name&lt;/td>
+&lt;td>GTKテーマ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.icon_theme_name&lt;/td>
+&lt;td>GTKアイコンテーマ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.audible-bell&lt;/td>
+&lt;td>gnome-terminalのベルを有効にする（&lt;code>true / false&lt;/code>）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.document_font_name&lt;/td>
+&lt;td>GTKドキュメントのフォント名&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.font_name&lt;/td>
+&lt;td>GTKアプリとデスクトップにおける一般的な用途のフォント&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gtk.monospace_font_name&lt;/td>
+&lt;td>i3barやターミナルなどのモノスペースエリアのフォント&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.background-transparency-percent&lt;/td>
+&lt;td>gnome-terminalの背景の透過度（&lt;code>0 - 100&lt;/code>）。&lt;code>gnome.terminal.use-transparent-background&lt;/code>も参照。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.font&lt;/td>
+&lt;td>gnome-terminalのフォント定義&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.scrollbar&lt;/td>
+&lt;td>スクロールバーの有効・無効フラグ（&lt;code>never / always&lt;/code>）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.use-transparent-background&lt;/td>
+&lt;td>gnome-terminalの背景の透過を有効にする（&lt;code>true / false&lt;/code>）。&lt;code>gnome.terminal.background-transparency-percent&lt;/code>も参照。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wallpaper&lt;/td>
+&lt;td>GNOME壁紙（設定をオーバーライド可能)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wm.theme&lt;/td>
+&lt;td>GNOMEウィンドウマネージャーのテーマ（使用されていません）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.alt&lt;/td>
+&lt;td>Altキーのキーマップ。&lt;a href="https://i3wm.org/docs/userguide.html#_using_i3" target="_blank" rel="noopener">i3ユーザーガイド&lt;/a>の概要も参照。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.background.color&lt;/td>
+&lt;td>バーの背景色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.position&lt;/td>
+&lt;td>バーの表示位置&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.separator.color&lt;/td>
+&lt;td>ブロック間の分割線の色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.separatorchar&lt;/td>
+&lt;td>ブロック間に表示する字体&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.statusline.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.trayoutput&lt;/td>
+&lt;td>i3barの&lt;a href="https://i3wm.org/docs/userguide.html#_tray_output" target="_blank" rel="noopener">アプリトレイ&lt;/a>有効・無効&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.active.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.focused.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.inactive.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.bar.workspace.urgent.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.focused_inactive.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.unfocused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.client.urgent.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.floatingwindow.border.size&lt;/td>
+&lt;td>浮遊しているウィンドウの分割線のサイズ（ピクセル）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.font&lt;/td>
+&lt;td>ウィンドウマネージャーのフォント&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.gaps.inner.size&lt;/td>
+&lt;td>既定のウィンドウ間の隙間（ピクセル）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.gaps.outer.size&lt;/td>
+&lt;td>既定のスクリーンの端との隙間（ピクセル）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.mod&lt;/td>
+&lt;td>Superキーのキーマップ。&lt;a href="https://i3wm.org/docs/userguide.html#_using_i3" target="_blank" rel="noopener">i3ユーザーガイド&lt;/a>の概要も参照。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.window.border.size&lt;/td>
+&lt;td>既定の分割線サイズ（ピクセル）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.workspace.01.name .. wm.workspace.19.name&lt;/td>
+&lt;td>ワークスペースのラベル&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.workspace.01.key .. wm.workspace.10.key&lt;/td>
+&lt;td>ワークスペースのショートカット&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>インジケーター上で左クリックをしたときのコマンド（既定：なし）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>インジケーター上で中クリックをしたときのコマンド（既定：なし）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>インジケーター上で右クリックをしたときのコマンド（既定：音量のミュート）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>音量インジケーターで上方向にスクロールしたときのコマンド（既定：音量を上げる）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>音量インジケーターで下方向にスクロールしたときのコマンド（既定：音量を下げる）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.error.color&lt;/td>
+&lt;td>エラーモードにおけるバーモジュールの色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery0&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery100&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery20&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery50&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery80&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryac&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batterycharging&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryunknown&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.capslock&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.color&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.cpu&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.disk&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.dn&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.help&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediapaused&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediaplaying&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.memory&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mute&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.error&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.none&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.some&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.numlock&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.off&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.on&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.sound&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.thermometer&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.time&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.up&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wifi&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wired&lt;/td>
+&lt;td>バーアイコンの絵文字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.nominal&lt;/td>
+&lt;td>既定のバーアイコンの色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.color&lt;/td>
+&lt;td>バーモジュールにおける数値の色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.font&lt;/td>
+&lt;td>バーモジュールにおける数値のフォント&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.warning&lt;/td>
+&lt;td>バーモジュールの警告色&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>オプションの&lt;code>Xresources&lt;/code>キー&lt;span class="hx-absolute -hx-mt-20" id="オプションのxresourcesキー">&lt;/span>
+&lt;a href="#%e3%82%aa%e3%83%97%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%aexresources%e3%82%ad%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>次の&lt;code>Xresources&lt;/code>キーは既定では未定義ですが、ユーザーは必要に応じて動作を変更するために使用できます。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>Xresources&lt;/code>キー&lt;/th>
+&lt;th>概要&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>wm.gaps.focus_follows_mouse&lt;/td>
+&lt;td>有効であればマウスの下のウィンドウをフォーカスする&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.app&lt;/td>
+&lt;td>アプリランチャーキーバインドを実行するi3コマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.cmd&lt;/td>
+&lt;td>コマンドランチャーキーバインドを実行するi3コマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.launcher.window&lt;/td>
+&lt;td>ウィンドウ操作キーバインドを実行するi3コマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.help&lt;/td>
+&lt;td>ヘルプキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.file_search&lt;/td>
+&lt;td>ファイル検索キーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.refresh_ui&lt;/td>
+&lt;td>セッションの再読み込みキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.logout&lt;/td>
+&lt;td>ログアウトキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.reboot&lt;/td>
+&lt;td>再起動キーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.shutdown&lt;/td>
+&lt;td>シャットダウンキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.lock&lt;/td>
+&lt;td>画面ロックキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.sleep&lt;/td>
+&lt;td>スリープキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.settings&lt;/td>
+&lt;td>コントロールパネルキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.display&lt;/td>
+&lt;td>ディスプレイ設定キーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.wifi&lt;/td>
+&lt;td>WiFi設定キーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.bluetooth&lt;/td>
+&lt;td>Bluetooth設定キーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.files&lt;/td>
+&lt;td>ファイルブラウザキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.notification_ui&lt;/td>
+&lt;td>通知UIキーバインドを実行するコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wm.program.1&amp;hellip;wm.program.3&lt;/td>
+&lt;td>i3と開始するオプションのプログラム&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.media-player.player-args&lt;/td>
+&lt;td>&lt;code>media-player&lt;/code>i3xrocksブロックにおけるオプションの引数。これらの引数は&lt;code>playerctl&lt;/code>に直接与えられます。例えば、&lt;code>-p spotify&lt;/code>という値を設定すると、バーがSpotifyを表示・操作するだけになります。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.left&lt;/td>
+&lt;td>マイクステータスインジケーターで左クリック時に実行するオプションのコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.middle&lt;/td>
+&lt;td>マイクステータスインジケーターで中クリック時に実行するオプションのコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.right&lt;/td>
+&lt;td>マイクステータスインジケーターで右クリック時に実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrollup&lt;/td>
+&lt;td>マイクステータスインジケーターで上方向にスクロール時に実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrolldn&lt;/td>
+&lt;td>マイクステータスインジケーターで下方向にスクロール時に実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>音量ステータスインジケーターで左クリック時に実行するオプションのコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>音量ステータスインジケーターで中クリック時に実行するオプションのコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>音量ステータスインジケーターで右クリック時に実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>音量ステータスインジケーターで下方向にスクロール時に実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>音量ステータスインジケーターで上方向にスクロール時に実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.disk-capacity&lt;/td>
+&lt;td>ディスク容量ステータスインジケーターで実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.cpu-usage&lt;/td>
+&lt;td>CPU使用率ステータスインジケーターで実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.memory&lt;/td>
+&lt;td>メモリステータスインジケーターで実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.wifi&lt;/td>
+&lt;td>WiFiステータスインジケーターで実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.weather&lt;/td>
+&lt;td>天気ステータスインジケーターで実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.left&lt;/td>
+&lt;td>メディアプレーヤーインジケーターを左クリック時に実行するオプションのコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.middle&lt;/td>
+&lt;td>メディアプレーヤーインジケーターを中クリック時に実行するオプションのコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.right&lt;/td>
+&lt;td>メディアプレーヤーインジケーターを右クリック時に実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.time&lt;/td>
+&lt;td>日時ステータスインジケーターで実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.battery&lt;/td>
+&lt;td>バッテリーステータスインジケーターで実行するオーバーライドコマンド&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>i3設定のカスタマイズ</title><link>https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/customize-i3-configuration/</guid><description>
+&lt;p>既定の設定は&lt;code>/usr/share/regolith/i3/config.d&lt;/code>に保存されています。これらはアルファベット順に読み込まれます。次に、&lt;code>~/.config/regolith3/i3/config.d&lt;/code>のユーザー設定がアルファベット順に読み込みまれます。Regolithの既定の設定は&lt;code>Xresources&lt;/code>値の設定や、ユーザー設定の追加や、&lt;code>apt&lt;/code>による既定の設定の追加・削除でカスタマイズできるように構築されています。これにより、Regolithではi3のカスタマイズ方法に、設定をクリーンにするため、個別に、もしくは組み合わせて使用できる複数のアプローチがあります。&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Xresources&lt;/code>によるキーバインド・文字列・プログラム名・色といった、オーバーライド値の使用&lt;/li>
+&lt;li>&lt;code>apt&lt;/code>によるRegolithの既定ファイルを追加や削除&lt;/li>
+&lt;li>独自の設定ファイルの追加&lt;/li>
+&lt;li>Regolithの設定の大規模の置き換え&lt;/li>
+&lt;/ul>
+&lt;h2>&lt;code>Xresources&lt;/code>変数を設定する方法&lt;span class="hx-absolute -hx-mt-20" id="xresources変数を設定する方法">&lt;/span>
+&lt;a href="#xresources%e5%a4%89%e6%95%b0%e3%82%92%e8%a8%ad%e5%ae%9a%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>次の設定例（&lt;code>/usr/share/regolith/i3/config.d/80_compositor&lt;/code>）より、&lt;code>$wm.program.compositor&lt;/code>を設定することで、既存のi3設定ファイルを編集したりオーバーライドすることなく、使用したいコンポジターを読み込むようにカスタマイズすることができます。&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolithバージョン3.0ではXresourceキーが&amp;quot;i3-wm&amp;quot;から&amp;quot;wm&amp;quot;に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を&amp;quot;wm&amp;quot;から&amp;quot;i3-wm&amp;quot;として使用してください。例として、Regolith 1.xと2.xでは&lt;code>wm.foo.bar&lt;/code>は&lt;code>i3-wm.foo.bar&lt;/code>に変更されます。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">/usr/share/regolith/i3/config.d/80_compositor&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">exec_always --no-startup-id $wm.program.compositor&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>これを行うには、&lt;code>~/.config/regolith3/Xresources&lt;/code>に以下の行を追加するだけでできます。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">~/.config/regolith3/Xresources&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># 自作のコンポジターを使用する&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.program.compositor&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/usr/local/bin/my-compositor&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>同様に、&lt;code>/usr/share/regolith/i3/config.d&lt;/code>のファイルを基にした&lt;code>Xresources&lt;/code>で他のオプションのオーバーライドをすることもできます。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">~/.config/regolith3/Xresources&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="c">## 間隔の設定&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.gaps.inner.size&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c">## 分割線の設定&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.window.border.size&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">3&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.client.focused.color.child_border&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#AAD3E9&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c">## ワークスペースの名前&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.workspace.01.name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="l">FOO&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>詳しくは、&lt;a href="https://regolith-desktop.com/ja/docs/howtos/override-xres/" >&lt;code>Xresources&lt;/code>に関するより詳細なディスカッション&lt;/a>を参照してください。&lt;/p>
+&lt;h2>既定の部分設定をアンインストールする方法&lt;span class="hx-absolute -hx-mt-20" id="既定の部分設定をアンインストールする方法">&lt;/span>
+&lt;a href="#%e6%97%a2%e5%ae%9a%e3%81%ae%e9%83%a8%e5%88%86%e8%a8%ad%e5%ae%9a%e3%82%92%e3%82%a2%e3%83%b3%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>提供された既定の部分設定を全体的に置き換えたり削除したい場合、提供された部分を&lt;code>apt&lt;/code>でパッケージとして削除することができます。&lt;/p>
+&lt;p>削除したい部分設定を提供するパッケージの名前を特定するには次のコマンドを実行します。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">dpkg -S /usr/share/doc/regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>出力結果にパッケージの名前が含まれている場合：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">regolith-i3-workspace-config&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">/usr/share/doc/regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>このパッケージで提供されるファイルの完全なリストを確認し、何を削除しようとしているのかわかっている場合：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">dpkg -L regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>部分設定を削除するには：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt remove regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>既定の部分設定をカスタマイズする方法&lt;span class="hx-absolute -hx-mt-20" id="既定の部分設定をカスタマイズする方法">&lt;/span>
+&lt;a href="#%e6%97%a2%e5%ae%9a%e3%81%ae%e9%83%a8%e5%88%86%e8%a8%ad%e5%ae%9a%e3%82%92%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolithの既定部分のみをカスタマイズする場合、&lt;code>~/.config/regolith3/i3/config&lt;/code>ファイルが存在&lt;strong>しない&lt;/strong>ことを確認してください。これはRegolithの既定をオーバーライドするため、このハウツーの内容と互換性がありません。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>初めに、ユーザーの部分設定のディレクトリが存在することを確認します。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir -p ~/.config/regolith3/i3/config.d&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>次に、既定の設定を独自の設定ディレクトリにコピーします。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/config.d/&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>希望に沿った変更を加えます。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vim ~/.config/regolith3/i3/config.d/40_workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>既定に含まれているパッケージをクリーンアップします。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt remove regolith-i3-workspace-config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>最後に、&lt;strong>i3を再起動するか、ログアウトしてから戻ります&lt;/strong>。&lt;/p>
+&lt;h2>Xresourcesオプションの範囲を超えてRegolithの既定を変更する方法&lt;span class="hx-absolute -hx-mt-20" id="xresourcesオプションの範囲を超えてregolithの既定を変更する方法">&lt;/span>
+&lt;a href="#xresources%e3%82%aa%e3%83%97%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%ae%e7%af%84%e5%9b%b2%e3%82%92%e8%b6%85%e3%81%88%e3%81%a6regolith%e3%81%ae%e6%97%a2%e5%ae%9a%e3%82%92%e5%a4%89%e6%9b%b4%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>上記の記事の内容以上の設定が必要な場合は、&lt;a href="https://regolith-desktop.com/ja/docs/howtos/stage-configs/" >設定ファイルのステージング&lt;/a>をご覧ください。&lt;/p>
+&lt;h2>Regolithの既定を完全に置き換える方法&lt;span class="hx-absolute -hx-mt-20" id="regolithの既定を完全に置き換える方法">&lt;/span>
+&lt;a href="#regolith%e3%81%ae%e6%97%a2%e5%ae%9a%e3%82%92%e5%ae%8c%e5%85%a8%e3%81%ab%e7%bd%ae%e3%81%8d%e6%8f%9b%e3%81%88%e3%82%8b%e6%96%b9%e6%b3%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolithの既定を保持したくない（例えば、あなたが完全な個人設定を使いたい経験豊富な&lt;code>i3&lt;/code>ユーザーである）場合、すべてのRegolithの部分設定をアンインストールしたり、独自のRoot設定を&lt;code>~/.config/regolith3/i3/config&lt;/code>に作成することができます。&lt;/p></description></item><item><title>Xresourcesのオーバーライド</title><link>https://regolith-desktop.com/ja/docs/howtos/override-xres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/override-xres/</guid><description>
+&lt;p>Regolithは、&lt;a href="https://en.wikipedia.org/wiki/X_resources" target="_blank" rel="noopener">Xresourcesシステム&lt;/a>に依存し、統合されたインターフェース設定を提供しています。&lt;code>Xresources&lt;/code>の値を変更することで、Regolithは、ユーザーインターフェイスの更新、カスタム動作の指定、バーの一部のblockletの特定の形式の定義などの方法でカスタマイズできます。&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolithでは、&lt;code>Xresources&lt;/code>の値は、独自の&lt;code>Xresources&lt;/code>ファイルを用意する方法か、既存の&lt;code>Xresources&lt;/code>の値をオーバーライドする方法の2つの方法で変更できます。後者のアプローチは、Regolithが新しいバージョンにアップグレードする際にカスタマイズを妨げる可能性を下げるため、強く推奨されます。&lt;code>Xresources&lt;/code>ツリーを完全にコピーする場合、将来のバージョンで破損した変更を手動で統合する必要があります。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>初期化&lt;span class="hx-absolute -hx-mt-20" id="初期化">&lt;/span>
+&lt;a href="#%e5%88%9d%e6%9c%9f%e5%8c%96" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolithセッションが開始されるとき、以下の順番でXresourcesが読み込まれます：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>ファイル&lt;/th>
+&lt;th>オプション&lt;/th>
+&lt;th>注意&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>~/.Xresources&lt;/code>&lt;/td>
+&lt;td>Y&lt;/td>
+&lt;td>Regolith以外の設定を対象にしています&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>/usr/share/regolith-look/**/&lt;/code>&lt;/td>
+&lt;td>N&lt;/td>
+&lt;td>Regolithの&lt;code>Xresources&lt;/code>は外観と関連付けられています&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>~/.config/regolith3/Xresources&lt;/code>&lt;/td>
+&lt;td>Y&lt;/td>
+&lt;td>特定のオーバーライドを&lt;code>Xresources&lt;/code>の既定に適用します&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>冗長設定の指定を必要とせず、長期にわたって管理しやすいため、カスタマイズには&lt;code>~/.config/regolith3/Xresources&lt;/code>を使用することを推奨します。&lt;/p>
+&lt;h2>変更可能な値の決定&lt;span class="hx-absolute -hx-mt-20" id="変更可能な値の決定">&lt;/span>
+&lt;a href="#%e5%a4%89%e6%9b%b4%e5%8f%af%e8%83%bd%e3%81%aa%e5%80%a4%e3%81%ae%e6%b1%ba%e5%ae%9a" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;code>xrdb&lt;/code>ツールは既存の&lt;code>Xresources&lt;/code>の値をリスト表示するときに使用することができます。Regolith 2.1リリースには、&lt;a href="https://regolith-desktop.com/ja/docs/reference/xresources/" >いくつか既存のオーバーライドが存在します&lt;/a>：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> xrdb -query
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">[...]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gnome.terminal.scrollbar: never
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gnome.terminal.use-transparent-background: true
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gtk.document_font_name: Sans 12
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gtk.font_name: Bitstream Vera Sans 12
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gtk.icon_theme_name: Papirus-Dark
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gtk.monospace_font_name: BitstreamVeraSansMono Nerd Font 13
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gtk.theme_name: Ayu-Mirage-Dark
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">wm.bar.background.color: #1F2430
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">[...]
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>参考例&lt;span class="hx-absolute -hx-mt-20" id="参考例">&lt;/span>
+&lt;a href="#%e5%8f%82%e8%80%83%e4%be%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>以下のコマンドはファイルの最後にテキストを付け加えるため、コマンドを複数回実行すると、重複した入力が発生することに注意してください。&lt;/p>
+&lt;h3>例 - UIを高DPI画面に更新する&lt;span class="hx-absolute -hx-mt-20" id="例---uiを高dpi画面に更新する">&lt;/span>
+&lt;a href="#%e4%be%8b---ui%e3%82%92%e9%ab%98dpi%e7%94%bb%e9%9d%a2%e3%81%ab%e6%9b%b4%e6%96%b0%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;code>~/.config/regolith3/Xresources&lt;/code>のオーバーライドファイルを使用する場合、変更したい値を指定するだけです。&lt;code>xrdb&lt;/code>ツールを使用して、現在の値を変更することもできます。&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>~/.config/regolith3/Xresources&lt;/code>ファイルに次の値を作成もしくは追加する：&lt;/li>
+&lt;/ol>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">~/.config/regolith3/Xresources&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">Xft.dpi&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">192&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;ol start="2">
+&lt;li>&lt;code>Xresources&lt;/code>設定を再読込する:&lt;/li>
+&lt;/ol>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;ol start="3">
+&lt;li>新規のターミナルを開き、変更が有効になっていることを確認する。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>192&lt;/code>は参考例の値であり、必要に応じて変更してください。&lt;/p>
+&lt;h3>例 - i3バーの位置を変更する&lt;span class="hx-absolute -hx-mt-20" id="例---i3バーの位置を変更する">&lt;/span>
+&lt;a href="#%e4%be%8b---i3%e3%83%90%e3%83%bc%e3%81%ae%e4%bd%8d%e7%bd%ae%e3%82%92%e5%a4%89%e6%9b%b4%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> xrdb -query &lt;span class="p">|&lt;/span> grep position
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">wm.bar.position: bottom
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">&lt;/span>&lt;span class="gp">$&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.bar.position: top&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>例 - GTKテーマを変更する&lt;span class="hx-absolute -hx-mt-20" id="例---gtkテーマを変更する">&lt;/span>
+&lt;a href="#%e4%be%8b---gtk%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e5%a4%89%e6%9b%b4%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> xrdb -query &lt;span class="p">|&lt;/span> grep gtk
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">gtk.theme_name: Ayu-Mirage-Dark
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">&lt;/span>&lt;span class="gp">$&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;gnome.gtk.theme: Adwaita&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>例 - システムトレイを無効にする&lt;span class="hx-absolute -hx-mt-20" id="例---システムトレイを無効にする">&lt;/span>
+&lt;a href="#%e4%be%8b---%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%83%88%e3%83%ac%e3%82%a4%e3%82%92%e7%84%a1%e5%8a%b9%e3%81%ab%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.bar.trayoutput: none&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>例 - AltキーをWinキーの代わりにSuperキーとして使用する&lt;span class="hx-absolute -hx-mt-20" id="例---altキーをwinキーの代わりにsuperキーとして使用する">&lt;/span>
+&lt;a href="#%e4%be%8b---alt%e3%82%ad%e3%83%bc%e3%82%92win%e3%82%ad%e3%83%bc%e3%81%ae%e4%bb%a3%e3%82%8f%e3%82%8a%e3%81%absuper%e3%82%ad%e3%83%bc%e3%81%a8%e3%81%97%e3%81%a6%e4%bd%bf%e7%94%a8%e3%81%99%e3%82%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.mod: Mod1&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;wm.alt: Mod4&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>次に、変更を有効にするため、i3を再読み込みします。i3が別のプロセスとして起動するものなど、一部の設定では、セッションに再ログインする必要があります。&lt;/p>
+&lt;h2>さらに深く読み込む&lt;span class="hx-absolute -hx-mt-20" id="さらに深く読み込む">&lt;/span>
+&lt;a href="#%e3%81%95%e3%82%89%e3%81%ab%e6%b7%b1%e3%81%8f%e8%aa%ad%e3%81%bf%e8%be%bc%e3%82%80" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolithの設定ファイルについて詳細については&lt;a href="https://regolith-desktop.com/ja/docs/reference/configurations/" >設定のリファレンスページ&lt;/a>を参照してください。&lt;/p></description></item><item><title>バーステータスインジケーターの変更</title><link>https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/add-remove-blocklets/</guid><description>
+&lt;h2>ステータスインジケーターの追加と削除&lt;span class="hx-absolute -hx-mt-20" id="ステータスインジケーターの追加と削除">&lt;/span>
+&lt;a href="#%e3%82%b9%e3%83%86%e3%83%bc%e3%82%bf%e3%82%b9%e3%82%a4%e3%83%b3%e3%82%b8%e3%82%b1%e3%83%bc%e3%82%bf%e3%83%bc%e3%81%ae%e8%bf%bd%e5%8a%a0%e3%81%a8%e5%89%8a%e9%99%a4" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>ステータスインジケーターの検索&lt;span class="hx-absolute -hx-mt-20" id="ステータスインジケーターの検索">&lt;/span>
+&lt;a href="#%e3%82%b9%e3%83%86%e3%83%bc%e3%82%bf%e3%82%b9%e3%82%a4%e3%83%b3%e3%82%b8%e3%82%b1%e3%83%bc%e3%82%bf%e3%83%bc%e3%81%ae%e6%a4%9c%e7%b4%a2" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt search i3xrocks-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>ステータスインジケーターのインストール&lt;span class="hx-absolute -hx-mt-20" id="ステータスインジケーターのインストール">&lt;/span>
+&lt;a href="#%e3%82%b9%e3%83%86%e3%83%bc%e3%82%bf%e3%82%b9%e3%82%a4%e3%83%b3%e3%82%b8%e3%82%b1%e3%83%bc%e3%82%bf%e3%83%bc%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install i3xrocks-memory
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>i3バーのカスタマイズ&lt;span class="hx-absolute -hx-mt-20" id="customize-bar">&lt;/span>
+&lt;a href="#customize-bar" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>バーにある各インジケーターはファイルで管理されます。バーのステータスインジケーターの位置に対応しています。例として、ファイル名が&lt;code>10_&lt;/code>で始まるものは、 &lt;code>20_&lt;/code>で始まる設定ファイルのインジケーターより前に配置されることを意味します。各ファイルの中には、&lt;code>i3xrocks&lt;/code>がスクリプトを実行するために使用する情報があり、最終的にバーに表示されるデータを返します。いくつかのステータスインジケーターは設定パラメーターが存在し、ユーザーの好みに合わせることができます。例えば、バッテリーの状態を頻繁に変更するのがよい場合、調べる間隔を更新することができます。バーをカスタマイズするために最初にするべきことは、表示したいインジケーターを&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>から&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>にコピーすることです。 &lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>内の各ファイルは好きなように変更できます。バーのステータスインジケーターを変更するには、ファイルの名前を好きな並び順に変更するだけです。&lt;/p>
+&lt;p>変更を加えたあとは、セッションを再読み込みすることで、新しい設定ファイルに基づいてバーが更新されるはずです。&lt;/p>
+&lt;p>例えば、バーにおけるバッテリーとトラフィックのブロックの変更と通知を非表示にしたいとき、以下の操作を行います。&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> ls /usr/share/i3xrocks/conf.d/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">01_setup
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">30_net-traffic
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">80_battery
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">80_rofication
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">90_time
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">&lt;/span>&lt;span class="gp">$&lt;/span> mkdir -p ~/.config/regolith3/i3xrocks/conf.d
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> cp /usr/share/i3xrocks/conf.d/01_setup ~/.config/regolith3/i3xrocks/conf.d/01_setup
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> cp /usr/share/i3xrocks/conf.d/80_battery ~/.config/regolith3/i3xrocks/conf.d/30_battery
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> cp /usr/share/i3xrocks/conf.d/30_net-traffic ~/.config/regolith3/i3xrocks/conf.d/80_net-traffic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> regolith-look refresh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>上記の操作では、以下の操作が実行されます。&lt;/p>
+&lt;ul>
+&lt;li>Regolithが作成したディレクトリに存在する現在の&lt;code>i3xrocks&lt;/code>モジュールが一覧表示されます&lt;/li>
+&lt;li>ユーザー設定が存在するディレクトリに&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>が作成されます&lt;/li>
+&lt;li>3つのファイルが、アプリケーションが作成したディレクトリからユーザーが作成したディレクトリにコピーされます。これにより、この記事の冒頭で説明したようにユーザーが&lt;code>n_&lt;/code>の番号を変更すると、順番が変更されます。&lt;/li>
+&lt;li>&lt;code>regolith-look refresh&lt;/code>コマンドで&lt;strong>バーステータスインジケーター&lt;/strong>の再読み込みが行われます&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>注意&lt;/strong>：ユーザーディレクトリの&lt;code>~/.config/regolith3/i3xrocks/conf.d&lt;/code>に複数のブロック設定が存在する場合、既定である&lt;code>/usr/share/i3xrocks/conf.d/&lt;/code>は無視されます。&lt;/p>
+&lt;h2>さらに深く読み込む&lt;span class="hx-absolute -hx-mt-20" id="さらに深く読み込む">&lt;/span>
+&lt;a href="#%e3%81%95%e3%82%89%e3%81%ab%e6%b7%b1%e3%81%8f%e8%aa%ad%e3%81%bf%e8%be%bc%e3%82%80" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;a href="https://regolith-desktop.com/ja/docs/reference/configurations/" >設定のリファレンスページ&lt;/a>には、Regolith Linuxを使うときの設定ファイルについての詳細な項目があります。&lt;/p></description></item><item><title>コンポジターのカスタマイズ</title><link>https://regolith-desktop.com/ja/docs/howtos/customize-compositor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/customize-compositor/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">異常な視覚的不具合やグラフィックパフォーマンスの低下を経験している場合は、
+このセクションに特に注意してください。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>コンポジターは、ウィンドウをスクリーンに表示するときに仮想エフェクトを適用するUIコンポーネントです。
+いくつかのデスクトップ環境ではコンポジターがウィンドウマネージャーに直接統合されており、
+仮想エフェクトを切り替えたり無効にすることができます。
+Regolithでは、コンポジターはパッケージングシステムで繋ぎ変え可能な“extension point”として定義されます。
+これは、コンポジターを含むパッケージをインストールすることでコンポジターを切り替えることができるということを意味します。
+基礎となるパッケージングシステムは競合が起きないことを確認し、
+コンポジターを含めたすべての依存関係が
+インストールされていることを確認してください。&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolith 2.xでは、既定のコンポジターは&amp;quot;コンポジターなし&amp;quot;です。
+Regolith 1.xでは、既定のコンポジターはPicomでした。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>利用可能なコンポジターを探す&lt;span class="hx-absolute -hx-mt-20" id="利用可能なコンポジターを探す">&lt;/span>
+&lt;a href="#%e5%88%a9%e7%94%a8%e5%8f%af%e8%83%bd%e3%81%aa%e3%82%b3%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%bf%e3%83%bc%e3%82%92%e6%8e%a2%e3%81%99" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolithで動作するすべてのコンポジター設定は、
+以下のコマンドで一覧表示されます：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt search regolith-compositor-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>以下の項目を見つけることができます：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>regolith-compositor-none&lt;/code> &lt;strong>[既定]&lt;/strong>：コンポジターなし。
+最高のパフォーマンス、仮想エフェクトなし。&lt;/li>
+&lt;li>&lt;code>regolith-compositor-picom-glx&lt;/code>：&lt;code>picom&lt;/code>を使用します。
+画面のつなぎ目の解決や仮想エフェクトの追加するとき、多くのユーザーに推奨されます。&lt;code>compton&lt;/code>からフォークされ、モダンで管理されています。
+Regolith 1.6の既定のコンポジターでした。&lt;/li>
+&lt;li>&lt;code>regolith-compositor-compton-glx&lt;/code>：既にメンテナンスされていない、
+&lt;code>picom&lt;/code>の祖先です。&lt;/li>
+&lt;li>&lt;code>regolith-compositor-xcompmgr&lt;/code>：初期のコンポジターで、より複雑なコンポジターに問題がある場合、
+より安定したパフォーマンスを提供する可能性があります。&lt;/li>
+&lt;/ul>
+&lt;h2>コンポジターのインストール&lt;span class="hx-absolute -hx-mt-20" id="コンポジターのインストール">&lt;/span>
+&lt;a href="#%e3%82%b3%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%bf%e3%83%bc%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">i3-wmでコンポジターを管理する方法により、&lt;strong>コンポジターの変更をエフェクトに適用するため、
+ログアウトしてから戻る必要があります&lt;/strong>。
+i3の再起動では代替できません。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>次のパッケージインストールコマンドを実行して、コンポジターを交換します。
+&lt;code>picom&lt;/code>をインストールする場合：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt install regolith-compositor-picom&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>一度ログアウトして戻ってから&lt;/strong>新しいコンポジターを読み込みます。
+プロセスのリストから&lt;code>picom&lt;/code>が動作していることを確認することができます：&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ps aux &lt;span class="p">|&lt;/span> grep picom&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Regolithの既定のコンポジター設定のオーバーライド&lt;span class="hx-absolute -hx-mt-20" id="regolithの既定のコンポジター設定のオーバーライド">&lt;/span>
+&lt;a href="#regolith%e3%81%ae%e6%97%a2%e5%ae%9a%e3%81%ae%e3%82%b3%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%bf%e3%83%bc%e8%a8%ad%e5%ae%9a%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%90%e3%83%bc%e3%83%a9%e3%82%a4%e3%83%89" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Compton/Picom&lt;span class="hx-absolute -hx-mt-20" id="comptonpicom">&lt;/span>
+&lt;a href="#comptonpicom" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>独自のCompton/Picomコンポジターの設定を提供するには、
+既定値をコピーするか独自に用意し、&lt;code>~/.config/regolith3/picom/config&lt;/code>に保存します。
+次のセッションでは、既定の設定である&lt;code>/etc/regolith/picom/config&lt;/code>の代わりに
+読み込まれます。&lt;/p></description></item><item><title>設定ファイルのステージ</title><link>https://regolith-desktop.com/ja/docs/howtos/stage-configs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/howtos/stage-configs/</guid><description>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;code>Xresources&lt;/code>値を上書きしたり新しく用意したいのみであれば、設定のステージングは不必要であり推奨されません。&lt;code>Xresources&lt;/code>値を上書きするには&lt;a href="https://regolith-desktop.com/ja/docs/howtos/override-xres/" target="_blank" rel="noopener">分割されたページ&lt;/a>をご覧ください。&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Regolithでは様々なコンポーネントの動作や外観を決定するためにいくつもの設定ファイルを使用します。それらのファイルを直接簡単に編集することができると、あらゆるユーザーが機能アップデートを上書きする危険性のある設定を実行するでしょう。Debianのパッケージングシステムはユーザーに対し、アップデートを受けるか現在のファイルを維持するのかを訪ねますが、ユーザーがファイルの部分更新を受ける場合には意図しない影響が存在するかもしれません。Regolithは、ログイン後、ユーザーがステージした設定ファイルを探し出し、それらが存在する場合は &lt;em>既定のファイルの代わりに読み込みます&lt;/em> 。これは、ユーザーがファイルの設定をより詳細に管理できるため、ファイルを直接編集することよりも推奨されます。このページでは、これらのファイルの作成方法について解説します。&lt;/p>
+&lt;p>変更したい内容によっては、i3設定ファイルの場合は独自のコピーが必要になる場合があります。Regolithの外観を変更する方法を探している場合、&lt;code>Xresources&lt;/code>ですべて解決できます。キーバインドの更新や追加、コンポーネントの入れ替えなどは、i3設定ファイルをステージする必要があるでしょう。&lt;/p>
+&lt;h2>i3設定&lt;span class="hx-absolute -hx-mt-20" id="i3設定">&lt;/span>
+&lt;a href="#i3%e8%a8%ad%e5%ae%9a" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ol>
+&lt;li>既定のRegolith i3設定ファイルをホームディレクトリにコピーする。&lt;/li>
+&lt;/ol>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir -p ~/.config/regolith3/i3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cp /etc/regolith/i3/config ~/.config/regolith3/i3/config&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;ol start="2">
+&lt;li>ログアウトして戻る。Regolithセッションがユーザーがステージしたファイルを自動で認識して読み込むでしょう。&lt;/li>
+&lt;/ol>
+&lt;h3>変更の確認&lt;span class="hx-absolute -hx-mt-20" id="変更の確認">&lt;/span>
+&lt;a href="#%e5%a4%89%e6%9b%b4%e3%81%ae%e7%a2%ba%e8%aa%8d" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>&lt;code>i3 --moreversion&lt;/code>を実行して確認し、結果として表示された設定ファイルに注視する。作成直後であればコピーすべきです。そうしない場合は、パスが正しいことを確認してください。正確であればRegolithが&lt;code>~/.config/regolith3/i3/config&lt;/code>を読み込みます。&lt;/li>
+&lt;/ol></description></item></channel></rss>

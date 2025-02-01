@@ -1,145 +1,1088 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Using Regolith on Regolith Desktop</title><link>https://regolith-desktop.com/docs/using-regolith/</link><description>Recent content in Using Regolith on Regolith Desktop</description><generator>Hugo</generator><language>en</language><atom:link href="https://regolith-desktop.com/docs/using-regolith/index.xml" rel="self" type="application/rss+xml"/><item><title>Install</title><link>https://regolith-desktop.com/docs/using-regolith/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/install/</guid><description>&lt;h1 id="get-regolith-32">
- Get Regolith 3.2
- &lt;a class="anchor" href="#get-regolith-32">#&lt;/a>
-&lt;/h1>
-&lt;p>If you&amp;rsquo;re upgrading from an earlier version of Regolith, you may be interested in reading &lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.2-release-notes">the release notes&lt;/a> and if coming from 2.x, the &lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide">migration guide&lt;/a>.&lt;/p>
-&lt;h2 id="supported-operating-systems">
- Supported Operating Systems
- &lt;a class="anchor" href="#supported-operating-systems">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="ubuntu">
- Ubuntu
- &lt;a class="anchor" href="#ubuntu">#&lt;/a>
-&lt;/h3>
-
-
-
-&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" />
- &lt;label for="tabs-0-0">Ubuntu 24.04&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;p>Regolith can be installed as system packages. This makes updating and removing easier and more consistent. The following steps describe how
-to configure your system to read packages from the Regolith package repository and install the desktop package.&lt;/p></description></item><item><title>First Launch</title><link>https://regolith-desktop.com/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/first-launch/</guid><description>&lt;h1 id="first-launch">
- First Launch
- &lt;a class="anchor" href="#first-launch">#&lt;/a>
-&lt;/h1>
-&lt;hr>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Using Regolith</title><link>https://regolith-desktop.com/docs/using-regolith/</link><description>Recent content in Using Regolith on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://regolith-desktop.com/docs/using-regolith/index.xml" rel="self" type="application/rss+xml"/><item><title>Install</title><link>https://regolith-desktop.com/docs/using-regolith/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/install/</guid><description>
+&lt;h2>Upgrading to 3.x&lt;span class="hx-absolute -hx-mt-20" id="upgrading-to-3x">&lt;/span>
+&lt;a href="#upgrading-to-3x" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>If you&amp;rsquo;re upgrading from an earlier version of Regolith, you may be interested in reading &lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.2-release-notes" >the release notes&lt;/a> and if coming from 2.x, the &lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide" >migration guide&lt;/a>.&lt;/p>
+&lt;h2>Supported Operating Systems&lt;span class="hx-absolute -hx-mt-20" id="supported-operating-systems">&lt;/span>
+&lt;a href="#supported-operating-systems" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Ubuntu&lt;span class="hx-absolute -hx-mt-20" id="ubuntu">&lt;/span>
+&lt;a href="#ubuntu" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-scrollbar hx-overflow-x-auto hx-overflow-y-hidden hx-overscroll-x-contain">
+&lt;div class="hx-mt-4 hx-flex hx-w-max hx-min-w-full hx-border-b hx-border-gray-200 hx-pb-px dark:hx-border-neutral-800">&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 data-[state=selected]:dark:hx-border-primary-500 data-[state=selected]:dark:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-0" aria-selected="true" tabindex="0" data-state="selected">Ubuntu 24.04&lt;/button>&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 data-[state=selected]:dark:hx-border-primary-500 data-[state=selected]:dark:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-1">Ubuntu 22.04&lt;/button>&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-0"
+role="tabpanel" tabindex="0" data-state="selected" >&lt;p>Regolith can be installed as system packages. This makes updating and removing easier and more consistent. The following steps describe how
+to configure your system to read packages from the Regolith package repository and install the desktop package.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Register the Regolith public key to your local &lt;code>apt&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>Add the repository URL to your local &lt;code>apt&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>Update &lt;code>apt&lt;/code> and install Regolith&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>System Restart&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Replace &lt;code>amd64&lt;/code> with &lt;code>arm64&lt;/code> in the two places in the above line to install on ARM-based systems.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-1"
+role="tabpanel">&lt;p>Regolith can be installed as system packages. This makes updating and removing easier and more consistent. The following steps (also available as a &lt;a href="https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt" >downloadable script&lt;/a>) describe how
+to configure your system to read packages from the Regolith package repository and install the desktop package.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Register the Regolith public key to your local &lt;code>apt&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>Add the repository URL to your local &lt;code>apt&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>Update &lt;code>apt&lt;/code> and install Regolith&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>System Restart&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Replace &lt;code>amd64&lt;/code> with &lt;code>arm64&lt;/code> in the two places in the above line to install on ARM-based systems.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3>Debian&lt;span class="hx-absolute -hx-mt-20" id="debian">&lt;/span>
+&lt;a href="#debian" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-scrollbar hx-overflow-x-auto hx-overflow-y-hidden hx-overscroll-x-contain">
+&lt;div class="hx-mt-4 hx-flex hx-w-max hx-min-w-full hx-border-b hx-border-gray-200 hx-pb-px dark:hx-border-neutral-800">&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 data-[state=selected]:dark:hx-border-primary-500 data-[state=selected]:dark:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-0" aria-selected="true" tabindex="0" data-state="selected">Debian Testing&lt;/button>&lt;button
+class="hextra-tabs-toggle data-[state=selected]:hx-border-primary-500 data-[state=selected]:hx-text-primary-600 data-[state=selected]:dark:hx-border-primary-500 data-[state=selected]:dark:hx-text-primary-600 hx-mr-2 hx-rounded-t hx-p-2 hx-font-medium hx-leading-5 hx-transition-colors -hx-mb-0.5 hx-select-none hx-border-b-2 hx-border-transparent hx-text-gray-600 hover:hx-border-gray-200 hover:hx-text-black dark:hx-text-gray-200 dark:hover:hx-border-neutral-800 dark:hover:hx-text-white"
+role="tab"
+type="button"
+aria-controls="tabs-panel-1">Debian Bookworm&lt;/button>&lt;/div>
+&lt;/div>
+&lt;div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-0"
+role="tabpanel" tabindex="0" data-state="selected" >&lt;p>For Debian users that use the &amp;ldquo;Testing&amp;rdquo; release, Regolith can be installed, however there is no &amp;ldquo;release&amp;rdquo; version due to the nature of Debian Testing. In order to install Regolith into a Debian Testing instance, the &lt;code>apt&lt;/code> line contains &lt;code>testing&lt;/code> instead of a &lt;code>release&lt;/code> string. For example:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/testing-debian-testing-amd64 testing main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Otherwise the installation steps are the same as an official Debian release. Note that broken dependencies or components will occur from time to time. If stability is important, consider installing into an officially released version of Debian or Ubuntu.&lt;/p>
+&lt;/div>
+&lt;div
+class="hextra-tabs-panel hx-rounded hx-pt-6 hx-hidden data-[state=selected]:hx-block"
+id="tabs-panel-1"
+role="tabpanel">&lt;p>Regolith can be installed as system packages. This makes updating and removing easier and more consistent. The following steps (also available as a &lt;a href="https://regolith-desktop.com/install-release-debian-12-amd64.txt" >downloadable script&lt;/a>) describe how
+to configure your system to read packages from the Regolith package repository and install the desktop package.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Register the Regolith public key to your local &lt;code>apt&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>Add the repository URL to your local &lt;code>apt&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>Update &lt;code>apt&lt;/code> and install Regolith&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>System Restart&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>The login manager will need to be restarted for the new desktop session to be recognized. The easiest way of restarting it is to reboot your system.&lt;/p>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Replace &lt;code>amd64&lt;/code> with &lt;code>arm64&lt;/code> in the two places in the above line to install on ARM-based systems.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">The &lt;code>regolith-desktop&lt;/code> package installs a reasonable minimal configuration that should work on most hardware. To add additional package for a richer and more functional environment read &lt;a href="https://regolith-desktop.com/docs/using-regolith/configuration/#recommended-packages-for-new-users" >Recommended Packages for New Users&lt;/a>.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">The &lt;code>regolith-compositor-picom-glx&lt;/code> compositor should work on most computers. If you experience driver or visual issues, &lt;a href="docs/howtos/customize-compositor" >try another compositor&lt;/a>.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>Packages Specified at Install Time&lt;span class="hx-absolute -hx-mt-20" id="packages-specified-at-install-time">&lt;/span>
+&lt;a href="#packages-specified-at-install-time" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Starting with Regolith 3.0 it is now possible to select from multiple sessions (X11: &lt;code>regolith-session-flashback&lt;/code>, Wayland: &lt;code>regolith-session-sway&lt;/code>). Due to this, when installing Regolith 3.2 also specify one or both sessions that you wish to use. Additionally, it&amp;rsquo;s now possible to specify the Regolith Look at install time, which saves a setup of having to configure it later. Here is the recommended base install for X11 on Debian-based systems:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ^-- base package ^-- session ^ -- look &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>For the session, you may chose one or both of: &lt;code>regolith-session-flashback&lt;/code> (X11), &lt;code>regolith-session-sway&lt;/code> (Wayland)&lt;/li>
+&lt;li>For the look, you may chose &lt;em>one&lt;/em> from any available look package:&lt;/li>
+&lt;/ul>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">regolith-look-ayu-dark
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-ayu-mirage
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-ayu
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-blackhole
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-default-loader
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-default
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-dracula
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-gruvbox
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-i3-default
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-lascaille
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-nevil
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-nord
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look-solarized-dark&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>An an example and alternative to the recommendation above, here is the &lt;code>apt&lt;/code> line to install the Sway session with the Nord Look:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install regolith-desktop regolith-session-sway regolith-look-nord&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Anatomy of the Regolith &lt;code>apt&lt;/code> URL Path&lt;span class="hx-absolute -hx-mt-20" id="anatomy-of-the-regolith-apt-url-path">&lt;/span>
+&lt;a href="#anatomy-of-the-regolith-apt-url-path" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">https://regolith-desktop.org/testing-debian-testing-amd64
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | * Architecture
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | * Distro Version/Codename
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | * Distro Name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * Regolith Stage&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Regolith Stages&lt;span class="hx-absolute -hx-mt-20" id="regolith-stages">&lt;/span>
+&lt;a href="#regolith-stages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Stage&lt;/th>
+&lt;th>URL String&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Experimental&lt;/td>
+&lt;td>&lt;code>experimental&lt;/code>&lt;/td>
+&lt;td>Stage for testing experiments&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Unstable&lt;/td>
+&lt;td>&lt;code>unstable&lt;/code>&lt;/td>
+&lt;td>Stage for early development testing&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Testing&lt;/td>
+&lt;td>&lt;code>testing&lt;/code>&lt;/td>
+&lt;td>Stage for late development testing&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Release X.Y&lt;/td>
+&lt;td>&lt;code>release-X_Y&lt;/code>&lt;/td>
+&lt;td>Stage for specific official release&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Current Release&lt;/td>
+&lt;td>&lt;code>release-current&lt;/code>&lt;/td>
+&lt;td>Stage for latest release (floating from release to release)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Distro Names&lt;span class="hx-absolute -hx-mt-20" id="distro-names">&lt;/span>
+&lt;a href="#distro-names" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>ubuntu&lt;/code>&lt;/td>
+&lt;td>The Ubuntu Linux Distribution&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>debian&lt;/code>&lt;/td>
+&lt;td>The Debian Linux Distribution&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Distro Version/Codename&lt;span class="hx-absolute -hx-mt-20" id="distro-versioncodename">&lt;/span>
+&lt;a href="#distro-versioncodename" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>These labels are determined by their respective upstream communities. Examples are &lt;code>noble&lt;/code>, &lt;code>bookworm&lt;/code>, &lt;code>focal&lt;/code>.&lt;/p>
+&lt;h3>Architecture&lt;span class="hx-absolute -hx-mt-20" id="architecture">&lt;/span>
+&lt;a href="#architecture" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>amd64&lt;/code>&lt;/td>
+&lt;td>The 64-bit x86 architecture&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>arm64&lt;/code>&lt;/td>
+&lt;td>The 64-bit Arm architecture&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Examples&lt;span class="hx-absolute -hx-mt-20" id="examples">&lt;/span>
+&lt;a href="#examples" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Description&lt;/th>
+&lt;th>URL&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>The 3.2 release of Regolith on Ubuntu Jammy for &lt;code>amd64&lt;/code>&lt;/td>
+&lt;td>&lt;code>https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The latest release of Regolith on Debian Bookworm for &lt;code>amd64&lt;/code>&lt;/td>
+&lt;td>&lt;code>https://regolith-desktop.org/release-current-debian-bookworm-amd64&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Testing repo for Regolith on Debian Testing for &lt;code>arm64&lt;/code>&lt;/td>
+&lt;td>&lt;code>https://regolith-desktop.org/testing-debian-testing-arm64&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>Release Change Policy&lt;span class="hx-absolute -hx-mt-20" id="release-change-policy">&lt;/span>
+&lt;a href="#release-change-policy" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>From Regolith 3.0 onward, all releases will use unique names in the package repo URL. This means that users will be in full control of when they wish to upgrade to a new release. Users wishing to have their package manager always install the latest version, a special stage called &lt;code>release-current&lt;/code> is provided.&lt;/p></description></item><item><title>First Launch</title><link>https://regolith-desktop.com/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/first-launch/</guid><description>
 &lt;p>Regolith&amp;rsquo;s default interface lacks any visual hint as to how to launch applications or perform other common tasks. This can make the first time experience a bit confusing. However using the Regolith interface is relatively simple by only committing the following two keybindings to memory:&lt;/p>
 &lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Action&lt;/th>
- &lt;th>Keybinding&lt;/th>
- &lt;th>Purpose&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>Keybinding Viewer&lt;/td>
- &lt;td>
-
-&lt;span class="text-nowrap">
- 
- &lt;span class="badge badge-warning">super&lt;/span>
- 
- &lt;span class="badge badge-warning">shift&lt;/span>
- 
- &lt;span class="badge badge-warning">?&lt;/span>
- 
-&lt;/span>
-&lt;/td>
- &lt;td>View and execute available keybindings&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>App Launcher&lt;/td>
- &lt;td>
-
-&lt;span class="text-nowrap">
- 
- &lt;span class="badge badge-warning">super&lt;/span>
- 
- &lt;span class="badge badge-warning">space&lt;/span>
- 
-&lt;/span>
-&lt;/td>
- &lt;td>Launch a desktop application&lt;/td>
- &lt;/tr>
- &lt;/tbody>
+&lt;thead>
+&lt;tr>
+&lt;th>Action&lt;/th>
+&lt;th>Keybinding&lt;/th>
+&lt;th>Purpose&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Keybinding Viewer&lt;/td>
+&lt;td>&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">?&lt;/span>&lt;/span>&lt;/td>
+&lt;td>View and execute available keybindings&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>App Launcher&lt;/td>
+&lt;td>&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span>&lt;/td>
+&lt;td>Launch a desktop application&lt;/td>
+&lt;/tr>
+&lt;/tbody>
 &lt;/table>
-&lt;h2 id="the-super-key">
- The Super Key
- &lt;a class="anchor" href="#the-super-key">#&lt;/a>
-&lt;/h2>
-&lt;p>Most keybindings you&amp;rsquo;ll be using with Regolith start with the 
-
-&lt;span class="text-nowrap">
- 
- &lt;span class="badge badge-warning">super&lt;/span>
- 
-&lt;/span>
- key. This key typically says &amp;ldquo;WIN&amp;rdquo; or has a MS Windows logo on it. On a Mac it is the Command 
-
-&lt;span class="text-nowrap">
- 
- &lt;span class="badge badge-warning">⌘&lt;/span>
- 
-&lt;/span>
- key. Going forward, this key will simply be referred to as 
-
-&lt;span class="text-nowrap">
- 
- &lt;span class="badge badge-warning">super&lt;/span>
- 
-&lt;/span>
- but keep in mind that you can change which physical button 
-
-&lt;span class="text-nowrap">
- 
- &lt;span class="badge badge-warning">super&lt;/span>
- 
-&lt;/span>
- maps to in your configuration if you choose to.&lt;/p></description></item><item><title>Basic Usage</title><link>https://regolith-desktop.com/docs/using-regolith/basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/basics/</guid><description>&lt;h1 id="usage">
- Usage
- &lt;a class="anchor" href="#usage">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="launch-an-application">
- Launch an Application
- &lt;a class="anchor" href="#launch-an-application">#&lt;/a>
-&lt;/h2>
-&lt;p>After the first login, the screen will contain a bar at the bottom and some keyboard shortcuts in a dialog. This dialog, &lt;a href="https://github.com/regolith-linux/ilia">&lt;code>ilia&lt;/code>&lt;/a>, provides assistance for finding keybindings for various actions in the desktop environment. It may be dismissed with the &lt;code>esc&lt;/code> key and invoked again with 
-
-&lt;span class="text-nowrap">
- 
- &lt;span class="badge badge-warning">super&lt;/span>
- 
- &lt;span class="badge badge-warning">shift&lt;/span>
- 
- &lt;span class="badge badge-warning">?&lt;/span>
- 
-&lt;/span>
-. To launch an application, press 
-
-&lt;span class="text-nowrap">
- 
- &lt;span class="badge badge-warning">super&lt;/span>
- 
- &lt;span class="badge badge-warning">space&lt;/span>
- 
-&lt;/span>
- and a similar dialog will load with the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only those that match. You can also scroll through the list with the arrow keys.&lt;/p></description></item><item><title>Configuration</title><link>https://regolith-desktop.com/docs/using-regolith/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/configuration/</guid><description>&lt;h1 id="recommended-packages-for-new-users">
- Recommended Packages for New Users
- &lt;a class="anchor" href="#recommended-packages-for-new-users">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="looks">
- Looks
- &lt;a class="anchor" href="#looks">#&lt;/a>
-&lt;/h2>
-&lt;p>Install all of the official Regolith looks:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>sudo apt install regolith-look-*
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Alternatively, &lt;code>apt&lt;/code> will list available looks that may be installed:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>apt list | grep regolith-look-
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>NOTE: this may pull in fonts, themes, and wallpapers. For users looking to minimize disk usage, uninstalling looks that are unused is recommended.&lt;/p>
+&lt;p>Entering one of these keybindings will cause a launcher dialog to pop up on the focused monitor. Both of these dialogs have the same general interface.&lt;/p>
+&lt;p>The interface, a program called &lt;a href="https://github.com/regolith-linux/ilia" target="_blank" rel="noopener">&lt;code>ilia&lt;/code>&lt;/a>, has a text entry widget at the top, followed by a list selection widget. The general usage pattern for these dialogs is to select an item from the displayed list. Begin typing to filter the selections, and use the arrow keys to make a selection. Pressing &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">enter&lt;/span>&lt;/span> will cause the selected item to be activated. For keybindings, this means a keybinding will be manually executed. For apps, the selected application will be launched.&lt;/p>
+&lt;h2>The Super Key&lt;span class="hx-absolute -hx-mt-20" id="the-super-key">&lt;/span>
+&lt;a href="#the-super-key" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Most keybindings you&amp;rsquo;ll be using with Regolith start with the &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span> key. This key typically says &amp;ldquo;WIN&amp;rdquo; or has a MS Windows logo on it. On a Mac it is the Command &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">⌘&lt;/span>&lt;/span> key. Going forward, this key will simply be referred to as &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span> but keep in mind that you can change which physical button &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span> maps to in your configuration if you choose to.&lt;/p>
+&lt;h2>Keybinding Viewer&lt;span class="hx-absolute -hx-mt-20" id="keybinding-viewer">&lt;/span>
+&lt;a href="#keybinding-viewer" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-keybinding-window.png" alt="" loading="lazy" />&lt;/p>
+&lt;p>The keybinding viewer&amp;rsquo;s purpose is to make finding and learning the Regolith keybindings quick and easy. A reference to the keybindings is available on this site, however it&amp;rsquo;s faster to simply bring up the dialog and search for the action you are looking for. Once found,
+the keybinding can be executed either with the keyboard or by selecting the item in the dialog.&lt;/p>
+&lt;h2>Application Launcher&lt;span class="hx-absolute -hx-mt-20" id="application-launcher">&lt;/span>
+&lt;a href="#application-launcher" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-apps-window.png" alt="" loading="lazy" />&lt;/p>
+&lt;p>A fundamental task of any desktop environment is to enable users to launch applications. In Regolith this is done via the app launcher dialog. As with keybindings, the dialog first shows a list of all available desktop applications. Begin typing to filter the selection and use the arrow keys to specify a specific selection. Press &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">enter&lt;/span>&lt;/span> to launch the selected application.&lt;/p>
+&lt;h2>Next Steps&lt;span class="hx-absolute -hx-mt-20" id="next-steps">&lt;/span>
+&lt;a href="#next-steps" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Have a look at the &lt;a href="../basics" >basics&lt;/a> page to learn more about the Regolith interface.&lt;/p></description></item><item><title>Basic Usage</title><link>https://regolith-desktop.com/docs/using-regolith/basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/basics/</guid><description>
+&lt;h2>Launch an Application&lt;span class="hx-absolute -hx-mt-20" id="launch-an-application">&lt;/span>
+&lt;a href="#launch-an-application" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>After the first login, the screen will contain a bar at the bottom and some keyboard shortcuts in a dialog. This dialog, &lt;a href="https://github.com/regolith-linux/ilia" target="_blank" rel="noopener">&lt;code>ilia&lt;/code>&lt;/a>, provides assistance for finding keybindings for various actions in the desktop environment. It may be dismissed with the &lt;code>esc&lt;/code> key and invoked again with &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">?&lt;/span>&lt;/span>. To launch an application, press &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span> and a similar dialog will load with the applications installed on the system. If you begin typing the name of the application you wish to launch, the list will filter down to only those that match. You can also scroll through the list with the arrow keys.&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-apps.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>Navigate to a Window&lt;span class="hx-absolute -hx-mt-20" id="navigate-to-a-window">&lt;/span>
+&lt;a href="#navigate-to-a-window" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>To focus on a running application, the &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">ctrl&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span> keybinding can be used to show a dialog of all running windows. Simply select the desired window and the system will move to the window&amp;rsquo;s containing workspace and set its focus.&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-windows.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>Create a new Workspace&lt;span class="hx-absolute -hx-mt-20" id="create-a-new-workspace">&lt;/span>
+&lt;a href="#create-a-new-workspace" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Workspaces (also known as &amp;ldquo;virtual desktops&amp;rdquo; in some desktop environments) are a primary way by which windows can be managed. Each workspace provides a screen for an independent set of windows. To create or navigate to an existing workspace, specify it&amp;rsquo;s index with keys &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">0-9&lt;/span>&lt;/span>.&lt;/p>
+&lt;h2>Find and Launch a File&lt;span class="hx-absolute -hx-mt-20" id="find-and-launch-a-file">&lt;/span>
+&lt;a href="#find-and-launch-a-file" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Searching your local computer for a specific file can be achieved in a variety of ways. Regolith provides a file search dialog via &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span> to quickly seek and optionally load a file with its default application. Pressing enter on a selection will cause the file to be invoked with the &lt;code>xdg-open&lt;/code> command.&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-files.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>Terminal&lt;span class="hx-absolute -hx-mt-20" id="terminal">&lt;/span>
+&lt;a href="#terminal" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The terminal is a special application that has its own keybinding, &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">enter&lt;/span>&lt;/span>.&lt;/p>
+&lt;h2>Browser&lt;span class="hx-absolute -hx-mt-20" id="browser">&lt;/span>
+&lt;a href="#browser" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The preferred browser is also special and can be launched with &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">enter&lt;/span>&lt;/span>.&lt;/p>
+&lt;h2>Quit an Application&lt;span class="hx-absolute -hx-mt-20" id="quit-an-application">&lt;/span>
+&lt;a href="#quit-an-application" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">q&lt;/span>&lt;/span> will quit the focused application. For misbehaving apps, &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">q&lt;/span>&lt;/span> will force quit (kill) the focused application, but note that any unsaved data may be lost.&lt;/p>
+&lt;h2>Switch Workspaces&lt;span class="hx-absolute -hx-mt-20" id="switch-workspaces">&lt;/span>
+&lt;a href="#switch-workspaces" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>A primary way of managing how applications occupy the screen is by the usage of workspaces. A workspace is in essence a group of zero or more applications that all present windows on the same virtual display. Users can switch workspaces to gain more space for applications to occupy. Windows can be moved across workspaces. Workspaces can be tied to physical display or be moved to other displays as needed. To switch workspaces, hold down the &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span> key and press one of the number keys. This will navigate to that workspace. If any windows exist in a given workspace, it will show in the bar as being active. Thus, by referring to the bar the user can know in which workspaces active applications live.&lt;/p>
+&lt;p>Workspaces can also be paged forward and backward via &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">tab&lt;/span>&lt;/span> and &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">tab&lt;/span>&lt;/span>.&lt;/p>
+&lt;h2>Configuring the System&lt;span class="hx-absolute -hx-mt-20" id="configuring-the-system">&lt;/span>
+&lt;a href="#configuring-the-system" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The Settings app (also known as &lt;code>regolith-control-center&lt;/code>) is the primary interface for common configuration tasks, such as configuring WiFi and Bluetooth, configuring app associations, and setting up users. The app can be launched via the &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">c&lt;/span>&lt;/span> keybinding or from the launcher via the &lt;code>Regolith Settings&lt;/code> app.&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-gnome-settings.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>View Keybindings&lt;span class="hx-absolute -hx-mt-20" id="view-keybindings">&lt;/span>
+&lt;a href="#view-keybindings" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>All keybindings used by the Regolith desktop can be viewed, sorted, and executed by &lt;a href="https://github.com/regolith-linux/ilia" target="_blank" rel="noopener">&lt;code>ilia&lt;/code>&lt;/a>. This dialog is launched with &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">shift&lt;/span>
+&lt;span class="badge badge-warning">?&lt;/span>&lt;/span>.&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-keybindings.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>Manage Notifications&lt;span class="hx-absolute -hx-mt-20" id="manage-notifications">&lt;/span>
+&lt;a href="#manage-notifications" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolith&amp;rsquo;s desktop notification system is designed to prevent pop-ups that may distract the user from their work. Notifications can be viewed and managed in &lt;a href="https://github.com/regolith-linux/ilia" target="_blank" rel="noopener">&lt;code>ilia&lt;/code>&lt;/a> via &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">n&lt;/span>&lt;/span>. Specific keybindings such as deleting one or groups of notifications may be found on the &lt;code>help&lt;/code> tab of the dialog. For users wishing for more visibility of current notifications, the status indicator &lt;code>i3xrocks-rofication&lt;/code> may be installed via the system package manager. This will show the number of critical and normal unread notifications on the bar.&lt;/p></description></item><item><title>Configuration</title><link>https://regolith-desktop.com/docs/using-regolith/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/using-regolith/configuration/</guid><description>
+&lt;h2>Recommended Packages for New Users&lt;span class="hx-absolute -hx-mt-20" id="recommended-packages-for-new-users">&lt;/span>
+&lt;a href="#recommended-packages-for-new-users" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Looks&lt;span class="hx-absolute -hx-mt-20" id="looks">&lt;/span>
+&lt;a href="#looks" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Install all of the official Regolith looks:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install regolith-look-*&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>Alternatively, &lt;code>apt&lt;/code> will list available looks that may be installed:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt list &lt;span class="p">|&lt;/span> grep regolith-look-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>NOTE: this may pull in fonts, themes, and wallpapers. For users looking to minimize disk usage, uninstalling looks that are unused is recommended.&lt;/p>
 &lt;p>See below for details on how to select a look.&lt;/p>
-&lt;h2 id="status-indicators">
- Status Indicators
- &lt;a class="anchor" href="#status-indicators">#&lt;/a>
-&lt;/h2>
-&lt;p>The following snippet installs status indicator packages recommended for new users:&lt;/p></description></item></channel></rss>
+&lt;h3>Status Indicators&lt;span class="hx-absolute -hx-mt-20" id="status-indicators">&lt;/span>
+&lt;a href="#status-indicators" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>The following snippet installs status indicator packages recommended for new users:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install i3xrocks-focused-window-name i3xrocks-rofication i3xrocks-info i3xrocks-app-launcher i3xrocks-memory&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>To remove any of these indicators later, simply uninstall them from your system. Example:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt remove i3xrocks-info&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h4>Laptop Battery Status&lt;span class="hx-absolute -hx-mt-20" id="laptop-battery-status">&lt;/span>
+&lt;a href="#laptop-battery-status" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>View the current battery status on a laptop:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install i3xrocks-battery&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Compositors&lt;span class="hx-absolute -hx-mt-20" id="compositors">&lt;/span>
+&lt;a href="#compositors" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Compositors add visual effects to the windowing environment. By default, Regolith 3 installs the &lt;code>picom&lt;/code> compositor. Users experiencing graphical issues due to specific hardware or driver limitations may want to install one of the following compositors instead:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Package&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>regolith-compositor-picom-glx&lt;/code>&lt;/td>
+&lt;td>Default&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>regolith-compositor-compton-glx&lt;/code>&lt;/td>
+&lt;td>An older compositor that may work better on some hardware&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>regolith-compositor-xcompmgr&lt;/code>&lt;/td>
+&lt;td>An older compositor that may work better on some hardware&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>regolith-compositor-none&lt;/code>&lt;/td>
+&lt;td>A pass-through package that does not run a compositor&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>See &lt;a href="https://regolith-desktop.com/docs/howtos/customize-compositor" >this How To&lt;/a> for more details.&lt;/p>
+&lt;h2>Wallpaper&lt;span class="hx-absolute -hx-mt-20" id="wallpaper">&lt;/span>
+&lt;a href="#wallpaper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Most Regolith Looks provide a default desktop color or image. The wallpaper can be set by specifying the path to the wallpaper image via the Xresources key &lt;code>regolith.wallpaper.file&lt;/code>.&lt;/p>
+&lt;p>Example, assuming the file &lt;code>/usr/share/backgrounds/hardy_wallpaper_uhd.png&lt;/code> is present:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>In the above command the property mentioned is set to the &lt;code>/usr/share/backgrounds/hardy_wallpaper_uhd.png&lt;/code> change this path to any other that needs to be used.&lt;/p>
+&lt;p>To change the image treatment (zoom, scale, etc.) of the wallpaper image, set &lt;code>regolith.wallpaper.options&lt;/code>. Options are: &lt;code>none&lt;/code>, &lt;code>wallpaper&lt;/code>, &lt;code>centered&lt;/code>, &lt;code>scaled&lt;/code>, &lt;code>stretched&lt;/code>, &lt;code>zoom&lt;/code>, &lt;code>spanned&lt;/code>&lt;/p>
+&lt;p>Example:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.options: zoom&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>To specify a color rather than an image use the Xresource key &lt;code>regolith.wallpaper.color.primary&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.file: &amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.primary: blue&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>To specify a secondary color and gradient:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.file: &amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.primary: blue&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.secondary: green&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.shading.type: vertical&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Lockscreen Wallpaper&lt;span class="hx-absolute -hx-mt-20" id="lockscreen-wallpaper">&lt;/span>
+&lt;a href="#lockscreen-wallpaper" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>The lockscreen wallpaper can be managed in the same way as the desktop wallpaper. The keys are the same as desktop wallpaper, but with &lt;code>lockscreen&lt;/code> prefixed to &lt;code>wallpaper&lt;/code>, like so: &lt;code>regolith.lockscreen.wallpaper...&lt;/code>. For example, to specify a lockscreen image:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">regolith-look refresh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>Disable Wallpaper handling&lt;span class="hx-absolute -hx-mt-20" id="disable-wallpaper-handling">&lt;/span>
+&lt;a href="#disable-wallpaper-handling" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>If you wish to manage wallpaper externally to Regolith, simply specify empty values for wallpaper image and color:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.file: &amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;regolith.wallpaper.color.primary: &amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith3/Xresources&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Status Bar Indicators&lt;span class="hx-absolute -hx-mt-20" id="status-bar-indicators">&lt;/span>
+&lt;a href="#status-bar-indicators" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages. For example, to show a status indicator for your laptop battery, simply run &lt;code>sudo apt install i3xrocks-battery&lt;/code> and then refresh the session using &lt;code>regolith-look refresh&lt;/code>. To find what indicators are available, run &lt;code>apt search ^i3xrocks-&lt;/code> or search for &lt;code>i3xrocks-&lt;/code> in your favorite package manager GUI, such as &lt;a href="https://help.ubuntu.com/community/SynapticHowto" target="_blank" rel="noopener">Synaptic&lt;/a>. There is &lt;a href="https://regolith-desktop.com/docs/howtos/add-remove-blocklets/" >more documentation available&lt;/a> for configuring status indicators, also called &amp;ldquo;blocklets&amp;rdquo;. Here is a table of status indicators as of Regolith 2.2:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Package&lt;/th>
+&lt;th>Status Function&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>i3xrocks-app-launcher&lt;/td>
+&lt;td>Shortcut to app launch dialog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-battery&lt;/td>
+&lt;td>Battery status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-bluetooth&lt;/td>
+&lt;td>Bluetooth status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-cpu-usage&lt;/td>
+&lt;td>CPU utilization&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-disk-capacity&lt;/td>
+&lt;td>Disk utilization&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-focused-window-name&lt;/td>
+&lt;td>Title of focused window&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-info&lt;/td>
+&lt;td>Shortcut to Keybindings viewer&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-key-indicator&lt;/td>
+&lt;td>Keyboard toggle status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-keyboard-layout&lt;/td>
+&lt;td>Keyboard layout&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-media-player&lt;/td>
+&lt;td>Media player status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-memory&lt;/td>
+&lt;td>Memory utilization&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-microphone&lt;/td>
+&lt;td>Microphone status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-net-traffic&lt;/td>
+&lt;td>Network status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-next-workspace&lt;/td>
+&lt;td>Shortcut to create new workspace&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-nm-vpn&lt;/td>
+&lt;td>VPN status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-openvpn&lt;/td>
+&lt;td>OpenVPN status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-rofication&lt;/td>
+&lt;td>Notification status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-tailscale&lt;/td>
+&lt;td>Tailscale status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-temp&lt;/td>
+&lt;td>System temperature&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-time&lt;/td>
+&lt;td>System time&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-updates&lt;/td>
+&lt;td>System package status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-volume&lt;/td>
+&lt;td>Audio volume status&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-weather&lt;/td>
+&lt;td>Local weather&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks-wifi&lt;/td>
+&lt;td>Name of connected wifi AP&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>Looks&lt;span class="hx-absolute -hx-mt-20" id="looks-1">&lt;/span>
+&lt;a href="#looks-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called &amp;ldquo;looks&amp;rdquo;. Looks provide a simple way of changing the entire look of the desktop. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format &lt;code>regolith-look-&amp;lt;name&amp;gt;&lt;/code>. &lt;code>apt&lt;/code> or a GUI package manager can be used to search for available looks. To select an installed look the keybinding &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">l&lt;/span>&lt;/span> presents a dialog:&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-ilia-look-selector.png" alt="" loading="lazy" />&lt;/p>
+&lt;p>Alternatively, the terminal command &lt;code>regolith-look&lt;/code> can be used to change looks and refresh the active session with the selected look. Here&amp;rsquo;s an example that switches to the &lt;code>gruvbox&lt;/code> look:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-console" data-lang="console">&lt;span class="line">&lt;span class="cl">&lt;span class="gp">$&lt;/span> apt search ^regolith-look-
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">[...]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">regolith-look-gruvbox/unknown,now 0.4.6-1regolith amd64
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">[...]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">&lt;/span>&lt;span class="gp">$&lt;/span> sudo apt install regolith-look-gruvbox
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">regolith-look set gruvbox
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="go">regolith-look refresh
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>To simply install all available looks:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt install regolith-look-*&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>i3 Features&lt;span class="hx-absolute -hx-mt-20" id="i3-features">&lt;/span>
+&lt;a href="#i3-features" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;a href="https://regolith-desktop.com/docs/reference/configurations/#history" >Starting with Regolith 2.0&lt;/a>, many aspects of i3 configuration are managed via the package manager. Regolith provides all of its i3 configuration via &amp;ldquo;config partials&amp;rdquo;. These packages install their i3 config partials into &lt;code>/usr/share/regolith/i3/config.d&lt;/code>. By installing and removing packages, i3 configuration can be customized for specific preferences. By default, when the &lt;code>regolith-desktop&lt;/code> package is installed, these configuration elements are also installed as soft dependencies:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Package&lt;/th>
+&lt;th>Function&lt;/th>
+&lt;th>File&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>regolith-i3-base-launchers&lt;/td>
+&lt;td>Launch terminal and browser&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/15_base_launchers&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-default-style&lt;/td>
+&lt;td>Window behavior&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_default-style&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-navigation&lt;/td>
+&lt;td>Navigation keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/30_navigation&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-networkmanager&lt;/td>
+&lt;td>Network and wifi functions&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/88_network-manager&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-next-workspace&lt;/td>
+&lt;td>Workspace utility&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_next-workspace&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-resize&lt;/td>
+&lt;td>Resize keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/50_resize-mode&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-session&lt;/td>
+&lt;td>Session keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/55_session_keybindings&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-unclutter&lt;/td>
+&lt;td>Hide mouse cursor when unused&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/86_unclutter&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-user-programs&lt;/td>
+&lt;td>Optionally launch user programs specified in Xresources&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/90_user-programs&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-workspace-config&lt;/td>
+&lt;td>Workspace keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_workspace-config&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Soft dependencies can be removed without causing packages that depend upon it to be removed. This means that any of the listed packages can be removed. Users can make tweaks to configuration in a more stable manner by replacing a default configuration partial with their own version. This can be achieved by copying the partial to be customized into &lt;code>~/.config/regolith3/i3/config.d/&lt;/code> and removing the original file in &lt;code>/usr/share/regolith/i3/config.d&lt;/code> via &lt;code>apt&lt;/code>. In this way, the unmodified config partials can continue to get updates and bug fixes without impacting user-specific configuration.&lt;/p>
+&lt;p>See the &lt;a href="https://regolith-desktop.com/docs/howtos/customize-i3-configuration/" >i3 configuration customization how-to&lt;/a> for examples.&lt;/p>
+&lt;h3>All i3 Configuration Packages&lt;span class="hx-absolute -hx-mt-20" id="all-i3-configuration-packages">&lt;/span>
+&lt;a href="#all-i3-configuration-packages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>The following contains a list of all i3 configuration packages available in Regolith 2.1:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Package&lt;/th>
+&lt;th>Function&lt;/th>
+&lt;th>File&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>regolith-wm-base-launchers&lt;/td>
+&lt;td>Launch terminal and browser&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/15_base_launchers&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-compositor&lt;/td>
+&lt;td>Compositor integration (delegates to &lt;code>regolith-compositor-&amp;lt;variant&amp;gt;&lt;/code>)&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/80_compositor&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-default-style&lt;/td>
+&lt;td>Window behavior&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_default-style&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-wm-ftue&lt;/td>
+&lt;td>First time user experience&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/84_ftue&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-gaps-partial&lt;/td>
+&lt;td>&lt;code>i3-gaps&lt;/code> configuration (if installed, i3-gaps will replace i3)&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/35_i3-gaps&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-gnome&lt;/td>
+&lt;td>Regolith Settings keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/60_config_keybindings&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-i3xrocks&lt;/td>
+&lt;td>i3 bar status indicators configuration&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/70_bar&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-ilia&lt;/td>
+&lt;td>&lt;code>ilia&lt;/code> integration&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/20_ilia&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-wm-navigation&lt;/td>
+&lt;td>Navigation keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/30_navigation&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-wm-networkmanager&lt;/td>
+&lt;td>Network and wifi functions&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/88_network-manager&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-next-workspace&lt;/td>
+&lt;td>Workspace utility&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_next-workspace&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-remontoire&lt;/td>
+&lt;td>Legacy keybindings view integration&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/45_remontoire&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-wm-resize&lt;/td>
+&lt;td>Resize keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/50_resize-mode&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-rofi&lt;/td>
+&lt;td>Legacy desktop launcher integration&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/20_rofi&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-rofication&lt;/td>
+&lt;td>Legacy notification viewer integration&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/82_rofication&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-wm-rofication-ilia&lt;/td>
+&lt;td>Notification viewer integration&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/82_rofication-ilia&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-session&lt;/td>
+&lt;td>Session keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/55_session_keybindings&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-snapshot&lt;/td>
+&lt;td>i3 workspace persistence&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/75_i3-snapshot&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-wm-swap-focus&lt;/td>
+&lt;td>Toggle back to last focused window&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_i3-swap-focus&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-unclutter&lt;/td>
+&lt;td>Hides mouse when not in use&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/86_unclutter&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-wm-user-programs&lt;/td>
+&lt;td>Optionally launch user programs specified in Xresources&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/90_user-programs&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-wm-workspace-config&lt;/td>
+&lt;td>Workspace keybindings&lt;/td>
+&lt;td>&lt;code>/usr/share/regolith/i3/config.d/40_workspace-config&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>Keybindings&lt;span class="hx-absolute -hx-mt-20" id="keybindings">&lt;/span>
+&lt;a href="#keybindings" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-rounded-lg hx-border hx-py-2 ltr:hx-pr-4 rtl:hx-pl-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200">
+&lt;div class="ltr:hx-pl-3 ltr:hx-pr-2 rtl:hx-pr-3 rtl:hx-pl-2">&lt;/div>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">Regolith version 3.0 onward replaces &amp;ldquo;i3-wm&amp;rdquo; with &amp;ldquo;wm&amp;rdquo; in Xresource keys. The content on this page has been updated for Regolith 3.0+. If you are using an earlier version, use &amp;ldquo;i3-wm&amp;rdquo; instead of &amp;ldquo;wm&amp;rdquo; in the key names below. For example &lt;code>wm.foo.bar&lt;/code> changes to &lt;code>i3-wm.foo.bar&lt;/code> for Regolith 1.x and 2.x.&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>The most common keybinding change is the &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span> key. Regolith uses &lt;code>Xresources&lt;/code> as the canonical source of truth for settings, which are read by various UI components. The table of &lt;code>Xresources&lt;/code> keys open to user configuration &lt;a href="https://regolith-desktop.com/docs/reference/xresources/" >is available elsewhere&lt;/a>. To change the default &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>&lt;/span> binding from the &amp;ldquo;windows&amp;rdquo; key to &amp;ldquo;alt&amp;rdquo;, add the following line to the file &lt;code>~/.config/regolith3/Xresources&lt;/code>:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">~/.config/regolith3/Xresources&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">wm.mod&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Mod1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">wm.alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Mod4&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>Note&lt;/strong>: GNOME also has its own set of keybindings. When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings. GNOME keybindings can be managed in the Regolith Settings app.&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-gnome-keybindings.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>System Management&lt;span class="hx-absolute -hx-mt-20" id="system-management">&lt;/span>
+&lt;a href="#system-management" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The &lt;code>regolith-control-center&lt;/code> app is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">space&lt;/span>&lt;/span>, type &lt;code>settings&lt;/code>, and hit enter to launch the app. The direct keybinding is &lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">c&lt;/span>&lt;/span>. The application may also be launched from a terminal with command &lt;code>regolith-control-center&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="https://regolith-desktop.com/images/v-tour/regolith-settings-about.png" alt="" loading="lazy" />&lt;/p>
+&lt;h2>Further Reading&lt;span class="hx-absolute -hx-mt-20" id="further-reading">&lt;/span>
+&lt;a href="#further-reading" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>To dig deeper, find which &lt;a href="https://regolith-desktop.com/docs/howtos/" >Howtos&lt;/a> are available, or read the &lt;a href="https://regolith-desktop.com/docs/reference/xresources/" >Xresources reference&lt;/a>. Become an i3 power user by reading their &lt;a href="https://i3wm.org/docs/userguide.html" target="_blank" rel="noopener">user guide&lt;/a>.&lt;/p>
+&lt;p>If you need more advanced configuration than Xresources provides, using i3&amp;rsquo;s configuration find how to here &lt;a href="https://regolith-desktop.com/docs/howtos/stage-configs/" >Staging Config Files&lt;/a>&lt;/p></description></item></channel></rss>
