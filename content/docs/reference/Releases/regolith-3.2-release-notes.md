@@ -1,23 +1,24 @@
 ---
 title: "3.2 Release Notes"
 linkTitle: "3.2 Release Notes"
-weight: 1
+weight: 85
 description: >
   Release notes for Regolith 3.2
+prev: /docs/reference/releases
 ---
 
 ## Regolith 3.2 Release Notes
 
 Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system overhaul, and bug fixes.
 
-### Features
+## Features
 
 * Ubuntu 24.04 (Noble) support
 * `regolith-control-center` rebased from GNOME 46 (for supported releases)
 * Sway session promoted from `beta` to `stable` status
 * Overhaul of X11 and Wayland session initialization
 
-### Deprecations
+## Deprecations
 
 * Deprecating support for the following OS releases:
     * Ubuntu 20.04 (Focal)
@@ -26,7 +27,7 @@ Regolith 3.2 is a minor release focusing on Ubuntu 24.04 support, init system ov
 * `regolith-control-center` has *not* been ported to GNOME 47 and so users on Ubuntu 24.10 will need to use `gnome-control-center` instead.
 
 
-### Installation Instructions
+## Installation Instructions
 
 For those using the `release-3_1` `apt` URL, update it to `release-3_2` and update your packages with `apt update` or similiar.  
 
@@ -34,23 +35,23 @@ For those using the "rolling" release label `release-current`, no change is nece
 
 After `apt upgrade` is complete, verify that Regolith 3.2 is installed by:
 
-```shell
+```console
 $ cat /etc/regolith/version 
 REGOLITH_VERSION=3.2
 ```
 
 Note: A reboot is required for the new version to load.
 
-### Changes since Regolith 3.1
+## Changes since Regolith 3.1
 
-#### Changes in `sway-audio-idle-inhibit`
+### Changes in `sway-audio-idle-inhibit`
 
 ```
 2011f38 Merge branch 'upstream_main' into sync_upstream
 a5b9689 fix: depend on sway instead of libwlroots11
 ```
 
-#### Changes in `ilia`:
+### Changes in `ilia`:
 
 ```
 b658923 chore: add layer_shell supported check
@@ -59,7 +60,7 @@ b658923 chore: add layer_shell supported check
 353aff8 feat: launch apps and commands using systemd-run
 ```
 
-#### Changes in `picom`:
+### Changes in `picom`:
 
 ```
 a959acc fix: update patch to enable config file
@@ -70,7 +71,7 @@ df06cae fix: add missing dep
 d0ebbe8 chore: copy debian packging from v9 branch, add changelog entry
 ```
 
-#### Changes in `regolith-displayd`:
+### Changes in `regolith-displayd`:
 
 ```
 8c70872 chore: start daemon using systemd instead of regolith-displayd-init
@@ -78,20 +79,20 @@ f804063 fix: regolith-displayd first time startup failure via systemd
 d72589e chore: let systemd manage regolith-displayd
 ```
 
-#### Changes in `regolith-lightdm-config`:
+### Changes in `regolith-lightdm-config`:
 
 ```
 729dd65 fix: default session. feat: new wallpapper
 ```
 
 
-#### Changes in `regolith-look-extra`:
+### Changes in `regolith-look-extra`:
 
 ```
 8ea5655 blackhole: Fix wallpaper.color.primary to use defined black
 ```
 
-#### Changes in `regolith-powerd`:
+### Changes in `regolith-powerd`:
 
 ```
 11684f8 chore: update Cargo.toml to match debian
@@ -101,14 +102,14 @@ c2bb7c3 chore: increase sleep time to account for loading of background image
 b8f57f2 fix: use correct lock screen program when idling
 ```
 
-#### Changes in `regolith-sway-touchpad-gestures`:
+### Changes in `regolith-sway-touchpad-gestures`:
 
 ```
 e84d769 fix: require deprecated package to be removed before replacing
 fcfabb1 chore: extract gesture partial to seperate source package for selective install based on target os due to compat issues on jammy
 ```
 
-#### Changes in `regolith-wm-config`:
+### Changes in `regolith-wm-config`:
 
 ```
 1bdd1c4 fix: pull window binding definition out of partial, into root config, to prevent decl ordering issues
@@ -130,13 +131,13 @@ b1f83c7 feat: use systemd-run for terminal and browser
 3cf993c fix: add essential packages to recommends
 ```
 
-#### Changes in `trawl`:
+### Changes in `trawl`:
 
 ```
 6503886 feat: use absolute versioning for dependencies
 ```
 
-#### Changes in `regolith-wm-config`
+### Changes in `regolith-wm-config`
 
 ```git
 56a6e8d fix: use systemd to init xdg-desktop-portal
@@ -149,46 +150,46 @@ e81a80a feat: add package for running mate polkit under xwayland
 a0e3c3c fix: mate polkit binary location is distribution dependant
 ```
 
-#### Changes in `regolith-desktop`
+### Changes in `regolith-desktop`
 
 ```git
 5ce67ee chore: version bump to 3.2
 ```
 
-#### Changes in `i3status-rs`
+### Changes in `i3status-rs`
 
 ```git
 db13009 fix: disable battery to avoid global error on bar on targets without batteries on Ubuntu 22.04
 ```
 
-#### Changes in `xdg-desktop-portal-regolith`
+### Changes in `xdg-desktop-portal-regolith`
 
 ```git
 08cd870 fix: explicitly assign problematic portal interfaces (that fallback to GNOME) to regolith portal
 ```
 
-#### Changes in `regolith-displayd`
+### Changes in `regolith-displayd`
 
 ```git
 b89ac56 amend version based on recent change
 bd474a5 fix: use systemd to synchronize startup for displayd and kanshi (#5)
 ```
 
-#### Changes in `regolith-inputd`
+### Changes in `regolith-inputd`
 
 ```git
 34cb76c feat: add systemd service
 8bbbee3 fix: rename var delay -> sources
 ```
 
-#### Changes in `regolith-powerd`
+### Changes in `regolith-powerd`
 
 ```git
 05afc0a feat: prevent logind actions for power key and lid
 4f57160 feat: add systemd service
 ```
 
-#### Changes in `regolith-session`
+### Changes in `regolith-session`
 
 ```git
 1f59e3e fix: add bookworm to legacy path
@@ -198,7 +199,7 @@ c79e188 feat: migrate sessions to systemd
 ab43221 chore: rename sway bin based on changes in sway-regolith package
 ```
 
-#### Changes in `regolith-wm-config`
+### Changes in `regolith-wm-config`
 
 ```git
 25c83a2 fix: add exec flag to fix spinner mouse cursor not present upon desktop load on x11
@@ -211,7 +212,7 @@ ba7841a chore: add packages for dbus-activation configs to Depends to ensure the
 5bc7cea fix: import XDG_CURRENT_DESKTOP into systemd_environment to ensure correct portal config is selected
 ```
 
-#### Changes in `sway-regolith`
+### Changes in `sway-regolith`
 
 ```git
 5ef388bf fix: remove desktop session file

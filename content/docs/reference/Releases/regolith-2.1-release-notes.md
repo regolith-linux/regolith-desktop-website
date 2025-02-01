@@ -1,7 +1,7 @@
 ---
 title: "2.1 Release Notes"
 linkTitle: "2.1 Release Notes"
-weight: 5
+weight: 89
 description: >
   Release notes for Regolith 2.1
 ---

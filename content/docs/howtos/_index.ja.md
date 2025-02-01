@@ -1,19 +1,20 @@
 ---
 title: "ハウツー"
 linkTitle: "ハウツー"
-bookCollapseSection: true
 weight: 5
-date: 2017-01-04
 description: >
   Regolith Linuxがどのようにカスタマイズできるかのサンプル
+prev: /docs/using-regolith/configuration
+next: /docs/howtos/workspace-on-output
 ---
-{{< hint danger >}}
-注意：このページは[Regolith 1.xのWebサイト](https://regolith-linux.org)からコピーされたもので、Regolith 2のものに更新されていません。古い情報が含まれている可能性があります。
-{{< /hint >}}
 
-{{< hint info >}}
+{{< callout type="error" >}}
+このページは[Regolith 1.xのWebサイト](https://regolith-linux.org)からコピーされたもので、Regolith 2のものに更新されていません。古い情報が含まれている可能性があります。
+{{< /callout >}}
+
+{{< callout type="info" >}}
 他の例やチュートリアルは[GitHubのregolith-desktop wiki](https://github.com/search?q=org%3Aregolith-linux&type=Wikis&in:HowTo)から利用することができます。
-{{< /hint >}}
+{{< /callout >}}
 
 ## ターミナルを使用する
 

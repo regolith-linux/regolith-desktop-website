@@ -6,9 +6,11 @@ description: >
   Regolithにおけるすべての`Xresources`キーの定義
 ---
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換えられます。このページの内容はRegolith 3.0以降のものに更新されています。それ以前のバージョンを使用する場合は、キーの名前を"wm"から"i3-wm"として使用してください。例として、Regolith 1.xと2.xでは`wm.foo.bar`は`i3-wm.foo.bar`に変更されます。
-{{< /hint >}}
+{{< /callout >}}
+
+## Main `Xresources` keys
 
 | `Xresources`キー                                   | 概要                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------- |
@@ -112,7 +114,7 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 | i3xrocks.value.font                                | バーモジュールにおける数値のフォント                                                                              |
 | i3xrocks.warning                                   | バーモジュールの警告色                                                                                        |
 
-# オプションの`Xresources`キー
+## オプションの`Xresources`キー
 
 次の`Xresources`キーは既定では未定義ですが、ユーザーは必要に応じて動作を変更するために使用できます。
 

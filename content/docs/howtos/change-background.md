@@ -5,13 +5,13 @@ description: >
     Change the background
 ---
 
-# Wallpaper
+## Wallpaper
 
 Most Regolith Looks provide a default desktop color or image. The wallpaper can be set by specifying the path to the wallpaper image via the Xresources key `regolith.wallpaper.file` or in the Regolith Control Center which can be opened by running `regolith-control-center` in the terminal.
 
 Example, assuming the file `/usr/share/backgrounds/hardy_wallpaper_uhd.png` is present:
 
-```console
+```bash
 echo "regolith.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
@@ -22,14 +22,14 @@ To change the image treatment (zoom, scale, etc.) of the wallpaper image, set `r
 
 Example:
 
-```console
+```bash
 echo "regolith.wallpaper.options: zoom" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
 To specify a color rather than an image use the Xresource key `regolith.wallpaper.color.primary`:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 regolith-look refresh
@@ -37,7 +37,7 @@ regolith-look refresh
 
 To specify a secondary color and gradient:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: blue" >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.secondary: green" >> ~/.config/regolith3/Xresources
@@ -45,20 +45,20 @@ echo "regolith.wallpaper.color.shading.type: vertical" >> ~/.config/regolith3/Xr
 regolith-look refresh
 ```
 
-## Lockscreen Wallpaper
+### Lockscreen Wallpaper
 
 The lockscreen wallpaper can be managed in the same way as the desktop wallpaper. The keys are the same as desktop wallpaper, but with `lockscreen` prefixed to `wallpaper`, like so: `regolith.lockscreen.wallpaper...`. For example, to specify a lockscreen image:
 
-```console
+```bash
 echo "regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/hardy_wallpaper_uhd.png" >> ~/.config/regolith3/Xresources
 regolith-look refresh
 ```
 
-## Disable Wallpaper handling
+### Disable Wallpaper handling
 
 If you wish to manage wallpaper externally to Regolith, simply specify empty values for wallpaper image and color:
 
-```console
+```bash
 echo "regolith.wallpaper.file: " >> ~/.config/regolith3/Xresources
 echo "regolith.wallpaper.color.primary: " >> ~/.config/regolith3/Xresources
 ```

@@ -1,118 +1,166 @@
 ---
-title: Introduction
-type: docs
-bookToc: false
+title: "Regolith Desktop Environment"
+layout: "hextra-home"
 ---
 
-# The Regolith Desktop Environment
+{{< hextra/hero-container
+  image="/images/v-tour/regolith-empty.png"
+  imageTitle="Regolith Desktop Environment"
+  imageWidth="853"
+>}}
+{{< hextra/hero-badge link="/docs/reference/releases/regolith-3.2-release-notes" >}}
+  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
+  <span>Latest version: v3.2</span>
+  {{< icon name="arrow-circle-right" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
 
-![](/regolith-empty.png)
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-headline >}}
+  Regolith Desktop Environment
+{{< /hextra/hero-headline >}}
+</div>
 
-{{< columns >}}
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-subtitle >}}
+  Productivity focused Ubuntu derivative and desktop environment
+{{< /hextra/hero-subtitle >}}
+</div>
 
-### Productivity First
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-button text="Get Started" link="docs/" >}}
+{{< hextra/hero-badge style="padding: 13px 12px !important; font-size: .875rem !important;" link="https://opencollective.com/regolith/donate" >}}
+  <span>Support Regolith <img class="not-prose" style="display: inline; height: 22px;" src='https://badgen.net/opencollective/backers/regolith'/></span>
+  {{< icon name="arrow-circle-right" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
+</div>
+{{< /hextra/hero-container >}}
 
-Regolith runs [i3](https://i3wm.org/) and [Sway](https://swaywm.org/): popular, fast, and configurable tiling window managers that are great for productive, keyboard-driven workflows.  Regolith integrates i3 and Sway with other desktop components such as 
-`i3bar`, `rofication`, `i3status-rs`, and [`ilia`](https://github.com/regolith-linux/ilia#readme) to provide a complete desktop experience.
+<div class="hx-mt-6"></div>
+<div class="hx-mt-6"></div>
+<div class="hx-mt-6"></div>
 
-<--->
+{{< hextra/feature-grid cols="2" >}}
+  {{< hextra/feature-card
+    title="Productivity First"
+    subtitle="Regolith runs i3 and Sway: popular, fast, and configurable tiling window managers that are great for productive, keyboard-driven workflows. Regolith integrates i3 and Sway with other desktop components such as `i3bar`, `rofication`, `i3status-rs`, and `ilia` to provide a complete desktop experience."
+  >}}
 
-### GNOME System Management
+  {{< hextra/feature-card
+    title="GNOME System Management"
+    subtitle="By integrating light-weight window managers with `gnome-session`, Regolith sidesteps much of the complexity of a typical `gnome-shell` based environment while providing simple and consistent system management capabilities."
+  >}}
+{{< /hextra/feature-grid >}}
 
-By integrating light-weight window managers with `gnome-session`, Regolith sidesteps
-much of the complexity of a typical `gnome-shell` based environment while providing
-simple and consistent system management capabilities.
+<div class="hx-mt-6"></div>
 
-{{< /columns >}}
+{{< hextra/feature-grid cols="1" >}}
+  {{< hextra/feature-card
+    title="Install Regolith"
+    link="/docs/using-regolith/install/"
+    subtitle="Follow Regolith Desktop Installation instructions <span class=\"regolith-links\">here</span>."
+  >}}
+{{< /hextra/feature-grid >}}
 
-***
+<div class="hx-mt-6 hx-mb-6"></div>
+<div class="hx-mt-6 hx-mb-6"></div>
+{{< hextra/hero-section >}}
+  Virtual Tour
+{{< /hextra/hero-section >}}
 
-## Install Regolith
+{{< columns cols="2" >}}
+  {{< column
+      title="First Login"
+      border="true"
+      image="/images/v-tour/regolith-ilia-keybindings.png"
+  >}}
+    Upon first login, an overlay (toggled anytime via {{< keys "super,?" >}})
+    presents the most important keybindings used with i3-wm.
+  {{< /column >}}
 
-[Regolith Desktop 3.1 Installation instructions](/docs/using-regolith/install)
+  {{< column
+      title="Terminal"
+      border="true"
+      image="/images/v-tour/regolith-floating-terminal.png"
+  >}}
+    For those that work in the terminal, pressing {{< keys "super,enter" >}}
+    is all it takes to get to business.
+  {{< /column >}}
 
-## Visual Tour
-***
+  {{< column
+      title="App Launcher"
+      border="true"
+      image="/images/v-tour/regolith-ilia-apps.png"
+  >}}
+    A single global app launcher is instantly available from anywhere to run
+    your programs via {{< keys "super,space" >}}.
+  {{< /column >}}
 
-{{< columns >}}
+  {{< column
+      title="Manage Layout"
+      border="true"
+      image="/images/v-tour/regolith-desktop-terminals.png"
+  >}}
+    Need more terminals? Create layouts on the fly by toggling between horizontal
+    and vertical modes with {{< keys "super,backspace" >}}, followed by
+    {{< keys "super,enter" >}}. Navigate to windows positionally with
+    {{< keys "super,h,j,k,l" >}}.
+  {{< /column >}}
 
-[![](/regolith-ilia-keybindings.png)](/regolith-ilia-keybindings.png)
-Upon first login, an overlay (toggled anytime via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>) presents the most important keybindings used with i3-wm.
+  {{< column
+    title="Floating Window"
+    border="true"
+    image="/images/v-tour/regolith-floating-windows.png"
+  >}}
+    Toggle floating window mode with {{< keys "super,f" >}}. Resize windows with
+    {{< keys "super,r" >}} and move them around with the mouse by pressing
+    {{< keys "super" >}}.
+  {{< /column >}}
 
-<--->
+  {{< column
+      title="Gnome System Managament"
+      border="true"
+      image="/images/v-tour/regolith-gnome-flashback.png"
+  >}}
+    Gnome Flashback provides consistent and simple system management. Tweak your
+    UI, auto mount your USB drives, connect to wireless networks. Launch the
+    control panel with {{< keys "super,c" >}}.
+  {{< /column >}}
 
-[![](/regolith-floating-terminal.png)](/regolith-floating-terminal.png)
-For those that work in the terminal, pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> is all it takes to get to business.
+  {{< column
+      title="Regolith Look"
+      border="true"
+      image="/images/v-tour/regolith-screenshot-look-selector.png"
+  >}}
+    Easily switch to <a href="https://ethanschoonover.com/solarized" class="regolith-links">Solarized</a>
+    or other looks with the <code>regolith-look</code> command. Because **looks**
+    utilize the package manager, you only store theme resources that you're using.
+  {{< /column >}}
 
-{{< /columns >}}
+  {{< column
+      title="Find and Navigate"
+      border="true"
+      image="/images/v-tour/regolith-ilia-windows.png"
+  >}}
+    Got a lot going on? Quickly find the window you're looking for via
+    {{< keys "super,ctrl,space" >}} or navigate over workspaces with
+    {{< keys "super,[0 - 19]" >}}.
+  {{< /column >}}
 
-{{< columns >}}
+  {{< column
+      title="Manage Gaps"
+      border="true"
+      image="/images/v-tour/regolith-many-windows.png"
+  >}}
+    Waste no space on frivolous UI and take advantage of every pixel without
+    micro-managing your window layouts.
+  {{< /column >}}
 
-[![](/regolith-ilia-apps.png)](/regolith-ilia-apps.png)
-A single global app launcher is instantly available from anywhere to run your programs via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p>
-
-<--->
-
-[![](/regolith-desktop-terminals.png)](/regolith-desktop-terminals.png)
-Need more terminals?  Create layouts on the fly by toggling between horizontal and vertical modes with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> followed by <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.  Navigate to windows positionally with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>.
-
-{{< /columns >}}
-
-{{< columns >}}
-
-[![](/regolith-floating-windows.png)](/regolith-floating-windows.png)
-Toggle floating window mode with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>.  Resize windows with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span> and move them around with the mouse by pressing <span class="badge badge-warning">super</span>.
-
-<--->
-
-[![](/regolith-gnome-flashback.png)](/regolith-gnome-flashback.png)
-Gnome Flashback provides consistent and simple system management. Tweak your UI, auto mount your USB drives, connect to wireless networks. Launch the control panel with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.
-
-{{< /columns >}}
-
-{{< columns >}}
-
-[![](/regolith-screenshot-look-selector.png)](/regolith-screenshot-look-selector.png)
-Easily switch to <a href="https://ethanschoonover.com/solarized">Solarized</a> or other looks with the <code>regolith-look</code> command. Because <b>looks</b> utilize the package manager, you only store theme resources that you're using.
-
-<--->
-
-[![](/regolith-ilia-windows.png)](/regolith-ilia-windows.png)
-Got a lot going on?  Quickly find the window you're looking for via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> or navigate over workspaces with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0 - 19]</span></span>.
-
-{{< /columns >}}
-
-{{< columns >}}
-
-[![](/regolith-many-windows.png)](/regolith-many-windows.png)
-Waste no space on frivolous UI and take advantage of every pixel without micro-managing your window layouts.
-
-<--->
-
-[![](/regolith-ilia-notifications.png)](/regolith-ilia-notifications.png)
-Desktop notifications do not compete for your attention, but rather can be managed via an on-screen dialog by pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>.
-
-{{< /columns >}}
-
-# Interaction
-
-{{< columns >}}
-
-### Announcements
-
-* [Subscribe to the mailing list for release announcements](https://www.freelists.org/list/regolith-linux)
-
-<--->
-
-### Discussion and Help
-
-* Join us on [GitHub Discussions](https://github.com/orgs/regolith-linux/discussions) for help and discussion
-* Chat with community members on [the Regolith Desktop Matrix space](https://matrix.to/#/#regolith-desktop:matrix.org)
-* Search from [existing issues or create a new issue](https://github.com/regolith-linux/regolith-desktop/issues) for bugs and feature requests
-<--->
-
-### Development
-
-* The [Regolith GitHub org](https://github.com/regolith-linux) is where development happens.
-
+  {{< column
+      title="Notifications"
+      border="true"
+      image="/images/v-tour/regolith-ilia-notifications.png"
+  >}}
+    Desktop notifications do not compete for your attention, but rather can be
+    managed via an on-screen dialog by pressing {{< keys "super,n" >}}.
+  {{< /column >}}
 {{< /columns >}}

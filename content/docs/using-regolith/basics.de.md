@@ -8,20 +8,18 @@ description: >
 
 Während wir in anderen Bereichen der Dokumentation alles detaillierter behandeln werden, deckt diese Seite die grundlegende Verwendung von Regolith ab.
 
-## Verwendung
-
 ## Starten einer Anwendung
 
 Nach der ersten Anmeldung enthält der Bildschirm eine Leiste am unteren Rand und einige Tastaturkürzel in einem Dialog. Dieser Dialog soll dem Benutzer helfen, Tastenkombinationen für verschiedene Aktionen in der Desktop-Umgebung zu finden und zu speichern. Er kann mit der Taste `esc` verlassen und mit {{< keys "super,shift,?" >}}. Um eine Anwendung zu
 starten, drücken Sie {{< keys "super,space" >}} und ein ähnlicher Dialog wird mit den auf dem System installierten Anwendungen geladen. Wenn Sie beginnen, den Namen der Anwendung, die Sie starten möchten, einzugeben, wird die Liste auf die passenden Anwendungen eingeschränkt. Sie können auch mit den Pfeiltasten durch die Liste blättern.
 
-![](/regolith-ilia-apps.png)
+![](/images/v-tour/regolith-ilia-apps.png)
 
 ## Zu einem Fenster navigieren
 
 Um eine laufende Anwendung zu fokussieren, kann die {{< keys "super,ctrl,space" >}} Tastenkombination verwendet werden, um einen Dialog mit allen laufenden Fenstern anzuzeigen. Wählen Sie einfach das gewünschte Fenster aus, und das System wechselt in den Arbeitsbereich des Fensters und aktiviert dessen Fokus.
 
-![](/regolith-ilia-windows.png)
+![](/images/v-tour/regolith-ilia-windows.png)
 
 ## Einen neuen Arbeitsbereich erstellen
 
@@ -32,7 +30,7 @@ Index mit den Tasten {{< keys "super,0-9" >}} an.
 
 Die Suche nach einer bestimmten Datei auf Ihrem lokalen Computer kann auf verschiedene Weise erfolgen. Regolith bietet einen Dateisuchdialog über {{< keys "super,alt,space" >}} zum schnellen Suchen und optionalen Laden einer Datei mit seiner Standardanwendung. Durch Drücken der Eingabetaste bei einer Auswahl wird die Datei mit dem Befehl `xdg-open` aufgerufen.
 
-![](/regolith-ilia-files.png)
+![](/images/v-tour/regolith-ilia-files.png)
 
 ## Terminal
 
@@ -59,13 +57,13 @@ Arbeitsbereiche können auch mit {{< keys "super,tab" >}} und {{< keys "super,sh
 
 Die Einstellungs-App (auch bekannt als `regolith-control-center`) ist die primäre Schnittstelle für allgemeine Konfigurationsaufgaben, wie die Konfiguration von WiFi und Bluetooth, die Konfiguration von App-Zuordnungen und die Einrichtung von Benutzern. Die App kann über die {{< keys "super,c" >}} Tastenkombination oder vom Launcher aus über die App `Regolith Settings` gestartet werden.
 
-![](/regolith-gnome-settings.png)
+![](/images/v-tour/regolith-gnome-settings.png)
 
 ## Tastenkombinationen anzeigen
 
 Alle vom Regolith-Desktop verwendeten Tastenkombinationen können mit `ilia` eingesehen, sortiert und ausgeführt werden. Dieser Dialog wird mit {{< keys "super,shift,?" >}} aktiviert.
 
-![](/regolith-ilia-keybindings.png)
+![](/images/v-tour/regolith-ilia-keybindings.png)
 
 ## Verwalten von Benachrichtigungen
 

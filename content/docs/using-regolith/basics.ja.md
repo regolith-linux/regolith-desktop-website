@@ -6,19 +6,17 @@ description: >
   はじめてRegolithを使うのにもっとも重要なパートを学ぶ。
 ---
 
-# 使い方
-
 ## アプリケーションを開く
 
 初回ログイン後、画面下部にバーが、ダイアログにいくつかのキーボードショートカットが表示されます。この[`ilia`](https://github.com/regolith-linux/ilia)と呼ばれるダイアログは、このデスクトップ環境におけるさまざまなアクションのキーバインドを見つけるアシスタントを提供します。`esc`キーで閉じても、{{< keys "super,shift,?" >}}で再度表示することができます。アプリケーションを起動するには、{{< keys "super,space" >}}を押すことで、同様のダイアログが、システムにインストールされたアプリケーションとともに読み込まれます。起動したいアプリケーションの名前を入力し始めると、リストが入力したものと一致するものにフィルタリングされます。矢印キーでリストをスクロールすることもできます。
 
-![](/regolith-ilia-apps.png)
+![](/images/v-tour/regolith-ilia-apps.png)
 
 ## ウィンドウを操作する
 
 実行中のアプリケーションにフォーカスするには、{{< keys "super,ctrl,space" >}}キーバインドですべての実行中のウィンドウのダイアログを表示することができます。利用したいウィンドウを選択することで、簡単にそのウィンドウが含まれるワークスペースに移動してフォーカスを設定されます。
 
-![](/regolith-ilia-windows.png)
+![](/images/v-tour/regolith-ilia-windows.png)
 
 ## 新しいワークスペースを作成する
 
@@ -28,7 +26,7 @@ description: >
 
 特定のファイルをローカルのコンピューター上で検索には、さまざまな方法があります。Regolithでは、{{< keys "super,alt,space" >}}で、素早く検索して、ファイルを既定のアプリケーションで読み込むファイル検索ダイアログを提供しています。 選択したものをEnterで入力すると、`xdg-open`コマンドでファイルが呼び出されます。
 
-![](/regolith-ilia-files.png)
+![](/images/v-tour/regolith-ilia-files.png)
 
 ## ターミナル
 
@@ -52,14 +50,13 @@ description: >
 
 システムアプリ（`regolith-control-center`として知られています）は、Wi−Fi・Bluetoothの設定、アプリ関連の設定、ユーザーのセットアップといった、共通の設定タスクの主要なインターフェースです。このアプリは{{< keys "super,c" >}}キーバインドか、ランチャーの`Regolith Settings`アプリから起動できます。
 
-![](/regolith-gnome-settings.png)
+![](/images/v-tour/regolith-gnome-settings.png)
 
 ## キーバインドを表示する
 
 Regolithデスクトップで使用されるすべてのキーバインドを[`ilia`](https://github.com/regolith-linux/ilia)によって表示、ソート、実行することができます。このダイアログは{{< keys "super,shift,?" >}}で起動することができます。
 
-![](/regolith-ilia-keybindings.png)
-
+![](/images/v-tour/regolith-ilia-keybindings.png)
 
 ## 通知を管理する
 

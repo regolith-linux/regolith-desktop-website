@@ -7,9 +7,9 @@ description: >
 
 Regolithは、[Xresourcesシステム](https://en.wikipedia.org/wiki/X_resources)に依存し、統合されたインターフェース設定を提供しています。`Xresources`の値を変更することで、Regolithは、ユーザーインターフェイスの更新、カスタム動作の指定、バーの一部のblockletの特定の形式の定義などの方法でカスタマイズできます。
 
-{{< hint info >}}
+{{< callout type="info" >}}
 Regolithでは、`Xresources`の値は、独自の`Xresources`ファイルを用意する方法か、既存の`Xresources`の値をオーバーライドする方法の2つの方法で変更できます。後者のアプローチは、Regolithが新しいバージョンにアップグレードする際にカスタマイズを妨げる可能性を下げるため、強く推奨されます。`Xresources`ツリーを完全にコピーする場合、将来のバージョンで破損した変更を手動で統合する必要があります。
-{{< /hint >}}
+{{< /callout >}}
 
 ## 初期化
 
@@ -51,14 +51,14 @@ wm.bar.background.color:	#1F2430
 
 1. `~/.config/regolith3/Xresources`ファイルに次の値を作成もしくは追加する：
 
-```console
+```yaml {filename="~/.config/regolith3/Xresources"}
 Xft.dpi: 192
 ```
 
 2. `Xresources`設定を再読込する:
 
-```console
-$ regolith-look refresh
+```bash
+regolith-look refresh
 ```
 
 3. 新規のターミナルを開き、変更が有効になっていることを確認する。
@@ -85,20 +85,20 @@ $ regolith-look refresh
 
 ### 例 - システムトレイを無効にする
 
-```console
-$ echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
-$ regolith-look refresh
+```bash
+echo "wm.bar.trayoutput:	none" >> ~/.config/regolith3/Xresources
+regolith-look refresh
 ```
 
 ### 例 - AltキーをWinキーの代わりにSuperキーとして使用する
 
-```console
-$ echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
-$ echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
+```bash
+echo "wm.mod: Mod1" >> ~/.config/regolith3/Xresources
+echo "wm.alt: Mod4" >> ~/.config/regolith3/Xresources
 ```
 
 次に、変更を有効にするため、i3を再読み込みします。i3が別のプロセスとして起動するものなど、一部の設定では、セッションに再ログインする必要があります。
 
-# さらに深く読み込む
+## さらに深く読み込む
 
 Regolithの設定ファイルについて詳細については[設定のリファレンスページ]({{< ref "/docs/Reference/configurations.md" >}})を参照してください。

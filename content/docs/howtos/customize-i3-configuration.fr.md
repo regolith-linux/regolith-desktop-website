@@ -1,12 +1,9 @@
 ---
 title: "Personnaliser la config i3"
 linkTitle: "Personnaliser la config i3"
-weight: 1
 description: >
   Comment faire des changements sur le look et les comportements de i3
 ---
-
-# Comment personnaliser la configuration de i3 avec Regolith
 
 Les configurations par défaut sont stockées dans `/usr/share/regolith/i3/config.d`.
 Ces fichiers sont chargés de selon l'ordre alphabétique. Ensuite, les configurations de l'utilisateur dans `~/.config/regolith3/i3/config.d` sont chargées, également dans l'ordre alphabétique.
@@ -20,27 +17,27 @@ Pour cette raison, il y a plusieurs manières de personnaliser i3 dans Regolith.
 
 ## Comment fixer une variable `Xresources`
 
-{{< hint warning >}}
+{{< callout type="warning" >}}
 Regolith version 3.0 onward replaces "i3-wm" with "wm" in Xresource keys.  The content on this page has been updated for Regolith 3.0+.  If you are using an earlier version, use "i3-wm" instead of "wm" in the key names below.  For example `wm.foo.bar` changes to `i3-wm.foo.bar` for Regolith 1.x and 2.x.
-{{< /hint >}}
+{{< /callout >}}
 
 La configuration dans l'exemple suivant (récupérée de `/usr/share/regolith/i3/config.d/80_compositor`) peut être modifiée pour charger le compositor que l'on veut sans modifier ou ré-écrire la configuration existante de i3 en fixant la variable $wm.program.compositor`.
 
-```
+```text {filenamme="/usr/share/regolith/i3/config.d/80_compositor"}
 set_from_resource $wm.program.compositor wm.program.compositor /usr/share/regolith-compositor/init
 exec_always --no-startup-id $i3-wm.program.compositor
 ```
 
 Pour faire cela, ajouter simplement une ligne à `~/.config/regolith3/Xresources`:
 
-```
+```yaml {filename="~/.config/regolith3/Xresources"}
 # Utiliser mon propre programme compositor
 wm.program.compositor: /usr/local/bin/my-compositor
 ```
 
 De la même manière, vous pouvez ré-écrire d'autres paramètres i3 avec `Xresources` en utilisant les noms de variables trouvés dans les fichiers du dossier `/usr/share/regolith/i3/config.d`:
 
-```
+```yaml {filename="~/.config/regolith3/Xresources"}
 ## Configurer les espacements
 wm.gaps.inner.size: 1
 
@@ -60,57 +57,57 @@ Si vous souhaitez remplacer entièrement ou supprimer des paramètres fournis pa
 
 Pour identifier le nom du paquet qui donne cette configuration:
 
-```console
+```bash
 dpkg -S /usr/share/doc/regolith-i3-workspace-config
 ```
 
 La sortie contient le nom du paquet:
 
-```
+```yaml
 regolith-i3-workspace-config: /usr/share/doc/regolith-i3-workspace-config
 ```
 
 Pour voir la liste complète des fichiers fournis par ce paquet (et savoir ce que l'on retire):
 
-```console
+```bash
 dpkg -L regolith-i3-workspace-config
 ```
 
 Supprimer la configuration partielle:
 
-```console
+```bash
 sudo apt remove regolith-i3-workspace-config
 ```
 
 ## Comment personnaliser une configuration
 
-{{< hint warning >}}
-ATTENTION: Pour personnaliser une unique configuration par défaut partielle de Regolith, vous devez d'abord vous assurer
+{{< callout type="warning" >}}
+Pour personnaliser une unique configuration par défaut partielle de Regolith, vous devez d'abord vous assurer
 que le fichier `~/.config/regolith3/i3/config` n'existe pas.
 Cela va ignorer entièrement la configuration par défaut de Regolith, ce qui n'est pas compatible avec ce guide.
-{{< /hint >}}
+{{< /callout >}}
 
 Premièrement, assurez-vous qu'un dossier existe dans la configuration utilisateur:
 
-```console
+```bash
 mkdir -p ~/.config/regolith3/i3/config.d
 ```
 
 Ensuite, copier la configuration par défaut dans le dossier de configuration de l'utilisateur:
 
-```console
+```bash
 cp /usr/share/regolith/i3/config.d/40_workspace-config ~/.config/regolith3/i3/config.d/
 ```
 
 Faites les changements voulus:
 
-```console
+```bash
 vim ~/.config/regolith3/i3/config.d/40_workspace-config
 ```
 
 Retirez le paquet contenant la configuration par défaut:
 
-```console
+```bash
 sudo apt remove regolith-i3-workspace-config
 ```
 

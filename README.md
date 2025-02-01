@@ -1,12 +1,12 @@
 # This is the https://regolith-desktop.com website
 
-This site uses the [Hugo static site generator](https://gohugo.io/) and the [Book theme](https://themes.gohugo.io/themes/hugo-book/).
+This site uses the [Hugo static site generator](https://gohugo.io/) and the [Hextra theme](https://themes.gohugo.io/themes/hextra/).
 
 ## Local Development
 
 Please ensure you have the following installed:
 
-- Hugo **extended** **>= 0.80.0** (otherwise PostCSS won't work)
+- Hugo **extended** **>= 0.140.0** (otherwise PostCSS won't work)
 - npm
 - git
 
@@ -15,27 +15,21 @@ Please ensure you have the following installed:
 Clone this repo, and the Book theme as a submodule:
 
 ```console
-$ git clone --recurse-submodules --depth 1 git@github.com:regolith-linux/regolith-desktop-website.git regolith-desktop-website
+$ git clone git@github.com:regolith-linux/regolith-desktop-website.git regolith-desktop-website
 $ cd regolith-desktop-website
 ```
 
 Install dependencies and launch Hugo server:
 
 ```console
-$ npm install
+$ hugo 
 $ hugo server
 ```
 
 ...or, with Docker:
 
 ```console
-docker-compose up
-```
-
-NOTE: If you encounter an error like `failed to extract shortcode: template for shortcode "columns" not found`, you forgot the submodule for the Book theme.
-
-```console
-git submodule update --init --depth=1
+docker compose up
 ```
 
 ### Make changes
@@ -44,7 +38,7 @@ Edit content as needed. If `hugo server` is running then updates are automatical
 
 ### Update website on GitHub Pages
 
-GitHub Actions on the repository is configured to deploy any and all changes to the `v2` branch automatically, no further action needed. The `CNAME` ([https://www.regolith-linux.org](https://www.regolith-linux.org)) is configured automatically, no need to add it.
+GitHub Actions on the repository is configured to deploy any and all changes to the `gh-pages` branch automatically, no further action needed. The `CNAME` ([https://regolith-desktop.com](https://regolith-desktop.com)) is configured automatically, no need to add it.
 
 If you believe that your changes ought to be reviewed by a second party, just open a pull request and have somebody else jump in and cross-check your edits.
 
@@ -68,15 +62,33 @@ Although Hugo accepts common HTML elements pretty much anywhere the expressed go
 
 #### Use `console` for highlighting shell session code
 
+If you want to show a command that users can run, you are encouraged to use `bash` for code highlighting. But if the command you are showing has an output you need to use `console`.
+
+This block uses `bash` for highlighting:
+
+```bash
+sudo apt update
+sudo apt install regolith-desktop
+```
+
+But this uses `console` (note that this command is also showing and output):
+
+```console
+$ xrandr --listmonitors
+Monitors: 1
+ 0: +*eDP-1 1920/309x1080/173+0+0  eDP-1
+```
+
 Using `bash` obscures the flow of information and things you type into a session isn't really shell code all the time but rather a random set of commands. There's [an open feature request](https://github.com/alecthomas/chroma/issues/137) with the highlighting engine ("Chroma") Hugo is using to accept `console` as a lexer. Once that's accomplished all the relevant highlighting parts will look different. For now, they'll just receive the default styling.
+
 
 #### Call it `Xresources` (with backticks)
 
 No `Xresource` or Xresource. Use the plural (because that's what we read and what the definition of the mechanism is) and surround the word itself with backticks to make it stand out a little.
 
-#### Put images into `assets/images` and use the `img` shortcode
+#### Put images into `static/images` and use the `img` shortcode
 
-We don't want duplicate content anywhere, especially not images that are the same for every single translation. Therefor we put images into the `assets/images` folder and use the `img` shortcode to refer to them. You'll get a lightbox and automated, screen-aware (i.e. "mobile friendly") sizing on top. The `img` shortcode has the following syntax:
+We don't want duplicate content anywhere, especially not images that are the same for every single translation. Therefor we put images into the `static/images` folder and use the `img` shortcode to refer to them. You'll get a lightbox and automated, screen-aware (i.e. "mobile friendly") sizing on top. The `img` shortcode has the following syntax:
 
 ```go-html-template
 {{< img "<path-to-image-in-asset-folder>" "alt-text-for-image" >}}

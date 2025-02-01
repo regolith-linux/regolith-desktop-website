@@ -3,11 +3,12 @@ title: "Verify behavior against upstream"
 linkTitle: "Verify behavior against upstream"
 description: >
   This page describes how to root cause the origin of bugs.
+next: /docs/reference
 ---
 
-{{< hint danger >}}
-NOTICE: This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
-{{< /hint >}}
+{{< callout type="error" >}}
+This page was copied from the [Regolith 1.x website](https://regolith-linux.org) and has not been updated for Regolith 2.  It may contain out of date information.
+{{< /callout >}}
 
 Regolith is composed of several existing open-source projects plus some additional custom packages.  Sometimes when a bug is found in Regolith, actually it's a bug in an upstream project.  Determining the source of bugs is a first step in getting them fixed.
 
@@ -17,7 +18,7 @@ Most of Regolith's GNOME support comes from the `gnome-flashback` project.  To r
 
 1. Install the `gnome-session-flashback` session:
 
-```console
+```bash
 sudo apt install gnome-session-flashback
 ```
 
