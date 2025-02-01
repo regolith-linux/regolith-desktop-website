@@ -39,13 +39,11 @@ layout: "hextra-home"
   {{< hextra/feature-card
     title="生産性第一"
     subtitle="Regolithは、人気があり、高速で、構成しやすく、キーボードを中心とした生産的なワークフローに最適な、i3とSwayで実行されます。Regolithは、i3とSwayを、 `i3bar`、`rofication`、`i3status-rs`、`ilia`といった他のデスクトップコンポーネントと統合し、完全なデスクトップエクスペリエンスを提供します。"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
 
   {{< hextra/feature-card
     title="GNOMEのシステム管理"
     subtitle="軽量なウィンドウマネージャーを`gnome-session`と統合することで、Regolithは典型的な`gnome-shell`ベースの環境の複雑な点の多くを回避し、シンプルで一貫したシステム環境を提供します。"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
   >}}
 {{< /hextra/feature-grid >}}
 

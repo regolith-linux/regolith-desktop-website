@@ -39,13 +39,11 @@ layout: "hextra-home"
   {{< hextra/feature-card
     title="Productivity First"
     subtitle="Regolith runs i3 and Sway: popular, fast, and configurable tiling window managers that are great for productive, keyboard-driven workflows. Regolith integrates i3 and Sway with other desktop components such as `i3bar`, `rofication`, `i3status-rs`, and `ilia` to provide a complete desktop experience."
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
 
   {{< hextra/feature-card
     title="GNOME System Management"
     subtitle="By integrating light-weight window managers with `gnome-session`, Regolith sidesteps much of the complexity of a typical `gnome-shell` based environment while providing simple and consistent system management capabilities."
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
   >}}
 {{< /hextra/feature-grid >}}
 

@@ -39,13 +39,11 @@ layout: "hextra-home"
   {{< hextra/feature-card
     title="La productivité d'abord"
     subtitle="Regolith utilise i3: un gestionnaire de fenêtre en tuiles qui est     populaire, rapide, configurable et très pratique pour tout piloter avec son clavier. Regolith intègre i3 avec d'autres composants comme `i3bar`, `rofication`, `gnome-flashback`, et `ilia` afin de fournir une interface de bureau complète."
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
 
   {{< hextra/feature-card
     title="Système de gestion GNOME"
     subtitle="En fournissant une session gnome avec `gnome-flashback`, Regolith s'affranchi d'une bonne partie de la complexité des environnements typiques basés sur `gnome-shell` en fournissant un système de gestion simple et consistant."
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
   >}}
 {{< /hextra/feature-grid >}}
 
