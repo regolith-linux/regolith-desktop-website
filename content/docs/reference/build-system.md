@@ -21,6 +21,12 @@ This page describes how packages are generate from source code, and how those pa
   2. `unstable` - For packages changes that are planned to reach a release but have yet to undergo much testing.  Serious bugs may occur from time to time.  Regolith core developers may run their testing and development from this stage but users are discouraged from consuming packages from `unstable`.
   3. `testing` - For packages undergoing testing by Regolith developers and early adopters.  Bugs occur but serious bugs should not often pop up in this stage.  Regolith users that wish to get access to fixes and new features earlier may consume from this stage with the understanding that bugs are to be expected (, and reporting them is appreciated!)
   4. `release` - For packages that have been determined to be suitable for general use.  While minor bugs may be present in packages at this stage, the bugs present should not interfere with general use of the environments for users on supported distros and releases.
+* `Suite`  - Represents the published packages repository. It has a one-to-one corresponding relationship to `Stage`. In other words `Stage` has the point of view of software development and `Suite` has the point of view of published archive repositories.
+  1. `experimental` suite - corresponds to `experimental` stage
+  2. `unstable` suite - corresponds to `unstable` stage
+  3. `testing` suite - corresponds to `testing` stage
+  4. `stable` suite - corresponds to `release-X_Y` and `release-current` stages
+* `Component`  - Each published repository is divided into several components. They correspond to Regolith released versions. In Regolith these are `main` and correposnding versions (for example `v3.2`, `v3.1`, etc)
 * `Target` ~ Represents a specific sequence of `distro`, `codename`, `stage`, and `architecture` for which a set of packages exist.
 * `Manifest` ~ A file that specifies a set of the properties name, origin, and snapshot for a list of packages.  A manifest is a file that represents a snapshot of a `target` in time.
 * `Package Manager` ~ A set of formats and programs that allow for packages to be installed in a distro.  The package manager may very by distro.
@@ -87,14 +93,15 @@ As mentioned above, the build system generates packages for a given target from 
 The Regolith build system consists mainly of bash [shell scripts](https://github.com/regolith-linux/voulage/.github/scripts).  These scripts are run from [GitHub workflows](https://github.com/regolith-linux/voulage/.github/workflows) but are designed to be runnable directly from the appropriate local environment to facilitate easy testing and troubleshooting.  The following is a high level summary of what the package builder does once invoked: 
 
 1. Set up source state such as the target string, which is generated from `<stage>-<distro>-<codename>-<architecture>`
-2. Download the current manifest from the target repository
+2. Get the current manifest from the Voulage repository (inside `manifests/` folder)
 3. Generate the merged package model starting from the root and working into each segment in the `target` string
 4. With the merged model, iterate over each package, generating a manifest entry by resolving the commit hash from the specified ref
 5. After all manifest entries are generated, compare the generated manifest with the earlier downloaded copy
 6. If no changes found, exit because no packages have changes on the specified refs
 7. Otherwise, package changes have been detected.  Download the entire target repository
 8. For each difference found, delegate to distro-specific build package build and repo publish commands
-9. Publish the updated repository and manifest back to the target repository
+9. Publish the new packages to the target repository
+9. Commit and push the updated manifest back to the Voulage repository
 
 ## ISO Build System
 
@@ -113,7 +120,7 @@ The ISO builder is based on the open source project [live-custom-ubuntu-from-scr
 
 ### How to determine what commit a package is built with in a given target package repo
 
-1. Download the manifest contained in the target package repository (`https://regolith-desktop.org/<STAGE>-<DISTRO>-<CODENAME>-<ARCH>/manifest.txt`)
+1. Get the manifest contained in the Voulage repository (located at `manifests/<DISTRO>/<CODENAME>/<SUITE>-<COMPONENT>/<ARCH>/manifest.txt`)
 2. Find the line containing the package name
 3. Note the branch and ref in the manifest, this is the repo commit from which the package was built
 
