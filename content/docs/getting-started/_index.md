@@ -1,8 +1,8 @@
 ---
 title: Getting Started
 weight: 1
-next: /docs/using-regolith
 prev: /docs
+next: /docs/getting-started/compatibility
 ---
 
 Explore the following sections to learn more about Regolith:
@@ -12,3 +12,4 @@ Explore the following sections to learn more about Regolith:
   {{< card link="/docs/howtos/" title="How To" subtitle="Some examples of how you can customize Regolith Linux" >}}
   {{< card link="/docs/reference/" title="Reference" subtitle="Reference material" >}}
 {{< /cards >}}
+

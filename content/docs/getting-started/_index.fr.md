@@ -1,8 +1,8 @@
 ---
 title: Getting Started
 weight: 1
-next: /docs/using-regolith
 prev: /docs
+next: /docs/getting-started/compatibility
 ---
 
 Explore the following sections to learn more about Regolith:
