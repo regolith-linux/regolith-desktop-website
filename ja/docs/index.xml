@@ -1,16 +1,108 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Regolith Desktop Documentation</title><link>https://regolith-desktop.com/ja/docs/</link><description>Recent content in Regolith Desktop Documentation on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>ja</language><atom:link href="https://regolith-desktop.com/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started</title><link>https://regolith-desktop.com/ja/docs/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/getting-started/</guid><description>
-&lt;p>Explore the following sections to learn more about Regolith:&lt;/p>
-&lt;div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
-&lt;a
-class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://regolith-desktop.com/docs/using-regolith/"
->&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">Using Regolith&lt;/span>&lt;div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">Content about how to use the Regolith Desktop&lt;/div>&lt;/a>
-&lt;a
-class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://regolith-desktop.com/docs/howtos/"
->&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">How To&lt;/span>&lt;div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">Some examples of how you can customize Regolith Linux&lt;/div>&lt;/a>
-&lt;a
-class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="https://regolith-desktop.com/docs/reference/"
->&lt;span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">Reference&lt;/span>&lt;div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">Reference material&lt;/div>&lt;/a>
-&lt;/div></description></item><item><title>インストール</title><link>https://regolith-desktop.com/ja/docs/using-regolith/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/using-regolith/install/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Regolith Desktop Documentation</title><link>https://regolith-desktop.com/ja/docs/</link><description>Recent content in Regolith Desktop Documentation on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>ja</language><atom:link href="https://regolith-desktop.com/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Compatibility Matrix</title><link>https://regolith-desktop.com/ja/docs/getting-started/compatibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/getting-started/compatibility/</guid><description>
+&lt;p>Regolith supports and can be installed in various Debian and Ubuntu distros.
+Check the compatibility matrix below to find out which Regolith version is
+supported on which OS distributions.&lt;/p>
+&lt;h2>Ubuntu&lt;span class="hx-absolute -hx-mt-20" id="ubuntu">&lt;/span>
+&lt;a href="#ubuntu" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Distro Name / Regolith Version&lt;/th>
+&lt;th style="text-align: center">v2.2&lt;/th>
+&lt;th style="text-align: center">v3.0&lt;/th>
+&lt;th style="text-align: center">v3.1&lt;/th>
+&lt;th style="text-align: center">v3.2&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Focal (20.04 LTS)&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Jammy (22.04 LTS)&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Kinetic (22.10)&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Lunar (23.04)&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Mantic (23.10)&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Noble (24.04 LTS)&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2>Debian&lt;span class="hx-absolute -hx-mt-20" id="debian">&lt;/span>
+&lt;a href="#debian" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Distro Name / Regolith Version&lt;/th>
+&lt;th style="text-align: center">v2.2&lt;/th>
+&lt;th style="text-align: center">v3.0&lt;/th>
+&lt;th style="text-align: center">v3.1&lt;/th>
+&lt;th style="text-align: center">v3.2&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Bullseye (11)&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Bookworm (12)&lt;/td>
+&lt;td style="text-align: center">-&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;td style="text-align: center">&lt;span class="hx-inline-block hx-align-text-bottom icon">&lt;svg height=21 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>&lt;/svg>&lt;/span>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>インストール</title><link>https://regolith-desktop.com/ja/docs/using-regolith/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/using-regolith/install/</guid><description>
 &lt;h2>Upgrading to 3.x&lt;span class="hx-absolute -hx-mt-20" id="upgrading-to-3x">&lt;/span>
 &lt;a href="#upgrading-to-3x" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>以前のバージョンのRegolithからアップグレードする場合は&lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.2-release-notes" >リリースノート&lt;/a> を、特に2.xからの場合は&lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.0-release-notes/#migration-guide" >移行ガイド&lt;/a>を参照してください。&lt;/p>
 &lt;h2>サポートするOS&lt;span class="hx-absolute -hx-mt-20" id="サポートするos">&lt;/span>
