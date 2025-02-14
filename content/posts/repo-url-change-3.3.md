@@ -28,7 +28,9 @@ deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/stable noble main
           * Architecture
 ```
 
+{{< callout type="info" >}}
 All other aspects of the package configuration remain the same including the key used to verify packages.
+{{< /callout >}}
 
 ### Architecture
 
