@@ -25,7 +25,7 @@ role="tabpanel" tabindex="0" data-state="selected" >&lt;p>Regolithはシステ�
 &lt;li>
 &lt;p>ローカルの&lt;code>apt&lt;/code>にRegolithの公開鍵を登録する。&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://archive.regolith-desktop.com/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -41,7 +41,7 @@ title="Copy code"
 &lt;p>ローカルの&lt;code>apt&lt;/code>にリポジトリのURLを追加する。&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://archive.regolith-desktop.com/ubuntu/stable noble v3.2&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -89,7 +89,7 @@ role="tabpanel">&lt;p>Regolithはシステムパッケージとしてインス�
 &lt;li>
 &lt;p>ローカルの&lt;code>apt&lt;/code>にRegolithの公開鍵を登録する。&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://archive.regolith-desktop.com/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -105,7 +105,7 @@ title="Copy code"
 &lt;p>ローカルの&lt;code>apt&lt;/code>にリポジトリのURLを追加する。&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -164,7 +164,7 @@ id="tabs-panel-0"
 role="tabpanel" tabindex="0" data-state="selected" >&lt;p>&amp;ldquo;Testing&amp;quot;リリースのDebianユーザーであれば、Regolithをインストールすることができますが、Debian Testingの性質上&amp;quot;release&amp;quot;バージョンは存在しません。Debian TestingインスタンスにRegolithをインストールするには、&lt;code>apt&lt;/code>コマンドのワンライナーの&lt;code>release&lt;/code>の代わりに&lt;code>testing&lt;/code>を含める必要があります。例：&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/testing-debian-testing-amd64 testing main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://archive.regolith-desktop.com/debian/testing testing main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -186,7 +186,7 @@ role="tabpanel">&lt;p>Regolithはシステムパッケージとしてインス�
 &lt;li>
 &lt;p>ローカルの&lt;code>apt&lt;/code>にRegolithの公開鍵を登録する。&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://archive.regolith-desktop.com/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -202,7 +202,7 @@ title="Copy code"
 &lt;p>ローカルの&lt;code>apt&lt;/code>にリポジトリのURLを追加する。&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://archive.regolith-desktop.com/debian/stable bookworm v3.2&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -307,14 +307,15 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;h2>Regolith &lt;code>apt&lt;/code> URLパスの構造&lt;span class="hx-absolute -hx-mt-20" id="regolith-apt-urlパスの構造">&lt;/span>
-&lt;a href="#regolith-apt-url%e3%83%91%e3%82%b9%e3%81%ae%e6%a7%8b%e9%80%a0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">https://regolith-desktop.org/testing-debian-testing-amd64
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | * アーキテクチャ
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | * ディストロバージョン/コードネーム
+&lt;h2>Anatomy of the Regolith &lt;code>apt&lt;/code> Config Line&lt;span class="hx-absolute -hx-mt-20" id="anatomy-of-the-regolith-apt-config-line">&lt;/span>
+&lt;a href="#anatomy-of-the-regolith-apt-config-line" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/unstable noble main
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | | |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | | * Repo Component
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | * ディストロバージョン/コードネーム
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | * Repo Suite
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | * ディストロ名
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * Regolithの段階&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * アーキテクチャ&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
 title="Copy code"
@@ -324,40 +325,22 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;h3>Regolithの段階&lt;span class="hx-absolute -hx-mt-20" id="regolithの段階">&lt;/span>
-&lt;a href="#regolith%e3%81%ae%e6%ae%b5%e9%9a%8e" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;h3>アーキテクチャ&lt;span class="hx-absolute -hx-mt-20" id="アーキテクチャ">&lt;/span>
+&lt;a href="#%e3%82%a2%e3%83%bc%e3%82%ad%e3%83%86%e3%82%af%e3%83%81%e3%83%a3" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>段階&lt;/th>
-&lt;th>URLの文字列&lt;/th>
-&lt;th>概要&lt;/th>
+&lt;th>名前&lt;/th>
+&lt;th style="text-align: left">概要&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>実験的&lt;/td>
-&lt;td>&lt;code>experimental&lt;/code>&lt;/td>
-&lt;td>実験的内容をテストする段階&lt;/td>
+&lt;td>&lt;code>amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">64-bit x86アーキテクチャ&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>不安定&lt;/td>
-&lt;td>&lt;code>unstable&lt;/code>&lt;/td>
-&lt;td>開発内容の初期テスト段階&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>テスト&lt;/td>
-&lt;td>&lt;code>testing&lt;/code>&lt;/td>
-&lt;td>開発内容の後期テスト段階&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>リリース X.Y&lt;/td>
-&lt;td>&lt;code>release-X_Y&lt;/code>&lt;/td>
-&lt;td>特定の公式リリース段階&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>現在のリリース&lt;/td>
-&lt;td>&lt;code>release-current&lt;/code>&lt;/td>
-&lt;td>最新のリリース段階（リリース間で変動します）&lt;/td>
+&lt;td>&lt;code>arm64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">64-bit Armアーキテクチャ&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -366,66 +349,92 @@ title="Copy code"
 &lt;thead>
 &lt;tr>
 &lt;th>名前&lt;/th>
-&lt;th>概要&lt;/th>
+&lt;th style="text-align: left">概要&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
 &lt;td>&lt;code>ubuntu&lt;/code>&lt;/td>
-&lt;td>Ubuntu Linuxディストリビューション&lt;/td>
+&lt;td style="text-align: left">Ubuntu Linuxディストリビューション&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;code>debian&lt;/code>&lt;/td>
-&lt;td>Debian Linuxディストリビューション&lt;/td>
+&lt;td style="text-align: left">Debian Linuxディストリビューション&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Repo Suites and Components&lt;span class="hx-absolute -hx-mt-20" id="repo-suites-and-components">&lt;/span>
+&lt;a href="#repo-suites-and-components" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Regolith 段階&lt;/th>
+&lt;th>Repo Suite&lt;/th>
+&lt;th style="text-align: center">Repo Component&lt;/th>
+&lt;th style="text-align: left">概要&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">実験的&lt;/td>
+&lt;td>&lt;code>experimental&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">実験的内容をテストする段階&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">不安定&lt;/td>
+&lt;td>&lt;code>unstable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">開発内容の初期テスト段階&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">テスト&lt;/td>
+&lt;td>&lt;code>testing&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">開発内容の後期テスト段階&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">リリース X.Y&lt;/td>
+&lt;td>&lt;code>stable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>vX.Y&lt;/code>&lt;/td>
+&lt;td style="text-align: left">特定の公式リリース段階&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">現在のリリース&lt;/td>
+&lt;td>&lt;code>stable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">最新のリリース段階（リリース間で変動します）&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3>ディストロバージョン/コードネーム&lt;span class="hx-absolute -hx-mt-20" id="ディストロバージョンコードネーム">&lt;/span>
 &lt;a href="#%e3%83%87%e3%82%a3%e3%82%b9%e3%83%88%e3%83%ad%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b3%e3%82%b3%e3%83%bc%e3%83%89%e3%83%8d%e3%83%bc%e3%83%a0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>これらのラベルは各上流コミュニティによって決定されます。例：&lt;code>noble&lt;/code>, &lt;code>bookworm&lt;/code>, &lt;code>focal&lt;/code>&lt;/p>
-&lt;h3>アーキテクチャ&lt;span class="hx-absolute -hx-mt-20" id="アーキテクチャ">&lt;/span>
-&lt;a href="#%e3%82%a2%e3%83%bc%e3%82%ad%e3%83%86%e3%82%af%e3%83%81%e3%83%a3" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>名前&lt;/th>
-&lt;th>概要&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;code>amd64&lt;/code>&lt;/td>
-&lt;td>64-bit x86アーキテクチャ&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;code>arm64&lt;/code>&lt;/td>
-&lt;td>64-bit Armアーキテクチャ&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
 &lt;h3>例&lt;span class="hx-absolute -hx-mt-20" id="例">&lt;/span>
 &lt;a href="#%e4%be%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>概要&lt;/th>
-&lt;th>URL&lt;/th>
+&lt;th style="text-align: left">概要&lt;/th>
+&lt;th style="text-align: left">APT Line&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;code>amd64&lt;/code>のUbuntu 22.04で3.2リリースのRegolithを使用する&lt;/td>
-&lt;td>&lt;code>https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>amd64&lt;/code>のUbuntu 22.04で3.2リリースのRegolithを使用する&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;code>amd64&lt;/code>のDebian 12で最新リリースのRegolithを使用する&lt;/td>
-&lt;td>&lt;code>https://regolith-desktop.org/release-current-debian-bookworm-amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>amd64&lt;/code>のDebian 12で最新リリースのRegolithを使用する&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=amd64] https://archive.regolith-desktop.com/debian/stable bookworm main&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;code>arm64&lt;/code>のDebian TestingでRegolithのテストリポジトリを使用する&lt;/td>
-&lt;td>&lt;code>https://regolith-desktop.org/testing-debian-testing-arm64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>arm64&lt;/code>のDebian TestingでRegolithのテストリポジトリを使用する&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=arm64] https://archive.regolith-desktop.com/debian/testing testing main&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h2>リリースの変更ポリシー&lt;span class="hx-absolute -hx-mt-20" id="リリースの変更ポリシー">&lt;/span>
-&lt;a href="#%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e3%81%ae%e5%a4%89%e6%9b%b4%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Regolith 3.2以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、&lt;code>release-current&lt;/code> という特別な段階が提供されています。&lt;/p></description></item><item><title>初回起動</title><link>https://regolith-desktop.com/ja/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/using-regolith/first-launch/</guid><description>
+&lt;a href="#%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9%e3%81%ae%e5%a4%89%e6%9b%b4%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>From Regolith 3.0 to 3.2 (inclusive) Regolith 3.2以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、&lt;code>release-current&lt;/code> という特別な段階が提供されています。&lt;/p>
+&lt;p>From Regolith 3.3 onward, all releases will be published in the common archive repository separated by a high level distro (e.g. &lt;code>debian&lt;/code>, &lt;code>ubuntu&lt;/code>) folder and corresponding codename subfolders. The structure is split furthermore into different suites and components. As such, users wishing to have their package manager always install the latest version, they should use &lt;code>main&lt;/code> component of &lt;code>stable&lt;/code> suite. Otherwise a fixed version component (for example &lt;code>v3.3&lt;/code>, &lt;code>v3.2&lt;/code>, etc) can be used alongside &lt;code>stable&lt;/code> component.&lt;/p>
+&lt;p>Note that &lt;code>experimental&lt;/code>, &lt;code>unstable&lt;/code>, and &lt;code>testing&lt;/code> suites only have &lt;code>main&lt;/code> component.&lt;/p></description></item><item><title>初回起動</title><link>https://regolith-desktop.com/ja/docs/using-regolith/first-launch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/ja/docs/using-regolith/first-launch/</guid><description>
 &lt;p>Regolithの既定のインターフェースは、アプリケーションの起動方法やその他の一般的なタスクの実行方法に関する視覚的なヒントがありません。これは、初めて使う人にとって少し混乱するかもしれません。しかし、Regolithのインターフェースを使っていくときは、次の2つのキーバインドを記憶しておけば、比較的簡単に利用できるようになります。&lt;/p>
 &lt;table>
 &lt;thead>

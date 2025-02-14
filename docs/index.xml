@@ -191,7 +191,7 @@ to configure your system to read packages from the Regolith package repository a
 &lt;li>
 &lt;p>Register the Regolith public key to your local &lt;code>apt&lt;/code>:&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://archive.regolith-desktop.com/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -207,7 +207,7 @@ title="Copy code"
 &lt;p>Add the repository URL to your local &lt;code>apt&lt;/code>:&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://archive.regolith-desktop.com/ubuntu/stable noble v3.2&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -255,7 +255,7 @@ to configure your system to read packages from the Regolith package repository a
 &lt;li>
 &lt;p>Register the Regolith public key to your local &lt;code>apt&lt;/code>:&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://archive.regolith-desktop.com/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -271,7 +271,7 @@ title="Copy code"
 &lt;p>Add the repository URL to your local &lt;code>apt&lt;/code>:&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -330,7 +330,7 @@ id="tabs-panel-0"
 role="tabpanel" tabindex="0" data-state="selected" >&lt;p>For Debian users that use the &amp;ldquo;Testing&amp;rdquo; release, Regolith can be installed, however there is no &amp;ldquo;release&amp;rdquo; version due to the nature of Debian Testing. In order to install Regolith into a Debian Testing instance, the &lt;code>apt&lt;/code> line contains &lt;code>testing&lt;/code> instead of a &lt;code>release&lt;/code> string. For example:&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/testing-debian-testing-amd64 testing main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://archive.regolith-desktop.com/debian/testing testing main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -352,7 +352,7 @@ to configure your system to read packages from the Regolith package repository a
 &lt;li>
 &lt;p>Register the Regolith public key to your local &lt;code>apt&lt;/code>:&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://regolith-desktop.org/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -qO - https://archive.regolith-desktop.com/regolith.key &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>gpg --dearmor &lt;span class="p">|&lt;/span> sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg &amp;gt; /dev/null&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -368,7 +368,7 @@ title="Copy code"
 &lt;p>Add the repository URL to your local &lt;code>apt&lt;/code>:&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> deb &lt;span class="s2">&amp;#34;[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">https://archive.regolith-desktop.com/debian/stable bookworm v3.2&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>sudo tee /etc/apt/sources.list.d/regolith.list&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
@@ -473,14 +473,15 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;h2>Anatomy of the Regolith &lt;code>apt&lt;/code> URL Path&lt;span class="hx-absolute -hx-mt-20" id="anatomy-of-the-regolith-apt-url-path">&lt;/span>
-&lt;a href="#anatomy-of-the-regolith-apt-url-path" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">https://regolith-desktop.org/testing-debian-testing-amd64
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | * Architecture
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | * Distro Version/Codename
+&lt;h2>Anatomy of the Regolith &lt;code>apt&lt;/code> Config Line&lt;span class="hx-absolute -hx-mt-20" id="anatomy-of-the-regolith-apt-config-line">&lt;/span>
+&lt;a href="#anatomy-of-the-regolith-apt-config-line" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/unstable noble main
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | | |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | | * Repo Component
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | * Distro Version/Codename
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | * Repo Suite
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | * Distro Name
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * Regolith Stage&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * Architecture&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
 &lt;button
 class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
 title="Copy code"
@@ -490,40 +491,22 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;h3>Regolith Stages&lt;span class="hx-absolute -hx-mt-20" id="regolith-stages">&lt;/span>
-&lt;a href="#regolith-stages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;h3>Architecture&lt;span class="hx-absolute -hx-mt-20" id="architecture">&lt;/span>
+&lt;a href="#architecture" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Stage&lt;/th>
-&lt;th>URL String&lt;/th>
-&lt;th>Description&lt;/th>
+&lt;th>Name&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Experimental&lt;/td>
-&lt;td>&lt;code>experimental&lt;/code>&lt;/td>
-&lt;td>Stage for testing experiments&lt;/td>
+&lt;td>&lt;code>amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">The 64-bit x86 architecture&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Unstable&lt;/td>
-&lt;td>&lt;code>unstable&lt;/code>&lt;/td>
-&lt;td>Stage for early development testing&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Testing&lt;/td>
-&lt;td>&lt;code>testing&lt;/code>&lt;/td>
-&lt;td>Stage for late development testing&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Release X.Y&lt;/td>
-&lt;td>&lt;code>release-X_Y&lt;/code>&lt;/td>
-&lt;td>Stage for specific official release&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Current Release&lt;/td>
-&lt;td>&lt;code>release-current&lt;/code>&lt;/td>
-&lt;td>Stage for latest release (floating from release to release)&lt;/td>
+&lt;td>&lt;code>arm64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">The 64-bit Arm architecture&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -532,66 +515,92 @@ title="Copy code"
 &lt;thead>
 &lt;tr>
 &lt;th>Name&lt;/th>
-&lt;th>Description&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
 &lt;td>&lt;code>ubuntu&lt;/code>&lt;/td>
-&lt;td>The Ubuntu Linux Distribution&lt;/td>
+&lt;td style="text-align: left">The Ubuntu Linux Distribution&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;code>debian&lt;/code>&lt;/td>
-&lt;td>The Debian Linux Distribution&lt;/td>
+&lt;td style="text-align: left">The Debian Linux Distribution&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Repo Suites and Components&lt;span class="hx-absolute -hx-mt-20" id="repo-suites-and-components">&lt;/span>
+&lt;a href="#repo-suites-and-components" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Regolith Stage&lt;/th>
+&lt;th>Repo Suite&lt;/th>
+&lt;th style="text-align: center">Repo Component&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Experimental&lt;/td>
+&lt;td>&lt;code>experimental&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for testing experiments&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Unstable&lt;/td>
+&lt;td>&lt;code>unstable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for early development testing&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Testing&lt;/td>
+&lt;td>&lt;code>testing&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for late development testing&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Release X.Y&lt;/td>
+&lt;td>&lt;code>stable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>vX.Y&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for specific official release&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Current Release&lt;/td>
+&lt;td>&lt;code>stable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for latest release (floating from release to release)&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3>Distro Version/Codename&lt;span class="hx-absolute -hx-mt-20" id="distro-versioncodename">&lt;/span>
 &lt;a href="#distro-versioncodename" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>These labels are determined by their respective upstream communities. Examples are &lt;code>noble&lt;/code>, &lt;code>bookworm&lt;/code>, &lt;code>focal&lt;/code>.&lt;/p>
-&lt;h3>Architecture&lt;span class="hx-absolute -hx-mt-20" id="architecture">&lt;/span>
-&lt;a href="#architecture" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Name&lt;/th>
-&lt;th>Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;code>amd64&lt;/code>&lt;/td>
-&lt;td>The 64-bit x86 architecture&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;code>arm64&lt;/code>&lt;/td>
-&lt;td>The 64-bit Arm architecture&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
 &lt;h3>Examples&lt;span class="hx-absolute -hx-mt-20" id="examples">&lt;/span>
 &lt;a href="#examples" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Description&lt;/th>
-&lt;th>URL&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;th style="text-align: left">APT Line&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>The 3.2 release of Regolith on Ubuntu Jammy for &lt;code>amd64&lt;/code>&lt;/td>
-&lt;td>&lt;code>https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">The 3.2 release of Regolith on Ubuntu Jammy for &lt;code>amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>The latest release of Regolith on Debian Bookworm for &lt;code>amd64&lt;/code>&lt;/td>
-&lt;td>&lt;code>https://regolith-desktop.org/release-current-debian-bookworm-amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">The latest release of Regolith on Debian Bookworm for &lt;code>amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=amd64] https://archive.regolith-desktop.com/debian/stable bookworm main&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Testing repo for Regolith on Debian Testing for &lt;code>arm64&lt;/code>&lt;/td>
-&lt;td>&lt;code>https://regolith-desktop.org/testing-debian-testing-arm64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Testing repo for Regolith on Debian Testing for &lt;code>arm64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=arm64] https://archive.regolith-desktop.com/debian/testing testing main&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h2>Release Change Policy&lt;span class="hx-absolute -hx-mt-20" id="release-change-policy">&lt;/span>
-&lt;a href="#release-change-policy" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>From Regolith 3.0 onward, all releases will use unique names in the package repo URL. This means that users will be in full control of when they wish to upgrade to a new release. Users wishing to have their package manager always install the latest version, a special stage called &lt;code>release-current&lt;/code> is provided.&lt;/p></description></item><item><title>Keybindings</title><link>https://regolith-desktop.com/docs/reference/keybindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/keybindings/</guid><description>
+&lt;a href="#release-change-policy" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>From Regolith 3.0 to 3.2 (inclusive), all releases will use unique names in the package repo URL. This means that users will be in full control of when they wish to upgrade to a new release. Users wishing to have their package manager always install the latest version, a special stage called &lt;code>release-current&lt;/code> is provided.&lt;/p>
+&lt;p>From Regolith 3.3 onward, all releases will be published in the common archive repository separated by a high level distro (e.g. &lt;code>debian&lt;/code>, &lt;code>ubuntu&lt;/code>) folder and corresponding codename subfolders. The structure is split furthermore into different suites and components. As such, users wishing to have their package manager always install the latest version, they should use &lt;code>main&lt;/code> component of &lt;code>stable&lt;/code> suite. Otherwise a fixed version component (for example &lt;code>v3.3&lt;/code>, &lt;code>v3.2&lt;/code>, etc) can be used alongside &lt;code>stable&lt;/code> component.&lt;/p>
+&lt;p>Note that &lt;code>experimental&lt;/code>, &lt;code>unstable&lt;/code>, and &lt;code>testing&lt;/code> suites only have &lt;code>main&lt;/code> component.&lt;/p></description></item><item><title>Keybindings</title><link>https://regolith-desktop.com/docs/reference/keybindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/docs/reference/keybindings/</guid><description>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -2123,6 +2132,15 @@ title="Copy code"
 &lt;li>&lt;code>release&lt;/code> - For packages that have been determined to be suitable for general use. While minor bugs may be present in packages at this stage, the bugs present should not interfere with general use of the environments for users on supported distros and releases.&lt;/li>
 &lt;/ol>
 &lt;/li>
+&lt;li>&lt;code>Suite&lt;/code> - Represents the published packages repository. It has a one-to-one corresponding relationship to &lt;code>Stage&lt;/code>. In other words &lt;code>Stage&lt;/code> has the point of view of software development and &lt;code>Suite&lt;/code> has the point of view of published archive repositories.
+&lt;ol>
+&lt;li>&lt;code>experimental&lt;/code> suite - corresponds to &lt;code>experimental&lt;/code> stage&lt;/li>
+&lt;li>&lt;code>unstable&lt;/code> suite - corresponds to &lt;code>unstable&lt;/code> stage&lt;/li>
+&lt;li>&lt;code>testing&lt;/code> suite - corresponds to &lt;code>testing&lt;/code> stage&lt;/li>
+&lt;li>&lt;code>stable&lt;/code> suite - corresponds to &lt;code>release-X_Y&lt;/code> and &lt;code>release-current&lt;/code> stages&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>&lt;code>Component&lt;/code> - Each published repository is divided into several components. They correspond to Regolith released versions. In Regolith these are &lt;code>main&lt;/code> and correposnding versions (for example &lt;code>v3.2&lt;/code>, &lt;code>v3.1&lt;/code>, etc)&lt;/li>
 &lt;li>&lt;code>Target&lt;/code> ~ Represents a specific sequence of &lt;code>distro&lt;/code>, &lt;code>codename&lt;/code>, &lt;code>stage&lt;/code>, and &lt;code>architecture&lt;/code> for which a set of packages exist.&lt;/li>
 &lt;li>&lt;code>Manifest&lt;/code> ~ A file that specifies a set of the properties name, origin, and snapshot for a list of packages. A manifest is a file that represents a snapshot of a &lt;code>target&lt;/code> in time.&lt;/li>
 &lt;li>&lt;code>Package Manager&lt;/code> ~ A set of formats and programs that allow for packages to be installed in a distro. The package manager may very by distro.&lt;/li>
@@ -2190,14 +2208,15 @@ title="Copy code"
 &lt;a href="#package-build-system" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The Regolith build system consists mainly of bash &lt;a href="https://github.com/regolith-linux/voulage/.github/scripts" target="_blank" rel="noopener">shell scripts&lt;/a>. These scripts are run from &lt;a href="https://github.com/regolith-linux/voulage/.github/workflows" target="_blank" rel="noopener">GitHub workflows&lt;/a> but are designed to be runnable directly from the appropriate local environment to facilitate easy testing and troubleshooting. The following is a high level summary of what the package builder does once invoked:&lt;/p>
 &lt;ol>
 &lt;li>Set up source state such as the target string, which is generated from &lt;code>&amp;lt;stage&amp;gt;-&amp;lt;distro&amp;gt;-&amp;lt;codename&amp;gt;-&amp;lt;architecture&amp;gt;&lt;/code>&lt;/li>
-&lt;li>Download the current manifest from the target repository&lt;/li>
+&lt;li>Get the current manifest from the Voulage repository (inside &lt;code>manifests/&lt;/code> folder)&lt;/li>
 &lt;li>Generate the merged package model starting from the root and working into each segment in the &lt;code>target&lt;/code> string&lt;/li>
 &lt;li>With the merged model, iterate over each package, generating a manifest entry by resolving the commit hash from the specified ref&lt;/li>
 &lt;li>After all manifest entries are generated, compare the generated manifest with the earlier downloaded copy&lt;/li>
 &lt;li>If no changes found, exit because no packages have changes on the specified refs&lt;/li>
 &lt;li>Otherwise, package changes have been detected. Download the entire target repository&lt;/li>
 &lt;li>For each difference found, delegate to distro-specific build package build and repo publish commands&lt;/li>
-&lt;li>Publish the updated repository and manifest back to the target repository&lt;/li>
+&lt;li>Publish the new packages to the target repository&lt;/li>
+&lt;li>Commit and push the updated manifest back to the Voulage repository&lt;/li>
 &lt;/ol>
 &lt;h2>ISO Build System&lt;span class="hx-absolute -hx-mt-20" id="iso-build-system">&lt;/span>
 &lt;a href="#iso-build-system" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>The ISO builder is based on the open source project &lt;a href="https://github.com/mvallim/live-custom-ubuntu-from-scratch/" target="_blank" rel="noopener">live-custom-ubuntu-from-scratch&lt;/a>. The ISO builder uses a set of shell scripts to generate an Ubuntu ISO image for both a live environment and an installer. Regolith customizes this project in &lt;a href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder" target="_blank" rel="noopener">this repo&lt;/a> with some specific packages to &lt;a href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/blob/main/scripts/regolith-2_1-jammy-config.sh" target="_blank" rel="noopener">install and remove&lt;/a>. A github workflow is used to generate the ISOs and upload them to GitHub for hosting.&lt;/p>
@@ -2213,7 +2232,7 @@ title="Copy code"
 &lt;/ol>
 &lt;h3>How to determine what commit a package is built with in a given target package repo&lt;span class="hx-absolute -hx-mt-20" id="how-to-determine-what-commit-a-package-is-built-with-in-a-given-target-package-repo">&lt;/span>
 &lt;a href="#how-to-determine-what-commit-a-package-is-built-with-in-a-given-target-package-repo" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
-&lt;li>Download the manifest contained in the target package repository (&lt;code>https://regolith-desktop.org/&amp;lt;STAGE&amp;gt;-&amp;lt;DISTRO&amp;gt;-&amp;lt;CODENAME&amp;gt;-&amp;lt;ARCH&amp;gt;/manifest.txt&lt;/code>)&lt;/li>
+&lt;li>Get the manifest contained in the Voulage repository (located at &lt;code>manifests/&amp;lt;DISTRO&amp;gt;/&amp;lt;CODENAME&amp;gt;/&amp;lt;SUITE&amp;gt;-&amp;lt;COMPONENT&amp;gt;/&amp;lt;ARCH&amp;gt;/manifest.txt&lt;/code>)&lt;/li>
 &lt;li>Find the line containing the package name&lt;/li>
 &lt;li>Note the branch and ref in the manifest, this is the repo commit from which the package was built&lt;/li>
 &lt;/ol>
@@ -6553,8 +6572,14 @@ title="Copy code"
 &lt;a href="#install-ubuntu-server" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Follow online instructions for installing a fresh copy of Ubuntu Server versions either 20.04 or 22.04.&lt;/p>
 &lt;h3>Add Regolith&amp;rsquo;s package key and apt repository&lt;span class="hx-absolute -hx-mt-20" id="add-regoliths-package-key-and-apt-repository">&lt;/span>
 &lt;a href="#add-regoliths-package-key-and-apt-repository" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Once Ubuntu Server has been installed, log into a terminal session. Use the following URLs to download the installation directions as a text file:&lt;/p>
-&lt;p>Ubuntu 22.04: &lt;a href="https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt" target="_blank" rel="noopener">https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt&lt;/a>&lt;/p>
-&lt;p>Ubuntu 20.04: &lt;a href="https://regolith-desktop.com/install-release-ubuntu-20.04-amd64.txt" target="_blank" rel="noopener">https://regolith-desktop.com/install-release-ubuntu-20.04-amd64.txt&lt;/a>&lt;/p>
+&lt;p>Ubuntu 24.04 LTS (Noble): &lt;a href="https://regolith-desktop.com/install-release-ubuntu-24.04-amd64.txt" >install-release-ubuntu-24.04-amd64.txt&lt;/a>&lt;br>
+Ubuntu 23.10 (Mantic): &lt;a href="https://regolith-desktop.com/install-release-ubuntu-23.10-amd64.txt" >install-release-ubuntu-23.10-amd64.txt&lt;/a>&lt;br>
+Ubuntu 23.04 (Lunar): &lt;a href="https://regolith-desktop.com/install-release-ubuntu-23.04-amd64.txt" >install-release-ubuntu-23.04-amd64.txt&lt;/a>&lt;br>
+Ubuntu 22.10 (Kinetic): &lt;a href="https://regolith-desktop.com/install-release-ubuntu-22.10-amd64.txt" >install-release-ubuntu-22.10-amd64.txt&lt;/a>&lt;br>
+Ubuntu 22.04 LTS (Jammy): &lt;a href="https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt" >install-release-ubuntu-22.04-amd64.txt&lt;/a>&lt;br>
+Ubuntu 20.04 LTS (Focal): &lt;a href="https://regolith-desktop.com/install-release-ubuntu-20.04-amd64.txt" >install-release-ubuntu-20.04-amd64.txt&lt;/a>&lt;/p>
+&lt;p>Debian 12 (Bookworm): &lt;a href="https://regolith-desktop.com/install-release-debian-12-amd64.txt" >install-release-debian-12-amd64.txt&lt;/a>&lt;br>
+Debian 11 (Bullseye): &lt;a href="https://regolith-desktop.com/install-release-debian-11-amd64.txt" >install-release-debian-11-amd64.txt&lt;/a>&lt;/p>
 &lt;p>Example:&lt;/p>
 &lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget https://regolith-desktop.com/install-release-ubuntu-22.04-amd64.txt

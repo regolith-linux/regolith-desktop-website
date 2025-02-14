@@ -1,4 +1,142 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Blog</title><link>https://regolith-desktop.com/posts/</link><description>Recent content in Blog on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://regolith-desktop.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Status Updates October 2024</title><link>https://regolith-desktop.com/posts/status_update_10_24/</link><pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/posts/status_update_10_24/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith Desktop – Blog</title><link>https://regolith-desktop.com/posts/</link><description>Recent content in Blog on Regolith Desktop</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://regolith-desktop.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Archive URL change for upcoming v3.3 release</title><link>https://regolith-desktop.com/posts/repo-url-change-3.3/</link><pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/posts/repo-url-change-3.3/</guid><description>
+&lt;p>For the Regolith v3.3 release, the host name of the URL from which &lt;code>apt&lt;/code> pulls packages as well as the structure of package archive repositories have changed. The new hostname is &lt;code>archive.regolith-desktop.com&lt;/code>. In order to update to Regolith v3.3 and get fixes and upgrades going forward kindly update your apt configuration.&lt;/p>
+&lt;p>The old &lt;code>apt&lt;/code> URL:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">/etc/apt/sources.list.d/regolith.list&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">deb [arch=amd64] https://regolith-desktop.org/release-current-ubuntu-noble-amd64 noble main&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>The new &lt;code>apt&lt;/code> URL:&lt;/p>
+&lt;div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+&lt;div class="filename not-prose" dir="auto">/etc/apt/sources.list.d/regolith.list&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/stable noble main
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | | |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | | * Repo Component
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | | * Distro Version/Codename
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | | * Repo Suite
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | * Distro Name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * Architecture&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8">
+&lt;button
+class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>All other aspects of the package configuration remain the same including the key used to verify packages.&lt;/p>
+&lt;h3>Architecture&lt;span class="hx-absolute -hx-mt-20" id="architecture">&lt;/span>
+&lt;a href="#architecture" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">The 64-bit x86 architecture&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>arm64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">The 64-bit Arm architecture&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Distro Names&lt;span class="hx-absolute -hx-mt-20" id="distro-names">&lt;/span>
+&lt;a href="#distro-names" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>ubuntu&lt;/code>&lt;/td>
+&lt;td style="text-align: left">The Ubuntu Linux Distribution&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>debian&lt;/code>&lt;/td>
+&lt;td style="text-align: left">The Debian Linux Distribution&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Repo Suites and Components&lt;span class="hx-absolute -hx-mt-20" id="repo-suites-and-components">&lt;/span>
+&lt;a href="#repo-suites-and-components" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Regolith Stage&lt;/th>
+&lt;th style="text-align: left">Repo Suite&lt;/th>
+&lt;th style="text-align: center">Repo Component&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Experimental&lt;/td>
+&lt;td style="text-align: left">&lt;code>experimental&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for testing experiments&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Unstable&lt;/td>
+&lt;td style="text-align: left">&lt;code>unstable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for early development testing&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Testing&lt;/td>
+&lt;td style="text-align: left">&lt;code>testing&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for late development testing&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Release X.Y&lt;/td>
+&lt;td style="text-align: left">&lt;code>stable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>vX.Y&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for specific official release&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Current Release&lt;/td>
+&lt;td style="text-align: left">&lt;code>stable&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>main&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Stage for latest release (floating from release to release)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>Distro Version/Codename&lt;span class="hx-absolute -hx-mt-20" id="distro-versioncodename">&lt;/span>
+&lt;a href="#distro-versioncodename" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>These labels are determined by their respective upstream communities. Examples are &lt;code>noble&lt;/code>, &lt;code>bookworm&lt;/code>, &lt;code>focal&lt;/code>.&lt;/p>
+&lt;h3>Examples&lt;span class="hx-absolute -hx-mt-20" id="examples">&lt;/span>
+&lt;a href="#examples" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;th style="text-align: left">APT Line&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">The 3.2 release of Regolith on Ubuntu Jammy for &lt;code>amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">The latest release of Regolith on Debian Bookworm for &lt;code>amd64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=amd64] https://archive.regolith-desktop.com/debian/stable bookworm main&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Testing repo for Regolith on Debian Testing for &lt;code>arm64&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>deb [arch=arm64] https://archive.regolith-desktop.com/debian/testing testing main&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Status Updates October 2024</title><link>https://regolith-desktop.com/posts/status_update_10_24/</link><pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate><guid>https://regolith-desktop.com/posts/status_update_10_24/</guid><description>
 &lt;h2>Ubuntu 24.10 (Oracular Oriole) Support&lt;span class="hx-absolute -hx-mt-20" id="ubuntu-2410-oracular-oriole-support">&lt;/span>
 &lt;a href="#ubuntu-2410-oracular-oriole-support" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Canonical completed their 20th Ubuntu release with Oracular this month. A beta of Regolith 3.2 is available for testing, see &lt;a href="https://github.com/orgs/regolith-linux/discussions/1073" target="_blank" rel="noopener">this discussion thread&lt;/a> for details. As this is not a new Regolith release, but rather the addition of a new Ubuntu version on Regolith 3.2, the &lt;a href="https://regolith-desktop.com/docs/reference/Releases/regolith-3.2-release-notes/" >3.2 release notes&lt;/a> continue to be the latest.&lt;/p>
 &lt;h2>Ubuntu Summit 2024&lt;span class="hx-absolute -hx-mt-20" id="ubuntu-summit-2024">&lt;/span>
