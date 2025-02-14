@@ -25,7 +25,7 @@ Regolithはシステムパッケージとしてインストールすることが
 1. ローカルの`apt`にRegolithの公開鍵を登録する。
 
    ```bash
-   wget -qO - https://regolith-desktop.org/regolith.key | \
+   wget -qO - https://archive.regolith-desktop.com/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
@@ -33,7 +33,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_2-ubuntu-noble-amd64 noble main" | \
+   https://archive.regolith-desktop.com/ubuntu/stable noble v3.2" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -59,7 +59,7 @@ Regolithはシステムパッケージとしてインストールすることが
 1. ローカルの`apt`にRegolithの公開鍵を登録する。
 
    ```bash
-   wget -qO - https://regolith-desktop.org/regolith.key | \
+   wget -qO - https://archive.regolith-desktop.com/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
@@ -67,7 +67,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64 jammy main" | \
+   https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -95,7 +95,7 @@ ARMベースのシステムにインストールするときは、上記の内�
 
    ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/testing-debian-testing-amd64 testing main" | \
+   https://archive.regolith-desktop.com/debian/testing testing main" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -109,7 +109,7 @@ Regolithはシステムパッケージとしてインストールすることが
 1. ローカルの`apt`にRegolithの公開鍵を登録する。
 
    ```bash
-   wget -qO - https://regolith-desktop.org/regolith.key | \
+   wget -qO - https://archive.regolith-desktop.com/regolith.key | \
    gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
    ```
 
@@ -117,7 +117,7 @@ Regolithはシステムパッケージとしてインストールすることが
 
    ```bash
    echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
-   https://regolith-desktop.org/release-3_2-debian-bookworm-amd64 bookworm main" | \
+   https://archive.regolith-desktop.com/debian/stable bookworm v3.2" | \
    sudo tee /etc/apt/sources.list.d/regolith.list
    ```
 
@@ -178,54 +178,60 @@ regolith-look-solarized-dark
 sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
 ```
 
-## Regolith `apt` URLパスの構造
+## Anatomy of the Regolith `apt` Config Line
 
 ```text
-https://regolith-desktop.org/testing-debian-testing-amd64
-                             |       |      |       |
-                             |       |      |       * アーキテクチャ
-                             |       |      * ディストロバージョン/コードネーム
-                             |       * ディストロ名
-                             * Regolithの段階
+deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/unstable noble main
+          |                                           |      |        |     |
+          |                                           |      |        |     * Repo Component
+          |                                           |      |        * ディストロバージョン/コードネーム
+          |                                           |      * Repo Suite
+          |                                           * ディストロ名
+          * アーキテクチャ
 ```
 
-### Regolithの段階
+### アーキテクチャ
 
-|段階|URLの文字列|概要|
-|---|---|---|
-|実験的|`experimental`|実験的内容をテストする段階|
-|不安定|`unstable`|開発内容の初期テスト段階|
-|テスト|`testing`|開発内容の後期テスト段階|
-|リリース X.Y|`release-X_Y`|特定の公式リリース段階|
-|現在のリリース|`release-current` |最新のリリース段階（リリース間で変動します）|
+| 名前 | 概要 |
+|-----|:-----|
+| `amd64` | 64-bit x86アーキテクチャ |
+| `arm64` | 64-bit Armアーキテクチャ |
 
 ### ディストロ名
 
-|名前 | 概要 |
-|---|---|
-|`ubuntu`| Ubuntu Linuxディストリビューション|
-|`debian`| Debian Linuxディストリビューション|
+| 名前 | 概要 |
+|-----|:-----|
+| `ubuntu` | Ubuntu Linuxディストリビューション |
+| `debian` | Debian Linuxディストリビューション |
+
+### Repo Suites and Components
+
+| Regolith 段階 | Repo Suite | Repo Component | 概要 |
+|:-------------|------------|:--------------:|:-----|
+| 実験的 | `experimental` | `main` | 実験的内容をテストする段階 |
+| 不安定 | `unstable` | `main` | 開発内容の初期テスト段階 |
+| テスト | `testing` | `main` | 開発内容の後期テスト段階 |
+| リリース X.Y | `stable` | `vX.Y` | 特定の公式リリース段階 |
+| 現在のリリース | `stable` | `main` | 最新のリリース段階（リリース間で変動します） |
 
 ### ディストロバージョン/コードネーム
 
 これらのラベルは各上流コミュニティによって決定されます。例：`noble`, `bookworm`, `focal`
 
-### アーキテクチャ
-
-|名前 | 概要 |
-|---|---|
-|`amd64`| 64-bit x86アーキテクチャ |
-|`arm64`| 64-bit Armアーキテクチャ |
-
 
 ### 例
 
-|概要 | URL |
-|---|---|
-|`amd64`のUbuntu 22.04で3.2リリースのRegolithを使用する|`https://regolith-desktop.org/release-3_2-ubuntu-jammy-amd64`|
-|`amd64`のDebian 12で最新リリースのRegolithを使用する|`https://regolith-desktop.org/release-current-debian-bookworm-amd64`|
-|`arm64`のDebian TestingでRegolithのテストリポジトリを使用する|`https://regolith-desktop.org/testing-debian-testing-arm64`|
+|概要 | APT Line |
+|:---|:---------|
+| `amd64`のUbuntu 22.04で3.2リリースのRegolithを使用する | `deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2` |
+| `amd64`のDebian 12で最新リリースのRegolithを使用する | `deb [arch=amd64] https://archive.regolith-desktop.com/debian/stable bookworm main` |
+| `arm64`のDebian TestingでRegolithのテストリポジトリを使用する | `deb [arch=arm64] https://archive.regolith-desktop.com/debian/testing testing main` |
+
 
 ## リリースの変更ポリシー
 
- Regolith 3.2以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、`release-current` という特別な段階が提供されています。
+ From Regolith 3.0 to 3.2 (inclusive) Regolith 3.2以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、`release-current` という特別な段階が提供されています。
+
+From Regolith 3.3 onward, all releases will be published in the common archive repository separated by a high level distro (e.g. `debian`, `ubuntu`) folder and corresponding codename subfolders. The structure is split furthermore into different suites and components. As such, users wishing to have their package manager always install the latest version, they should use `main` component of `stable` suite. Otherwise a fixed version component (for example `v3.3`, `v3.2`, etc) can be used alongside `stable` component.
+
+Note that `experimental`, `unstable`, and `testing` suites only have `main` component.
